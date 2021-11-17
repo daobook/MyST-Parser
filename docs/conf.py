@@ -52,8 +52,8 @@ html_logo = "_static/logo-wide.svg"
 html_favicon = "_static/logo-square.svg"
 html_title = ""
 html_theme_options = {
-    "github_url": "https://github.com/executablebooks/MyST-Parser",
-    "repository_url": "https://github.com/executablebooks/MyST-Parser",
+    "github_url": "https://github.com/daobook/MyST-Parser",
+    "repository_url": "https://github.com/daobook/MyST-Parser",
     "use_edit_page_button": True,
     "repository_branch": "master",
     "path_to_docs": "docs",

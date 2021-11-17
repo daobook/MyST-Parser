@@ -34,7 +34,7 @@ jobs:
       #   run: |
       #     conda install -c conda-forge pandoc
       #     conda install -c conda-forge ipython
-      #     
+      #     pip install sphinxcontrib-websupport
       #     sudo apt update
       #     sudo apt install -y graphviz
 
@@ -49,7 +49,7 @@ jobs:
           pip install markdown-it-py
           pip install linkify-it-py
           pip install sphinx-book-theme
-          pip install sphinxcontrib-websupport
+          
 
       - name: 🔧 Build HTML
         run: |

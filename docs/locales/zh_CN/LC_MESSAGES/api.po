@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MyST Parser 0.15.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-17 08:52+0800\n"
+"POT-Creation-Date: 2021-11-17 09:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -268,7 +268,7 @@ msgstr ""
 #: myst_parser.parse_directives.parse_directive_text
 #: myst_parser.sphinx_parser.MystParser.parse
 #: myst_parser.sphinx_renderer.mock_sphinx_env of
-msgid "Parameters"
+msgid "参数"
 msgstr ""
 
 #: myst_parser.parse_directives.parse_directive_text:3 of
@@ -310,7 +310,7 @@ msgid "Docutils"
 msgstr ""
 
 #: myst_parser.docutils_renderer.DocutilsRenderer:1 of
-msgid "Bases: :class:`markdown_it.renderer.RendererProtocol`"
+msgid "基类：:class:`markdown_it.renderer.RendererProtocol`"
 msgstr ""
 
 #: myst_parser.docutils_renderer.DocutilsRenderer:1
@@ -363,7 +363,7 @@ msgid "Sphinx"
 msgstr ""
 
 #: myst_parser.sphinx_renderer.SphinxRenderer:1 of
-msgid "Bases: :class:`myst_parser.docutils_renderer.DocutilsRenderer`"
+msgid "基类：:class:`myst_parser.docutils_renderer.DocutilsRenderer`"
 msgstr ""
 
 #: myst_parser.sphinx_renderer.SphinxRenderer:3 of
@@ -393,7 +393,7 @@ msgstr ""
 
 #: myst_parser.mocking.MockIncludeDirective:1 myst_parser.mocking.MockInliner:1
 #: myst_parser.mocking.MockState:1 myst_parser.mocking.MockStateMachine:1 of
-msgid "Bases: :class:`object`"
+msgid "基类：:class:`object`"
 msgstr ""
 
 #: myst_parser.mocking.MockInliner:1 of
@@ -421,7 +421,7 @@ msgstr ""
 
 #: myst_parser.mocking.MockState.inline_text
 #: myst_parser.mocking.MockState.parse_directive_block of
-msgid "Returns"
+msgid "返回"
 msgstr ""
 
 #: myst_parser.mocking.MockState.parse_directive_block:3 of
@@ -551,7 +551,7 @@ msgid ""
 msgstr ""
 
 #: myst_parser.sphinx_parser.MystParser:1 of
-msgid "Bases: :class:`sphinx.parsers.Parser`"
+msgid "基类：:class:`sphinx.parsers.Parser`"
 msgstr ""
 
 #: myst_parser.sphinx_parser.MystParser:1 of
@@ -629,4 +629,22 @@ msgid ""
 "extensions that require the full Sphinx build process and/or access to "
 "external files."
 msgstr ""
+
+#~ msgid "Parameters"
+#~ msgstr ""
+
+#~ msgid "Bases: :class:`markdown_it.renderer.RendererProtocol`"
+#~ msgstr ""
+
+#~ msgid "Bases: :class:`myst_parser.docutils_renderer.DocutilsRenderer`"
+#~ msgstr ""
+
+#~ msgid "Bases: :class:`object`"
+#~ msgstr ""
+
+#~ msgid "Returns"
+#~ msgstr ""
+
+#~ msgid "Bases: :class:`sphinx.parsers.Parser`"
+#~ msgstr ""
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MyST Parser 0.15.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-17 08:52+0800\n"
+"POT-Creation-Date: 2021-11-17 09:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -940,7 +940,7 @@ msgid ""
 msgstr ""
 
 #: myst_parser.mocking.MockRSTParser:1 of
-msgid "Bases: :class:`docutils.parsers.rst.Parser`"
+msgid "基类：:class:`docutils.parsers.rst.Parser`"
 msgstr ""
 
 #: myst_parser.mocking.MockRSTParser:1 of
@@ -1110,4 +1110,7 @@ msgid ""
 "myst`](https://github.com/executablebooks/rst-to-myst) tool, which allows"
 " you to convert single rST files to MyST markdown documents."
 msgstr ""
+
+#~ msgid "Bases: :class:`docutils.parsers.rst.Parser`"
+#~ msgstr ""
 

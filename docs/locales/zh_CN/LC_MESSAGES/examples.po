@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MyST Parser 0.15.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-17 08:52+0800\n"
+"POT-Creation-Date: 2021-11-17 09:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:8
 #: ../../examples/wealth_dynamics_rst.rst:14
-msgid "Contents"
+msgid "目录"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:13
@@ -650,4 +650,7 @@ msgid ""
 "Let's finish this section by investigating what happens when we change "
 "the volatility term :math:`\\sigma_r` in financial returns."
 msgstr ""
+
+#~ msgid "Contents"
+#~ msgstr ""
 
