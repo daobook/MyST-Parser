@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MyST Parser 0.15.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-17 10:49+0800\n"
+"POT-Creation-Date: 2021-11-17 10:44+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: ../../index.md:95
+#: ../../index.md:91
 msgid "MyST Syntax"
 msgstr "MyST 语法"
 
-#: ../../index.md:103
+#: ../../index.md:99
 msgid "Topic Guides"
 msgstr "主题指南"
 
-#: ../../index.md:112
+#: ../../index.md:108
 msgid "GitHub repo"
 msgstr "GitHub 仓库"
 
-#: ../../index.md:112
+#: ../../index.md:108
 msgid "About the project"
 msgstr "关于"
 
@@ -73,7 +73,7 @@ msgstr "**[符合 CommonMark 标准](commonmark-block-tokens)** ✔"
 #: ../../index.md:2
 msgid ""
 "MyST 是 [CommonMark Markdown][commonmark] 的一个超集。任何 CommonMark 文档也都是符合 MyST"
-" 的。"
+" 的。\""
 msgstr ""
 
 #: ../../index.md:2
@@ -100,43 +100,47 @@ msgstr "MyST 提供了 [角色](syntax/roles) 和 [指令](syntax/directives)，
 msgid "**[Compatible with Sphinx](sphinx/index.md)** 📄"
 msgstr "**[兼容 Sphinx](sphinx/index.md)** 📄"
 
-#: ../../index.md:4
+#: ../../index.md:1
 msgid ""
-"MyST 受到 Sphinx 的启发，并带有 [自己的 Sphinx 解析器](sphinx/index.md)。[用 Markdown 编写你的"
-" Sphinx 文档](sphinx:usage/quickstart)，或者从 CLI 或 [使用交互式网页界面][mystyc] 转换现有的 "
-"[RST 到 Markdown][rst-to-myst]！"
+"MyST is inspired by Sphinx, and comes with [its own Sphinx "
+"parser](sphinx/index.md). [Write your Sphinx docs in "
+"Markdown](sphinx:usage/quickstart), or convert existing [RST to Markdown"
+"][rst-to-myst] from the CLI or [using an interactive web "
+"interface][mystyc]!"
 msgstr ""
+#  "MyST 受到 Sphinx 的启发，并带有 [自己的 Sphinx 解析器](sphinx/index.md)。[用 Markdown 编写你的"
+#  " Sphinx 文档](sphinx:usage/quickstart)，或者从 CLI 或 [使用交互式网页界面][mystyc] 转换现有的 "
+#  "[RST 到 Markdown][rst-to-myst]！"
 
-# "MyST 受到 Sphinx 的启发，并带有 [自己的 Sphinx 解析器](sphinx/index.md)。[用 Markdown 编写你的"
-# " Sphinx 文档](sphinx:usage/quickstart)，或者从 CLI 或 [使用交互式网页界面][mystyc] 转换现有的 "
-# "[RST 到 Markdown][rst-to-myst]！"
 #: ../../index.md:1
 msgid "**[Hackable with Python](api/index.md)** 🐍"
 msgstr "**[可以用 Python 破解](api/index.md)** 🐍"
 
-#: ../../index.md:2
+#: ../../index.md:1
 msgid ""
-"这个 MyST 解析器是建立在 [`markdown-it-py` 包][markdown-it-py] 之上的，这是一个可插拔的 "
-"Markdown Python 解析器。\""
+"This MyST parser is built on top of the [`markdown-it-py` package"
+"][markdown-it-py], an pluggable Python parser for Markdown."
+msgstr ""
+#  "这个 MyST 解析器是建立在 [`markdown-it-py` 包][markdown-it-py] 之上的，这是一个可插拔的 "
+#  "Markdown Python 解析器。"
+
+#: ../../index.md:1
+msgid "**[Hackable with Javascript][markdown-it-myst]** 🌍"
 msgstr ""
 
-#: ../../index.md:2
-msgid "**[可以用 Javascript 破解][markdown-it-myst]** 🌍"
-msgstr ""
-
-#: ../../index.md:2
+#: ../../index.md:1
 msgid ""
-"[Javascript 解析器][markdown-it-myst] 建立在 [markdown-it][markdown-it] "
-"的基础上，并允许你在网站中解析 MyST。"
+"The [Javascript parser][markdown-it-myst] builds on [markdown-it"
+"][markdown-it], and allows you to parse MyST in websites."
 msgstr ""
+#  "[Javascript 解析器][markdown-it-myst] 建立在 [markdown-it][markdown-it] "
+#  "的基础上，并允许你在网站中解析 MyST。"
 
-# "[Javascript 解析器][markdown-it-myst] 建立在 [markdown-it][markdown-it] "
-# "的基础上，并允许你在网站中解析 MyST。"
-#: ../../index.md:52
+#: ../../index.md:48
 msgid "Find the right documentation resources"
 msgstr "找到合适的文档资源"
 
-#: ../../index.md:54
+#: ../../index.md:50
 msgid ""
 "This documentation is organized into a few major sections. **Tutorials** "
 "are step-by-step introductory guides to MyST Markdown. **Topic Guides** "
@@ -147,7 +151,7 @@ msgstr ""
 "本文档分为几个主要部分。**教程** 是对 MyST Markdown 的逐步介绍性指南。**主题指南** "
 "涵盖了更深入的特定领域，并被组织为独立的 \"如何做\" 部分。**参考资料** 部分详细描述了 MyST 解析器的 API/语法等。"
 
-#: ../../index.md:56
+#: ../../index.md:52
 msgid "In addition, here are a few pointers to help you get started."
 msgstr "此外，这里有几个要点可以帮助你开始工作。"
 
@@ -211,11 +215,11 @@ msgid ""
 " of documents built with MyST."
 msgstr "**[Jupyter Book 画廊](https://gallery.jupyterbook.org)**：用 MyST 建立的文档的例子。"
 
-#: ../../index.md:120
+#: ../../index.md:116
 msgid "Acknowledgements"
 msgstr "致谢"
 
-#: ../../index.md:122
+#: ../../index.md:118
 msgid ""
 "The MyST markdown language and MyST parser are both supported by the open"
 " community, [The Executable Book Project](https://executablebooks.org)."
@@ -230,38 +234,4 @@ msgstr ""
 #~ msgstr ""
 #~ "MyST 是  [CommonMark Markdown][commonmark]  "
 #~ "的一个超集。任何 CommonMark 文档也都是符合 MyST 的。"
-
-#~ msgid ""
-#~ "MyST 是 [CommonMark Markdown][commonmark] "
-#~ "的一个超集。任何 CommonMark 文档也都是符合 MyST 的。\""
-#~ msgstr ""
-
-#~ msgid ""
-#~ "MyST is inspired by Sphinx, and "
-#~ "comes with [its own Sphinx "
-#~ "parser](sphinx/index.md). [Write your Sphinx "
-#~ "docs in Markdown](sphinx:usage/quickstart), or "
-#~ "convert existing [RST to Markdown][rst-"
-#~ "to-myst] from the CLI or [using "
-#~ "an interactive web interface][mystyc]!"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "This MyST parser is built on top"
-#~ " of the [`markdown-it-py` package"
-#~ "][markdown-it-py], an pluggable Python "
-#~ "parser for Markdown."
-#~ msgstr ""
-
-# "这个 MyST 解析器是建立在 [`markdown-it-py` 包][markdown-it-py] 之上的，这是一个可插拔的 "
-# "Markdown Python 解析器。"
-#~ msgid "**[Hackable with Javascript][markdown-it-myst]** 🌍"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "The [Javascript parser][markdown-it-myst] "
-#~ "builds on [markdown-it][markdown-it], "
-#~ "and allows you to parse MyST in"
-#~ " websites."
-#~ msgstr ""
 
