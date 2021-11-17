@@ -14,7 +14,7 @@ author = "Executable Book Project"
 version = __version__
 
 master_doc = "index"
-language = "en"
+language = "zh_CN"
 
 # -- General configuration ---------------------------------------------------
 

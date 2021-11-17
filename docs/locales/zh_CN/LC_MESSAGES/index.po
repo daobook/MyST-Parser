@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-17 08:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../index.md:90
+msgid "MyST Syntax"
+msgstr ""
+
+#: ../../index.md:98
+msgid "Topic Guides"
+msgstr ""
+
+#: ../../index.md:107
+msgid "GitHub repo"
+msgstr ""
+
+#: ../../index.md:107
+msgid "About the project"
+msgstr ""
+
+#: ../../index.md:1
+msgid ""
+"MyST - Markedly Structured Text <img src=\"_static/logo-square.svg\" "
+"width=40 />"
+msgstr ""
+
+#: ../../index.md:3
+msgid "[![PyPI][pypi-badge]][pypi-link] [![Conda][conda-badge]][conda-link]"
+msgstr ""
+
+#: ../../index.md:3
+msgid "PyPI"
+msgstr ""
+
+#: ../../index.md:3
+msgid "Conda"
+msgstr ""
+
+#: ../../index.md:6
+msgid ""
+"**MyST is a rich and extensible flavor of Markdown meant for technical "
+"documentation and publishing**."
+msgstr ""
+
+#: ../../index.md:8
+msgid ""
+"MyST is a flavor of markdown that is designed for simplicity, "
+"flexibility, and extensibility. Here are a few major features"
+msgstr ""
+
+#: ../../index.md:1
+msgid "**[CommonMark compliant](commonmark-block-tokens)** ✔"
+msgstr ""
+
+#: ../../index.md:1
+msgid ""
+"MyST is a superset of [CommonMark Markdown][commonmark]. Any CommonMark "
+"document is also MyST-compliant."
+msgstr ""
+
+#: ../../index.md:2
+msgid "**[Extra syntax for authoring](extended-block-tokens)** ✍"
+msgstr ""
+
+#: ../../index.md:1
+msgid ""
+"MyST extends CommonMark with [syntax meant for scholarly writing and "
+"technical documentation](extended-block-tokens)."
+msgstr ""
+
+#: ../../index.md:1
+msgid "**[Extendable syntax](syntax/directives)** 🚀"
+msgstr ""
+
+#: ../../index.md:1
+msgid ""
+"MyST provides [roles](syntax/roles) and [directives](syntax/directives), "
+"allowing you to extend MyST's functionality."
+msgstr ""
+
+#: ../../index.md:1
+msgid "**[Compatible with Sphinx](sphinx/index.md)** 📄"
+msgstr ""
+
+#: ../../index.md:1
+msgid ""
+"MyST is inspired by Sphinx, and comes with [its own Sphinx "
+"parser](sphinx/index.md). [Write your Sphinx docs in "
+"Markdown](sphinx:usage/quickstart), or convert existing [RST to Markdown"
+"][rst-to-myst] from the CLI or [using an interactive web "
+"interface][mystyc]!"
+msgstr ""
+
+#: ../../index.md:1
+msgid "**[Hackable with Python](api/index.md)** 🐍"
+msgstr ""
+
+#: ../../index.md:1
+msgid ""
+"This MyST parser is built on top of the [`markdown-it-py` package"
+"][markdown-it-py], an pluggable Python parser for Markdown."
+msgstr ""
+
+#: ../../index.md:1
+msgid "**[Hackable with Javascript][markdown-it-myst]** 🌍"
+msgstr ""
+
+#: ../../index.md:1
+msgid ""
+"The [Javascript parser][markdown-it-myst] builds on [markdown-it"
+"][markdown-it], and allows you to parse MyST in websites."
+msgstr ""
+
+#: ../../index.md:47
+msgid "Find the right documentation resources"
+msgstr ""
+
+#: ../../index.md:49
+msgid ""
+"This documentation is organized into a few major sections. **Tutorials** "
+"are step-by-step introductory guides to MyST Markdown. **Topic Guides** "
+"cover specific areas in more depth, and are organized as discrete \"how-"
+"to\" sections. **Reference** sections describe the API/syntax/etc of the "
+"MyST Parser in detail."
+msgstr ""
+
+#: ../../index.md:51
+msgid "In addition, here are a few pointers to help you get started."
+msgstr ""
+
+#: ../../index.md:1
+msgid "**Get started with MyST**"
+msgstr ""
+
+#: ../../index.md:1
+msgid "**[](sphinx/intro.md)**: a step-by-step tutorial."
+msgstr ""
+
+#: ../../index.md:3
+msgid "**[](syntax/syntax.md)**: discusses major MyST syntax components."
+msgstr ""
+
+#: ../../index.md:5
+msgid ""
+"**[The Sphinx guide](sphinx/index.md)**: how to use MyST with your Sphinx"
+" documentation."
+msgstr ""
+
+#: ../../index.md:2
+msgid "**Learn more about MyST**"
+msgstr ""
+
+#: ../../index.md:1
+msgid ""
+"**[](syntax/optional.md)**: additional syntax you can enable for extra "
+"features."
+msgstr ""
+
+#: ../../index.md:3
+msgid ""
+"**[The Python API guide](api/index.md)**: parsing and rendering MyST with"
+" Python."
+msgstr ""
+
+#: ../../index.md:5
+msgid ""
+"**[](explain/index.md)**: background understanding and discussions of "
+"MyST markdown."
+msgstr ""
+
+#: ../../index.md:2
+msgid "**Get inspired**"
+msgstr ""
+
+#: ../../index.md:1
+msgid ""
+"**[Jupyter Book](https://jupyterbook.org)**: An open source project for "
+"building beautiful, publication-quality books and documents from "
+"computational material, built on top of the MyST Parser."
+msgstr ""
+
+#: ../../index.md:3
+msgid ""
+"**[The Jupyter Book gallery](https://gallery.jupyterbook.org)**: examples"
+" of documents built with MyST."
+msgstr ""
+
+#: ../../index.md:115
+msgid "Acknowledgements"
+msgstr ""
+
+#: ../../index.md:117
+msgid ""
+"The MyST markdown language and MyST parser are both supported by the open"
+" community, [The Executable Book Project](https://executablebooks.org)."
+msgstr ""
+

@@ -1,0 +1,632 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-17 08:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/index.md:3
+msgid "MyST-Parser Python API"
+msgstr ""
+
+#: ../../api/index.md:5
+msgid ""
+"MyST-Parser also has a Python API *via* the `myst_parser` package. This "
+"allows you to parse MyST Markdown and render various outputs with Python."
+msgstr ""
+
+#: ../../api/parsers.md:1
+msgid "Parse MyST Markdown"
+msgstr ""
+
+#: ../../api/parsers.md:1
+msgid ""
+"The MyST Parser package heavily uses the the [markdown-it-"
+"py](https://github.com/executablebooks/markdown-it-py) package."
+msgstr ""
+
+#: ../../api/parsers.md:2
+msgid ""
+"{ref}`The MyST-Parser API reference <api/main>` contains a more complete "
+"reference of this API."
+msgstr ""
+
+#: ../../api/parsers.md:8
+msgid "Parsing and rendering helper functions"
+msgstr ""
+
+#: ../../api/parsers.md:10
+msgid ""
+"The MyST Parser comes bundled with some helper functions to quickly parse"
+" MyST Markdown and render its output."
+msgstr ""
+
+#: ../../api/parsers.md:12
+msgid "Parse MyST Markdown to HTML"
+msgstr ""
+
+#: ../../api/parsers.md:14
+msgid "For example, the following code parses markdown and renders as HTML:"
+msgstr ""
+
+#: ../../api/parsers.md:27
+msgid "Parse MyST Markdown to docutils"
+msgstr ""
+
+#: ../../api/parsers.md:29
+msgid ""
+"The following function renders your text as **docutils objects** (for "
+"example, for use with the Sphinx ecosystem):"
+msgstr ""
+
+#: ../../api/parsers.md:44
+msgid "Parse MyST Markdown as `markdown-it` tokens"
+msgstr ""
+
+#: ../../api/parsers.md:46
+msgid ""
+"The MyST Parser uses `markdown-it-py` tokens as an intermediate "
+"representation of your text. Normally these tokens are then *rendered* "
+"into various outputs. If you'd like direct access to the tokens, use the "
+"`to_tokens` function. Here's an example of its use:"
+msgstr ""
+
+#: ../../api/parsers.md:69
+msgid ""
+"Each token is an abstract representation of a piece of MyST Markdown "
+"syntax."
+msgstr ""
+
+#: ../../api/parsers.md:71
+msgid "Use the parser object for more control"
+msgstr ""
+
+#: ../../api/parsers.md:73
+msgid ""
+"The MyST Parser is actually a `markdown-it-py` parser with several "
+"extensions pre-enabled that support the MyST syntax. If you'd like more "
+"control over the parsing process, then you can directly use a `markdown-"
+"it-py` parser with MyST syntax extensions loaded."
+msgstr ""
+
+#: ../../api/parsers.md:1
+msgid ""
+"[`markdown-it-py`](https://markdown-it-py.readthedocs.io/) is an "
+"extensible Python parser and renderer for flavors of markdown. It is "
+"inspired heavily by the [`markdown-it`](https://github.com/markdown-it"
+"/markdown-it) Javascript package. See the documentation of these tools "
+"for more information."
+msgstr ""
+
+#: ../../api/parsers.md:82
+msgid "Load a parser"
+msgstr ""
+
+#: ../../api/parsers.md:84
+msgid ""
+"To load one of these parsers for your own use, use the `default_parser` "
+"function. Below we'll create such a parser and show that it is an "
+"instance of a `markdown-it-py` parser:"
+msgstr ""
+
+#: ../../api/parsers.md:100
+msgid "List the active rules"
+msgstr ""
+
+#: ../../api/parsers.md:102
+msgid ""
+"We can list the **currently active rules** for this parser. Each rules "
+"maps onto a particular markdown syntax, and a Token. To list the active "
+"rules, use the `get_active_rules` method:"
+msgstr ""
+
+#: ../../api/parsers.md:149
+msgid "Parse and render markdown"
+msgstr ""
+
+#: ../../api/parsers.md:151
+msgid ""
+"Once we have a Parser instance, we can use it to parse some markdown. Use"
+" the `render` function to do so:"
+msgstr ""
+
+#: ../../api/parsers.md:164
+msgid "Disable and enable rules"
+msgstr ""
+
+#: ../../api/parsers.md:166
+msgid ""
+"You can disable and enable rules for a parser using the `disable` and "
+"`enable` methods. For example, below we'll disable the `emphasis` rule "
+"(which is what detected the `*abc*` syntax above) and re-render the text:"
+msgstr ""
+
+#: ../../api/parsers.md:179
+msgid ""
+"As you can see, the parser no longer detected the `*<text>*` syntax as "
+"requiring an _emphasis_."
+msgstr ""
+
+#: ../../api/parsers.md:181
+msgid "Turn off all block-level syntax"
+msgstr ""
+
+#: ../../api/parsers.md:183
+msgid ""
+"If you'd like to use your parser *only* for in-line content, you may turn"
+" off all block-level syntax with the `renderInline` method:"
+msgstr ""
+
+#: ../../api/parsers.md:196
+msgid "The Token Stream"
+msgstr ""
+
+#: ../../api/parsers.md:198
+msgid ""
+"When you parse markdown with the MyST Parser, the result is a flat stream"
+" of **Tokens**. These are abstract representations of each type of syntax"
+" that the parser has detected."
+msgstr ""
+
+#: ../../api/parsers.md:201
+msgid "For example, below we'll show the token stream for some simple markdown:"
+msgstr ""
+
+#: ../../api/parsers.md:234
+msgid ""
+"Note that these tokens are **flat**, although some of the tokens refere "
+"to one another (for example, Tokens with `_open` and `_close` represent "
+"the start/end of blocks)."
+msgstr ""
+
+#: ../../api/parsers.md:236
+msgid ""
+"Tokens of type `inline` will have a `children` attribute that contains a "
+"list of the Tokens that they contain. For example:"
+msgstr ""
+
+#: ../../api/parsers.md:249
+msgid "Rendering tokens"
+msgstr ""
+
+#: ../../api/parsers.md:251
+msgid ""
+"The list of Token objects can be rendered to a number of different "
+"outputs. This involves first processing the Tokens, and then defining how"
+" each should be rendered in an output format (e.g., HTML or Docutils)."
+msgstr ""
+
+#: ../../api/parsers.md:254
+msgid ""
+"For example, the sphinx renderer first converts the token to a nested "
+"structure, collapsing the opening/closing tokens into single tokens:"
+msgstr ""
+
+#: ../../api/parsers.md:284
+msgid ""
+"It then renders each token to a Sphinx-based docutils object. See [the "
+"renderers section](renderers.md) for more information about rendering "
+"tokens."
+msgstr ""
+
+#: ../../api/reference.rst:3
+msgid "API Reference"
+msgstr ""
+
+#: ../../api/reference.rst:8
+msgid "Directive Parsing Reference"
+msgstr ""
+
+#: myst_parser.parse_directives:1 of
+msgid ""
+"Fenced code blocks are parsed as directives, if the block starts with "
+"``{directive_name}``, followed by arguments on the same line."
+msgstr ""
+
+#: myst_parser.parse_directives:5 of
+msgid ""
+"Directive options are read from a YAML block, if the first content line "
+"starts with ``---``, e.g."
+msgstr ""
+
+#: myst_parser.parse_directives:19 of
+msgid ""
+"Or the option block will be parsed if the first content line starts with "
+"``:``, as a YAML block consisting of every line that starts with a ``:``,"
+" e.g."
+msgstr ""
+
+#: myst_parser.parse_directives:31 of
+msgid ""
+"If the first line of a directive's content is blank, this will be "
+"stripped from the content. This is to allow for separation between the "
+"option block and content."
+msgstr ""
+
+#: myst_parser.parse_directives.DirectiveParsingError:1 of
+msgid "Raise on parsing/validation error."
+msgstr ""
+
+#: myst_parser.parse_directives.parse_directive_text:1 of
+msgid "Parse (and validate) the full directive text."
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer.render
+#: myst_parser.parse_directives.parse_directive_text
+#: myst_parser.sphinx_parser.MystParser.parse
+#: myst_parser.sphinx_renderer.mock_sphinx_env of
+msgid "Parameters"
+msgstr ""
+
+#: myst_parser.parse_directives.parse_directive_text:3 of
+msgid ""
+"The text on the same line as the directive name. May be an argument or "
+"body text, dependent on the directive"
+msgstr ""
+
+#: myst_parser.parse_directives.parse_directive_text:5 of
+msgid "All text after the first line. Can include options."
+msgstr ""
+
+#: myst_parser.parse_directives.parse_directive_text:6 of
+msgid "Whether to validate the values of options"
+msgstr ""
+
+#: myst_parser.parse_directives.parse_directive_options:1 of
+msgid "Parse (and validate) the directive option section."
+msgstr ""
+
+#: myst_parser.parse_directives.parse_directive_arguments:1 of
+msgid "Parse (and validate) the directive argument section."
+msgstr ""
+
+#: ../../api/reference.rst:14
+msgid "MyST Renderers"
+msgstr ""
+
+#: ../../api/reference.rst:17
+msgid ""
+"These renderers take the markdown-it parsed token stream and convert it "
+"to the docutils AST. The sphinx renderer is a subclass of the docutils "
+"one, with some additional methods only available *via* sphinx .e.g. "
+"multi-document cross-referencing."
+msgstr ""
+
+#: ../../api/reference.rst:24
+msgid "Docutils"
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer:1 of
+msgid "Bases: :class:`markdown_it.renderer.RendererProtocol`"
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer:1
+#: myst_parser.sphinx_renderer.SphinxRenderer:1 of
+msgid ""
+"A markdown-it-py renderer to populate (in-place) a `docutils.document` "
+"AST."
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer:3 of
+msgid "Note, this render is not dependent on Sphinx."
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer.__init__:1 of
+msgid "Load the renderer (called by ``MarkdownIt``)"
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer.render:1 of
+msgid "Run the render on a token stream."
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer.render:3 of
+msgid "list on block tokens to render"
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer.render:4 of
+msgid "params of parser instance"
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer.render:5 of
+msgid ""
+"the markdown-it environment sandbox associated with the tokens, "
+"containing additional metadata like reference info"
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer.nested_render_text:1 of
+msgid "Render unparsed text."
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer.current_node_context:1 of
+msgid "Context manager for temporarily setting the current node."
+msgstr ""
+
+#: myst_parser.docutils_renderer.DocutilsRenderer.add_line_and_source_path:1 of
+msgid "Copy the line number and document source path to the docutils node."
+msgstr ""
+
+#: ../../api/reference.rst:35
+msgid "Sphinx"
+msgstr ""
+
+#: myst_parser.sphinx_renderer.SphinxRenderer:1 of
+msgid "Bases: :class:`myst_parser.docutils_renderer.DocutilsRenderer`"
+msgstr ""
+
+#: myst_parser.sphinx_renderer.SphinxRenderer:3 of
+msgid ""
+"This is sub-class of `DocutilsRenderer` that handles sphinx specific "
+"aspects, such as cross-referencing."
+msgstr ""
+
+#: myst_parser.sphinx_renderer.SphinxRenderer.handle_cross_reference:1 of
+msgid "Create nodes for references that are not immediately resolvable."
+msgstr ""
+
+#: myst_parser.sphinx_renderer.SphinxRenderer.render_math_block_eqno:1 of
+msgid "Render math with referencable labels, e.g. ``$a=1$ (label)``."
+msgstr ""
+
+#: ../../api/reference.rst:45
+msgid "Mocking"
+msgstr ""
+
+#: ../../api/reference.rst:47
+msgid ""
+"These classes are parsed to sphinx roles and directives, to mimic the "
+"original docutls rST specific parser elements, but instead run nested "
+"parsing with the markdown parser."
+msgstr ""
+
+#: myst_parser.mocking.MockIncludeDirective:1 myst_parser.mocking.MockInliner:1
+#: myst_parser.mocking.MockState:1 myst_parser.mocking.MockStateMachine:1 of
+msgid "Bases: :class:`object`"
+msgstr ""
+
+#: myst_parser.mocking.MockInliner:1 of
+msgid "A mock version of `docutils.parsers.rst.states.Inliner`."
+msgstr ""
+
+#: myst_parser.mocking.MockInliner:3 of
+msgid "This is parsed to role functions."
+msgstr ""
+
+#: myst_parser.mocking.MockState:1 of
+msgid "A mock version of `docutils.parsers.rst.states.RSTState`."
+msgstr ""
+
+#: myst_parser.mocking.MockState:3 of
+msgid ""
+"This is parsed to the `Directives.run()` method, so that they may run "
+"nested parses on their content that will be parsed as markdown, rather "
+"than RST."
+msgstr ""
+
+#: myst_parser.mocking.MockState.parse_directive_block:1 of
+msgid "Parse the full directive text"
+msgstr ""
+
+#: myst_parser.mocking.MockState.inline_text
+#: myst_parser.mocking.MockState.parse_directive_block of
+msgid "Returns"
+msgstr ""
+
+#: myst_parser.mocking.MockState.parse_directive_block:3 of
+msgid "(arguments, options, content, content_offset)"
+msgstr ""
+
+#: myst_parser.mocking.MockState.nested_parse:1 of
+msgid "Perform a nested parse of the input block, with ``node`` as the parent."
+msgstr ""
+
+#: myst_parser.mocking.MockState.parse_target:1 of
+msgid ""
+"Taken from https://github.com/docutils-"
+"mirror/docutils/blob/e88c5fb08d5cdfa8b4ac1020dd6f7177778d5990/docutils/parsers/rst/states.py#L1927"
+"  # noqa: E501"
+msgstr ""
+
+#: myst_parser.mocking.MockState.inline_text:1 of
+msgid "Parse text with only inline rules."
+msgstr ""
+
+#: myst_parser.mocking.MockState.inline_text:3 of
+msgid "(list of nodes, list of messages)"
+msgstr ""
+
+#: myst_parser.mocking.MockState.block_quote:1 of
+msgid ""
+"Parse a block quote, which is a block of text, followed by an (optional) "
+"attribution."
+msgstr ""
+
+#: myst_parser.mocking.MockStateMachine:1 of
+msgid "A mock version of `docutils.parsers.rst.states.RSTStateMachine`."
+msgstr ""
+
+#: myst_parser.mocking.MockStateMachine:3 of
+msgid "This is parsed to the `Directives.run()` method."
+msgstr ""
+
+#: myst_parser.mocking.MockStateMachine.get_source:1 of
+msgid "Return document source path."
+msgstr ""
+
+#: myst_parser.mocking.MockStateMachine.get_source_and_line:1 of
+msgid "Return (source path, line) tuple for current or given line number."
+msgstr ""
+
+#: myst_parser.mocking.MockIncludeDirective:1 of
+msgid ""
+"This directive uses a lot of statemachine logic that is not yet mocked. "
+"Therefore, we treat it as a special case (at least for now)."
+msgstr ""
+
+#: myst_parser.mocking.MockIncludeDirective:4 of
+msgid ""
+"See: https://docutils.sourceforge.io/docs/ref/rst/directives.html"
+"#including-an-external-document-fragment"
+msgstr ""
+
+#: myst_parser.mocking.MockIncludeDirective.add_name:1 of
+msgid "Append self.options['name'] to node['names'] if it exists."
+msgstr ""
+
+#: myst_parser.mocking.MockIncludeDirective.add_name:3 of
+msgid "Also normalize the name string and register it as explicit target."
+msgstr ""
+
+#: ../../api/reference.rst:73
+msgid "Additional Methods"
+msgstr ""
+
+#: myst_parser.docutils_renderer.make_document:1 of
+msgid "Create a new docutils document."
+msgstr ""
+
+#: myst_parser.docutils_renderer.html_meta_to_nodes:1 of
+msgid ""
+"Replicate the `meta` directive, by converting a dictionary to a list of "
+"pending meta nodes"
+msgstr ""
+
+#: myst_parser.docutils_renderer.html_meta_to_nodes:4 of
+msgid ""
+"See: https://www.sphinx-"
+"doc.org/en/master/usage/restructuredtext/basics.html#html-metadata"
+msgstr ""
+
+#: myst_parser.sphinx_renderer.minimal_sphinx_app:1 of
+msgid ""
+"Create a minimal Sphinx environment; loading sphinx roles, directives, "
+"etc."
+msgstr ""
+
+#: myst_parser.sphinx_renderer.mock_sphinx_env:1 of
+msgid ""
+"Set up an environment, to parse sphinx roles/directives, outside of a "
+"`sphinx-build`."
+msgstr ""
+
+#: myst_parser.sphinx_renderer.mock_sphinx_env:4 of
+msgid "a dictionary representation of the sphinx `conf.py`"
+msgstr ""
+
+#: myst_parser.sphinx_renderer.mock_sphinx_env:5 of
+msgid ""
+"a path to a source directory (for example, can be used for `include` "
+"statements)"
+msgstr ""
+
+#: myst_parser.sphinx_renderer.mock_sphinx_env:8 of
+msgid ""
+"This primarily copies the code in "
+"`sphinx.util.docutils.docutils_namespace` and "
+"`sphinx.util.docutils.sphinx_domains`."
+msgstr ""
+
+#: ../../api/reference.rst:88
+msgid "Sphinx Parser Reference"
+msgstr ""
+
+#: ../../api/reference.rst:90
+msgid ""
+"This class builds on the "
+":py:class:`~myst_parser.sphinx_renderer.SphinxRenderer` to generate a "
+"parser for Sphinx, using the :ref:`Sphinx parser API <sphinx:parser-"
+"api>`:"
+msgstr ""
+
+#: myst_parser.sphinx_parser.MystParser:1 of
+msgid "Bases: :class:`sphinx.parsers.Parser`"
+msgstr ""
+
+#: myst_parser.sphinx_parser.MystParser:1 of
+msgid "Sphinx parser for Markedly Structured Text (MyST)."
+msgstr ""
+
+#: ../../docstring myst_parser.sphinx_parser.MystParser.supported:1 of
+msgid "Aliases this parser supports."
+msgstr ""
+
+#: myst_parser.sphinx_parser.MystParser.parse:1 of
+msgid "Parse source text."
+msgstr ""
+
+#: myst_parser.sphinx_parser.MystParser.parse:3 of
+msgid "The source string to parse"
+msgstr ""
+
+#: myst_parser.sphinx_parser.MystParser.parse:4 of
+msgid "The root docutils node to add AST elements to"
+msgstr ""
+
+#: ../../api/renderers.md:1
+msgid "Render outputs"
+msgstr ""
+
+#: ../../api/renderers.md:3
+msgid ""
+"There are a few different ways to render MyST Parser tokens into "
+"different outputs. This section covers a few common ones."
+msgstr ""
+
+#: ../../api/renderers.md:6
+msgid "The `docutils` renderer"
+msgstr ""
+
+#: ../../api/renderers.md:8
+msgid ""
+"The `myst_parser.docutils_renderer.DocutilsRenderer` converts a token "
+"directly to the `docutils.document` representation of the document, "
+"converting roles and directives to a `docutils.nodes` if a converter can "
+"be found for the given name."
+msgstr ""
+
+#: ../../api/renderers.md:53
+msgid "The Sphinx renderer"
+msgstr ""
+
+#: ../../api/renderers.md:55
+msgid ""
+"The `myst_parser.sphinx_renderer.SphinxRenderer` builds on the "
+"`DocutilsRenderer` to add sphinx specific nodes, e.g. for cross-"
+"referencing between documents."
+msgstr ""
+
+#: ../../api/renderers.md:57
+msgid ""
+"To use the sphinx specific roles and directives outside of a `sphinx-"
+"build`, they must first be loaded with the `in_sphinx_env` option."
+msgstr ""
+
+#: ../../api/renderers.md:109
+msgid "Set Sphinx configuration for testing"
+msgstr ""
+
+#: ../../api/renderers.md:111
+msgid ""
+"You can also set Sphinx configuration *via* `sphinx_conf`. This is a "
+"dictionary representation of the contents of the Sphinx `conf.py`."
+msgstr ""
+
+#: ../../api/renderers.md:1
+msgid ""
+"This feature is only meant for simple testing. It will fail for "
+"extensions that require the full Sphinx build process and/or access to "
+"external files."
+msgstr ""
+

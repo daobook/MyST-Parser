@@ -1,0 +1,1113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-11-17 08:52+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../sphinx/faq.md:1
+msgid "Common errors and questions"
+msgstr ""
+
+#: ../../sphinx/faq.md:3
+msgid ""
+"These are common issues and gotchas that people may experience when using"
+" the MyST Sphinx extension."
+msgstr ""
+
+#: ../../sphinx/faq.md:5
+msgid "What markup language should I use inside directives?"
+msgstr ""
+
+#: ../../sphinx/faq.md:7
+msgid ""
+"If you need to parse content *inside* of another block of content (for "
+"example, the content inside a **note directive**), note that the MyST "
+"parser will be used for this nested parsing as well."
+msgstr ""
+
+#: ../../sphinx/faq.md:11
+msgid "Why doesn't my role/directive recognize markdown link syntax?"
+msgstr ""
+
+#: ../../sphinx/faq.md:13
+msgid ""
+"There are some roles/directives that _hard-code_ syntax into their "
+"behavior. For example, many roles allow you to supply titles for links "
+"like so: `` {role}`My title <myref>` ``. While this looks like "
+"reStructuredText, the role may be explicitly expecting the `My title "
+"<myref>` structure, and so MyST will behave the same way."
+msgstr ""
+
+#: ../../sphinx/index.md:1
+msgid "MyST with Sphinx"
+msgstr ""
+
+#: ../../sphinx/index.md:3
+msgid ""
+"The MyST Parser comes bundled with a Sphinx extension that allows you to "
+"use write Sphinx documentation entirely in MyST (or, in a combination of "
+"rST and MyST). The following sections cover some major functionality of "
+"the Sphinx extension."
+msgstr ""
+
+#: ../../sphinx/index.md:1
+msgid "For an introduction to MyST with Sphinx, see [](intro.md)."
+msgstr ""
+
+#: ../../sphinx/intro.md:2
+msgid "Get started with MyST in Sphinx"
+msgstr ""
+
+#: ../../sphinx/intro.md:4
+msgid ""
+"This page describes how to get started with the MyST parser, with a focus"
+" on enabling it in the Sphinx documentation engine."
+msgstr ""
+
+#: ../../sphinx/intro.md:6
+msgid "Install the MyST Parser"
+msgstr ""
+
+#: ../../sphinx/intro.md:8
+msgid "[![PyPI][pypi-badge]][pypi-link] [![Conda][conda-badge]][conda-link]"
+msgstr ""
+
+#: ../../sphinx/intro.md:8
+msgid "PyPI"
+msgstr ""
+
+#: ../../sphinx/intro.md:8
+msgid "Conda"
+msgstr ""
+
+#: ../../sphinx/intro.md:11
+msgid "Installing the MyST parser provides access to two tools:"
+msgstr ""
+
+#: ../../sphinx/intro.md:13
+msgid ""
+"A Python library that can parse MyST markdown, and render it to a number "
+"of output formats (in particular, `docutils` format for use with Sphinx)."
+msgstr ""
+
+#: ../../sphinx/intro.md:14
+msgid ""
+"A Sphinx extension that that utilizes the above tool in order to parse "
+"MyST Markdown in your documentation."
+msgstr ""
+
+#: ../../sphinx/intro.md:16
+msgid ""
+"To install the MyST parser, run the following in a [Conda "
+"environment](https://docs.conda.io) (recommended):"
+msgstr ""
+
+#: ../../sphinx/intro.md:23
+msgid "or"
+msgstr ""
+
+#: ../../sphinx/intro.md:35
+msgid "Enable MyST in Sphinx"
+msgstr ""
+
+#: ../../sphinx/intro.md:37
+msgid ""
+"Sphinx is a documentation generator for building a website or book from "
+"multiple source documents and assets. To get started with Sphinx, see "
+"their [Quickstart Guide](https://www.sphinx-"
+"doc.org/en/master/usage/quickstart.html). This guide assumes that you've "
+"already got a pre-existing Sphinx site that builds properly."
+msgstr ""
+
+#: ../../sphinx/intro.md:39
+msgid ""
+"To use the MyST parser in Sphinx, simply add the following to your "
+"`conf.py` file:"
+msgstr ""
+
+#: ../../sphinx/intro.md:45
+msgid ""
+"This will activate the MyST Parser extension, causing all documents with "
+"the `.md` extension to be parsed as MyST."
+msgstr ""
+
+#: ../../sphinx/intro.md:47
+msgid "You can use both MyST and reStructuredText"
+msgstr ""
+
+#: ../../sphinx/intro.md:1
+msgid ""
+"Activating the MyST parser will simply *enable* parsing markdown files "
+"with MyST, and the rST parser that ships with Sphinx will still work the "
+"same way. Files ending with `.md` will be parsed as MyST, and files "
+"ending in `.rst` will be parsed as reStructuredText."
+msgstr ""
+
+#: ../../sphinx/intro.md:55
+msgid "Write your first markdown document"
+msgstr ""
+
+#: ../../sphinx/intro.md:57
+msgid ""
+"Now that you've enabled the `myst-parser` in Sphinx, you can write MyST "
+"markdown in a file that ends with `.md` extension for your pages."
+msgstr ""
+
+#: ../../sphinx/intro.md:1
+msgid "MyST markdown is a mixture of two flavors of markdown:"
+msgstr ""
+
+#: ../../sphinx/intro.md:3
+msgid ""
+"It supports all the syntax of **[CommonMark "
+"Markdown](https://commonmark.org/)** at its base. This is a community "
+"standard flavor of markdown used across many projects."
+msgstr ""
+
+#: ../../sphinx/intro.md:6
+msgid ""
+"In addition, it includes **[several extensions](../syntax/syntax.md) to "
+"CommonMark**. These add extra syntax features for technical writing, such"
+" as the roles and directives used by Sphinx."
+msgstr ""
+
+#: ../../sphinx/intro.md:69
+msgid ""
+"To start off, create an empty file called `myfile.md` and give it a "
+"markdown title and text."
+msgstr ""
+
+#: ../../sphinx/intro.md:77
+msgid ""
+"In the \"main document\" of your Sphinx project (the landing page of your"
+" Sphinx documentation), include `myfile.md` in a `toctree` directive so "
+"that it is included in your documentation:"
+msgstr ""
+
+#: ../../sphinx/intro.md:85
+msgid "Now build your site:"
+msgstr ""
+
+#: ../../sphinx/intro.md:91
+msgid ""
+"and navigate to your landing page. You should see a link to the page "
+"generated from `myfile.md`. Clicking that link should take you to your "
+"rendered Markdown!"
+msgstr ""
+
+#: ../../sphinx/intro.md:95
+msgid "Extend markdown with a directive"
+msgstr ""
+
+#: ../../sphinx/intro.md:97
+msgid ""
+"The most important functionality available with MyST markdown is writing "
+"**directives**. Directives are kind-of like functions that are designed "
+"for writing content. Sphinx and reStructuredText use directives "
+"extensively. Here's how a directive looks in MyST markdown:"
+msgstr ""
+
+#: ../../sphinx/intro.md:125
+msgid ""
+"For those who are familiar with reStructuredText, you can find [a mapping"
+" from MyST directive syntax to rST syntax here](syntax/directives)."
+msgstr ""
+
+#: ../../sphinx/intro.md:128
+msgid ""
+"As seen above, there are four main parts to consider when writing "
+"directives."
+msgstr ""
+
+#: ../../sphinx/intro.md:130
+msgid ""
+"**the directive name** is kind of like the function name. Different names"
+" trigger different functionality. They are wrapped in `{}` brackets."
+msgstr ""
+
+#: ../../sphinx/intro.md:132
+msgid ""
+"**directive arguments** come just after the directive name. They can be "
+"used to trigger behavior in the directive."
+msgstr ""
+
+#: ../../sphinx/intro.md:134
+msgid ""
+"**directive options** come just after the first line of the directive. "
+"They also control behavior of the directive."
+msgstr ""
+
+#: ../../sphinx/intro.md:136
+msgid ""
+"**directive content** is markdown that you put inside the directive. The "
+"directive often displays the content in a special way."
+msgstr ""
+
+#: ../../sphinx/intro.md:139
+msgid ""
+"For example, add an **`admonition`** directive to your markdown page, "
+"like so:"
+msgstr ""
+
+#: ../../sphinx/intro.md:154
+msgid ""
+"Re-build your Sphinx site and you should see the new admonition box show "
+"up."
+msgstr ""
+
+#: ../../sphinx/intro.md:156
+msgid ""
+"As you can see, we've used each of the four pieces described above to "
+"configure this directive. Here's how the directive looks when rendered:"
+msgstr ""
+
+#: ../../sphinx/intro.md:159
+msgid "Here's my title"
+msgstr ""
+
+#: ../../sphinx/intro.md:1
+msgid "Here's my admonition content"
+msgstr ""
+
+#: ../../sphinx/intro.md:1
+msgid ""
+"For more information about using directives with MyST, see "
+"{ref}`syntax/directives`."
+msgstr ""
+
+#: ../../sphinx/intro.md:170
+msgid "Reference a section label with a role"
+msgstr ""
+
+#: ../../sphinx/intro.md:172
+msgid ""
+"Roles are another core Sphinx tool. They behave similarly to directives, "
+"but are given in-line with text instead of in a separate block. They have"
+" the following form:"
+msgstr ""
+
+#: ../../sphinx/intro.md:179
+msgid ""
+"Roles are a bit more simple than directives, though some roles allow for "
+"more complex syntax inside their content area. For example, the `ref` "
+"role is used to make references to other sections of your documentation, "
+"and allows you to specify the displayed text as well as the reference "
+"itself within the role:"
+msgstr ""
+
+#: ../../sphinx/intro.md:186
+msgid ""
+"For example, let's add a **section reference** to your markdown file. To "
+"do this, we'll first need to add a **label** to a section of your page. "
+"To do so, use the following structure:"
+msgstr ""
+
+#: ../../sphinx/intro.md:195 ../../sphinx/intro.md:223
+msgid "Add this to your markdown file from above, like so:"
+msgstr ""
+
+#: ../../sphinx/intro.md:214
+msgid ""
+"Because your new section has a label (`section-two`), you can reference "
+"it with the `ref` role. Add it to your markdown file like so:"
+msgstr ""
+
+#: ../../sphinx/intro.md:245
+msgid ""
+"Re-build your documentation and you should see the references "
+"automatically inserted. Here's an example of how the `ref` roles look in "
+"the final output:"
+msgstr ""
+
+#: ../../sphinx/intro.md:248
+msgid "Here's a reference to {ref}`sphinx/intro:reference`."
+msgstr ""
+
+#: ../../sphinx/intro.md:1
+msgid "For more information about roles, see {ref}`syntax/roles`."
+msgstr ""
+
+#: ../../sphinx/intro.md:254
+msgid "Add a comment using extra MyST syntax"
+msgstr ""
+
+#: ../../sphinx/intro.md:256
+msgid ""
+"There are many other kinds of syntax in MyST to make writing more "
+"productive and enjoyable. Let's play around with a couple of options."
+msgstr ""
+
+#: ../../sphinx/intro.md:259
+msgid ""
+"First, try writing a **comment**. This can be done by adding a line "
+"starting with `%` to your markdown file. For example, try adding a "
+"comment to your markdown file, like so:"
+msgstr ""
+
+#: ../../sphinx/intro.md:284
+msgid ""
+"Re-build your documentation - the comment should _not_ be present in the "
+"output."
+msgstr ""
+
+#: ../../sphinx/intro.md:286
+msgid "Extending MyST via configuration"
+msgstr ""
+
+#: ../../sphinx/intro.md:288
+msgid ""
+"Thus far we have covered the basic MyST syntax with Sphinx. However, "
+"there are a few ways that you can _extend_ this base syntax and get new "
+"functionality. The first is to enable some \"out of the box\" extensions "
+"with the MyST parser. These add new syntax that aren't part of \"core "
+"MyST\" but that are useful nonetheless (and may become part of core MyST "
+"one day)."
+msgstr ""
+
+#: ../../sphinx/intro.md:293
+msgid ""
+"Let's extend the base MyST syntax to enable **fences for directives**. "
+"This allows you to define a directive with `:::` in addition to ` ``` `. "
+"This is useful for directives that have markdown in their content. By "
+"using `:::`, a non-MyST markdown renderer will still be able to render "
+"what is inside (instead of displaying it as a code block)."
+msgstr ""
+
+#: ../../sphinx/intro.md:298
+msgid ""
+"To activate extensions, add a list to your `conf.py` file that contains "
+"the extensions you'd like to activate. For example, to activate the "
+"\"colon code fences\" extension, add the following to your `conf.py` "
+"file:"
+msgstr ""
+
+#: ../../sphinx/intro.md:307
+msgid ""
+"You may now use `:::` to define directives. For example, modify your "
+"markdown file like so:"
+msgstr ""
+
+#: ../../sphinx/intro.md:335
+msgid ""
+"It should render as a \"note block\" in your output when you build your "
+"site."
+msgstr ""
+
+#: ../../sphinx/intro.md:337
+msgid "Install a new Sphinx extension and use its functionality"
+msgstr ""
+
+#: ../../sphinx/intro.md:339
+msgid ""
+"The other way to extend MyST in Sphinx is to install Sphinx extensions "
+"that define new directives. Directives are kind of like \"functions\" in "
+"Sphinx, and installing a new package can add new directives to use in "
+"your content."
+msgstr ""
+
+#: ../../sphinx/intro.md:342
+msgid ""
+"For example, let's install the `sphinxcontib.mermaid` extension, which "
+"will allow us to generate [Mermaid diagrams](https://mermaid-"
+"js.github.io/mermaid/#/) with MyST."
+msgstr ""
+
+#: ../../sphinx/intro.md:344
+msgid "First, install `sphinxcontrib.mermaid`:"
+msgstr ""
+
+#: ../../sphinx/intro.md:350
+msgid "Next, add it to your list of extensions in `conf.py`:"
+msgstr ""
+
+#: ../../sphinx/intro.md:359
+msgid "Now, add a **mermaid directive** to your markdown file. For example:"
+msgstr ""
+
+#: ../../sphinx/intro.md:403
+msgid "When you build your documentation, you should see something like this:"
+msgstr ""
+
+#: ../../sphinx/intro.md:419
+msgid "Next steps - Learn more about MyST Syntax"
+msgstr ""
+
+#: ../../sphinx/intro.md:421
+msgid ""
+"In this tutorial we've covered some of the basics of MyST Markdown, how "
+"to enable and use it with Sphinx, and how to extend it for new use-cases."
+" There is much more functionality in MyST (and in the Sphinx ecosystem) "
+"that we haven't covered here. For more information, see the "
+"[documentation on MyST Syntax](../syntax/syntax.md) and the "
+"[documentation about using MyST with Sphinx](../sphinx/index.md)."
+msgstr ""
+
+#: ../../sphinx/reference.md:2
+msgid "Sphinx configuration options"
+msgstr ""
+
+#: ../../sphinx/reference.md:4
+msgid ""
+"You can control the behaviour of the MyST parser in Sphinx by modifying "
+"your `conf.py` file. To do so, use the keywords beginning `myst_`."
+msgstr ""
+
+#: ../../sphinx/reference.md:1
+msgid "Option"
+msgstr ""
+
+#: ../../sphinx/reference.md:2
+msgid "Default"
+msgstr ""
+
+#: ../../sphinx/reference.md:3
+msgid "Description"
+msgstr ""
+
+#: ../../sphinx/reference.md:4
+msgid "`myst_commonmark_only`"
+msgstr ""
+
+#: ../../sphinx/reference.md:5 ../../sphinx/reference.md:19
+msgid "`False`"
+msgstr ""
+
+#: ../../sphinx/reference.md:6
+msgid ""
+"If `True` convert text as strict CommonMark (all options below are then "
+"ignored). Note that strict CommonMark is unable to parse any directives, "
+"including the `toctree` directive, thus limiting MyST parser to single-"
+"page documentations. Use in conjunction with [sphinx-external-"
+"toc](https://github.com/executablebooks/sphinx-external-toc) Sphinx "
+"extension to counter this limitation."
+msgstr ""
+
+#: ../../sphinx/reference.md:7
+msgid "`myst_disable_syntax`"
+msgstr ""
+
+#: ../../sphinx/reference.md:8
+msgid "()"
+msgstr ""
+
+#: ../../sphinx/reference.md:9
+msgid ""
+"List of markdown syntax elements to disable, see the [markdown-it parser "
+"guide](markdown_it:using)."
+msgstr ""
+
+#: ../../sphinx/reference.md:10
+msgid "`myst_enable_extensions`"
+msgstr ""
+
+#: ../../sphinx/reference.md:11
+msgid "`[\"dollarmath\"]`"
+msgstr ""
+
+#: ../../sphinx/reference.md:12
+msgid "Enable Markdown extensions, [see here](../syntax/optional.md) for details."
+msgstr ""
+
+#: ../../sphinx/reference.md:13
+msgid "`myst_url_schemes`"
+msgstr ""
+
+#: ../../sphinx/reference.md:14 ../../sphinx/reference.md:18
+#: ../../sphinx/reference.md:21
+msgid "`None`"
+msgstr ""
+
+#: ../../sphinx/reference.md:15
+msgid ""
+"[URI schemes](https://en.wikipedia.org/wiki/List_of_URI_schemes) that "
+"will be recognised as external URLs in `[](scheme:loc)` syntax, or set "
+"`None` to recognise all. Other links will be resolved as internal cross-"
+"references."
+msgstr ""
+
+#: ../../sphinx/reference.md:17
+msgid "`myst_heading_anchors`"
+msgstr ""
+
+#: ../../sphinx/reference.md:19
+msgid ""
+"Enable auto-generated heading anchors, up to a maximum level, [see "
+"here](syntax/header-anchors) for details."
+msgstr ""
+
+#: ../../sphinx/reference.md:20
+msgid "`myst_heading_slug_func`"
+msgstr ""
+
+#: ../../sphinx/reference.md:22
+msgid ""
+"Use the specified function to auto-generate heading anchors, [see "
+"here](syntax/header-anchors) for details."
+msgstr ""
+
+#: ../../sphinx/reference.md:23
+msgid "`myst_substitutions`"
+msgstr ""
+
+#: ../../sphinx/reference.md:24 ../../sphinx/reference.md:27
+msgid "`{}`"
+msgstr ""
+
+#: ../../sphinx/reference.md:25
+msgid ""
+"A mapping of keys to substitutions, used globally for all MyST documents "
+"when the \"substitution\" extension is enabled."
+msgstr ""
+
+#: ../../sphinx/reference.md:26
+msgid "`myst_html_meta`"
+msgstr ""
+
+#: ../../sphinx/reference.md:28
+msgid ""
+"A mapping of keys to HTML metadata, used globally for all MyST documents."
+" See [](syntax/html_meta)."
+msgstr ""
+
+#: ../../sphinx/reference.md:29
+msgid "`myst_footnote_transition`"
+msgstr ""
+
+#: ../../sphinx/reference.md:8 ../../sphinx/reference.md:11
+#: ../../sphinx/reference.md:15 ../../sphinx/reference.md:22
+#: ../../sphinx/reference.md:30
+msgid "`True`"
+msgstr ""
+
+#: ../../sphinx/reference.md:31
+msgid "Place a transition before any footnotes."
+msgstr ""
+
+#: ../../sphinx/reference.md:32
+msgid "`myst_words_per_minute`"
+msgstr ""
+
+#: ../../sphinx/reference.md:33
+msgid "`200`"
+msgstr ""
+
+#: ../../sphinx/reference.md:34
+msgid "Reading speed used to calculate `` {sub-ref}`wordcount-minutes` ``"
+msgstr ""
+
+#: ../../sphinx/reference.md:46
+msgid "List of extensions:"
+msgstr ""
+
+#: ../../sphinx/reference.md:48
+msgid ""
+"\"amsmath\": enable direct parsing of "
+"[amsmath](https://ctan.org/pkg/amsmath) LaTeX equations"
+msgstr ""
+
+#: ../../sphinx/reference.md:49
+msgid ""
+"\"colon_fence\": Enable code fences using `:::` delimiters, [see "
+"here](syntax/colon_fence) for details"
+msgstr ""
+
+#: ../../sphinx/reference.md:50
+msgid "\"deflist\""
+msgstr ""
+
+#: ../../sphinx/reference.md:51
+msgid "\"dollarmath\": Enable parsing of dollar `$` and `$$` encapsulated math"
+msgstr ""
+
+#: ../../sphinx/reference.md:52
+msgid ""
+"\"html_admonition\": Convert `<div class=\"admonition\">` elements to "
+"sphinx admonition nodes, see the [HTML admonition syntax](syntax/html-"
+"admonition) for details"
+msgstr ""
+
+#: ../../sphinx/reference.md:53
+msgid ""
+"\"html_image\": Convert HTML `<img>` elements to sphinx image nodes, see "
+"the [image syntax](syntax/images) for details"
+msgstr ""
+
+#: ../../sphinx/reference.md:54
+msgid "\"linkify\": automatically identify \"bare\" web URLs and add hyperlinks"
+msgstr ""
+
+#: ../../sphinx/reference.md:55
+msgid "\"replacements\": automatically convert some common typographic texts"
+msgstr ""
+
+#: ../../sphinx/reference.md:56
+msgid ""
+"\"smartquotes\": automatically convert standard quotations to their "
+"opening/closing variants"
+msgstr ""
+
+#: ../../sphinx/reference.md:57
+msgid ""
+"\"substitution\": substitute keys, see the [substitutions "
+"syntax](syntax/substitutions) for details"
+msgstr ""
+
+#: ../../sphinx/reference.md:58
+msgid ""
+"\"tasklist\": add check-boxes to the start of list items, see the "
+"[tasklist syntax](syntax/tasklists) for details"
+msgstr ""
+
+#: ../../sphinx/reference.md:60
+msgid ""
+"Math specific, when `\"dollarmath\"` activated, see the [Math "
+"syntax](syntax/math) for more details:"
+msgstr ""
+
+#: ../../sphinx/reference.md:4
+msgid "`myst_dmath_double_inline`"
+msgstr ""
+
+#: ../../sphinx/reference.md:6
+msgid "Allow display math (i.e. `$$`) within an inline context"
+msgstr ""
+
+#: ../../sphinx/reference.md:7
+msgid "`myst_dmath_allow_labels`"
+msgstr ""
+
+#: ../../sphinx/reference.md:9
+msgid "Parse `$$...$$ (label)` syntax"
+msgstr ""
+
+#: ../../sphinx/reference.md:10
+msgid "`myst_dmath_allow_space`"
+msgstr ""
+
+#: ../../sphinx/reference.md:12
+msgid ""
+"If False then inline math will only be parsed if there are no "
+"initial/final spaces, e.g. `$a$` but not `$ a$` or `$a $`"
+msgstr ""
+
+#: ../../sphinx/reference.md:14
+msgid "`myst_dmath_allow_digits`"
+msgstr ""
+
+#: ../../sphinx/reference.md:16
+msgid ""
+"If False then inline math will only be parsed if there are no "
+"initial/final digits, e.g. `$a$` but not `1$a$` or `$a$2` (this is useful"
+" for using `$` as currency)"
+msgstr ""
+
+#: ../../sphinx/reference.md:18
+msgid "`myst_amsmath_enable`"
+msgstr ""
+
+#: ../../sphinx/reference.md:20
+msgid ""
+"Enable direct parsing of [amsmath LaTeX "
+"environments](https://ctan.org/pkg/amsmath)"
+msgstr ""
+
+#: ../../sphinx/reference.md:21
+msgid "`myst_update_mathjax`"
+msgstr ""
+
+#: ../../sphinx/reference.md:23
+msgid ""
+"If using [sphinx.ext.mathjax](https://www.sphinx-"
+"doc.org/en/master/usage/extensions/math.html#module-sphinx.ext.mathjax) "
+"(the default) then `mathjax_config` will be updated, to ignore `$` "
+"delimiters and LaTeX environments, which should instead be handled by "
+"`myst_dmath_enable` and `myst_amsmath_enable` respectively."
+msgstr ""
+
+#: ../../sphinx/reference.md:92
+msgid "Disable markdown syntax for the parser"
+msgstr ""
+
+#: ../../sphinx/reference.md:94
+msgid ""
+"If you'd like to either enable or disable custom markdown syntax, use "
+"`myst_disable_syntax`. Anything in this list will no longer be parsed by "
+"the MyST parser."
+msgstr ""
+
+#: ../../sphinx/reference.md:97
+msgid ""
+"For example, to disable the `emphasis` in-line syntax, use this "
+"configuration:"
+msgstr ""
+
+#: ../../sphinx/reference.md:103
+msgid ""
+"emphasis syntax will now be disabled. For example, the following will be "
+"rendered *without* any italics:"
+msgstr ""
+
+#: ../../sphinx/reference.md:110
+msgid ""
+"For a list of all the syntax elements you can disable, see the [markdown-"
+"it parser guide](markdown_it:using)."
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:1
+msgid "Special roles and directives"
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:3
+msgid ""
+"This section contains information about special roles and directives that"
+" come bundled with the MyST Parser Sphinx extension."
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:5
+msgid "Insert the date and reading time"
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:1
+msgid "The `sub-ref` role and word counting."
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:11
+msgid ""
+"You may insert the \"last updated\" date and estimated reading time into "
+"your document via substitution definitions, which can be accessed *via* "
+"the `sub-ref` role."
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:13
+msgid "For example:"
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:19
+msgid ""
+"{sub-ref}`today` | {sub-ref}`wordcount-words` words | {sub-ref"
+"}`wordcount-minutes` min read"
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:21
+msgid ""
+"`today` is replaced by either the date on which the document is parsed, "
+"with the format set by [`today_fmt`](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-today_fmt), or the "
+"`today` variable if set in the configuration file."
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:23
+msgid ""
+"The reading speed is computed using the `myst_words_per_minute` "
+"configuration (see the [Sphinx configuration options](sphinx/config-"
+"options))."
+msgstr ""
+
+#: ../../sphinx/snippets/include-md.md:1
+msgid "Hallo I'm from a Markdown file, [with a reference](howto/autodoc)."
+msgstr ""
+
+#: ../../sphinx/snippets/include-rst.rst:1
+msgid "Hallo I'm from an rST file, :ref:`with a reference <howto/autodoc>`."
+msgstr ""
+
+#: ../../sphinx/use.md:1
+msgid "Sphinx extension usage guide"
+msgstr ""
+
+#: ../../sphinx/use.md:3
+msgid ""
+"These sections describe some common scenarios and use-cases for writing "
+"MyST with Sphinx."
+msgstr ""
+
+#: ../../sphinx/use.md:1
+msgid "For an introduction to using MyST with Sphinx, see [](intro.md)."
+msgstr ""
+
+#: ../../sphinx/use.md:10
+msgid "Include rST files into a Markdown file"
+msgstr ""
+
+#: ../../sphinx/use.md:12
+msgid ""
+"As explained in [this section](syntax/directives/parsing), all MyST "
+"directives will parse their content as Markdown. Therefore, using the "
+"conventional `include` directive, will parse the file contents as "
+"Markdown:"
+msgstr ""
+
+#: ../../sphinx/use.md:23
+msgid ""
+"To include rST, we must first \"wrap\" the directive in the [eval-rst "
+"directive](syntax/directives/parsing):"
+msgstr ""
+
+#: ../../sphinx/use.md:35
+msgid "Use MyST in Jupyter Notebooks"
+msgstr ""
+
+#: ../../sphinx/use.md:37
+msgid ""
+"The [MyST-NB](https://myst-nb.readthedocs.io) tool provides a Sphinx "
+"extension for parsing **Jupyter Notebooks written with MyST Markdown**. "
+"It includes features like automatically executing notebooks during "
+"documentation builds, storing notebook cell outputs in order to insert "
+"them elsewhere in your documentation, and more. See the [MyST-NB "
+"documentation](https://myst-nb.readthedocs.io) for more information."
+msgstr ""
+
+#: ../../sphinx/use.md:40
+msgid "Include a file from outside the docs folder (like README.md)"
+msgstr ""
+
+#: ../../sphinx/use.md:42
+msgid "You can include a file, including one from outside the project using e.g.:"
+msgstr ""
+
+#: ../../sphinx/use.md:49
+msgid ""
+"**However**, including a file will not usually resolve local links "
+"correctly, like `![](my-image.png)`, since it treats the text as if it "
+"originated from the \"including file\"."
+msgstr ""
+
+#: ../../sphinx/use.md:51
+msgid ""
+"As of myst-parser version 0.12.7, a new, experimental feature has been "
+"added to resolve such links. You can now use for example:"
+msgstr ""
+
+#: ../../sphinx/use.md:66
+msgid "Source:"
+msgstr ""
+
+#: ../../sphinx/use.md:72
+msgid "Included:"
+msgstr ""
+
+#: ../../../example-include.md:1
+msgid "[Used in how-to](docs/sphinx/use.md) ![alt](docs/_static/logo-wide.svg)"
+msgstr ""
+
+#: ../../../example-include.md:1
+msgid "alt"
+msgstr ""
+
+#: ../../sphinx/use.md:79
+msgid ""
+"The include here attempts to re-write local links, to reference them from"
+" the correct location! The `relative-docs` must be given the prefix of "
+"any links to re-write, to distinguish them from sphinx cross-references."
+msgstr ""
+
+#: ../../sphinx/use.md:1
+msgid "The current functionality only works for Markdown style images and links."
+msgstr ""
+
+#: ../../sphinx/use.md:3
+msgid ""
+"If you encounter any issues with this feature, please don't hesitate to "
+"report it."
+msgstr ""
+
+#: ../../sphinx/use.md:89
+msgid "Use `sphinx.ext.autodoc` in Markdown files"
+msgstr ""
+
+#: ../../sphinx/use.md:91
+msgid ""
+"The [Sphinx extension `autodoc`](sphinx:sphinx.ext.autodoc), which pulls "
+"in code documentation from docstrings, is currently hard-coded to parse "
+"reStructuredText. It is therefore incompatible with MyST's Markdown "
+"parser. However, the special [`eval-rst` "
+"directive](syntax/directives/parsing) can be used to \"wrap\" `autodoc` "
+"directives:"
+msgstr ""
+
+#: myst_parser.mocking.MockRSTParser:1 of
+msgid "Bases: :class:`docutils.parsers.rst.Parser`"
+msgstr ""
+
+#: myst_parser.mocking.MockRSTParser:1 of
+msgid "RSTParser which avoids a negative side effect."
+msgstr ""
+
+#: myst_parser.mocking.MockRSTParser.parse:1 of
+msgid "Parse the input to populate the document AST."
+msgstr ""
+
+#: ../../sphinx/use.md:109
+msgid "As with other objects in MyST, this can then be referenced:"
+msgstr ""
+
+#: ../../sphinx/use.md:111
+msgid ""
+"Using the role `` {py:class}`myst_parser.mocking.MockRSTParser` ``: "
+"{py:class}`myst_parser.mocking.MockRSTParser`"
+msgstr ""
+
+#: ../../sphinx/use.md:112
+msgid ""
+"Using the Markdown syntax "
+"`[MockRSTParser](myst_parser.mocking.MockRSTParser)`: "
+"[MockRSTParser](myst_parser.mocking.MockRSTParser)"
+msgstr ""
+
+#: ../../sphinx/use.md:1
+msgid ""
+"This expects docstrings to be written in reStructuredText. We hope to "
+"support Markdown in the future, see [GitHub issue "
+"#228](https://github.com/executablebooks/MyST-Parser/issues/228)."
+msgstr ""
+
+#: ../../sphinx/use.md:120
+msgid "Automatically create targets for section headers"
+msgstr ""
+
+#: ../../sphinx/use.md:1
+msgid ""
+"New in `v0.13.0` ✨, myst-parser now provides a separate implementation of"
+" `autosectionlabel`, which implements GitHub Markdown style bookmark "
+"anchors, like `[](file.md#header-anchor)`."
+msgstr ""
+
+#: ../../sphinx/use.md:3
+msgid "See the [](syntax/header-anchors) section of extended syntaxes."
+msgstr ""
+
+#: ../../sphinx/use.md:130
+msgid ""
+"If you'd like to *automatically* generate targets for each of your "
+"section headers, check out the [`autosectionlabel`](https://www.sphinx-"
+"doc.org/en/master/usage/extensions/autosectionlabel.html) sphinx feature."
+" You can activate it in your Sphinx site by adding the following to your "
+"`conf.py` file:"
+msgstr ""
+
+#: ../../sphinx/use.md:145
+msgid ""
+"So, if you have a page at `myfolder/mypage.md` (relative to your "
+"documentation root) with the following structure:"
+msgstr ""
+
+#: ../../sphinx/use.md:154
+msgid ""
+"Then the `autosectionlabel` feature will allow you to reference the "
+"section headers like so:"
+msgstr ""
+
+#: ../../sphinx/use.md:162
+msgid "Suppress warnings"
+msgstr ""
+
+#: ../../sphinx/use.md:164
+msgid ""
+"In general, if your build logs any warnings, you should either fix them "
+"or [raise an Issue](https://github.com/executablebooks/MyST-"
+"Parser/issues/new/choose) if you think the warning is erroneous. However,"
+" in some circumstances if you wish to suppress the warning you can use "
+"the [`suppress_warnings`](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-suppress_warnings) "
+"configuration option. All myst-parser warnings are prepended by their "
+"type, e.g. to suppress:"
+msgstr ""
+
+#: ../../sphinx/use.md:177
+msgid "Add to your `conf.py`:"
+msgstr ""
+
+#: ../../sphinx/use.md:184
+msgid "Sphinx-specific page front matter"
+msgstr ""
+
+#: ../../sphinx/use.md:186
+msgid ""
+"Sphinx intercepts front matter and stores them within the global "
+"environment (as discussed [in the deflists documentation](https://www"
+".sphinx-doc.org/en/master/usage/restructuredtext/field-lists.html)). "
+"There are certain front-matter keys (or their translations) that are also"
+" recognised specifically by docutils and parsed to inline Markdown:"
+msgstr ""
+
+#: ../../sphinx/use.md:190
+msgid "`author`"
+msgstr ""
+
+#: ../../sphinx/use.md:191
+msgid "`authors`"
+msgstr ""
+
+#: ../../sphinx/use.md:192
+msgid "`organization`"
+msgstr ""
+
+#: ../../sphinx/use.md:193
+msgid "`address`"
+msgstr ""
+
+#: ../../sphinx/use.md:194
+msgid "`contact`"
+msgstr ""
+
+#: ../../sphinx/use.md:195
+msgid "`version`"
+msgstr ""
+
+#: ../../sphinx/use.md:196
+msgid "`revision`"
+msgstr ""
+
+#: ../../sphinx/use.md:197
+msgid "`status`"
+msgstr ""
+
+#: ../../sphinx/use.md:198
+msgid "`date`"
+msgstr ""
+
+#: ../../sphinx/use.md:199
+msgid "`copyright`"
+msgstr ""
+
+#: ../../sphinx/use.md:200
+msgid "`dedication`"
+msgstr ""
+
+#: ../../sphinx/use.md:201
+msgid "`abstract`"
+msgstr ""
+
+#: ../../sphinx/use.md:203
+msgid ""
+"A classic use-case is to specify 'orphan' documents, that are not "
+"specified in any toctrees. For example, inserting the following syntax at"
+" the top of a page will cause Sphinx to treat it as an orphan page:"
+msgstr ""
+
+#: ../../sphinx/use.md:214
+msgid "Migrate pre-existing rST into MyST"
+msgstr ""
+
+#: ../../sphinx/use.md:216
+msgid ""
+"If you've already got some reStructuredText files that you'd like to "
+"convert into MyST Markdown, try the [`rst-to-"
+"myst`](https://github.com/executablebooks/rst-to-myst) tool, which allows"
+" you to convert single rST files to MyST markdown documents."
+msgstr ""
+
