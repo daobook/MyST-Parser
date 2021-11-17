@@ -1,0 +1,777 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="MyST Syntax Reference" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myst-parser.readthedocs.io/en/syntax/reference.html" />
+  <meta property="og:description" content="This page serves as a reference for the syntax that makes of MyST Markdown. Block (Multi-line) Tokens: Block tokens span multiple lines of content. They are broken down into two sections: Extended ..." />
+  <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
+  <meta property="og:image:alt" content="MyST Syntax Reference" />
+  <meta name="twitter:card" content="summary_large_image">
+    <title>MyST Syntax Reference</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="shortcut icon" href="../_static/logo-square.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Background and explanation" href="../explain/index.html" />
+    <link rel="prev" title="Optional MyST Syntaxes" href="optional.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sphinx/intro.html">
+   Get started with MyST in Sphinx
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  MyST 语法
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="syntax.html">
+   The MyST Syntax Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="optional.html">
+   Optional MyST Syntaxes
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   MyST Syntax Reference
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  主题指南
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../explain/index.html">
+   Background and explanation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../sphinx/index.html">
+   MyST with Sphinx
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/use.html">
+     Sphinx extension usage guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/roles-and-directives.html">
+     Special roles and directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/reference.html">
+     Sphinx configuration options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/faq.html">
+     Common errors and questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../api/index.html">
+   MyST-Parser Python API
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../api/parsers.html">
+     Parse MyST Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../api/renderers.html">
+     Render outputs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../api/reference.html">
+     API Reference
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../develop/index.html">
+   Contribute to MyST
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/contributing.html">
+     Contributing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/architecture.html">
+     The MyST implementation architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/test_infrastructure.html">
+     Testing Infrastructure
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  关于
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../examples/index.html">
+   Example pages
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/wealth_dynamics_rst.html">
+     Wealth Distribution Dynamics in rST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/wealth_dynamics_md.html">
+     Wealth Distribution Dynamics in MyST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../develop/_changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/executablebooks/myst-parser">
+   GitHub 仓库
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/syntax/reference.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        
+        <a class="edit-button" href="https://github.com/executablebooks/MyST-Parser/edit/master/docs/syntax/reference.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#block-multi-line-tokens">
+   Block (Multi-line) Tokens
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#extended-block-tokens">
+     Extended block tokens
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commonmark-tokens">
+     CommonMark tokens
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#span-inline-tokens">
+   Span (Inline) Tokens
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#extended-inline-tokens">
+     Extended inline tokens
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commonmark-inline-tokens">
+     CommonMark inline tokens
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="myst-syntax-reference">
+<h1>MyST Syntax Reference<a class="headerlink" href="#myst-syntax-reference" title="永久链接至标题">¶</a></h1>
+<p>This page serves as a reference for the syntax that makes of MyST Markdown.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>For more description and explanation of MyST syntax, see the <a class="reference internal" href="syntax.html"><span class="doc std std-doc">syntax guide</span></a>.</p>
+</div>
+<div class="section" id="block-multi-line-tokens">
+<h2>Block (Multi-line) Tokens<a class="headerlink" href="#block-multi-line-tokens" title="永久链接至标题">¶</a></h2>
+<p>Block tokens span multiple lines of content. They are broken down into two sections:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#extended-block-tokens"><span class="std std-ref">Extended block tokens</span></a> contains <em>extra</em> tokens that are not in CommonMark.</p></li>
+<li><p><a class="reference internal" href="#commonmark-block-tokens"><span class="std std-ref">CommonMark tokens</span></a> contains CommonMark tokens that also work, for reference.</p></li>
+</ul>
+<p>In addition to these summaries of block-level syntax, see <a class="reference internal" href="syntax.html#extra-markdown-syntax"><span class="std std-ref">Extra markdown syntax</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>Because MyST markdown was inspired by functionality that exists in reStructuredText,
+we have shown equivalent rST syntax for many MyST markdown features below.</p>
+</div>
+<div class="section" id="extended-block-tokens">
+<span id="id1"></span><h3>Extended block tokens<a class="headerlink" href="#extended-block-tokens" title="永久链接至标题">¶</a></h3>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 40%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Token</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>FrontMatter</p></td>
+<td><p>A YAML block at the start of the document enclosed by <code class="docutils literal notranslate"><span class="pre">---</span></code></p></td>
+<td><div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nn">---</span>
+<span class="nt">key</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">value</span>
+<span class="nn">---</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Directives</p></td>
+<td><p>enclosed in 3 or more backticks followed by the directive name wrapped
+in curly brackets <code class="docutils literal notranslate"><span class="pre">{}</span></code>. See <a class="reference internal" href="syntax.html#syntax-directives"><span class="std std-ref">Directives - a block-level extension point</span></a> for more details.</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{directive}
+:option: value
+
+content
+```
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Math</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">$$</span></code> (default) or <code class="docutils literal notranslate"><span class="pre">\[</span></code>…<code class="docutils literal notranslate"><span class="pre">\]</span></code> characters wrapping multi-line math, or even direct <a class="reference external" href="https://ctan.org/pkg/amsmath">amsmath</a> LaTeX equations (optional).
+See <a class="reference internal" href="optional.html#syntax-math"><span class="std std-ref">Math shortcuts</span></a> for more information.</p></td>
+<td><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="sb">$$</span><span class="nb"></span>
+<span class="nb">a</span><span class="o">=</span><span class="m">1</span><span class="nb"></span>
+<span class="s">$$</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Table</p></td>
+<td><p>Standard markdown table style, with pipe separation.</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>| a    | b    |
+| :--- | ---: |
+| c    | d    |
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>LineComment</p></td>
+<td><p>A commented line. See <a class="reference internal" href="syntax.html#syntax-comments"><span class="std std-ref">Comments</span></a> for more information.</p></td>
+<td><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="c">% this is a comment</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>BlockBreak</p></td>
+<td><p>Define blocks of text. See <a class="reference internal" href="syntax.html#syntax-blockbreaks"><span class="std std-ref">Block Breaks</span></a> for more information.</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>+++ {&quot;meta&quot;: &quot;data&quot;}
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Footnote</p></td>
+<td><p>A definition for a referencing footnote, that is placed at the bottom of the document.
+See <a class="reference internal" href="syntax.html#syntax-footnotes"><span class="std std-ref">Footnotes</span></a> for more details.</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>[<span class="nl">^ref</span>]: <span class="na">Some footnote text</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Admonitions (optional)</p></td>
+<td><p>An alternative approach for admonition style directives only, which has the benefit of allowing the content to be rendered in standard markdown editors.
+See <a class="reference internal" href="optional.html#syntax-admonitions"><span class="std std-ref">admonition directives</span></a> for more details.</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>:::{note}
+<span class="ge">*content*</span>
+:::
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="commonmark-tokens">
+<span id="commonmark-block-tokens"></span><h3>CommonMark tokens<a class="headerlink" href="#commonmark-tokens" title="永久链接至标题">¶</a></h3>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 40%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Token</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>HTMLBlock</p></td>
+<td><p>Any valid HTML (rendered in HTML output only)</p></td>
+<td><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>some text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>BlockCode</p></td>
+<td><p>indented text (4 spaces or a tab)</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>    included as literal <span class="ge">*text*</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Heading</p></td>
+<td><p>Level 1-6 headings, denoted by number of <code class="docutils literal notranslate"><span class="pre">#</span></code></p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gu">### Heading level 3</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>SetextHeading</p></td>
+<td><p>Underlined header (using multiple <code class="docutils literal notranslate"><span class="pre">=</span></code> or <code class="docutils literal notranslate"><span class="pre">-</span></code>)</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh">Header</span>
+<span class="gh">======</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Quote</p></td>
+<td><p>quoted text</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">this is a quote</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>CodeFence</p></td>
+<td><p>enclosed in 3 or more backticks with an optional language name</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="sb">```python</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;this is python&#39;</span><span class="p">)</span>
+<span class="sb">```</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>ThematicBreak</p></td>
+<td><p>Creates a horizontal line in the output</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>---
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>List</p></td>
+<td><p>bullet points or enumerated.</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">-</span> item
+  <span class="k">-</span> nested item
+<span class="k">1.</span> numbered item
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>LinkDefinition</p></td>
+<td><p>A substitution for an inline link, which can have a reference target (no spaces), and an optional title (in <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>)</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>[<span class="nl">key</span>]: <span class="na">https://www.google.com &quot;a title&quot;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Paragraph</p></td>
+<td><p>General inline text</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>any <span class="ge">*text*</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="span-inline-tokens">
+<h2>Span (Inline) Tokens<a class="headerlink" href="#span-inline-tokens" title="永久链接至标题">¶</a></h2>
+<p>Span (or inline) tokens are defined on a single line of content. They are broken down into two
+sections below:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#extended-span-tokens"><span class="std std-ref">Extended inline tokens</span></a> contains <em>extra</em> tokens that are not in CommonMark.</p></li>
+<li><p><a class="reference internal" href="#commonmark-span-tokens"><span class="std std-ref">CommonMark inline tokens</span></a> contains CommonMark tokens that also work, for reference.</p></li>
+</ul>
+<p>In addition to these summaries of inline syntax, see <a class="reference internal" href="syntax.html#extra-markdown-syntax"><span class="std std-ref">Extra markdown syntax</span></a>.</p>
+<div class="section" id="extended-inline-tokens">
+<span id="extended-span-tokens"></span><h3>Extended inline tokens<a class="headerlink" href="#extended-inline-tokens" title="永久链接至标题">¶</a></h3>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 40%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Token</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Role</p></td>
+<td><p>See <a class="reference internal" href="syntax.html#syntax-roles"><span class="std std-ref">Roles - an in-line extension point</span></a> for more
+information.</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>{rolename}`interpreted text`
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Target</p></td>
+<td><p>Precedes element to target, e.g. header. See
+<a class="reference internal" href="syntax.html#syntax-targets"><span class="std std-ref">Targets and Cross-Referencing</span></a> for more information.</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(target)=
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Math</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">$</span></code> (default) or <code class="docutils literal notranslate"><span class="pre">\(</span></code>…<code class="docutils literal notranslate"><span class="pre">\)</span></code> enclosed math. See
+<a class="reference internal" href="optional.html#syntax-math"><span class="std std-ref">Math shortcuts</span></a> for more information.</p></td>
+<td><div class="highlight-latex notranslate"><div class="highlight"><pre><span></span><span class="s">$</span><span class="nb">a</span><span class="o">=</span><span class="m">1</span><span class="s">$</span> or <span class="sb">$$</span><span class="nb">a</span><span class="o">=</span><span class="m">1</span><span class="s">$$</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>FootReference</p></td>
+<td><p>Reference a footnote. See <a class="reference internal" href="syntax.html#syntax-footnotes"><span class="std std-ref">Footnotes</span></a> for more details.</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>[^abc]
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="commonmark-inline-tokens">
+<span id="commonmark-span-tokens"></span><h3>CommonMark inline tokens<a class="headerlink" href="#commonmark-inline-tokens" title="永久链接至标题">¶</a></h3>
+<table class="colwidths-given table">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 40%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Token</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>HTMLSpan</p></td>
+<td><p>Any valid HTML (rendered in HTML output only)</p></td>
+<td><div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>some text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>EscapeSequence</p></td>
+<td><p>Escaped symbols (to avoid them being interpreted as other syntax elements)</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>\*
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>AutoLink</p></td>
+<td><p>Link that is shown in final output</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&lt;http://www.google.com&gt;
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>InlineCode</p></td>
+<td><p>Literal text</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="sb">`a=1`</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>LineBreak</p></td>
+<td><p>Soft or hard (ends with spaces or backslash)</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>A hard break\
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Image</p></td>
+<td><p>Link to an image.
+You can also use HTML syntax, to include image size etc, <a class="reference internal" href="optional.html#syntax-images"><span class="std std-ref">see here</span></a> for details</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>![<span class="nt">alt</span>](<span class="na">src &quot;title&quot;</span>)
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Link</p></td>
+<td><p>Reference <code class="docutils literal notranslate"><span class="pre">LinkDefinitions</span></code></p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>[<span class="nt">text</span>](<span class="na">target &quot;title&quot;</span>) or [<span class="nt">text</span>][<span class="nl">key</span>]
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>Strong</p></td>
+<td><p>Bold text</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gs">**strong**</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><p>Emphasis</p></td>
+<td><p>Italic text</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="ge">*emphasis*</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p>RawText</p></td>
+<td><p>Any text</p></td>
+<td><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>any text
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="optional.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Optional MyST Syntaxes</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../explain/index.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Background and explanation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Executable Book Project<br/>
+        
+            &copy; Copyright 2020, Executable Book Project.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

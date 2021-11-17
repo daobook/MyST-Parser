@@ -1,0 +1,788 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Get started with MyST in Sphinx" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myst-parser.readthedocs.io/en/sphinx/intro.html" />
+  <meta property="og:description" content="This page describes how to get started with the MyST parser, with a focus on enabling it in the Sphinx documentation engine. Install the MyST Parser: PyPI Conda Installing the MyST parser provides ..." />
+  <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
+  <meta property="og:image:alt" content="Get started with MyST in Sphinx" />
+  <meta name="twitter:card" content="summary_large_image">
+    <title>Get started with MyST in Sphinx</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="shortcut icon" href="../_static/logo-square.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="The MyST Syntax Guide" href="../syntax/syntax.html" />
+    <link rel="prev" title="MyST - 标记的结构化文本（Markedly Structured Text）" href="../index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Get started with MyST in Sphinx
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  MyST 语法
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/syntax.html">
+   The MyST Syntax Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/optional.html">
+   Optional MyST Syntaxes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/reference.html">
+   MyST Syntax Reference
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  主题指南
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../explain/index.html">
+   Background and explanation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="index.html">
+   MyST with Sphinx
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="use.html">
+     Sphinx extension usage guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="roles-and-directives.html">
+     Special roles and directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reference.html">
+     Sphinx configuration options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Common errors and questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../api/index.html">
+   MyST-Parser Python API
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../api/parsers.html">
+     Parse MyST Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../api/renderers.html">
+     Render outputs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../api/reference.html">
+     API Reference
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../develop/index.html">
+   Contribute to MyST
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/contributing.html">
+     Contributing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/architecture.html">
+     The MyST implementation architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/test_infrastructure.html">
+     Testing Infrastructure
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  关于
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../examples/index.html">
+   Example pages
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/wealth_dynamics_rst.html">
+     Wealth Distribution Dynamics in rST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/wealth_dynamics_md.html">
+     Wealth Distribution Dynamics in MyST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../develop/_changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/executablebooks/myst-parser">
+   GitHub 仓库
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/sphinx/intro.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        
+        <a class="edit-button" href="https://github.com/executablebooks/MyST-Parser/edit/master/docs/sphinx/intro.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-the-myst-parser">
+   Install the MyST Parser
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#enable-myst-in-sphinx">
+   Enable MyST in Sphinx
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#write-your-first-markdown-document">
+   Write your first markdown document
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extend-markdown-with-a-directive">
+   Extend markdown with a directive
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reference-a-section-label-with-a-role">
+   Reference a section label with a role
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-a-comment-using-extra-myst-syntax">
+   Add a comment using extra MyST syntax
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#extending-myst-via-configuration">
+   Extending MyST via configuration
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-a-new-sphinx-extension-and-use-its-functionality">
+   Install a new Sphinx extension and use its functionality
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-steps-learn-more-about-myst-syntax">
+   Next steps - Learn more about MyST Syntax
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="get-started-with-myst-in-sphinx">
+<span id="intro-get-started"></span><h1>Get started with MyST in Sphinx<a class="headerlink" href="#get-started-with-myst-in-sphinx" title="永久链接至标题">¶</a></h1>
+<p>This page describes how to get started with the MyST parser, with a focus on enabling it in the Sphinx documentation engine.</p>
+<div class="section" id="install-the-myst-parser">
+<h2>Install the MyST Parser<a class="headerlink" href="#install-the-myst-parser" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://pypi.org/project/myst-parser"><img alt="PyPI" src="https://img.shields.io/pypi/v/myst-parser.svg" /></a>
+<a class="reference external" href="https://anaconda.org/conda-forge/myst-parser"><img alt="Conda" src="https://anaconda.org/conda-forge/myst-parser/badges/version.svg" /></a></p>
+<p>Installing the MyST parser provides access to two tools:</p>
+<ul class="simple">
+<li><p>A Python library that can parse MyST markdown, and render it to a number of output formats (in particular, <code class="docutils literal notranslate"><span class="pre">docutils</span></code> format for use with Sphinx).</p></li>
+<li><p>A Sphinx extension that that utilizes the above tool in order to parse MyST Markdown in your documentation.</p></li>
+</ul>
+<p>To install the MyST parser, run the following in a
+<a class="reference external" href="https://docs.conda.io">Conda environment</a> (recommended):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge myst-parser
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install myst-parser
+</pre></div>
+</div>
+</div>
+<div class="section" id="enable-myst-in-sphinx">
+<span id="parse-with-sphinx"></span><h2>Enable MyST in Sphinx<a class="headerlink" href="#enable-myst-in-sphinx" title="永久链接至标题">¶</a></h2>
+<p>Sphinx is a documentation generator for building a website or book from multiple source documents and assets. To get started with Sphinx, see their <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">Quickstart Guide</a>. This guide assumes that you’ve already got a pre-existing Sphinx site that builds properly.</p>
+<p>To use the MyST parser in Sphinx, simply add the following to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;myst_parser&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>This will activate the MyST Parser extension, causing all documents with the <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension to be parsed as MyST.</p>
+<div class="tip admonition">
+<p class="admonition-title">You can use both MyST and reStructuredText</p>
+<p>Activating the MyST parser will simply <em>enable</em> parsing markdown files with MyST, and the rST parser that ships with Sphinx will still work the same way.
+Files ending with <code class="docutils literal notranslate"><span class="pre">.md</span></code> will be parsed as MyST, and files ending in <code class="docutils literal notranslate"><span class="pre">.rst</span></code> will be parsed as reStructuredText.</p>
+</div>
+</div>
+<div class="section" id="write-your-first-markdown-document">
+<span id="intro-writing"></span><h2>Write your first markdown document<a class="headerlink" href="#write-your-first-markdown-document" title="永久链接至标题">¶</a></h2>
+<p>Now that you’ve enabled the <code class="docutils literal notranslate"><span class="pre">myst-parser</span></code> in Sphinx, you can write MyST markdown in a file that ends with <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension for your pages.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>MyST markdown is a mixture of two flavors of markdown:</p>
+<p>It supports all the syntax of <strong><a class="reference external" href="https://commonmark.org/">CommonMark Markdown</a></strong> at its
+base. This is a community standard flavor of markdown used across many projects.</p>
+<p>In addition, it includes <strong><a class="reference internal" href="../syntax/syntax.html"><span class="doc std std-doc">several extensions</span></a> to CommonMark</strong>.
+These add extra syntax features for technical writing, such as the roles and directives used by Sphinx.</p>
+</div>
+<p>To start off, create an empty file called <code class="docutils literal notranslate"><span class="pre">myfile.md</span></code> and give it a markdown title and text.</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
+
+Some <span class="gs">**text**</span>!
+</pre></div>
+</div>
+<p>In the “main document” of your Sphinx project (the landing page of your Sphinx documentation), include <code class="docutils literal notranslate"><span class="pre">myfile.md</span></code> in a <code class="docutils literal notranslate"><span class="pre">toctree</span></code> directive so that it is included in your documentation:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+
+   myfile.md
+</pre></div>
+</div>
+<p>Now build your site:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make html
+</pre></div>
+</div>
+<p>and navigate to your landing page.
+You should see a link to the page generated from <code class="docutils literal notranslate"><span class="pre">myfile.md</span></code>.
+Clicking that link should take you to your rendered Markdown!</p>
+</div>
+<div class="section" id="extend-markdown-with-a-directive">
+<h2>Extend markdown with a directive<a class="headerlink" href="#extend-markdown-with-a-directive" title="永久链接至标题">¶</a></h2>
+<p>The most important functionality available with MyST markdown is writing <strong>directives</strong>.
+Directives are kind-of like functions that are designed for writing content.
+Sphinx and reStructuredText use directives extensively.
+Here’s how a directive looks in MyST markdown:</p>
+<div class="margin sidebar">
+<p class="sidebar-title">Alternative options syntax</p>
+<p>If you’ve got a lot of options for your directive, or have a value that is really
+long (e.g., that spans multiple lines), then you can also wrap your options in
+<code class="docutils literal notranslate"><span class="pre">---</span></code> lines and write them as YAML. For example:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nn">---</span>
+<span class="nt">key1</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">val1</span>
+<span class="nt">key2</span><span class="p">:</span> <span class="p p-Indicator">|</span>
+  <span class="no">val line 1</span>
+  <span class="no">val line 2</span>
+<span class="nn">---</span>
+</pre></div>
+</div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{directivename} &lt;directive arguments&gt;
+:optionname: &lt;valuename&gt;
+
+&lt;directive content&gt;
+```
+</pre></div>
+</div>
+<p>For those who are familiar with reStructuredText, you can find <a class="reference internal" href="../syntax/syntax.html#syntax-directives"><span class="std std-ref">a mapping from MyST directive syntax to rST syntax here</span></a>.</p>
+<p>As seen above, there are four main parts to consider when writing directives.</p>
+<ul class="simple">
+<li><p><strong>the directive name</strong> is kind of like the function name. Different names trigger
+different functionality. They are wrapped in <code class="docutils literal notranslate"><span class="pre">{}</span></code> brackets.</p></li>
+<li><p><strong>directive arguments</strong> come just after the directive name. They can be used
+to trigger behavior in the directive.</p></li>
+<li><p><strong>directive options</strong> come just after the first line of the directive. They also
+control behavior of the directive.</p></li>
+<li><p><strong>directive content</strong> is markdown that you put inside the directive. The directive
+often displays the content in a special way.</p></li>
+</ul>
+<p>For example, add an <strong><code class="docutils literal notranslate"><span class="pre">admonition</span></code></strong> directive to your markdown page, like so:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
+
+Some <span class="gs">**text**</span>!
+
+```{admonition} Here&#39;s my title
+:class: warning
+
+Here&#39;s my admonition content
+```
+</pre></div>
+</div>
+<p>Re-build your Sphinx site and you should see the new admonition box show up.</p>
+<p>As you can see, we’ve used each of the four pieces described above to configure this
+directive. Here’s how the directive looks when rendered:</p>
+<div class="warning admonition">
+<p class="admonition-title">Here’s my title</p>
+<p>Here’s my admonition content</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>For more information about using directives with MyST, see <a class="reference internal" href="../syntax/syntax.html#syntax-directives"><span class="std std-ref">Directives - a block-level extension point</span></a>.</p>
+</div>
+</div>
+<div class="section" id="reference-a-section-label-with-a-role">
+<span id="sphinx-intro-reference"></span><h2>Reference a section label with a role<a class="headerlink" href="#reference-a-section-label-with-a-role" title="永久链接至标题">¶</a></h2>
+<p>Roles are another core Sphinx tool. They behave similarly to directives, but are given
+in-line with text instead of in a separate block. They have the following form:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>{rolename}`role content`
+</pre></div>
+</div>
+<p>Roles are a bit more simple than directives, though some roles allow for more complex syntax inside their content area.
+For example, the <code class="docutils literal notranslate"><span class="pre">ref</span></code> role is used to make references to other sections of your documentation, and allows you to specify the displayed text as well as the reference itself within the role:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>{ref}`My displayed text &lt;my-ref&gt;`
+</pre></div>
+</div>
+<p>For example, let’s add a <strong>section reference</strong> to your markdown file.
+To do this, we’ll first need to add a <strong>label</strong> to a section of your page.
+To do so, use the following structure:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(label-name)=
+<span class="gu">## Some header</span>
+</pre></div>
+</div>
+<p>Add this to your markdown file from above, like so:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
+
+Some <span class="gs">**text**</span>!
+
+```{admonition} Here&#39;s my title
+:class: warning
+
+Here&#39;s my admonition content
+```
+
+(section-two)=
+<span class="gu">## Here&#39;s another section</span>
+
+And some more content.
+</pre></div>
+</div>
+<p>Because your new section has a label (<code class="docutils literal notranslate"><span class="pre">section-two</span></code>), you can reference it with the <code class="docutils literal notranslate"><span class="pre">ref</span></code> role.
+Add it to your markdown file like so:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(label-name)=
+<span class="gu">## Some header</span>
+</pre></div>
+</div>
+<p>Add this to your markdown file from above, like so:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
+
+Some <span class="gs">**text**</span>!
+
+```{admonition} Here&#39;s my title
+:class: warning
+
+Here&#39;s my admonition content
+```
+
+(section-two)=
+<span class="gu">## Here&#39;s another section</span>
+
+And some more content.
+
+And here&#39;s {ref}`a reference to this section &lt;section-two&gt;`.
+I can also reference the section {ref}`section-two` without specifying my title.
+</pre></div>
+</div>
+<p>Re-build your documentation and you should see the references automatically inserted.
+Here’s an example of how the <code class="docutils literal notranslate"><span class="pre">ref</span></code> roles look in the final output:</p>
+<p>Here’s a reference to <a class="reference internal" href="#sphinx-intro-reference"><span class="std std-ref">Reference a section label with a role</span></a>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">参见</p>
+<p>For more information about roles, see <a class="reference internal" href="../syntax/syntax.html#syntax-roles"><span class="std std-ref">Roles - an in-line extension point</span></a>.</p>
+</div>
+</div>
+<div class="section" id="add-a-comment-using-extra-myst-syntax">
+<h2>Add a comment using extra MyST syntax<a class="headerlink" href="#add-a-comment-using-extra-myst-syntax" title="永久链接至标题">¶</a></h2>
+<p>There are many other kinds of syntax in MyST to make writing more productive and enjoyable.
+Let’s play around with a couple of options.</p>
+<p>First, try writing a <strong>comment</strong>.
+This can be done by adding a line starting with <code class="docutils literal notranslate"><span class="pre">%</span></code> to your markdown file.
+For example, try adding a comment to your markdown file, like so:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
+
+Some <span class="gs">**text**</span>!
+
+```{admonition} Here&#39;s my title
+:class: warning
+
+Here&#39;s my admonition content
+```
+
+(section-two)=
+<span class="gu">## Here&#39;s another section</span>
+
+And some more content.
+
+% This comment won&#39;t make it into the outputs!
+And here&#39;s {ref}`a reference to this section &lt;section-two&gt;`.
+I can also reference the section {ref}`section-two` without specifying my title.
+</pre></div>
+</div>
+<p>Re-build your documentation - the comment should <em>not</em> be present in the output.</p>
+</div>
+<div class="section" id="extending-myst-via-configuration">
+<h2>Extending MyST via configuration<a class="headerlink" href="#extending-myst-via-configuration" title="永久链接至标题">¶</a></h2>
+<p>Thus far we have covered the basic MyST syntax with Sphinx.
+However, there are a few ways that you can <em>extend</em> this base syntax and get new functionality.
+The first is to enable some “out of the box” extensions with the MyST parser.
+These add new syntax that aren’t part of “core MyST” but that are useful nonetheless (and may become part of core MyST one day).</p>
+<p>Let’s extend the base MyST syntax to enable <strong>fences for directives</strong>.
+This allows you to define a directive with <code class="docutils literal notranslate"><span class="pre">:::</span></code> in addition to <code class="docutils literal notranslate"><span class="pre">```</span></code>.
+This is useful for directives that have markdown in their content.
+By using <code class="docutils literal notranslate"><span class="pre">:::</span></code>, a non-MyST markdown renderer will still be able to render what is inside (instead of displaying it as a code block).</p>
+<p>To activate extensions, add a list to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file that contains the extensions you’d like to activate.
+For example, to activate the “colon code fences” extension, add the following to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">myst_enable_extensions</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s2">&quot;colon_fence&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>You may now use <code class="docutils literal notranslate"><span class="pre">:::</span></code> to define directives.
+For example, modify your markdown file like so:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
+
+Some <span class="gs">**text**</span>!
+
+```{admonition} Here&#39;s my title
+:class: warning
+
+Here&#39;s my admonition content
+```
+
+(section-two)=
+<span class="gu">## Here&#39;s another section</span>
+
+And some more content.
+
+% This comment won&#39;t make it into the outputs!
+And here&#39;s {ref}`a reference to this section &lt;section-two&gt;`.
+I can also reference the section {ref}`section-two` without specifying my title.
+
+:::{note}
+And here&#39;s a note with a colon fence!
+:::
+</pre></div>
+</div>
+<p>It should render as a “note block” in your output when you build your site.</p>
+</div>
+<div class="section" id="install-a-new-sphinx-extension-and-use-its-functionality">
+<h2>Install a new Sphinx extension and use its functionality<a class="headerlink" href="#install-a-new-sphinx-extension-and-use-its-functionality" title="永久链接至标题">¶</a></h2>
+<p>The other way to extend MyST in Sphinx is to install Sphinx extensions that define new directives.
+Directives are kind of like “functions” in Sphinx, and installing a new package can add new directives to use in your content.</p>
+<p>For example, let’s install the <code class="docutils literal notranslate"><span class="pre">sphinxcontib.mermaid</span></code> extension, which will allow us to generate <a class="reference external" href="https://mermaid-js.github.io/mermaid/#/">Mermaid diagrams</a> with MyST.</p>
+<p>First, install <code class="docutils literal notranslate"><span class="pre">sphinxcontrib.mermaid</span></code>:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install sphinxcontrib-mermaid
+</pre></div>
+</div>
+<p>Next, add it to your list of extensions in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s2">&quot;myst_parser&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;sphinxcontrib.mermaid&quot;</span><span class="p">,</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Now, add a <strong>mermaid directive</strong> to your markdown file.
+For example:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
+
+Some <span class="gs">**text**</span>!
+
+```{admonition} Here&#39;s my title
+:class: warning
+
+Here&#39;s my admonition content
+<span class="sb">```</span>
+
+<span class="sb">(section-two)=</span>
+<span class="sb">## Here&#39;s another section</span>
+
+<span class="sb">And some more content.</span>
+
+<span class="sb">% This comment won&#39;t make it into the outputs!</span>
+<span class="sb">And here&#39;s {ref}`a reference to this section &lt;section-two&gt;`.</span>
+<span class="sb">I can also reference the section {ref}`section-two` without specifying my title.</span>
+
+<span class="sb">:::{note}</span>
+<span class="sb">And here&#39;s a note with a colon fence!</span>
+<span class="sb">:::</span>
+
+<span class="sb">And finally, here&#39;s a cool mermaid diagram!</span>
+
+<span class="sb">```{mermaid}</span>
+<span class="sb">sequenceDiagram</span>
+<span class="sb">  participant Alice</span>
+<span class="sb">  participant Bob</span>
+<span class="sb">  Alice-&gt;John: Hello John, how are you?</span>
+<span class="sb">  loop Healthcheck</span>
+<span class="sb">      John-&gt;John: Fight against hypochondria</span>
+<span class="sb">  end</span>
+<span class="sb">  Note right of John: Rational thoughts &lt;br/&gt;prevail...</span>
+<span class="sb">  John--&gt;Alice: Great!</span>
+<span class="sb">  John-&gt;Bob: How about you?</span>
+<span class="sb">  Bob--&gt;John: Jolly good!</span>
+<span class="sb">```</span>
+</pre></div>
+</div>
+<p>When you build your documentation, you should see something like this:</p>
+<div class="mermaid">
+            sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice-&gt;John: Hello John, how are you?
+  loop Healthcheck
+      John-&gt;John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts &lt;br/&gt;prevail...
+  John--&gt;Alice: Great!
+  John-&gt;Bob: How about you?
+  Bob--&gt;John: Jolly good!
+        </div></div>
+<div class="section" id="next-steps-learn-more-about-myst-syntax">
+<h2>Next steps - Learn more about MyST Syntax<a class="headerlink" href="#next-steps-learn-more-about-myst-syntax" title="永久链接至标题">¶</a></h2>
+<p>In this tutorial we’ve covered some of the basics of MyST Markdown, how to enable and use it with Sphinx, and how to extend it for new use-cases.
+There is much more functionality in MyST (and in the Sphinx ecosystem) that we haven’t covered here.
+For more information, see the <a class="reference internal" href="../syntax/syntax.html"><span class="doc std std-doc">documentation on MyST Syntax</span></a> and the <a class="reference internal" href="index.html"><span class="doc std std-doc">documentation about using MyST with Sphinx</span></a>.</p>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../index.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">MyST - 标记的结构化文本（Markedly Structured Text） </p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../syntax/syntax.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">The MyST Syntax Guide</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Executable Book Project<br/>
+        
+            &copy; Copyright 2020, Executable Book Project.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,793 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="API Reference" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myst-parser.readthedocs.io/en/api/reference.html" />
+  <meta property="og:description" content="Directive Parsing Reference: Fenced code blocks are parsed as directives, if the block starts with{directive_name}, followed by arguments on the same line. Directive options are read from a YAML bl..." />
+  <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
+  <meta property="og:image:alt" content="API Reference" />
+  <meta name="twitter:card" content="summary_large_image">
+    <title>API Reference</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="shortcut icon" href="../_static/logo-square.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Contribute to MyST" href="../develop/index.html" />
+    <link rel="prev" title="Render outputs" href="renderers.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sphinx/intro.html">
+   Get started with MyST in Sphinx
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  MyST 语法
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/syntax.html">
+   The MyST Syntax Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/optional.html">
+   Optional MyST Syntaxes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/reference.html">
+   MyST Syntax Reference
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  主题指南
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../explain/index.html">
+   Background and explanation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../sphinx/index.html">
+   MyST with Sphinx
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/use.html">
+     Sphinx extension usage guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/roles-and-directives.html">
+     Special roles and directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/reference.html">
+     Sphinx configuration options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/faq.html">
+     Common errors and questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   MyST-Parser Python API
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="parsers.html">
+     Parse MyST Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="renderers.html">
+     Render outputs
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     API Reference
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../develop/index.html">
+   Contribute to MyST
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/contributing.html">
+     Contributing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/architecture.html">
+     The MyST implementation architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/test_infrastructure.html">
+     Testing Infrastructure
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  关于
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../examples/index.html">
+   Example pages
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/wealth_dynamics_rst.html">
+     Wealth Distribution Dynamics in rST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/wealth_dynamics_md.html">
+     Wealth Distribution Dynamics in MyST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../develop/_changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/executablebooks/myst-parser">
+   GitHub 仓库
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/api/reference.rst.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.rst</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        
+        <a class="edit-button" href="https://github.com/executablebooks/MyST-Parser/edit/master/docs/api/reference.rst"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#module-myst_parser.parse_directives">
+   Directive Parsing Reference
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-renderers">
+   MyST Renderers
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#docutils">
+     Docutils
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sphinx">
+     Sphinx
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mocking">
+     Mocking
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#additional-methods">
+     Additional Methods
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sphinx-parser-reference">
+   Sphinx Parser Reference
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="永久链接至标题">¶</a></h1>
+<div class="section" id="module-myst_parser.parse_directives">
+<span id="directive-parsing-reference"></span><span id="api-directive"></span><h2>Directive Parsing Reference<a class="headerlink" href="#module-myst_parser.parse_directives" title="永久链接至标题">¶</a></h2>
+<p>Fenced code blocks are parsed as directives,
+if the block starts with <code class="docutils literal notranslate"><span class="pre">{directive_name}</span></code>,
+followed by arguments on the same line.</p>
+<p>Directive options are read from a YAML block,
+if the first content line starts with <code class="docutils literal notranslate"><span class="pre">---</span></code>, e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{directive_name} arguments
+---
+option1: name
+option2: |
+    Longer text block
+---
+content...
+```
+</pre></div>
+</div>
+<p>Or the option block will be parsed if the first content line starts with <code class="docutils literal notranslate"><span class="pre">:</span></code>,
+as a YAML block consisting of every line that starts with a <code class="docutils literal notranslate"><span class="pre">:</span></code>, e.g.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{directive_name} arguments
+:option1: name
+:option2: other
+
+content...
+```
+</pre></div>
+</div>
+<p>If the first line of a directive’s content is blank, this will be stripped
+from the content.
+This is to allow for separation between the option block and content.</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="myst_parser.parse_directives.DirectiveParsingError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">myst_parser.parse_directives.</span></span><span class="sig-name descname"><span class="pre">DirectiveParsingError</span></span><a class="reference internal" href="../_modules/myst_parser/parse_directives.html#DirectiveParsingError"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.parse_directives.DirectiveParsingError" title="永久链接至目标">¶</a></dt>
+<dd><p>Raise on parsing/validation error.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myst_parser.parse_directives.parse_directive_text">
+<span class="sig-prename descclassname"><span class="pre">myst_parser.parse_directives.</span></span><span class="sig-name descname"><span class="pre">parse_directive_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directive_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://www.sphinx-doc.org/en/master/extdev/markupapi.html#docutils.parsers.rst.Directive" title="(在 Sphinx v5.0.0+)"><span class="pre">docutils.parsers.rst.Directive</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">validate_options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#bool" title="(在 Python v3.7)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/parse_directives.html#parse_directive_text"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.parse_directives.parse_directive_text" title="永久链接至目标">¶</a></dt>
+<dd><p>Parse (and validate) the full directive text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>first_line</strong> – The text on the same line as the directive name.
+May be an argument or body text, dependent on the directive</p></li>
+<li><p><strong>content</strong> – All text after the first line. Can include options.</p></li>
+<li><p><strong>validate_options</strong> – Whether to validate the values of options</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myst_parser.parse_directives.parse_directive_options">
+<span class="sig-prename descclassname"><span class="pre">myst_parser.parse_directives.</span></span><span class="sig-name descname"><span class="pre">parse_directive_options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">directive_class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://www.sphinx-doc.org/en/master/extdev/markupapi.html#docutils.parsers.rst.Directive" title="(在 Sphinx v5.0.0+)"><span class="pre">docutils.parsers.rst.Directive</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#bool" title="(在 Python v3.7)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/parse_directives.html#parse_directive_options"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.parse_directives.parse_directive_options" title="永久链接至目标">¶</a></dt>
+<dd><p>Parse (and validate) the directive option section.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myst_parser.parse_directives.parse_directive_arguments">
+<span class="sig-prename descclassname"><span class="pre">myst_parser.parse_directives.</span></span><span class="sig-name descname"><span class="pre">parse_directive_arguments</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">directive</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arg_text</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/parse_directives.html#parse_directive_arguments"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.parse_directives.parse_directive_arguments" title="永久链接至目标">¶</a></dt>
+<dd><p>Parse (and validate) the directive argument section.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="myst-renderers">
+<h2>MyST Renderers<a class="headerlink" href="#myst-renderers" title="永久链接至标题">¶</a></h2>
+<p>These renderers take the markdown-it parsed token stream and convert it to
+the docutils AST. The sphinx renderer is a subclass of the docutils one,
+with some additional methods only available <em>via</em> sphinx
+.e.g. multi-document cross-referencing.</p>
+<div class="section" id="docutils">
+<h3>Docutils<a class="headerlink" href="#docutils" title="永久链接至标题">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="myst_parser.docutils_renderer.DocutilsRenderer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">myst_parser.docutils_renderer.</span></span><span class="sig-name descname"><span class="pre">DocutilsRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://markdown-it-py.readthedocs.io/en/latest/api/markdown_it.main.html#markdown_it.main.MarkdownIt" title="(在 markdown-it-py)"><span class="pre">markdown_it.main.MarkdownIt</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/docutils_renderer.html#DocutilsRenderer"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.docutils_renderer.DocutilsRenderer" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference external" href="https://markdown-it-py.readthedocs.io/en/latest/api/markdown_it.renderer.html#markdown_it.renderer.RendererProtocol" title="(在 markdown-it-py)"><code class="xref py py-class docutils literal notranslate"><span class="pre">markdown_it.renderer.RendererProtocol</span></code></a></p>
+<p>A markdown-it-py renderer to populate (in-place) a <cite>docutils.document</cite> AST.</p>
+<p>Note, this render is not dependent on Sphinx.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myst_parser.docutils_renderer.DocutilsRenderer.__output__">
+<span class="sig-name descname"><span class="pre">__output__</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'docutils'</span></em><a class="headerlink" href="#myst_parser.docutils_renderer.DocutilsRenderer.__output__" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.docutils_renderer.DocutilsRenderer.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://markdown-it-py.readthedocs.io/en/latest/api/markdown_it.main.html#markdown_it.main.MarkdownIt" title="(在 markdown-it-py)"><span class="pre">markdown_it.main.MarkdownIt</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.7/library/constants.html#None" title="(在 Python v3.7)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../_modules/myst_parser/docutils_renderer.html#DocutilsRenderer.__init__"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.docutils_renderer.DocutilsRenderer.__init__" title="永久链接至目标">¶</a></dt>
+<dd><p>Load the renderer (called by <code class="docutils literal notranslate"><span class="pre">MarkdownIt</span></code>)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.docutils_renderer.DocutilsRenderer.render">
+<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tokens</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Sequence</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://markdown-it-py.readthedocs.io/en/latest/api/markdown_it.token.html#markdown_it.token.Token" title="(在 markdown-it-py)"><span class="pre">markdown_it.token.Token</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">md_env</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MutableMapping</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">docutils.nodes.document</span></span></span><a class="reference internal" href="../_modules/myst_parser/docutils_renderer.html#DocutilsRenderer.render"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.docutils_renderer.DocutilsRenderer.render" title="永久链接至目标">¶</a></dt>
+<dd><p>Run the render on a token stream.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tokens</strong> – list on block tokens to render</p></li>
+<li><p><strong>options</strong> – params of parser instance</p></li>
+<li><p><strong>md_env</strong> – the markdown-it environment sandbox associated with the tokens,
+containing additional metadata like reference info</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.docutils_renderer.DocutilsRenderer.nested_render_text">
+<span class="sig-name descname"><span class="pre">nested_render_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.7/library/constants.html#None" title="(在 Python v3.7)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../_modules/myst_parser/docutils_renderer.html#DocutilsRenderer.nested_render_text"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.docutils_renderer.DocutilsRenderer.nested_render_text" title="永久链接至目标">¶</a></dt>
+<dd><p>Render unparsed text.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.docutils_renderer.DocutilsRenderer.current_node_context">
+<span class="sig-name descname"><span class="pre">current_node_context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">docutils.nodes.Element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#bool" title="(在 Python v3.7)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterator</span></span></span><a class="reference internal" href="../_modules/myst_parser/docutils_renderer.html#DocutilsRenderer.current_node_context"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.docutils_renderer.DocutilsRenderer.current_node_context" title="永久链接至目标">¶</a></dt>
+<dd><p>Context manager for temporarily setting the current node.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.docutils_renderer.DocutilsRenderer.add_line_and_source_path">
+<span class="sig-name descname"><span class="pre">add_line_and_source_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://markdown-it-py.readthedocs.io/en/latest/api/markdown_it.tree.html#markdown_it.tree.SyntaxTreeNode" title="(在 markdown-it-py)"><span class="pre">markdown_it.tree.SyntaxTreeNode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.7/library/constants.html#None" title="(在 Python v3.7)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../_modules/myst_parser/docutils_renderer.html#DocutilsRenderer.add_line_and_source_path"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.docutils_renderer.DocutilsRenderer.add_line_and_source_path" title="永久链接至目标">¶</a></dt>
+<dd><p>Copy the line number and document source path to the docutils node.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="sphinx">
+<h3>Sphinx<a class="headerlink" href="#sphinx" title="永久链接至标题">¶</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="myst_parser.sphinx_renderer.SphinxRenderer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">myst_parser.sphinx_renderer.</span></span><span class="sig-name descname"><span class="pre">SphinxRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parser</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://markdown-it-py.readthedocs.io/en/latest/api/markdown_it.main.html#markdown_it.main.MarkdownIt" title="(在 markdown-it-py)"><span class="pre">markdown_it.main.MarkdownIt</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/sphinx_renderer.html#SphinxRenderer"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.sphinx_renderer.SphinxRenderer" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference internal" href="#myst_parser.docutils_renderer.DocutilsRenderer" title="myst_parser.docutils_renderer.DocutilsRenderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">myst_parser.docutils_renderer.DocutilsRenderer</span></code></a></p>
+<p>A markdown-it-py renderer to populate (in-place) a <cite>docutils.document</cite> AST.</p>
+<p>This is sub-class of <cite>DocutilsRenderer</cite> that handles sphinx specific aspects,
+such as cross-referencing.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myst_parser.sphinx_renderer.SphinxRenderer.__output__">
+<span class="sig-name descname"><span class="pre">__output__</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'docutils'</span></em><a class="headerlink" href="#myst_parser.sphinx_renderer.SphinxRenderer.__output__" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.sphinx_renderer.SphinxRenderer.handle_cross_reference">
+<span class="sig-name descname"><span class="pre">handle_cross_reference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://markdown-it-py.readthedocs.io/en/latest/api/markdown_it.tree.html#markdown_it.tree.SyntaxTreeNode" title="(在 markdown-it-py)"><span class="pre">markdown_it.tree.SyntaxTreeNode</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.7/library/constants.html#None" title="(在 Python v3.7)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../_modules/myst_parser/sphinx_renderer.html#SphinxRenderer.handle_cross_reference"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.sphinx_renderer.SphinxRenderer.handle_cross_reference" title="永久链接至目标">¶</a></dt>
+<dd><p>Create nodes for references that are not immediately resolvable.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.sphinx_renderer.SphinxRenderer.render_math_block_eqno">
+<span class="sig-name descname"><span class="pre">render_math_block_eqno</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://markdown-it-py.readthedocs.io/en/latest/api/markdown_it.tree.html#markdown_it.tree.SyntaxTreeNode" title="(在 markdown-it-py)"><span class="pre">markdown_it.tree.SyntaxTreeNode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.7/library/constants.html#None" title="(在 Python v3.7)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../_modules/myst_parser/sphinx_renderer.html#SphinxRenderer.render_math_block_eqno"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.sphinx_renderer.SphinxRenderer.render_math_block_eqno" title="永久链接至目标">¶</a></dt>
+<dd><p>Render math with referencable labels, e.g. <code class="docutils literal notranslate"><span class="pre">$a=1$</span> <span class="pre">(label)</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="mocking">
+<h3>Mocking<a class="headerlink" href="#mocking" title="永久链接至标题">¶</a></h3>
+<p>These classes are parsed to sphinx roles and directives,
+to mimic the original docutls rST specific parser elements,
+but instead run nested parsing with the markdown parser.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockInliner">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">myst_parser.mocking.</span></span><span class="sig-name descname"><span class="pre">MockInliner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DocutilsRenderer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockInliner"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockInliner" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference external" href="https://docs.python.org/3.7/library/functions.html#object" title="(在 Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A mock version of <cite>docutils.parsers.rst.states.Inliner</cite>.</p>
+<p>This is parsed to role functions.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockInliner.problematic">
+<span class="sig-name descname"><span class="pre">problematic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">rawsource</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">docutils.nodes.system_message</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">docutils.nodes.problematic</span></span></span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockInliner.problematic"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockInliner.problematic" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockState">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">myst_parser.mocking.</span></span><span class="sig-name descname"><span class="pre">MockState</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DocutilsRenderer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state_machine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MockStateMachine</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockState"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockState" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference external" href="https://docs.python.org/3.7/library/functions.html#object" title="(在 Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A mock version of <cite>docutils.parsers.rst.states.RSTState</cite>.</p>
+<p>This is parsed to the <cite>Directives.run()</cite> method,
+so that they may run nested parses on their content that will be parsed as markdown,
+rather than RST.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockState.parse_directive_block">
+<span class="sig-name descname"><span class="pre">parse_directive_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">content</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">docutils.statemachine.StringList</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">directive</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Type</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://www.sphinx-doc.org/en/master/extdev/markupapi.html#docutils.parsers.rst.Directive" title="(在 Sphinx v5.0.0+)"><span class="pre">docutils.parsers.rst.Directive</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">option_presets</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#dict" title="(在 Python v3.7)"><span class="pre">dict</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#list" title="(在 Python v3.7)"><span class="pre">list</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#dict" title="(在 Python v3.7)"><span class="pre">dict</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">docutils.statemachine.StringList</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockState.parse_directive_block"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockState.parse_directive_block" title="永久链接至目标">¶</a></dt>
+<dd><p>Parse the full directive text</p>
+<dl class="field-list simple">
+<dt class="field-odd">返回</dt>
+<dd class="field-odd"><p>(arguments, options, content, content_offset)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockState.nested_parse">
+<span class="sig-name descname"><span class="pre">nested_parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">docutils.statemachine.StringList</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">docutils.nodes.Element</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">match_titles</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#bool" title="(在 Python v3.7)"><span class="pre">bool</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state_machine_class</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">state_machine_kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.7/library/constants.html#None" title="(在 Python v3.7)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockState.nested_parse"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockState.nested_parse" title="永久链接至目标">¶</a></dt>
+<dd><p>Perform a nested parse of the input block, with <code class="docutils literal notranslate"><span class="pre">node</span></code> as the parent.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockState.parse_target">
+<span class="sig-name descname"><span class="pre">parse_target</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">block</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockState.parse_target"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockState.parse_target" title="永久链接至目标">¶</a></dt>
+<dd><p>Taken from <a class="reference external" href="https://github.com/docutils-mirror/docutils/blob/e88c5fb08d5cdfa8b4ac1020dd6f7177778d5990/docutils/parsers/rst/states.py#L1927">https://github.com/docutils-mirror/docutils/blob/e88c5fb08d5cdfa8b4ac1020dd6f7177778d5990/docutils/parsers/rst/states.py#L1927</a>  # noqa: E501</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockState.inline_text">
+<span class="sig-name descname"><span class="pre">inline_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">docutils.nodes.Element</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">docutils.nodes.Element</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockState.inline_text"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockState.inline_text" title="永久链接至目标">¶</a></dt>
+<dd><p>Parse text with only inline rules.</p>
+<dl class="field-list simple">
+<dt class="field-odd">返回</dt>
+<dd class="field-odd"><p>(list of nodes, list of messages)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockState.attribution_pattern">
+<span class="sig-name descname"><span class="pre">attribution_pattern</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">re.compile('^((?:---?(?!-)|—)</span> <span class="pre">*)(.+)')</span></em><a class="headerlink" href="#myst_parser.mocking.MockState.attribution_pattern" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockState.block_quote">
+<span class="sig-name descname"><span class="pre">block_quote</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lines</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_offset</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">docutils.nodes.Element</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockState.block_quote"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockState.block_quote" title="永久链接至目标">¶</a></dt>
+<dd><p>Parse a block quote, which is a block of text,
+followed by an (optional) attribution.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">No</span> <span class="n">matter</span> <span class="n">where</span> <span class="n">you</span> <span class="n">go</span><span class="p">,</span> <span class="n">there</span> <span class="n">you</span> <span class="n">are</span><span class="o">.</span>
+
+<span class="o">--</span> <span class="n">Buckaroo</span> <span class="n">Banzai</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockState.build_table">
+<span class="sig-name descname"><span class="pre">build_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tabledata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tableline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stub_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">widths</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockState.build_table"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockState.build_table" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockState.build_table_row">
+<span class="sig-name descname"><span class="pre">build_table_row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rowdata</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tableline</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockState.build_table_row"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockState.build_table_row" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockStateMachine">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">myst_parser.mocking.</span></span><span class="sig-name descname"><span class="pre">MockStateMachine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DocutilsRenderer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockStateMachine"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockStateMachine" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference external" href="https://docs.python.org/3.7/library/functions.html#object" title="(在 Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A mock version of <cite>docutils.parsers.rst.states.RSTStateMachine</cite>.</p>
+<p>This is parsed to the <cite>Directives.run()</cite> method.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockStateMachine.get_source">
+<span class="sig-name descname"><span class="pre">get_source</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lineno</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockStateMachine.get_source"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockStateMachine.get_source" title="永久链接至目标">¶</a></dt>
+<dd><p>Return document source path.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockStateMachine.get_source_and_line">
+<span class="sig-name descname"><span class="pre">get_source_and_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lineno</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockStateMachine.get_source_and_line"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockStateMachine.get_source_and_line" title="永久链接至目标">¶</a></dt>
+<dd><p>Return (source path, line) tuple for current or given line number.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockIncludeDirective">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">myst_parser.mocking.</span></span><span class="sig-name descname"><span class="pre">MockIncludeDirective</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DocutilsRenderer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">klass</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">docutils.parsers.rst.directives.misc.Include</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arguments</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#list" title="(在 Python v3.7)"><span class="pre">list</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">options</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#dict" title="(在 Python v3.7)"><span class="pre">dict</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockIncludeDirective"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockIncludeDirective" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference external" href="https://docs.python.org/3.7/library/functions.html#object" title="(在 Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>This directive uses a lot of statemachine logic that is not yet mocked.
+Therefore, we treat it as a special case (at least for now).</p>
+<p>See:
+<a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#including-an-external-document-fragment">https://docutils.sourceforge.io/docs/ref/rst/directives.html#including-an-external-document-fragment</a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockIncludeDirective.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">docutils.nodes.Element</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockIncludeDirective.run"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockIncludeDirective.run" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.mocking.MockIncludeDirective.add_name">
+<span class="sig-name descname"><span class="pre">add_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">docutils.nodes.Element</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/mocking.html#MockIncludeDirective.add_name"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.mocking.MockIncludeDirective.add_name" title="永久链接至目标">¶</a></dt>
+<dd><p>Append self.options[‘name’] to node[‘names’] if it exists.</p>
+<p>Also normalize the name string and register it as explicit target.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="additional-methods">
+<h3>Additional Methods<a class="headerlink" href="#additional-methods" title="永久链接至标题">¶</a></h3>
+<dl class="py function">
+<dt class="sig sig-object py" id="myst_parser.docutils_renderer.make_document">
+<span class="sig-prename descclassname"><span class="pre">myst_parser.docutils_renderer.</span></span><span class="sig-name descname"><span class="pre">make_document</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'notset'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">docutils.nodes.document</span></span></span><a class="reference internal" href="../_modules/myst_parser/docutils_renderer.html#make_document"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.docutils_renderer.make_document" title="永久链接至目标">¶</a></dt>
+<dd><p>Create a new docutils document.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myst_parser.docutils_renderer.html_meta_to_nodes">
+<span class="sig-prename descclassname"><span class="pre">myst_parser.docutils_renderer.</span></span><span class="sig-name descname"><span class="pre">html_meta_to_nodes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">document</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">docutils.nodes.document</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><span class="pre">int</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">reporter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">docutils.utils.Reporter</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">docutils.nodes.pending</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">docutils.nodes.system_message</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="../_modules/myst_parser/docutils_renderer.html#html_meta_to_nodes"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.docutils_renderer.html_meta_to_nodes" title="永久链接至目标">¶</a></dt>
+<dd><p>Replicate the <cite>meta</cite> directive,
+by converting a dictionary to a list of pending meta nodes</p>
+<p>See:
+<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#html-metadata">https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#html-metadata</a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myst_parser.sphinx_renderer.minimal_sphinx_app">
+<span class="sig-prename descclassname"><span class="pre">myst_parser.sphinx_renderer.</span></span><span class="sig-name descname"><span class="pre">minimal_sphinx_app</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configuration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sourcedir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_builder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_on_warning</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/sphinx_renderer.html#minimal_sphinx_app"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.sphinx_renderer.minimal_sphinx_app" title="永久链接至目标">¶</a></dt>
+<dd><p>Create a minimal Sphinx environment; loading sphinx roles, directives, etc.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="myst_parser.sphinx_renderer.mock_sphinx_env">
+<span class="sig-prename descclassname"><span class="pre">myst_parser.sphinx_renderer.</span></span><span class="sig-name descname"><span class="pre">mock_sphinx_env</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conf</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">srcdir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">document</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_builder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_on_warning</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myst_parser/sphinx_renderer.html#mock_sphinx_env"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.sphinx_renderer.mock_sphinx_env" title="永久链接至目标">¶</a></dt>
+<dd><p>Set up an environment, to parse sphinx roles/directives,
+outside of a <cite>sphinx-build</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>conf</strong> – a dictionary representation of the sphinx <cite>conf.py</cite></p></li>
+<li><p><strong>srcdir</strong> – a path to a source directory
+(for example, can be used for <cite>include</cite> statements)</p></li>
+</ul>
+</dd>
+</dl>
+<p>This primarily copies the code in <cite>sphinx.util.docutils.docutils_namespace</cite>
+and <cite>sphinx.util.docutils.sphinx_domains</cite>.</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="sphinx-parser-reference">
+<span id="api-sphinx-parser"></span><h2>Sphinx Parser Reference<a class="headerlink" href="#sphinx-parser-reference" title="永久链接至标题">¶</a></h2>
+<p>This class builds on the <a class="reference internal" href="#myst_parser.sphinx_renderer.SphinxRenderer" title="myst_parser.sphinx_renderer.SphinxRenderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">SphinxRenderer</span></code></a>
+to generate a parser for Sphinx, using the <a class="reference external" href="https://www.sphinx-doc.org/en/master/extdev/parserapi.html#parser-api" title="(在 Sphinx v5.0.0+)"><span class="xref std std-ref">Sphinx parser API</span></a>:</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="myst_parser.sphinx_parser.MystParser">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">myst_parser.sphinx_parser.</span></span><span class="sig-name descname"><span class="pre">MystParser</span></span><a class="reference internal" href="../_modules/myst_parser/sphinx_parser.html#MystParser"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.sphinx_parser.MystParser" title="永久链接至目标">¶</a></dt>
+<dd><p>基类：<a class="reference external" href="https://www.sphinx-doc.org/en/master/extdev/parserapi.html#sphinx.parsers.Parser" title="(在 Sphinx v5.0.0+)"><code class="xref py py-class docutils literal notranslate"><span class="pre">sphinx.parsers.Parser</span></code></a></p>
+<p>Sphinx parser for Markedly Structured Text (MyST).</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="myst_parser.sphinx_parser.MystParser.supported">
+<span class="sig-name descname"><span class="pre">supported</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('md',</span> <span class="pre">'markdown',</span> <span class="pre">'myst')</span></em><a class="headerlink" href="#myst_parser.sphinx_parser.MystParser.supported" title="永久链接至目标">¶</a></dt>
+<dd><p>Aliases this parser supports.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="myst_parser.sphinx_parser.MystParser.parse">
+<span class="sig-name descname"><span class="pre">parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputstring</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">document</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">docutils.nodes.document</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3.7/library/constants.html#None" title="(在 Python v3.7)"><span class="pre">None</span></a></span></span><a class="reference internal" href="../_modules/myst_parser/sphinx_parser.html#MystParser.parse"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#myst_parser.sphinx_parser.MystParser.parse" title="永久链接至目标">¶</a></dt>
+<dd><p>Parse source text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inputstring</strong> – The source string to parse</p></li>
+<li><p><strong>document</strong> – The root docutils node to add AST elements to</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<span class="target" id="api-renderers"></span></div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="renderers.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Render outputs</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../develop/index.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Contribute to MyST</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Executable Book Project<br/>
+        
+            &copy; Copyright 2020, Executable Book Project.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

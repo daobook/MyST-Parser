@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Sphinx configuration options" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myst-parser.readthedocs.io/en/sphinx/reference.html" />
+  <meta property="og:description" content="You can control the behaviour of the MyST parser in Sphinx by modifying your conf.py file. To do so, use the keywords beginning myst_.,,, Option, Default, Description,,, myst_commonmark_only, False..." />
+  <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
+  <meta property="og:image:alt" content="Sphinx configuration options" />
+  <meta name="twitter:card" content="summary_large_image">
+    <title>Sphinx configuration options</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="shortcut icon" href="../_static/logo-square.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Common errors and questions" href="faq.html" />
+    <link rel="prev" title="Special roles and directives" href="roles-and-directives.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Get started with MyST in Sphinx
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  MyST 语法
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/syntax.html">
+   The MyST Syntax Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/optional.html">
+   Optional MyST Syntaxes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/reference.html">
+   MyST Syntax Reference
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  主题指南
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../explain/index.html">
+   Background and explanation
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   MyST with Sphinx
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="use.html">
+     Sphinx extension usage guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="roles-and-directives.html">
+     Special roles and directives
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Sphinx configuration options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="faq.html">
+     Common errors and questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../api/index.html">
+   MyST-Parser Python API
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../api/parsers.html">
+     Parse MyST Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../api/renderers.html">
+     Render outputs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../api/reference.html">
+     API Reference
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../develop/index.html">
+   Contribute to MyST
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/contributing.html">
+     Contributing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/architecture.html">
+     The MyST implementation architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/test_infrastructure.html">
+     Testing Infrastructure
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  关于
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../examples/index.html">
+   Example pages
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/wealth_dynamics_rst.html">
+     Wealth Distribution Dynamics in rST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/wealth_dynamics_md.html">
+     Wealth Distribution Dynamics in MyST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../develop/_changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/executablebooks/myst-parser">
+   GitHub 仓库
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/sphinx/reference.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        
+        <a class="edit-button" href="https://github.com/executablebooks/MyST-Parser/edit/master/docs/sphinx/reference.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#disable-markdown-syntax-for-the-parser">
+   Disable markdown syntax for the parser
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="sphinx-configuration-options">
+<span id="sphinx-config-options"></span><h1>Sphinx configuration options<a class="headerlink" href="#sphinx-configuration-options" title="永久链接至标题">¶</a></h1>
+<p>You can control the behaviour of the MyST parser in Sphinx by modifying your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file.
+To do so, use the keywords beginning <code class="docutils literal notranslate"><span class="pre">myst_</span></code>.</p>
+<table class="table">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Option</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_commonmark_only</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p>If <code class="docutils literal notranslate"><span class="pre">True</span></code> convert text as strict CommonMark (all options below are then ignored). Note that strict CommonMark is unable to parse any directives, including the <code class="docutils literal notranslate"><span class="pre">toctree</span></code> directive, thus limiting MyST parser to single-page documentations. Use in conjunction with <a class="reference external" href="https://github.com/executablebooks/sphinx-external-toc">sphinx-external-toc</a> Sphinx extension to counter this limitation.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_disable_syntax</span></code></p></td>
+<td><p>()</p></td>
+<td><p>List of markdown syntax elements to disable, see the <a class="reference external" href="https://markdown-it-py.readthedocs.io/en/latest/using.html" title="(在 markdown-it-py)"><span class="xref myst">markdown-it parser guide</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_enable_extensions</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">[&quot;dollarmath&quot;]</span></code></p></td>
+<td><p>Enable Markdown extensions, <a class="reference internal" href="../syntax/optional.html"><span class="doc std std-doc">see here</span></a> for details.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_url_schemes</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<td><p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_URI_schemes">URI schemes</a> that will be recognised as external URLs in <code class="docutils literal notranslate"><span class="pre">[](scheme:loc)</span></code> syntax, or set <code class="docutils literal notranslate"><span class="pre">None</span></code> to recognise all.
+Other links will be resolved as internal cross-references.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_heading_anchors</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<td><p>Enable auto-generated heading anchors, up to a maximum level, <a class="reference internal" href="../syntax/optional.html#syntax-header-anchors"><span class="std std-ref">see here</span></a> for details.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_heading_slug_func</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
+<td><p>Use the specified function to auto-generate heading anchors, <a class="reference internal" href="../syntax/optional.html#syntax-header-anchors"><span class="std std-ref">see here</span></a> for details.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_substitutions</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p></td>
+<td><p>A mapping of keys to substitutions, used globally for all MyST documents when the “substitution” extension is enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_html_meta</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p></td>
+<td><p>A mapping of keys to HTML metadata, used globally for all MyST documents. See <a class="reference internal" href="../syntax/syntax.html#syntax-html-meta"><span class="std std-ref">Setting HTML Metadata</span></a>.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_footnote_transition</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p>Place a transition before any footnotes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_words_per_minute</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">200</span></code></p></td>
+<td><p>Reading speed used to calculate <code class="docutils literal notranslate"><span class="pre">{sub-ref}`wordcount-minutes`</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>List of extensions:</p>
+<ul class="simple">
+<li><p>“amsmath”: enable direct parsing of <a class="reference external" href="https://ctan.org/pkg/amsmath">amsmath</a> LaTeX equations</p></li>
+<li><p>“colon_fence”: Enable code fences using <code class="docutils literal notranslate"><span class="pre">:::</span></code> delimiters, <a class="reference internal" href="../syntax/optional.html#syntax-colon-fence"><span class="std std-ref">see here</span></a> for details</p></li>
+<li><p>“deflist”</p></li>
+<li><p>“dollarmath”: Enable parsing of dollar <code class="docutils literal notranslate"><span class="pre">$</span></code> and <code class="docutils literal notranslate"><span class="pre">$$</span></code> encapsulated math</p></li>
+<li><p>“html_admonition”: Convert <code class="docutils literal notranslate"><span class="pre">&lt;div</span> <span class="pre">class=&quot;admonition&quot;&gt;</span></code> elements to sphinx admonition nodes, see the <a class="reference internal" href="../syntax/optional.html#syntax-html-admonition"><span class="std std-ref">HTML admonition syntax</span></a> for details</p></li>
+<li><p>“html_image”: Convert HTML <code class="docutils literal notranslate"><span class="pre">&lt;img&gt;</span></code> elements to sphinx image nodes, see the <a class="reference internal" href="../syntax/optional.html#syntax-images"><span class="std std-ref">image syntax</span></a> for details</p></li>
+<li><p>“linkify”: automatically identify “bare” web URLs and add hyperlinks</p></li>
+<li><p>“replacements”: automatically convert some common typographic texts</p></li>
+<li><p>“smartquotes”: automatically convert standard quotations to their opening/closing variants</p></li>
+<li><p>“substitution”: substitute keys, see the <a class="reference internal" href="../syntax/optional.html#syntax-substitutions"><span class="std std-ref">substitutions syntax</span></a> for details</p></li>
+<li><p>“tasklist”: add check-boxes to the start of list items, see the <a class="reference internal" href="../syntax/optional.html#syntax-tasklists"><span class="std std-ref">tasklist syntax</span></a> for details</p></li>
+</ul>
+<p>Math specific, when <code class="docutils literal notranslate"><span class="pre">&quot;dollarmath&quot;</span></code> activated, see the <a class="reference internal" href="../syntax/optional.html#syntax-math"><span class="std std-ref">Math syntax</span></a> for more details:</p>
+<table class="table">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Option</p></th>
+<th class="head"><p>Default</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_dmath_double_inline</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p>Allow display math (i.e. <code class="docutils literal notranslate"><span class="pre">$$</span></code>) within an inline context</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_dmath_allow_labels</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p>Parse <code class="docutils literal notranslate"><span class="pre">$$...$$</span> <span class="pre">(label)</span></code> syntax</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_dmath_allow_space</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p>If False then inline math will only be parsed if there are no initial/final spaces,
+e.g. <code class="docutils literal notranslate"><span class="pre">$a$</span></code> but not <code class="docutils literal notranslate"><span class="pre">$</span> <span class="pre">a$</span></code> or <code class="docutils literal notranslate"><span class="pre">$a</span> <span class="pre">$</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_dmath_allow_digits</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p>If False then inline math will only be parsed if there are no initial/final digits,
+e.g. <code class="docutils literal notranslate"><span class="pre">$a$</span></code> but not <code class="docutils literal notranslate"><span class="pre">1$a$</span></code> or <code class="docutils literal notranslate"><span class="pre">$a$2</span></code> (this is useful for using <code class="docutils literal notranslate"><span class="pre">$</span></code> as currency)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_amsmath_enable</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+<td><p>Enable direct parsing of <a class="reference external" href="https://ctan.org/pkg/amsmath">amsmath LaTeX environments</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_update_mathjax</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p>If using <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/extensions/math.html#module-sphinx.ext.mathjax">sphinx.ext.mathjax</a> (the default) then <code class="docutils literal notranslate"><span class="pre">mathjax_config</span></code> will be updated,
+to ignore <code class="docutils literal notranslate"><span class="pre">$</span></code> delimiters and LaTeX environments, which should instead be handled by
+<code class="docutils literal notranslate"><span class="pre">myst_dmath_enable</span></code> and <code class="docutils literal notranslate"><span class="pre">myst_amsmath_enable</span></code> respectively.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="disable-markdown-syntax-for-the-parser">
+<h2>Disable markdown syntax for the parser<a class="headerlink" href="#disable-markdown-syntax-for-the-parser" title="永久链接至标题">¶</a></h2>
+<p>If you’d like to either enable or disable custom markdown syntax, use <code class="docutils literal notranslate"><span class="pre">myst_disable_syntax</span></code>.
+Anything in this list will no longer be parsed by the MyST parser.</p>
+<p>For example, to disable the <code class="docutils literal notranslate"><span class="pre">emphasis</span></code> in-line syntax, use this configuration:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">myst_disable_syntax</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;emphasis&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>emphasis syntax will now be disabled. For example, the following will be rendered
+<em>without</em> any italics:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="ge">*emphasis is now disabled*</span>
+</pre></div>
+</div>
+<p>For a list of all the syntax elements you can disable, see the <a class="reference external" href="https://markdown-it-py.readthedocs.io/en/latest/using.html" title="(在 markdown-it-py)"><span class="xref myst">markdown-it parser guide</span></a>.</p>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="roles-and-directives.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Special roles and directives</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="faq.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Common errors and questions</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Executable Book Project<br/>
+        
+            &copy; Copyright 2020, Executable Book Project.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

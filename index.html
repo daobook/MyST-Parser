@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="MyST - 标记的结构化文本（Markedly Structured Text） " />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myst-parser.readthedocs.io/en/index.html" />
+  <meta property="og:description" content="PyPI Conda MyST 是一种丰富的、可扩展的 Markdown 风味，用于技术文档和出版 。 MyST 是一种 markdown 风味，它的设计是为了简单、灵活和可扩展性。这里有几个主要的特点 符合 CommonMark 标准 ✔ MyST 是 [CommonMark Markdown][commonmark] 的一个超集。任何 CommonMark 文档也都是符合 MyST 的。..." />
+  <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
+  <meta property="og:image:alt" content="MyST - 标记的结构化文本（Markedly Structured Text） " />
+  <meta name="twitter:card" content="summary_large_image">
+    <title>MyST - 标记的结构化文本（Markedly Structured Text）</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="shortcut icon" href="_static/logo-square.svg"/>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="Get started with MyST in Sphinx" href="sphinx/intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="#">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="sphinx/intro.html">
+   Get started with MyST in Sphinx
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  MyST 语法
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="syntax/syntax.html">
+   The MyST Syntax Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="syntax/optional.html">
+   Optional MyST Syntaxes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="syntax/reference.html">
+   MyST Syntax Reference
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  主题指南
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="explain/index.html">
+   Background and explanation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="sphinx/index.html">
+   MyST with Sphinx
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx/use.html">
+     Sphinx extension usage guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx/roles-and-directives.html">
+     Special roles and directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx/reference.html">
+     Sphinx configuration options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx/faq.html">
+     Common errors and questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="api/index.html">
+   MyST-Parser Python API
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/parsers.html">
+     Parse MyST Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/renderers.html">
+     Render outputs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/reference.html">
+     API Reference
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="develop/index.html">
+   Contribute to MyST
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="develop/contributing.html">
+     Contributing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="develop/architecture.html">
+     The MyST implementation architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="develop/test_infrastructure.html">
+     Testing Infrastructure
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  关于
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="examples/index.html">
+   Example pages
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples/wealth_dynamics_rst.html">
+     Wealth Distribution Dynamics in rST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples/wealth_dynamics_md.html">
+     Wealth Distribution Dynamics in MyST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="develop/_changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/executablebooks/myst-parser">
+   GitHub 仓库
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/index.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        
+        <a class="edit-button" href="https://github.com/executablebooks/MyST-Parser/edit/master/docs/index.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#find-the-right-documentation-resources">
+   找到合适的文档资源
+  </a>
+  <ul class="nav section-nav flex-column">
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgements">
+   致谢
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="myst-markedly-structured-text">
+<h1>MyST - 标记的结构化文本（Markedly Structured Text） <a class="reference internal" href="_images/logo-square.svg"><img alt="_images/logo-square.svg" src="_images/logo-square.svg" width="40" /></a><a class="headerlink" href="#myst-markedly-structured-text" title="永久链接至标题">¶</a></h1>
+<p><a class="reference external" href="https://pypi.org/project/myst-parser"><img alt="PyPI" src="https://img.shields.io/pypi/v/myst-parser.svg" /></a>
+<a class="reference external" href="https://anaconda.org/conda-forge/myst-parser"><img alt="Conda" src="https://anaconda.org/conda-forge/myst-parser/badges/version.svg" /></a></p>
+<p><strong>MyST 是一种丰富的、可扩展的 Markdown 风味，用于技术文档和出版</strong>。</p>
+<p>MyST 是一种 markdown 风味，它的设计是为了简单、灵活和可扩展性。这里有几个主要的特点</p>
+<div class="sphinx-bs container pb-4 full-width text-center docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-4 px-2 py-2 docutils">
+<div class="card w-100 docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong><a class="reference internal" href="syntax/reference.html#commonmark-block-tokens"><span class="std std-ref">符合 CommonMark 标准</span></a></strong> ✔</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">MyST 是  [CommonMark Markdown][commonmark]  的一个超集。任何 CommonMark 文档也都是符合 MyST 的。</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-4 px-2 py-2 docutils">
+<div class="card w-100 docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong><a class="reference internal" href="syntax/reference.html#extended-block-tokens"><span class="std std-ref">额外的创作语法</span></a></strong> ✍</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">MyST <a class="reference internal" href="syntax/reference.html#extended-block-tokens"><span class="std std-ref">用于学术写作和技术文档的语法</span></a> 扩展了 CommonMark。</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-4 px-2 py-2 docutils">
+<div class="card w-100 docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong><a class="reference internal" href="syntax/syntax.html#syntax-directives"><span class="std std-ref">可扩展的语法</span></a></strong> 🚀</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">MyST 提供了 <a class="reference internal" href="syntax/syntax.html#syntax-roles"><span class="std std-ref">角色</span></a> 和 <a class="reference internal" href="syntax/syntax.html#syntax-directives"><span class="std std-ref">指令</span></a>，使你可以扩展 MyST 的功能。</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-4 px-2 py-2 docutils">
+<div class="card w-100 docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong><a class="reference internal" href="sphinx/index.html"><span class="doc std std-doc">兼容 Sphinx</span></a></strong> 📄</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">MyST 受到 Sphinx 的启发，并带有 <a class="reference internal" href="sphinx/index.html"><span class="doc std std-doc">自己的 Sphinx 解析器</span></a>。<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html" title="(在 Sphinx v5.0.0+)"><span class="xref myst">用 Markdown 编写你的 Sphinx 文档</span></a>，或者从 CLI 或 [使用交互式网页界面][mystyc] 转换现有的 [RST 到 Markdown][rst-to-myst]！</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-4 px-2 py-2 docutils">
+<div class="card w-100 docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong><a class="reference internal" href="api/index.html"><span class="doc std std-doc">可以用 Python 破解</span></a></strong> 🐍</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">这个 MyST 解析器是建立在 [<code class="docutils literal notranslate"><span class="pre">markdown-it-py</span></code> 包][markdown-it-py] 之上的，这是一个可插拔的 Markdown Python 解析器。</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-4 px-2 py-2 docutils">
+<div class="card w-100 docutils">
+<div class="card-header docutils">
+<p class="card-text"><strong>[可以用 Javascript 破解][markdown-it-myst]</strong> 🌍</p>
+</div>
+<div class="card-body docutils">
+<p class="card-text">[Javascript 解析器][markdown-it-myst] 建立在 [markdown-it][markdown-it] 的基础上，并允许你在网站中解析 MyST。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="find-the-right-documentation-resources">
+<h2>找到合适的文档资源<a class="headerlink" href="#find-the-right-documentation-resources" title="永久链接至标题">¶</a></h2>
+<p>本文档分为几个主要部分。<strong>教程</strong> 是对 MyST Markdown 的逐步介绍性指南。<strong>主题指南</strong> 涵盖了更深入的特定领域，并被组织为独立的 “如何做” 部分。<strong>参考资料</strong> 部分详细描述了 MyST 解析器的 API/语法等。</p>
+<p>此外，这里有几个要点可以帮助你开始工作。</p>
+<div class="sphinx-bs full-width docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-4 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header bg-myst-one docutils">
+<p class="card-text"><strong>开始使用 MyST</strong></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><strong><a class="reference internal" href="sphinx/intro.html"><span class="doc std std-doc">Get started with MyST in Sphinx</span></a></strong>：逐步的教程。</p>
+<p class="card-text"><strong><a class="reference internal" href="syntax/syntax.html"><span class="doc std std-doc">The MyST Syntax Guide</span></a></strong>：讨论了主要的 MyST 语法组件。</p>
+<p class="card-text"><strong><a class="reference internal" href="sphinx/index.html"><span class="doc std std-doc">The Sphinx guide</span></a></strong>：如何使用 MyST 与你的 Sphinx 文档。</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-4 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header bg-myst-two docutils">
+<p class="card-text"><strong>了解更多关于 MyST 的信息</strong></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><strong><a class="reference internal" href="syntax/optional.html"><span class="doc std std-doc">Optional MyST Syntaxes</span></a></strong>：你可以启用额外的语法来实现额外的功能。</p>
+<p class="card-text"><strong><a class="reference internal" href="api/index.html"><span class="doc std std-doc">Python API 指南</span></a></strong>：用 Python 解析和渲染 MyST。</p>
+<p class="card-text"><strong><a class="reference internal" href="explain/index.html"><span class="doc std std-doc">Background and explanation</span></a></strong>：对 MyST markdown 的背景理解和讨论。</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-4 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header bg-myst-three docutils">
+<p class="card-text"><strong>获取灵感</strong></p>
+</div>
+<div class="card-body docutils">
+<p class="card-text"><strong><a class="reference external" href="https://jupyterbook.org">Jupyter Book</a></strong>：一个开源项目，用于从计算材料中构建漂亮的、具有出版质量的书籍和文档，建立在 MyST 解析器之上。</p>
+<p class="card-text"><strong><a class="reference external" href="https://gallery.jupyterbook.org">Jupyter Book 画廊</a></strong>：用 MyST 建立的文档的例子。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="acknowledgements">
+<h2>致谢<a class="headerlink" href="#acknowledgements" title="永久链接至标题">¶</a></h2>
+<p>MyST markdown 和 MyST 解析器都是由开放社区 <a class="reference external" href="https://executablebooks.org">Executable Book 项目</a> 支持的。</p>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='right-next' id="next-link" href="sphinx/intro.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">Get started with MyST in Sphinx</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Executable Book Project<br/>
+        
+            &copy; Copyright 2020, Executable Book Project.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

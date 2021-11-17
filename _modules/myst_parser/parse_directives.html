@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myst_parser.parse_directives</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="shortcut icon" href="../../_static/logo-square.svg"/>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../sphinx/intro.html">
+   Get started with MyST in Sphinx
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  MyST 语法
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../syntax/syntax.html">
+   The MyST Syntax Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../syntax/optional.html">
+   Optional MyST Syntaxes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../syntax/reference.html">
+   MyST Syntax Reference
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  主题指南
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../explain/index.html">
+   Background and explanation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../sphinx/index.html">
+   MyST with Sphinx
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../sphinx/use.html">
+     Sphinx extension usage guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../sphinx/roles-and-directives.html">
+     Special roles and directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../sphinx/reference.html">
+     Sphinx configuration options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../sphinx/faq.html">
+     Common errors and questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../api/index.html">
+   MyST-Parser Python API
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../api/parsers.html">
+     Parse MyST Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../api/renderers.html">
+     Render outputs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../api/reference.html">
+     API Reference
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../develop/index.html">
+   Contribute to MyST
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../develop/contributing.html">
+     Contributing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../develop/architecture.html">
+     The MyST implementation architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../develop/test_infrastructure.html">
+     Testing Infrastructure
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  关于
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../examples/index.html">
+   Example pages
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/wealth_dynamics_rst.html">
+     Wealth Distribution Dynamics in rST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/wealth_dynamics_md.html">
+     Wealth Distribution Dynamics in MyST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../develop/_changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/executablebooks/myst-parser">
+   GitHub 仓库
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <h1>myst_parser.parse_directives 源代码</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Fenced code blocks are parsed as directives,</span>
+<span class="sd">if the block starts with ``{directive_name}``,</span>
+<span class="sd">followed by arguments on the same line.</span>
+
+<span class="sd">Directive options are read from a YAML block,</span>
+<span class="sd">if the first content line starts with ``---``, e.g.</span>
+
+<span class="sd">::</span>
+
+<span class="sd">    ```{directive_name} arguments</span>
+<span class="sd">    ---</span>
+<span class="sd">    option1: name</span>
+<span class="sd">    option2: |</span>
+<span class="sd">        Longer text block</span>
+<span class="sd">    ---</span>
+<span class="sd">    content...</span>
+<span class="sd">    ```</span>
+
+<span class="sd">Or the option block will be parsed if the first content line starts with ``:``,</span>
+<span class="sd">as a YAML block consisting of every line that starts with a ``:``, e.g.</span>
+
+<span class="sd">::</span>
+
+<span class="sd">    ```{directive_name} arguments</span>
+<span class="sd">    :option1: name</span>
+<span class="sd">    :option2: other</span>
+
+<span class="sd">    content...</span>
+<span class="sd">    ```</span>
+
+<span class="sd">If the first line of a directive&#39;s content is blank, this will be stripped</span>
+<span class="sd">from the content.</span>
+<span class="sd">This is to allow for separation between the option block and content.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">from</span> <span class="nn">textwrap</span> <span class="kn">import</span> <span class="n">dedent</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Callable</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Type</span>
+
+<span class="kn">import</span> <span class="nn">yaml</span>
+<span class="kn">from</span> <span class="nn">docutils.parsers.rst</span> <span class="kn">import</span> <span class="n">Directive</span>
+<span class="kn">from</span> <span class="nn">docutils.parsers.rst.directives.misc</span> <span class="kn">import</span> <span class="n">TestDirective</span>
+
+
+<div class="viewcode-block" id="DirectiveParsingError"><a class="viewcode-back" href="../../api/reference.html#myst_parser.parse_directives.DirectiveParsingError">[文档]</a><span class="k">class</span> <span class="nc">DirectiveParsingError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Raise on parsing/validation error.&quot;&quot;&quot;</span>
+
+    <span class="k">pass</span></div>
+
+
+<div class="viewcode-block" id="parse_directive_text"><a class="viewcode-back" href="../../api/reference.html#myst_parser.parse_directives.parse_directive_text">[文档]</a><span class="k">def</span> <span class="nf">parse_directive_text</span><span class="p">(</span>
+    <span class="n">directive_class</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">Directive</span><span class="p">],</span>
+    <span class="n">first_line</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">content</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">validate_options</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+<span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Parse (and validate) the full directive text.</span>
+
+<span class="sd">    :param first_line: The text on the same line as the directive name.</span>
+<span class="sd">        May be an argument or body text, dependent on the directive</span>
+<span class="sd">    :param content: All text after the first line. Can include options.</span>
+<span class="sd">    :param validate_options: Whether to validate the values of options</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">directive_class</span><span class="o">.</span><span class="n">option_spec</span><span class="p">:</span>
+        <span class="n">body</span><span class="p">,</span> <span class="n">options</span> <span class="o">=</span> <span class="n">parse_directive_options</span><span class="p">(</span>
+            <span class="n">content</span><span class="p">,</span> <span class="n">directive_class</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="n">validate_options</span>
+        <span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># If there are no possible options, we do not look for a YAML block</span>
+        <span class="n">options</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">body</span> <span class="o">=</span> <span class="n">content</span>
+
+    <span class="n">body_lines</span> <span class="o">=</span> <span class="n">body</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span>
+        <span class="n">directive_class</span><span class="o">.</span><span class="n">required_arguments</span>
+        <span class="ow">or</span> <span class="n">directive_class</span><span class="o">.</span><span class="n">optional_arguments</span>
+        <span class="ow">or</span> <span class="n">options</span>
+    <span class="p">):</span>
+        <span class="c1"># If there are no possible arguments and no option block,</span>
+        <span class="c1"># then the body starts on the argument line</span>
+        <span class="k">if</span> <span class="n">first_line</span><span class="p">:</span>
+            <span class="n">body_lines</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">first_line</span><span class="p">)</span>
+        <span class="n">arguments</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">arguments</span> <span class="o">=</span> <span class="n">parse_directive_arguments</span><span class="p">(</span><span class="n">directive_class</span><span class="p">,</span> <span class="n">first_line</span><span class="p">)</span>
+
+    <span class="c1"># remove first line of body if blank</span>
+    <span class="c1"># this is to allow space between the options and the content</span>
+    <span class="k">if</span> <span class="n">body_lines</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">body_lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+        <span class="n">body_lines</span> <span class="o">=</span> <span class="n">body_lines</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+    <span class="c1"># check for body content</span>
+    <span class="k">if</span> <span class="n">body_lines</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">directive_class</span><span class="o">.</span><span class="n">has_content</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">DirectiveParsingError</span><span class="p">(</span><span class="s2">&quot;No content permitted&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">arguments</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">body_lines</span></div>
+
+
+<div class="viewcode-block" id="parse_directive_options"><a class="viewcode-back" href="../../api/reference.html#myst_parser.parse_directives.parse_directive_options">[文档]</a><span class="k">def</span> <span class="nf">parse_directive_options</span><span class="p">(</span>
+    <span class="n">content</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">directive_class</span><span class="p">:</span> <span class="n">Type</span><span class="p">[</span><span class="n">Directive</span><span class="p">],</span> <span class="n">validate</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Parse (and validate) the directive option section.&quot;&quot;&quot;</span>
+    <span class="n">options</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">if</span> <span class="n">content</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;---&quot;</span><span class="p">):</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">content</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()[</span><span class="mi">1</span><span class="p">:])</span>
+        <span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;^-{3,}&quot;</span><span class="p">,</span> <span class="n">content</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">MULTILINE</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+            <span class="n">yaml_block</span> <span class="o">=</span> <span class="n">content</span><span class="p">[:</span> <span class="n">match</span><span class="o">.</span><span class="n">start</span><span class="p">()]</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="n">content</span><span class="p">[</span><span class="n">match</span><span class="o">.</span><span class="n">end</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">:]</span>  <span class="c1"># TODO advance line number</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">yaml_block</span> <span class="o">=</span> <span class="n">content</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">yaml_block</span> <span class="o">=</span> <span class="n">dedent</span><span class="p">(</span><span class="n">yaml_block</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">options</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">yaml_block</span><span class="p">)</span> <span class="ow">or</span> <span class="p">{}</span>
+        <span class="k">except</span> <span class="p">(</span><span class="n">yaml</span><span class="o">.</span><span class="n">parser</span><span class="o">.</span><span class="n">ParserError</span><span class="p">,</span> <span class="n">yaml</span><span class="o">.</span><span class="n">scanner</span><span class="o">.</span><span class="n">ScannerError</span><span class="p">)</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">DirectiveParsingError</span><span class="p">(</span><span class="s2">&quot;Invalid options YAML: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">error</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="n">content</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">):</span>
+        <span class="n">content_lines</span> <span class="o">=</span> <span class="n">content</span><span class="o">.</span><span class="n">splitlines</span><span class="p">()</span>  <span class="c1"># type: list</span>
+        <span class="n">yaml_lines</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">while</span> <span class="n">content_lines</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">content_lines</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">):</span>
+                <span class="k">break</span>
+            <span class="n">yaml_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">content_lines</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">lstrip</span><span class="p">()[</span><span class="mi">1</span><span class="p">:])</span>
+        <span class="n">yaml_block</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">yaml_lines</span><span class="p">)</span>
+        <span class="n">content</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">content_lines</span><span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">options</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">yaml_block</span><span class="p">)</span> <span class="ow">or</span> <span class="p">{}</span>
+        <span class="k">except</span> <span class="p">(</span><span class="n">yaml</span><span class="o">.</span><span class="n">parser</span><span class="o">.</span><span class="n">ParserError</span><span class="p">,</span> <span class="n">yaml</span><span class="o">.</span><span class="n">scanner</span><span class="o">.</span><span class="n">ScannerError</span><span class="p">)</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">DirectiveParsingError</span><span class="p">(</span><span class="s2">&quot;Invalid options YAML: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">error</span><span class="p">))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">DirectiveParsingError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid options (not dict): </span><span class="si">{</span><span class="n">options</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="ow">not</span> <span class="n">validate</span><span class="p">)</span> <span class="ow">or</span> <span class="nb">issubclass</span><span class="p">(</span><span class="n">directive_class</span><span class="p">,</span> <span class="n">TestDirective</span><span class="p">):</span>
+        <span class="c1"># technically this directive spec only accepts one option (&#39;option&#39;)</span>
+        <span class="c1"># but since its for testing only we accept all options</span>
+        <span class="k">return</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span>
+
+    <span class="c1"># check options against spec</span>
+    <span class="n">options_spec</span> <span class="o">=</span> <span class="n">directive_class</span><span class="o">.</span><span class="n">option_spec</span>  <span class="c1"># type: Dict[str, Callable]</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">options</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+        <span class="n">convertor</span> <span class="o">=</span> <span class="n">options_spec</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">convertor</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">DirectiveParsingError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unknown option: </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">True</span> <span class="ow">or</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># flag converter requires no argument</span>
+            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">)):</span>
+                <span class="c1"># convertor always requires string input</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">DirectiveParsingError</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s1">&#39;option &quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&quot; value not string (enclose with &quot;&quot;): </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s1">&#39;</span>
+                <span class="p">)</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">converted_value</span> <span class="o">=</span> <span class="n">convertor</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">ValueError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">)</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">DirectiveParsingError</span><span class="p">(</span>
+                <span class="s2">&quot;Invalid option value: (option: &#39;</span><span class="si">{}</span><span class="s2">&#39;; value: </span><span class="si">{}</span><span class="s2">)</span><span class="se">\n</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                    <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">error</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="n">options</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">converted_value</span>
+
+    <span class="k">return</span> <span class="n">content</span><span class="p">,</span> <span class="n">options</span></div>
+
+
+<div class="viewcode-block" id="parse_directive_arguments"><a class="viewcode-back" href="../../api/reference.html#myst_parser.parse_directives.parse_directive_arguments">[文档]</a><span class="k">def</span> <span class="nf">parse_directive_arguments</span><span class="p">(</span><span class="n">directive</span><span class="p">,</span> <span class="n">arg_text</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Parse (and validate) the directive argument section.&quot;&quot;&quot;</span>
+    <span class="n">required</span> <span class="o">=</span> <span class="n">directive</span><span class="o">.</span><span class="n">required_arguments</span>
+    <span class="n">optional</span> <span class="o">=</span> <span class="n">directive</span><span class="o">.</span><span class="n">optional_arguments</span>
+    <span class="n">arguments</span> <span class="o">=</span> <span class="n">arg_text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">arguments</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">required</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">DirectiveParsingError</span><span class="p">(</span>
+            <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> argument(s) required, </span><span class="si">{}</span><span class="s2"> supplied&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">required</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">arguments</span><span class="p">))</span>
+        <span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">arguments</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">required</span> <span class="o">+</span> <span class="n">optional</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">directive</span><span class="o">.</span><span class="n">final_argument_whitespace</span><span class="p">:</span>
+            <span class="n">arguments</span> <span class="o">=</span> <span class="n">arg_text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">required</span> <span class="o">+</span> <span class="n">optional</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">DirectiveParsingError</span><span class="p">(</span>
+                <span class="s2">&quot;maximum </span><span class="si">{}</span><span class="s2"> argument(s) allowed, </span><span class="si">{}</span><span class="s2"> supplied&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                    <span class="n">required</span> <span class="o">+</span> <span class="n">optional</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">arguments</span><span class="p">)</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+    <span class="k">return</span> <span class="n">arguments</span></div>
+</pre></div>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Executable Book Project<br/>
+        
+            &copy; Copyright 2020, Executable Book Project.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

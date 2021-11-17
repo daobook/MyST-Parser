@@ -1,0 +1,553 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="Render outputs" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myst-parser.readthedocs.io/en/api/renderers.html" />
+  <meta property="og:description" content="There are a few different ways to render MyST Parser tokens into different outputs. This section covers a few common ones. The docutils renderer: The myst_parser.docutils_renderer.DocutilsRenderer ..." />
+  <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
+  <meta property="og:image:alt" content="Render outputs" />
+  <meta name="twitter:card" content="summary_large_image">
+    <title>Render outputs</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="shortcut icon" href="../_static/logo-square.svg"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="API Reference" href="reference.html" />
+    <link rel="prev" title="Parse MyST Markdown" href="parsers.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../sphinx/intro.html">
+   Get started with MyST in Sphinx
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  MyST 语法
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/syntax.html">
+   The MyST Syntax Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/optional.html">
+   Optional MyST Syntaxes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syntax/reference.html">
+   MyST Syntax Reference
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  主题指南
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../explain/index.html">
+   Background and explanation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../sphinx/index.html">
+   MyST with Sphinx
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/use.html">
+     Sphinx extension usage guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/roles-and-directives.html">
+     Special roles and directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/reference.html">
+     Sphinx configuration options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../sphinx/faq.html">
+     Common errors and questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   MyST-Parser Python API
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="parsers.html">
+     Parse MyST Markdown
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Render outputs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="reference.html">
+     API Reference
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../develop/index.html">
+   Contribute to MyST
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/contributing.html">
+     Contributing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/architecture.html">
+     The MyST implementation architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../develop/test_infrastructure.html">
+     Testing Infrastructure
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  关于
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../examples/index.html">
+   Example pages
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/wealth_dynamics_rst.html">
+     Wealth Distribution Dynamics in rST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/wealth_dynamics_md.html">
+     Wealth Distribution Dynamics in MyST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../develop/_changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/executablebooks/myst-parser">
+   GitHub 仓库
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/api/renderers.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        
+        <a class="edit-button" href="https://github.com/executablebooks/MyST-Parser/edit/master/docs/api/renderers.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-docutils-renderer">
+   The
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     docutils
+    </span>
+   </code>
+   renderer
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-sphinx-renderer">
+   The Sphinx renderer
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-sphinx-configuration-for-testing">
+     Set Sphinx configuration for testing
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="render-outputs">
+<h1>Render outputs<a class="headerlink" href="#render-outputs" title="永久链接至标题">¶</a></h1>
+<p>There are a few different ways to render MyST Parser tokens into different outputs.
+This section covers a few common ones.</p>
+<div class="section" id="the-docutils-renderer">
+<h2>The <code class="docutils literal notranslate"><span class="pre">docutils</span></code> renderer<a class="headerlink" href="#the-docutils-renderer" title="永久链接至标题">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">myst_parser.docutils_renderer.DocutilsRenderer</span></code> converts a token directly to the <code class="docutils literal notranslate"><span class="pre">docutils.document</span></code> representation of the document, converting roles and directives to a <code class="docutils literal notranslate"><span class="pre">docutils.nodes</span></code> if a converter can be found for the given name.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">myst_parser.main</span> <span class="kn">import</span> <span class="n">to_docutils</span>
+
+<span class="n">document</span> <span class="o">=</span> <span class="n">to_docutils</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Here&#39;s some *text*</span>
+
+<span class="s2">1. a list</span>
+
+<span class="s2">&gt; a quote</span>
+
+<span class="si">{emphasis}</span><span class="s2">`content`</span>
+
+<span class="s2">```</span><span class="si">{sidebar}</span><span class="s2"> my sidebar</span>
+<span class="s2">content</span>
+<span class="s2">```</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">document</span><span class="o">.</span><span class="n">pformat</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;document</span> <span class="na">source=</span><span class="s">&quot;notset&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;paragraph&gt;</span>
+        Here&#39;s some
+        <span class="nt">&lt;emphasis&gt;</span>
+            text
+    <span class="nt">&lt;enumerated_list&gt;</span>
+        <span class="nt">&lt;list_item&gt;</span>
+            <span class="nt">&lt;paragraph&gt;</span>
+                a list
+    <span class="nt">&lt;block_quote&gt;</span>
+        <span class="nt">&lt;paragraph&gt;</span>
+            a quote
+    <span class="nt">&lt;paragraph&gt;</span>
+        <span class="nt">&lt;emphasis&gt;</span>
+            content
+    <span class="nt">&lt;sidebar&gt;</span>
+        <span class="nt">&lt;title&gt;</span>
+            my sidebar
+        <span class="nt">&lt;paragraph&gt;</span>
+            content
+</pre></div>
+</div>
+</div>
+<div class="section" id="the-sphinx-renderer">
+<h2>The Sphinx renderer<a class="headerlink" href="#the-sphinx-renderer" title="永久链接至标题">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">myst_parser.sphinx_renderer.SphinxRenderer</span></code> builds on the <code class="docutils literal notranslate"><span class="pre">DocutilsRenderer</span></code> to add sphinx specific nodes, e.g. for cross-referencing between documents.</p>
+<p>To use the sphinx specific roles and directives outside of a <code class="docutils literal notranslate"><span class="pre">sphinx-build</span></code>, they must first be loaded with the <code class="docutils literal notranslate"><span class="pre">in_sphinx_env</span></code> option.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">document</span> <span class="o">=</span> <span class="n">to_docutils</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Here&#39;s some *text*</span>
+
+<span class="s2">1. a list</span>
+
+<span class="s2">&gt; a quote</span>
+
+<span class="si">{ref}</span><span class="s2">`target`</span>
+
+<span class="s2">```</span><span class="si">{glossary}</span><span class="s2"> my gloassary</span>
+<span class="s2">name</span>
+<span class="s2">    definition</span>
+<span class="s2">```</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">,</span>
+    <span class="n">in_sphinx_env</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">document</span><span class="o">.</span><span class="n">pformat</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;document</span> <span class="na">source=</span><span class="s">&quot;notset&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;paragraph&gt;</span>
+        Here&#39;s some
+        <span class="nt">&lt;emphasis&gt;</span>
+            text
+    <span class="nt">&lt;enumerated_list&gt;</span>
+        <span class="nt">&lt;list_item&gt;</span>
+            <span class="nt">&lt;paragraph&gt;</span>
+                a list
+    <span class="nt">&lt;block_quote&gt;</span>
+        <span class="nt">&lt;paragraph&gt;</span>
+            a quote
+    <span class="nt">&lt;paragraph&gt;</span>
+        <span class="nt">&lt;pending_xref</span> <span class="na">refdoc=</span><span class="s">&quot;mock_docname&quot;</span> <span class="na">refdomain=</span><span class="s">&quot;std&quot;</span> <span class="na">refexplicit=</span><span class="s">&quot;False&quot;</span> <span class="na">reftarget=</span><span class="s">&quot;target&quot;</span> <span class="na">reftype=</span><span class="s">&quot;ref&quot;</span> <span class="na">refwarn=</span><span class="s">&quot;True&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;inline</span> <span class="na">classes=</span><span class="s">&quot;xref std std-ref&quot;</span><span class="nt">&gt;</span>
+                target
+    <span class="nt">&lt;glossary&gt;</span>
+        <span class="nt">&lt;definition_list</span> <span class="na">classes=</span><span class="s">&quot;glossary&quot;</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;definition_list_item&gt;</span>
+                <span class="nt">&lt;term</span> <span class="na">ids=</span><span class="s">&quot;term-my-gloassary&quot;</span><span class="nt">&gt;</span>
+                    my gloassary
+                    <span class="nt">&lt;index</span> <span class="na">entries=</span><span class="s">&quot;(&#39;single&#39;,\ &#39;my\ gloassary&#39;,\ &#39;term-my-gloassary&#39;,\ &#39;main&#39;,\ None)&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;term</span> <span class="na">ids=</span><span class="s">&quot;term-name&quot;</span><span class="nt">&gt;</span>
+                    name
+                    <span class="nt">&lt;index</span> <span class="na">entries=</span><span class="s">&quot;(&#39;single&#39;,\ &#39;name&#39;,\ &#39;term-name&#39;,\ &#39;main&#39;,\ None)&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;definition&gt;</span>
+                    <span class="nt">&lt;paragraph&gt;</span>
+                        definition
+</pre></div>
+</div>
+<div class="section" id="set-sphinx-configuration-for-testing">
+<h3>Set Sphinx configuration for testing<a class="headerlink" href="#set-sphinx-configuration-for-testing" title="永久链接至标题">¶</a></h3>
+<p>You can also set Sphinx configuration <em>via</em> <code class="docutils literal notranslate"><span class="pre">sphinx_conf</span></code>. This is a dictionary representation of the contents of the Sphinx <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>This feature is only meant for simple testing.
+It will fail for extensions that require the full
+Sphinx build process and/or access to external files.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">document</span> <span class="o">=</span> <span class="n">to_docutils</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">````</span><span class="si">{tabs}</span><span class="s2"></span>
+
+<span class="s2">```</span><span class="si">{tab}</span><span class="s2"> Apples</span>
+
+<span class="s2">Apples are green, or sometimes red.</span>
+<span class="s2">```</span>
+<span class="s2">````</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">,</span>
+    <span class="n">in_sphinx_env</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">conf</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;extensions&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;sphinx_tabs.tabs&quot;</span><span class="p">]}</span>
+<span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">document</span><span class="o">.</span><span class="n">pformat</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;document</span> <span class="na">source=</span><span class="s">&quot;notset&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;container</span> <span class="na">classes=</span><span class="s">&quot;sphinx-tabs&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;container&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">classes=</span><span class="s">&quot;item&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;container&gt;</span>
+                    <span class="nt">&lt;paragraph&gt;</span>
+                        Apples
+            <span class="nt">&lt;container</span> <span class="na">classes=</span><span class="s">&quot;ui bottom attached sphinx-tab tab segment sphinx-data-tab-0-0 active&quot;</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;paragraph&gt;</span>
+                    Apples are green, or sometimes red.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="parsers.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Parse MyST Markdown</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="reference.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">API Reference</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Executable Book Project<br/>
+        
+            &copy; Copyright 2020, Executable Book Project.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
