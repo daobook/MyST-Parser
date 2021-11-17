@@ -8,7 +8,7 @@
   <meta property="og:title" content="MyST - 标记的结构化文本（Markedly Structured Text） " />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://myst-parser.readthedocs.io/en/index.html" />
-  <meta property="og:description" content="PyPI Conda MyST 是一种丰富的、可扩展的 Markdown 风味，用于技术文档和出版 。 MyST 是一种 markdown 风味，它的设计是为了简单、灵活和可扩展性。这里有几个主要的特点 符合 CommonMark 标准 ✔ MyST 是 [CommonMark Markdown][commonmark] 的一个超集。任何 CommonMark 文档也都是符合 MyST 的。..." />
+  <meta property="og:description" content="PyPI Conda MyST 是一种丰富的、可扩展的 Markdown 风味，用于技术文档和出版 。 MyST 是一种 markdown 风味，它的设计是为了简单、灵活和可扩展性。这里有几个主要的特点 符合 CommonMark 标准 ✔ MyST 是 CommonMark Markdown 的一个超集。任何 CommonMark 文档也都是符合 MyST 的。 额外的创作语法 ✍ MyS..." />
   <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
   <meta property="og:image:alt" content="MyST - 标记的结构化文本（Markedly Structured Text） " />
   <meta name="twitter:card" content="summary_large_image">
@@ -306,7 +306,7 @@
     <div class="dropdown-buttons sourcebuttons">
         
         
-        <a class="edit-button" href="https://github.com/executablebooks/MyST-Parser/edit/master/docs/index.md"><button
+        <a class="edit-button" href="https://github.com/daobook/MyST-Parser/edit/master/docs/index.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -368,7 +368,8 @@
 <p class="card-text"><strong><a class="reference internal" href="syntax/reference.html#commonmark-block-tokens"><span class="std std-ref">符合 CommonMark 标准</span></a></strong> ✔</p>
 </div>
 <div class="card-body docutils">
-<p class="card-text">MyST 是  [CommonMark Markdown][commonmark]  的一个超集。任何 CommonMark 文档也都是符合 MyST 的。</p>
+<!-- MyST is a superset of [CommonMark Markdown][commonmark]. Any CommonMark document is also MyST-compliant. -->
+<p class="card-text">MyST 是 <a class="reference external" href="https://commonmark.org/">CommonMark Markdown</a> 的一个超集。任何 CommonMark 文档也都是符合 MyST 的。</p>
 </div>
 </div>
 </div>
@@ -398,7 +399,10 @@
 <p class="card-text"><strong><a class="reference internal" href="sphinx/index.html"><span class="doc std std-doc">兼容 Sphinx</span></a></strong> 📄</p>
 </div>
 <div class="card-body docutils">
-<p class="card-text">MyST 受到 Sphinx 的启发，并带有 <a class="reference internal" href="sphinx/index.html"><span class="doc std std-doc">自己的 Sphinx 解析器</span></a>。<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html" title="(在 Sphinx v5.0.0+)"><span class="xref myst">用 Markdown 编写你的 Sphinx 文档</span></a>，或者从 CLI 或 [使用交互式网页界面][mystyc] 转换现有的 [RST 到 Markdown][rst-to-myst]！</p>
+<!-- MyST is inspired by Sphinx, and comes with [its own Sphinx parser](sphinx/index.md).
+[Write your Sphinx docs in Markdown](sphinx:usage/quickstart), or convert existing [RST to Markdown][rst-to-myst]
+from the CLI or [using an interactive web interface][mystyc]! -->
+<p class="card-text">MyST 受到 Sphinx 的启发，并带有 <a class="reference internal" href="sphinx/index.html"><span class="doc std std-doc">自己的 Sphinx 解析器</span></a>。<a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html" title="(在 Sphinx v5.0.0+)"><span class="xref myst">用 Markdown 编写你的 Sphinx 文档</span></a>，或者从 CLI 或 <a class="reference external" href="https://mystyc.herokuapp.com">使用交互式网页界面</a> 转换现有的 <a class="reference external" href="https://rst-to-myst.readthedocs.io">RST 到 Markdown</a>！</p>
 </div>
 </div>
 </div>
@@ -408,17 +412,20 @@
 <p class="card-text"><strong><a class="reference internal" href="api/index.html"><span class="doc std std-doc">可以用 Python 破解</span></a></strong> 🐍</p>
 </div>
 <div class="card-body docutils">
-<p class="card-text">这个 MyST 解析器是建立在 [<code class="docutils literal notranslate"><span class="pre">markdown-it-py</span></code> 包][markdown-it-py] 之上的，这是一个可插拔的 Markdown Python 解析器。</p>
+<!-- This MyST parser is built on top of the [`markdown-it-py` package][markdown-it-py], an pluggable Python parser for Markdown. -->
+<p class="card-text">这个 MyST 解析器是建立在 <a class="reference external" href="https://markdown-it-py.readthedocs.io/"><code class="docutils literal notranslate"><span class="pre">markdown-it-py</span></code> 包</a> 之上的，这是一个可插拔的 Markdown Python 解析器。”</p>
 </div>
 </div>
 </div>
 <div class="d-flex col-lg-4 px-2 py-2 docutils">
 <div class="card w-100 docutils">
 <div class="card-header docutils">
-<p class="card-text"><strong>[可以用 Javascript 破解][markdown-it-myst]</strong> 🌍</p>
+<!-- **[Hackable with Javascript][markdown-it-myst]** 🌍 -->
+<p class="card-text"><strong><a class="reference external" href="https://github.com/executablebooks/markdown-it-myst">可以用 Javascript 破解</a></strong> 🌍</p>
 </div>
 <div class="card-body docutils">
-<p class="card-text">[Javascript 解析器][markdown-it-myst] 建立在 [markdown-it][markdown-it] 的基础上，并允许你在网站中解析 MyST。</p>
+<!-- The [Javascript parser][markdown-it-myst] builds on [markdown-it][markdown-it], and allows you to parse MyST in websites. -->
+<p class="card-text"><a class="reference external" href="https://github.com/executablebooks/markdown-it-myst">Javascript 解析器</a> 建立在 <a class="reference external" href="https://markdown-it.github.io/">markdown-it</a> 的基础上，并允许你在网站中解析 MyST。</p>
 </div>
 </div>
 </div>
