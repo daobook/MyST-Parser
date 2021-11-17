@@ -20,25 +20,27 @@ msgstr ""
 
 #: ../../index.md:90
 msgid "MyST Syntax"
-msgstr ""
+msgstr "MyST 语法"
 
 #: ../../index.md:98
 msgid "Topic Guides"
-msgstr ""
+msgstr "主题指南"
 
 #: ../../index.md:107
 msgid "GitHub repo"
-msgstr ""
+msgstr "GitHub 仓库"
 
 #: ../../index.md:107
 msgid "About the project"
-msgstr ""
+msgstr "关于"
 
 #: ../../index.md:1
 msgid ""
 "MyST - Markedly Structured Text <img src=\"_static/logo-square.svg\" "
 "width=40 />"
 msgstr ""
+"MyST - 标记的结构化文本（Markedly Structured Text） "
+"<img src=\"_static/logo-square.svg\" width=40 />"
 
 #: ../../index.md:3
 msgid "[![PyPI][pypi-badge]][pypi-link] [![Conda][conda-badge]][conda-link]"
@@ -57,46 +59,52 @@ msgid ""
 "**MyST is a rich and extensible flavor of Markdown meant for technical "
 "documentation and publishing**."
 msgstr ""
+"**MyST 是一种丰富的、可扩展的 Markdown 风味，用于技术文档和出版**。"
 
 #: ../../index.md:8
 msgid ""
 "MyST is a flavor of markdown that is designed for simplicity, "
 "flexibility, and extensibility. Here are a few major features"
 msgstr ""
+"MyST 是一种 markdown 风味，它的设计是为了简单、灵活和可扩展性。这里有几个主要的特点"
 
 #: ../../index.md:1
 msgid "**[CommonMark compliant](commonmark-block-tokens)** ✔"
-msgstr ""
+msgstr "**[符合 CommonMark 标准](commonmark-block-tokens)** ✔"
 
 #: ../../index.md:1
 msgid ""
 "MyST is a superset of [CommonMark Markdown][commonmark]. Any CommonMark "
 "document is also MyST-compliant."
 msgstr ""
+"MyST 是  [CommonMark Markdown][commonmark]  的一个超集。"
+"任何 CommonMark 文档也都是符合 MyST 的。"
 
 #: ../../index.md:2
 msgid "**[Extra syntax for authoring](extended-block-tokens)** ✍"
-msgstr ""
+msgstr "**[额外的创作语法](extended-block-tokens)** ✍"
 
 #: ../../index.md:1
 msgid ""
 "MyST extends CommonMark with [syntax meant for scholarly writing and "
 "technical documentation](extended-block-tokens)."
 msgstr ""
+"MyST [用于学术写作和技术文档的语法](extended-block-tokens) 扩展了 CommonMark。"
 
 #: ../../index.md:1
 msgid "**[Extendable syntax](syntax/directives)** 🚀"
-msgstr ""
+msgstr "**[可扩展的语法](syntax/directives)** 🚀"
 
 #: ../../index.md:1
 msgid ""
 "MyST provides [roles](syntax/roles) and [directives](syntax/directives), "
 "allowing you to extend MyST's functionality."
 msgstr ""
+"MyST 提供了 [角色](syntax/roles) 和 [指令](syntax/directives)，使你可以扩展 MyST 的功能。"
 
 #: ../../index.md:1
 msgid "**[Compatible with Sphinx](sphinx/index.md)** 📄"
-msgstr ""
+msgstr "**[兼容 Sphinx](sphinx/index.md)** 📄"
 
 #: ../../index.md:1
 msgid ""
@@ -106,30 +114,37 @@ msgid ""
 "][rst-to-myst] from the CLI or [using an interactive web "
 "interface][mystyc]!"
 msgstr ""
+"MyST 受到 Sphinx 的启发，并带有 [自己的 Sphinx 解析器](sphinx/index.md)。"
+"[用 Markdown 编写你的 Sphinx 文档](sphinx:usage/quickstart)，"
+"或者从 CLI 或 [使用交互式网页界面][mystyc] 转换现有的 [RST 到 Markdown][rst-to-myst]！"
 
 #: ../../index.md:1
 msgid "**[Hackable with Python](api/index.md)** 🐍"
-msgstr ""
+msgstr "**[可以用 Python 破解](api/index.md)** 🐍"
 
 #: ../../index.md:1
 msgid ""
 "This MyST parser is built on top of the [`markdown-it-py` package"
 "][markdown-it-py], an pluggable Python parser for Markdown."
 msgstr ""
+"这个 MyST 解析器是建立在 [`markdown-it-py` 包][markdown-it-py] 之上的，"
+"这是一个可插拔的 Markdown Python 解析器。"
 
 #: ../../index.md:1
 msgid "**[Hackable with Javascript][markdown-it-myst]** 🌍"
-msgstr ""
+msgstr "**[可以用 Javascript 破解][markdown-it-myst]** 🌍"
 
 #: ../../index.md:1
 msgid ""
 "The [Javascript parser][markdown-it-myst] builds on [markdown-it"
 "][markdown-it], and allows you to parse MyST in websites."
 msgstr ""
+"[Javascript 解析器][markdown-it-myst] 建立在 [markdown-it][markdown-it] "
+"的基础上，并允许你在网站中解析 MyST。"
 
 #: ../../index.md:47
 msgid "Find the right documentation resources"
-msgstr ""
+msgstr "找到合适的文档资源"
 
 #: ../../index.md:49
 msgid ""
@@ -139,54 +154,62 @@ msgid ""
 "to\" sections. **Reference** sections describe the API/syntax/etc of the "
 "MyST Parser in detail."
 msgstr ""
+"本文档分为几个主要部分。"
+"**教程** 是对 MyST Markdown 的逐步介绍性指南。"
+"**主题指南** 涵盖了更深入的特定领域，并被组织为独立的 \"如何做\" 部分。"
+"**参考资料** 部分详细描述了 MyST 解析器的 API/语法等。"
 
 #: ../../index.md:51
 msgid "In addition, here are a few pointers to help you get started."
-msgstr ""
+msgstr "此外，这里有几个要点可以帮助你开始工作。"
 
 #: ../../index.md:1
 msgid "**Get started with MyST**"
-msgstr ""
+msgstr "**开始使用 MyST**"
 
 #: ../../index.md:1
 msgid "**[](sphinx/intro.md)**: a step-by-step tutorial."
-msgstr ""
+msgstr "**[](sphinx/intro.md)**：逐步的教程。"
 
 #: ../../index.md:3
 msgid "**[](syntax/syntax.md)**: discusses major MyST syntax components."
-msgstr ""
+msgstr "**[](syntax/syntax.md)**：讨论了主要的 MyST 语法组件。"
 
 #: ../../index.md:5
 msgid ""
 "**[The Sphinx guide](sphinx/index.md)**: how to use MyST with your Sphinx"
 " documentation."
 msgstr ""
+"**[The Sphinx guide](sphinx/index.md)**：如何使用 MyST 与你的 Sphinx 文档。"
 
 #: ../../index.md:2
 msgid "**Learn more about MyST**"
-msgstr ""
+msgstr "**了解更多关于 MyST 的信息**"
 
 #: ../../index.md:1
 msgid ""
 "**[](syntax/optional.md)**: additional syntax you can enable for extra "
 "features."
 msgstr ""
+"**[](syntax/optional.md)**：你可以启用额外的语法来实现额外的功能。"
 
 #: ../../index.md:3
 msgid ""
 "**[The Python API guide](api/index.md)**: parsing and rendering MyST with"
 " Python."
 msgstr ""
+"**[Python API 指南](api/index.md)**：用 Python 解析和渲染 MyST。"
 
 #: ../../index.md:5
 msgid ""
 "**[](explain/index.md)**: background understanding and discussions of "
 "MyST markdown."
 msgstr ""
+"**[](explain/index.md)**：对 MyST markdown 的背景理解和讨论。"
 
 #: ../../index.md:2
 msgid "**Get inspired**"
-msgstr ""
+msgstr "**获取灵感**"
 
 #: ../../index.md:1
 msgid ""
@@ -194,20 +217,25 @@ msgid ""
 "building beautiful, publication-quality books and documents from "
 "computational material, built on top of the MyST Parser."
 msgstr ""
+"**[Jupyter Book](https://jupyterbook.org)**：一个开源项目，"
+"用于从计算材料中构建漂亮的、具有出版质量的书籍和文档，建立在 MyST 解析器之上。"
 
 #: ../../index.md:3
 msgid ""
 "**[The Jupyter Book gallery](https://gallery.jupyterbook.org)**: examples"
 " of documents built with MyST."
 msgstr ""
+"**[Jupyter Book 画廊](https://gallery.jupyterbook.org)**："
+"用 MyST 建立的文档的例子。"
 
 #: ../../index.md:115
 msgid "Acknowledgements"
-msgstr ""
+msgstr "致谢"
 
 #: ../../index.md:117
 msgid ""
 "The MyST markdown language and MyST parser are both supported by the open"
 " community, [The Executable Book Project](https://executablebooks.org)."
 msgstr ""
-
+"MyST markdown 和 MyST 解析器都是由开放社区 "
+"[Executable Book 项目](https://executablebooks.org) 支持的。"
