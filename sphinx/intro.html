@@ -5,14 +5,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta property="og:title" content="Get started with MyST in Sphinx" />
+  <meta property="og:title" content="在 Sphinx 中开始使用 MyST" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://myst-parser.readthedocs.io/en/sphinx/intro.html" />
-  <meta property="og:description" content="This page describes how to get started with the MyST parser, with a focus on enabling it in the Sphinx documentation engine. Install the MyST Parser: PyPI Conda Installing the MyST parser provides ..." />
+  <meta property="og:description" content="这个页面描述了如何开始使用 MyST 解析器，重点是在 Sphinx 文档引擎中启用它。 安装 MyST 解析器: PyPI Conda 安装 MyST 解析器可以访问两个工具： 一个 Python 库，可以解析 MyST markdown，并将其呈现为多种输出格式（特别是与 Sphinx 一起使用的 docutils 格式）。, 一个 Sphinx 插件，利用上述工具来解析你的文档中的 M..." />
   <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
-  <meta property="og:image:alt" content="Get started with MyST in Sphinx" />
+  <meta property="og:image:alt" content="在 Sphinx 中开始使用 MyST" />
   <meta name="twitter:card" content="summary_large_image">
-    <title>Get started with MyST in Sphinx</title>
+    <title>在 Sphinx 中开始使用 MyST</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -87,7 +87,7 @@
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Get started with MyST in Sphinx
+   在 Sphinx 中开始使用 MyST
   </a>
  </li>
 </ul>
@@ -126,7 +126,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="index.html">
-   MyST with Sphinx
+   含 Sphinx 的 MyST
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -334,47 +334,47 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#install-the-myst-parser">
-   Install the MyST Parser
+   安装 MyST 解析器
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#enable-myst-in-sphinx">
-   Enable MyST in Sphinx
+   在 Sphinx 启用 MyST
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#write-your-first-markdown-document">
-   Write your first markdown document
+   编写你的第一份 markdown 文档
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#extend-markdown-with-a-directive">
-   Extend markdown with a directive
+   用指令来扩展 markdown
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#reference-a-section-label-with-a-role">
-   Reference a section label with a role
+   用一个角色引用一个章节的标签
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-a-comment-using-extra-myst-syntax">
-   Add a comment using extra MyST syntax
+   使用额外的 MyST 语法添加注释
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#extending-myst-via-configuration">
-   Extending MyST via configuration
+   通过配置扩展 MyST
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#install-a-new-sphinx-extension-and-use-its-functionality">
-   Install a new Sphinx extension and use its functionality
+   安装一个新的 Sphinx 插件并使用其功能
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#next-steps-learn-more-about-myst-syntax">
-   Next steps - Learn more about MyST Syntax
+   接下来的步骤 - 了解更多关于 MyST 语法的信息
   </a>
  </li>
 </ul>
@@ -389,78 +389,69 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="get-started-with-myst-in-sphinx">
-<span id="intro-get-started"></span><h1>Get started with MyST in Sphinx<a class="headerlink" href="#get-started-with-myst-in-sphinx" title="永久链接至标题">¶</a></h1>
-<p>This page describes how to get started with the MyST parser, with a focus on enabling it in the Sphinx documentation engine.</p>
+<span id="intro-get-started"></span><h1>在 Sphinx 中开始使用 MyST<a class="headerlink" href="#get-started-with-myst-in-sphinx" title="永久链接至标题">¶</a></h1>
+<p>这个页面描述了如何开始使用 MyST 解析器，重点是在 Sphinx 文档引擎中启用它。</p>
 <div class="section" id="install-the-myst-parser">
-<h2>Install the MyST Parser<a class="headerlink" href="#install-the-myst-parser" title="永久链接至标题">¶</a></h2>
+<h2>安装 MyST 解析器<a class="headerlink" href="#install-the-myst-parser" title="永久链接至标题">¶</a></h2>
 <p><a class="reference external" href="https://pypi.org/project/myst-parser"><img alt="PyPI" src="https://img.shields.io/pypi/v/myst-parser.svg" /></a>
 <a class="reference external" href="https://anaconda.org/conda-forge/myst-parser"><img alt="Conda" src="https://anaconda.org/conda-forge/myst-parser/badges/version.svg" /></a></p>
-<p>Installing the MyST parser provides access to two tools:</p>
+<p>安装 MyST 解析器可以访问两个工具：</p>
 <ul class="simple">
-<li><p>A Python library that can parse MyST markdown, and render it to a number of output formats (in particular, <code class="docutils literal notranslate"><span class="pre">docutils</span></code> format for use with Sphinx).</p></li>
-<li><p>A Sphinx extension that that utilizes the above tool in order to parse MyST Markdown in your documentation.</p></li>
+<li><p>一个 Python 库，可以解析 MyST markdown，并将其呈现为多种输出格式（特别是与 Sphinx 一起使用的 <code class="docutils literal notranslate"><span class="pre">docutils</span></code> 格式）。</p></li>
+<li><p>一个 Sphinx 插件，利用上述工具来解析你的文档中的 MyST Markdown。</p></li>
 </ul>
-<p>To install the MyST parser, run the following in a
-<a class="reference external" href="https://docs.conda.io">Conda environment</a> (recommended):</p>
+<p>要安装 MyST 解析器，请在 <a class="reference external" href="https://docs.conda.io">Conda 环境</a> 中运行以下内容（推荐）：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge myst-parser
 </pre></div>
 </div>
-<p>or</p>
+<p>或者</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install myst-parser
 </pre></div>
 </div>
 </div>
 <div class="section" id="enable-myst-in-sphinx">
-<span id="parse-with-sphinx"></span><h2>Enable MyST in Sphinx<a class="headerlink" href="#enable-myst-in-sphinx" title="永久链接至标题">¶</a></h2>
-<p>Sphinx is a documentation generator for building a website or book from multiple source documents and assets. To get started with Sphinx, see their <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">Quickstart Guide</a>. This guide assumes that you’ve already got a pre-existing Sphinx site that builds properly.</p>
-<p>To use the MyST parser in Sphinx, simply add the following to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
+<span id="parse-with-sphinx"></span><h2>在 Sphinx 启用 MyST<a class="headerlink" href="#enable-myst-in-sphinx" title="永久链接至标题">¶</a></h2>
+<p>Sphinx 是一个文档生成器，用于从多个源文档和 assets 中建立网站或书籍。要开始使用 Sphinx，请看他们的 <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/quickstart.html">快速入门指南</a>。本指南假设你已经有了一个预先存在的 Sphinx 网站，并能正常构建。</p>
+<p>要在 Sphinx 中使用 MyST 解析器，只需在你的 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 文件中加入以下内容：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;myst_parser&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>This will activate the MyST Parser extension, causing all documents with the <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension to be parsed as MyST.</p>
+<p>这将激活 MyST 解析器插件，使所有以 <code class="docutils literal notranslate"><span class="pre">.md</span></code> 为扩展名的文件被解析为 MyST。</p>
 <div class="tip admonition">
-<p class="admonition-title">You can use both MyST and reStructuredText</p>
-<p>Activating the MyST parser will simply <em>enable</em> parsing markdown files with MyST, and the rST parser that ships with Sphinx will still work the same way.
-Files ending with <code class="docutils literal notranslate"><span class="pre">.md</span></code> will be parsed as MyST, and files ending in <code class="docutils literal notranslate"><span class="pre">.rst</span></code> will be parsed as reStructuredText.</p>
+<p class="admonition-title">你可以同时使用 MyST 和 reStructuredText</p>
+<p>激活 MyST 解析器将简单地 <em>enable</em> 用 MyST 解析 markdown 文件，而 Sphinx 中的 rST 解析器仍将以同样的方式工作。以 <code class="docutils literal notranslate"><span class="pre">.md</span></code> 结尾的文件将被解析为 MyST，而以 <code class="docutils literal notranslate"><span class="pre">.rst</span></code> 结尾的文件将被解析为 reStructuredText。</p>
 </div>
 </div>
 <div class="section" id="write-your-first-markdown-document">
-<span id="intro-writing"></span><h2>Write your first markdown document<a class="headerlink" href="#write-your-first-markdown-document" title="永久链接至标题">¶</a></h2>
-<p>Now that you’ve enabled the <code class="docutils literal notranslate"><span class="pre">myst-parser</span></code> in Sphinx, you can write MyST markdown in a file that ends with <code class="docutils literal notranslate"><span class="pre">.md</span></code> extension for your pages.</p>
+<span id="intro-writing"></span><h2>编写你的第一份 markdown 文档<a class="headerlink" href="#write-your-first-markdown-document" title="永久链接至标题">¶</a></h2>
+<p>现在你已经在 Sphinx 中启用了 <code class="docutils literal notranslate"><span class="pre">myst-parser'，你可以在一个以</span> </code>.md` 结尾的文件中为你的页面编写 MyST markdown。</p>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
-<p>MyST markdown is a mixture of two flavors of markdown:</p>
-<p>It supports all the syntax of <strong><a class="reference external" href="https://commonmark.org/">CommonMark Markdown</a></strong> at its
-base. This is a community standard flavor of markdown used across many projects.</p>
-<p>In addition, it includes <strong><a class="reference internal" href="../syntax/syntax.html"><span class="doc std std-doc">several extensions</span></a> to CommonMark</strong>.
-These add extra syntax features for technical writing, such as the roles and directives used by Sphinx.</p>
+<p>MyST markdown 是一种混合了两种风味的 markdown：</p>
+<p>它在其基础上支持 <strong><a class="reference external" href="https://commonmark.org/">CommonMark Markdown</a></strong> 的所有语法。这是一个在许多项目中使用的社区标准的 markdown 风味。</p>
+<p>此外，它还包括 <strong><a class="reference internal" href="../syntax/syntax.html"><span class="doc std std-doc">几个插件</span></a> 到 CommonMark</strong>。这些为技术写作增加了额外的语法功能，如 Sphinx 使用的角色和指令。</p>
 </div>
-<p>To start off, create an empty file called <code class="docutils literal notranslate"><span class="pre">myfile.md</span></code> and give it a markdown title and text.</p>
+<p>首先，创建一个名为 <code class="docutils literal notranslate"><span class="pre">myfile.md</span></code> 的空文件，并给它一个 markdown 标题和文本。</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
 
 Some <span class="gs">**text**</span>!
 </pre></div>
 </div>
-<p>In the “main document” of your Sphinx project (the landing page of your Sphinx documentation), include <code class="docutils literal notranslate"><span class="pre">myfile.md</span></code> in a <code class="docutils literal notranslate"><span class="pre">toctree</span></code> directive so that it is included in your documentation:</p>
+<p>在你的 Sphinx 项目的 “主文件”（你的 Sphinx 文档的登陆页）中，将 <code class="docutils literal notranslate"><span class="pre">myfile.md</span></code> 包含在 <code class="docutils literal notranslate"><span class="pre">toctree</span></code> 指令中，以便它被包含在你的文档中：</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
 
    myfile.md
 </pre></div>
 </div>
-<p>Now build your site:</p>
+<p>现在建立你的网站：</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make html
 </pre></div>
 </div>
-<p>and navigate to your landing page.
-You should see a link to the page generated from <code class="docutils literal notranslate"><span class="pre">myfile.md</span></code>.
-Clicking that link should take you to your rendered Markdown!</p>
+<p>并导航到你的登陆页面。你应该看到一个指向从 <code class="docutils literal notranslate"><span class="pre">myfile.md</span></code> 生成的页面的链接。点击该链接应该会带你到你的渲染好的 Markdown！</p>
 </div>
 <div class="section" id="extend-markdown-with-a-directive">
-<h2>Extend markdown with a directive<a class="headerlink" href="#extend-markdown-with-a-directive" title="永久链接至标题">¶</a></h2>
-<p>The most important functionality available with MyST markdown is writing <strong>directives</strong>.
-Directives are kind-of like functions that are designed for writing content.
-Sphinx and reStructuredText use directives extensively.
-Here’s how a directive looks in MyST markdown:</p>
+<h2>用指令来扩展 markdown<a class="headerlink" href="#extend-markdown-with-a-directive" title="永久链接至标题">¶</a></h2>
+<p>MyST markdown最重要的功能是编写 <strong>指令</strong>。指令有点像函数，是为编写内容而设计的。Sphinx 和 reStructuredText 广泛地使用指令。下面是一个指令在 MyST  markdown 中的样子：</p>
 <div class="margin sidebar">
 <p class="sidebar-title">Alternative options syntax</p>
 <p>If you’ve got a lot of options for your directive, or have a value that is really
@@ -482,19 +473,15 @@ long (e.g., that spans multiple lines), then you can also wrap your options in
 ```
 </pre></div>
 </div>
-<p>For those who are familiar with reStructuredText, you can find <a class="reference internal" href="../syntax/syntax.html#syntax-directives"><span class="std std-ref">a mapping from MyST directive syntax to rST syntax here</span></a>.</p>
-<p>As seen above, there are four main parts to consider when writing directives.</p>
+<p>对于那些熟悉 reStructuredText 的人来说，你可以在这里找到 <a class="reference internal" href="../syntax/syntax.html#syntax-directives"><span class="std std-ref">从 MyST 指令语法到 rST 语法的映射</span></a>。</p>
+<p>如上所述，在撰写指令时，有四个主要部分需要考虑。</p>
 <ul class="simple">
-<li><p><strong>the directive name</strong> is kind of like the function name. Different names trigger
-different functionality. They are wrapped in <code class="docutils literal notranslate"><span class="pre">{}</span></code> brackets.</p></li>
-<li><p><strong>directive arguments</strong> come just after the directive name. They can be used
-to trigger behavior in the directive.</p></li>
-<li><p><strong>directive options</strong> come just after the first line of the directive. They also
-control behavior of the directive.</p></li>
-<li><p><strong>directive content</strong> is markdown that you put inside the directive. The directive
-often displays the content in a special way.</p></li>
+<li><p><strong>the directive name</strong> 有点像函数名称。不同的名称触发不同的功能。它们被包裹在 <code class="docutils literal notranslate"><span class="pre">{}</span></code> 括号中。</p></li>
+<li><p><strong>directive arguments</strong> 就在指令名称后面。它们可以用来触发指令中的行为。</p></li>
+<li><p><strong>directive options</strong> 就在指令的第一行之后。它们也控制指令的行为。</p></li>
+<li><p><strong>directive content</strong> 是你放在指令里面的 markdown。指令经常以一种特殊的方式显示内容。</p></li>
 </ul>
-<p>For example, add an <strong><code class="docutils literal notranslate"><span class="pre">admonition</span></code></strong> directive to your markdown page, like so:</p>
+<p>例如，在你的 markdown 页面添加一个 <strong><code class="docutils literal notranslate"><span class="pre">admonition</span></code></strong> 指令，像这样：</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
 
 Some <span class="gs">**text**</span>!
@@ -506,38 +493,33 @@ Here&#39;s my admonition content
 ```
 </pre></div>
 </div>
-<p>Re-build your Sphinx site and you should see the new admonition box show up.</p>
-<p>As you can see, we’ve used each of the four pieces described above to configure this
-directive. Here’s how the directive looks when rendered:</p>
+<p>重新建立你的斯芬克斯网站，你应该看到新的告诫框出现了。</p>
+<p>正如你所看到的，我们已经使用了上面描述的四个部分中的每一个来配置这个指令。下面是该指令在渲染时的样子：</p>
 <div class="warning admonition">
 <p class="admonition-title">Here’s my title</p>
 <p>Here’s my admonition content</p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">参见</p>
-<p>For more information about using directives with MyST, see <a class="reference internal" href="../syntax/syntax.html#syntax-directives"><span class="std std-ref">Directives - a block-level extension point</span></a>.</p>
+<p>关于在 MyST 中使用指令的更多信息，见 <a class="reference internal" href="../syntax/syntax.html#syntax-directives"><span class="std std-ref">Directives - a block-level extension point</span></a>。</p>
 </div>
 </div>
 <div class="section" id="reference-a-section-label-with-a-role">
-<span id="sphinx-intro-reference"></span><h2>Reference a section label with a role<a class="headerlink" href="#reference-a-section-label-with-a-role" title="永久链接至标题">¶</a></h2>
-<p>Roles are another core Sphinx tool. They behave similarly to directives, but are given
-in-line with text instead of in a separate block. They have the following form:</p>
+<span id="sphinx-intro-reference"></span><h2>用一个角色引用一个章节的标签<a class="headerlink" href="#reference-a-section-label-with-a-role" title="永久链接至标题">¶</a></h2>
+<p>角色是另一个核心的 Sphinx 工具。他们的行为类似于指令，但与文本连在一起，而不是在一个单独的块中。它们有以下形式：</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>{rolename}`role content`
 </pre></div>
 </div>
-<p>Roles are a bit more simple than directives, though some roles allow for more complex syntax inside their content area.
-For example, the <code class="docutils literal notranslate"><span class="pre">ref</span></code> role is used to make references to other sections of your documentation, and allows you to specify the displayed text as well as the reference itself within the role:</p>
+<p>角色比指令更简单一些，尽管有些角色允许在其内容区域内使用更复杂的语法。例如，<code class="docutils literal notranslate"><span class="pre">ref</span></code> 角色用于对你的文档的其他部分进行引用，并允许你在角色中指定显示的文本和引用本身：</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>{ref}`My displayed text &lt;my-ref&gt;`
 </pre></div>
 </div>
-<p>For example, let’s add a <strong>section reference</strong> to your markdown file.
-To do this, we’ll first need to add a <strong>label</strong> to a section of your page.
-To do so, use the following structure:</p>
+<p>例如，让我们在你的 markdown 文件中添加一个<strong>节引用</strong>。要做到这一点，我们首先需要在你的页面的某个部分添加一个 <strong>标签</strong>。要做到这一点，请使用以下结构：</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(label-name)=
 <span class="gu">## Some header</span>
 </pre></div>
 </div>
-<p>Add this to your markdown file from above, like so:</p>
+<p>把这个添加到你上面的 markdown 文件中，像这样：</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
 
 Some <span class="gs">**text**</span>!
@@ -554,13 +536,12 @@ Here&#39;s my admonition content
 And some more content.
 </pre></div>
 </div>
-<p>Because your new section has a label (<code class="docutils literal notranslate"><span class="pre">section-two</span></code>), you can reference it with the <code class="docutils literal notranslate"><span class="pre">ref</span></code> role.
-Add it to your markdown file like so:</p>
+<p>因为你的新章节有一个标签（<code class="docutils literal notranslate"><span class="pre">section-two</span></code>），你可以用 <code class="docutils literal notranslate"><span class="pre">ref</span></code> 角色引用它。像这样把它添加到你的 markdown 文件中：</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(label-name)=
 <span class="gu">## Some header</span>
 </pre></div>
 </div>
-<p>Add this to your markdown file from above, like so:</p>
+<p>把这个添加到你上面的 markdown 文件中，像这样：</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
 
 Some <span class="gs">**text**</span>!
@@ -580,21 +561,17 @@ And here&#39;s {ref}`a reference to this section &lt;section-two&gt;`.
 I can also reference the section {ref}`section-two` without specifying my title.
 </pre></div>
 </div>
-<p>Re-build your documentation and you should see the references automatically inserted.
-Here’s an example of how the <code class="docutils literal notranslate"><span class="pre">ref</span></code> roles look in the final output:</p>
-<p>Here’s a reference to <a class="reference internal" href="#sphinx-intro-reference"><span class="std std-ref">Reference a section label with a role</span></a>.</p>
+<p>重新构建你的文档，你应该看到引用被自动插入。下面是一个例子，说明 <code class="docutils literal notranslate"><span class="pre">ref</span></code> 角色在最终输出中的样子：</p>
+<p>这里有一个 <a class="reference internal" href="#sphinx-intro-reference"><span class="std std-ref">用一个角色引用一个章节的标签</span></a> 的引用。</p>
 <div class="admonition seealso">
 <p class="admonition-title">参见</p>
-<p>For more information about roles, see <a class="reference internal" href="../syntax/syntax.html#syntax-roles"><span class="std std-ref">Roles - an in-line extension point</span></a>.</p>
+<p>关于角色的更多信息，见 <a class="reference internal" href="../syntax/syntax.html#syntax-roles"><span class="std std-ref">Roles - an in-line extension point</span></a>。</p>
 </div>
 </div>
 <div class="section" id="add-a-comment-using-extra-myst-syntax">
-<h2>Add a comment using extra MyST syntax<a class="headerlink" href="#add-a-comment-using-extra-myst-syntax" title="永久链接至标题">¶</a></h2>
-<p>There are many other kinds of syntax in MyST to make writing more productive and enjoyable.
-Let’s play around with a couple of options.</p>
-<p>First, try writing a <strong>comment</strong>.
-This can be done by adding a line starting with <code class="docutils literal notranslate"><span class="pre">%</span></code> to your markdown file.
-For example, try adding a comment to your markdown file, like so:</p>
+<h2>使用额外的 MyST 语法添加注释<a class="headerlink" href="#add-a-comment-using-extra-myst-syntax" title="永久链接至标题">¶</a></h2>
+<p>MyST 中还有许多其他种类的语法，使写作更有成效，更有乐趣。让我们来玩一玩几个选项。</p>
+<p>首先，试着写一个 <strong>注释</strong>。这可以通过在你的 markdown 文件中添加一个以 <code class="docutils literal notranslate"><span class="pre">%</span></code> 开头的行来完成。例如，试着在你的 markdown 文件中添加一个注释，像这样：</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
 
 Some <span class="gs">**text**</span>!
@@ -615,27 +592,19 @@ And here&#39;s {ref}`a reference to this section &lt;section-two&gt;`.
 I can also reference the section {ref}`section-two` without specifying my title.
 </pre></div>
 </div>
-<p>Re-build your documentation - the comment should <em>not</em> be present in the output.</p>
+<p>重新构建你的文档 – 注释不会出现在输出中。</p>
 </div>
 <div class="section" id="extending-myst-via-configuration">
-<h2>Extending MyST via configuration<a class="headerlink" href="#extending-myst-via-configuration" title="永久链接至标题">¶</a></h2>
-<p>Thus far we have covered the basic MyST syntax with Sphinx.
-However, there are a few ways that you can <em>extend</em> this base syntax and get new functionality.
-The first is to enable some “out of the box” extensions with the MyST parser.
-These add new syntax that aren’t part of “core MyST” but that are useful nonetheless (and may become part of core MyST one day).</p>
-<p>Let’s extend the base MyST syntax to enable <strong>fences for directives</strong>.
-This allows you to define a directive with <code class="docutils literal notranslate"><span class="pre">:::</span></code> in addition to <code class="docutils literal notranslate"><span class="pre">```</span></code>.
-This is useful for directives that have markdown in their content.
-By using <code class="docutils literal notranslate"><span class="pre">:::</span></code>, a non-MyST markdown renderer will still be able to render what is inside (instead of displaying it as a code block).</p>
-<p>To activate extensions, add a list to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file that contains the extensions you’d like to activate.
-For example, to activate the “colon code fences” extension, add the following to your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file:</p>
+<h2>通过配置扩展 MyST<a class="headerlink" href="#extending-myst-via-configuration" title="永久链接至标题">¶</a></h2>
+<p>到目前为止，我们已经涵盖了 MyST 的基本语法与 Sphinx。然而，有几种方法可以扩展这个基本语法并获得新功能。首先是在 MyST 解析器中启用一些 “out of the box” 的插件。这些添加的新语法不是 “核心MyST” 的一部分，但仍然是有用的（并且有一天可能成为核心 MyST 的一部分）</p>
+<p>让我们扩展 MyST 的基本语法，以实现 <strong>指令的栅栏</strong>。这允许你除了用 <code class="docutils literal notranslate"><span class="pre">```</span></code>，之外，可以用 <code class="docutils literal notranslate"><span class="pre">:::</span></code> 来定义指令。这对内容中含有标记的指令很有用。通过使用 <code class="docutils literal notranslate"><span class="pre">:::</span></code>，非 MyST 的 markdown 渲染器仍然能够渲染里面的内容（而不是显示为代码块）。</p>
+<p>要激活扩展，在你的 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 文件中添加一个列表，其中包含你想激活的扩展。例如，要激活 “colon code fences” 扩展，请在你的 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 文件中添加以下内容：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">myst_enable_extensions</span> <span class="o">=</span> <span class="p">[</span>
   <span class="s2">&quot;colon_fence&quot;</span><span class="p">,</span>
 <span class="p">]</span>
 </pre></div>
 </div>
-<p>You may now use <code class="docutils literal notranslate"><span class="pre">:::</span></code> to define directives.
-For example, modify your markdown file like so:</p>
+<p>你现在可以使用 <code class="docutils literal notranslate"><span class="pre">:::</span></code> 来定义指令。例如，像这样修改你的 markdown 文件：</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
 
 Some <span class="gs">**text**</span>!
@@ -660,26 +629,24 @@ And here&#39;s a note with a colon fence!
 :::
 </pre></div>
 </div>
-<p>It should render as a “note block” in your output when you build your site.</p>
+<p>当你建立你的网站时，它应该在你的输出中呈现为一个 “note block”。</p>
 </div>
 <div class="section" id="install-a-new-sphinx-extension-and-use-its-functionality">
-<h2>Install a new Sphinx extension and use its functionality<a class="headerlink" href="#install-a-new-sphinx-extension-and-use-its-functionality" title="永久链接至标题">¶</a></h2>
-<p>The other way to extend MyST in Sphinx is to install Sphinx extensions that define new directives.
-Directives are kind of like “functions” in Sphinx, and installing a new package can add new directives to use in your content.</p>
-<p>For example, let’s install the <code class="docutils literal notranslate"><span class="pre">sphinxcontib.mermaid</span></code> extension, which will allow us to generate <a class="reference external" href="https://mermaid-js.github.io/mermaid/#/">Mermaid diagrams</a> with MyST.</p>
-<p>First, install <code class="docutils literal notranslate"><span class="pre">sphinxcontrib.mermaid</span></code>:</p>
+<h2>安装一个新的 Sphinx 插件并使用其功能<a class="headerlink" href="#install-a-new-sphinx-extension-and-use-its-functionality" title="永久链接至标题">¶</a></h2>
+<p>另一种在 Sphinx 扩展 MyST 的方法是 Sphinx 插件，定义新的指令。指令有点像 Sphinx 中的 “functions”，安装一个新的包可以添加新的指令在你的内容中使用。</p>
+<p>例如，让我们安装 <code class="docutils literal notranslate"><span class="pre">sphinxcontib.mermaid</span></code> 插件，这将允许我们用 MyST 生成 <a class="reference external" href="https://mermaid-js.github.io/mermaid/#/">Mermaid 图</a>。</p>
+<p>首先，安装 <code class="docutils literal notranslate"><span class="pre">sphinxcontrib.mermaid</span></code>：</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install sphinxcontrib-mermaid
 </pre></div>
 </div>
-<p>Next, add it to your list of extensions in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<p>接下来，在 <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> 中把它添加到你的插件列表中：</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
   <span class="s2">&quot;myst_parser&quot;</span><span class="p">,</span>
   <span class="s2">&quot;sphinxcontrib.mermaid&quot;</span><span class="p">,</span>
 <span class="p">]</span>
 </pre></div>
 </div>
-<p>Now, add a <strong>mermaid directive</strong> to your markdown file.
-For example:</p>
+<p>现在，在你的 markdown 文件中添加一个 <strong>mermaid 指令</strong>。比如说：</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># My nifty title</span>
 
 Some <span class="gs">**text**</span>!
@@ -720,7 +687,7 @@ Here&#39;s my admonition content
 <span class="sb">```</span>
 </pre></div>
 </div>
-<p>When you build your documentation, you should see something like this:</p>
+<p>当你建立你的文档时，你应该看到像这样的东西：</p>
 <div class="mermaid">
             sequenceDiagram
   participant Alice
@@ -735,10 +702,8 @@ Here&#39;s my admonition content
   Bob--&gt;John: Jolly good!
         </div></div>
 <div class="section" id="next-steps-learn-more-about-myst-syntax">
-<h2>Next steps - Learn more about MyST Syntax<a class="headerlink" href="#next-steps-learn-more-about-myst-syntax" title="永久链接至标题">¶</a></h2>
-<p>In this tutorial we’ve covered some of the basics of MyST Markdown, how to enable and use it with Sphinx, and how to extend it for new use-cases.
-There is much more functionality in MyST (and in the Sphinx ecosystem) that we haven’t covered here.
-For more information, see the <a class="reference internal" href="../syntax/syntax.html"><span class="doc std std-doc">documentation on MyST Syntax</span></a> and the <a class="reference internal" href="index.html"><span class="doc std std-doc">documentation about using MyST with Sphinx</span></a>.</p>
+<h2>接下来的步骤 - 了解更多关于 MyST 语法的信息<a class="headerlink" href="#next-steps-learn-more-about-myst-syntax" title="永久链接至标题">¶</a></h2>
+<p>在本教程中，我们介绍了 MyST Markdown 的一些基础知识，如何在 Sphinx 中启用和使用它，以及如何为新的使用场景扩展它。MyST（以及 Sphinx 生态系统）还有更多的功能，我们在这里没有涉及。更多信息，请看 <a class="reference internal" href="../syntax/syntax.html"><span class="doc std std-doc">MyST 语法文档</span></a> 和 <a class="reference internal" href="index.html"><span class="doc std std-doc">关于使用 MyST 与 Sphinx 的文档</span></a>。</p>
 </div>
 </div>
 

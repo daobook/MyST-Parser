@@ -8,7 +8,7 @@
   <meta property="og:title" content="The MyST Syntax Guide" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://myst-parser.readthedocs.io/en/syntax/syntax.html" />
-  <meta property="og:description" content="2021 年 11 月 17 日| 8 min read As a base, MyST adheres to the CommonMark specification. For this, it uses the markdown-it-py parser, which is a well-structured markdown parser for Python that is Comm..." />
+  <meta property="og:description" content="2021 年 11 月 22 日| 8 min read As a base, MyST adheres to the CommonMark specification. For this, it uses the markdown-it-py parser, which is a well-structured markdown parser for Python that is Comm..." />
   <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
   <meta property="og:image:alt" content="The MyST Syntax Guide" />
   <meta name="twitter:card" content="summary_large_image">
@@ -51,7 +51,7 @@
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
     <link rel="next" title="Optional MyST Syntaxes" href="optional.html" />
-    <link rel="prev" title="Get started with MyST in Sphinx" href="../sphinx/intro.html" />
+    <link rel="prev" title="在 Sphinx 中开始使用 MyST" href="../sphinx/intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="zh_CN">
     
@@ -89,7 +89,7 @@
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../sphinx/intro.html">
-   Get started with MyST in Sphinx
+   在 Sphinx 中开始使用 MyST
   </a>
  </li>
 </ul>
@@ -128,7 +128,7 @@
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../sphinx/index.html">
-   MyST with Sphinx
+   含 Sphinx 的 MyST
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -441,7 +441,7 @@
   <div class="tex2jax_ignore mathjax_ignore section" id="the-myst-syntax-guide">
 <span id="example-syntax"></span><h1>The MyST Syntax Guide<a class="headerlink" href="#the-myst-syntax-guide" title="永久链接至标题">¶</a></h1>
 <blockquote>
-<div><p>2021 年 11 月 17 日 | 8 min read</p>
+<div><p>2021 年 11 月 22 日 | 8 min read</p>
 </div></blockquote>
 <p>As a base, MyST adheres to the <a class="reference external" href="https://spec.commonmark.org/">CommonMark specification</a>.
 For this, it uses the <a class="reference external" href="https://github.com/executablebooks/markdown-it-py">markdown-it-py</a> parser,
@@ -455,7 +455,7 @@ and further details of a few major extensions from the CommonMark flavor of mark
 <div class="admonition seealso">
 <p class="admonition-title">参见</p>
 <ul class="simple">
-<li><p>For an introduction to writing Directives and Roles with MyST markdown, see <a class="reference internal" href="../sphinx/intro.html#intro-writing"><span class="std std-ref">Write your first markdown document</span></a>.</p></li>
+<li><p>For an introduction to writing Directives and Roles with MyST markdown, see <a class="reference internal" href="../sphinx/intro.html#intro-writing"><span class="std std-ref">编写你的第一份 markdown 文档</span></a>.</p></li>
 <li><p>Check out the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ExecutableBookProject.myst-highlight">MyST-Markdown VS Code extension</a>, for MyST extended syntax highlighting.</p></li>
 </ul>
 </div>
@@ -817,8 +817,8 @@ This is equivalent to using the <a class="reference external" href="https://www.
 <p>HTML metadata can also be added globally in the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> <em>via</em> the <code class="docutils literal notranslate"><span class="pre">myst_html_meta</span></code> variable, in which case it will be added to all MyST documents.
 For each document, the <code class="docutils literal notranslate"><span class="pre">myst_html_meta</span></code> dict will be updated by the document level front-matter <code class="docutils literal notranslate"><span class="pre">html_meta</span></code>, with the front-matter taking precedence.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="70894e04-62c6-42a4-847d-102f53a250da" name="25c11514-1e5c-4fd2-b00d-456a66779b0e" type="radio">
-</input><label class="tabbed-label" for="70894e04-62c6-42a4-847d-102f53a250da">
+<input checked="checked" id="66de4885-4295-4fd2-9356-5c8d882c89ab" name="8fde6430-55db-4241-b296-8a7f5e44a94b" type="radio">
+</input><label class="tabbed-label" for="66de4885-4295-4fd2-9356-5c8d882c89ab">
 Sphinx Configuration</label><div class="tabbed-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span>
 <span class="n">myst_html_meta</span> <span class="o">=</span> <span class="p">{</span>
@@ -830,8 +830,8 @@ Sphinx Configuration</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="28c374e5-5eca-4332-ba7a-dd0441deaa58" name="25c11514-1e5c-4fd2-b00d-456a66779b0e" type="radio">
-</input><label class="tabbed-label" for="28c374e5-5eca-4332-ba7a-dd0441deaa58">
+<input id="fd62c316-dbd1-4f97-bdfd-af491babc4c0" name="8fde6430-55db-4241-b296-8a7f5e44a94b" type="radio">
+</input><label class="tabbed-label" for="fd62c316-dbd1-4f97-bdfd-af491babc4c0">
 MyST Front-Matter</label><div class="tabbed-content docutils">
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nn">---</span>
 <span class="nt">html_meta</span><span class="p">:</span>
@@ -843,8 +843,8 @@ MyST Front-Matter</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="de53dd35-771d-434c-a478-3fd6aa4aa1e4" name="25c11514-1e5c-4fd2-b00d-456a66779b0e" type="radio">
-</input><label class="tabbed-label" for="de53dd35-771d-434c-a478-3fd6aa4aa1e4">
+<input id="493e5833-2d2f-4405-b589-50e9d6d9a223" name="8fde6430-55db-4241-b296-8a7f5e44a94b" type="radio">
+</input><label class="tabbed-label" for="493e5833-2d2f-4405-b589-50e9d6d9a223">
 RestructuredText</label><div class="tabbed-content docutils">
 <div class="highlight-restructuredtext notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">meta</span><span class="p">::</span>
    <span class="nc">:description lang=en:</span> metadata description
@@ -854,8 +854,8 @@ RestructuredText</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="093904bc-8510-412f-a52f-db2154bdc198" name="25c11514-1e5c-4fd2-b00d-456a66779b0e" type="radio">
-</input><label class="tabbed-label" for="093904bc-8510-412f-a52f-db2154bdc198">
+<input id="8622744b-a2c3-4f5d-a907-249fb5f2cb44" name="8fde6430-55db-4241-b296-8a7f5e44a94b" type="radio">
+</input><label class="tabbed-label" for="8622744b-a2c3-4f5d-a907-249fb5f2cb44">
 HTML Output</label><div class="tabbed-content docutils">
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -939,7 +939,7 @@ this page: <a class="reference internal" href="#example-syntax"><span class="std
 </div>
 <p>but can also accept “nested” syntax (like bold text) and will recognise document paths that include extensions (e.g. <code class="docutils literal notranslate"><span class="pre">syntax/syntax</span></code> or <code class="docutils literal notranslate"><span class="pre">syntax/syntax.md</span></code>)</p>
 <p>Using the same example, see this ref: <a class="reference internal" href="#syntax-targets"><span class="std std-ref">Targets and Cross-Referencing</span></a>, here is a reference back to the top of
-this page: <a class="reference internal" href="#example-syntax"><span class="std std-ref">my text with <strong>nested</strong> <span class="math notranslate nohighlight">\(\alpha\)</span> syntax</span></a>, and here is a reference to another page (<code class="docutils literal notranslate"><span class="pre">[](../sphinx/intro.md)</span></code>): <a class="reference internal" href="../sphinx/intro.html"><span class="doc std std-doc">Get started with MyST in Sphinx</span></a>.</p>
+this page: <a class="reference internal" href="#example-syntax"><span class="std std-ref">my text with <strong>nested</strong> <span class="math notranslate nohighlight">\(\alpha\)</span> syntax</span></a>, and here is a reference to another page (<code class="docutils literal notranslate"><span class="pre">[](../sphinx/intro.md)</span></code>): <a class="reference internal" href="../sphinx/intro.html"><span class="doc std std-doc">在 Sphinx 中开始使用 MyST</span></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
 <p>If you wish to have the target’s title inserted into your text, you can
@@ -1070,7 +1070,7 @@ that are not separated by a blank line</p>
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">上一页</p>
-            <p class="prev-next-title">Get started with MyST in Sphinx</p>
+            <p class="prev-next-title">在 Sphinx 中开始使用 MyST</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="optional.html" title="下一页 页">
