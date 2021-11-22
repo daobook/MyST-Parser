@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../../sphinx/index.md:1
 msgid "MyST with Sphinx"
-msgstr ""
+msgstr "含 Sphinx 的 MyST"
 
 #: ../../sphinx/index.md:3
 msgid ""
@@ -63,24 +63,27 @@ msgid ""
 "rST and MyST). The following sections cover some major functionality of "
 "the Sphinx extension."
 msgstr ""
+"MyST 解析器捆绑了一个 Sphinx 插件，允许你完全在 MyST（或者，在 rST 和 MyST 的组合）"
+"中应用编写 Sphinx 文档。下面的章节涵盖了 Sphinx 插件的一些主要功能。"
 
 #: ../../sphinx/index.md:1
 msgid "For an introduction to MyST with Sphinx, see [](intro.md)."
-msgstr ""
+msgstr "关于带 Sphinx 的 MyST 的介绍，见 [](intro.md)。"
 
 #: ../../sphinx/intro.md:2
 msgid "Get started with MyST in Sphinx"
-msgstr ""
+msgstr "在 Sphinx 中开始使用 MyST"
 
 #: ../../sphinx/intro.md:4
 msgid ""
 "This page describes how to get started with the MyST parser, with a focus"
 " on enabling it in the Sphinx documentation engine."
 msgstr ""
+"这个页面描述了如何开始使用 MyST 解析器，重点是在 Sphinx 文档引擎中启用它。"
 
 #: ../../sphinx/intro.md:6
 msgid "Install the MyST Parser"
-msgstr ""
+msgstr "安装 MyST 解析器"
 
 #: ../../sphinx/intro.md:8
 msgid "[![PyPI][pypi-badge]][pypi-link] [![Conda][conda-badge]][conda-link]"
@@ -96,33 +99,37 @@ msgstr ""
 
 #: ../../sphinx/intro.md:11
 msgid "Installing the MyST parser provides access to two tools:"
-msgstr ""
+msgstr "安装 MyST 解析器可以访问两个工具："
 
 #: ../../sphinx/intro.md:13
 msgid ""
 "A Python library that can parse MyST markdown, and render it to a number "
 "of output formats (in particular, `docutils` format for use with Sphinx)."
 msgstr ""
+"一个 Python 库，可以解析 MyST markdown，"
+"并将其呈现为多种输出格式（特别是与 Sphinx 一起使用的 `docutils` 格式）。"
 
 #: ../../sphinx/intro.md:14
 msgid ""
 "A Sphinx extension that that utilizes the above tool in order to parse "
 "MyST Markdown in your documentation."
 msgstr ""
+"一个 Sphinx 插件，利用上述工具来解析你的文档中的 MyST Markdown。"
 
 #: ../../sphinx/intro.md:16
 msgid ""
 "To install the MyST parser, run the following in a [Conda "
 "environment](https://docs.conda.io) (recommended):"
 msgstr ""
+"要安装 MyST 解析器，请在 [Conda 环境](https://docs.conda.io) 中运行以下内容（推荐）："
 
 #: ../../sphinx/intro.md:23
 msgid "or"
-msgstr ""
+msgstr "或者"
 
 #: ../../sphinx/intro.md:35
 msgid "Enable MyST in Sphinx"
-msgstr ""
+msgstr "在 Sphinx 启用 MyST"
 
 #: ../../sphinx/intro.md:37
 msgid ""
@@ -132,22 +139,27 @@ msgid ""
 "doc.org/en/master/usage/quickstart.html). This guide assumes that you've "
 "already got a pre-existing Sphinx site that builds properly."
 msgstr ""
+"Sphinx 是一个文档生成器，用于从多个源文档和 assets 中建立网站或书籍。"
+"要开始使用 Sphinx，请看他们的 [快速入门指南](https://www.sphinx-doc.org/en/master/usage/quickstart.html)。"
+"本指南假设你已经有了一个预先存在的 Sphinx 网站，并能正常构建。"
 
 #: ../../sphinx/intro.md:39
 msgid ""
 "To use the MyST parser in Sphinx, simply add the following to your "
 "`conf.py` file:"
 msgstr ""
+"要在 Sphinx 中使用 MyST 解析器，只需在你的 `conf.py` 文件中加入以下内容："
 
 #: ../../sphinx/intro.md:45
 msgid ""
 "This will activate the MyST Parser extension, causing all documents with "
 "the `.md` extension to be parsed as MyST."
 msgstr ""
+"这将激活 MyST 解析器插件，使所有以 `.md` 为扩展名的文件被解析为 MyST。"
 
 #: ../../sphinx/intro.md:47
 msgid "You can use both MyST and reStructuredText"
-msgstr ""
+msgstr "你可以同时使用 MyST 和 reStructuredText"
 
 #: ../../sphinx/intro.md:1
 msgid ""
@@ -156,20 +168,24 @@ msgid ""
 "same way. Files ending with `.md` will be parsed as MyST, and files "
 "ending in `.rst` will be parsed as reStructuredText."
 msgstr ""
+"激活 MyST 解析器将简单地 *enable* 用 MyST 解析 markdown 文件，"
+"而 Sphinx 中的 rST 解析器仍将以同样的方式工作。"
+"以 `.md` 结尾的文件将被解析为 MyST，而以 `.rst` 结尾的文件将被解析为 reStructuredText。"
 
 #: ../../sphinx/intro.md:55
 msgid "Write your first markdown document"
-msgstr ""
+msgstr "编写你的第一份 markdown 文档"
 
 #: ../../sphinx/intro.md:57
 msgid ""
 "Now that you've enabled the `myst-parser` in Sphinx, you can write MyST "
 "markdown in a file that ends with `.md` extension for your pages."
 msgstr ""
+"现在你已经在 Sphinx 中启用了 `myst-parser'，你可以在一个以 `.md` 结尾的文件中为你的页面编写 MyST markdown。"
 
 #: ../../sphinx/intro.md:1
 msgid "MyST markdown is a mixture of two flavors of markdown:"
-msgstr ""
+msgstr "MyST markdown 是一种混合了两种风味的 markdown："
 
 #: ../../sphinx/intro.md:3
 msgid ""
@@ -177,6 +193,8 @@ msgid ""
 "Markdown](https://commonmark.org/)** at its base. This is a community "
 "standard flavor of markdown used across many projects."
 msgstr ""
+"它在其基础上支持 **[CommonMark Markdown](https://commonmark.org/)** 的所有语法。"
+"这是一个在许多项目中使用的社区标准的 markdown 风味。"
 
 #: ../../sphinx/intro.md:6
 msgid ""
@@ -184,12 +202,15 @@ msgid ""
 "CommonMark**. These add extra syntax features for technical writing, such"
 " as the roles and directives used by Sphinx."
 msgstr ""
+"此外，它还包括 **[几个插件](../syntax/syntax.md) 到 CommonMark**。"
+"这些为技术写作增加了额外的语法功能，如 Sphinx 使用的角色和指令。"
 
 #: ../../sphinx/intro.md:69
 msgid ""
 "To start off, create an empty file called `myfile.md` and give it a "
 "markdown title and text."
 msgstr ""
+"首先，创建一个名为 `myfile.md` 的空文件，并给它一个 markdown 标题和文本。"
 
 #: ../../sphinx/intro.md:77
 msgid ""
@@ -197,10 +218,11 @@ msgid ""
 " Sphinx documentation), include `myfile.md` in a `toctree` directive so "
 "that it is included in your documentation:"
 msgstr ""
+"在你的 Sphinx 项目的 \"主文件\"（你的 Sphinx 文档的登陆页）中，将 `myfile.md` 包含在 `toctree` 指令中，以便它被包含在你的文档中："
 
 #: ../../sphinx/intro.md:85
 msgid "Now build your site:"
-msgstr ""
+msgstr "现在建立你的网站："
 
 #: ../../sphinx/intro.md:91
 msgid ""
@@ -208,10 +230,12 @@ msgid ""
 "generated from `myfile.md`. Clicking that link should take you to your "
 "rendered Markdown!"
 msgstr ""
+"并导航到你的登陆页面。你应该看到一个指向从 `myfile.md` 生成的页面的链接。"
+"点击该链接应该会带你到你的渲染好的 Markdown！"
 
 #: ../../sphinx/intro.md:95
 msgid "Extend markdown with a directive"
-msgstr ""
+msgstr "用指令来扩展 markdown"
 
 #: ../../sphinx/intro.md:97
 msgid ""
@@ -220,60 +244,75 @@ msgid ""
 "for writing content. Sphinx and reStructuredText use directives "
 "extensively. Here's how a directive looks in MyST markdown:"
 msgstr ""
+"MyST markdown最重要的功能是编写 **指令**。"
+"指令有点像函数，是为编写内容而设计的。"
+"Sphinx 和 reStructuredText 广泛地使用指令。下面是一个指令在 MyST  markdown 中的样子："
 
 #: ../../sphinx/intro.md:125
 msgid ""
 "For those who are familiar with reStructuredText, you can find [a mapping"
 " from MyST directive syntax to rST syntax here](syntax/directives)."
 msgstr ""
+"对于那些熟悉 reStructuredText 的人来说，"
+"你可以在这里找到 [从 MyST 指令语法到 rST 语法的映射](syntax/directives)。"
 
 #: ../../sphinx/intro.md:128
 msgid ""
 "As seen above, there are four main parts to consider when writing "
 "directives."
 msgstr ""
+"如上所述，在撰写指令时，有四个主要部分需要考虑。"
 
 #: ../../sphinx/intro.md:130
 msgid ""
 "**the directive name** is kind of like the function name. Different names"
 " trigger different functionality. They are wrapped in `{}` brackets."
 msgstr ""
+"**the directive name** 有点像函数名称。不同的名称"
+"触发不同的功能。它们被包裹在 `{}` 括号中。"
 
 #: ../../sphinx/intro.md:132
 msgid ""
 "**directive arguments** come just after the directive name. They can be "
 "used to trigger behavior in the directive."
 msgstr ""
+"**directive arguments** 就在指令名称后面。它们可以用来触发指令中的行为。"
 
 #: ../../sphinx/intro.md:134
 msgid ""
 "**directive options** come just after the first line of the directive. "
 "They also control behavior of the directive."
 msgstr ""
+"**directive options** 就在指令的第一行之后。"
+"它们也控制指令的行为。"
 
 #: ../../sphinx/intro.md:136
 msgid ""
 "**directive content** is markdown that you put inside the directive. The "
 "directive often displays the content in a special way."
 msgstr ""
+"**directive content** 是你放在指令里面的 markdown。指令经常以一种特殊的方式显示内容。"
 
 #: ../../sphinx/intro.md:139
 msgid ""
 "For example, add an **`admonition`** directive to your markdown page, "
 "like so:"
 msgstr ""
+"例如，在你的 markdown 页面添加一个 **`admonition`** 指令，像这样："
 
 #: ../../sphinx/intro.md:154
 msgid ""
 "Re-build your Sphinx site and you should see the new admonition box show "
 "up."
 msgstr ""
+"重新建立你的斯芬克斯网站，你应该看到新的告诫框出现了。"
 
 #: ../../sphinx/intro.md:156
 msgid ""
 "As you can see, we've used each of the four pieces described above to "
 "configure this directive. Here's how the directive looks when rendered:"
 msgstr ""
+"正如你所看到的，我们已经使用了上面描述的四个部分中的每一个来配置这个指令。下面是该指令在渲染时的样子："
 
 #: ../../sphinx/intro.md:159
 msgid "Here's my title"
@@ -288,10 +327,11 @@ msgid ""
 "For more information about using directives with MyST, see "
 "{ref}`syntax/directives`."
 msgstr ""
+"关于在 MyST 中使用指令的更多信息，见 {ref}`syntax/directives`。"
 
 #: ../../sphinx/intro.md:170
 msgid "Reference a section label with a role"
-msgstr ""
+msgstr "用一个角色引用一个章节的标签"
 
 #: ../../sphinx/intro.md:172
 msgid ""
@@ -299,6 +339,8 @@ msgid ""
 "but are given in-line with text instead of in a separate block. They have"
 " the following form:"
 msgstr ""
+"角色是另一个核心的 Sphinx 工具。"
+"他们的行为类似于指令，但与文本连在一起，而不是在一个单独的块中。它们有以下形式："
 
 #: ../../sphinx/intro.md:179
 msgid ""
@@ -308,6 +350,8 @@ msgid ""
 "and allows you to specify the displayed text as well as the reference "
 "itself within the role:"
 msgstr ""
+"角色比指令更简单一些，尽管有些角色允许在其内容区域内使用更复杂的语法。"
+"例如，`ref` 角色用于对你的文档的其他部分进行引用，并允许你在角色中指定显示的文本和引用本身："
 
 #: ../../sphinx/intro.md:186
 msgid ""
@@ -315,16 +359,20 @@ msgid ""
 "do this, we'll first need to add a **label** to a section of your page. "
 "To do so, use the following structure:"
 msgstr ""
+"例如，让我们在你的 markdown 文件中添加一个**节引用**。"
+"要做到这一点，我们首先需要在你的页面的某个部分添加一个 **标签**。要做到这一点，请使用以下结构："
 
 #: ../../sphinx/intro.md:195 ../../sphinx/intro.md:223
 msgid "Add this to your markdown file from above, like so:"
-msgstr ""
+msgstr "把这个添加到你上面的 markdown 文件中，像这样："
 
 #: ../../sphinx/intro.md:214
 msgid ""
 "Because your new section has a label (`section-two`), you can reference "
 "it with the `ref` role. Add it to your markdown file like so:"
 msgstr ""
+"因为你的新章节有一个标签（`section-two`），你可以用 `ref` 角色引用它。"
+"像这样把它添加到你的 markdown 文件中："
 
 #: ../../sphinx/intro.md:245
 msgid ""
@@ -332,24 +380,27 @@ msgid ""
 "automatically inserted. Here's an example of how the `ref` roles look in "
 "the final output:"
 msgstr ""
+"重新构建你的文档，你应该看到引用被自动插入。"
+"下面是一个例子，说明 `ref` 角色在最终输出中的样子："
 
 #: ../../sphinx/intro.md:248
 msgid "Here's a reference to {ref}`sphinx/intro:reference`."
-msgstr ""
+msgstr "这里有一个 {ref}`sphinx/intro:reference` 的引用。"
 
 #: ../../sphinx/intro.md:1
 msgid "For more information about roles, see {ref}`syntax/roles`."
-msgstr ""
+msgstr "关于角色的更多信息，见 {ref}`syntax/roles`。"
 
 #: ../../sphinx/intro.md:254
 msgid "Add a comment using extra MyST syntax"
-msgstr ""
+msgstr "使用额外的 MyST 语法添加注释"
 
 #: ../../sphinx/intro.md:256
 msgid ""
 "There are many other kinds of syntax in MyST to make writing more "
 "productive and enjoyable. Let's play around with a couple of options."
 msgstr ""
+"MyST 中还有许多其他种类的语法，使写作更有成效，更有乐趣。让我们来玩一玩几个选项。"
 
 #: ../../sphinx/intro.md:259
 msgid ""
@@ -357,16 +408,20 @@ msgid ""
 "starting with `%` to your markdown file. For example, try adding a "
 "comment to your markdown file, like so:"
 msgstr ""
+"首先，试着写一个 **注释**。"
+"这可以通过在你的 markdown 文件中添加一个以 `%` 开头的行来完成。"
+"例如，试着在你的 markdown 文件中添加一个注释，像这样："
 
 #: ../../sphinx/intro.md:284
 msgid ""
 "Re-build your documentation - the comment should _not_ be present in the "
 "output."
 msgstr ""
+"重新构建你的文档 -- 注释不会出现在输出中。"
 
 #: ../../sphinx/intro.md:286
 msgid "Extending MyST via configuration"
-msgstr ""
+msgstr "通过配置扩展 MyST"
 
 #: ../../sphinx/intro.md:288
 msgid ""
@@ -377,6 +432,9 @@ msgid ""
 "MyST\" but that are useful nonetheless (and may become part of core MyST "
 "one day)."
 msgstr ""
+"到目前为止，我们已经涵盖了 MyST 的基本语法与 Sphinx。然而，有几种方法可以扩展这个基本语法并获得新功能。"
+"首先是在 MyST 解析器中启用一些 \"out of the box\" 的插件。"
+"这些添加的新语法不是 \"核心MyST\" 的一部分，但仍然是有用的（并且有一天可能成为核心 MyST 的一部分）。
 
 #: ../../sphinx/intro.md:293
 msgid ""
@@ -386,6 +444,10 @@ msgid ""
 "using `:::`, a non-MyST markdown renderer will still be able to render "
 "what is inside (instead of displaying it as a code block)."
 msgstr ""
+"让我们扩展 MyST 的基本语法，以实现 **指令的栅栏**。"
+"这允许你除了用 ` ``` `，之外，可以用 `:::` 来定义指令。"
+"这对内容中含有标记的指令很有用。通过"
+"使用 `:::`，非 MyST 的 markdown 渲染器仍然能够渲染里面的内容（而不是显示为代码块）。"
 
 #: ../../sphinx/intro.md:298
 msgid ""
@@ -394,22 +456,26 @@ msgid ""
 "\"colon code fences\" extension, add the following to your `conf.py` "
 "file:"
 msgstr ""
+"要激活扩展，在你的 `conf.py` 文件中添加一个列表，其中包含你想激活的扩展。"
+"例如，要激活 \"colon code fences\" 扩展，请在你的 `conf.py` 文件中添加以下内容："
 
 #: ../../sphinx/intro.md:307
 msgid ""
 "You may now use `:::` to define directives. For example, modify your "
 "markdown file like so:"
 msgstr ""
+"你现在可以使用 `:::` 来定义指令。例如，像这样修改你的 markdown 文件："
 
 #: ../../sphinx/intro.md:335
 msgid ""
 "It should render as a \"note block\" in your output when you build your "
 "site."
 msgstr ""
+"当你建立你的网站时，它应该在你的输出中呈现为一个 \"note block\"。"
 
 #: ../../sphinx/intro.md:337
 msgid "Install a new Sphinx extension and use its functionality"
-msgstr ""
+msgstr "安装一个新的 Sphinx 插件并使用其功能"
 
 #: ../../sphinx/intro.md:339
 msgid ""
@@ -418,6 +484,8 @@ msgid ""
 "Sphinx, and installing a new package can add new directives to use in "
 "your content."
 msgstr ""
+"另一种在 Sphinx 扩展 MyST 的方法是 Sphinx 插件，定义新的指令。"
+"指令有点像 Sphinx 中的 \"functions\"，安装一个新的包可以添加新的指令在你的内容中使用。"
 
 #: ../../sphinx/intro.md:342
 msgid ""
@@ -425,26 +493,28 @@ msgid ""
 "will allow us to generate [Mermaid diagrams](https://mermaid-"
 "js.github.io/mermaid/#/) with MyST."
 msgstr ""
+"例如，让我们安装 `sphinxcontib.mermaid` 插件，这将允许我们用 MyST 生成 "
+"[Mermaid 图](https://mermaid-js.github.io/mermaid/#/)。"
 
 #: ../../sphinx/intro.md:344
 msgid "First, install `sphinxcontrib.mermaid`:"
-msgstr ""
+msgstr "首先，安装 `sphinxcontrib.mermaid`："
 
 #: ../../sphinx/intro.md:350
 msgid "Next, add it to your list of extensions in `conf.py`:"
-msgstr ""
+msgstr "接下来，在 `conf.py` 中把它添加到你的插件列表中："
 
 #: ../../sphinx/intro.md:359
 msgid "Now, add a **mermaid directive** to your markdown file. For example:"
-msgstr ""
+msgstr "现在，在你的 markdown 文件中添加一个 **mermaid 指令**。比如说："
 
 #: ../../sphinx/intro.md:403
 msgid "When you build your documentation, you should see something like this:"
-msgstr ""
+msgstr "当你建立你的文档时，你应该看到像这样的东西："
 
 #: ../../sphinx/intro.md:419
 msgid "Next steps - Learn more about MyST Syntax"
-msgstr ""
+msgstr "接下来的步骤 - 了解更多关于 MyST 语法的信息"
 
 #: ../../sphinx/intro.md:421
 msgid ""
@@ -455,6 +525,9 @@ msgid ""
 "[documentation on MyST Syntax](../syntax/syntax.md) and the "
 "[documentation about using MyST with Sphinx](../sphinx/index.md)."
 msgstr ""
+"在本教程中，我们介绍了 MyST Markdown 的一些基础知识，如何在 Sphinx 中启用和使用它，以及如何为新的使用场景扩展它。"
+"MyST（以及 Sphinx 生态系统）还有更多的功能，我们在这里没有涉及。"
+"更多信息，请看 [MyST 语法文档](../syntax/syntax.md) 和 [关于使用 MyST 与 Sphinx 的文档](../sphinx/index.md)。"
 
 #: ../../sphinx/reference.md:2
 msgid "Sphinx configuration options"
