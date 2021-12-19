@@ -8,7 +8,7 @@
   <meta property="og:title" content="Changelog" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://myst-parser.readthedocs.io/en/develop/_changelog.html" />
-  <meta property="og:description" content="0.15.2 - 2021-08-26: This is mainly a maintenance release that fixes some incompatibilities with sphinx<3.1, improvements for compatibility with docutils=0.17, and improvements to robustness. 0.15...." />
+  <meta property="og:description" content="0.16.1 - 2021-12-16: ✨ NEW: Add myst_linkify_fuzzy_links option. When using the linkify extension, this option can be used to disable matching of links that do not contain a schema (such as http://..." />
   <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
   <meta property="og:image:alt" content="Changelog" />
   <meta name="twitter:card" content="summary_large_image">
@@ -154,6 +154,11 @@
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docutils.html">
+   MyST with Docutils
+  </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../api/index.html">
@@ -333,16 +338,69 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id1">
-   0.15.2 - 2021-08-26
+   0.16.1 - 2021-12-16
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
+   0.16.0 - 2021-12-06
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#upgrade-of-markdown-parser">
+     Upgrade of Markdown parser
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#improvements-for-docutils-only-use">
+     Improvements for Docutils-only use
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#include-myst-files-in-rst-files">
+     Include MyST files in RST files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#addition-of-the-fieldlist-syntax-extension">
+     Addition of the
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       fieldlist
+      </span>
+     </code>
+     syntax extension
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#improvements-to-table-rendering">
+     Improvements to table rendering
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pull-requests">
+     Pull Requests
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-contributors">
+     New Contributors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   0.15.2 - 2021-08-26
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
    0.15.1 - 2021-06-18
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
+  <a class="reference internal nav-link" href="#id5">
    0.15.0 - 2021-06-13
   </a>
   <ul class="nav section-nav flex-column">
@@ -381,7 +439,7 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
+  <a class="reference internal nav-link" href="#id6">
    0.14.0 - 2021-05-04
   </a>
   <ul class="nav section-nav flex-column">
@@ -414,37 +472,37 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id5">
+  <a class="reference internal nav-link" href="#id7">
    0.13.7 - 2021-04-25
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id6">
+  <a class="reference internal nav-link" href="#id8">
    0.13.6 - 2021-04-10
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
+  <a class="reference internal nav-link" href="#id9">
    0.13.5 - 2021-02-15
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id8">
+  <a class="reference internal nav-link" href="#id10">
    0.13.3 - 2021-01-20
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id9">
+  <a class="reference internal nav-link" href="#id11">
    0.13.2 - 2021-01-20
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id10">
+  <a class="reference internal nav-link" href="#id12">
    0.13.1 - 2020-12-31
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id11">
+  <a class="reference internal nav-link" href="#id13">
    0.13.0 - 2020-12-18
   </a>
   <ul class="nav section-nav flex-column">
@@ -466,47 +524,47 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id12">
+  <a class="reference internal nav-link" href="#id14">
    0.12.10 - 2020-09-21
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id13">
+  <a class="reference internal nav-link" href="#id15">
    0.12.9 - 2020-09-08
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id14">
+  <a class="reference internal nav-link" href="#id16">
    0.12.7 - 2020-08-31
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id15">
+  <a class="reference internal nav-link" href="#id17">
    0.12.5 - 2020-08-28
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id16">
+  <a class="reference internal nav-link" href="#id18">
    0.12.4 - 2020-08-27
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id17">
+  <a class="reference internal nav-link" href="#id19">
    0.12.3 - 2020-08-26
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id18">
+  <a class="reference internal nav-link" href="#id20">
    0.12.2 - 2020-08-25
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id19">
+  <a class="reference internal nav-link" href="#id21">
    0.12.1 - 2020-08-19
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id20">
+  <a class="reference internal nav-link" href="#id22">
    0.12.0 - 2020-08-19
   </a>
   <ul class="nav section-nav flex-column">
@@ -523,7 +581,7 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id21">
+  <a class="reference internal nav-link" href="#id23">
    0.11.2 - 2020-07-13
   </a>
   <ul class="nav section-nav flex-column">
@@ -533,14 +591,14 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id22">
+    <a class="reference internal nav-link" href="#id24">
      Improved 👌
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id23">
+  <a class="reference internal nav-link" href="#id25">
    0.11.1 - 2020-07-12
   </a>
   <ul class="nav section-nav flex-column">
@@ -552,29 +610,29 @@
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id24">
+  <a class="reference internal nav-link" href="#id26">
    0.11.0 - 2020-07-12
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id25">
+    <a class="reference internal nav-link" href="#id27">
      Added ✨
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id26">
+    <a class="reference internal nav-link" href="#id28">
      Breaking ‼️
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id27">
+  <a class="reference internal nav-link" href="#id29">
    0.10.0 - 2020-07-08
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id28">
+    <a class="reference internal nav-link" href="#id30">
      Improved 👌
     </a>
    </li>
@@ -611,18 +669,152 @@
   <div class="tex2jax_ignore mathjax_ignore section" id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="永久链接至标题">¶</a></h1>
 <div class="section" id="id1">
-<h2>0.15.2 - 2021-08-26<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<h2>0.16.1 - 2021-12-16<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>✨ NEW: Add <code class="docutils literal notranslate"><span class="pre">myst_linkify_fuzzy_links</span></code> option.
+When using the <a class="reference internal" href="../syntax/optional.html#linkify"><span class="std std-doc"><code class="docutils literal notranslate"><span class="pre">linkify</span></code> extension</span></a>, this option can be used to disable matching of links that do not contain a schema (such as <code class="docutils literal notranslate"><span class="pre">http://</span></code>).</p>
+</div>
+<div class="section" id="id2">
+<h2>0.16.0 - 2021-12-06<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>This release contains a number of exciting improvements:</p>
+<div class="section" id="upgrade-of-markdown-parser">
+<h3>Upgrade of Markdown parser<a class="headerlink" href="#upgrade-of-markdown-parser" title="永久链接至标题">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">markdown-it-py</span></code> has been upgraded to <a class="reference external" href="https://github.com/executablebooks/markdown-it-py/releases/tag/v2.0.0">v2.0.0</a>.
+This upgrade brings full compliance with the <a class="reference external" href="https://spec.commonmark.org/0.30/">CommonMark v0.30 specification</a>.</p>
+<p>Additionally, <code class="docutils literal notranslate"><span class="pre">mdit-py-plugins</span></code> has been upgraded to <a class="reference external" href="https://github.com/executablebooks/mdit-py-plugins/releases/tag/v0.3.0">v0.3.0</a>.
+This improves the parsing of the MyST target syntax, to allow for spaces and additional special characters in the target name,
+for example this is now valid:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>(a bc   |@&lt;&gt;*./_-+:)=
+
+<span class="gh"># Header</span>
+</pre></div>
+</div>
+<p>Also MyST role syntax now supports unlimited length in the role name and new lines in the content.
+For example, this is now valid:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>{abc}`xy
+new line`
+</pre></div>
+</div>
+</div>
+<div class="section" id="improvements-for-docutils-only-use">
+<h3>Improvements for Docutils-only use<a class="headerlink" href="#improvements-for-docutils-only-use" title="永久链接至标题">¶</a></h3>
+<p>MyST now allows for Docutils-only use (outside of Sphinx), that allows for MyST configuration options to be set via the <code class="docutils literal notranslate"><span class="pre">docutils.conf</span></code> file, or on the command line.</p>
+<p>On installing MyST-Parser, the following CLI-commands are made available:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">myst-docutils-html</span></code>: converts MyST to HTML</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">myst-docutils-html5</span></code>: converts MyST to HTML5</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">myst-docutils-latex</span></code>: converts MyST to LaTeX</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">myst-docutils-xml</span></code>: converts MyST to docutils-native XML</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">myst-docutils-pseudoxml</span></code>: converts MyST to pseudo-XML (to visualise the AST structure)</p></li>
+</ul>
+<p>You can also install the <a class="reference external" href="https://pypi.org/project/myst-docutils/">myst-docutils</a> package from <code class="docutils literal notranslate"><span class="pre">pip</span></code>,
+which includes no direct install requirements on docutils or sphinx.</p>
+<p>See <a class="reference internal" href="../docutils.html"><span class="doc std std-doc">MyST with Docutils</span></a> for more information.</p>
+<p>Thanks to help from <a class="reference external" href="https://github.com/cpitclaudel">&#64;cpitclaudel</a>!</p>
+</div>
+<div class="section" id="include-myst-files-in-rst-files">
+<h3>Include MyST files in RST files<a class="headerlink" href="#include-myst-files-in-rst-files" title="永久链接至标题">¶</a></h3>
+<p>With <code class="docutils literal notranslate"><span class="pre">docutils&gt;=0.17</span></code>, the <code class="docutils literal notranslate"><span class="pre">include</span></code> directive has a <code class="docutils literal notranslate"><span class="pre">parser</span></code> option.
+This can be used with myst-parser to include MyST files in RST files.</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Parse using the docutils only parser:
+
+.. include:: include.md
+   :parser: myst_parser.docutils_
+
+Parse using the sphinx parser:
+
+.. include:: include.md
+   :parser: myst_parser.sphinx_
+</pre></div>
+</div>
+</div>
+<div class="section" id="addition-of-the-fieldlist-syntax-extension">
+<h3>Addition of the <code class="docutils literal notranslate"><span class="pre">fieldlist</span></code> syntax extension<a class="headerlink" href="#addition-of-the-fieldlist-syntax-extension" title="永久链接至标题">¶</a></h3>
+<p>Field lists are mappings from field names to field bodies, based on the <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#field-lists">reStructureText syntax</a>:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:name only:</span>
+<span class="nc">:name:</span> body
+<span class="nc">:name:</span>
+  Multiple
+
+  Paragraphs
+</pre></div>
+</div>
+<p>This should eventually allow for MyST Markdown docstrings! (see <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/issues/228">https://github.com/executablebooks/MyST-Parser/issues/228</a>)</p>
+<p>See <a class="reference internal" href="../syntax/optional.html#field-lists"><span class="std std-doc">Field Lists syntax</span></a> for more information.</p>
+</div>
+<div class="section" id="improvements-to-table-rendering">
+<h3>Improvements to table rendering<a class="headerlink" href="#improvements-to-table-rendering" title="永久链接至标题">¶</a></h3>
+<p>Tables with no body are now allowed, for example:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>| abc | def |
+| --- | --- |
+</pre></div>
+</div>
+<p>Also cell alignment HTML classes have now been changed to: <code class="docutils literal notranslate"><span class="pre">text-left</span></code>, <code class="docutils literal notranslate"><span class="pre">text-center</span></code>, or <code class="docutils literal notranslate"><span class="pre">text-right</span></code>, for example:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>| left | center | right |
+| :--- | :----: | ----: |
+| a    | b      | c     |
+</pre></div>
+</div>
+<p>is converted to:</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;colwidths-auto&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-left head&quot;</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>left<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-center head&quot;</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>center<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">th</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-right head&quot;</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>right<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-left&quot;</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>a<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-center&quot;</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>b<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-right&quot;</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>c<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>These classes should be supported by most sphinx HTML themes.</p>
+<p>See <a class="reference internal" href="../syntax/syntax.html#tables"><span class="std std-doc">Tables syntax</span></a> for more information.</p>
+</div>
+<div class="section" id="pull-requests">
+<h3>Pull Requests<a class="headerlink" href="#pull-requests" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>🐛 FIX: Add mandatory attributes on <code class="docutils literal notranslate"><span class="pre">enumerated_list</span></code> by &#64;cpitclaudel in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/418">#418</a></p></li>
+<li><p>📚 DOCS: Add reference to MySTyc in landing page by &#64;astrojuanlu in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/413">#413</a></p></li>
+<li><p>⬆️ UPGRADE: markdown-it-py v2, mdit-py-plugins v0.3 by &#64;chrisjsewell in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/449">#449</a></p></li>
+<li><p>👌 IMPROVE: Table rendering by &#64;chrisjsewell in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/450">#450</a></p></li>
+<li><p>🐛 FIX: Ensure parent files are re-built if <code class="docutils literal notranslate"><span class="pre">include</span></code> file changes by &#64;chrisjsewell in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/451">#451</a></p></li>
+<li><p>🐛 FIX: Convert empty directive option to <code class="docutils literal notranslate"><span class="pre">None</span></code> by &#64;chrisjsewell in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/452">#452</a></p></li>
+<li><p>👌 IMPROVE: Add <code class="docutils literal notranslate"><span class="pre">\\</span></code> for hard-breaks in latex by &#64;chrisjsewell in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/453">#453</a></p></li>
+<li><p>🔧 MAINTAIN: Remove empty “sphinx” extra by &#64;hukkin in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/350">#350</a></p></li>
+<li><p>✨ NEW: Add <code class="docutils literal notranslate"><span class="pre">fieldlist</span></code> extension by &#64;chrisjsewell in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/455">#455</a></p></li>
+<li><p>✨ NEW: Add Docutils MyST config and CLI by &#64;cpitclaudel in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/426">#426</a></p></li>
+<li><p>🔧 MAINTAIN: Add publishing job for <code class="docutils literal notranslate"><span class="pre">myst-docutils</span></code> by &#64;chrisjsewell in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/456">#456</a></p></li>
+<li><p>🧪 TESTS: Add for <code class="docutils literal notranslate"><span class="pre">gettext_additional_targets</span></code> by &#64;jpmckinney in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/459">#459</a></p></li>
+</ul>
+</div>
+<div class="section" id="new-contributors">
+<h3>New Contributors<a class="headerlink" href="#new-contributors" title="永久链接至标题">¶</a></h3>
+<ul class="simple">
+<li><p>&#64;cpitclaudel made their first contribution in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/418">#418</a></p></li>
+<li><p>&#64;astrojuanlu made their first contribution in <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/413">#413</a></p></li>
+</ul>
+<p><strong>Full Changelog</strong>: <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/compare/v0.15.2...v0.16.0">https://github.com/executablebooks/MyST-Parser/compare/v0.15.2…v0.16.0</a></p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>0.15.2 - 2021-08-26<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
 <p>This is mainly a maintenance release that fixes some incompatibilities with <code class="docutils literal notranslate"><span class="pre">sphinx&lt;3.1</span></code>, improvements for compatibility
 with <code class="docutils literal notranslate"><span class="pre">docutils=0.17</span></code>, and improvements to robustness.</p>
 </div>
-<div class="section" id="id2">
-<h2>0.15.1 - 2021-06-18<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id4">
+<h2>0.15.1 - 2021-06-18<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
 <p>👌 IMPROVE: MathJax compatibility with <code class="docutils literal notranslate"><span class="pre">nbsphinx</span></code></p>
 <p><code class="docutils literal notranslate"><span class="pre">nbsphinx</span></code> also overrides the MathJax configuration.
 For compatibility, <code class="docutils literal notranslate"><span class="pre">output_area</span></code> is added to the list of default processed classes, and the override warning is allowed to be suppressed with <code class="docutils literal notranslate"><span class="pre">suppress_warnings</span> <span class="pre">=</span> <span class="pre">[&quot;myst.mathjax&quot;]</span></code>.</p>
 </div>
-<div class="section" id="id3">
-<h2>0.15.0 - 2021-06-13<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id5">
+<h2>0.15.0 - 2021-06-13<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
 <div class="section" id="upgraded-to-sphinx-v4">
 <h3>Upgraded to <code class="docutils literal notranslate"><span class="pre">sphinx</span></code> v4 ⬆️<a class="headerlink" href="#upgraded-to-sphinx-v4" title="永久链接至标题">¶</a></h3>
 <p>A principe change in this release is to updates the requirements of myst-parser from <code class="docutils literal notranslate"><span class="pre">sphinx&gt;=2,&lt;4</span></code> to <code class="docutils literal notranslate"><span class="pre">sphinx&gt;=3,&lt;5</span></code>.</p>
@@ -647,8 +839,8 @@ Set <code class="docutils literal notranslate"><span class="pre">myst_url_scheme
 <p>Thanks to <a class="reference external" href="https://github.com/jpmckinney">&#64;jpmckinney</a>!</p>
 </div>
 </div>
-<div class="section" id="id4">
-<h2>0.14.0 - 2021-05-04<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id6">
+<h2>0.14.0 - 2021-05-04<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
 <div class="section" id="upgrade-to-markdown-it-py-v1-0">
 <h3>Upgrade to <code class="docutils literal notranslate"><span class="pre">markdown-it-py</span></code> v1.0 ⬆️<a class="headerlink" href="#upgrade-to-markdown-it-py-v1-0" title="永久链接至标题">¶</a></h3>
 <p>This release updates the code-base to fully support the <a class="reference external" href="https://markdown-it-py.readthedocs.io">markdown-it-py</a> <code class="docutils literal notranslate"><span class="pre">v1.0.0</span></code> release.
@@ -694,8 +886,8 @@ See <a class="reference internal" href="../syntax/optional.html#math-shortcuts">
 <p>These are now correctly extracted.</p>
 </div>
 </div>
-<div class="section" id="id5">
-<h2>0.13.7 - 2021-04-25<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id7">
+<h2>0.13.7 - 2021-04-25<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
 <p>👌 IMPROVE: Add warning for nested headers:</p>
 <p>Nested headers are not supported within most elements (this is a limitation of the docutils/sphinx document structure), and can lead to unexpected outcomes.
 For example in admonitions:</p>
@@ -707,12 +899,12 @@ For example in admonitions:</p>
 <p>A warning (of type <code class="docutils literal notranslate"><span class="pre">myst.nested_header</span></code>) is now emitted when this occurs.</p>
 <p>🔧 MAINTAIN: Python 3.9 is now officially supported.</p>
 </div>
-<div class="section" id="id6">
-<h2>0.13.6 - 2021-04-10<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id8">
+<h2>0.13.6 - 2021-04-10<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
 <p>🐛 FIX: docutils <code class="docutils literal notranslate"><span class="pre">v0.17</span></code> compatibility</p>
 </div>
-<div class="section" id="id7">
-<h2>0.13.5 - 2021-02-15<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id9">
+<h2>0.13.5 - 2021-02-15<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
 <ul class="simple">
 <li><p>⬆️ UPGRADE: required markdown-it-py to <code class="docutils literal notranslate"><span class="pre">v0.6.2</span></code>:
 In particular, this fixes missing source line mappings for table rows and their children</p></li>
@@ -726,8 +918,8 @@ These warning types can be suppressed with the sphinx <code class="docutils lite
 See <a class="reference internal" href="../sphinx/use.html#howto-warnings"><span class="std std-ref">How-to suppress warnings</span></a> for more information.</p></li>
 </ul>
 </div>
-<div class="section" id="id8">
-<h2>0.13.3 - 2021-01-20<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id10">
+<h2>0.13.3 - 2021-01-20<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
 <p>Minor fixes:</p>
 <ul class="simple">
 <li><p>🐛 FIX: front-matter parsing for bibliographic keys</p></li>
@@ -735,8 +927,8 @@ See <a class="reference internal" href="../sphinx/use.html#howto-warnings"><span
 <li><p>👌 IMPROVE: Add warning for multiple footnote definitions</p></li>
 </ul>
 </div>
-<div class="section" id="id9">
-<h2>0.13.2 - 2021-01-20<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id11">
+<h2>0.13.2 - 2021-01-20<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
 <dl class="simple myst">
 <dt>✨ NEW: Add <code class="docutils literal notranslate"><span class="pre">html_admonition</span></code> extension</dt><dd><p>By adding <code class="docutils literal notranslate"><span class="pre">&quot;html_admonition&quot;</span></code> to <code class="docutils literal notranslate"><span class="pre">myst_enable_extensions</span></code>, you can enable parsing of <code class="docutils literal notranslate"><span class="pre">&lt;div</span> <span class="pre">class=&quot;admonition&quot;&gt;</span></code> HTML blocks to sphinx admonitions.</p>
 </dd>
@@ -769,8 +961,8 @@ This is the *content*
 </dl>
 <p>(thanks to contributors &#64;akhmerov, &#64;tfiers)</p>
 </div>
-<div class="section" id="id10">
-<h2>0.13.1 - 2020-12-31<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id12">
+<h2>0.13.1 - 2020-12-31<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h2>
 <p>👌 Directives can now be used for inline substitutions, e.g.</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>---
 substitutions:
@@ -785,8 +977,8 @@ An inline image: {{ key }}
 </pre></div>
 </div>
 </div>
-<div class="section" id="id11">
-<h2>0.13.0 - 2020-12-18<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id13">
+<h2>0.13.0 - 2020-12-18<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h2>
 <p>This release makes some major updates to the optional syntaxes.
 For full details see <a class="reference internal" href="../syntax/optional.html"><span class="doc std std-doc">Optional MyST Syntaxes</span></a>.</p>
 <div class="section" id="deprecations">
@@ -847,15 +1039,15 @@ This is a caption in <span class="gs">**Markdown**</span>
 </div>
 </div>
 </div>
-<div class="section" id="id12">
-<h2>0.12.10 - 2020-09-21<a class="headerlink" href="#id12" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id14">
+<h2>0.12.10 - 2020-09-21<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h2>
 <dl class="simple myst">
 <dt>🐛 FIX: allow dates to be parsed in frontmatter.</dt><dd><p>This fixes a bug that would raise errors at parse time if non-string date objects were in front-matter YAML. See <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/253">#253</a></p>
 </dd>
 </dl>
 </div>
-<div class="section" id="id13">
-<h2>0.12.9 - 2020-09-08<a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id15">
+<h2>0.12.9 - 2020-09-08<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h2>
 <dl class="simple myst">
 <dt>✨ NEW: Auto-generate heading anchors.</dt><dd><p>This utilises <code class="docutils literal notranslate"><span class="pre">markdown-it-py</span></code>’s <code class="docutils literal notranslate"><span class="pre">anchors-plugin</span></code>, to generate unique anchor “slugs” for each header (up to a certain level),
 and allows them to be referenced <em>via</em> a relative path, e.g. <code class="docutils literal notranslate"><span class="pre">[](./file.md#header-anchor)</span></code>, or in the same document, e.g. <code class="docutils literal notranslate"><span class="pre">[](#header-anchor)</span></code>.</p>
@@ -867,16 +1059,16 @@ and allows them to be referenced <em>via</em> a relative path, e.g. <code class=
 </dd>
 </dl>
 </div>
-<div class="section" id="id14">
-<h2>0.12.7 - 2020-08-31<a class="headerlink" href="#id14" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id16">
+<h2>0.12.7 - 2020-08-31<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h2>
 <dl class="simple myst">
 <dt>✨ NEW: Want to include your <a class="reference external" href="http://README.md">README.md</a> in the documentation?</dt><dd><p>See <a class="reference internal" href="../sphinx/use.html#howto-include-readme"><span class="std std-ref">including a file from outside the docs folder</span></a>.</p>
 </dd>
 </dl>
 <p>(👌 added <code class="docutils literal notranslate"><span class="pre">relative-docs</span></code> option in 0.12.8)</p>
 </div>
-<div class="section" id="id15">
-<h2>0.12.5 - 2020-08-28<a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id17">
+<h2>0.12.5 - 2020-08-28<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h2>
 <dl class="simple myst">
 <dt>✨ NEW: Add Markdown figure syntax</dt><dd><p>Setting <code class="docutils literal notranslate"><span class="pre">myst_figure_enable</span> <span class="pre">=</span> <span class="pre">True</span></code> in your sphinx <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>, combines the above two extended syntaxes,
 to create a fully Markdown compliant version of the <code class="docutils literal notranslate"><span class="pre">figure</span></code> directive.
@@ -885,12 +1077,12 @@ See <a class="reference internal" href="../syntax/optional.html#markdown-figures
 </dl>
 <p>(👌 formatting of caption improved in 0.12.6)</p>
 </div>
-<div class="section" id="id16">
-<h2>0.12.4 - 2020-08-27<a class="headerlink" href="#id16" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id18">
+<h2>0.12.4 - 2020-08-27<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h2>
 <p>👌 IMPROVE: the mathjax extension is now only overridden if strictly necessary (to support dollar and ams math), and the override is more precise, to mitigate any unwanted side-effects</p>
 </div>
-<div class="section" id="id17">
-<h2>0.12.3 - 2020-08-26<a class="headerlink" href="#id17" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id19">
+<h2>0.12.3 - 2020-08-26<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h2>
 <dl class="simple myst">
 <dt>✨ NEW: Add definition lists.</dt><dd><p>This addition, enabled by <code class="docutils literal notranslate"><span class="pre">myst_deflist_enable</span> <span class="pre">=</span> <span class="pre">True</span></code>, allows for “Pandoc style” definition lists to be parsed and rendered, e.g.</p>
 </dd>
@@ -907,8 +1099,8 @@ See <a class="reference external" href="https://myst-parser.readthedocs.io/en/la
 </dd>
 </dl>
 </div>
-<div class="section" id="id18">
-<h2>0.12.2 - 2020-08-25<a class="headerlink" href="#id18" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id20">
+<h2>0.12.2 - 2020-08-25<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h2>
 <dl class="simple myst">
 <dt>✨ NEW: Add the <code class="docutils literal notranslate"><span class="pre">eval-rst</span></code> directive</dt><dd><p>This directive parses its contents as ReStructuredText, which integrates back into the rest of the document, e.g. for cross-referencing. See <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html#how-directives-parse-content">this documentation</a> for further explanation.</p>
 <p>In particular, this addition solves some outstanding user requests:</p>
@@ -920,12 +1112,12 @@ See <a class="reference external" href="https://myst-parser.readthedocs.io/en/la
 </dd>
 </dl>
 </div>
-<div class="section" id="id19">
-<h2>0.12.1 - 2020-08-19<a class="headerlink" href="#id19" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id21">
+<h2>0.12.1 - 2020-08-19<a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h2>
 <p>✨ NEW: Add <code class="docutils literal notranslate"><span class="pre">myst_commonmark_only</span></code> config option, for restricting the parser to strict CommonMark (no extensions).</p>
 </div>
-<div class="section" id="id20">
-<h2>0.12.0 - 2020-08-19<a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id22">
+<h2>0.12.0 - 2020-08-19<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h2>
 <div class="section" id="breaking">
 <h3>‼️ BREAKING<a class="headerlink" href="#breaking" title="永久链接至标题">¶</a></h3>
 <p>If you are using math in your documents, be sure to read the updated <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html#math-shortcuts">Math syntax guide</a>!
@@ -939,24 +1131,24 @@ In particular, the Mathjax configuration is now overridden, such that LaTeX envi
 <p>More configuration options for math parsing (see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/using/intro.html#myst-configuration-options">MyST configuration options</a>).</p>
 </div>
 </div>
-<div class="section" id="id21">
-<h2>0.11.2 - 2020-07-13<a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id23">
+<h2>0.11.2 - 2020-07-13<a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h2>
 <div class="section" id="added">
 <h3>Added ✨<a class="headerlink" href="#added" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">&lt;img</span> <span class="pre">src=&quot;file.png&quot;</span> <span class="pre">width=&quot;200px&quot;&gt;</span></code> tag parsing to sphinx representation, see <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html#images">the image syntax guide</a></p></li>
 </ul>
 </div>
-<div class="section" id="id22">
-<h3>Improved 👌<a class="headerlink" href="#id22" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id24">
+<h3>Improved 👌<a class="headerlink" href="#id24" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">[title](link)</span></code> syntax now works with intersphinx references.
 Recognised URI schemas can also be configured, see the <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/using/intro.html#myst-configuration-options">configuration options</a></p></li>
 </ul>
 </div>
 </div>
-<div class="section" id="id23">
-<h2>0.11.1 - 2020-07-12<a class="headerlink" href="#id23" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id25">
+<h2>0.11.1 - 2020-07-12<a class="headerlink" href="#id25" title="永久链接至标题">¶</a></h2>
 <div class="section" id="fix">
 <h3>Fix<a class="headerlink" href="#fix" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
@@ -964,10 +1156,10 @@ Recognised URI schemas can also be configured, see the <a class="reference exter
 </ul>
 </div>
 </div>
-<div class="section" id="id24">
-<h2>0.11.0 - 2020-07-12<a class="headerlink" href="#id24" title="永久链接至标题">¶</a></h2>
-<div class="section" id="id25">
-<h3>Added ✨<a class="headerlink" href="#id25" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id26">
+<h2>0.11.0 - 2020-07-12<a class="headerlink" href="#id26" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id27">
+<h3>Added ✨<a class="headerlink" href="#id27" title="永久链接至标题">¶</a></h3>
 <ul>
 <li><p>Special admonition directive syntax (optional):</p>
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>:::{note}
@@ -981,19 +1173,19 @@ This text is <span class="gs">**standard**</span> <span class="ge">_Markdown_</s
 See <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html#direct-latex-math-optional">the syntax guide section</a> for details.</p></li>
 </ul>
 </div>
-<div class="section" id="id26">
-<h3>Breaking ‼️<a class="headerlink" href="#id26" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id28">
+<h3>Breaking ‼️<a class="headerlink" href="#id28" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p>Sphinx configuration options are now set as separate variables, rather than a single dict.
 See <a class="reference external" href="https://myst-parser.readthedocs.io/en/latest/using/intro.html#myst-configuration-options">MyST configuration options</a> for details.</p></li>
 </ul>
 </div>
 </div>
-<div class="section" id="id27">
-<h2>0.10.0 - 2020-07-08<a class="headerlink" href="#id27" title="永久链接至标题">¶</a></h2>
+<div class="section" id="id29">
+<h2>0.10.0 - 2020-07-08<a class="headerlink" href="#id29" title="永久链接至标题">¶</a></h2>
 <p>(<a class="reference external" href="https://github.com/executablebooks/MyST-Parser/compare/v0.9.1...aaed58808af485c29bbbf73c5aac10697bfa08b9">full changelog</a>)</p>
-<div class="section" id="id28">
-<h3>Improved 👌<a class="headerlink" href="#id28" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id30">
+<h3>Improved 👌<a class="headerlink" href="#id30" title="永久链接至标题">¶</a></h3>
 <ul class="simple">
 <li><p>Support Sphinx version 3 <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/197">#197</a> (<a class="reference external" href="https://github.com/chrisjsewell">&#64;chrisjsewell</a>)</p></li>
 <li><p>Update Trove Classifiers <a class="reference external" href="https://github.com/executablebooks/MyST-Parser/pull/192">#192</a> (<a class="reference external" href="https://github.com/chrisjsewell">&#64;chrisjsewell</a>)</p></li>

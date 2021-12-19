@@ -8,7 +8,7 @@
   <meta property="og:title" content="Parse MyST Markdown" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://myst-parser.readthedocs.io/en/api/parsers.html" />
-  <meta property="og:description" content="Parsing and rendering helper functions: The MyST Parser comes bundled with some helper functions to quickly parse MyST Markdown and render its output. Parse MyST Markdown to HTML: For example, the ..." />
+  <meta property="og:description" content="Parsing and rendering helper functions: The MyST Parser comes bundled with some helper functions to quickly parse MyST Markdown and render its output. Parse MyST Markdown to HTML: The following cod..." />
   <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
   <meta property="og:image:alt" content="Parse MyST Markdown" />
   <meta name="twitter:card" content="summary_large_image">
@@ -155,6 +155,11 @@
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docutils.html">
+   MyST with Docutils
+  </a>
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="index.html">
@@ -427,24 +432,30 @@
 <div class="section" id="parsing-and-rendering-helper-functions">
 <h2>Parsing and rendering helper functions<a class="headerlink" href="#parsing-and-rendering-helper-functions" title="永久链接至标题">¶</a></h2>
 <p>The MyST Parser comes bundled with some helper functions to quickly parse MyST Markdown and render its output.</p>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>These APIs are primarily intended for testing and development purposes.
+For proper parsing see <a class="reference internal" href="../sphinx/index.html#myst-sphinx"><span class="std std-ref">含 Sphinx 的 MyST</span></a> and <a class="reference internal" href="../docutils.html#myst-docutils"><span class="std std-ref">MyST with Docutils</span></a>.</p>
+</div>
 <div class="section" id="parse-myst-markdown-to-html">
 <h3>Parse MyST Markdown to HTML<a class="headerlink" href="#parse-myst-markdown-to-html" title="永久链接至标题">¶</a></h3>
-<p>For example, the following code parses markdown and renders as HTML:</p>
+<p>The following code parses markdown and renders as HTML using only the markdown-it parser
+(i.e. no sphinx or docutils specific processing is done):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">myst_parser.main</span> <span class="kn">import</span> <span class="n">to_html</span>
-<span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;some *text*&quot;</span><span class="p">)</span>
+<span class="n">to_html</span><span class="p">(</span><span class="s2">&quot;some *text* </span><span class="si">{literal}</span><span class="s2">`a`&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <!-- #region -->
-<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>&#39;<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>some <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>text<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>\n&#39;
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>&#39;<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>some <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>text<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">code</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;myst role&quot;</span><span class="p">&gt;</span>{literal}[a]<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>\n&#39;
 </pre></div>
 </div>
 <!-- #endregion -->
 </div>
 <div class="section" id="parse-myst-markdown-to-docutils">
 <h3>Parse MyST Markdown to docutils<a class="headerlink" href="#parse-myst-markdown-to-docutils" title="永久链接至标题">¶</a></h3>
-<p>The following function renders your text as <strong>docutils objects</strong> (for example, for use with the Sphinx ecosystem):</p>
+<p>The following function renders your text as <strong>docutils AST objects</strong> (for example, for use with the Sphinx ecosystem):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">myst_parser.main</span> <span class="kn">import</span> <span class="n">to_docutils</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">to_docutils</span><span class="p">(</span><span class="s2">&quot;some *text*&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">pformat</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">to_docutils</span><span class="p">(</span><span class="s2">&quot;some *text* </span><span class="si">{literal}</span><span class="s2">`a`&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">pformat</span><span class="p">())</span>
 </pre></div>
 </div>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;document</span> <span class="na">source=</span><span class="s">&quot;notset&quot;</span><span class="nt">&gt;</span>
@@ -452,7 +463,16 @@
         some
         <span class="nt">&lt;emphasis&gt;</span>
             text
+
+        <span class="nt">&lt;literal&gt;</span>
+            a
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>This function only performs the initial parse of the AST,
+without applying any transforms or post-processing.
+See for example the <a class="reference external" href="https://www.sphinx-doc.org/en/master/extdev/appapi.html?highlight=config-inited#sphinx-core-events">Sphinx core events</a>.</p>
 </div>
 </div>
 <div class="section" id="parse-myst-markdown-as-markdown-it-tokens">
@@ -518,7 +538,7 @@ To list the active rules, use the <code class="docutils literal notranslate"><sp
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;block&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;front_matter&#39;</span><span class="p">,</span>
            <span class="s1">&#39;table&#39;</span><span class="p">,</span>
            <span class="s1">&#39;code&#39;</span><span class="p">,</span>
-           <span class="s1">&#39;math_block_eqno&#39;</span><span class="p">,</span>
+           <span class="s1">&#39;math_block_label&#39;</span><span class="p">,</span>
            <span class="s1">&#39;math_block&#39;</span><span class="p">,</span>
            <span class="s1">&#39;fence&#39;</span><span class="p">,</span>
            <span class="s1">&#39;myst_line_comment&#39;</span><span class="p">,</span>

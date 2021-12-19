@@ -30,6 +30,7 @@ myst_enable_extensions = [
     "colon_fence",
     "deflist",
     "dollarmath",
+    "fieldlist",
     "html_admonition",
     "html_image",
     "linkify",
@@ -241,6 +242,8 @@ To change this behaviour, set a custom regex, for identifying HTML classes to pr
 Adding `"linkify"` to `myst_enable_extensions` (in the sphinx `conf.py` [configuration file](https://www.sphinx-doc.org/en/master/usage/configuration.html)) will automatically identify "bare" web URLs and add hyperlinks:
 
 `www.example.com` -> www.example.com
+
+To only match URLs that start with schema, such as `http://example.com`, set `myst_linkify_fuzzy_links=False`.
 
 :::{important}
 This extension requires that [linkify-it-py](https://github.com/tsutsu3/linkify-it-py) is installed.
@@ -588,6 +591,96 @@ and are applied to markdown list items starting with `[ ]` or `[x]`:
 
 - [ ] An item that needs doing
 - [x] An item that is complete
+
+(syntax/fieldlists)=
+## Field Lists
+
+Field lists are mappings from field names to field bodies,
+based on the [reStructureText syntax](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#field-lists).
+
+````md
+:name only:
+:name: body
+:*Nested syntax*: Both name and body may contain **nested syntax**.
+:Paragraphs: Since the field marker may be quite long, the second
+   and subsequent lines of a paragraph do not have to line up
+   with the first line.
+:Alignment 1: If the field body starts on the first line...
+
+              Then the entire field body must be indented the same.
+:Alignment 2:
+  If the field body starts on a subsequent line...
+
+  Then the indentation is always two spaces.
+:Blocks:
+
+  As well as paragraphs, any block syntaxes may be used in a field body:
+
+  - Me
+  - Myself
+  - I
+
+  ```python
+  print("Hello, world!")
+  ```
+````
+
+:name only:
+:name: body
+:*Nested syntax*: Both name and body may contain **nested syntax**.
+:Paragraphs: Since the field marker may be quite long, the second
+   and subsequent lines of a paragraph do not have to line up
+   with the first line.
+:Alignment 1: If the field body starts on the first line...
+
+              Then the entire field body must be indented the same.
+:Alignment 2:
+  If the field body starts on a subsequent line...
+
+  Then the indentation is always two spaces.
+:Blocks:
+
+  As well as paragraphs, any block syntaxes may be used in a field body:
+
+  - Me
+  - Myself
+  - I
+
+  ```python
+  print("Hello, world!")
+  ```
+
+A prominent use case of field lists is for use in API docstrings, as used in [Sphinx's docstring renderers](sphinx:python-domain):
+
+````md
+```{py:function} send_message(sender, priority)
+
+Send a message to a recipient
+
+:param str sender: The person sending the message
+:param priority: The priority of the message, can be a number 1-5
+:type priority: int
+:return: the message id
+:rtype: int
+:raises ValueError: if the message_body exceeds 160 characters
+```
+````
+
+```{py:function} send_message(sender, priority)
+
+Send a message to a recipient
+
+:param str sender: The person sending the message
+:param priority: The priority of the message, can be a number 1-5
+:type priority: int
+:return: the message id
+:rtype: int
+:raises ValueError: if the message_body exceeds 160 characters
+```
+
+:::{note}
+Currently `sphinx.ext.autodoc` does not support MyST, see [](howto/autodoc).
+:::
 
 (syntax/images)=
 

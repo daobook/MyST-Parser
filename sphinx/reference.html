@@ -156,6 +156,11 @@
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docutils.html">
+   MyST with Docutils
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../api/index.html">
    MyST-Parser Python API
@@ -382,27 +387,31 @@ To do so, use the keywords beginning <code class="docutils literal notranslate">
 <td><p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_URI_schemes">URI schemes</a> that will be recognised as external URLs in <code class="docutils literal notranslate"><span class="pre">[](scheme:loc)</span></code> syntax, or set <code class="docutils literal notranslate"><span class="pre">None</span></code> to recognise all.
 Other links will be resolved as internal cross-references.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_heading_anchors</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_linkify_fuzzy_links</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
+<td><p>If <code class="docutils literal notranslate"><span class="pre">False</span></code>, only links that contain a scheme (such as <code class="docutils literal notranslate"><span class="pre">http</span></code>) will be recognised as external links.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_heading_anchors</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>Enable auto-generated heading anchors, up to a maximum level, <a class="reference internal" href="../syntax/optional.html#syntax-header-anchors"><span class="std std-ref">see here</span></a> for details.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_heading_slug_func</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_heading_slug_func</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">None</span></code></p></td>
 <td><p>Use the specified function to auto-generate heading anchors, <a class="reference internal" href="../syntax/optional.html#syntax-header-anchors"><span class="std std-ref">see here</span></a> for details.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_substitutions</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_substitutions</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p></td>
 <td><p>A mapping of keys to substitutions, used globally for all MyST documents when the “substitution” extension is enabled.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_html_meta</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_html_meta</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">{}</span></code></p></td>
 <td><p>A mapping of keys to HTML metadata, used globally for all MyST documents. See <a class="reference internal" href="../syntax/syntax.html#syntax-html-meta"><span class="std std-ref">Setting HTML Metadata</span></a>.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_footnote_transition</span></code></p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_footnote_transition</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p></td>
 <td><p>Place a transition before any footnotes.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">myst_words_per_minute</span></code></p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">myst_words_per_minute</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">200</span></code></p></td>
 <td><p>Reading speed used to calculate <code class="docutils literal notranslate"><span class="pre">{sub-ref}`wordcount-minutes`</span></code></p></td>
 </tr>
@@ -412,9 +421,10 @@ Other links will be resolved as internal cross-references.</p></td>
 <ul class="simple">
 <li><p>“amsmath”: enable direct parsing of <a class="reference external" href="https://ctan.org/pkg/amsmath">amsmath</a> LaTeX equations</p></li>
 <li><p>“colon_fence”: Enable code fences using <code class="docutils literal notranslate"><span class="pre">:::</span></code> delimiters, <a class="reference internal" href="../syntax/optional.html#syntax-colon-fence"><span class="std std-ref">see here</span></a> for details</p></li>
-<li><p>“deflist”</p></li>
+<li><p>“deflist”: Enable definition lists, <a class="reference internal" href="../syntax/optional.html#syntax-definition-lists"><span class="std std-ref">see here</span></a> for details</p></li>
 <li><p>“dollarmath”: Enable parsing of dollar <code class="docutils literal notranslate"><span class="pre">$</span></code> and <code class="docutils literal notranslate"><span class="pre">$$</span></code> encapsulated math</p></li>
 <li><p>“html_admonition”: Convert <code class="docutils literal notranslate"><span class="pre">&lt;div</span> <span class="pre">class=&quot;admonition&quot;&gt;</span></code> elements to sphinx admonition nodes, see the <a class="reference internal" href="../syntax/optional.html#syntax-html-admonition"><span class="std std-ref">HTML admonition syntax</span></a> for details</p></li>
+<li><p>“fieldlist”: Enable field lists, <a class="reference internal" href="../syntax/optional.html#syntax-fieldlists"><span class="std std-ref">see here</span></a> for details</p></li>
 <li><p>“html_image”: Convert HTML <code class="docutils literal notranslate"><span class="pre">&lt;img&gt;</span></code> elements to sphinx image nodes, see the <a class="reference internal" href="../syntax/optional.html#syntax-images"><span class="std std-ref">image syntax</span></a> for details</p></li>
 <li><p>“linkify”: automatically identify “bare” web URLs and add hyperlinks</p></li>
 <li><p>“replacements”: automatically convert some common typographic texts</p></li>

@@ -156,6 +156,11 @@
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docutils.html">
+   MyST with Docutils
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../api/index.html">
    MyST-Parser Python API
@@ -338,6 +343,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#include-markdown-files-into-an-rst-file">
+   Include Markdown files into an rST file
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#use-myst-in-jupyter-notebooks">
    Use MyST in Jupyter Notebooks
   </a>
@@ -412,6 +422,18 @@ Therefore, using the conventional <code class="docutils literal notranslate"><sp
 </pre></div>
 </div>
 <p>Hallo I’m from an rST file, <a class="reference internal" href="#howto-autodoc"><span class="std std-ref">with a reference</span></a>.</p>
+</div>
+<div class="section" id="include-markdown-files-into-an-rst-file">
+<span id="howto-include-md"></span><h2>Include Markdown files into an rST file<a class="headerlink" href="#include-markdown-files-into-an-rst-file" title="永久链接至标题">¶</a></h2>
+<p>To include a MyST file within a ReStructuredText file, we can use the <code class="docutils literal notranslate"><span class="pre">parser</span></code> option of the <code class="docutils literal notranslate"><span class="pre">include</span></code> directive:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">include</span><span class="p">::</span> include.md
+   <span class="nc">:parser:</span> myst_parser.sphinx_
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">parser</span></code> option requires <code class="docutils literal notranslate"><span class="pre">docutils&gt;=0.17</span></code></p>
+</div>
 </div>
 <div class="section" id="use-myst-in-jupyter-notebooks">
 <h2>Use MyST in Jupyter Notebooks<a class="headerlink" href="#use-myst-in-jupyter-notebooks" title="永久链接至标题">¶</a></h2>

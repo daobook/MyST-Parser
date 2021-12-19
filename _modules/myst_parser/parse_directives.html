@@ -147,6 +147,11 @@
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../docutils.html">
+   MyST with Docutils
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../api/index.html">
    MyST-Parser Python API
@@ -442,12 +447,13 @@
     <span class="c1"># check options against spec</span>
     <span class="n">options_spec</span> <span class="o">=</span> <span class="n">directive_class</span><span class="o">.</span><span class="n">option_spec</span>  <span class="c1"># type: Dict[str, Callable]</span>
     <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">options</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
-        <span class="n">convertor</span> <span class="o">=</span> <span class="n">options_spec</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">convertor</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">convertor</span> <span class="o">=</span> <span class="n">options_spec</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
             <span class="k">raise</span> <span class="n">DirectiveParsingError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unknown option: </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
             <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">True</span> <span class="ow">or</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>  <span class="c1"># flag converter requires no argument</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># flag converter requires no argument</span>
             <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">)):</span>
                 <span class="c1"># convertor always requires string input</span>
                 <span class="n">value</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>

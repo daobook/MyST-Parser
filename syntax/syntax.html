@@ -8,7 +8,7 @@
   <meta property="og:title" content="The MyST Syntax Guide" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://myst-parser.readthedocs.io/en/syntax/syntax.html" />
-  <meta property="og:description" content="2021 年 11 月 22 日| 8 min read As a base, MyST adheres to the CommonMark specification. For this, it uses the markdown-it-py parser, which is a well-structured markdown parser for Python that is Comm..." />
+  <meta property="og:description" content="2021 年 12 月 19 日| 8 min read As a base, MyST adheres to the CommonMark specification. For this, it uses the markdown-it-py parser, which is a well-structured markdown parser for Python that is Comm..." />
   <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
   <meta property="og:image:alt" content="The MyST Syntax Guide" />
   <meta name="twitter:card" content="summary_large_image">
@@ -157,6 +157,11 @@
     </a>
    </li>
   </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docutils.html">
+   MyST with Docutils
+  </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../api/index.html">
@@ -406,6 +411,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tables">
+   Tables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#images">
    Images
   </a>
@@ -441,7 +451,7 @@
   <div class="tex2jax_ignore mathjax_ignore section" id="the-myst-syntax-guide">
 <span id="example-syntax"></span><h1>The MyST Syntax Guide<a class="headerlink" href="#the-myst-syntax-guide" title="永久链接至标题">¶</a></h1>
 <blockquote>
-<div><p>2021 年 11 月 22 日 | 8 min read</p>
+<div><p>2021 年 12 月 19 日 | 8 min read</p>
 </div></blockquote>
 <p>As a base, MyST adheres to the <a class="reference external" href="https://spec.commonmark.org/">CommonMark specification</a>.
 For this, it uses the <a class="reference external" href="https://github.com/executablebooks/markdown-it-py">markdown-it-py</a> parser,
@@ -817,8 +827,8 @@ This is equivalent to using the <a class="reference external" href="https://www.
 <p>HTML metadata can also be added globally in the <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> <em>via</em> the <code class="docutils literal notranslate"><span class="pre">myst_html_meta</span></code> variable, in which case it will be added to all MyST documents.
 For each document, the <code class="docutils literal notranslate"><span class="pre">myst_html_meta</span></code> dict will be updated by the document level front-matter <code class="docutils literal notranslate"><span class="pre">html_meta</span></code>, with the front-matter taking precedence.</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="66de4885-4295-4fd2-9356-5c8d882c89ab" name="8fde6430-55db-4241-b296-8a7f5e44a94b" type="radio">
-</input><label class="tabbed-label" for="66de4885-4295-4fd2-9356-5c8d882c89ab">
+<input checked="checked" id="bef17849-e83b-4af9-9b2c-efc0b0915b40" name="87c7eb7d-9de9-4d5d-9385-34aa58eda630" type="radio">
+</input><label class="tabbed-label" for="bef17849-e83b-4af9-9b2c-efc0b0915b40">
 Sphinx Configuration</label><div class="tabbed-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">language</span> <span class="o">=</span> <span class="s2">&quot;en&quot;</span>
 <span class="n">myst_html_meta</span> <span class="o">=</span> <span class="p">{</span>
@@ -830,8 +840,8 @@ Sphinx Configuration</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="fd62c316-dbd1-4f97-bdfd-af491babc4c0" name="8fde6430-55db-4241-b296-8a7f5e44a94b" type="radio">
-</input><label class="tabbed-label" for="fd62c316-dbd1-4f97-bdfd-af491babc4c0">
+<input id="d67a39ee-7a0b-4c2f-af8b-da308d8881b4" name="87c7eb7d-9de9-4d5d-9385-34aa58eda630" type="radio">
+</input><label class="tabbed-label" for="d67a39ee-7a0b-4c2f-af8b-da308d8881b4">
 MyST Front-Matter</label><div class="tabbed-content docutils">
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nn">---</span>
 <span class="nt">html_meta</span><span class="p">:</span>
@@ -843,8 +853,8 @@ MyST Front-Matter</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="493e5833-2d2f-4405-b589-50e9d6d9a223" name="8fde6430-55db-4241-b296-8a7f5e44a94b" type="radio">
-</input><label class="tabbed-label" for="493e5833-2d2f-4405-b589-50e9d6d9a223">
+<input id="9c9f748e-c35a-487b-b61e-15bd3425b796" name="87c7eb7d-9de9-4d5d-9385-34aa58eda630" type="radio">
+</input><label class="tabbed-label" for="9c9f748e-c35a-487b-b61e-15bd3425b796">
 RestructuredText</label><div class="tabbed-content docutils">
 <div class="highlight-restructuredtext notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">meta</span><span class="p">::</span>
    <span class="nc">:description lang=en:</span> metadata description
@@ -854,8 +864,8 @@ RestructuredText</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="8622744b-a2c3-4f5d-a907-249fb5f2cb44" name="8fde6430-55db-4241-b296-8a7f5e44a94b" type="radio">
-</input><label class="tabbed-label" for="8622744b-a2c3-4f5d-a907-249fb5f2cb44">
+<input id="358e4a6a-2d64-4e42-a01b-b729759844a6" name="87c7eb7d-9de9-4d5d-9385-34aa58eda630" type="radio">
+</input><label class="tabbed-label" for="358e4a6a-2d64-4e42-a01b-b729759844a6">
 HTML Output</label><div class="tabbed-content docutils">
 <div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
@@ -945,6 +955,62 @@ this page: <a class="reference internal" href="#example-syntax"><span class="std
 <p>If you wish to have the target’s title inserted into your text, you can
 leave the “text” section of the markdown link empty. For example, this
 markdown: <code class="docutils literal notranslate"><span class="pre">[](syntax.md)</span></code> will result in: <a class="reference internal" href="#"><span class="doc std std-doc">The MyST Syntax Guide</span></a>.</p>
+</div>
+</div>
+<div class="section" id="tables">
+<h2>Tables<a class="headerlink" href="#tables" title="永久链接至标题">¶</a></h2>
+<p>Tables can be written using the standard <a class="reference external" href="https://github.github.com/gfm/#tables-extension-">Github Flavoured Markdown syntax</a>:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>| foo | bar |
+| --- | --- |
+| baz | bim |
+</pre></div>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>foo</p></th>
+<th class="head"><p>bar</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>baz</p></td>
+<td><p>bim</p></td>
+</tr>
+</tbody>
+</table>
+<p>Cells in a column can be aligned using the <code class="docutils literal notranslate"><span class="pre">:</span></code> character:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>| left | center | right |
+| :--- | :----: | ----: |
+| a    | b      | c     |
+</pre></div>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>left</p></th>
+<th class="text-center head"><p>center</p></th>
+<th class="text-right head"><p>right</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>a</p></td>
+<td class="text-center"><p>b</p></td>
+<td class="text-right"><p>c</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>Text is aligned by assigning <code class="docutils literal notranslate"><span class="pre">text-left</span></code>, <code class="docutils literal notranslate"><span class="pre">text-center</span></code>, or <code class="docutils literal notranslate"><span class="pre">text-right</span></code> to the cell.
+It is then necessary for the theme you are using to include the appropriate css styling.</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;colwidths-auto table&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">thead</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;&lt;</span><span class="nt">th</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-left head&quot;</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>left<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">th</span><span class="p">&gt;&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">thead</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tbody</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;&lt;</span><span class="nt">td</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;text-left&quot;</span><span class="p">&gt;&lt;</span><span class="nt">p</span><span class="p">&gt;</span>a<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">td</span><span class="p">&gt;&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="images">

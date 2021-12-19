@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+
+<html lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="MyST with Docutils" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myst-parser.readthedocs.io/en/docutils.html" />
+  <meta property="og:description" content="Sphinx, and thus MyST-Parser, is built on top of the Docutils package. MyST-Parser offers a renderer, parser and CLI-interface for working directly with Docutils, independent of Sphinx, as describe..." />
+  <meta property="og:image" content="https://repository-images.githubusercontent.com/240151150/316bc480-cc23-11eb-96fc-4ab2f981a65d" />
+  <meta property="og:image:alt" content="MyST with Docutils" />
+  <meta name="twitter:card" content="summary_large_image">
+    <title>MyST with Docutils</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/translations.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="shortcut icon" href="_static/logo-square.svg"/>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="MyST-Parser Python API" href="api/index.html" />
+    <link rel="prev" title="Common errors and questions" href="sphinx/faq.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="zh_CN">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-wide.svg" class="logo" alt="logo">
+      
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="sphinx/intro.html">
+   在 Sphinx 中开始使用 MyST
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  MyST 语法
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="syntax/syntax.html">
+   The MyST Syntax Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="syntax/optional.html">
+   Optional MyST Syntaxes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="syntax/reference.html">
+   MyST Syntax Reference
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  主题指南
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="explain/index.html">
+   Background and explanation
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="sphinx/index.html">
+   含 Sphinx 的 MyST
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx/use.html">
+     Sphinx extension usage guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx/roles-and-directives.html">
+     Special roles and directives
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx/reference.html">
+     Sphinx configuration options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sphinx/faq.html">
+     Common errors and questions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   MyST with Docutils
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="api/index.html">
+   MyST-Parser Python API
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/parsers.html">
+     Parse MyST Markdown
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/renderers.html">
+     Render outputs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="api/reference.html">
+     API Reference
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="develop/index.html">
+   Contribute to MyST
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="develop/contributing.html">
+     Contributing
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="develop/architecture.html">
+     The MyST implementation architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="develop/test_infrastructure.html">
+     Testing Infrastructure
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  关于
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="examples/index.html">
+   Example pages
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples/wealth_dynamics_rst.html">
+     Wealth Distribution Dynamics in rST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="examples/wealth_dynamics_md.html">
+     Wealth Distribution Dynamics in MyST
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="develop/_changelog.html">
+   Changelog
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference external" href="https://github.com/executablebooks/myst-parser">
+   GitHub 仓库
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/docutils.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        
+        
+        <a class="edit-button" href="https://github.com/daobook/MyST-Parser/edit/master/docs/docutils.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="myst-with-docutils">
+<span id="myst-docutils"></span><h1>MyST with Docutils<a class="headerlink" href="#myst-with-docutils" title="永久链接至标题">¶</a></h1>
+<p>Sphinx, and thus MyST-Parser, is built on top of the <a class="reference external" href="https://docutils.sourceforge.io/docs/">Docutils</a> package.
+MyST-Parser offers a renderer, parser and CLI-interface for working directly with Docutils, independent of Sphinx, as described below.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>Since these tools are independent of Sphinx, this means they cannot parse any Sphinx or Sphinx extensions specific roles or directives.</p>
+</div>
+<p>On installing MyST-Parser, the following CLI-commands are made available:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">myst-docutils-html</span></code>: converts MyST to HTML</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">myst-docutils-html5</span></code>: converts MyST to HTML5</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">myst-docutils-latex</span></code>: converts MyST to LaTeX</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">myst-docutils-xml</span></code>: converts MyST to docutils-native XML</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">myst-docutils-pseudoxml</span></code>: converts MyST to pseudo-XML (to visualise the AST structure)</p></li>
+</ul>
+<p>Each command can be piped stdin or take a file path as an argument:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>myst-docutils-html --help
+<span class="gp">$ </span><span class="nb">echo</span> <span class="s2">&quot;Hello World&quot;</span> <span class="p">|</span> myst-docutils-html
+<span class="gp">$ </span>myst-docutils-html hello-world.md
+</pre></div>
+</div>
+<p>The commands are based on the <a class="reference external" href="https://docutils.sourceforge.io/docs/user/tools.html">Docutils Front-End Tools</a>, and so follow the same argument and options structure, included many of the MyST specific options detailed in <a class="reference internal" href="sphinx/reference.html#sphinx-config-options"><span class="std std-ref">Sphinx configuration options</span></a>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Shared Docutils CLI Options<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Usage
+=====
+  myst-docutils-&lt;writer&gt; [options] [&lt;source&gt; [&lt;destination&gt;]]
+
+Options
+=======
+General Docutils Options
+------------------------
+--title=TITLE           Specify the document title as metadata.
+--generator, -g         Include a &quot;Generated by Docutils&quot; credit and link.
+--no-generator          Do not include a generator credit.
+--date, -d              Include the date at the end of the document (UTC).
+--time, -t              Include the time &amp; date (UTC).
+--no-datestamp          Do not include a datestamp of any kind.
+--source-link, -s       Include a &quot;View document source&quot; link.
+--source-url=&lt;URL&gt;      Use &lt;URL&gt; for a source link; implies --source-link.
+--no-source-link        Do not include a &quot;View document source&quot; link.
+--toc-entry-backlinks   Link from section headers to TOC entries.  (default)
+--toc-top-backlinks     Link from section headers to the top of the TOC.
+--no-toc-backlinks      Disable backlinks to the table of contents.
+--footnote-backlinks    Link from footnotes/citations to references. (default)
+--no-footnote-backlinks
+                        Disable backlinks from footnotes and citations.
+--section-numbering     Enable section numbering by Docutils.  (default)
+--no-section-numbering  Disable section numbering by Docutils.
+--strip-comments        Remove comment elements from the document tree.
+--leave-comments        Leave comment elements in the document tree. (default)
+--strip-elements-with-class=&lt;class&gt;
+                        Remove all elements with classes=&quot;&lt;class&gt;&quot; from the
+                        document tree. Warning: potentially dangerous; use
+                        with caution. (Multiple-use option.)
+--strip-class=&lt;class&gt;   Remove all classes=&quot;&lt;class&gt;&quot; attributes from elements
+                        in the document tree. Warning: potentially dangerous;
+                        use with caution. (Multiple-use option.)
+--report=&lt;level&gt;, -r &lt;level&gt;
+                        Report system messages at or higher than &lt;level&gt;:
+                        &quot;info&quot; or &quot;1&quot;, &quot;warning&quot;/&quot;2&quot; (default), &quot;error&quot;/&quot;3&quot;,
+                        &quot;severe&quot;/&quot;4&quot;, &quot;none&quot;/&quot;5&quot;
+--verbose, -v           Report all system messages.  (Same as &quot;--report=1&quot;.)
+--quiet, -q             Report no system messages.  (Same as &quot;--report=5&quot;.)
+--halt=&lt;level&gt;          Halt execution at system messages at or above &lt;level&gt;.
+                        Levels as in --report.  Default: 4 (severe).
+--strict                Halt at the slightest problem.  Same as &quot;--halt=info&quot;.
+--exit-status=&lt;level&gt;   Enable a non-zero exit status for non-halting system
+                        messages at or above &lt;level&gt;.  Default: 5 (disabled).
+--debug                 Enable debug-level system messages and diagnostics.
+--no-debug              Disable debug output.  (default)
+--warnings=&lt;file&gt;       Send the output of system messages to &lt;file&gt;.
+--traceback             Enable Python tracebacks when Docutils is halted.
+--no-traceback          Disable Python tracebacks.  (default)
+--input-encoding=&lt;name[:handler]&gt;, -i &lt;name[:handler]&gt;
+                        Specify the encoding and optionally the error handler
+                        of input text.  Default: &lt;locale-dependent&gt;:strict.
+--input-encoding-error-handler=INPUT_ENCODING_ERROR_HANDLER
+                        Specify the error handler for undecodable characters.
+                        Choices: &quot;strict&quot; (default), &quot;ignore&quot;, and &quot;replace&quot;.
+--output-encoding=&lt;name[:handler]&gt;, -o &lt;name[:handler]&gt;
+                        Specify the text encoding and optionally the error
+                        handler for output.  Default: UTF-8:strict.
+--output-encoding-error-handler=OUTPUT_ENCODING_ERROR_HANDLER
+                        Specify error handler for unencodable output
+                        characters; &quot;strict&quot; (default), &quot;ignore&quot;, &quot;replace&quot;,
+                        &quot;xmlcharrefreplace&quot;, &quot;backslashreplace&quot;.
+--error-encoding=&lt;name[:handler]&gt;, -e &lt;name[:handler]&gt;
+                        Specify text encoding and error handler for error
+                        output.  Default: utf-8:backslashreplace.
+--error-encoding-error-handler=ERROR_ENCODING_ERROR_HANDLER
+                        Specify the error handler for unencodable characters
+                        in error output.  Default: backslashreplace.
+--language=&lt;name&gt;, -l &lt;name&gt;
+                        Specify the language (as BCP 47 language tag).
+                        Default: en.
+--record-dependencies=&lt;file&gt;
+                        Write output file dependencies to &lt;file&gt;.
+--config=&lt;file&gt;         Read configuration settings from &lt;file&gt;, if it exists.
+--version, -V           Show this program&#39;s version number and exit.
+--help, -h              Show this help message and exit.
+
+reStructuredText Parser Options
+-------------------------------
+--pep-references        Recognize and link to standalone PEP references (like
+                        &quot;PEP 258&quot;).
+--pep-base-url=&lt;URL&gt;    Base URL for PEP references (default
+                        &quot;http://www.python.org/dev/peps/&quot;).
+--pep-file-url-template=&lt;URL&gt;
+                        Template for PEP file part of URL. (default
+                        &quot;pep-%04d&quot;)
+--rfc-references        Recognize and link to standalone RFC references (like
+                        &quot;RFC 822&quot;).
+--rfc-base-url=&lt;URL&gt;    Base URL for RFC references (default
+                        &quot;http://tools.ietf.org/html/&quot;).
+--tab-width=&lt;width&gt;     Set number of spaces for tab expansion (default 8).
+--trim-footnote-reference-space
+                        Remove spaces before footnote references.
+--leave-footnote-reference-space
+                        Leave spaces before footnote references.
+--no-file-insertion     Disable directives that insert the contents of
+                        external file (&quot;include&quot; &amp; &quot;raw&quot;); replaced with a
+                        &quot;warning&quot; system message.
+--file-insertion-enabled
+                        Enable directives that insert the contents of external
+                        file (&quot;include&quot; &amp; &quot;raw&quot;).  Enabled by default.
+--no-raw                Disable the &quot;raw&quot; directives; replaced with a
+                        &quot;warning&quot; system message.
+--raw-enabled           Enable the &quot;raw&quot; directive.  Enabled by default.
+--syntax-highlight=&lt;format&gt;
+                        Token name set for parsing code with Pygments: one of
+                        &quot;long&quot;, &quot;short&quot;, or &quot;none (no parsing)&quot;. Default is
+                        &quot;long&quot;.
+--smart-quotes=&lt;yes/no/alt&gt;
+                        Change straight quotation marks to typographic form:
+                        one of &quot;yes&quot;, &quot;no&quot;, &quot;alt[ernative]&quot; (default &quot;no&quot;).
+--smartquotes-locales=&lt;language:quotes[,language:quotes,...]&gt;
+                        Characters to use as &quot;smart quotes&quot; for &lt;language&gt;.
+--word-level-inline-markup
+                        Inline markup recognized at word boundaries only
+                        (adjacent to punctuation or whitespace). Force
+                        character-level inline markup recognition with &quot;\ &quot;
+                        (backslash + space). Default.
+--character-level-inline-markup
+                        Inline markup recognized anywhere, regardless of
+                        surrounding characters. Backslash-escapes must be used
+                        to avoid unwanted markup recognition. Useful for East
+                        Asian languages. Experimental.
+
+MyST options
+------------
+--myst-commonmark-only=MYST_COMMONMARK_ONLY
+                        Use strict CommonMark parser (type: bool, default:
+                        False)
+--myst-enable-extensions=MYST_ENABLE_EXTENSIONS
+                        Enable extensions (type: comma-delimited, default:
+                        &#39;dollarmath&#39;)
+--myst-linkify-fuzzy-links=MYST_LINKIFY_FUZZY_LINKS
+                        linkify: recognise URLs without schema prefixes (type:
+                        bool, default: True)
+--myst-dmath-allow-labels=MYST_DMATH_ALLOW_LABELS
+                        Parse `$$...$$ (label)` (type: bool, default: True)
+--myst-dmath-allow-space=MYST_DMATH_ALLOW_SPACE
+                        dollarmath: allow initial/final spaces in `$ ... $`
+                        (type: bool, default: True)
+--myst-dmath-allow-digits=MYST_DMATH_ALLOW_DIGITS
+                        dollarmath: allow initial/final digits `1$ ...$2`
+                        (type: bool, default: True)
+--myst-dmath-double-inline=MYST_DMATH_DOUBLE_INLINE
+                        dollarmath: parse inline `$$ ... $$` (type: bool,
+                        default: False)
+--myst-disable-syntax=MYST_DISABLE_SYNTAX
+                        Disable syntax elements (type: comma-delimited,
+                        default: &#39;&#39;)
+--myst-url-schemes=MYST_URL_SCHEMES
+                        URL schemes to allow in links (type: comma-delimited,
+                        default: &#39;http,https,mailto,ftp&#39;)
+--myst-footnote-transition=MYST_FOOTNOTE_TRANSITION
+                        Place a transition before any footnotes (type: bool,
+                        default: True)
+--myst-words-per-minute=MYST_WORDS_PER_MINUTE
+                        For reading speed calculations (type: int, default:
+                        200)
+</pre></div>
+</div>
+</div>
+</details><p>The CLI commands can also utilise the <a class="reference external" href="https://docutils.sourceforge.io/docs/user/config.html"><code class="docutils literal notranslate"><span class="pre">docutils.conf</span></code> configuration file</a> to configure the behaviour of the CLI commands. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># These entries affect all processing:</span>
+<span class="p">[</span><span class="n">general</span><span class="p">]</span>
+<span class="n">myst</span><span class="o">-</span><span class="n">enable</span><span class="o">-</span><span class="n">extensions</span><span class="p">:</span> <span class="n">deflist</span><span class="p">,</span><span class="n">linkify</span>
+<span class="n">myst</span><span class="o">-</span><span class="n">footnote</span><span class="o">-</span><span class="n">transition</span><span class="p">:</span> <span class="n">no</span>
+
+<span class="c1"># These entries affect specific HTML output:</span>
+<span class="p">[</span><span class="n">html</span> <span class="n">writers</span><span class="p">]</span>
+<span class="n">embed</span><span class="o">-</span><span class="n">stylesheet</span><span class="p">:</span> <span class="n">no</span>
+
+<span class="p">[</span><span class="n">html5</span> <span class="n">writer</span><span class="p">]</span>
+<span class="n">stylesheet</span><span class="o">-</span><span class="n">dirs</span><span class="p">:</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">html5_polyglot</span><span class="o">/</span>
+<span class="n">stylesheet</span><span class="o">-</span><span class="n">path</span><span class="p">:</span> <span class="n">minimal</span><span class="o">.</span><span class="n">css</span><span class="p">,</span> <span class="n">responsive</span><span class="o">.</span><span class="n">css</span>
+</pre></div>
+</div>
+<p>You can also use the <a class="reference internal" href="api/reference.html#myst_parser.docutils_.Parser" title="myst_parser.docutils_.Parser"><code class="xref py py-class docutils literal notranslate"><span class="pre">myst_parser.docutils_.Parser</span></code></a> class programmatically with the <a class="reference external" href="https://docutils.sourceforge.io/docs/api/publisher.html">Docutils publisher API</a>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">docutils.core</span> <span class="kn">import</span> <span class="n">publish_string</span>
+<span class="kn">from</span> <span class="nn">myst_parser.docutils_</span> <span class="kn">import</span> <span class="n">Parser</span>
+
+<span class="n">source</span> <span class="o">=</span> <span class="s2">&quot;hallo world</span><span class="se">\n</span><span class="s2">: Definition&quot;</span>
+<span class="n">output</span> <span class="o">=</span> <span class="n">publish_string</span><span class="p">(</span>
+    <span class="n">source</span><span class="o">=</span><span class="n">source</span><span class="p">,</span>
+    <span class="n">writer_name</span><span class="o">=</span><span class="s2">&quot;html5&quot;</span><span class="p">,</span>
+    <span class="n">settings_overrides</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;myst_enable_extensions&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;deflist&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;embed_stylesheet&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="n">parser</span><span class="o">=</span><span class="n">Parser</span><span class="p">(),</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Finally, you can include MyST Markdown files within a RestructuredText file, using the <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/directives.html#include"><code class="docutils literal notranslate"><span class="pre">include</span></code> directive</a>:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">include</span><span class="p">::</span> include.md
+   <span class="nc">:parser:</span> myst_parser.docutils_
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">parser</span></code> option requires <code class="docutils literal notranslate"><span class="pre">docutils&gt;=0.17</span></code></p>
+</div>
+</div>
+
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="sphinx/faq.html" title="上一页 页">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">上一页</p>
+            <p class="prev-next-title">Common errors and questions</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="api/index.html" title="下一页 页">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">下一页</p>
+        <p class="prev-next-title">MyST-Parser Python API</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Executable Book Project<br/>
+        
+            &copy; Copyright 2020, Executable Book Project.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

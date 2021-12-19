@@ -23,6 +23,9 @@ To do so, use the keywords beginning `myst_`.
   - `None`
   - [URI schemes](https://en.wikipedia.org/wiki/List_of_URI_schemes) that will be recognised as external URLs in `[](scheme:loc)` syntax, or set `None` to recognise all.
     Other links will be resolved as internal cross-references.
+* - `myst_linkify_fuzzy_links`
+  - `True`
+  - If `False`, only links that contain a scheme (such as `http`) will be recognised as external links.
 * - `myst_heading_anchors`
   - `None`
   - Enable auto-generated heading anchors, up to a maximum level, [see here](syntax/header-anchors) for details.
@@ -47,9 +50,10 @@ List of extensions:
 
 - "amsmath": enable direct parsing of [amsmath](https://ctan.org/pkg/amsmath) LaTeX equations
 - "colon_fence": Enable code fences using `:::` delimiters, [see here](syntax/colon_fence) for details
-- "deflist"
+- "deflist": Enable definition lists, [see here](syntax/definition-lists) for details
 - "dollarmath": Enable parsing of dollar `$` and `$$` encapsulated math
 - "html_admonition": Convert `<div class="admonition">` elements to sphinx admonition nodes, see the [HTML admonition syntax](syntax/html-admonition) for details
+- "fieldlist": Enable field lists, [see here](syntax/fieldlists) for details
 - "html_image": Convert HTML `<img>` elements to sphinx image nodes, see the [image syntax](syntax/images) for details
 - "linkify": automatically identify "bare" web URLs and add hyperlinks
 - "replacements": automatically convert some common typographic texts

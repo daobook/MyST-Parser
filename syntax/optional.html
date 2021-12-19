@@ -158,6 +158,11 @@
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../docutils.html">
+   MyST with Docutils
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../api/index.html">
    MyST-Parser Python API
@@ -409,6 +414,11 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#field-lists">
+   Field Lists
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#images">
    Images
   </a>
@@ -450,6 +460,7 @@ Their goal is generally to add more <em>Markdown friendly</em> syntaxes; often e
     <span class="s2">&quot;colon_fence&quot;</span><span class="p">,</span>
     <span class="s2">&quot;deflist&quot;</span><span class="p">,</span>
     <span class="s2">&quot;dollarmath&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;fieldlist&quot;</span><span class="p">,</span>
     <span class="s2">&quot;html_admonition&quot;</span><span class="p">,</span>
     <span class="s2">&quot;html_image&quot;</span><span class="p">,</span>
     <span class="s2">&quot;linkify&quot;</span><span class="p">,</span>
@@ -668,6 +679,7 @@ Myst-Parser injects the <code class="docutils literal notranslate"><span class="
 <span id="syntax-linkify"></span><h2>Linkify<a class="headerlink" href="#linkify" title="永久链接至标题">¶</a></h2>
 <p>Adding <code class="docutils literal notranslate"><span class="pre">&quot;linkify&quot;</span></code> to <code class="docutils literal notranslate"><span class="pre">myst_enable_extensions</span></code> (in the sphinx <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html">configuration file</a>) will automatically identify “bare” web URLs and add hyperlinks:</p>
 <p><code class="docutils literal notranslate"><span class="pre">www.example.com</span></code> -&gt; <a class="reference external" href="http://www.example.com">www.example.com</a></p>
+<p>To only match URLs that start with schema, such as <code class="docutils literal notranslate"><span class="pre">http://example.com</span></code>, set <code class="docutils literal notranslate"><span class="pre">myst_linkify_fuzzy_links=False</span></code>.</p>
 <div class="admonition important">
 <p class="admonition-title">重要</p>
 <p>This extension requires that <a class="reference external" href="https://github.com/tsutsu3/linkify-it-py">linkify-it-py</a> is installed.
@@ -705,8 +717,8 @@ Either directly; <code class="docutils literal notranslate"><span class="pre">pi
 </div>
 <p>You can use these substitutions inline or as blocks, and you can even nest substitutions in other substitutions (but circular references are prohibited):</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="81031b4b-3198-408a-8eab-f8b1b90e6487" name="54ed76d6-fde3-4a83-8aee-e566efb91408" type="radio">
-</input><label class="tabbed-label" for="81031b4b-3198-408a-8eab-f8b1b90e6487">
+<input checked="checked" id="4903b284-5a01-44e8-92bb-dc5f600380d0" name="6083a011-3c86-4160-bd54-eee4e0b816c7" type="radio">
+</input><label class="tabbed-label" for="4903b284-5a01-44e8-92bb-dc5f600380d0">
 Markdown Input</label><div class="tabbed-content docutils">
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>Inline: {{ key1 }}
 
@@ -720,8 +732,8 @@ Block level:
 </pre></div>
 </div>
 </div>
-<input id="173f2c22-4c2e-431a-a400-84390ad15a9c" name="54ed76d6-fde3-4a83-8aee-e566efb91408" type="radio">
-</input><label class="tabbed-label" for="173f2c22-4c2e-431a-a400-84390ad15a9c">
+<input id="e2c94a73-56aa-41c4-add8-67e162c7bbeb" name="6083a011-3c86-4160-bd54-eee4e0b816c7" type="radio">
+</input><label class="tabbed-label" for="e2c94a73-56aa-41c4-add8-67e162c7bbeb">
 Rendered Output</label><div class="tabbed-content docutils">
 <p>Inline: I’m a <strong>substitution</strong></p>
 <p>Block level:</p>
@@ -769,7 +781,7 @@ Therefore you can do things like:</p>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>version: 0.15.2</p></li>
+<li><p>version: 0.16.1</p></li>
 <li><p>docname: SYNTAX/OPTIONAL</p></li>
 <li><p>ab</p></li>
 </ul>
@@ -806,8 +818,8 @@ you can also use <code class="docutils literal notranslate"><span class="pre">::
 <p>Using colons instead of back-ticks has the benefit of allowing the content to be rendered correctly, when you are working in any standard Markdown editor.
 It is ideal for admonition type directives (as documented in <a class="reference internal" href="syntax.html#syntax-directives"><span class="std std-ref">Directives</span></a>) or tables with titles, for example:</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="83f66495-358e-40ad-b318-2cd8f2aa8436" name="9ee8d5de-67ec-4b14-bbda-25437a5ce478" type="radio">
-</input><label class="tabbed-label" for="83f66495-358e-40ad-b318-2cd8f2aa8436">
+<input checked="checked" id="dc07f8f1-4da7-419f-b06d-e348248abf52" name="c46909b5-5d37-4891-b179-41af4d4caff2" type="radio">
+</input><label class="tabbed-label" for="dc07f8f1-4da7-419f-b06d-e348248abf52">
 Markdown Input</label><div class="tabbed-content docutils">
 <div class="highlight-md notranslate"><div class="highlight"><pre><span></span>:::{note}
 This text is <span class="gs">**standard**</span> <span class="ge">_Markdown_</span>
@@ -824,8 +836,8 @@ abc | mnp | xyz
 </pre></div>
 </div>
 </div>
-<input id="fb51e2a2-69b7-42be-80e5-ed026781d7a2" name="9ee8d5de-67ec-4b14-bbda-25437a5ce478" type="radio">
-</input><label class="tabbed-label" for="fb51e2a2-69b7-42be-80e5-ed026781d7a2">
+<input id="410cb616-c7a1-45bd-a31c-3950030dc43d" name="c46909b5-5d37-4891-b179-41af4d4caff2" type="radio">
+</input><label class="tabbed-label" for="410cb616-c7a1-45bd-a31c-3950030dc43d">
 Rendered Output</label><div class="tabbed-content docutils">
 <div class="admonition note">
 <p class="admonition-title">注解</p>
@@ -1008,6 +1020,112 @@ and are applied to markdown list items starting with <code class="docutils liter
 <li class="task-list-item"><p><input class="task-list-item-checkbox" checked="checked" disabled="disabled" type="checkbox"> An item that is complete</p></li>
 </ul>
 </div>
+<div class="section" id="field-lists">
+<span id="syntax-fieldlists"></span><h2>Field Lists<a class="headerlink" href="#field-lists" title="永久链接至标题">¶</a></h2>
+<p>Field lists are mappings from field names to field bodies,
+based on the <a class="reference external" href="https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#field-lists">reStructureText syntax</a>.</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>:name only:
+:name: body
+:<span class="ge">*Nested syntax*</span>: Both name and body may contain <span class="gs">**nested syntax**</span>.
+:Paragraphs: Since the field marker may be quite long, the second
+   and subsequent lines of a paragraph do not have to line up
+   with the first line.
+:Alignment 1: If the field body starts on the first line...
+
+              Then the entire field body must be indented the same.
+:Alignment 2:
+  If the field body starts on a subsequent line...
+
+  Then the indentation is always two spaces.
+:Blocks:
+
+  As well as paragraphs, any block syntaxes may be used in a field body:
+
+  <span class="k">-</span> Me
+  <span class="k">-</span> Myself
+  <span class="k">-</span> I
+
+<span class="sb">  ```python</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+<span class="sb">  ```</span>
+</pre></div>
+</div>
+<dl class="myst field-list">
+<dt class="field-odd">name only</dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">name</dt>
+<dd class="field-even"><p>body</p>
+</dd>
+<dt class="field-odd"><em>Nested syntax</em></dt>
+<dd class="field-odd"><p>Both name and body may contain <strong>nested syntax</strong>.</p>
+</dd>
+<dt class="field-even">Paragraphs</dt>
+<dd class="field-even"><p>Since the field marker may be quite long, the second
+and subsequent lines of a paragraph do not have to line up
+with the first line.</p>
+</dd>
+<dt class="field-odd">Alignment 1</dt>
+<dd class="field-odd"><p>If the field body starts on the first line…</p>
+<p>Then the entire field body must be indented the same.</p>
+</dd>
+<dt class="field-even">Alignment 2</dt>
+<dd class="field-even"><p>If the field body starts on a subsequent line…</p>
+<p>Then the indentation is always two spaces.</p>
+</dd>
+<dt class="field-odd">Blocks</dt>
+<dd class="field-odd"><p>As well as paragraphs, any block syntaxes may be used in a field body:</p>
+<ul class="simple">
+<li><p>Me</p></li>
+<li><p>Myself</p></li>
+<li><p>I</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>A prominent use case of field lists is for use in API docstrings, as used in <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#python-domain" title="(在 Sphinx v5.0.0+)"><span class="xref myst">Sphinx’s docstring renderers</span></a>:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{py:function} send_message(sender, priority)
+
+Send a message to a recipient
+
+:param str sender: The person sending the message
+:param priority: The priority of the message, can be a number 1-5
+:type priority: int
+:return: the message id
+:rtype: int
+:raises ValueError: if the message_body exceeds 160 characters
+```
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="send_message">
+<span class="sig-name descname"><span class="pre">send_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sender</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">priority</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#send_message" title="永久链接至目标">¶</a></dt>
+<dd><p>Send a message to a recipient</p>
+<dl class="myst field-list simple">
+<dt class="field-odd">参数</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sender</strong> (<a class="reference external" href="https://docs.python.org/3.7/library/stdtypes.html#str" title="(在 Python v3.7)"><em>str</em></a>) – The person sending the message</p></li>
+<li><p><strong>priority</strong> (<a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)"><em>int</em></a>) – The priority of the message, can be a number 1-5</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回</dt>
+<dd class="field-even"><p>the message id</p>
+</dd>
+<dt class="field-odd">返回类型</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.7/library/functions.html#int" title="(在 Python v3.7)">int</a></p>
+</dd>
+<dt class="field-even">引发</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.7/library/exceptions.html#ValueError" title="(在 Python v3.7)"><strong>ValueError</strong></a> – if the message_body exceeds 160 characters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>Currently <code class="docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code> does not support MyST, see <a class="reference internal" href="../sphinx/use.html#howto-autodoc"><span class="std std-ref">Use sphinx.ext.autodoc in Markdown files</span></a>.</p>
+</div>
+</div>
 <div class="section" id="images">
 <span id="syntax-images"></span><h2>Images<a class="headerlink" href="#images" title="永久链接至标题">¶</a></h2>
 <p>MyST provides a few different syntaxes for including images in your documentation, as explained below.</p>
@@ -1158,8 +1276,8 @@ a<span class="nb">_{</span>21<span class="nb">}&amp;</span> =b<span class="nb">_
 a_1=b_1+c_1\\
 a_2=b_2+c_2-d_2+e_2
 \end{gather*}\]</div>
-<div class="amsmath math notranslate nohighlight" id="equation-9ca92c06-c330-427e-b917-45bf9fa67daa">
-<span class="eqno">(2)<a class="headerlink" href="#equation-9ca92c06-c330-427e-b917-45bf9fa67daa" title="公式的永久链接">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-26e547f7-c048-45f5-8aba-22d8252b4ad9">
+<span class="eqno">(2)<a class="headerlink" href="#equation-26e547f7-c048-45f5-8aba-22d8252b4ad9" title="公式的永久链接">¶</a></span>\[\begin{align}
 a_{11}&amp; =b_{11}&amp;
   a_{12}&amp; =b_{12}\\
 a_{21}&amp; =b_{21}&amp;
