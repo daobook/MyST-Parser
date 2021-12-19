@@ -87,6 +87,7 @@ class MockState:
         self.document = renderer.document
         self.reporter = renderer.document.reporter
         self.state_machine = state_machine
+        self.inliner = MockInliner(renderer, lineno)
 
         class Struct:
             document = self.document
@@ -95,7 +96,7 @@ class MockState:
             title_styles: List[str] = []
             section_level = max(renderer._level_to_elem)
             section_bubble_up_kludge = False
-            inliner = MockInliner(renderer, lineno)
+            inliner = self.inliner
 
         self.memo = Struct
 
@@ -180,9 +181,7 @@ class MockState:
         # so that the nested parse does not effect the current renderer,
         # but we use the same env, so that link references, etc
         # are added to the global parse.
-        from myst_parser.docutils_renderer import DocutilsRenderer
-
-        nested_renderer = DocutilsRenderer(self._renderer.md)
+        nested_renderer = self._renderer.__class__(self._renderer.md)
         options = {k: v for k, v in self._renderer.config.items()}
         options.update(
             {
@@ -357,12 +356,15 @@ class MockIncludeDirective:
             # i.e. relative to source directory
             try:
                 sphinx_env = self.document.settings.env
-                _, include_arg = sphinx_env.relfn2path(self.arguments[0])
-                sphinx_env.note_included(include_arg)
             except AttributeError:
                 pass
+            else:
+                _, include_arg = sphinx_env.relfn2path(self.arguments[0])
+                sphinx_env.note_included(include_arg)
             path = Path(include_arg)
         path = source_dir.joinpath(path)
+        # this ensures that the parent file is rebuilt if the included file changes
+        self.document.settings.record_dependencies.add(str(path))
 
         # read file
         encoding = self.options.get("encoding", self.document.settings.input_encoding)

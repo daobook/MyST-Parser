@@ -45,8 +45,9 @@ highlight (`sphinx.directives.code.Highlight`):
 code-block (`sphinx.directives.code.CodeBlock`):
 .
 ```{code-block}
+:dedent:
 
-a=1
+    a=1
 ```
 .
 <document source="notset">
@@ -171,7 +172,7 @@ acks (`sphinx.directives.other.Acks`):
 .
 <document source="notset">
     <acks>
-        <bullet_list>
+        <bullet_list bullet="-">
             <list_item>
                 <paragraph>
                     name

@@ -142,12 +142,13 @@ def parse_directive_options(
     # check options against spec
     options_spec = directive_class.option_spec  # type: Dict[str, Callable]
     for name, value in list(options.items()):
-        convertor = options_spec.get(name, None)
-        if convertor is None:
+        try:
+            convertor = options_spec[name]
+        except KeyError:
             raise DirectiveParsingError(f"Unknown option: {name}")
         if not isinstance(value, str):
             if value is True or value is None:
-                value = ""  # flag converter requires no argument
+                value = None  # flag converter requires no argument
             elif isinstance(value, (int, float, datetime.date, datetime.datetime)):
                 # convertor always requires string input
                 value = str(value)

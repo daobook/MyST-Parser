@@ -9,6 +9,22 @@ foo
 .
 
 ---------------------------
+Hard-break
+.
+foo\
+bar
+.
+<document source="notset">
+    <paragraph>
+        foo
+        <raw format="html" xml:space="preserve">
+            <br />
+        <raw format="latex" xml:space="preserve">
+            \\
+        bar
+.
+
+---------------------------
 Strong:
 .
 **foo**
@@ -197,13 +213,18 @@ Block Quote:
 Bullet List:
 .
 - *foo*
+* bar
 .
 <document source="notset">
-    <bullet_list>
+    <bullet_list bullet="-">
         <list_item>
             <paragraph>
                 <emphasis>
                     foo
+    <bullet_list bullet="*">
+        <list_item>
+            <paragraph>
+                bar
 .
 
 --------------------------
@@ -215,15 +236,15 @@ Nested Bullets
   - d
 .
 <document source="notset">
-    <bullet_list>
+    <bullet_list bullet="-">
         <list_item>
             <paragraph>
                 a
-            <bullet_list>
+            <bullet_list bullet="-">
                 <list_item>
                     <paragraph>
                         b
-                    <bullet_list>
+                    <bullet_list bullet="-">
                         <list_item>
                             <paragraph>
                                 c
@@ -366,6 +387,15 @@ Target:
 .
 <document source="notset">
     <target ids="target" names="target">
+.
+
+--------------------------
+Target with whitespace:
+.
+(target with space)=
+.
+<document source="notset">
+    <target ids="target-with-space" names="target\ with\ space">
 .
 
 --------------------------
@@ -576,7 +606,7 @@ finish
         <block_quote>
             <paragraph>
                 a
-        <bullet_list>
+        <bullet_list bullet="-">
             <list_item>
                 <paragraph>
                     b

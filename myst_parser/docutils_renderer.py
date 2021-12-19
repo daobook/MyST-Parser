@@ -15,6 +15,7 @@ from typing import (
     MutableMapping,
     Optional,
     Sequence,
+    Tuple,
     Union,
     cast,
 )
@@ -51,9 +52,9 @@ from .parse_directives import DirectiveParsingError, parse_directive_text
 from .utils import is_external_url
 
 
-def make_document(source_path="notset") -> nodes.document:
-    """Create a new docutils document."""
-    settings = OptionParser(components=(RSTParser,)).get_default_values()
+def make_document(source_path="notset", parser_cls=RSTParser) -> nodes.document:
+    """Create a new docutils document, with the parser classes' default settings."""
+    settings = OptionParser(components=(parser_cls,)).get_default_values()
     return new_document(source_path, settings=settings)
 
 
@@ -364,6 +365,8 @@ class DocutilsRenderer(RendererProtocol):
 
     def render_bullet_list(self, token: SyntaxTreeNode) -> None:
         list_node = nodes.bullet_list()
+        if token.markup:
+            list_node["bullet"] = token.markup
         if token.attrs.get("class"):
             # this is used e.g. by tasklist
             list_node["classes"] = str(token.attrs["class"]).split()
@@ -399,6 +402,7 @@ class DocutilsRenderer(RendererProtocol):
 
     def render_hardbreak(self, token: SyntaxTreeNode) -> None:
         self.current_node.append(nodes.raw("", "<br />\n", format="html"))
+        self.current_node.append(nodes.raw("", "\\\\\n", format="latex"))
 
     def render_strong(self, token: SyntaxTreeNode) -> None:
         node = nodes.strong()
@@ -472,6 +476,15 @@ class DocutilsRenderer(RendererProtocol):
         self.add_line_and_source_path(node, token)
         self.current_node.append(node)
 
+    @property
+    def blocks_mathjax_processing(self) -> bool:
+        """Only add mathjax ignore classes if using sphinx and myst_update_mathjax is True."""
+        return (
+            self.sphinx_env is not None
+            and "myst_update_mathjax" in self.sphinx_env.config
+            and self.sphinx_env.config.myst_update_mathjax
+        )
+
     def render_heading(self, token: SyntaxTreeNode) -> None:
 
         if self.md_env.get("match_titles", None) is False:
@@ -492,13 +505,7 @@ class DocutilsRenderer(RendererProtocol):
         self.add_line_and_source_path(title_node, token)
 
         new_section = nodes.section()
-        if level == 1 and (
-            self.sphinx_env is None
-            or (
-                "myst_update_mathjax" in self.sphinx_env.config
-                and self.sphinx_env.config.myst_update_mathjax
-            )
-        ):
+        if level == 1 and self.blocks_mathjax_processing:
             new_section["classes"].extend(["tex2jax_ignore", "mathjax_ignore"])
         self.add_line_and_source_path(new_section, token)
         new_section.append(title_node)
@@ -729,11 +736,9 @@ class DocutilsRenderer(RendererProtocol):
 
     def render_table(self, token: SyntaxTreeNode) -> None:
 
-        assert token.children and len(token.children) > 1
-
-        # markdown-it table always contains two elements:
+        # markdown-it table always contains at least a header:
+        assert token.children
         header = token.children[0]
-        body = token.children[1]
         # with one header row
         assert header.children
         header_row = header.children[0]
@@ -761,11 +766,13 @@ class DocutilsRenderer(RendererProtocol):
             self.render_table_row(header_row)
 
         # body
-        tbody = nodes.tbody()
-        tgroup += tbody
-        with self.current_node_context(tbody):
-            for body_row in body.children or []:
-                self.render_table_row(body_row)
+        if len(token.children) > 1:
+            body = token.children[1]
+            tbody = nodes.tbody()
+            tgroup += tbody
+            with self.current_node_context(tbody):
+                for body_row in body.children or []:
+                    self.render_table_row(body_row)
 
     def render_table_row(self, token: SyntaxTreeNode) -> None:
         row = nodes.row()
@@ -776,19 +783,25 @@ class DocutilsRenderer(RendererProtocol):
                     child.children[0].content if child.children else ""
                 )
                 style = child.attrGet("style")  # i.e. the alignment when using e.g. :--
-                if style:
-                    entry["classes"].append(style)
+                if style and style in (
+                    "text-align:left",
+                    "text-align:right",
+                    "text-align:center",
+                ):
+                    entry["classes"].append(f"text-{cast(str, style).split(':')[1]}")
                 with self.current_node_context(entry, append=True):
                     with self.current_node_context(para, append=True):
                         self.render_children(child)
 
     def render_math_inline(self, token: SyntaxTreeNode) -> None:
         content = token.content
-        if token.markup == "$$":
-            # available when dmath_double_inline is True
-            node = nodes.math_block(content, content, nowrap=False, number=None)
-        else:
-            node = nodes.math(content, content)
+        node = nodes.math(content, content)
+        self.add_line_and_source_path(node, token)
+        self.current_node.append(node)
+
+    def render_math_inline_double(self, token: SyntaxTreeNode) -> None:
+        content = token.content
+        node = nodes.math_block(content, content, nowrap=False, number=None)
         self.add_line_and_source_path(node, token)
         self.current_node.append(node)
 
@@ -934,6 +947,42 @@ class DocutilsRenderer(RendererProtocol):
                     )
                     self.current_node += [error_msg]
 
+    def render_field_list(self, token: SyntaxTreeNode) -> None:
+        """Render a field list."""
+        field_list = nodes.field_list(classes=["myst"])
+        self.add_line_and_source_path(field_list, token)
+        with self.current_node_context(field_list, append=True):
+            # raise ValueError(token.pretty(show_text=True))
+            children = (token.children or [])[:]
+            while children:
+                child = children.pop(0)
+                if not child.type == "fieldlist_name":
+                    error_msg = self.reporter.error(
+                        (
+                            "Expected a fieldlist_name as a child of a field_list"
+                            f", but found a: {child.type}"
+                        ),
+                        # nodes.literal_block(content, content),
+                        line=token_line(child),
+                    )
+                    self.current_node += [error_msg]
+                    break
+                field = nodes.field()
+                self.add_line_and_source_path(field, child)
+                field_list += field
+                field_name = nodes.field_name()
+                self.add_line_and_source_path(field_name, child)
+                field += field_name
+                with self.current_node_context(field_name):
+                    self.render_children(child)
+                field_body = nodes.field_body()
+                self.add_line_and_source_path(field_name, child)
+                field += field_body
+                if children and children[0].type == "fieldlist_body":
+                    child = children.pop(0)
+                    with self.current_node_context(field_body):
+                        self.render_children(child)
+
     def render_directive(self, token: SyntaxTreeNode) -> None:
         """Render special fenced code blocks as directives."""
         first_line = token.info.split(maxsplit=1)
@@ -961,9 +1010,10 @@ class DocutilsRenderer(RendererProtocol):
         self.document.current_line = position
 
         # get directive class
-        directive_class, messages = directives.directive(
+        output: Tuple[Directive, list] = directives.directive(
             name, self.language_module_rst, self.document
-        )  # type: (Directive, list)
+        )
+        directive_class, messages = output
         if not directive_class:
             error = self.reporter.error(
                 'Unknown directive type "{}".\n'.format(name),
