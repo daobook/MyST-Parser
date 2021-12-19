@@ -20,17 +20,18 @@ msgstr ""
 
 #: ../../sphinx/intro.md:2
 msgid "Get started with MyST in Sphinx"
-msgstr ""
+msgstr "在 Sphinx 中开始使用 MyST"
 
 #: ../../sphinx/intro.md:4
 msgid ""
 "This page describes how to get started with the MyST parser, with a focus"
 " on enabling it in the Sphinx documentation engine."
 msgstr ""
+"这个页面描述了如何开始使用 MyST 解析器，重点是在 Sphinx 文档引擎中启用它。"
 
 #: ../../sphinx/intro.md:6
 msgid "Install the MyST Parser"
-msgstr ""
+msgstr "安装 MyST 解析器"
 
 #: ../../sphinx/intro.md:8
 msgid "[![PyPI][pypi-badge]][pypi-link] [![Conda][conda-badge]][conda-link]"
@@ -46,33 +47,37 @@ msgstr ""
 
 #: ../../sphinx/intro.md:11
 msgid "Installing the MyST parser provides access to two tools:"
-msgstr ""
+msgstr "安装 MyST 解析器可以访问两个工具："
 
 #: ../../sphinx/intro.md:13
 msgid ""
 "A Python library that can parse MyST markdown, and render it to a number "
 "of output formats (in particular, `docutils` format for use with Sphinx)."
 msgstr ""
+"一个 Python 库，可以解析 MyST markdown，并将其呈现为多种输出格式"
+"（特别是与 Sphinx 一起使用的 `docutils` 格式）。"
 
 #: ../../sphinx/intro.md:14
 msgid ""
 "A Sphinx extension that that utilizes the above tool in order to parse "
 "MyST Markdown in your documentation."
 msgstr ""
+"一个 Sphinx 插件，利用上述工具来解析你的文档中的 MyST Markdown。"
 
 #: ../../sphinx/intro.md:16
 msgid ""
 "To install the MyST parser, run the following in a [Conda "
 "environment](https://docs.conda.io) (recommended):"
 msgstr ""
+"要安装 MyST 解析器，请在 [Conda 环境](https://docs.conda.io) 中运行以下内容（推荐）："
 
 #: ../../sphinx/intro.md:23
 msgid "or"
-msgstr ""
+msgstr "或者"
 
 #: ../../sphinx/intro.md:35
 msgid "Enable MyST in Sphinx"
-msgstr ""
+msgstr "在 Sphinx 启用 MyST"
 
 #: ../../sphinx/intro.md:37
 msgid ""
@@ -82,6 +87,7 @@ msgid ""
 "doc.org/en/master/usage/quickstart.html). This guide assumes that you've "
 "already got a pre-existing Sphinx site that builds properly."
 msgstr ""
+""
 
 #: ../../sphinx/intro.md:39
 msgid ""
@@ -405,40 +411,4 @@ msgid ""
 "[documentation on MyST Syntax](../syntax/syntax.md) and the "
 "[documentation about using MyST with Sphinx](../sphinx/index.md)."
 msgstr ""
-
-#~ msgid ":::{admonition} You can use both MyST and reStructuredText :class: tip"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Activating the MyST parser will simply"
-#~ " *enable* parsing markdown files with "
-#~ "MyST, and the rST parser that "
-#~ "ships with Sphinx will still work "
-#~ "the same way. Files ending with "
-#~ "`.md` will be parsed as MyST, and"
-#~ " files ending in `.rst` will be "
-#~ "parsed as reStructuredText. :::"
-#~ msgstr ""
-
-#~ msgid ":::{note} MyST markdown is a mixture of two flavors of markdown:"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "In addition, it includes **[several "
-#~ "extensions](../syntax/syntax.md) to CommonMark**. "
-#~ "These add extra syntax features for "
-#~ "technical writing, such as the roles "
-#~ "and directives used by Sphinx. :::"
-#~ msgstr ""
-
-#~ msgid ""
-#~ ":::{seealso} For more information about "
-#~ "using directives with MyST, see "
-#~ "{ref}`syntax/directives`. :::"
-#~ msgstr ""
-
-#~ msgid ""
-#~ ":::{seealso} For more information about "
-#~ "roles, see {ref}`syntax/roles`. :::"
-#~ msgstr ""
 
