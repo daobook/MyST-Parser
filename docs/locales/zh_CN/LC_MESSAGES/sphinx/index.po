@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 16:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../sphinx/index.md:3
+msgid "MyST with Sphinx"
+msgstr ""
+
+#: ../../sphinx/index.md:5
+msgid ""
+"The MyST Parser comes bundled with a Sphinx extension that allows you to "
+"use write Sphinx documentation entirely in MyST (or, in a combination of "
+"rST and MyST). The following sections cover some major functionality of "
+"the Sphinx extension."
+msgstr ""
+
+#: ../../sphinx/index.md:1
+msgid "For an introduction to MyST with Sphinx, see [](intro.md)."
+msgstr ""
+
+#~ msgid ""
+#~ ":::{seealso} For an introduction to MyST"
+#~ " with Sphinx, see [](intro.md). :::"
+#~ msgstr ""
+

@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 16:00+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../sphinx/roles-and-directives.md:1
+msgid "Special roles and directives"
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:3
+msgid ""
+"This section contains information about special roles and directives that"
+" come bundled with the MyST Parser Sphinx extension."
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:5
+msgid "Insert the date and reading time"
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:1
+msgid "The `sub-ref` role and word counting."
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:11
+msgid ""
+"You may insert the \"last updated\" date and estimated reading time into "
+"your document via substitution definitions, which can be accessed *via* "
+"the `sub-ref` role."
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:13
+msgid "For example:"
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:19
+msgid ""
+"{sub-ref}`today` | {sub-ref}`wordcount-words` words | {sub-ref"
+"}`wordcount-minutes` min read"
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:21
+msgid ""
+"`today` is replaced by either the date on which the document is parsed, "
+"with the format set by [`today_fmt`](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-today_fmt), or the "
+"`today` variable if set in the configuration file."
+msgstr ""
+
+#: ../../sphinx/roles-and-directives.md:23
+msgid ""
+"The reading speed is computed using the `myst_words_per_minute` "
+"configuration (see the [Sphinx configuration options](sphinx/config-"
+"options))."
+msgstr ""
+

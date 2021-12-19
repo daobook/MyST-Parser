@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MyST Parser 0.15.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-17 09:44+0800\n"
+"POT-Creation-Date: 2021-12-19 16:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,210 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
-
-#: ../../api/index.md:3
-msgid "MyST-Parser Python API"
-msgstr ""
-
-#: ../../api/index.md:5
-msgid ""
-"MyST-Parser also has a Python API *via* the `myst_parser` package. This "
-"allows you to parse MyST Markdown and render various outputs with Python."
-msgstr ""
-
-#: ../../api/parsers.md:1
-msgid "Parse MyST Markdown"
-msgstr ""
-
-#: ../../api/parsers.md:1
-msgid ""
-"The MyST Parser package heavily uses the the [markdown-it-"
-"py](https://github.com/executablebooks/markdown-it-py) package."
-msgstr ""
-
-#: ../../api/parsers.md:2
-msgid ""
-"{ref}`The MyST-Parser API reference <api/main>` contains a more complete "
-"reference of this API."
-msgstr ""
-
-#: ../../api/parsers.md:8
-msgid "Parsing and rendering helper functions"
-msgstr ""
-
-#: ../../api/parsers.md:10
-msgid ""
-"The MyST Parser comes bundled with some helper functions to quickly parse"
-" MyST Markdown and render its output."
-msgstr ""
-
-#: ../../api/parsers.md:12
-msgid "Parse MyST Markdown to HTML"
-msgstr ""
-
-#: ../../api/parsers.md:14
-msgid "For example, the following code parses markdown and renders as HTML:"
-msgstr ""
-
-#: ../../api/parsers.md:27
-msgid "Parse MyST Markdown to docutils"
-msgstr ""
-
-#: ../../api/parsers.md:29
-msgid ""
-"The following function renders your text as **docutils objects** (for "
-"example, for use with the Sphinx ecosystem):"
-msgstr ""
-
-#: ../../api/parsers.md:44
-msgid "Parse MyST Markdown as `markdown-it` tokens"
-msgstr ""
-
-#: ../../api/parsers.md:46
-msgid ""
-"The MyST Parser uses `markdown-it-py` tokens as an intermediate "
-"representation of your text. Normally these tokens are then *rendered* "
-"into various outputs. If you'd like direct access to the tokens, use the "
-"`to_tokens` function. Here's an example of its use:"
-msgstr ""
-
-#: ../../api/parsers.md:69
-msgid ""
-"Each token is an abstract representation of a piece of MyST Markdown "
-"syntax."
-msgstr ""
-
-#: ../../api/parsers.md:71
-msgid "Use the parser object for more control"
-msgstr ""
-
-#: ../../api/parsers.md:73
-msgid ""
-"The MyST Parser is actually a `markdown-it-py` parser with several "
-"extensions pre-enabled that support the MyST syntax. If you'd like more "
-"control over the parsing process, then you can directly use a `markdown-"
-"it-py` parser with MyST syntax extensions loaded."
-msgstr ""
-
-#: ../../api/parsers.md:1
-msgid ""
-"[`markdown-it-py`](https://markdown-it-py.readthedocs.io/) is an "
-"extensible Python parser and renderer for flavors of markdown. It is "
-"inspired heavily by the [`markdown-it`](https://github.com/markdown-it"
-"/markdown-it) Javascript package. See the documentation of these tools "
-"for more information."
-msgstr ""
-
-#: ../../api/parsers.md:82
-msgid "Load a parser"
-msgstr ""
-
-#: ../../api/parsers.md:84
-msgid ""
-"To load one of these parsers for your own use, use the `default_parser` "
-"function. Below we'll create such a parser and show that it is an "
-"instance of a `markdown-it-py` parser:"
-msgstr ""
-
-#: ../../api/parsers.md:100
-msgid "List the active rules"
-msgstr ""
-
-#: ../../api/parsers.md:102
-msgid ""
-"We can list the **currently active rules** for this parser. Each rules "
-"maps onto a particular markdown syntax, and a Token. To list the active "
-"rules, use the `get_active_rules` method:"
-msgstr ""
-
-#: ../../api/parsers.md:149
-msgid "Parse and render markdown"
-msgstr ""
-
-#: ../../api/parsers.md:151
-msgid ""
-"Once we have a Parser instance, we can use it to parse some markdown. Use"
-" the `render` function to do so:"
-msgstr ""
-
-#: ../../api/parsers.md:164
-msgid "Disable and enable rules"
-msgstr ""
-
-#: ../../api/parsers.md:166
-msgid ""
-"You can disable and enable rules for a parser using the `disable` and "
-"`enable` methods. For example, below we'll disable the `emphasis` rule "
-"(which is what detected the `*abc*` syntax above) and re-render the text:"
-msgstr ""
-
-#: ../../api/parsers.md:179
-msgid ""
-"As you can see, the parser no longer detected the `*<text>*` syntax as "
-"requiring an _emphasis_."
-msgstr ""
-
-#: ../../api/parsers.md:181
-msgid "Turn off all block-level syntax"
-msgstr ""
-
-#: ../../api/parsers.md:183
-msgid ""
-"If you'd like to use your parser *only* for in-line content, you may turn"
-" off all block-level syntax with the `renderInline` method:"
-msgstr ""
-
-#: ../../api/parsers.md:196
-msgid "The Token Stream"
-msgstr ""
-
-#: ../../api/parsers.md:198
-msgid ""
-"When you parse markdown with the MyST Parser, the result is a flat stream"
-" of **Tokens**. These are abstract representations of each type of syntax"
-" that the parser has detected."
-msgstr ""
-
-#: ../../api/parsers.md:201
-msgid "For example, below we'll show the token stream for some simple markdown:"
-msgstr ""
-
-#: ../../api/parsers.md:234
-msgid ""
-"Note that these tokens are **flat**, although some of the tokens refere "
-"to one another (for example, Tokens with `_open` and `_close` represent "
-"the start/end of blocks)."
-msgstr ""
-
-#: ../../api/parsers.md:236
-msgid ""
-"Tokens of type `inline` will have a `children` attribute that contains a "
-"list of the Tokens that they contain. For example:"
-msgstr ""
-
-#: ../../api/parsers.md:249
-msgid "Rendering tokens"
-msgstr ""
-
-#: ../../api/parsers.md:251
-msgid ""
-"The list of Token objects can be rendered to a number of different "
-"outputs. This involves first processing the Tokens, and then defining how"
-" each should be rendered in an output format (e.g., HTML or Docutils)."
-msgstr ""
-
-#: ../../api/parsers.md:254
-msgid ""
-"For example, the sphinx renderer first converts the token to a nested "
-"structure, collapsing the opening/closing tokens into single tokens:"
-msgstr ""
-
-#: ../../api/parsers.md:284
-msgid ""
-"It then renders each token to a Sphinx-based docutils object. See [the "
-"renderers section](renderers.md) for more information about rendering "
-"tokens."
-msgstr ""
 
 #: ../../api/reference.rst:3
 msgid "API Reference"
@@ -264,6 +60,7 @@ msgstr ""
 msgid "Parse (and validate) the full directive text."
 msgstr ""
 
+#: myst_parser.docutils_.Parser.parse
 #: myst_parser.docutils_renderer.DocutilsRenderer.render
 #: myst_parser.parse_directives.parse_directive_text
 #: myst_parser.sphinx_parser.MystParser.parse
@@ -310,7 +107,7 @@ msgid "Docutils"
 msgstr ""
 
 #: myst_parser.docutils_renderer.DocutilsRenderer:1 of
-msgid "基类：:class:`markdown_it.renderer.RendererProtocol`"
+msgid "基类：:py:class:`markdown_it.renderer.RendererProtocol`"
 msgstr ""
 
 #: myst_parser.docutils_renderer.DocutilsRenderer:1
@@ -363,7 +160,7 @@ msgid "Sphinx"
 msgstr ""
 
 #: myst_parser.sphinx_renderer.SphinxRenderer:1 of
-msgid "基类：:class:`myst_parser.docutils_renderer.DocutilsRenderer`"
+msgid "基类：:py:class:`myst_parser.docutils_renderer.DocutilsRenderer`"
 msgstr ""
 
 #: myst_parser.sphinx_renderer.SphinxRenderer:3 of
@@ -376,7 +173,7 @@ msgstr ""
 msgid "Create nodes for references that are not immediately resolvable."
 msgstr ""
 
-#: myst_parser.sphinx_renderer.SphinxRenderer.render_math_block_eqno:1 of
+#: myst_parser.sphinx_renderer.SphinxRenderer.render_math_block_label:1 of
 msgid "Render math with referencable labels, e.g. ``$a=1$ (label)``."
 msgstr ""
 
@@ -393,7 +190,7 @@ msgstr ""
 
 #: myst_parser.mocking.MockIncludeDirective:1 myst_parser.mocking.MockInliner:1
 #: myst_parser.mocking.MockState:1 myst_parser.mocking.MockStateMachine:1 of
-msgid "基类：:class:`object`"
+msgid "基类：:py:class:`object`"
 msgstr ""
 
 #: myst_parser.mocking.MockInliner:1 of
@@ -494,7 +291,7 @@ msgid "Additional Methods"
 msgstr ""
 
 #: myst_parser.docutils_renderer.make_document:1 of
-msgid "Create a new docutils document."
+msgid "Create a new docutils document, with the parser classes' default settings."
 msgstr ""
 
 #: myst_parser.docutils_renderer.html_meta_to_nodes:1 of
@@ -538,11 +335,38 @@ msgid ""
 "`sphinx.util.docutils.sphinx_domains`."
 msgstr ""
 
-#: ../../api/reference.rst:88
+#: ../../api/reference.rst:87
+msgid "Docutils Parser Reference"
+msgstr ""
+
+#: myst_parser.docutils_.Parser:1 of
+msgid "基类：:py:class:`docutils.parsers.rst.Parser`"
+msgstr ""
+
+#: myst_parser.docutils_.Parser:1 of
+msgid "Docutils parser for Markedly Structured Text (MyST)."
+msgstr ""
+
+#: myst_parser.docutils_.Parser.parse:1
+#: myst_parser.sphinx_parser.MystParser.parse:1 of
+msgid "Parse source text."
+msgstr ""
+
+#: myst_parser.docutils_.Parser.parse:3
+#: myst_parser.sphinx_parser.MystParser.parse:3 of
+msgid "The source string to parse"
+msgstr ""
+
+#: myst_parser.docutils_.Parser.parse:4
+#: myst_parser.sphinx_parser.MystParser.parse:4 of
+msgid "The root docutils node to add AST elements to"
+msgstr ""
+
+#: ../../api/reference.rst:98
 msgid "Sphinx Parser Reference"
 msgstr ""
 
-#: ../../api/reference.rst:90
+#: ../../api/reference.rst:100
 msgid ""
 "This class builds on the "
 ":py:class:`~myst_parser.sphinx_renderer.SphinxRenderer` to generate a "
@@ -551,7 +375,7 @@ msgid ""
 msgstr ""
 
 #: myst_parser.sphinx_parser.MystParser:1 of
-msgid "基类：:class:`sphinx.parsers.Parser`"
+msgid "基类：:py:class:`sphinx.parsers.Parser`"
 msgstr ""
 
 #: myst_parser.sphinx_parser.MystParser:1 of
@@ -562,89 +386,6 @@ msgstr ""
 msgid "Aliases this parser supports."
 msgstr ""
 
-#: myst_parser.sphinx_parser.MystParser.parse:1 of
-msgid "Parse source text."
-msgstr ""
-
-#: myst_parser.sphinx_parser.MystParser.parse:3 of
-msgid "The source string to parse"
-msgstr ""
-
-#: myst_parser.sphinx_parser.MystParser.parse:4 of
-msgid "The root docutils node to add AST elements to"
-msgstr ""
-
-#: ../../api/renderers.md:1
-msgid "Render outputs"
-msgstr ""
-
-#: ../../api/renderers.md:3
-msgid ""
-"There are a few different ways to render MyST Parser tokens into "
-"different outputs. This section covers a few common ones."
-msgstr ""
-
-#: ../../api/renderers.md:6
-msgid "The `docutils` renderer"
-msgstr ""
-
-#: ../../api/renderers.md:8
-msgid ""
-"The `myst_parser.docutils_renderer.DocutilsRenderer` converts a token "
-"directly to the `docutils.document` representation of the document, "
-"converting roles and directives to a `docutils.nodes` if a converter can "
-"be found for the given name."
-msgstr ""
-
-#: ../../api/renderers.md:53
-msgid "The Sphinx renderer"
-msgstr ""
-
-#: ../../api/renderers.md:55
-msgid ""
-"The `myst_parser.sphinx_renderer.SphinxRenderer` builds on the "
-"`DocutilsRenderer` to add sphinx specific nodes, e.g. for cross-"
-"referencing between documents."
-msgstr ""
-
-#: ../../api/renderers.md:57
-msgid ""
-"To use the sphinx specific roles and directives outside of a `sphinx-"
-"build`, they must first be loaded with the `in_sphinx_env` option."
-msgstr ""
-
-#: ../../api/renderers.md:109
-msgid "Set Sphinx configuration for testing"
-msgstr ""
-
-#: ../../api/renderers.md:111
-msgid ""
-"You can also set Sphinx configuration *via* `sphinx_conf`. This is a "
-"dictionary representation of the contents of the Sphinx `conf.py`."
-msgstr ""
-
-#: ../../api/renderers.md:1
-msgid ""
-"This feature is only meant for simple testing. It will fail for "
-"extensions that require the full Sphinx build process and/or access to "
-"external files."
-msgstr ""
-
-#~ msgid "Parameters"
-#~ msgstr ""
-
-#~ msgid "Bases: :class:`markdown_it.renderer.RendererProtocol`"
-#~ msgstr ""
-
-#~ msgid "Bases: :class:`myst_parser.docutils_renderer.DocutilsRenderer`"
-#~ msgstr ""
-
-#~ msgid "Bases: :class:`object`"
-#~ msgstr ""
-
-#~ msgid "Returns"
-#~ msgstr ""
-
-#~ msgid "Bases: :class:`sphinx.parsers.Parser`"
+#~ msgid "Create a new docutils document."
 #~ msgstr ""
 

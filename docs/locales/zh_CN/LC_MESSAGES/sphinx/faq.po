@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 16:00+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../sphinx/faq.md:1
+msgid "Common errors and questions"
+msgstr ""
+
+#: ../../sphinx/faq.md:3
+msgid ""
+"These are common issues and gotchas that people may experience when using"
+" the MyST Sphinx extension."
+msgstr ""
+
+#: ../../sphinx/faq.md:5
+msgid "What markup language should I use inside directives?"
+msgstr ""
+
+#: ../../sphinx/faq.md:7
+msgid ""
+"If you need to parse content *inside* of another block of content (for "
+"example, the content inside a **note directive**), note that the MyST "
+"parser will be used for this nested parsing as well."
+msgstr ""
+
+#: ../../sphinx/faq.md:11
+msgid "Why doesn't my role/directive recognize markdown link syntax?"
+msgstr ""
+
+#: ../../sphinx/faq.md:13
+msgid ""
+"There are some roles/directives that _hard-code_ syntax into their "
+"behavior. For example, many roles allow you to supply titles for links "
+"like so: `` {role}`My title <myref>` ``. While this looks like "
+"reStructuredText, the role may be explicitly expecting the `My title "
+"<myref>` structure, and so MyST will behave the same way."
+msgstr ""
+

@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 16:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../docutils.md:3
+msgid "MyST with Docutils"
+msgstr ""
+
+#: ../../docutils.md:5
+msgid ""
+"Sphinx, and thus MyST-Parser, is built on top of the "
+"[Docutils](https://docutils.sourceforge.io/docs/) package. MyST-Parser "
+"offers a renderer, parser and CLI-interface for working directly with "
+"Docutils, independent of Sphinx, as described below."
+msgstr ""
+
+#: ../../docutils.md:1
+msgid ""
+"Since these tools are independent of Sphinx, this means they cannot parse"
+" any Sphinx or Sphinx extensions specific roles or directives."
+msgstr ""
+
+#: ../../docutils.md:12
+msgid "On installing MyST-Parser, the following CLI-commands are made available:"
+msgstr ""
+
+#: ../../docutils.md:14
+msgid "`myst-docutils-html`: converts MyST to HTML"
+msgstr ""
+
+#: ../../docutils.md:15
+msgid "`myst-docutils-html5`: converts MyST to HTML5"
+msgstr ""
+
+#: ../../docutils.md:16
+msgid "`myst-docutils-latex`: converts MyST to LaTeX"
+msgstr ""
+
+#: ../../docutils.md:17
+msgid "`myst-docutils-xml`: converts MyST to docutils-native XML"
+msgstr ""
+
+#: ../../docutils.md:18
+msgid ""
+"`myst-docutils-pseudoxml`: converts MyST to pseudo-XML (to visualise the "
+"AST structure)"
+msgstr ""
+
+#: ../../docutils.md:20
+msgid "Each command can be piped stdin or take a file path as an argument:"
+msgstr ""
+
+#: ../../docutils.md:28
+msgid ""
+"The commands are based on the [Docutils Front-End "
+"Tools](https://docutils.sourceforge.io/docs/user/tools.html), and so "
+"follow the same argument and options structure, included many of the MyST"
+" specific options detailed in [](sphinx/config-options)."
+msgstr ""
+
+#: ../../docutils.md:35
+msgid ""
+"The CLI commands can also utilise the [`docutils.conf` configuration "
+"file](https://docutils.sourceforge.io/docs/user/config.html) to configure"
+" the behaviour of the CLI commands. For example:"
+msgstr ""
+
+#: ../../docutils.md:52
+msgid ""
+"You can also use the {py:class}`myst_parser.docutils_.Parser` class "
+"programmatically with the [Docutils publisher "
+"API](https://docutils.sourceforge.io/docs/api/publisher.html):"
+msgstr ""
+
+#: ../../docutils.md:70
+msgid ""
+"Finally, you can include MyST Markdown files within a RestructuredText "
+"file, using the [`include` "
+"directive](https://docutils.sourceforge.io/docs/ref/rst/directives.html#include):"
+msgstr ""
+
+#: ../../docutils.md:1
+msgid "The `parser` option requires `docutils>=0.17`"
+msgstr ""
+
+

@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 16:00+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../develop/architecture.md:1
+msgid "The MyST implementation architecture"
+msgstr ""
+
+#: ../../develop/architecture.md:3
+msgid ""
+"This page describes implementation details to help you understand the "
+"structure of the project."
+msgstr ""
+
+#: ../../develop/architecture.md:6
+msgid "A Renderer for markdown-it tokens"
+msgstr ""
+
+#: ../../develop/architecture.md:8
+msgid ""
+"At a high level, the MyST parser is an extension of th project. Markdown-"
+"It-Py is a well-structured Python parser for CommonMark text. It also "
+"defines an extension point to include more syntax in parsed files. The "
+"MyST parser uses this extension point to define its own syntax options "
+"(e.g., for Sphinx roles and directives)."
+msgstr ""
+
+#: ../../develop/architecture.md:13
+msgid "The result of this parser is a markdown-it token stream."
+msgstr ""
+
+#: ../../develop/architecture.md:15
+msgid "A docutils renderer"
+msgstr ""
+
+#: ../../develop/architecture.md:17
+msgid ""
+"The MyST parser also defines a docutils renderer for the markdown-it "
+"token stream. This allows us to convert parsed elements of a MyST "
+"markdown file into docutils."
+msgstr ""
+
+#: ../../develop/architecture.md:20
+msgid "A Sphinx parser"
+msgstr ""
+
+#: ../../develop/architecture.md:22
+msgid ""
+"Finally, the MyST parser provides a parser for Sphinx, the documentation "
+"generation system. This parser does the following:"
+msgstr ""
+
+#: ../../develop/architecture.md:25
+msgid ""
+"Parse markdown files with the markdown-it parser, including MyST specific"
+" plugins"
+msgstr ""
+
+#: ../../develop/architecture.md:26
+msgid "Convert these files into docutils objects using the MyST docutils renderer"
+msgstr ""
+
+#: ../../develop/architecture.md:27
+msgid "Provide these to Sphinx in order to use in building your site."
+msgstr ""
+

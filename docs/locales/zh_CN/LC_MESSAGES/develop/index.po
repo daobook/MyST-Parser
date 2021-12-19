@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 16:00+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../develop/index.md:1
+msgid "Contribute to MyST"
+msgstr ""
+
+#: ../../develop/index.md:3
+msgid ""
+"This section covers documentation relevant to developing and maintaining "
+"the MyST codebase, and some guidelines for how you can contribute."
+msgstr ""
+
+#: ../../develop/index.md:12
+msgid "Code of Conduct"
+msgstr ""
+
+#: ../../develop/index.md:14
+msgid ""
+"The MyST-parser project follows the [Executable Book Project code of "
+"conduct](https://github.com/executablebooks/.github/blob/master/CODE_OF_CONDUCT.md)."
+msgstr ""
+

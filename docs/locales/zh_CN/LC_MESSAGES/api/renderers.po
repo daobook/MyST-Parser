@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 16:00+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/renderers.md:1
+msgid "Render outputs"
+msgstr ""
+
+#: ../../api/renderers.md:3
+msgid ""
+"There are a few different ways to render MyST Parser tokens into "
+"different outputs. This section covers a few common ones."
+msgstr ""
+
+#: ../../api/renderers.md:6
+msgid "The `docutils` renderer"
+msgstr ""
+
+#: ../../api/renderers.md:8
+msgid ""
+"The `myst_parser.docutils_renderer.DocutilsRenderer` converts a token "
+"directly to the `docutils.document` representation of the document, "
+"converting roles and directives to a `docutils.nodes` if a converter can "
+"be found for the given name."
+msgstr ""
+
+#: ../../api/renderers.md:53
+msgid "The Sphinx renderer"
+msgstr ""
+
+#: ../../api/renderers.md:55
+msgid ""
+"The `myst_parser.sphinx_renderer.SphinxRenderer` builds on the "
+"`DocutilsRenderer` to add sphinx specific nodes, e.g. for cross-"
+"referencing between documents."
+msgstr ""
+
+#: ../../api/renderers.md:57
+msgid ""
+"To use the sphinx specific roles and directives outside of a `sphinx-"
+"build`, they must first be loaded with the `in_sphinx_env` option."
+msgstr ""
+
+#: ../../api/renderers.md:109
+msgid "Set Sphinx configuration for testing"
+msgstr ""
+
+#: ../../api/renderers.md:111
+msgid ""
+"You can also set Sphinx configuration *via* `sphinx_conf`. This is a "
+"dictionary representation of the contents of the Sphinx `conf.py`."
+msgstr ""
+
+#: ../../api/renderers.md:1
+msgid ""
+"This feature is only meant for simple testing. It will fail for "
+"extensions that require the full Sphinx build process and/or access to "
+"external files."
+msgstr ""
+

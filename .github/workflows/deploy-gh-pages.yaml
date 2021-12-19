@@ -42,7 +42,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           sudo apt update
-          python setup.py install
+          conda install -c conda-forge myst-parser
           pip install sphinxcontrib-bibtex sphinx-panels sphinxcontrib-mermaid
           pip install sphinxext-rediraffe sphinxext-opengraph
           pip install markdown
@@ -65,5 +65,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docs/_build/html
-          user_name: "github-actions[bot]"
-          user_email: "github-actions[bot]@users.noreply.github.com"

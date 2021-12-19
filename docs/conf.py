@@ -18,6 +18,8 @@ version = __version__
 
 master_doc = "index"
 language = "zh_CN"
+locale_dirs = ['locales/']  # po files will be created in this directory
+gettext_compact = False  # optional: avoid file concatenation in sub directories.
 
 # -- General configuration ---------------------------------------------------
 

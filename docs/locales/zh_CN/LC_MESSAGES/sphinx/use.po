@@ -1,0 +1,352 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 16:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../sphinx/use.md:1
+msgid "Sphinx extension usage guide"
+msgstr ""
+
+#: ../../sphinx/use.md:3
+msgid ""
+"These sections describe some common scenarios and use-cases for writing "
+"MyST with Sphinx."
+msgstr ""
+
+#: ../../sphinx/use.md:1
+msgid "For an introduction to using MyST with Sphinx, see [](intro.md)."
+msgstr ""
+
+#: ../../sphinx/use.md:10
+msgid "Include rST files into a Markdown file"
+msgstr ""
+
+#: ../../sphinx/use.md:12
+msgid ""
+"As explained in [this section](syntax/directives/parsing), all MyST "
+"directives will parse their content as Markdown. Therefore, using the "
+"conventional `include` directive, will parse the file contents as "
+"Markdown:"
+msgstr ""
+
+#: ../../sphinx/snippets/include-md.md:1
+msgid "Hallo I'm from a Markdown file, [with a reference](howto/autodoc)."
+msgstr ""
+
+#: ../../sphinx/use.md:23
+msgid ""
+"To include rST, we must first \"wrap\" the directive in the [eval-rst "
+"directive](syntax/directives/parsing):"
+msgstr ""
+
+#: ../../sphinx/snippets/include-rst.rst:1
+msgid "Hallo I'm from an rST file, :ref:`with a reference <howto/autodoc>`."
+msgstr ""
+
+#: ../../sphinx/use.md:36
+msgid "Include Markdown files into an rST file"
+msgstr ""
+
+#: ../../sphinx/use.md:38
+msgid ""
+"To include a MyST file within a ReStructuredText file, we can use the "
+"`parser` option of the `include` directive:"
+msgstr ""
+
+#: ../../sphinx/use.md:1
+msgid "The `parser` option requires `docutils>=0.17`"
+msgstr ""
+
+#: ../../sphinx/use.md:49
+msgid "Use MyST in Jupyter Notebooks"
+msgstr ""
+
+#: ../../sphinx/use.md:51
+msgid ""
+"The [MyST-NB](https://myst-nb.readthedocs.io) tool provides a Sphinx "
+"extension for parsing **Jupyter Notebooks written with MyST Markdown**. "
+"It includes features like automatically executing notebooks during "
+"documentation builds, storing notebook cell outputs in order to insert "
+"them elsewhere in your documentation, and more. See the [MyST-NB "
+"documentation](https://myst-nb.readthedocs.io) for more information."
+msgstr ""
+
+#: ../../sphinx/use.md:54
+msgid "Include a file from outside the docs folder (like README.md)"
+msgstr ""
+
+#: ../../sphinx/use.md:56
+msgid "You can include a file, including one from outside the project using e.g.:"
+msgstr ""
+
+#: ../../sphinx/use.md:63
+msgid ""
+"**However**, including a file will not usually resolve local links "
+"correctly, like `![](my-image.png)`, since it treats the text as if it "
+"originated from the \"including file\"."
+msgstr ""
+
+#: ../../sphinx/use.md:65
+msgid ""
+"As of myst-parser version 0.12.7, a new, experimental feature has been "
+"added to resolve such links. You can now use for example:"
+msgstr ""
+
+#: ../../sphinx/use.md:80
+msgid "Source:"
+msgstr ""
+
+#: ../../sphinx/use.md:86
+msgid "Included:"
+msgstr ""
+
+#: ../../../example-include.md:1
+msgid "[Used in how-to](docs/sphinx/use.md) ![alt](docs/_static/logo-wide.svg)"
+msgstr ""
+
+#: ../../../example-include.md:1
+msgid "alt"
+msgstr ""
+
+#: ../../sphinx/use.md:93
+msgid ""
+"The include here attempts to re-write local links, to reference them from"
+" the correct location! The `relative-docs` must be given the prefix of "
+"any links to re-write, to distinguish them from sphinx cross-references."
+msgstr ""
+
+#: ../../sphinx/use.md:1
+msgid "The current functionality only works for Markdown style images and links."
+msgstr ""
+
+#: ../../sphinx/use.md:3
+msgid ""
+"If you encounter any issues with this feature, please don't hesitate to "
+"report it."
+msgstr ""
+
+#: ../../sphinx/use.md:103
+msgid "Use `sphinx.ext.autodoc` in Markdown files"
+msgstr ""
+
+#: ../../sphinx/use.md:105
+msgid ""
+"The [Sphinx extension `autodoc`](sphinx:sphinx.ext.autodoc), which pulls "
+"in code documentation from docstrings, is currently hard-coded to parse "
+"reStructuredText. It is therefore incompatible with MyST's Markdown "
+"parser. However, the special [`eval-rst` "
+"directive](syntax/directives/parsing) can be used to \"wrap\" `autodoc` "
+"directives:"
+msgstr ""
+
+#: myst_parser.mocking.MockRSTParser:1 of
+msgid "基类：:py:class:`docutils.parsers.rst.Parser`"
+msgstr ""
+
+#: myst_parser.mocking.MockRSTParser:1 of
+msgid "RSTParser which avoids a negative side effect."
+msgstr ""
+
+#: myst_parser.mocking.MockRSTParser.parse:1 of
+msgid "Parse the input to populate the document AST."
+msgstr ""
+
+#: ../../sphinx/use.md:123
+msgid "As with other objects in MyST, this can then be referenced:"
+msgstr ""
+
+#: ../../sphinx/use.md:125
+msgid ""
+"Using the role `` {py:class}`myst_parser.mocking.MockRSTParser` ``: "
+"{py:class}`myst_parser.mocking.MockRSTParser`"
+msgstr ""
+
+#: ../../sphinx/use.md:126
+msgid ""
+"Using the Markdown syntax "
+"`[MockRSTParser](myst_parser.mocking.MockRSTParser)`: "
+"[MockRSTParser](myst_parser.mocking.MockRSTParser)"
+msgstr ""
+
+#: ../../sphinx/use.md:1
+msgid ""
+"This expects docstrings to be written in reStructuredText. We hope to "
+"support Markdown in the future, see [GitHub issue "
+"#228](https://github.com/executablebooks/MyST-Parser/issues/228)."
+msgstr ""
+
+#: ../../sphinx/use.md:134
+msgid "Automatically create targets for section headers"
+msgstr ""
+
+#: ../../sphinx/use.md:1
+msgid ""
+"New in `v0.13.0` ✨, myst-parser now provides a separate implementation of"
+" `autosectionlabel`, which implements GitHub Markdown style bookmark "
+"anchors, like `[](file.md#header-anchor)`."
+msgstr ""
+
+#: ../../sphinx/use.md:3
+msgid "See the [](syntax/header-anchors) section of extended syntaxes."
+msgstr ""
+
+#: ../../sphinx/use.md:144
+msgid ""
+"If you'd like to *automatically* generate targets for each of your "
+"section headers, check out the [`autosectionlabel`](https://www.sphinx-"
+"doc.org/en/master/usage/extensions/autosectionlabel.html) sphinx feature."
+" You can activate it in your Sphinx site by adding the following to your "
+"`conf.py` file:"
+msgstr ""
+
+#: ../../sphinx/use.md:159
+msgid ""
+"So, if you have a page at `myfolder/mypage.md` (relative to your "
+"documentation root) with the following structure:"
+msgstr ""
+
+#: ../../sphinx/use.md:168
+msgid ""
+"Then the `autosectionlabel` feature will allow you to reference the "
+"section headers like so:"
+msgstr ""
+
+#: ../../sphinx/use.md:176
+msgid "Suppress warnings"
+msgstr ""
+
+#: ../../sphinx/use.md:178
+msgid ""
+"In general, if your build logs any warnings, you should either fix them "
+"or [raise an Issue](https://github.com/executablebooks/MyST-"
+"Parser/issues/new/choose) if you think the warning is erroneous. However,"
+" in some circumstances if you wish to suppress the warning you can use "
+"the [`suppress_warnings`](https://www.sphinx-"
+"doc.org/en/master/usage/configuration.html#confval-suppress_warnings) "
+"configuration option. All myst-parser warnings are prepended by their "
+"type, e.g. to suppress:"
+msgstr ""
+
+#: ../../sphinx/use.md:191
+msgid "Add to your `conf.py`:"
+msgstr ""
+
+#: ../../sphinx/use.md:198
+msgid "Sphinx-specific page front matter"
+msgstr ""
+
+#: ../../sphinx/use.md:200
+msgid ""
+"Sphinx intercepts front matter and stores them within the global "
+"environment (as discussed [in the deflists documentation](https://www"
+".sphinx-doc.org/en/master/usage/restructuredtext/field-lists.html)). "
+"There are certain front-matter keys (or their translations) that are also"
+" recognised specifically by docutils and parsed to inline Markdown:"
+msgstr ""
+
+#: ../../sphinx/use.md:204
+msgid "`author`"
+msgstr ""
+
+#: ../../sphinx/use.md:205
+msgid "`authors`"
+msgstr ""
+
+#: ../../sphinx/use.md:206
+msgid "`organization`"
+msgstr ""
+
+#: ../../sphinx/use.md:207
+msgid "`address`"
+msgstr ""
+
+#: ../../sphinx/use.md:208
+msgid "`contact`"
+msgstr ""
+
+#: ../../sphinx/use.md:209
+msgid "`version`"
+msgstr ""
+
+#: ../../sphinx/use.md:210
+msgid "`revision`"
+msgstr ""
+
+#: ../../sphinx/use.md:211
+msgid "`status`"
+msgstr ""
+
+#: ../../sphinx/use.md:212
+msgid "`date`"
+msgstr ""
+
+#: ../../sphinx/use.md:213
+msgid "`copyright`"
+msgstr ""
+
+#: ../../sphinx/use.md:214
+msgid "`dedication`"
+msgstr ""
+
+#: ../../sphinx/use.md:215
+msgid "`abstract`"
+msgstr ""
+
+#: ../../sphinx/use.md:217
+msgid ""
+"A classic use-case is to specify 'orphan' documents, that are not "
+"specified in any toctrees. For example, inserting the following syntax at"
+" the top of a page will cause Sphinx to treat it as an orphan page:"
+msgstr ""
+
+#: ../../sphinx/use.md:228
+msgid "Migrate pre-existing rST into MyST"
+msgstr ""
+
+#: ../../sphinx/use.md:230
+msgid ""
+"If you've already got some reStructuredText files that you'd like to "
+"convert into MyST Markdown, try the [`rst-to-"
+"myst`](https://github.com/executablebooks/rst-to-myst) tool, which allows"
+" you to convert single rST files to MyST markdown documents."
+msgstr ""
+
+#~ msgid ""
+#~ ":::{seealso} For an introduction to "
+#~ "using MyST with Sphinx, see "
+#~ "[](intro.md). :::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":::{important} The current functionality only"
+#~ " works for Markdown style images and"
+#~ " links."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you encounter any issues with "
+#~ "this feature, please don't hesitate to"
+#~ " report it. :::"
+#~ msgstr ""
+
+#~ msgid ":::{important}"
+#~ msgstr ""
+
+#~ msgid ":::"
+#~ msgstr ""
+

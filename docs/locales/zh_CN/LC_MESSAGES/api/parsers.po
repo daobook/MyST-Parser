@@ -1,0 +1,261 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 16:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/parsers.md:1
+msgid "Parse MyST Markdown"
+msgstr ""
+
+#: ../../api/parsers.md:1
+msgid ""
+"The MyST Parser package heavily uses the the [markdown-it-"
+"py](https://github.com/executablebooks/markdown-it-py) package."
+msgstr ""
+
+#: ../../api/parsers.md:2
+msgid ""
+"{ref}`The MyST-Parser API reference <api/main>` contains a more complete "
+"reference of this API."
+msgstr ""
+
+#: ../../api/parsers.md:8
+msgid "Parsing and rendering helper functions"
+msgstr ""
+
+#: ../../api/parsers.md:10
+msgid ""
+"The MyST Parser comes bundled with some helper functions to quickly parse"
+" MyST Markdown and render its output."
+msgstr ""
+
+#: ../../api/parsers.md:1
+msgid ""
+"These APIs are primarily intended for testing and development purposes. "
+"For proper parsing see {ref}`myst-sphinx` and {ref}`myst-docutils`."
+msgstr ""
+
+#: ../../api/parsers.md:17
+msgid "Parse MyST Markdown to HTML"
+msgstr ""
+
+#: ../../api/parsers.md:19
+msgid ""
+"The following code parses markdown and renders as HTML using only the "
+"markdown-it parser (i.e. no sphinx or docutils specific processing is "
+"done):"
+msgstr ""
+
+#: ../../api/parsers.md:33
+msgid "Parse MyST Markdown to docutils"
+msgstr ""
+
+#: ../../api/parsers.md:35
+msgid ""
+"The following function renders your text as **docutils AST objects** (for"
+" example, for use with the Sphinx ecosystem):"
+msgstr ""
+
+#: ../../api/parsers.md:1
+msgid ""
+"This function only performs the initial parse of the AST, without "
+"applying any transforms or post-processing. See for example the [Sphinx "
+"core events](https://www.sphinx-"
+"doc.org/en/master/extdev/appapi.html?highlight=config-inited#sphinx-core-"
+"events)."
+msgstr ""
+
+#: ../../api/parsers.md:59
+msgid "Parse MyST Markdown as `markdown-it` tokens"
+msgstr ""
+
+#: ../../api/parsers.md:61
+msgid ""
+"The MyST Parser uses `markdown-it-py` tokens as an intermediate "
+"representation of your text. Normally these tokens are then *rendered* "
+"into various outputs. If you'd like direct access to the tokens, use the "
+"`to_tokens` function. Here's an example of its use:"
+msgstr ""
+
+#: ../../api/parsers.md:84
+msgid ""
+"Each token is an abstract representation of a piece of MyST Markdown "
+"syntax."
+msgstr ""
+
+#: ../../api/parsers.md:86
+msgid "Use the parser object for more control"
+msgstr ""
+
+#: ../../api/parsers.md:88
+msgid ""
+"The MyST Parser is actually a `markdown-it-py` parser with several "
+"extensions pre-enabled that support the MyST syntax. If you'd like more "
+"control over the parsing process, then you can directly use a `markdown-"
+"it-py` parser with MyST syntax extensions loaded."
+msgstr ""
+
+#: ../../api/parsers.md:1
+msgid ""
+"[`markdown-it-py`](https://markdown-it-py.readthedocs.io/) is an "
+"extensible Python parser and renderer for flavors of markdown. It is "
+"inspired heavily by the [`markdown-it`](https://github.com/markdown-it"
+"/markdown-it) Javascript package. See the documentation of these tools "
+"for more information."
+msgstr ""
+
+#: ../../api/parsers.md:97
+msgid "Load a parser"
+msgstr ""
+
+#: ../../api/parsers.md:99
+msgid ""
+"To load one of these parsers for your own use, use the `default_parser` "
+"function. Below we'll create such a parser and show that it is an "
+"instance of a `markdown-it-py` parser:"
+msgstr ""
+
+#: ../../api/parsers.md:115
+msgid "List the active rules"
+msgstr ""
+
+#: ../../api/parsers.md:117
+msgid ""
+"We can list the **currently active rules** for this parser. Each rules "
+"maps onto a particular markdown syntax, and a Token. To list the active "
+"rules, use the `get_active_rules` method:"
+msgstr ""
+
+#: ../../api/parsers.md:164
+msgid "Parse and render markdown"
+msgstr ""
+
+#: ../../api/parsers.md:166
+msgid ""
+"Once we have a Parser instance, we can use it to parse some markdown. Use"
+" the `render` function to do so:"
+msgstr ""
+
+#: ../../api/parsers.md:179
+msgid "Disable and enable rules"
+msgstr ""
+
+#: ../../api/parsers.md:181
+msgid ""
+"You can disable and enable rules for a parser using the `disable` and "
+"`enable` methods. For example, below we'll disable the `emphasis` rule "
+"(which is what detected the `*abc*` syntax above) and re-render the text:"
+msgstr ""
+
+#: ../../api/parsers.md:194
+msgid ""
+"As you can see, the parser no longer detected the `*<text>*` syntax as "
+"requiring an _emphasis_."
+msgstr ""
+
+#: ../../api/parsers.md:196
+msgid "Turn off all block-level syntax"
+msgstr ""
+
+#: ../../api/parsers.md:198
+msgid ""
+"If you'd like to use your parser *only* for in-line content, you may turn"
+" off all block-level syntax with the `renderInline` method:"
+msgstr ""
+
+#: ../../api/parsers.md:211
+msgid "The Token Stream"
+msgstr ""
+
+#: ../../api/parsers.md:213
+msgid ""
+"When you parse markdown with the MyST Parser, the result is a flat stream"
+" of **Tokens**. These are abstract representations of each type of syntax"
+" that the parser has detected."
+msgstr ""
+
+#: ../../api/parsers.md:216
+msgid "For example, below we'll show the token stream for some simple markdown:"
+msgstr ""
+
+#: ../../api/parsers.md:249
+msgid ""
+"Note that these tokens are **flat**, although some of the tokens refere "
+"to one another (for example, Tokens with `_open` and `_close` represent "
+"the start/end of blocks)."
+msgstr ""
+
+#: ../../api/parsers.md:251
+msgid ""
+"Tokens of type `inline` will have a `children` attribute that contains a "
+"list of the Tokens that they contain. For example:"
+msgstr ""
+
+#: ../../api/parsers.md:264
+msgid "Rendering tokens"
+msgstr ""
+
+#: ../../api/parsers.md:266
+msgid ""
+"The list of Token objects can be rendered to a number of different "
+"outputs. This involves first processing the Tokens, and then defining how"
+" each should be rendered in an output format (e.g., HTML or Docutils)."
+msgstr ""
+
+#: ../../api/parsers.md:269
+msgid ""
+"For example, the sphinx renderer first converts the token to a nested "
+"structure, collapsing the opening/closing tokens into single tokens:"
+msgstr ""
+
+#: ../../api/parsers.md:299
+msgid ""
+"It then renders each token to a Sphinx-based docutils object. See [the "
+"renderers section](renderers.md) for more information about rendering "
+"tokens."
+msgstr ""
+
+#~ msgid ""
+#~ ":::{important} These APIs are primarily "
+#~ "intended for testing and development "
+#~ "purposes. For proper parsing see {ref"
+#~ "}`myst-sphinx` and {ref}`myst-docutils`. "
+#~ ":::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":::{note} This function only performs "
+#~ "the initial parse of the AST, "
+#~ "without applying any transforms or "
+#~ "post-processing. See for example the "
+#~ "[Sphinx core events](https://www.sphinx-"
+#~ "doc.org/en/master/extdev/appapi.html?highlight=config-inited"
+#~ "#sphinx-core-events). :::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":::{seealso} [`markdown-it-py`](https://markdown-"
+#~ "it-py.readthedocs.io/) is an extensible "
+#~ "Python parser and renderer for flavors"
+#~ " of markdown. It is inspired heavily"
+#~ " by the [`markdown-it`](https://github.com"
+#~ "/markdown-it/markdown-it) Javascript package. "
+#~ "See the documentation of these tools "
+#~ "for more information. :::"
+#~ msgstr ""
+

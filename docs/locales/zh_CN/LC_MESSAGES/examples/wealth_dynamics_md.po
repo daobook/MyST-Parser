@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MyST Parser 0.15.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-17 09:44+0800\n"
+"POT-Creation-Date: 2021-12-19 16:00+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,53 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
-
-#: ../../examples/heavy_tails.md:5 ../../examples/kesten_processes.md:4
-msgid "DUMMY DOCUMENT FOR TESTING :doc: ROLE"
-msgstr ""
-
-#: ../../examples/index.md:8
-msgid "Compare rST and MyST versions"
-msgstr ""
-
-#: ../../examples/index.md:1
-msgid "Example pages"
-msgstr ""
-
-#: ../../examples/index.md:3
-msgid ""
-"MyST brings all of the features of reStructuredText into markdown. As an "
-"example, The pages below have the same final product, but are written in "
-"either reStructuredText or MyST markdown. You can browse the raw content "
-"of each page by clicking the \"download\" button at the top of each page,"
-" or see the raw content below."
-msgstr ""
-
-#: ../../examples/index.md:17
-msgid "Raw content of each document above"
-msgstr ""
-
-#: ../../examples/index.md:19
-msgid ""
-"The following tabs show the raw content of each of the above documents, "
-"for quick comparison."
-msgstr ""
-
-#: ../../examples/index.md
-msgid "MyST Markdown"
-msgstr ""
-
-#: ../../examples/index.md:1
-msgid "Raw source for {doc}`wealth_dynamics_md`"
-msgstr ""
-
-#: ../../examples/index.md
-msgid "reStructuredText"
-msgstr ""
-
-#: ../../examples/index.md:1
-msgid "Raw source for {doc}`wealth_dynamics_rst`"
-msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:1
 msgid "Wealth Distribution Dynamics in MyST"
@@ -80,31 +33,26 @@ msgid ""
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:8
-#: ../../examples/wealth_dynamics_rst.rst:14
 msgid "目录"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:13
-#: ../../examples/wealth_dynamics_rst.rst:16
 msgid ""
 "In addition to what's in Anaconda, this lecture will need the following "
 "libraries:"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:23
-#: ../../examples/wealth_dynamics_rst.rst:25
 msgid "Overview"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:25
-#: ../../examples/wealth_dynamics_rst.rst:27
 msgid ""
 "This notebook gives an introduction to wealth distribution dynamics, with"
 " a focus on"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:28
-#: ../../examples/wealth_dynamics_rst.rst:30
 msgid "modeling and computing the wealth distribution via simulation,"
 msgstr ""
 
@@ -121,7 +69,6 @@ msgid ""
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:34
-#: ../../examples/wealth_dynamics_rst.rst:36
 msgid "The wealth distribution in many countries exhibits a Pareto tail"
 msgstr ""
 
@@ -136,36 +83,30 @@ msgid ""
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:41
-#: ../../examples/wealth_dynamics_rst.rst:45
 msgid "A Note on Assumptions"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:43
-#: ../../examples/wealth_dynamics_rst.rst:47
 msgid ""
 "The evolution of wealth for any given household depends on their savings "
 "behavior."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:46
-#: ../../examples/wealth_dynamics_rst.rst:50
 msgid "We will use the following imports."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:57
-#: ../../examples/wealth_dynamics_rst.rst:63
 msgid "Lorenz Curves and the Gini Coefficient"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:59
-#: ../../examples/wealth_dynamics_rst.rst:65
 msgid ""
 "Before we investigate wealth dynamics, we briefly review some measures of"
 " inequality."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:62
-#: ../../examples/wealth_dynamics_rst.rst:69
 msgid "Lorenz Curves"
 msgstr ""
 
@@ -182,17 +123,14 @@ msgid ""
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:69
-#: ../../examples/wealth_dynamics_rst.rst:77
 msgid "To illustrate, suppose that"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:76
-#: ../../examples/wealth_dynamics_rst.rst:84
 msgid "is data representing the wealth of 10,000 households."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:78
-#: ../../examples/wealth_dynamics_rst.rst:86
 msgid "We can compute and plot the Lorenz curve as follows:"
 msgstr ""
 
@@ -204,21 +142,18 @@ msgid ""
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:108
-#: ../../examples/wealth_dynamics_rst.rst:115
 msgid ""
 "You can see that, as the tail parameter of the Pareto distribution "
 "increases, inequality decreases."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:111
-#: ../../examples/wealth_dynamics_rst.rst:117
 msgid ""
 "This is to be expected, because a higher tail index implies less weight "
 "in the tail of the Pareto distribution."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:114
-#: ../../examples/wealth_dynamics_rst.rst:122
 msgid "The Gini Coefficient"
 msgstr ""
 
@@ -230,7 +165,6 @@ msgid ""
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:119
-#: ../../examples/wealth_dynamics_rst.rst:128
 msgid ""
 "A value of 0 indicates perfect equality (corresponding the case where the"
 " Lorenz curve matches the 45 degree line) and a value of 1 indicates "
@@ -260,32 +194,26 @@ msgid ""
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:153
-#: ../../examples/wealth_dynamics_rst.rst:164
 msgid "The simulation shows that the fit is good."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:155
-#: ../../examples/wealth_dynamics_rst.rst:169
 msgid "A Model of Wealth Dynamics"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:157
-#: ../../examples/wealth_dynamics_rst.rst:171
 msgid "Having discussed inequality measures, let us now turn to wealth dynamics."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:160
-#: ../../examples/wealth_dynamics_rst.rst:173
 msgid "The model we will study is"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:162
-#: ../../examples/wealth_dynamics_rst.rst:175
 msgid "w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:169
-#: ../../examples/wealth_dynamics_rst.rst:180
 msgid "where"
 msgstr ""
 
@@ -322,7 +250,6 @@ msgid "R_t := 1 + r_t = c_r \\exp(z_t) + \\exp(\\mu_r + \\sigma_r \\xi_t)"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:184
-#: ../../examples/wealth_dynamics_rst.rst:195
 msgid "and"
 msgstr ""
 
@@ -337,7 +264,6 @@ msgid ""
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:193
-#: ../../examples/wealth_dynamics_rst.rst:203
 msgid "s(w) = s_0 w \\cdot \\mathbb 1\\{w \\geq \\hat w\\}"
 msgstr ""
 
@@ -346,43 +272,36 @@ msgid "where $s_0$ is a positive constant."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:203
-#: ../../examples/wealth_dynamics_rst.rst:212
 msgid "Implementation"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:205
-#: ../../examples/wealth_dynamics_rst.rst:214
 msgid "Here's some type information to help Numba."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:227
-#: ../../examples/wealth_dynamics_rst.rst:236
 msgid ""
 "Here's a class that stores instance data and implements methods that "
 "update the aggregate state and household wealth."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:295
-#: ../../examples/wealth_dynamics_rst.rst:305
 msgid ""
 "Here's function to simulate the time series of wealth for in individual "
 "households."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:322
-#: ../../examples/wealth_dynamics_rst.rst:332
 msgid ""
 "Now here's function to simulate a cross section of households forward in "
 "time."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:325
-#: ../../examples/wealth_dynamics_rst.rst:334
 msgid "Note the use of parallelization to speed up computation."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:355
-#: ../../examples/wealth_dynamics_rst.rst:364
 msgid ""
 "Parallelization is very effective in the function above because the time "
 "path of each household can be calculated independently once the path for "
@@ -390,29 +309,24 @@ msgid ""
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:359
-#: ../../examples/wealth_dynamics_rst.rst:372
 msgid "Applications"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:361
-#: ../../examples/wealth_dynamics_rst.rst:374
 msgid ""
 "Let's try simulating the model at different parameter values and "
 "investigate the implications for the wealth distribution."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:364
-#: ../../examples/wealth_dynamics_rst.rst:379
 msgid "Time Series"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:366
-#: ../../examples/wealth_dynamics_rst.rst:381
 msgid "Let's look at the wealth dynamics of an individual household."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:379
-#: ../../examples/wealth_dynamics_rst.rst:394
 msgid "Notice the large spikes in wealth over time."
 msgstr ""
 
@@ -423,24 +337,20 @@ msgid ""
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:384
-#: ../../examples/wealth_dynamics_rst.rst:401
 msgid "Inequality Measures"
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:386
-#: ../../examples/wealth_dynamics_rst.rst:404
 msgid "Let's look at how inequality varies with returns on financial assets."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:388
-#: ../../examples/wealth_dynamics_rst.rst:406
 msgid ""
 "The next function generates a cross section and then computes the Lorenz "
 "curve and Gini coefficient."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:404
-#: ../../examples/wealth_dynamics_rst.rst:422
 msgid ""
 "Now we investigate how the Lorenz curves associated with the wealth "
 "distribution change as return to savings varies."
@@ -451,38 +361,32 @@ msgid "The code below plots Lorenz curves for three different values of $\\mu_r$
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:409
-#: ../../examples/wealth_dynamics_rst.rst:426
 msgid ""
 "If you are running this yourself, note that it will take one or two "
 "minutes to execute."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:412
-#: ../../examples/wealth_dynamics_rst.rst:428
 msgid "This is unavoidable because we are executing a CPU intensive task."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:414
-#: ../../examples/wealth_dynamics_rst.rst:430
 msgid ""
 "In fact the code, which is JIT compiled and parallelized, runs extremely "
 "fast relative to the number of computations."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:433
-#: ../../examples/wealth_dynamics_rst.rst:448
 msgid ""
 "The Lorenz curve shifts downwards as returns on financial income rise, "
 "indicating a rise in inequality."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:444
-#: ../../examples/wealth_dynamics_rst.rst:457
 msgid "Now let's check the Gini coefficient."
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:454
-#: ../../examples/wealth_dynamics_rst.rst:467
 msgid ""
 "Once again, we see that inequality increases as returns on financial "
 "income rise."
@@ -495,162 +399,8 @@ msgid ""
 msgstr ""
 
 #: ../../examples/wealth_dynamics_md.md:476
-#: ../../examples/wealth_dynamics_rst.rst:491
 msgid ""
 "We see that greater volatility has the effect of increasing inequality in"
 " this model."
 msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:6
-msgid "Wealth Distribution Dynamics in rST"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:11
-msgid ""
-"You can :download:`Download the source file for this page "
-"<./wealth_dynamics_rst.rst>`"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:32
-msgid "measures of inequality such as the Lorenz curve and Gini coefficient, and"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:34
-msgid ""
-"how inequality is affected by the properties of wage income and returns "
-"on assets."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:38
-msgid "See :doc:`this lecture <heavy_tails>` for a definition."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:40
-msgid ""
-"For a review of the empirical evidence, see, for example, "
-":cite:`benhabib2018skewed`."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:71
-msgid ""
-"One popular graphical measure of inequality is the `Lorenz curve "
-"<https://en.wikipedia.org/wiki/Lorenz_curve>`__."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:74
-msgid ""
-"The package `QuantEcon.py <https://github.com/QuantEcon/QuantEcon.py>`__,"
-" already imported above, contains a function to compute Lorenz curves."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:98
-msgid ""
-"This curve can be understood as follows: if point :math:`(x,y)` lies on "
-"the curve, it means that, collectively, the bottom :math:`(100x)\\%` of "
-"the population holds :math:`(100y)\\%` of the wealth."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:124
-msgid ""
-"The definition and interpretation of the Gini coefficient can be found on"
-" the corresponding `Wikipedia page "
-"<https://en.wikipedia.org/wiki/Gini_coefficient>`__."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:132
-msgid ""
-"The `QuantEcon.py <https://github.com/QuantEcon/QuantEcon.py>`__ library "
-"contains a function to calculate the Gini coefficient."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:135
-msgid ""
-"We can test it on the Weibull distribution with parameter :math:`a`, "
-"where the Gini coefficient is known to be"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:138
-msgid ""
-"G = 1 - 2^{-1/a}\n"
-"\n"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:140
-msgid ""
-"Let's see if the Gini coefficient computed from a simulated sample "
-"matches this at each fixed value of :math:`a`."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:182
-msgid ":math:`w_t` is wealth at time :math:`t` for a given household,"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:183
-msgid ":math:`r_t` is the rate of return of financial assets,"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:184
-msgid ":math:`y_t` is current non-financial (e.g., labor) income and"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:185
-msgid ":math:`s(w_t)` is current wealth net of consumption"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:187
-msgid "Letting :math:`\\{z_t\\}` be a correlated state process of the form"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:189
-msgid ""
-"z_{t+1} = a z_t + b + \\sigma_z \\epsilon_{t+1}\n"
-"\n"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:191
-msgid "we’ll assume that"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:193
-msgid ""
-"R_t := 1 + r_t = c_r \\exp(z_t) + \\exp(\\mu_r + \\sigma_r \\xi_t)\n"
-"\n"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:197
-msgid ""
-"y_t = c_y \\exp(z_t) + \\exp(\\mu_y + \\sigma_y \\zeta_t)\n"
-"\n"
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:199
-msgid ""
-"Here :math:`\\{ (\\epsilon_t, \\xi_t, \\zeta_t) \\}` is IID and standard "
-"normal in :math:`\\mathbb R^3`."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:208
-msgid "where :math:`s_0` is a positive constant."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:396
-msgid ""
-"Such spikes are similar to what we observed in time series when :doc:`we "
-"studied Kesten processes <kesten_processes>`."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:424
-msgid ""
-"The code below plots Lorenz curves for three different values of "
-":math:`\\mu_r`."
-msgstr ""
-
-#: ../../examples/wealth_dynamics_rst.rst:470
-msgid ""
-"Let's finish this section by investigating what happens when we change "
-"the volatility term :math:`\\sigma_r` in financial returns."
-msgstr ""
-
-#~ msgid "Contents"
-#~ msgstr ""
 

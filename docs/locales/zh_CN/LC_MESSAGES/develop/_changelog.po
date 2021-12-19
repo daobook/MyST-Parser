@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MyST Parser 0.15.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-17 08:52+0800\n"
+"POT-Creation-Date: 2021-12-19 16:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,25 +23,283 @@ msgid "Changelog"
 msgstr ""
 
 #: ../../../CHANGELOG.md:3
-msgid "0.15.2 - 2021-08-26"
+msgid "0.16.1 - 2021-12-16"
 msgstr ""
 
 #: ../../../CHANGELOG.md:5
+msgid ""
+"✨ NEW: Add `myst_linkify_fuzzy_links` option. When using the [`linkify` "
+"extension](docs/syntax/optional.md#linkify), this option can be used to "
+"disable matching of links that do not contain a schema (such as "
+"`http://`)."
+msgstr ""
+
+#: ../../../CHANGELOG.md:8
+msgid "0.16.0 - 2021-12-06"
+msgstr ""
+
+#: ../../../CHANGELOG.md:10
+msgid "This release contains a number of exciting improvements:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:12
+msgid "Upgrade of Markdown parser"
+msgstr ""
+
+#: ../../../CHANGELOG.md:14
+msgid ""
+"`markdown-it-py` has been upgraded to "
+"[v2.0.0](https://github.com/executablebooks/markdown-it-"
+"py/releases/tag/v2.0.0). This upgrade brings full compliance with the "
+"[CommonMark v0.30 specification](https://spec.commonmark.org/0.30/)."
+msgstr ""
+
+#: ../../../CHANGELOG.md:17
+msgid ""
+"Additionally, `mdit-py-plugins` has been upgraded to "
+"[v0.3.0](https://github.com/executablebooks/mdit-py-"
+"plugins/releases/tag/v0.3.0). This improves the parsing of the MyST "
+"target syntax, to allow for spaces and additional special characters in "
+"the target name, for example this is now valid:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:27
+msgid ""
+"Also MyST role syntax now supports unlimited length in the role name and "
+"new lines in the content. For example, this is now valid:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:35
+msgid "Improvements for Docutils-only use"
+msgstr ""
+
+#: ../../../CHANGELOG.md:37
+msgid ""
+"MyST now allows for Docutils-only use (outside of Sphinx), that allows "
+"for MyST configuration options to be set via the `docutils.conf` file, or"
+" on the command line."
+msgstr ""
+
+#: ../../../CHANGELOG.md:39
+msgid "On installing MyST-Parser, the following CLI-commands are made available:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:41
+msgid "`myst-docutils-html`: converts MyST to HTML"
+msgstr ""
+
+#: ../../../CHANGELOG.md:42
+msgid "`myst-docutils-html5`: converts MyST to HTML5"
+msgstr ""
+
+#: ../../../CHANGELOG.md:43
+msgid "`myst-docutils-latex`: converts MyST to LaTeX"
+msgstr ""
+
+#: ../../../CHANGELOG.md:44
+msgid "`myst-docutils-xml`: converts MyST to docutils-native XML"
+msgstr ""
+
+#: ../../../CHANGELOG.md:45
+msgid ""
+"`myst-docutils-pseudoxml`: converts MyST to pseudo-XML (to visualise the "
+"AST structure)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:47
+msgid ""
+"You can also install the [myst-docutils](https://pypi.org/project/myst-"
+"docutils/) package from `pip`, which includes no direct install "
+"requirements on docutils or sphinx."
+msgstr ""
+
+#: ../../../CHANGELOG.md:50
+msgid "See [MyST with Docutils](docs/docutils.md) for more information."
+msgstr ""
+
+#: ../../../CHANGELOG.md:52
+msgid "Thanks to help from [@cpitclaudel](https://github.com/cpitclaudel)!"
+msgstr ""
+
+#: ../../../CHANGELOG.md:54
+msgid "Include MyST files in RST files"
+msgstr ""
+
+#: ../../../CHANGELOG.md:56
+msgid ""
+"With `docutils>=0.17`, the `include` directive has a `parser` option. "
+"This can be used with myst-parser to include MyST files in RST files."
+msgstr ""
+
+#: ../../../CHANGELOG.md:71
+msgid "Addition of the `fieldlist` syntax extension"
+msgstr ""
+
+#: ../../../CHANGELOG.md:73
+msgid ""
+"Field lists are mappings from field names to field bodies, based on the "
+"[reStructureText "
+"syntax](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html"
+"#field-lists):"
+msgstr ""
+
+#: ../../../CHANGELOG.md:84
+msgid ""
+"This should eventually allow for MyST Markdown docstrings! (see "
+"<https://github.com/executablebooks/MyST-Parser/issues/228>)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:86
+msgid ""
+"See [Field Lists syntax](docs/syntax/optional.md#field-lists) for more "
+"information."
+msgstr ""
+
+#: ../../../CHANGELOG.md:88
+msgid "Improvements to table rendering"
+msgstr ""
+
+#: ../../../CHANGELOG.md:90
+msgid "Tables with no body are now allowed, for example:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:97
+msgid ""
+"Also cell alignment HTML classes have now been changed to: `text-left`, "
+"`text-center`, or `text-right`, for example:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:105
+msgid "is converted to:"
+msgstr ""
+
+#: ../../../CHANGELOG.md:126
+msgid "These classes should be supported by most sphinx HTML themes."
+msgstr ""
+
+#: ../../../CHANGELOG.md:128
+msgid "See [Tables syntax](docs/syntax/syntax.md#tables) for more information."
+msgstr ""
+
+#: ../../../CHANGELOG.md:130
+msgid "Pull Requests"
+msgstr ""
+
+#: ../../../CHANGELOG.md:132
+msgid ""
+"🐛 FIX: Add mandatory attributes on `enumerated_list` by @cpitclaudel in "
+"[#418](https://github.com/executablebooks/MyST-Parser/pull/418)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:133
+msgid ""
+"📚 DOCS: Add reference to MySTyc in landing page by @astrojuanlu in "
+"[#413](https://github.com/executablebooks/MyST-Parser/pull/413)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:134
+msgid ""
+"⬆️ UPGRADE: markdown-it-py v2, mdit-py-plugins v0.3 by @chrisjsewell in "
+"[#449](https://github.com/executablebooks/MyST-Parser/pull/449)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:135
+msgid ""
+"👌 IMPROVE: Table rendering by @chrisjsewell in "
+"[#450](https://github.com/executablebooks/MyST-Parser/pull/450)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:136
+msgid ""
+"🐛 FIX: Ensure parent files are re-built if `include` file changes by "
+"@chrisjsewell in [#451](https://github.com/executablebooks/MyST-"
+"Parser/pull/451)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:137
+msgid ""
+"🐛 FIX: Convert empty directive option to `None` by @chrisjsewell in "
+"[#452](https://github.com/executablebooks/MyST-Parser/pull/452)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:138
+msgid ""
+"👌 IMPROVE: Add `\\\\` for hard-breaks in latex by @chrisjsewell in "
+"[#453](https://github.com/executablebooks/MyST-Parser/pull/453)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:139
+msgid ""
+"🔧 MAINTAIN: Remove empty \"sphinx\" extra by @hukkin in "
+"[#350](https://github.com/executablebooks/MyST-Parser/pull/350)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:140
+msgid ""
+"✨ NEW: Add `fieldlist` extension by @chrisjsewell in "
+"[#455](https://github.com/executablebooks/MyST-Parser/pull/455)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:141
+msgid ""
+"✨ NEW: Add Docutils MyST config and CLI by @cpitclaudel in "
+"[#426](https://github.com/executablebooks/MyST-Parser/pull/426)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:142
+msgid ""
+"🔧 MAINTAIN: Add publishing job for `myst-docutils` by @chrisjsewell in "
+"[#456](https://github.com/executablebooks/MyST-Parser/pull/456)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:143
+msgid ""
+"🧪 TESTS: Add for `gettext_additional_targets` by @jpmckinney in "
+"[#459](https://github.com/executablebooks/MyST-Parser/pull/459)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:145
+msgid "New Contributors"
+msgstr ""
+
+#: ../../../CHANGELOG.md:147
+msgid ""
+"@cpitclaudel made their first contribution in "
+"[#418](https://github.com/executablebooks/MyST-Parser/pull/418)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:148
+msgid ""
+"@astrojuanlu made their first contribution in "
+"[#413](https://github.com/executablebooks/MyST-Parser/pull/413)"
+msgstr ""
+
+#: ../../../CHANGELOG.md:150
+msgid ""
+"**Full Changelog**: <https://github.com/executablebooks/MyST-"
+"Parser/compare/v0.15.2...v0.16.0>"
+msgstr ""
+
+#: ../../../CHANGELOG.md:152
+msgid "0.15.2 - 2021-08-26"
+msgstr ""
+
+#: ../../../CHANGELOG.md:154
 msgid ""
 "This is mainly a maintenance release that fixes some incompatibilities "
 "with `sphinx<3.1`, improvements for compatibility with `docutils=0.17`, "
 "and improvements to robustness."
 msgstr ""
 
-#: ../../../CHANGELOG.md:8
+#: ../../../CHANGELOG.md:157
 msgid "0.15.1 - 2021-06-18"
 msgstr ""
 
-#: ../../../CHANGELOG.md:10
+#: ../../../CHANGELOG.md:159
 msgid "👌 IMPROVE: MathJax compatibility with `nbsphinx`"
 msgstr ""
 
-#: ../../../CHANGELOG.md:12
+#: ../../../CHANGELOG.md:161
 msgid ""
 "`nbsphinx` also overrides the MathJax configuration. For compatibility, "
 "`output_area` is added to the list of default processed classes, and the "
@@ -49,25 +307,25 @@ msgid ""
 "[\"myst.mathjax\"]`."
 msgstr ""
 
-#: ../../../CHANGELOG.md:15
+#: ../../../CHANGELOG.md:164
 msgid "0.15.0 - 2021-06-13"
 msgstr ""
 
-#: ../../../CHANGELOG.md:17
+#: ../../../CHANGELOG.md:166
 msgid "Upgraded to `sphinx` v4 ⬆️"
 msgstr ""
 
-#: ../../../CHANGELOG.md:19
+#: ../../../CHANGELOG.md:168
 msgid ""
 "A principe change in this release is to updates the requirements of myst-"
 "parser from `sphinx>=2,<4` to `sphinx>=3,<5`."
 msgstr ""
 
-#: ../../../CHANGELOG.md:21
+#: ../../../CHANGELOG.md:170
 msgid "Changed MathJax handling ♻️"
 msgstr ""
 
-#: ../../../CHANGELOG.md:23
+#: ../../../CHANGELOG.md:172
 msgid ""
 "Instead of removing all `$` processing for the whole project, during MyST"
 " document parsing, the top-level section is now given the classes "
@@ -76,17 +334,17 @@ msgid ""
 "process elements with the `tex2jax_process|mathjax_process|math` classes."
 msgstr ""
 
-#: ../../../CHANGELOG.md:27
+#: ../../../CHANGELOG.md:176
 msgid ""
 "See [the math syntax guide](docs/syntax/optional.md#math-shortcuts) for "
 "further information."
 msgstr ""
 
-#: ../../../CHANGELOG.md:29
+#: ../../../CHANGELOG.md:178
 msgid "Set URL scheme defaults ‼️"
 msgstr ""
 
-#: ../../../CHANGELOG.md:31
+#: ../../../CHANGELOG.md:180
 msgid ""
 "The `myst_url_schemes` default is now: `(\"http\", \"https\", \"mailto\","
 " \"ftp\")`. This means that only these URL will be considered as external"
@@ -95,30 +353,30 @@ msgid ""
 " to revert to the previous default."
 msgstr ""
 
-#: ../../../CHANGELOG.md:36
+#: ../../../CHANGELOG.md:185
 msgid "Added `myst_heading_slug_func` option 👌"
 msgstr ""
 
-#: ../../../CHANGELOG.md:38
+#: ../../../CHANGELOG.md:187
 msgid ""
 "Use this option to specify a custom function to auto-generate heading "
 "anchors (see [Auto-generated header anchors](docs/syntax/optional.md"
 "#auto-generated-header-anchors))."
 msgstr ""
 
-#: ../../../CHANGELOG.md:40
+#: ../../../CHANGELOG.md:189
 msgid "Thanks to [@jpmckinney](https://github.com/jpmckinney)!"
 msgstr ""
 
-#: ../../../CHANGELOG.md:42
+#: ../../../CHANGELOG.md:191
 msgid "0.14.0 - 2021-05-04"
 msgstr ""
 
-#: ../../../CHANGELOG.md:44
+#: ../../../CHANGELOG.md:193
 msgid "Upgrade to `markdown-it-py` v1.0 ⬆️"
 msgstr ""
 
-#: ../../../CHANGELOG.md:46
+#: ../../../CHANGELOG.md:195
 msgid ""
 "This release updates the code-base to fully support the [markdown-it-"
 "py](https://markdown-it-py.readthedocs.io) `v1.0.0` release. In "
@@ -127,34 +385,34 @@ msgid ""
 "specification](https://github.github.com/gfm/#tables-extension-)."
 msgstr ""
 
-#: ../../../CHANGELOG.md:49
+#: ../../../CHANGELOG.md:198
 msgid "New Features ✨"
 msgstr ""
 
-#: ../../../CHANGELOG.md:51
+#: ../../../CHANGELOG.md:200
 msgid ""
 "**Task lists** utilise the [markdown-it-py tasklists "
 "plugin](markdown_it:md/plugins), and are applied to Markdown list items "
 "starting with `[ ]` or `[x]`."
 msgstr ""
 
-#: ../../../CHANGELOG.md:58
+#: ../../../CHANGELOG.md:207
 msgid "Add \"tasklist\" to the `myst_enable_extensions` configuration to enable."
 msgstr ""
 
-#: ../../../CHANGELOG.md:60
+#: ../../../CHANGELOG.md:209
 msgid ""
 "See [the optional syntax guide](docs/syntax/optional.md#task-lists) for "
 "further information."
 msgstr ""
 
-#: ../../../CHANGELOG.md:62
+#: ../../../CHANGELOG.md:211
 msgid ""
 "The **`sub-ref`** role has been added for use identical to ReST's "
 "`|name|` syntax."
 msgstr ""
 
-#: ../../../CHANGELOG.md:64
+#: ../../../CHANGELOG.md:213
 msgid ""
 "This allows one to access Sphinx's built-in `|today|`, `|release|` and "
 "`|version|` substitutions, and also introduces two new substitutions: "
@@ -163,100 +421,100 @@ msgid ""
 "plugins/pull/20)."
 msgstr ""
 
-#: ../../../CHANGELOG.md:70
+#: ../../../CHANGELOG.md:219
 msgid ""
 "See [the roles syntax guide](docs/syntax/syntax.md) for further "
 "information."
 msgstr ""
 
-#: ../../../CHANGELOG.md:72
+#: ../../../CHANGELOG.md:221
 msgid ""
 "The **`dmath_double_inline`** configuration option allows display math "
 "(i.e. `$$`) within an inline context. See [the math syntax "
 "guide](docs/syntax/optional.md#math-shortcuts) for further information."
 msgstr ""
 
-#: ../../../CHANGELOG.md:75
+#: ../../../CHANGELOG.md:224
 msgid "Remove v0.13 deprecations ‼️"
 msgstr ""
 
-#: ../../../CHANGELOG.md:77
+#: ../../../CHANGELOG.md:226
 msgid ""
 "The deprecations made to extension configurations and colon fences in "
 "`0.13.0` (see below) have now been removed:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:79
+#: ../../../CHANGELOG.md:228
 msgid ""
 "Configuration variables: `myst_admonition_enable`, `myst_figure_enable`, "
 "`myst_dmath_enable`, `myst_amsmath_enable`, `myst_deflist_enable`, "
 "`myst_html_img_enable`"
 msgstr ""
 
-#: ../../../CHANGELOG.md:80
+#: ../../../CHANGELOG.md:229
 msgid "`:::{admonition,class}` -> `:::{admonition}\\n:class: class`"
 msgstr ""
 
-#: ../../../CHANGELOG.md:81
+#: ../../../CHANGELOG.md:230
 msgid "`:::{figure}` -> `:::{figure-md}`"
 msgstr ""
 
-#: ../../../CHANGELOG.md:83
+#: ../../../CHANGELOG.md:232
 msgid "Fix extraction of nested footnotes 🐛"
 msgstr ""
 
-#: ../../../CHANGELOG.md:85
+#: ../../../CHANGELOG.md:234
 msgid ""
 "Previously footnote definitions in block elements like lists would crash "
 "the parsing:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:91
+#: ../../../CHANGELOG.md:240
 msgid "These are now correctly extracted."
 msgstr ""
 
-#: ../../../CHANGELOG.md:93
+#: ../../../CHANGELOG.md:242
 msgid "0.13.7 - 2021-04-25"
 msgstr ""
 
-#: ../../../CHANGELOG.md:95
+#: ../../../CHANGELOG.md:244
 msgid "👌 IMPROVE: Add warning for nested headers:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:97
+#: ../../../CHANGELOG.md:246
 msgid ""
 "Nested headers are not supported within most elements (this is a "
 "limitation of the docutils/sphinx document structure), and can lead to "
 "unexpected outcomes. For example in admonitions:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:106
+#: ../../../CHANGELOG.md:255
 msgid "A warning (of type `myst.nested_header`) is now emitted when this occurs."
 msgstr ""
 
-#: ../../../CHANGELOG.md:108
+#: ../../../CHANGELOG.md:257
 msgid "🔧 MAINTAIN: Python 3.9 is now officially supported."
 msgstr ""
 
-#: ../../../CHANGELOG.md:110
+#: ../../../CHANGELOG.md:259
 msgid "0.13.6 - 2021-04-10"
 msgstr ""
 
-#: ../../../CHANGELOG.md:112
+#: ../../../CHANGELOG.md:261
 msgid "🐛 FIX: docutils `v0.17` compatibility"
 msgstr ""
 
-#: ../../../CHANGELOG.md:114
+#: ../../../CHANGELOG.md:263
 msgid "0.13.5 - 2021-02-15"
 msgstr ""
 
-#: ../../../CHANGELOG.md:116
+#: ../../../CHANGELOG.md:265
 msgid ""
 "⬆️ UPGRADE: required markdown-it-py to `v0.6.2`: In particular, this "
 "fixes missing source line mappings for table rows and their children"
 msgstr ""
 
-#: ../../../CHANGELOG.md:118
+#: ../../../CHANGELOG.md:267
 msgid ""
 "👌 IMPROVE: Store `rawtext` in AST nodes: We now ensure that the raw text "
 "is propagated from the Markdown tokens to the Sphinx AST. In particular, "
@@ -264,7 +522,7 @@ msgid ""
 "templates. Thanks to [@jpmckinney](https://github.com/jpmckinney)!"
 msgstr ""
 
-#: ../../../CHANGELOG.md:122
+#: ../../../CHANGELOG.md:271
 msgid ""
 "✨ NEW: Add warning types `myst.subtype`: All parsing warnings are "
 "assigned a type/subtype, and also the messages are appended with them. "
@@ -273,134 +531,134 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../../../CHANGELOG.md:127
+#: ../../../CHANGELOG.md:276
 msgid "0.13.3 - 2021-01-20"
 msgstr ""
 
-#: ../../../CHANGELOG.md:129
+#: ../../../CHANGELOG.md:278
 msgid "Minor fixes:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:131
+#: ../../../CHANGELOG.md:280
 msgid "🐛 FIX: front-matter parsing for bibliographic keys"
 msgstr ""
 
-#: ../../../CHANGELOG.md:132
+#: ../../../CHANGELOG.md:281
 msgid "🐛 FIX: directive/role name translations"
 msgstr ""
 
-#: ../../../CHANGELOG.md:133
+#: ../../../CHANGELOG.md:282
 msgid "👌 IMPROVE: Add warning for multiple footnote definitions"
 msgstr ""
 
-#: ../../../CHANGELOG.md:135
+#: ../../../CHANGELOG.md:284
 msgid "0.13.2 - 2021-01-20"
 msgstr ""
 
-#: ../../../CHANGELOG.md:137
+#: ../../../CHANGELOG.md:286
 msgid "✨ NEW: Add `html_admonition` extension"
 msgstr ""
 
-#: ../../../CHANGELOG.md:139
+#: ../../../CHANGELOG.md:288
 msgid ""
 "By adding `\"html_admonition\"` to `myst_enable_extensions`, you can "
 "enable parsing of `<div class=\"admonition\">` HTML blocks to sphinx "
 "admonitions."
 msgstr ""
 
-#: ../../../CHANGELOG.md:140
+#: ../../../CHANGELOG.md:289
 msgid ""
 "This is helpful when you care about viewing the \"source\" Markdown, such"
 " as in Jupyter Notebooks."
 msgstr ""
 
-#: ../../../CHANGELOG.md:141
+#: ../../../CHANGELOG.md:290
 msgid "For example:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:148
+#: ../../../CHANGELOG.md:297
 msgid ""
 "See [the optional syntax guide](docs/syntax/optional.md) for further "
 "information."
 msgstr ""
 
-#: ../../../CHANGELOG.md:150
+#: ../../../CHANGELOG.md:299
 msgid "👌 IMPROVE: Footnotes"
 msgstr ""
 
-#: ../../../CHANGELOG.md:152
+#: ../../../CHANGELOG.md:301
 msgid ""
 "If the label is an integer, then it will always use this integer for the "
 "rendered label (i.e. they are manually numbered)."
 msgstr ""
 
-#: ../../../CHANGELOG.md:153
+#: ../../../CHANGELOG.md:302
 msgid ""
 "Add `myst_footnote_transition` configuration, to turn on/off transition "
 "line."
 msgstr ""
 
-#: ../../../CHANGELOG.md:154
+#: ../../../CHANGELOG.md:303
 msgid "Add `footnotes` class to transition `<hr>` in HTML."
 msgstr ""
 
-#: ../../../CHANGELOG.md:155
+#: ../../../CHANGELOG.md:304
 msgid "See [the syntax guide](docs/syntax/syntax.md) for further information."
 msgstr ""
 
-#: ../../../CHANGELOG.md:157
+#: ../../../CHANGELOG.md:306
 msgid "👌 IMPROVE: `substitution` extension logic"
 msgstr ""
 
-#: ../../../CHANGELOG.md:159
+#: ../../../CHANGELOG.md:308
 msgid ""
 "Parse inline substitutions without block rules, unless the substitution "
 "starts with a directive."
 msgstr ""
 
-#: ../../../CHANGELOG.md:161
+#: ../../../CHANGELOG.md:310
 msgid "🐛 FIX: Render front-matter as `field_list`"
 msgstr ""
 
-#: ../../../CHANGELOG.md:163
+#: ../../../CHANGELOG.md:312
 msgid "To improve use by sphinx extensions)."
 msgstr ""
 
-#: ../../../CHANGELOG.md:165
+#: ../../../CHANGELOG.md:314
 msgid "👌 IMPROVE: Code quality"
 msgstr ""
 
-#: ../../../CHANGELOG.md:167
+#: ../../../CHANGELOG.md:316
 msgid "Add isort and mypy type checking to code base."
 msgstr ""
 
-#: ../../../CHANGELOG.md:169
+#: ../../../CHANGELOG.md:318
 msgid "(thanks to contributors @akhmerov, @tfiers)"
 msgstr ""
 
-#: ../../../CHANGELOG.md:171
+#: ../../../CHANGELOG.md:320
 msgid "0.13.1 - 2020-12-31"
 msgstr ""
 
-#: ../../../CHANGELOG.md:173
+#: ../../../CHANGELOG.md:322
 msgid "👌 Directives can now be used for inline substitutions, e.g."
 msgstr ""
 
-#: ../../../CHANGELOG.md:188
+#: ../../../CHANGELOG.md:337
 msgid "0.13.0 - 2020-12-18"
 msgstr ""
 
-#: ../../../CHANGELOG.md:190
+#: ../../../CHANGELOG.md:339
 msgid ""
 "This release makes some major updates to the optional syntaxes. For full "
 "details see [Optional MyST Syntaxes](docs/syntax/optional.md)."
 msgstr ""
 
-#: ../../../CHANGELOG.md:193
+#: ../../../CHANGELOG.md:342
 msgid "🗑 Deprecations"
 msgstr ""
 
-#: ../../../CHANGELOG.md:195
+#: ../../../CHANGELOG.md:344
 msgid ""
 "`myst_enable_extensions = [\"dollarmath\", ...]` now replaces and "
 "deprecates individual enable configuration variables: `admonition_enable`"
@@ -409,7 +667,7 @@ msgid ""
 "`deflist_enable` -> `\"deflist\"`, `html_img_enable` -> `\"html_image\"`."
 msgstr ""
 
-#: ../../../CHANGELOG.md:197
+#: ../../../CHANGELOG.md:346
 msgid ""
 "The `colon_fence` extension (replacing `admonition_enable`) now works "
 "exactly the same as normal ```` ``` ```` code fences, but using `:::` "
@@ -417,25 +675,25 @@ msgid ""
 "for example:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:207
+#: ../../../CHANGELOG.md:356
 msgid "✨ New"
 msgstr ""
 
-#: ../../../CHANGELOG.md:209
+#: ../../../CHANGELOG.md:358
 msgid ""
 "The `smartquotes` extension will automatically convert standard "
 "quotations to their opening/closing variants:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:211
+#: ../../../CHANGELOG.md:360
 msgid "`'single quotes'`: ‘single quotes’"
 msgstr ""
 
-#: ../../../CHANGELOG.md:212
+#: ../../../CHANGELOG.md:361
 msgid "`\"double quotes\"`:  “double quotes”"
 msgstr ""
 
-#: ../../../CHANGELOG.md:214
+#: ../../../CHANGELOG.md:363
 msgid ""
 "The `linkify` extension will automatically identify “bare” web URLs, like"
 " `www.example.com`,  and add hyperlinks; www.example.com. This extension "
@@ -443,13 +701,13 @@ msgid ""
 "is installed."
 msgstr ""
 
-#: ../../../CHANGELOG.md:217
+#: ../../../CHANGELOG.md:366
 msgid ""
 "The `replacements` extension will automatically convert some common "
 "typographic texts, such as `+-` -> `±`."
 msgstr ""
 
-#: ../../../CHANGELOG.md:219
+#: ../../../CHANGELOG.md:368
 msgid ""
 "The `substitution` extension allows you to specify \"substitution "
 "definitions\" in either the `conf.py` (as `myst_substitutions`) and/or "
@@ -457,7 +715,7 @@ msgid ""
 "will then replace substitution references. For example:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:229
+#: ../../../CHANGELOG.md:378
 msgid ""
 "The substitutions are assessed as [jinja2 "
 "expressions](http://jinja.palletsprojects.com/) and includes the [Sphinx "
@@ -465,51 +723,51 @@ msgid ""
 "`env`, so you can do powerful thinks like:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:235
+#: ../../../CHANGELOG.md:384
 msgid ""
 "The `figure-md` directive has been added (replacing `enable_figure`), "
 "which parses a \"Markdown friendly\" figure (used with the `colon_fence` "
 "extension):"
 msgstr ""
 
-#: ../../../CHANGELOG.md:247
+#: ../../../CHANGELOG.md:396
 msgid "👌 Improvements"
 msgstr ""
 
-#: ../../../CHANGELOG.md:249
+#: ../../../CHANGELOG.md:398
 msgid ""
 "Using the `html_image` extension, HTML images are now processed for both "
 "blocks and (now) inline."
 msgstr ""
 
-#: ../../../CHANGELOG.md:251
+#: ../../../CHANGELOG.md:400
 msgid "So you can correctly do, for example:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:261
+#: ../../../CHANGELOG.md:410
 msgid "0.12.10 - 2020-09-21"
 msgstr ""
 
-#: ../../../CHANGELOG.md:263
+#: ../../../CHANGELOG.md:412
 msgid "🐛 FIX: allow dates to be parsed in frontmatter."
 msgstr ""
 
-#: ../../../CHANGELOG.md:264
+#: ../../../CHANGELOG.md:413
 msgid ""
 "This fixes a bug that would raise errors at parse time if non-string date"
 " objects were in front-matter YAML. See "
 "[#253](https://github.com/executablebooks/MyST-Parser/pull/253)"
 msgstr ""
 
-#: ../../../CHANGELOG.md:266
+#: ../../../CHANGELOG.md:415
 msgid "0.12.9 - 2020-09-08"
 msgstr ""
 
-#: ../../../CHANGELOG.md:268
+#: ../../../CHANGELOG.md:417
 msgid "✨ NEW: Auto-generate heading anchors."
 msgstr ""
 
-#: ../../../CHANGELOG.md:269
+#: ../../../CHANGELOG.md:418
 msgid ""
 "This utilises `markdown-it-py`'s `anchors-plugin`, to generate unique "
 "anchor \"slugs\" for each header (up to a certain level), and allows them"
@@ -517,7 +775,7 @@ msgid ""
 "anchor)`, or in the same document, e.g. `[](#header-anchor)`."
 msgstr ""
 
-#: ../../../CHANGELOG.md:272
+#: ../../../CHANGELOG.md:421
 msgid ""
 "Slugs are generated in the GitHub style ([see "
 "here](https://github.com/Flet/github-slugger)); lower-case text, removing"
@@ -525,54 +783,54 @@ msgid ""
 "enumeration `-1`."
 msgstr ""
 
-#: ../../../CHANGELOG.md:274
+#: ../../../CHANGELOG.md:423
 msgid ""
 "It is enabled in your `conf.py` *via* `myst_heading_anchors = 2` (sets "
 "maximum heading level)."
 msgstr ""
 
-#: ../../../CHANGELOG.md:276
+#: ../../../CHANGELOG.md:425
 msgid ""
 "See [the documentation here](docs/syntax/optional.md#auto-generated-"
 "header-anchors)."
 msgstr ""
 
-#: ../../../CHANGELOG.md:278
+#: ../../../CHANGELOG.md:427
 msgid "🐛 FIX: doc reference resolution for singlehtml/latex."
 msgstr ""
 
-#: ../../../CHANGELOG.md:279
+#: ../../../CHANGELOG.md:428
 msgid ""
 "These reference resolutions are passed to the \"missing-reference\" "
 "event, and require the `node[\"refdoc\"]` attribute to be available, "
 "which was missing for `[text](./path/to/file.md)` type references."
 msgstr ""
 
-#: ../../../CHANGELOG.md:281
+#: ../../../CHANGELOG.md:430
 msgid "0.12.7 - 2020-08-31"
 msgstr ""
 
-#: ../../../CHANGELOG.md:283
+#: ../../../CHANGELOG.md:432
 msgid "✨ NEW: Want to include your README.md in the documentation?"
 msgstr ""
 
-#: ../../../CHANGELOG.md:284
+#: ../../../CHANGELOG.md:433
 msgid "See [including a file from outside the docs folder](howto/include-readme)."
 msgstr ""
 
-#: ../../../CHANGELOG.md:286
+#: ../../../CHANGELOG.md:435
 msgid "(👌 added `relative-docs` option in 0.12.8)"
 msgstr ""
 
-#: ../../../CHANGELOG.md:288
+#: ../../../CHANGELOG.md:437
 msgid "0.12.5 - 2020-08-28"
 msgstr ""
 
-#: ../../../CHANGELOG.md:290
+#: ../../../CHANGELOG.md:439
 msgid "✨ NEW: Add Markdown figure syntax"
 msgstr ""
 
-#: ../../../CHANGELOG.md:291
+#: ../../../CHANGELOG.md:440
 msgid ""
 "Setting `myst_figure_enable = True` in your sphinx `conf.py`, combines "
 "the above two extended syntaxes, to create a fully Markdown compliant "
@@ -580,47 +838,47 @@ msgid ""
 "Figures](docs/syntax/optional.md#markdown-figures) for details."
 msgstr ""
 
-#: ../../../CHANGELOG.md:295
+#: ../../../CHANGELOG.md:444
 msgid "(👌 formatting of caption improved in 0.12.6)"
 msgstr ""
 
-#: ../../../CHANGELOG.md:297
+#: ../../../CHANGELOG.md:446
 msgid "0.12.4 - 2020-08-27"
 msgstr ""
 
-#: ../../../CHANGELOG.md:299
+#: ../../../CHANGELOG.md:448
 msgid ""
 "👌 IMPROVE: the mathjax extension is now only overridden if strictly "
 "necessary (to support dollar and ams math), and the override is more "
 "precise, to mitigate any unwanted side-effects"
 msgstr ""
 
-#: ../../../CHANGELOG.md:301
+#: ../../../CHANGELOG.md:450
 msgid "0.12.3 - 2020-08-26"
 msgstr ""
 
-#: ../../../CHANGELOG.md:303
+#: ../../../CHANGELOG.md:452
 msgid "✨ NEW: Add definition lists."
 msgstr ""
 
-#: ../../../CHANGELOG.md:304
+#: ../../../CHANGELOG.md:453
 msgid ""
 "This addition, enabled by `myst_deflist_enable = True`, allows for "
 "\"Pandoc style\" definition lists to be parsed and rendered, e.g."
 msgstr ""
 
-#: ../../../CHANGELOG.md:311
+#: ../../../CHANGELOG.md:460
 msgid ""
 "See the [Definition Lists documentation](https://myst-"
 "parser.readthedocs.io/en/latest/syntax/optional.html#definition-lists) "
 "for further details."
 msgstr ""
 
-#: ../../../CHANGELOG.md:313
+#: ../../../CHANGELOG.md:462
 msgid "👌 IMPROVE: mathjax_config override."
 msgstr ""
 
-#: ../../../CHANGELOG.md:314
+#: ../../../CHANGELOG.md:463
 msgid ""
 "Only `mathjax_config[\"tex2jax\"]` will now be overridden, in order to "
 "not interfere with other user configurations, such as adding TeX macros. "
@@ -630,15 +888,15 @@ msgid ""
 "parsing) for further details."
 msgstr ""
 
-#: ../../../CHANGELOG.md:318
+#: ../../../CHANGELOG.md:467
 msgid "0.12.2 - 2020-08-25"
 msgstr ""
 
-#: ../../../CHANGELOG.md:320
+#: ../../../CHANGELOG.md:469
 msgid "✨ NEW: Add the `eval-rst` directive"
 msgstr ""
 
-#: ../../../CHANGELOG.md:322
+#: ../../../CHANGELOG.md:471
 msgid ""
 "This directive parses its contents as ReStructuredText, which integrates "
 "back into the rest of the document, e.g. for cross-referencing. See [this"
@@ -647,49 +905,49 @@ msgid ""
 "content) for further explanation."
 msgstr ""
 
-#: ../../../CHANGELOG.md:324
+#: ../../../CHANGELOG.md:473
 msgid "In particular, this addition solves some outstanding user requests:"
 msgstr ""
 
-#: ../../../CHANGELOG.md:326
+#: ../../../CHANGELOG.md:475
 msgid ""
 "How-to [include rST files into a Markdown file](https://myst-"
 "parser.readthedocs.io/en/latest/using/howto.html#include-rst-files-into-a"
 "-markdown-file)"
 msgstr ""
 
-#: ../../../CHANGELOG.md:327
+#: ../../../CHANGELOG.md:476
 msgid ""
 "How-to [Use sphinx.ext.autodoc in Markdown files](https://myst-"
 "parser.readthedocs.io/en/latest/using/howto.html#use-sphinx-ext-autodoc-"
 "in-markdown-files)"
 msgstr ""
 
-#: ../../../CHANGELOG.md:329
+#: ../../../CHANGELOG.md:478
 msgid ""
 "Thanks to [@stephenroller](https://github.com/stephenroller) for the "
 "contribution 🎉"
 msgstr ""
 
-#: ../../../CHANGELOG.md:331
+#: ../../../CHANGELOG.md:480
 msgid "0.12.1 - 2020-08-19"
 msgstr ""
 
-#: ../../../CHANGELOG.md:333
+#: ../../../CHANGELOG.md:482
 msgid ""
 "✨ NEW: Add `myst_commonmark_only` config option, for restricting the "
 "parser to strict CommonMark (no extensions)."
 msgstr ""
 
-#: ../../../CHANGELOG.md:335
+#: ../../../CHANGELOG.md:484
 msgid "0.12.0 - 2020-08-19"
 msgstr ""
 
-#: ../../../CHANGELOG.md:337
+#: ../../../CHANGELOG.md:486
 msgid "‼️ BREAKING"
 msgstr ""
 
-#: ../../../CHANGELOG.md:339
+#: ../../../CHANGELOG.md:488
 msgid ""
 "If you are using math in your documents, be sure to read the updated "
 "[Math syntax guide](https://myst-"
@@ -698,19 +956,19 @@ msgid ""
 "environments will only be rendered if `myst_amsmath_enable=True` is set."
 msgstr ""
 
-#: ../../../CHANGELOG.md:342
+#: ../../../CHANGELOG.md:491
 msgid ""
 "The `myst_math_delimiters` option has also been removed (please open an "
 "issue if you would like brackets math parsing to be re-implemented)."
 msgstr ""
 
-#: ../../../CHANGELOG.md:344
+#: ../../../CHANGELOG.md:493
 msgid ""
 "In addition the `myst_html_img` option name has been changed to "
 "`myst_html_img_enable`."
 msgstr ""
 
-#: ../../../CHANGELOG.md:346
+#: ../../../CHANGELOG.md:495
 msgid ""
 "Some underlying code has also been refactored, to centralise handling of "
 "configuration options (see [commit "
@@ -718,34 +976,34 @@ msgid ""
 "Parser/commit/98573b9c6e3602ab31d627b5266ae5c1ba2c9e5f))."
 msgstr ""
 
-#: ../../../CHANGELOG.md:348 ../../../CHANGELOG.md:358
-#: ../../../CHANGELOG.md:395
+#: ../../../CHANGELOG.md:497 ../../../CHANGELOG.md:507
+#: ../../../CHANGELOG.md:544
 msgid "Improved 👌"
 msgstr ""
 
-#: ../../../CHANGELOG.md:350
+#: ../../../CHANGELOG.md:499
 msgid ""
 "More configuration options for math parsing (see [MyST configuration "
 "options](https://myst-parser.readthedocs.io/en/latest/using/intro.html"
 "#myst-configuration-options))."
 msgstr ""
 
-#: ../../../CHANGELOG.md:352
+#: ../../../CHANGELOG.md:501
 msgid "0.11.2 - 2020-07-13"
 msgstr ""
 
-#: ../../../CHANGELOG.md:354 ../../../CHANGELOG.md:371
+#: ../../../CHANGELOG.md:503 ../../../CHANGELOG.md:520
 msgid "Added ✨"
 msgstr ""
 
-#: ../../../CHANGELOG.md:356
+#: ../../../CHANGELOG.md:505
 msgid ""
 "`<img src=\"file.png\" width=\"200px\">` tag parsing to sphinx "
 "representation, see [the image syntax guide](https://myst-"
 "parser.readthedocs.io/en/latest/syntax/syntax.html#images)"
 msgstr ""
 
-#: ../../../CHANGELOG.md:360
+#: ../../../CHANGELOG.md:509
 msgid ""
 "`[title](link)` syntax now works with intersphinx references. Recognised "
 "URI schemas can also be configured, see the [configuration options](https"
@@ -753,34 +1011,34 @@ msgid ""
 "configuration-options)"
 msgstr ""
 
-#: ../../../CHANGELOG.md:363
+#: ../../../CHANGELOG.md:512
 msgid "0.11.1 - 2020-07-12"
 msgstr ""
 
-#: ../../../CHANGELOG.md:365
+#: ../../../CHANGELOG.md:514
 msgid "Fix"
 msgstr ""
 
-#: ../../../CHANGELOG.md:367
+#: ../../../CHANGELOG.md:516
 msgid "Correctly pin required minimum markdown-it-py version"
 msgstr ""
 
-#: ../../../CHANGELOG.md:369
+#: ../../../CHANGELOG.md:518
 msgid "0.11.0 - 2020-07-12"
 msgstr ""
 
-#: ../../../CHANGELOG.md:373
+#: ../../../CHANGELOG.md:522
 msgid "Special admonition directive syntax (optional):"
 msgstr ""
 
-#: ../../../CHANGELOG.md:381
+#: ../../../CHANGELOG.md:530
 msgid ""
 "See [the syntax guide section](https://myst-"
 "parser.readthedocs.io/en/latest/syntax/syntax.html#admonition-directives-"
 "special-syntax-optional) for details."
 msgstr ""
 
-#: ../../../CHANGELOG.md:383
+#: ../../../CHANGELOG.md:532
 msgid ""
 "Direct parsing of [amsmath](https://ctan.org/pkg/amsmath) LaTeX equations"
 " (optional). See [the syntax guide section](https://myst-"
@@ -788,11 +1046,11 @@ msgid ""
 "optional) for details."
 msgstr ""
 
-#: ../../../CHANGELOG.md:386
+#: ../../../CHANGELOG.md:535
 msgid "Breaking ‼️"
 msgstr ""
 
-#: ../../../CHANGELOG.md:388
+#: ../../../CHANGELOG.md:537
 msgid ""
 "Sphinx configuration options are now set as separate variables, rather "
 "than a single dict. See [MyST configuration options](https://myst-"
@@ -800,47 +1058,47 @@ msgid ""
 "options) for details."
 msgstr ""
 
-#: ../../../CHANGELOG.md:391
+#: ../../../CHANGELOG.md:540
 msgid "0.10.0 - 2020-07-08"
 msgstr ""
 
-#: ../../../CHANGELOG.md:393
+#: ../../../CHANGELOG.md:542
 msgid ""
 "([full changelog](https://github.com/executablebooks/MyST-"
 "Parser/compare/v0.9.1...aaed58808af485c29bbbf73c5aac10697bfa08b9))"
 msgstr ""
 
-#: ../../../CHANGELOG.md:397
+#: ../../../CHANGELOG.md:546
 msgid ""
 "Support Sphinx version 3 [#197](https://github.com/executablebooks/MyST-"
 "Parser/pull/197) ([@chrisjsewell](https://github.com/chrisjsewell))"
 msgstr ""
 
-#: ../../../CHANGELOG.md:398
+#: ../../../CHANGELOG.md:547
 msgid ""
 "Update Trove Classifiers [#192](https://github.com/executablebooks/MyST-"
 "Parser/pull/192) ([@chrisjsewell](https://github.com/chrisjsewell))"
 msgstr ""
 
-#: ../../../CHANGELOG.md:399
+#: ../../../CHANGELOG.md:548
 msgid ""
 "Add functionality to use docutils specialized role "
 "[#189](https://github.com/executablebooks/MyST-Parser/pull/189) "
 "([@chrisjsewell](https://github.com/chrisjsewell))"
 msgstr ""
 
-#: ../../../CHANGELOG.md:401
+#: ../../../CHANGELOG.md:550
 msgid "Contributors to this release"
 msgstr ""
 
-#: ../../../CHANGELOG.md:403
+#: ../../../CHANGELOG.md:552
 msgid ""
 "([GitHub contributors page for this "
 "release](https://github.com/executablebooks/MyST-"
 "Parser/graphs/contributors?from=2020-07-20&to=2020-08-07&type=c))"
 msgstr ""
 
-#: ../../../CHANGELOG.md:405
+#: ../../../CHANGELOG.md:554
 #, python-format
 msgid ""
 "[@AakashGfude](https://github.com/search?q=repo%3Aexecutablebooks%2FMyST-"
@@ -860,22 +1118,22 @@ msgid ""
 "Parser+involves%3Awelcome+updated%3A2020-07-20..2020-08-07&type=Issues)"
 msgstr ""
 
-#: ../../../CHANGELOG.md:407
+#: ../../../CHANGELOG.md:556
 msgid "Past Releases"
 msgstr ""
 
-#: ../../../CHANGELOG.md:409
+#: ../../../CHANGELOG.md:558
 msgid "Contributors"
 msgstr ""
 
-#: ../../../CHANGELOG.md:411
+#: ../../../CHANGELOG.md:560
 msgid ""
 "([GitHub contributors page for these "
 "releases](https://github.com/executablebooks/MyST-"
 "Parser/graphs/contributors?from=2020-01-01&to=2020-07-20&type=c))"
 msgstr ""
 
-#: ../../../CHANGELOG.md:413
+#: ../../../CHANGELOG.md:562
 #, python-format
 msgid ""
 "[@akhmerov](https://github.com/search?q=repo%3Aexecutablebooks%2FMyST-"
@@ -928,275 +1186,127 @@ msgid ""
 "Parser+involves%3Awebknjaz+updated%3A2020-01-01..2020-07-20&type=Issues)"
 msgstr ""
 
-#: ../../develop/architecture.md:1
-msgid "The MyST implementation architecture"
-msgstr ""
+#~ msgid ""
+#~ ": By adding `\"html_admonition\"` to "
+#~ "`myst_enable_extensions`, you can enable "
+#~ "parsing of `<div class=\"admonition\">` HTML"
+#~ " blocks to sphinx admonitions. : This"
+#~ " is helpful when you care about "
+#~ "viewing the \"source\" Markdown, such as"
+#~ " in Jupyter Notebooks. : For example:"
+#~ msgstr ""
 
-#: ../../develop/architecture.md:3
-msgid ""
-"This page describes implementation details to help you understand the "
-"structure of the project."
-msgstr ""
+#~ msgid ""
+#~ ": See [the optional syntax "
+#~ "guide](docs/syntax/optional.md) for further "
+#~ "information."
+#~ msgstr ""
 
-#: ../../develop/architecture.md:6
-msgid "A Renderer for markdown-it tokens"
-msgstr ""
+#~ msgid ""
+#~ ": If the label is an integer, "
+#~ "then it will always use this "
+#~ "integer for the rendered label (i.e. "
+#~ "they are manually numbered). : Add "
+#~ "`myst_footnote_transition` configuration, to turn"
+#~ " on/off transition line. : Add "
+#~ "`footnotes` class to transition `<hr>` "
+#~ "in HTML. : See [the syntax "
+#~ "guide](docs/syntax/syntax.md) for further "
+#~ "information."
+#~ msgstr ""
 
-#: ../../develop/architecture.md:8
-msgid ""
-"At a high level, the MyST parser is an extension of th project. Markdown-"
-"It-Py is a well-structured Python parser for CommonMark text. It also "
-"defines an extension point to include more syntax in parsed files. The "
-"MyST parser uses this extension point to define its own syntax options "
-"(e.g., for Sphinx roles and directives)."
-msgstr ""
+#~ msgid ""
+#~ ": Parse inline substitutions without "
+#~ "block rules, unless the substitution "
+#~ "starts with a directive."
+#~ msgstr ""
 
-#: ../../develop/architecture.md:13
-msgid "The result of this parser is a markdown-it token stream."
-msgstr ""
+#~ msgid ": To improve use by sphinx extensions)."
+#~ msgstr ""
 
-#: ../../develop/architecture.md:15
-msgid "A docutils renderer"
-msgstr ""
+#~ msgid ": Add isort and mypy type checking to code base."
+#~ msgstr ""
 
-#: ../../develop/architecture.md:17
-msgid ""
-"The MyST parser also defines a docutils renderer for the markdown-it "
-"token stream. This allows us to convert parsed elements of a MyST "
-"markdown file into docutils."
-msgstr ""
+#~ msgid ""
+#~ "🐛 FIX: allow dates to be parsed"
+#~ " in frontmatter. : This fixes a "
+#~ "bug that would raise errors at "
+#~ "parse time if non-string date "
+#~ "objects were in front-matter YAML. "
+#~ "See [#253](https://github.com/executablebooks/MyST-"
+#~ "Parser/pull/253)"
+#~ msgstr ""
 
-#: ../../develop/architecture.md:20
-msgid "A Sphinx parser"
-msgstr ""
+#~ msgid ""
+#~ "✨ NEW: Auto-generate heading anchors."
+#~ " : This utilises `markdown-it-py`'s"
+#~ " `anchors-plugin`, to generate unique "
+#~ "anchor \"slugs\" for each header (up "
+#~ "to a certain level),   and allows "
+#~ "them to be referenced *via* a "
+#~ "relative path, e.g. `[](./file.md#header-"
+#~ "anchor)`, or in the same document, "
+#~ "e.g. `[](#header-anchor)`."
+#~ msgstr ""
 
-#: ../../develop/architecture.md:22
-msgid ""
-"Finally, the MyST parser provides a parser for Sphinx, the documentation "
-"generation system. This parser does the following:"
-msgstr ""
+#~ msgid ""
+#~ "🐛 FIX: doc reference resolution for "
+#~ "singlehtml/latex. : These reference "
+#~ "resolutions are passed to the "
+#~ "\"missing-reference\" event, and require "
+#~ "the `node[\"refdoc\"]` attribute to be "
+#~ "available, which was missing for "
+#~ "`[text](./path/to/file.md)` type references."
+#~ msgstr ""
 
-#: ../../develop/architecture.md:25
-msgid ""
-"Parse markdown files with the markdown-it parser, including MyST specific"
-" plugins"
-msgstr ""
+#~ msgid ""
+#~ "✨ NEW: Want to include your "
+#~ "README.md in the documentation? : See"
+#~ " [including a file from outside the"
+#~ " docs folder](howto/include-readme)."
+#~ msgstr ""
 
-#: ../../develop/architecture.md:26
-msgid "Convert these files into docutils objects using the MyST docutils renderer"
-msgstr ""
+#~ msgid ""
+#~ "✨ NEW: Add Markdown figure syntax "
+#~ ": Setting `myst_figure_enable = True` in"
+#~ " your sphinx `conf.py`, combines the "
+#~ "above two extended syntaxes,   to create"
+#~ " a fully Markdown compliant version "
+#~ "of the `figure` directive.   See "
+#~ "[Markdown Figures](docs/syntax/optional.md#markdown-"
+#~ "figures) for details."
+#~ msgstr ""
 
-#: ../../develop/architecture.md:27
-msgid "Provide these to Sphinx in order to use in building your site."
-msgstr ""
+#~ msgid ""
+#~ "✨ NEW: Add definition lists. : "
+#~ "This addition, enabled by `myst_deflist_enable"
+#~ " = True`, allows for \"Pandoc style\""
+#~ " definition lists to be parsed and"
+#~ " rendered, e.g."
+#~ msgstr ""
 
-#: ../../develop/contributing.md:1
-msgid "Contributing"
-msgstr ""
+#~ msgid ""
+#~ "👌 IMPROVE: mathjax_config override. : "
+#~ "Only `mathjax_config[\"tex2jax\"]` will now be"
+#~ " overridden, in order to not "
+#~ "interfere with other user configurations, "
+#~ "such as adding TeX macros.   The "
+#~ "configuration name has also changed from"
+#~ " `myst_override_mathjax` to `myst_update_mathjax`."
+#~ "   See [Mathjax and math parsing](https"
+#~ "://myst-parser.readthedocs.io/en/latest/syntax/syntax.html"
+#~ "#mathjax-and-math-parsing) for further "
+#~ "details."
+#~ msgstr ""
 
-#: ../../develop/contributing.md:3
-msgid ""
-"[![Github-CI][github-ci]][github-link] [![Coverage Status][codecov-badge"
-"]][codecov-link] [![Documentation Status][rtd-badge]][rtd-link] [![Code "
-"style: black][black-badge]][black-link]"
-msgstr ""
-
-#: ../../develop/contributing.md:3
-msgid "Github-CI"
-msgstr ""
-
-#: ../../develop/contributing.md:3
-msgid "Coverage Status"
-msgstr ""
-
-#: ../../develop/contributing.md:3
-msgid "Documentation Status"
-msgstr ""
-
-#: ../../develop/contributing.md:3
-msgid "Code style: black"
-msgstr ""
-
-#: ../../develop/contributing.md:8
-msgid ""
-"We welcome all contributions! See the [EBP Contributing "
-"Guide](https://executablebooks.org/en/latest/contributing.html) for "
-"general details, and below for guidance specific to MyST-Parser."
-msgstr ""
-
-#: ../../develop/contributing.md:11
-msgid "Install for development"
-msgstr ""
-
-#: ../../develop/contributing.md:13
-msgid "To install `myst-parser` for development, take the following steps:"
-msgstr ""
-
-#: ../../develop/contributing.md:22
-msgid "Code Style"
-msgstr ""
-
-#: ../../develop/contributing.md:24
-msgid ""
-"Code style is tested using [flake8](http://flake8.pycqa.org), with the "
-"configuration set in `.flake8`, and code formatted with "
-"[black](https://github.com/ambv/black)."
-msgstr ""
-
-#: ../../develop/contributing.md:28
-msgid ""
-"Installing with `myst-parser[code_style]` makes the [pre-commit](https"
-"://pre-commit.com/) package available, which will ensure this style is "
-"met before commits are submitted, by reformatting the code and testing "
-"for lint errors. It can be setup by:"
-msgstr ""
-
-#: ../../develop/contributing.md:38
-msgid "Optionally you can run `black` and `flake8` separately:"
-msgstr ""
-
-#: ../../develop/contributing.md:45
-msgid ""
-"Editors like VS Code also have automatic code reformat utilities, which "
-"can adhere to this standard."
-msgstr ""
-
-#: ../../develop/contributing.md:47
-msgid ""
-"All functions and class methods should be annotated with types and "
-"include a docstring. The prefered docstring format is outlined in `MyST-"
-"Parser/docstring.fmt.mustache` and can be used automatically with the "
-"[autodocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)"
-" VS Code extension."
-msgstr ""
-
-#: ../../develop/contributing.md:50
-msgid "Testing"
-msgstr ""
-
-#: ../../develop/contributing.md:52
-msgid "For code tests, myst-parser uses [pytest](https://docs.pytest.org)):"
-msgstr ""
-
-#: ../../develop/contributing.md:59
-msgid ""
-"You can also use [tox](https://tox.readthedocs.io), to run the tests in "
-"multiple isolated environments (see the `tox.ini` file for available test"
-" environments):"
-msgstr ""
-
-#: ../../develop/contributing.md:66
-msgid "For documentation build tests:"
-msgstr ""
-
-#: ../../develop/contributing.md:1
-msgid "{ref}`develop/testing`"
-msgstr ""
-
-#: ../../develop/index.md:1
-msgid "Contribute to MyST"
-msgstr ""
-
-#: ../../develop/index.md:3
-msgid ""
-"This section covers documentation relevant to developing and maintaining "
-"the MyST codebase, and some guidelines for how you can contribute."
-msgstr ""
-
-#: ../../develop/index.md:12
-msgid "Code of Conduct"
-msgstr ""
-
-#: ../../develop/index.md:14
-msgid ""
-"The MyST-parser project follows the [Executable Book Project code of "
-"conduct](https://github.com/executablebooks/.github/blob/master/CODE_OF_CONDUCT.md)."
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:3
-msgid "Testing Infrastructure"
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:5
-msgid ""
-"Where possible, additions to the code should be carried out in a [test-"
-"driven development](https://en.wikipedia.org/wiki/Test-"
-"driven_development) manner:"
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:9
-msgid ""
-"**Write failing tests that the code should pass, then write code to pass "
-"the tests**."
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:11
-msgid ""
-"The tests are run using [pytest](https://docs.pytest.org)/[GitHub "
-"Actions](https://github.com/features/actions) for unit tests, and "
-"[readthedocs](https://readthedocs.org/) for documentation build tests."
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:13
-msgid "The tests are ordered in a hierarchical fashion:"
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:15
-msgid ""
-"In `tests/test_commonmark` the "
-"[CommonMark](https://github.com/commonmark/CommonMark.git) test set is "
-"run to check that the parser is complying with the CommonMark "
-"specification."
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:16
-msgid ""
-"In `tests/test_renderers` are tests that check that the Markdown AST is "
-"being correctly converted to the docutils/sphinx AST. This includes "
-"testing that roles and directives are correctly parsed and run."
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:17
-msgid ""
-"In `tests/test_sphinx` are tests that check that minimal sphinx project "
-"builds are running correctly, to convert MyST markdown files to HTML."
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:18
-msgid ""
-"In `.circleci` the package documentation (written in MyST format) is "
-"built and tested for build errors/warnings."
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:20
-msgid "Test tools"
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:22
-msgid ""
-"[**pytest-regressions**](https://pytest-regressions.readthedocs.io) is a "
-"pytest plugin that is used in the test suite, to maintain tests that "
-"generate lots of data. In particular, they are used in the syntax testing"
-" to generate tests for AST trees which may change in the future due to "
-"changes/additions to the data captured by the parser. For example, after "
-"writing:"
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:39
-msgid ""
-"Running the following will initially fail, but will also generate a file "
-"(per test) of expected output:"
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:46
-msgid ""
-"Subsequent times the tests are run, the tests output will now be "
-"validated against these stored files."
-msgstr ""
-
-#: ../../develop/test_infrastructure.md:48
-msgid ""
-"After a change to the syntax parser, all failing tests can then be "
-"'regenerated' with the new expected output, by running:"
-msgstr ""
+#~ msgid ""
+#~ ": This directive parses its contents "
+#~ "as ReStructuredText, which integrates back "
+#~ "into the rest of the document, "
+#~ "e.g. for cross-referencing. See [this"
+#~ " documentation](https://myst-"
+#~ "parser.readthedocs.io/en/latest/syntax/syntax.html#how-"
+#~ "directives-parse-content) for further "
+#~ "explanation."
+#~ msgstr ""
 

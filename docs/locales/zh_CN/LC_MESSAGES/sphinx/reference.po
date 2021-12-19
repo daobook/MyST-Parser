@@ -1,0 +1,349 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 16:00+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../sphinx/reference.md:2
+msgid "Sphinx configuration options"
+msgstr ""
+
+#: ../../sphinx/reference.md:4
+msgid ""
+"You can control the behaviour of the MyST parser in Sphinx by modifying "
+"your `conf.py` file. To do so, use the keywords beginning `myst_`."
+msgstr ""
+
+#: ../../sphinx/reference.md:1
+msgid "Option"
+msgstr ""
+
+#: ../../sphinx/reference.md:2
+msgid "Default"
+msgstr ""
+
+#: ../../sphinx/reference.md:3
+msgid "Description"
+msgstr ""
+
+#: ../../sphinx/reference.md:4
+msgid "`myst_commonmark_only`"
+msgstr ""
+
+#: ../../sphinx/reference.md:5 ../../sphinx/reference.md:19
+msgid "`False`"
+msgstr ""
+
+#: ../../sphinx/reference.md:6
+msgid ""
+"If `True` convert text as strict CommonMark (all options below are then "
+"ignored). Note that strict CommonMark is unable to parse any directives, "
+"including the `toctree` directive, thus limiting MyST parser to single-"
+"page documentations. Use in conjunction with [sphinx-external-"
+"toc](https://github.com/executablebooks/sphinx-external-toc) Sphinx "
+"extension to counter this limitation."
+msgstr ""
+
+#: ../../sphinx/reference.md:7
+msgid "`myst_disable_syntax`"
+msgstr ""
+
+#: ../../sphinx/reference.md:8
+msgid "()"
+msgstr ""
+
+#: ../../sphinx/reference.md:9
+msgid ""
+"List of markdown syntax elements to disable, see the [markdown-it parser "
+"guide](markdown_it:using)."
+msgstr ""
+
+#: ../../sphinx/reference.md:10
+msgid "`myst_enable_extensions`"
+msgstr ""
+
+#: ../../sphinx/reference.md:11
+msgid "`[\"dollarmath\"]`"
+msgstr ""
+
+#: ../../sphinx/reference.md:12
+msgid "Enable Markdown extensions, [see here](../syntax/optional.md) for details."
+msgstr ""
+
+#: ../../sphinx/reference.md:13
+msgid "`myst_url_schemes`"
+msgstr ""
+
+#: ../../sphinx/reference.md:14 ../../sphinx/reference.md:21
+#: ../../sphinx/reference.md:24
+msgid "`None`"
+msgstr ""
+
+#: ../../sphinx/reference.md:15
+msgid ""
+"[URI schemes](https://en.wikipedia.org/wiki/List_of_URI_schemes) that "
+"will be recognised as external URLs in `[](scheme:loc)` syntax, or set "
+"`None` to recognise all. Other links will be resolved as internal cross-"
+"references."
+msgstr ""
+
+#: ../../sphinx/reference.md:17
+msgid "`myst_linkify_fuzzy_links`"
+msgstr ""
+
+#: ../../sphinx/reference.md:8 ../../sphinx/reference.md:11
+#: ../../sphinx/reference.md:15 ../../sphinx/reference.md:18
+#: ../../sphinx/reference.md:22 ../../sphinx/reference.md:33
+msgid "`True`"
+msgstr ""
+
+#: ../../sphinx/reference.md:19
+msgid ""
+"If `False`, only links that contain a scheme (such as `http`) will be "
+"recognised as external links."
+msgstr ""
+
+#: ../../sphinx/reference.md:20
+msgid "`myst_heading_anchors`"
+msgstr ""
+
+#: ../../sphinx/reference.md:22
+msgid ""
+"Enable auto-generated heading anchors, up to a maximum level, [see "
+"here](syntax/header-anchors) for details."
+msgstr ""
+
+#: ../../sphinx/reference.md:23
+msgid "`myst_heading_slug_func`"
+msgstr ""
+
+#: ../../sphinx/reference.md:25
+msgid ""
+"Use the specified function to auto-generate heading anchors, [see "
+"here](syntax/header-anchors) for details."
+msgstr ""
+
+#: ../../sphinx/reference.md:26
+msgid "`myst_substitutions`"
+msgstr ""
+
+#: ../../sphinx/reference.md:27 ../../sphinx/reference.md:30
+msgid "`{}`"
+msgstr ""
+
+#: ../../sphinx/reference.md:28
+msgid ""
+"A mapping of keys to substitutions, used globally for all MyST documents "
+"when the \"substitution\" extension is enabled."
+msgstr ""
+
+#: ../../sphinx/reference.md:29
+msgid "`myst_html_meta`"
+msgstr ""
+
+#: ../../sphinx/reference.md:31
+msgid ""
+"A mapping of keys to HTML metadata, used globally for all MyST documents."
+" See [](syntax/html_meta)."
+msgstr ""
+
+#: ../../sphinx/reference.md:32
+msgid "`myst_footnote_transition`"
+msgstr ""
+
+#: ../../sphinx/reference.md:34
+msgid "Place a transition before any footnotes."
+msgstr ""
+
+#: ../../sphinx/reference.md:35
+msgid "`myst_words_per_minute`"
+msgstr ""
+
+#: ../../sphinx/reference.md:36
+msgid "`200`"
+msgstr ""
+
+#: ../../sphinx/reference.md:37
+msgid "Reading speed used to calculate `` {sub-ref}`wordcount-minutes` ``"
+msgstr ""
+
+#: ../../sphinx/reference.md:49
+msgid "List of extensions:"
+msgstr ""
+
+#: ../../sphinx/reference.md:51
+msgid ""
+"\"amsmath\": enable direct parsing of "
+"[amsmath](https://ctan.org/pkg/amsmath) LaTeX equations"
+msgstr ""
+
+#: ../../sphinx/reference.md:52
+msgid ""
+"\"colon_fence\": Enable code fences using `:::` delimiters, [see "
+"here](syntax/colon_fence) for details"
+msgstr ""
+
+#: ../../sphinx/reference.md:53
+msgid ""
+"\"deflist\": Enable definition lists, [see here](syntax/definition-lists)"
+" for details"
+msgstr ""
+
+#: ../../sphinx/reference.md:54
+msgid "\"dollarmath\": Enable parsing of dollar `$` and `$$` encapsulated math"
+msgstr ""
+
+#: ../../sphinx/reference.md:55
+msgid ""
+"\"html_admonition\": Convert `<div class=\"admonition\">` elements to "
+"sphinx admonition nodes, see the [HTML admonition syntax](syntax/html-"
+"admonition) for details"
+msgstr ""
+
+#: ../../sphinx/reference.md:56
+msgid ""
+"\"fieldlist\": Enable field lists, [see here](syntax/fieldlists) for "
+"details"
+msgstr ""
+
+#: ../../sphinx/reference.md:57
+msgid ""
+"\"html_image\": Convert HTML `<img>` elements to sphinx image nodes, see "
+"the [image syntax](syntax/images) for details"
+msgstr ""
+
+#: ../../sphinx/reference.md:58
+msgid "\"linkify\": automatically identify \"bare\" web URLs and add hyperlinks"
+msgstr ""
+
+#: ../../sphinx/reference.md:59
+msgid "\"replacements\": automatically convert some common typographic texts"
+msgstr ""
+
+#: ../../sphinx/reference.md:60
+msgid ""
+"\"smartquotes\": automatically convert standard quotations to their "
+"opening/closing variants"
+msgstr ""
+
+#: ../../sphinx/reference.md:61
+msgid ""
+"\"substitution\": substitute keys, see the [substitutions "
+"syntax](syntax/substitutions) for details"
+msgstr ""
+
+#: ../../sphinx/reference.md:62
+msgid ""
+"\"tasklist\": add check-boxes to the start of list items, see the "
+"[tasklist syntax](syntax/tasklists) for details"
+msgstr ""
+
+#: ../../sphinx/reference.md:64
+msgid ""
+"Math specific, when `\"dollarmath\"` activated, see the [Math "
+"syntax](syntax/math) for more details:"
+msgstr ""
+
+#: ../../sphinx/reference.md:4
+msgid "`myst_dmath_double_inline`"
+msgstr ""
+
+#: ../../sphinx/reference.md:6
+msgid "Allow display math (i.e. `$$`) within an inline context"
+msgstr ""
+
+#: ../../sphinx/reference.md:7
+msgid "`myst_dmath_allow_labels`"
+msgstr ""
+
+#: ../../sphinx/reference.md:9
+msgid "Parse `$$...$$ (label)` syntax"
+msgstr ""
+
+#: ../../sphinx/reference.md:10
+msgid "`myst_dmath_allow_space`"
+msgstr ""
+
+#: ../../sphinx/reference.md:12
+msgid ""
+"If False then inline math will only be parsed if there are no "
+"initial/final spaces, e.g. `$a$` but not `$ a$` or `$a $`"
+msgstr ""
+
+#: ../../sphinx/reference.md:14
+msgid "`myst_dmath_allow_digits`"
+msgstr ""
+
+#: ../../sphinx/reference.md:16
+msgid ""
+"If False then inline math will only be parsed if there are no "
+"initial/final digits, e.g. `$a$` but not `1$a$` or `$a$2` (this is useful"
+" for using `$` as currency)"
+msgstr ""
+
+#: ../../sphinx/reference.md:18
+msgid "`myst_amsmath_enable`"
+msgstr ""
+
+#: ../../sphinx/reference.md:20
+msgid ""
+"Enable direct parsing of [amsmath LaTeX "
+"environments](https://ctan.org/pkg/amsmath)"
+msgstr ""
+
+#: ../../sphinx/reference.md:21
+msgid "`myst_update_mathjax`"
+msgstr ""
+
+#: ../../sphinx/reference.md:23
+msgid ""
+"If using [sphinx.ext.mathjax](https://www.sphinx-"
+"doc.org/en/master/usage/extensions/math.html#module-sphinx.ext.mathjax) "
+"(the default) then `mathjax_config` will be updated, to ignore `$` "
+"delimiters and LaTeX environments, which should instead be handled by "
+"`myst_dmath_enable` and `myst_amsmath_enable` respectively."
+msgstr ""
+
+#: ../../sphinx/reference.md:96
+msgid "Disable markdown syntax for the parser"
+msgstr ""
+
+#: ../../sphinx/reference.md:98
+msgid ""
+"If you'd like to either enable or disable custom markdown syntax, use "
+"`myst_disable_syntax`. Anything in this list will no longer be parsed by "
+"the MyST parser."
+msgstr ""
+
+#: ../../sphinx/reference.md:101
+msgid ""
+"For example, to disable the `emphasis` in-line syntax, use this "
+"configuration:"
+msgstr ""
+
+#: ../../sphinx/reference.md:107
+msgid ""
+"emphasis syntax will now be disabled. For example, the following will be "
+"rendered *without* any italics:"
+msgstr ""
+
+#: ../../sphinx/reference.md:114
+msgid ""
+"For a list of all the syntax elements you can disable, see the [markdown-"
+"it parser guide](markdown_it:using)."
+msgstr ""
+

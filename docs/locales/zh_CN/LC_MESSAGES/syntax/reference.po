@@ -1,0 +1,408 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 0.15.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-19 16:16+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../syntax/reference.md:1
+msgid "MyST Syntax Reference"
+msgstr ""
+
+#: ../../syntax/reference.md:3
+msgid ""
+"This page serves as a reference for the syntax that makes of MyST "
+"Markdown."
+msgstr ""
+
+#: ../../syntax/reference.md:1
+msgid ""
+"For more description and explanation of MyST syntax, see the [syntax "
+"guide](syntax.md)."
+msgstr ""
+
+#: ../../syntax/reference.md:9
+msgid "Block (Multi-line) Tokens"
+msgstr ""
+
+#: ../../syntax/reference.md:11
+msgid ""
+"Block tokens span multiple lines of content. They are broken down into "
+"two sections:"
+msgstr ""
+
+#: ../../syntax/reference.md:13
+msgid ""
+"{ref}`extended-block-tokens` contains *extra* tokens that are not in "
+"CommonMark."
+msgstr ""
+
+#: ../../syntax/reference.md:14
+msgid ""
+"{ref}`commonmark-block-tokens` contains CommonMark tokens that also work,"
+" for reference."
+msgstr ""
+
+#: ../../syntax/reference.md:16
+msgid ""
+"In addition to these summaries of block-level syntax, see {ref}`extra-"
+"markdown-syntax`."
+msgstr ""
+
+#: ../../syntax/reference.md:1
+msgid ""
+"Because MyST markdown was inspired by functionality that exists in "
+"reStructuredText, we have shown equivalent rST syntax for many MyST "
+"markdown features below."
+msgstr ""
+
+#: ../../syntax/reference.md:24
+msgid "Extended block tokens"
+msgstr ""
+
+#: ../../syntax/reference.md:1
+msgid "Token"
+msgstr ""
+
+#: ../../syntax/reference.md:2
+msgid "Description"
+msgstr ""
+
+#: ../../syntax/reference.md:3
+msgid "Example"
+msgstr ""
+
+#: ../../syntax/reference.md:4
+msgid "FrontMatter"
+msgstr ""
+
+#: ../../syntax/reference.md:5
+msgid "A YAML block at the start of the document enclosed by `---`"
+msgstr ""
+
+#: ../../syntax/reference.md:11
+msgid "Directives"
+msgstr ""
+
+#: ../../syntax/reference.md:12
+msgid ""
+"enclosed in 3 or more backticks followed by the directive name wrapped in"
+" curly brackets `{}`. See {ref}`syntax/directives` for more details."
+msgstr ""
+
+#: ../../syntax/reference.md:16 ../../syntax/reference.md:21
+msgid "Math"
+msgstr ""
+
+#: ../../syntax/reference.md:22
+msgid ""
+"`$$` (default) or `\\[`...`\\]` characters wrapping multi-line math, or "
+"even direct [amsmath](https://ctan.org/pkg/amsmath) LaTeX equations "
+"(optional). See {ref}`syntax/math` for more information."
+msgstr ""
+
+#: ../../syntax/reference.md:29
+msgid "Table"
+msgstr ""
+
+#: ../../syntax/reference.md:30
+msgid "Standard markdown table style, with pipe separation."
+msgstr ""
+
+#: ../../syntax/reference.md:36
+msgid "LineComment"
+msgstr ""
+
+#: ../../syntax/reference.md:37
+msgid "A commented line. See {ref}`syntax/comments` for more information."
+msgstr ""
+
+#: ../../syntax/reference.md:41
+msgid "BlockBreak"
+msgstr ""
+
+#: ../../syntax/reference.md:42
+msgid "Define blocks of text. See {ref}`syntax/blockbreaks` for more information."
+msgstr ""
+
+#: ../../syntax/reference.md:46
+msgid "Footnote"
+msgstr ""
+
+#: ../../syntax/reference.md:47
+msgid ""
+"A definition for a referencing footnote, that is placed at the bottom of "
+"the document. See {ref}`syntax/footnotes` for more details."
+msgstr ""
+
+#: ../../syntax/reference.md:52
+msgid "Admonitions (optional)"
+msgstr ""
+
+#: ../../syntax/reference.md:53
+msgid ""
+"An alternative approach for admonition style directives only, which has "
+"the benefit of allowing the content to be rendered in standard markdown "
+"editors. See [admonition directives](syntax/admonitions) for more "
+"details."
+msgstr ""
+
+#: ../../syntax/reference.md:92
+msgid "CommonMark tokens"
+msgstr ""
+
+#: ../../syntax/reference.md:4
+msgid "HTMLBlock"
+msgstr ""
+
+#: ../../syntax/reference.md:5
+msgid "Any valid HTML (rendered in HTML output only)"
+msgstr ""
+
+#: ../../syntax/reference.md:9
+msgid "BlockCode"
+msgstr ""
+
+#: ../../syntax/reference.md:10
+msgid "indented text (4 spaces or a tab)"
+msgstr ""
+
+#: ../../syntax/reference.md:14
+msgid "Heading"
+msgstr ""
+
+#: ../../syntax/reference.md:15
+msgid "Level 1-6 headings, denoted by number of `#`"
+msgstr ""
+
+#: ../../syntax/reference.md:19
+msgid "SetextHeading"
+msgstr ""
+
+#: ../../syntax/reference.md:20
+msgid "Underlined header (using multiple `=` or `-`)"
+msgstr ""
+
+#: ../../syntax/reference.md:25
+msgid "Quote"
+msgstr ""
+
+#: ../../syntax/reference.md:26
+msgid "quoted text"
+msgstr ""
+
+#: ../../syntax/reference.md:30
+msgid "CodeFence"
+msgstr ""
+
+#: ../../syntax/reference.md:31
+msgid "enclosed in 3 or more backticks with an optional language name"
+msgstr ""
+
+#: ../../syntax/reference.md:37
+msgid "ThematicBreak"
+msgstr ""
+
+#: ../../syntax/reference.md:38
+msgid "Creates a horizontal line in the output"
+msgstr ""
+
+#: ../../syntax/reference.md:42
+msgid "List"
+msgstr ""
+
+#: ../../syntax/reference.md:43
+msgid "bullet points or enumerated."
+msgstr ""
+
+#: ../../syntax/reference.md:49
+msgid "LinkDefinition"
+msgstr ""
+
+#: ../../syntax/reference.md:50
+msgid ""
+"A substitution for an inline link, which can have a reference target (no "
+"spaces), and an optional title (in `\"`)"
+msgstr ""
+
+#: ../../syntax/reference.md:54
+msgid "Paragraph"
+msgstr ""
+
+#: ../../syntax/reference.md:55
+msgid "General inline text"
+msgstr ""
+
+#: ../../syntax/reference.md:158
+msgid "Span (Inline) Tokens"
+msgstr ""
+
+#: ../../syntax/reference.md:160
+msgid ""
+"Span (or inline) tokens are defined on a single line of content. They are"
+" broken down into two sections below:"
+msgstr ""
+
+#: ../../syntax/reference.md:163
+msgid ""
+"{ref}`extended-span-tokens` contains *extra* tokens that are not in "
+"CommonMark."
+msgstr ""
+
+#: ../../syntax/reference.md:164
+msgid ""
+"{ref}`commonmark-span-tokens` contains CommonMark tokens that also work, "
+"for reference."
+msgstr ""
+
+#: ../../syntax/reference.md:166
+msgid ""
+"In addition to these summaries of inline syntax, see {ref}`extra-"
+"markdown-syntax`."
+msgstr ""
+
+#: ../../syntax/reference.md:169
+msgid "Extended inline tokens"
+msgstr ""
+
+#: ../../syntax/reference.md:4
+msgid "Role"
+msgstr ""
+
+#: ../../syntax/reference.md:5
+msgid "See {ref}`syntax/roles` for more information."
+msgstr ""
+
+#: ../../syntax/reference.md:10
+msgid "Target"
+msgstr ""
+
+#: ../../syntax/reference.md:11
+msgid ""
+"Precedes element to target, e.g. header. See {ref}`syntax/targets` for "
+"more information."
+msgstr ""
+
+#: ../../syntax/reference.md:17
+msgid ""
+"`$` (default) or `\\(`...`\\)` enclosed math. See {ref}`syntax/math` for "
+"more information."
+msgstr ""
+
+#: ../../syntax/reference.md:22
+msgid "FootReference"
+msgstr ""
+
+#: ../../syntax/reference.md:23
+msgid "Reference a footnote. See {ref}`syntax/footnotes` for more details."
+msgstr ""
+
+#: ../../syntax/reference.md:204
+msgid "CommonMark inline tokens"
+msgstr ""
+
+#: ../../syntax/reference.md:4
+msgid "HTMLSpan"
+msgstr ""
+
+#: ../../syntax/reference.md:9
+msgid "EscapeSequence"
+msgstr ""
+
+#: ../../syntax/reference.md:10
+msgid "Escaped symbols (to avoid them being interpreted as other syntax elements)"
+msgstr ""
+
+#: ../../syntax/reference.md:14
+msgid "AutoLink"
+msgstr ""
+
+#: ../../syntax/reference.md:15
+msgid "Link that is shown in final output"
+msgstr ""
+
+#: ../../syntax/reference.md:19
+msgid "InlineCode"
+msgstr ""
+
+#: ../../syntax/reference.md:20
+msgid "Literal text"
+msgstr ""
+
+#: ../../syntax/reference.md:24
+msgid "LineBreak"
+msgstr ""
+
+#: ../../syntax/reference.md:25
+msgid "Soft or hard (ends with spaces or backslash)"
+msgstr ""
+
+#: ../../syntax/reference.md:29
+msgid "Image"
+msgstr ""
+
+#: ../../syntax/reference.md:30
+msgid ""
+"Link to an image. You can also use HTML syntax, to include image size "
+"etc, [see here](syntax/images) for details"
+msgstr ""
+
+#: ../../syntax/reference.md:35
+msgid "Link"
+msgstr ""
+
+#: ../../syntax/reference.md:36
+msgid "Reference `LinkDefinitions`"
+msgstr ""
+
+#: ../../syntax/reference.md:40
+msgid "Strong"
+msgstr ""
+
+#: ../../syntax/reference.md:41
+msgid "Bold text"
+msgstr ""
+
+#: ../../syntax/reference.md:45
+msgid "Emphasis"
+msgstr ""
+
+#: ../../syntax/reference.md:46
+msgid "Italic text"
+msgstr ""
+
+#: ../../syntax/reference.md:50
+msgid "RawText"
+msgstr ""
+
+#: ../../syntax/reference.md:51
+msgid "Any text"
+msgstr ""
+
+#~ msgid ""
+#~ ":::{seealso} For more description and "
+#~ "explanation of MyST syntax, see the "
+#~ "[syntax guide](syntax.md). :::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":::{note} Because MyST markdown was "
+#~ "inspired by functionality that exists in"
+#~ " reStructuredText, we have shown equivalent"
+#~ " rST syntax for many MyST markdown"
+#~ " features below. :::"
+#~ msgstr ""
+
