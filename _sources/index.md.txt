@@ -14,8 +14,7 @@ MyST is a flavor of markdown that is designed for simplicity, flexibility, and e
 
 **[CommonMark compliant](commonmark-block-tokens)** ✔
 ^^^
-<!-- MyST is a superset of [CommonMark Markdown][commonmark]. Any CommonMark document is also MyST-compliant. -->
-MyST 是 [CommonMark Markdown][commonmark] 的一个超集。任何 CommonMark 文档也都是符合 MyST 的。
+MyST is a superset of [CommonMark Markdown][commonmark]. Any CommonMark document is also MyST-compliant.
 ---
 
 **[Extra syntax for authoring](extended-block-tokens)** ✍
@@ -30,23 +29,19 @@ MyST provides [roles](syntax/roles) and [directives](syntax/directives), allowin
 ---
 **[Compatible with Sphinx](sphinx/index.md)** 📄
 ^^^
-<!-- MyST is inspired by Sphinx, and comes with [its own Sphinx parser](sphinx/index.md).
+MyST is inspired by Sphinx, and comes with [its own Sphinx parser](sphinx/index.md).
 [Write your Sphinx docs in Markdown](sphinx:usage/quickstart), or convert existing [RST to Markdown][rst-to-myst]
-from the CLI or [using an interactive web interface][mystyc]! -->
-MyST 受到 Sphinx 的启发，并带有 [自己的 Sphinx 解析器](sphinx/index.md)。[用 Markdown 编写你的 Sphinx 文档](sphinx:usage/quickstart)，或者从 CLI 或 [使用交互式网页界面][mystyc] 转换现有的 [RST 到 Markdown][rst-to-myst]！
+from the CLI or [using an interactive web interface][mystyc]!
 
 ---
 **[Hackable with Python](api/index.md)** 🐍
 ^^^
-<!-- This MyST parser is built on top of the [`markdown-it-py` package][markdown-it-py], an pluggable Python parser for Markdown. -->
-这个 MyST 解析器是建立在 [`markdown-it-py` 包][markdown-it-py] 之上的，这是一个可插拔的 Markdown Python 解析器。"
+This MyST parser is built on top of the [`markdown-it-py` package][markdown-it-py], an pluggable Python parser for Markdown.
 
 ---
-<!-- **[Hackable with Javascript][markdown-it-myst]** 🌍 -->
-**[可以用 Javascript 破解][markdown-it-myst]** 🌍
+**[Hackable with Javascript][markdown-it-myst]** 🌍
 ^^^
-<!-- The [Javascript parser][markdown-it-myst] builds on [markdown-it][markdown-it], and allows you to parse MyST in websites. -->
-[Javascript 解析器][markdown-it-myst] 建立在 [markdown-it][markdown-it] 的基础上，并允许你在网站中解析 MyST。
+The [Javascript parser][markdown-it-myst] builds on [markdown-it][markdown-it], and allows you to parse MyST in websites.
 :::
 
 ## Find the right documentation resources

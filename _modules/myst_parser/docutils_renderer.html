@@ -209,7 +209,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  关于
+  关于项目
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -670,8 +670,6 @@
 
     <span class="k">def</span> <span class="nf">render_bullet_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">token</span><span class="p">:</span> <span class="n">SyntaxTreeNode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">list_node</span> <span class="o">=</span> <span class="n">nodes</span><span class="o">.</span><span class="n">bullet_list</span><span class="p">()</span>
-        <span class="k">if</span> <span class="n">token</span><span class="o">.</span><span class="n">markup</span><span class="p">:</span>
-            <span class="n">list_node</span><span class="p">[</span><span class="s2">&quot;bullet&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">token</span><span class="o">.</span><span class="n">markup</span>
         <span class="k">if</span> <span class="n">token</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;class&quot;</span><span class="p">):</span>
             <span class="c1"># this is used e.g. by tasklist</span>
             <span class="n">list_node</span><span class="p">[</span><span class="s2">&quot;classes&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">token</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s2">&quot;class&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>

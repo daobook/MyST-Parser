@@ -209,7 +209,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  关于
+  关于项目
  </span>
 </p>
 <ul class="nav bd-sidenav">
@@ -486,7 +486,9 @@
         <span class="c1"># so that the nested parse does not effect the current renderer,</span>
         <span class="c1"># but we use the same env, so that link references, etc</span>
         <span class="c1"># are added to the global parse.</span>
-        <span class="n">nested_renderer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_renderer</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_renderer</span><span class="o">.</span><span class="n">md</span><span class="p">)</span>
+        <span class="kn">from</span> <span class="nn">myst_parser.docutils_renderer</span> <span class="kn">import</span> <span class="n">DocutilsRenderer</span>
+
+        <span class="n">nested_renderer</span> <span class="o">=</span> <span class="n">DocutilsRenderer</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_renderer</span><span class="o">.</span><span class="n">md</span><span class="p">)</span>
         <span class="n">options</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_renderer</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
         <span class="n">options</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
             <span class="p">{</span>
