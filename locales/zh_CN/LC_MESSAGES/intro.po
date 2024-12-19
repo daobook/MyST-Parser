@@ -1,0 +1,332 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-19 16:17+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../../docs/intro.md:2
+msgid "🚀 Get Started"
+msgstr "🚀 开始使用"
+
+#: ../../../docs/intro.md:4
+msgid ""
+"This page gives a quick overview of how to get started with MyST "
+"Markdown, and how to use it within Docutils and Sphinx."
+msgstr ""
+"本页简要概述了如何开始使用 MyST Markdown，以及如何在 Docutils 和 Sphinx 中使用它。"
+
+#: ../../../docs/intro.md:6
+msgid "Installation"
+msgstr "安装"
+
+#: ../../../docs/intro.md:8
+msgid "[![PyPI][pypi-badge]][pypi-link] [![Conda][conda-badge]][conda-link]"
+msgstr ""
+
+#: ../../../docs/intro.md:8
+msgid "PyPI"
+msgstr ""
+
+#: ../../../docs/intro.md:8
+msgid "Conda"
+msgstr ""
+
+#: ../../../docs/intro.md:11
+msgid "To install myst-parser use [pip](https://pip.pypa.io):"
+msgstr "要安装 `myst-parser`，请使用 [pip](https://pip.pypa.io)："
+
+#: ../../../docs/intro.md:17
+msgid "or [Conda](https://docs.conda.io):"
+msgstr "或者 [Conda](https://docs.conda.io):"
+
+#: ../../../docs/intro.md:29
+msgid "Write a Markdown document"
+msgstr "编写 Markdown 文档"
+
+#: ../../../docs/intro.md:31
+msgid ""
+"To start off, create an empty file called `example.md` and give it a "
+"Markdown title and text. We can now use the `myst-docutils-demo` [CLI "
+"tool](docutils.md), from the installed package, to parse this file to "
+"HTML:"
+msgstr ""
+"首先，创建名为 `example.md` 的空文件，并为其添加 Markdown 标题和文本。"
+"然后，可以使用已安装包中的 `myst-docutils-demo` [命令行工具](docutils.md) 将此文件解析为 HTML："
+
+#: ../../../docs/intro.md:40
+msgid "Extend Markdown with MyST syntax"
+msgstr "使用 MyST 语法扩展 Markdown"
+
+#: ../../../docs/intro.md:42
+msgid ""
+"MyST is an extension of [CommonMark Markdown](https://commonmark.org/), "
+"that includes a rich [additional syntax](syntax/typography.md) for "
+"technical authoring, and can integrate with Docutils and Sphinx."
+msgstr ""
+
+#: ../../../docs/intro.md:46
+msgid ""
+"For example, MyST includes {{role}} and {{directive}} extensions points, "
+"to allow for richer features, such as "
+"[admonitions](syntax/admonitions.md) and "
+"[figures](syntax/images_and_figures.md)."
+msgstr ""
+
+#: ../../../docs/intro.md:48
+msgid ""
+"Lets add an `admonition` directive and `sup` role to your Markdown page, "
+"like so:"
+msgstr ""
+
+#: ../../../docs/intro.md:67
+msgid "MyST works with just about all Docutils and Sphinx roles and directives."
+msgstr ""
+
+#: ../../../docs/intro.md:69
+msgid ""
+"Note, Sphinx provides a superset of the Docutils roles and directives, so"
+" some may not work in the Docutils CLI."
+msgstr ""
+
+#: ../../../docs/intro.md:73
+msgid "Cross-referencing"
+msgstr ""
+
+#: ../../../docs/intro.md:75
+msgid ""
+"MyST-Parser offers powerful [cross-referencing features](syntax/cross-"
+"referencing.md), to link to documents, headers, figures and more."
+msgstr ""
+
+#: ../../../docs/intro.md:77
+msgid "For example, to add a section *reference target*, and reference it:"
+msgstr ""
+
+#: ../../../docs/intro.md:87
+msgid "Enable MyST in Sphinx"
+msgstr ""
+
+#: ../../../docs/intro.md:89
+msgid ""
+"To get started with Sphinx, see their [quick-start "
+"guide](inv:sphinx#usage/quickstart)."
+msgstr ""
+
+#: ../../../docs/intro.md:91
+msgid ""
+"To use the MyST parser in Sphinx, simply add the following to your "
+"`conf.py` [configuration file](inv:sphinx#usage/configuration):"
+msgstr ""
+
+#: ../../../docs/intro.md:97
+msgid ""
+"This will activate the MyST Parser extension, causing all documents with "
+"the `.md` extension to be parsed as MyST."
+msgstr ""
+
+#: ../../../docs/intro.md:99
+msgid ""
+"Our `example.md` file can now be added as the [index "
+"page](inv:sphinx#usage/index), or see the [organising content "
+"section](#syntax/toctree) about creating `toctree` directives, to add "
+"`example.md` to."
+msgstr ""
+
+#: ../../../docs/intro.md:103
+msgid ""
+"There are a range of great HTML themes that work well with MyST, such as "
+"[sphinx-book-theme](https://github.com/executablebooks/sphinx-book-theme)"
+" (used here), [pydata-sphinx-theme](https://github.com/pydata/pydata-"
+"sphinx-theme/) and [furo](https://github.com/pradyunsg/furo)"
+msgstr ""
+
+#: ../../../docs/intro.md:108
+msgid "Configuring MyST-Parser"
+msgstr ""
+
+#: ../../../docs/intro.md:110
+msgid ""
+"The <project:configuration.md> section contains a complete list of "
+"configuration options for the MyST-Parser."
+msgstr ""
+
+#: ../../../docs/intro.md:112
+msgid "These can be applied globally, e.g. in the sphinx `conf.py`:"
+msgstr ""
+
+#: ../../../docs/intro.md:118
+msgid ""
+"Or they can be applied to specific documents, at the top of the document,"
+" in frontmatter:"
+msgstr ""
+
+#: ../../../docs/intro.md:127
+msgid "Extending Sphinx"
+msgstr ""
+
+#: ../../../docs/intro.md:129
+msgid ""
+"The other way to extend MyST in Sphinx is to install Sphinx extensions "
+"that define new roles, directives, etc."
+msgstr ""
+
+#: ../../../docs/intro.md:131
+msgid ""
+"For example, let's install the [sphinx-"
+"design](https://github.com/executablebooks/sphinx-design) extension, "
+"which will allow us to create beautiful, screen-size responsive web-"
+"components."
+msgstr ""
+
+#: ../../../docs/intro.md:133
+msgid "First, install `sphinx-design`:"
+msgstr ""
+
+#: ../../../docs/intro.md:139
+msgid "Next, add it to your list of extensions in `conf.py`:"
+msgstr ""
+
+#: ../../../docs/intro.md:148
+msgid ""
+"Now, we can use the `design` directive to add a web-component to our "
+"Markdown file!"
+msgstr ""
+
+#: ../../../docs/intro.md:169
+msgid "Header"
+msgstr ""
+
+#: ../../../docs/intro.md:168
+msgid "Card Title"
+msgstr ""
+
+#: ../../../docs/intro.md:171
+msgid "Card content"
+msgstr ""
+
+#: ../../../docs/intro.md:173
+msgid "Footer"
+msgstr ""
+
+#: ../../../docs/intro.md
+msgid "Label1"
+msgstr ""
+
+#: ../../../docs/intro.md:188
+msgid "Content 1"
+msgstr ""
+
+#: ../../../docs/intro.md
+msgid "Label2"
+msgstr ""
+
+#: ../../../docs/intro.md:192
+msgid "Content 2"
+msgstr ""
+
+#: ../../../docs/intro.md:218
+msgid ""
+"There are many other great Sphinx extensions that work with MyST, such as"
+" the ones used in this documentation:"
+msgstr ""
+
+#: ../../../docs/intro.md:220
+msgid "sphinx-design"
+msgstr ""
+
+#: ../../../docs/intro.md:220
+msgid "Add beautiful, responsive web-components to your documentation"
+msgstr ""
+
+#: ../../../docs/intro.md:221
+msgid "sphinx-copybutton"
+msgstr ""
+
+#: ../../../docs/intro.md:221
+msgid "Add a copy button to your code blocks"
+msgstr ""
+
+#: ../../../docs/intro.md:222
+msgid "sphinxext-rediraffe"
+msgstr ""
+
+#: ../../../docs/intro.md:222
+msgid "Add redirects to your documentation"
+msgstr ""
+
+#: ../../../docs/intro.md:223
+msgid "sphinxext-opengraph"
+msgstr ""
+
+#: ../../../docs/intro.md:223
+msgid "Add OpenGraph metadata to your documentation"
+msgstr ""
+
+#: ../../../docs/intro.md:224
+msgid "sphinx-pyscript"
+msgstr ""
+
+#: ../../../docs/intro.md:224
+msgid ""
+"Execute Python code in your documentation, [see here](https://github.com"
+"/sphinx-extensions2/sphinx-pyscript)"
+msgstr ""
+
+#: ../../../docs/intro.md:225
+msgid "sphinx-tippy"
+msgstr ""
+
+#: ../../../docs/intro.md:225
+msgid ""
+"Add tooltips to your documentation, [see here](https://github.com/sphinx-"
+"extensions2/sphinx-tippy)"
+msgstr ""
+
+#: ../../../docs/intro.md:226
+msgid "sphinx-autodoc2"
+msgstr ""
+
+#: ../../../docs/intro.md:226
+msgid ""
+"Generate documentation from docstrings, [see here](https://github.com"
+"/sphinx-extensions2/sphinx-autodoc2)"
+msgstr ""
+
+#: ../../../docs/intro.md:227
+msgid "sphinx-togglebutton"
+msgstr ""
+
+#: ../../../docs/intro.md:227
+msgid "Add collapsible content to your documentation"
+msgstr ""
+
+#: ../../../docs/intro.md:228
+msgid "sphinxcontrib.mermaid"
+msgstr ""
+
+#: ../../../docs/intro.md:228
+msgid "Generate [Mermaid diagrams](https://mermaid-js.github.io/mermaid/#/)"
+msgstr ""
+
+#: ../../../docs/intro.md:232
+msgid ""
+"[sphinx-extensions](https://sphinx-extensions.readthedocs.io/en/latest/),"
+" for a curated and opinionated list of Sphinx extensions."
+msgstr ""
+
