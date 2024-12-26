@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:2
+msgid ":py:mod:`myst_parser.mocking`"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:2
+msgid ""
+"This module provides classes to Mock the core components of the "
+"docutils.RSTParser, the key difference being that nested parsing treats "
+"the text as Markdown not rST."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:19
+msgid ":py:obj:`MockInliner <myst_parser.mocking.MockInliner>`"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:33
+msgid "A mock version of `docutils.parsers.rst.states.Inliner`."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:22
+msgid ":py:obj:`MockState <myst_parser.mocking.MockState>`"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:96
+msgid "A mock version of `docutils.parsers.rst.states.RSTState`."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:25
+msgid ":py:obj:`MockStateMachine <myst_parser.mocking.MockStateMachine>`"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:312
+msgid "A mock version of `docutils.parsers.rst.states.RSTStateMachine`."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:28
+msgid ":py:obj:`MockIncludeDirective <myst_parser.mocking.MockIncludeDirective>`"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:346
+msgid ""
+"This directive uses a lot of statemachine logic that is not yet mocked. "
+"Therefore, we treat it as a special case (at least for now)."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:31
+msgid ":py:obj:`MockRSTParser <myst_parser.mocking.MockRSTParser>`"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:542
+msgid "RSTParser which avoids a negative side effect."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:36
+msgid "API"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:41
+msgid "Bases: :py:obj:`Exception`"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:29
+msgid "An exception to signal an error during mocking of docutils components."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:46
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:55
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:74
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:129
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:148
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:169
+msgid "Initialization"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:2
+msgid "Initialize self.  See help(type(self)) for accurate signature."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:35
+msgid "This is parsed to role functions."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:39
+msgid "Initialize the mock inliner."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:55
+msgid "Record a system message from parsing."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:65
+msgid "Parse the text and return a list of nodes."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:98
+msgid ""
+"This is parsed to the `Directives.run()` method, so that they may run "
+"nested parses on their content that will be parsed as markdown, rather "
+"than RST."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:128
+msgid "Parse the full directive text"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst
+msgid "抛出"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:130
+msgid "for errors in parsing the directive"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst
+msgid "返回"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:131
+msgid "(arguments, options, content, content_offset)"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:154
+msgid "Perform a nested parse of the input block, with ``node`` as the parent."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst
+msgid "参数"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:156
+msgid "The block of lines to parse."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:157
+msgid ""
+"The offset of the first line of block, to the starting line of the state "
+"(i.e. directive)."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:159
+msgid "The parent node to attach the parsed content to."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:160
+msgid ""
+"Whether to to allow the parsing of headings (normally this is false, "
+"since nested heading would break the document structure)"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:182
+msgid ""
+"Taken from https://github.com/docutils-"
+"mirror/docutils/blob/e88c5fb08d5cdfa8b4ac1020dd6f7177778d5990/docutils/parsers/rst/states.py#L1927"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:195
+msgid "Parse text with only inline rules."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:197
+msgid "(list of nodes, list of messages)"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:207
+msgid ""
+"Parse a block quote, which is a block of text, followed by an (optional) "
+"attribution."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:268
+msgid "Modify the line block element in-place, to nest line block segments."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:270
+msgid ""
+"Line nodes are placed into child line block containers, based on their "
+"indentation."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:314
+msgid "This is parsed to the `Directives.run()` method."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:327
+msgid "Return document source path."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:331
+msgid "Return (source path, line) tuple for current or given line number."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:349
+msgid ""
+"See: https://docutils.sourceforge.io/docs/ref/rst/directives.html"
+"#including-an-external-document-fragment"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:529
+msgid "Append self.options['name'] to node['names'] if it exists."
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:531
+msgid "Also normalize the name string and register it as explicit target."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mocking.rst:164
+msgid "Bases: :py:obj:`docutils.parsers.rst.Parser`"
+msgstr ""
+
+#: ../../../myst_parser/mocking.py:545
+msgid "Parse the input to populate the document AST."
+msgstr ""
+

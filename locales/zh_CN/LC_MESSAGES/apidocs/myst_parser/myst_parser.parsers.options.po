@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:2
+msgid ":py:mod:`myst_parser.parsers.options`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:2
+msgid "Parser for directive options."
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:4
+msgid ""
+"This is a highly restricted parser for YAML, which only allows a subset "
+"of YAML to be used for directive options:"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:7
+msgid "Only block mappings are allowed at the top level"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:8
+msgid "Mapping keys are parsed as strings (plain or quoted)"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:9
+msgid ""
+"Mapping values are parsed as strings (plain, quoted, literal `|`, folded "
+"`>`)"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:10
+msgid "`#` Comments are allowed and blank lines"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:12
+msgid ""
+"Adapted from: "
+"https://github.com/yaml/pyyaml/commit/957ae4d495cf8fcb5475c6c2f1bce801096b68a5"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:15
+msgid ""
+"For a good description of multi-line YAML strings, see: "
+"https://stackoverflow.com/a/21699210/5033292"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:19
+msgid ":py:obj:`Position <myst_parser.parsers.options.Position>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:28
+msgid "Position of a character in a stream."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:22
+msgid ":py:obj:`StreamBuffer <myst_parser.parsers.options.StreamBuffer>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:36
+msgid "A buffer for a stream of characters."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:25
+msgid ":py:obj:`Token <myst_parser.parsers.options.Token>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:81
+msgid "A parsed token from a directive option stream."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:28
+msgid ":py:obj:`KeyToken <myst_parser.parsers.options.KeyToken>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:30
+msgid ":py:obj:`ValueToken <myst_parser.parsers.options.ValueToken>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:32
+msgid ":py:obj:`ColonToken <myst_parser.parsers.options.ColonToken>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:34
+msgid ":py:obj:`State <myst_parser.parsers.options.State>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:39
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:45
+msgid ":py:obj:`options_to_items <myst_parser.parsers.options.options_to_items>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:174
+msgid "Parse a directive option block into (key, value) tuples."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:50
+msgid "API"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:84
+msgid "Initialization"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:154
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:180
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:206
+msgid "Bases: :py:obj:`myst_parser.parsers.options.Token`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:93
+#: ../../../myst_parser/parsers/options.py:101
+msgid "The original style of the string."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst:218
+msgid "Bases: :py:obj:`Exception`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:130
+msgid "Clone the error with the given line and column offsets."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.options.rst
+msgid "参数"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:176
+msgid "The directive option text."
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:177
+msgid "The line offset to apply to the error positions."
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:178
+msgid "The column offset to apply to the error positions."
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py
+msgid "raises"
+msgstr ""
+
+#: ../../../myst_parser/parsers/options.py:180
+msgid "`TokenizeError`"
+msgstr ""
+

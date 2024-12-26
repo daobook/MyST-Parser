@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:2
+msgid ":py:mod:`myst_parser.config.main`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:2
+msgid "The configuration for the myst parser."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:19
+msgid ":py:obj:`UrlSchemeType <myst_parser.config.main.UrlSchemeType>`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:56
+msgid "Type of the external schemes dictionary."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:22
+msgid ":py:obj:`MdParserConfig <myst_parser.config.main.MdParserConfig>`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:174
+msgid "Configuration options for the Markdown Parser."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:27
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:33
+msgid ":py:obj:`check_extensions <myst_parser.config.main.check_extensions>`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:27
+msgid "Check that the extensions are a list of known strings"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:36
+msgid ":py:obj:`check_url_schemes <myst_parser.config.main.check_url_schemes>`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:64
+msgid "Check that the external schemes are of the right format."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:39
+msgid ""
+":py:obj:`check_sub_delimiters "
+"<myst_parser.config.main.check_sub_delimiters>`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:110
+msgid ""
+"Check that the sub_delimiters are a tuple of length 2 of strings of "
+"length 1"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:42
+msgid ":py:obj:`check_inventories <myst_parser.config.main.check_inventories>`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:121
+msgid "Check that the inventories are a dict of {str: (str, Optional[str])}"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:45
+msgid ""
+":py:obj:`check_heading_slug_func "
+"<myst_parser.config.main.check_heading_slug_func>`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:138
+msgid "Check that the heading_slug_func is a callable."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:48
+msgid ""
+":py:obj:`check_fence_as_directive "
+"<myst_parser.config.main.check_fence_as_directive>`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:165
+msgid "Check that the extensions are a sequence of known strings"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:51
+msgid ":py:obj:`merge_file_level <myst_parser.config.main.merge_file_level>`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:503
+msgid "Merge the file-level topmatter with the global config."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:54
+msgid ":py:obj:`read_topmatter <myst_parser.config.main.read_topmatter>`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:568
+msgid "Read the (optional) YAML topmatter from a source string."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:59
+msgid "API"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:69
+msgid "Bases: :py:obj:`typing.TypedDict`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:74
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:372
+msgid "Initialization"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:2
+msgid "Initialize self.  See help(type(self)) for accurate signature."
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:176
+msgid ""
+"Note in the sphinx configuration these option names are prepended with "
+"``myst_``"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:480
+msgid "Return a new object replacing specified fields with new values."
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:482
+msgid "Note: initiating the copy will also validate the new fields."
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:488
+msgid "Return all attribute fields in this class."
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:492
+msgid "Return a dictionary of field name -> value."
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:496
+msgid "Yield triples of (name, value, field)."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst
+msgid "参数"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:505
+msgid "Global config."
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:506
+msgid "Topmatter from the file."
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:507
+msgid "Function to call with a warning (type, message)."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst
+msgid "返回"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:508
+msgid "A new config object"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.main.rst:367
+msgid "Bases: :py:obj:`Exception`"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:564
+msgid "Topmatter parsing error."
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:570
+msgid ""
+"This is identified by the first line starting with `---`, then read up to"
+" a terminating line of `---`, or `...`."
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:573
+msgid "The source string to read from"
+msgstr ""
+
+#: ../../../myst_parser/config/main.py:574
+msgid "The topmatter"
+msgstr ""
+

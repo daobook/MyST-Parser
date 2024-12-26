@@ -1,0 +1,394 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../syntax/organising_content.md:3
+msgid "Organising content"
+msgstr ""
+
+#: ../../syntax/organising_content.md:5
+msgid ""
+"Sphinx allows you to organise your content into multiple documents, and "
+"to include content from other documents."
+msgstr ""
+
+#: ../../syntax/organising_content.md:7
+msgid "This section describes how to do this with MyST Markdown."
+msgstr ""
+
+#: ../../syntax/organising_content.md:10
+msgid "Document structure"
+msgstr ""
+
+#: ../../syntax/organising_content.md:12
+msgid ""
+"Single MyST Markdown documents are structured using "
+"[headings](typography.md#headings)."
+msgstr ""
+
+#: ../../syntax/organising_content.md:14
+msgid ""
+"All headings at the root level of the document are included in the Table "
+"of Contents (ToC) for that page."
+msgstr ""
+
+#: ../../syntax/organising_content.md:16
+msgid ""
+"Many HTML themes will already include this ToC in a sidebar, but you can "
+"also include it in the main content of the page using the contents "
+"{{directive}}:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:30
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../syntax/organising_content.md:24
+msgid "Options:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:26
+msgid "depth"
+msgstr ""
+
+#: ../../syntax/organising_content.md:26
+msgid "Can be used to specify the depth of the ToC."
+msgstr ""
+
+#: ../../syntax/organising_content.md:27
+msgid "local"
+msgstr ""
+
+#: ../../syntax/organising_content.md:27
+msgid ""
+"Can be used to only include headings in the current section of the "
+"document."
+msgstr ""
+
+#: ../../syntax/organising_content.md:28
+msgid "backlinks"
+msgstr ""
+
+#: ../../syntax/organising_content.md:28
+msgid "Can be used to include a link to the ToC at the end of each section."
+msgstr ""
+
+#: ../../syntax/organising_content.md:29
+msgid "class"
+msgstr ""
+
+#: ../../syntax/organising_content.md:29
+msgid "Is available to add a custom CSS class to the ToC."
+msgstr ""
+
+#: ../../syntax/organising_content.md:33
+msgid ""
+"Because the structure of the document is determined by the headings, it "
+"is problematic to have \"non-consecutive\" headings in a document, such "
+"as:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:40
+msgid ""
+"If you wish to include such a heading, you can use the "
+"[attrs_block](#syntax/attributes/block) extension to wrap the heading in "
+"a `div`, so that it is not included in the ToC:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:52
+msgid "Setting a title in front-matter"
+msgstr ""
+
+#: ../../syntax/organising_content.md:59
+msgid ""
+"The `myst_title_to_header = True`{l=python} [configuration](#sphinx"
+"/config-options) allows for a `title` key to be present in the [document "
+"front matter](#syntax/frontmatter)."
+msgstr ""
+
+#: ../../syntax/organising_content.md:62
+msgid ""
+"This will then be used as the document's header (parsed as Markdown). For"
+" example:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:71
+msgid "would be equivalent to:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:79
+msgid "Inserting other documents directly into the current document"
+msgstr ""
+
+#: ../../syntax/organising_content.md:81
+msgid ""
+"The `include` directive allows you to insert the contents of another "
+"document directly into the flow of the current document."
+msgstr ""
+
+#: ../../syntax/organising_content.md:84
+msgid ""
+"The [`literalinclude` directive](#syntax/literalinclude), for including "
+"source code from files."
+msgstr ""
+
+#: ../../syntax/example.txt:2
+msgid "Hallo there you!"
+msgstr ""
+
+#: ../../syntax/organising_content.md:95
+msgid "The following options allow you to include only part of a document:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:97
+msgid "start-line"
+msgstr ""
+
+#: ../../syntax/organising_content.md:97
+msgid ""
+"Only the content starting from this line number will be included "
+"(numbering starts at 1, and negative count from the end)"
+msgstr ""
+
+#: ../../syntax/organising_content.md:98
+msgid "end-line"
+msgstr ""
+
+#: ../../syntax/organising_content.md:98
+msgid "Only the content up to (but excluding) this line will be included."
+msgstr ""
+
+#: ../../syntax/organising_content.md:99
+msgid "start-after"
+msgstr ""
+
+#: ../../syntax/organising_content.md:99
+msgid ""
+"Only the content after the first occurrence of the specified text will be"
+" included."
+msgstr ""
+
+#: ../../syntax/organising_content.md:100
+msgid "end-before"
+msgstr ""
+
+#: ../../syntax/organising_content.md:100
+msgid ""
+"Only the content before the first occurrence of the specified text (but "
+"after any after text) will be included."
+msgstr ""
+
+#: ../../syntax/example.txt:3 ../../syntax/example.txt:8
+msgid "there"
+msgstr ""
+
+#: ../../syntax/organising_content.md:117
+msgid ""
+"The following options allow you to modify the content of the included "
+"document, to make it relative to the location that it is being inserted:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:120
+msgid "heading-offset"
+msgstr ""
+
+#: ../../syntax/organising_content.md:120
+msgid ""
+"Offset all the heading levels by this positive integer, e.g. changing `#`"
+" to `####`"
+msgstr ""
+
+#: ../../syntax/organising_content.md:121
+msgid "relative-docs"
+msgstr ""
+
+#: ../../syntax/organising_content.md:121
+msgid ""
+"Make Markdown file references, relative to the current document, if they "
+"start with a certain prefix"
+msgstr ""
+
+#: ../../syntax/organising_content.md:122
+msgid "relative-images"
+msgstr ""
+
+#: ../../syntax/organising_content.md:122
+msgid "Make Markdown image references, relative to the current document"
+msgstr ""
+
+#: ../../syntax/examples/example_relative_include.txt:2
+msgid "My heading"
+msgstr ""
+
+#: ../../syntax/examples/example_relative_include.txt:4
+msgid "[](../typography.md) ![alt](../img/fun-fish.png){w=50}"
+msgstr ""
+
+#: ../../syntax/examples/example_relative_include.txt:4
+msgid "alt"
+msgstr ""
+
+#: ../../syntax/organising_content.md:135
+#: ../../syntax/organising_content.md:192
+msgid "Additional options:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:136
+msgid "encoding"
+msgstr ""
+
+#: ../../syntax/organising_content.md:136
+msgid "The text encoding of the external file"
+msgstr ""
+
+#: ../../syntax/organising_content.md:138
+msgid "Including to/from reStructuredText files"
+msgstr ""
+
+#: ../../syntax/organising_content.md:142
+msgid ""
+"As explained in [this section](#syntax/directives/parsing), all MyST "
+"directives will parse their content as Markdown. So to include rST, we "
+"must first \"wrap\" the directive in the [eval-rst "
+"directive](#syntax/directives/parsing):"
+msgstr ""
+
+#: ../../faq/snippets/include-rst.rst:1
+msgid "Hallo I'm from an rST file, :ref:`with a reference <howto/autodoc>`."
+msgstr ""
+
+#: ../../syntax/organising_content.md:151
+msgid ""
+"To include a MyST file within a ReStructuredText file, we can use the "
+"`parser` option of the `include` directive:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:159
+msgid "The `parser` option requires `docutils>=0.17`"
+msgstr ""
+
+#: ../../syntax/organising_content.md:164
+msgid "Using `toctree` to include other documents as children"
+msgstr ""
+
+#: ../../syntax/organising_content.md:166
+msgid ""
+"To structure a project, with multiple documents, the [toctree "
+"directive](inv:sphinx:*:directive#toctree) is utilised."
+msgstr ""
+
+#: ../../syntax/organising_content.md:168
+msgid ""
+"The designate documents as children of the current document, building up "
+"a nested hierarchy of documents starting from a "
+"[`root_doc`](inv:sphinx:*:confval#root_doc)."
+msgstr ""
+
+#: ../../syntax/organising_content.md:178
+msgid "The `toctree` has options:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:180
+msgid "glob"
+msgstr ""
+
+#: ../../syntax/organising_content.md:180
+msgid ""
+"Indicates that all entries are then matched against the list of available"
+" documents, and matches are inserted into the list alphabetically"
+msgstr ""
+
+#: ../../syntax/organising_content.md:183
+msgid "The following options to control how it is displayed within the document:"
+msgstr ""
+
+#: ../../syntax/organising_content.md:185
+msgid "caption"
+msgstr ""
+
+#: ../../syntax/organising_content.md:185
+msgid "A title for this toctree"
+msgstr ""
+
+#: ../../syntax/organising_content.md:186
+msgid "hidden"
+msgstr ""
+
+#: ../../syntax/organising_content.md:186
+msgid "Do not show within the document"
+msgstr ""
+
+#: ../../syntax/organising_content.md:187
+msgid "includehidden"
+msgstr ""
+
+#: ../../syntax/organising_content.md:187
+msgid "Included child hidden `toctree` entries"
+msgstr ""
+
+#: ../../syntax/organising_content.md:188
+msgid "maxdepth"
+msgstr ""
+
+#: ../../syntax/organising_content.md:188
+msgid "The depth of document sub-headings shown"
+msgstr ""
+
+#: ../../syntax/organising_content.md:189
+msgid "titlesonly"
+msgstr ""
+
+#: ../../syntax/organising_content.md:189
+msgid "Only show the first top-level heading"
+msgstr ""
+
+#: ../../syntax/organising_content.md:190
+msgid "reversed"
+msgstr ""
+
+#: ../../syntax/organising_content.md:190
+msgid "Reverse the order of the entries in the list"
+msgstr ""
+
+#: ../../syntax/organising_content.md:194
+msgid "name"
+msgstr ""
+
+#: ../../syntax/organising_content.md:194
+msgid "Allow the `toctree` to be referenced"
+msgstr ""
+
+#: ../../syntax/organising_content.md:195
+msgid "numbered"
+msgstr ""
+
+#: ../../syntax/organising_content.md:195
+msgid ""
+"Number all headings in children. If an integer is specified, then this is"
+" the depth to number down to"
+msgstr ""
+
+#: ../../syntax/organising_content.md:198
+msgid ""
+"Sub-toctrees are automatically numbered, so don’t give the `:numbered:` "
+"flag to those"
+msgstr ""
+

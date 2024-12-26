@@ -1,0 +1,349 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../syntax/roles-and-directives.md:3
+msgid "Roles and Directives"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:5
+msgid ""
+"Roles and directives provide a way to extend the syntax of MyST in an "
+"unbound manner, by interpreting a chuck of text as a specific type of "
+"markup, according to its name."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:8
+msgid ""
+"Mostly all [docutils "
+"roles](https://docutils.sourceforge.io/docs/ref/rst/roles.html), "
+"[docutils "
+"directives](https://docutils.sourceforge.io/docs/ref/rst/directives.html),"
+" [Sphinx roles](inv:sphinx#usage/*/roles), or [Sphinx "
+"directives](inv:sphinx#usage/*/directives) can be used in MyST."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:15
+msgid "Syntax"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:19
+msgid "Directives - a block-level extension point"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:21
+msgid ""
+"Directives syntax is defined with triple-backticks and curly-brackets. It"
+" is effectively a Markdown code fence with curly brackets around the "
+"language, and a directive name in place of a language name. Here is the "
+"basic structure:"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:28
+#: ../../syntax/roles-and-directives.md:228
+msgid "MyST"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:29
+#: ../../syntax/roles-and-directives.md:229
+msgid "reStructuredText"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:49
+#: ../../syntax/roles-and-directives.md:238
+#: ../../syntax/roles-and-directives.md:284
+msgid "For example:"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:64
+msgid "This is my admonition"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:65
+msgid "This is my note"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:57
+msgid "Parameterizing directives (options)"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:59
+msgid ""
+"Many directives can take key/value pairs, in an optional *option block* "
+"at the start of the directive."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:61
+msgid ""
+"The option block starts on the first line of the directive body and is "
+"defined by a set of lines prefixed with `:`."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:63
+msgid ""
+"The block then follows a YAML-like mapping syntax, where the key (string)"
+" and value (string) are separated by a colon (`:`):"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:76
+msgid ""
+"The values can be enclosed in quotes (`\"` or `'`) and span multiple "
+"lines. Newline behaviour can be controlled by starting the value with `|`"
+" (preserve newlines) or `>` (collapse newlines):"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:100
+#: ../../syntax/roles-and-directives.md:119
+msgid "This is my multi-line caption. It is *pretty nifty* ;-)"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md
+msgid "Old-style options block"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:95
+msgid ""
+"Option blocks can also be enclosed by `---`, with no `:` prefix, for "
+"example:"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:116
+msgid "How directives parse content"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:118
+msgid ""
+"Some directives parse the content that is in their content block. MyST "
+"parses this content **as Markdown**."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:121
+msgid ""
+"This means that MyST markdown can be written in the content areas of any "
+"directives written in MyST markdown. For example:"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:136
+msgid "My markdown link"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:137
+msgid "Here is [markdown link syntax](https://jupyter.org)"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:129
+msgid ""
+"As a short-hand for directives that require no arguments, and when no "
+"parameter options are used (see below), you may start the content "
+"directly after the directive name."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:145
+msgid "Notes require **no** arguments, so content can start here."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:137
+msgid ""
+"For special cases, MySt also offers the `eval-rst` directive. This will "
+"parse the content **as ReStructuredText**:"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:166
+msgid "Party time!"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:168
+msgid "A reference from inside: :ref:`rst-fun-fish`"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:170
+msgid "A reference from outside: :ref:`syntax/directives/parsing`"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:154
+msgid ""
+"Note how the text is integrated into the rest of the document, so we can "
+"also reference [party fish](rst-fun-fish) anywhere else in the "
+"documentation."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:156
+msgid "Nesting directives"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:158
+msgid ""
+"You can nest directives by ensuring that the tick-lines corresponding to "
+"the outermost directive are longer than the tick-lines for the inner "
+"directives. For example, nest a warning inside a note block like so:"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:179
+#: ../../syntax/roles-and-directives.md:215
+msgid "The next info should be nested"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:181
+#: ../../syntax/roles-and-directives.md:201
+#: ../../syntax/roles-and-directives.md:217
+msgid "Here's my warning"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:171
+msgid ""
+"You can indent inner-code fences, so long as they aren't indented by more"
+" than 3 spaces. Otherwise, they will be rendered as \"raw code\" blocks:"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:198
+msgid "The warning block will be properly-parsed"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:204
+msgid "But the next block will be parsed as raw text"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:190
+msgid "This can really be abused if you'd like ;-)"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:218
+msgid "Yep another admonition"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:207
+msgid "Markdown-friendly directives"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:209
+msgid ""
+"Want to use syntax that renders correctly in standard Markdown editors? "
+"See [the extended syntax option](syntax/colon_fence)."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:227
+msgid "This text is **standard** *Markdown*"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:220
+msgid "Roles - an in-line extension point"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:222
+msgid ""
+"Roles are similar to directives - they allow you to define arbitrary new "
+"functionality, but they are used *in-line*. To define an in-line role, "
+"use the following form:"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:251
+msgid "Since Pythagoras, we know that {math}`a^2 + b^2 = c^2`"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:244
+msgid ""
+"You can use roles to do things like reference equations and other items "
+"in your book. For example:"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:263
+msgid ""
+"e^{i\\pi} + 1 = 0\n"
+"\n"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:267
+msgid ""
+"Euler's identity, equation {math:numref}`euler`, was elected one of the "
+"most beautiful mathematical formulas."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:256
+msgid "How roles parse content"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:258
+msgid ""
+"The content of roles is parsed differently depending on the role that "
+"you've used. Some roles expect inputs that will be used to change "
+"functionality. For example, the `ref` role will assume that input content"
+" is a reference to some other part of the site. However, other roles may "
+"use the MyST parser to parse the input as content."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:263
+msgid ""
+"Some roles also **extend their functionality** depending on the content "
+"that you pass. For example, following the `ref` example above, if you "
+"pass a string like this: `Content to display <myref>`, then the `ref` "
+"will display `Content to display` and use `myref` as the reference to "
+"look up."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:268
+msgid "How roles parse this content depends on the author that created the role."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:272
+msgid "MyST only roles"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:274
+msgid ""
+"This section contains information about special roles and directives that"
+" come bundled with the MyST Parser Sphinx extension."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:276
+msgid "Insert the date and reading time"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:279
+msgid "The `sub-ref` role and word counting."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:282
+msgid ""
+"You may insert the \"last updated\" date and estimated reading time into "
+"your document via substitution definitions, which can be accessed *via* "
+"the `sub-ref` role."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:297
+msgid ""
+"{sub-ref}`today` | {sub-ref}`wordcount-words` words | {sub-ref"
+"}`wordcount-minutes` min read"
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:290
+msgid ""
+"`today` is replaced by either the date on which the document is parsed, "
+"with the format set by <inv:sphinx#today_fmt>, or the `today` variable if"
+" set in the configuration file."
+msgstr ""
+
+#: ../../syntax/roles-and-directives.md:292
+msgid ""
+"The reading speed is computed using the `myst_words_per_minute` "
+"configuration (see the [Sphinx configuration options](sphinx/config-"
+"options))."
+msgstr ""
+

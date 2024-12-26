@@ -1,0 +1,303 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:2
+msgid ":py:mod:`myst_parser.parsers.docutils_`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:2
+msgid "MyST Markdown parser for docutils."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:19
+msgid ":py:obj:`Unset <myst_parser.parsers.docutils_.Unset>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:73
+msgid "A sentinel class for unset settings."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:22
+msgid ":py:obj:`Parser <myst_parser.parsers.docutils_.Parser>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:237
+msgid "Docutils parser for Markedly Structured Text (MyST)."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:25
+msgid ""
+":py:obj:`SimpleTranslator "
+"<myst_parser.parsers.docutils_.SimpleTranslator>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:27
+msgid ":py:obj:`SimpleWriter <myst_parser.parsers.docutils_.SimpleWriter>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:31
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:37
+msgid ""
+":py:obj:`attr_to_optparse_option "
+"<myst_parser.parsers.docutils_.attr_to_optparse_option>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:192
+msgid "Convert an ``MdParserConfig`` attribute into a Docutils setting tuple."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:40
+msgid ""
+":py:obj:`create_myst_settings_spec "
+"<myst_parser.parsers.docutils_.create_myst_settings_spec>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:210
+msgid "Return a list of Docutils setting for the docutils MyST section."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:43
+msgid ""
+":py:obj:`create_myst_config "
+"<myst_parser.parsers.docutils_.create_myst_config>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:220
+msgid "Create a configuration instance from the given settings."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:46
+msgid ":py:obj:`cli_html <myst_parser.parsers.docutils_.cli_html>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:365
+msgid "Cmdline entrypoint for converting MyST to HTML."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:49
+msgid ":py:obj:`cli_html5 <myst_parser.parsers.docutils_.cli_html5>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:370
+msgid "Cmdline entrypoint for converting MyST to HTML5."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:52
+msgid ":py:obj:`cli_html5_demo <myst_parser.parsers.docutils_.cli_html5_demo>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:375
+msgid "Cmdline entrypoint for converting MyST to simple HTML5 demonstrations."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:55
+msgid ":py:obj:`to_html5_demo <myst_parser.parsers.docutils_.to_html5_demo>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:396
+msgid "Convert a MyST string to HTML5."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:58
+msgid ":py:obj:`cli_latex <myst_parser.parsers.docutils_.cli_latex>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:413
+msgid "Cmdline entrypoint for converting MyST to LaTeX."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:61
+msgid ":py:obj:`cli_xml <myst_parser.parsers.docutils_.cli_xml>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:418
+msgid "Cmdline entrypoint for converting MyST to XML."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:64
+msgid ":py:obj:`cli_pseudoxml <myst_parser.parsers.docutils_.cli_pseudoxml>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:423
+msgid "Cmdline entrypoint for converting MyST to pseudo-XML."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:67
+msgid ""
+":py:obj:`visit_rubric_html "
+"<myst_parser.parsers.docutils_.visit_rubric_html>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:428
+#: ../../../myst_parser/parsers/docutils_.py:489
+msgid "Override the default HTML visit method for rubric nodes."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:70
+msgid ""
+":py:obj:`depart_rubric_html "
+"<myst_parser.parsers.docutils_.depart_rubric_html>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:73
+msgid ""
+":py:obj:`visit_container_html "
+"<myst_parser.parsers.docutils_.visit_container_html>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:500
+msgid "Override the default HTML visit method for container nodes."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:76
+msgid ""
+":py:obj:`depart_container_html "
+"<myst_parser.parsers.docutils_.depart_container_html>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:516
+msgid "Override the default HTML depart method for container nodes."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:81
+msgid "Data"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:87
+msgid ":py:obj:`DOCUTILS_UNSET <myst_parser.parsers.docutils_.DOCUTILS_UNSET>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:84
+msgid "Sentinel for arguments not set through docutils.conf."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:92
+msgid "API"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst
+msgid "返回"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:194
+msgid "A tuple of ``(help string, option flags, optparse kwargs)``."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:123
+msgid "Bases: :py:obj:`docutils.parsers.rst.Parser`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:128
+msgid "Initialization"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:240
+msgid "Aliases this parser supports."
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:243
+msgid "Runtime settings specification."
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:263
+msgid "Parse source text."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst
+msgid "参数"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:265
+msgid "The source string to parse"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:266
+msgid "The root docutils node to add AST elements to"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:173
+msgid "Bases: :py:obj:`docutils.writers.html5_polyglot.HTMLTranslator`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.docutils_.rst:181
+msgid "Bases: :py:obj:`docutils.writers.html5_polyglot.Writer`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:377
+msgid ""
+"This is a special case of the HTML5 writer, that only outputs the body of"
+" the document."
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:430
+msgid ""
+"docutils structures a document, based on the headings, into nested "
+"sections::"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:446
+msgid ""
+"This means that it is not possible to have \"standard\" headings nested "
+"inside other components, such as blockquotes, because it would break the "
+"structure::"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:464
+msgid ""
+"we work around this shortcoming, in `DocutilsRenderer.render_heading`, by"
+" identifying if a heading is inside another component and instead "
+"outputting it as a \"non-structural\" rubric node, and capture the "
+"level::"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:478
+msgid ""
+"However, docutils natively just outputs rubrics as <p> tags, and does not"
+" \"honor\" the heading level. So here we override the visit/depart "
+"methods to output the correct <h> element"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:491
+msgid "See explanation in `visit_rubric_html`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:502
+msgid ""
+"to remove the \"container\" class for divs this avoids CSS clashes with "
+"the bootstrap theme"
+msgstr ""
+
+#: ../../../myst_parser/parsers/docutils_.py:518
+msgid "See explanation in `visit_container_html`"
+msgstr ""
+

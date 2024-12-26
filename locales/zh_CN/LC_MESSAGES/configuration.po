@@ -1,0 +1,788 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../configuration.md:2
+msgid "Configuration"
+msgstr ""
+
+#: ../../configuration.md:4
+msgid ""
+"MyST parsing can be configured at both the global and individual document"
+" level, with the most specific configuration taking precedence."
+msgstr ""
+
+#: ../../configuration.md:7
+msgid "Global configuration"
+msgstr ""
+
+#: ../../configuration.md:9
+msgid ""
+"Overriding the default configuration at the global level is achieved by "
+"specifying variables in the Sphinx `conf.py` file. All `myst_parser` "
+"global configuration variables are prefixed with `myst_`, e.g."
+msgstr ""
+
+#: ../../configuration.md:17
+msgid "Configuration in Docutils, in the [](docutils.md) section."
+msgstr ""
+
+#: ../../configuration.md:25 ../../configuration.md:34
+#: ../../configuration.md:72 ../../configuration.md:147
+msgid "Name"
+msgstr ""
+
+#: ../../configuration.md:26 ../../configuration.md:35
+#: ../../configuration.md:73 ../../configuration.md:148
+msgid "Type"
+msgstr ""
+
+#: ../../configuration.md:27 ../../configuration.md:36
+#: ../../configuration.md:74 ../../configuration.md:149
+msgid "Description"
+msgstr ""
+
+#: ../../configuration.md:28
+msgid "`myst_commonmark_only`"
+msgstr ""
+
+#: ../../configuration.md:29 ../../configuration.md:32
+#: ../../configuration.md:41 ../../configuration.md:44
+#: ../../configuration.md:47 ../../configuration.md:50
+#: ../../configuration.md:53 ../../configuration.md:56
+#: ../../configuration.md:59 ../../configuration.md:65
+#: ../../configuration.md:71 ../../configuration.md:74
+#: ../../configuration.md:76 ../../configuration.md:79
+#: ../../configuration.md:88 ../../configuration.md:91
+#: ../../configuration.md:106 ../../configuration.md:115
+#: ../../configuration.md:118 ../../configuration.md:157
+#: ../../configuration.md:160 ../../configuration.md:163
+#: ../../configuration.md:166 ../../configuration.md:169
+#: ../../configuration.md:172
+msgid "`bool`"
+msgstr ""
+
+#: ../../configuration.md:30 ../../configuration.md:77
+msgid "Use strict CommonMark parser (default: `False`)"
+msgstr ""
+
+#: ../../configuration.md:31
+msgid "`myst_gfm_only`"
+msgstr ""
+
+#: ../../configuration.md:33 ../../configuration.md:80
+msgid "Use strict Github Flavoured Markdown parser (default: `False`)"
+msgstr ""
+
+#: ../../configuration.md:34
+msgid "`myst_enable_extensions`"
+msgstr ""
+
+#: ../../configuration.md:35 ../../configuration.md:53
+#: ../../configuration.md:82 ../../configuration.md:100
+msgid "`set[str]`"
+msgstr ""
+
+#: ../../configuration.md:36 ../../configuration.md:83
+msgid "Enable syntax extensions (default: `set()`)"
+msgstr ""
+
+#: ../../configuration.md:37
+msgid "`myst_disable_syntax`"
+msgstr ""
+
+#: ../../configuration.md:38 ../../configuration.md:85
+msgid "`collections.abc.Iterable[str]`"
+msgstr ""
+
+#: ../../configuration.md:39 ../../configuration.md:86
+msgid "Disable Commonmark syntax elements (default: `[]`)"
+msgstr ""
+
+#: ../../configuration.md:40
+msgid "`myst_all_links_external`"
+msgstr ""
+
+#: ../../configuration.md:42 ../../configuration.md:89
+msgid "Parse all links as simple hyperlinks (default: `False`)"
+msgstr ""
+
+#: ../../configuration.md:43
+msgid "`myst_links_external_new_tab`"
+msgstr ""
+
+#: ../../configuration.md:45 ../../configuration.md:92
+msgid "Open all external links in a new tab (default: `False`)"
+msgstr ""
+
+#: ../../configuration.md:46
+msgid "`myst_url_schemes`"
+msgstr ""
+
+#: ../../configuration.md:47 ../../configuration.md:94
+msgid "`list[str] | dict[str, None | str | dict]`"
+msgstr ""
+
+#: ../../configuration.md:48 ../../configuration.md:95
+msgid ""
+"URI schemes that are converted to external links (default: `{'http': "
+"None, 'https': None, 'mailto': None, 'ftp': None}`)"
+msgstr ""
+
+#: ../../configuration.md:49
+msgid "`myst_ref_domains`"
+msgstr ""
+
+#: ../../configuration.md:50 ../../configuration.md:97
+msgid "`collections.abc.Iterable[str] | None`"
+msgstr ""
+
+#: ../../configuration.md:51 ../../configuration.md:98
+msgid "Sphinx domain names to search in for link references (default: `None`)"
+msgstr ""
+
+#: ../../configuration.md:52
+msgid "`myst_fence_as_directive`"
+msgstr ""
+
+#: ../../configuration.md:54 ../../configuration.md:101
+msgid ""
+"Interpret a code fence as a directive, for certain language names. This "
+"can be useful for fences like dot and mermaid, and interoperability with "
+"other Markdown renderers. (default: `set()`)"
+msgstr ""
+
+#: ../../configuration.md:55
+msgid "`myst_number_code_blocks`"
+msgstr ""
+
+#: ../../configuration.md:56 ../../configuration.md:103
+msgid "`collections.abc.Sequence[str]`"
+msgstr ""
+
+#: ../../configuration.md:57 ../../configuration.md:104
+msgid "Add line numbers to code blocks with these languages (default: `[]`)"
+msgstr ""
+
+#: ../../configuration.md:58
+msgid "`myst_title_to_header`"
+msgstr ""
+
+#: ../../configuration.md:60 ../../configuration.md:107
+msgid ""
+"Convert a `title` field in the front-matter to a H1 header (default: "
+"`False`)"
+msgstr ""
+
+#: ../../configuration.md:61
+msgid "`myst_heading_anchors`"
+msgstr ""
+
+#: ../../configuration.md:62 ../../configuration.md:77
+#: ../../configuration.md:109 ../../configuration.md:121
+msgid "`int`"
+msgstr ""
+
+#: ../../configuration.md:63 ../../configuration.md:110
+msgid "Heading level depth to assign HTML anchors (default: `0`)"
+msgstr ""
+
+#: ../../configuration.md:64
+msgid "`myst_heading_slug_func`"
+msgstr ""
+
+#: ../../configuration.md:65
+msgid "`None | Callable[[str], str] | str`"
+msgstr ""
+
+#: ../../configuration.md:66
+msgid ""
+"Function for creating heading anchors, or a python import path e.g. "
+"`my_package.my_module.my_function` (default: `None`)"
+msgstr ""
+
+#: ../../configuration.md:67
+msgid "`myst_html_meta`"
+msgstr ""
+
+#: ../../configuration.md:68 ../../configuration.md:112
+msgid "`dict[str, str]`"
+msgstr ""
+
+#: ../../configuration.md:69 ../../configuration.md:113
+msgid "HTML meta tags (default: `{}`)"
+msgstr ""
+
+#: ../../configuration.md:70
+msgid "`myst_footnote_sort`"
+msgstr ""
+
+#: ../../configuration.md:72 ../../configuration.md:116
+msgid ""
+"Move all footnotes to the end of the document, and sort by reference "
+"order (default: `True`)"
+msgstr ""
+
+#: ../../configuration.md:73
+msgid "`myst_footnote_transition`"
+msgstr ""
+
+#: ../../configuration.md:75 ../../configuration.md:119
+msgid "Place a transition before sorted footnotes (default: `True`)"
+msgstr ""
+
+#: ../../configuration.md:76
+msgid "`myst_words_per_minute`"
+msgstr ""
+
+#: ../../configuration.md:78 ../../configuration.md:122
+msgid "For reading speed calculations (default: `200`)"
+msgstr ""
+
+#: ../../configuration.md:25 ../../configuration.md:138
+msgid "Extensions"
+msgstr ""
+
+#: ../../configuration.md:27 ../../configuration.md:140
+msgid "Configuration specific to syntax extensions:"
+msgstr ""
+
+#: ../../configuration.md:37
+msgid "`myst_substitutions`"
+msgstr ""
+
+#: ../../configuration.md:38 ../../configuration.md:151
+msgid "`dict[str, Any]`"
+msgstr ""
+
+#: ../../configuration.md:39 ../../configuration.md:152
+msgid "substitutions: Substitutions mapping (default: `{}`)"
+msgstr ""
+
+#: ../../configuration.md:40
+msgid "`myst_sub_delimiters`"
+msgstr ""
+
+#: ../../configuration.md:41 ../../configuration.md:154
+msgid "`tuple[str, str]`"
+msgstr ""
+
+#: ../../configuration.md:42 ../../configuration.md:155
+msgid "substitutions: Substitution delimiters (default: `('{', '}')`)"
+msgstr ""
+
+#: ../../configuration.md:43
+msgid "`myst_linkify_fuzzy_links`"
+msgstr ""
+
+#: ../../configuration.md:45 ../../configuration.md:158
+msgid "linkify: Recognise URLs without schema prefixes (default: `True`)"
+msgstr ""
+
+#: ../../configuration.md:46
+msgid "`myst_dmath_allow_labels`"
+msgstr ""
+
+#: ../../configuration.md:48 ../../configuration.md:161
+msgid "dollarmath: Parse `$$...$$ (label)` (default: `True`)"
+msgstr ""
+
+#: ../../configuration.md:49
+msgid "`myst_dmath_allow_space`"
+msgstr ""
+
+#: ../../configuration.md:51 ../../configuration.md:164
+msgid "dollarmath: Allow initial/final spaces in `$ ... $` (default: `True`)"
+msgstr ""
+
+#: ../../configuration.md:52
+msgid "`myst_dmath_allow_digits`"
+msgstr ""
+
+#: ../../configuration.md:54 ../../configuration.md:167
+msgid "dollarmath: Allow initial/final digits `1$ ...$2` (default: `True`)"
+msgstr ""
+
+#: ../../configuration.md:55
+msgid "`myst_dmath_double_inline`"
+msgstr ""
+
+#: ../../configuration.md:57 ../../configuration.md:170
+msgid "dollarmath: Parse inline `$$ ... $$` (default: `False`)"
+msgstr ""
+
+#: ../../configuration.md:58
+msgid "`myst_update_mathjax`"
+msgstr ""
+
+#: ../../configuration.md:60
+msgid ""
+"dollarmath: Update sphinx.ext.mathjax configuration to ignore `$` "
+"delimiters (default: `True`)"
+msgstr ""
+
+#: ../../configuration.md:61
+msgid "`myst_mathjax_classes`"
+msgstr ""
+
+#: ../../configuration.md:62
+msgid "`str`"
+msgstr ""
+
+#: ../../configuration.md:63
+msgid ""
+"dollarmath: MathJax classes to add to math HTML (default: "
+"`'tex2jax_process|mathjax_process|math|output_area'`)"
+msgstr ""
+
+#: ../../configuration.md:64
+msgid "`myst_enable_checkboxes`"
+msgstr ""
+
+#: ../../configuration.md:66 ../../configuration.md:173
+msgid "tasklist: Enable checkboxes (default: `False`)"
+msgstr ""
+
+#: ../../configuration.md:37
+msgid "Frontmatter (local) configuration"
+msgstr ""
+
+#: ../../configuration.md:39
+msgid ""
+"Frontmatter allows you to specify metadata and options about how a single"
+" document should behave or render. It is a "
+"[YAML](https://en.wikipedia.org/wiki/YAML) block at the start of the "
+"document, as used for example in [jekyll](https://jekyllrb.com/docs"
+"/front-matter/). The document should start with three or more `---` "
+"markers, and YAML is parsed until a closing `---` marker is found:"
+msgstr ""
+
+#: ../../configuration.md:53
+msgid ""
+"Frontmatter is also used for the [substitution syntax "
+"extension](syntax/substitutions), and can be used to store information "
+"for blog posting (see [ablog's myst-parser "
+"support](https://ablog.readthedocs.io/en/latest/manual/markdown.html))."
+msgstr ""
+
+#: ../../configuration.md:57
+msgid ""
+"The following configuration variables are available to be set in the "
+"document frontmatter. These can be set in the document [front "
+"matter](syntax/frontmatter), under the `myst` key, e.g."
+msgstr ""
+
+#: ../../configuration.md:75
+msgid "`commonmark_only`"
+msgstr ""
+
+#: ../../configuration.md:78
+msgid "`gfm_only`"
+msgstr ""
+
+#: ../../configuration.md:81
+msgid "`enable_extensions`"
+msgstr ""
+
+#: ../../configuration.md:84
+msgid "`disable_syntax`"
+msgstr ""
+
+#: ../../configuration.md:87
+msgid "`all_links_external`"
+msgstr ""
+
+#: ../../configuration.md:90
+msgid "`links_external_new_tab`"
+msgstr ""
+
+#: ../../configuration.md:93
+msgid "`url_schemes`"
+msgstr ""
+
+#: ../../configuration.md:96
+msgid "`ref_domains`"
+msgstr ""
+
+#: ../../configuration.md:99
+msgid "`fence_as_directive`"
+msgstr ""
+
+#: ../../configuration.md:102
+msgid "`number_code_blocks`"
+msgstr ""
+
+#: ../../configuration.md:105
+msgid "`title_to_header`"
+msgstr ""
+
+#: ../../configuration.md:108
+msgid "`heading_anchors`"
+msgstr ""
+
+#: ../../configuration.md:111
+msgid "`html_meta`"
+msgstr ""
+
+#: ../../configuration.md:114
+msgid "`footnote_sort`"
+msgstr ""
+
+#: ../../configuration.md:117
+msgid "`footnote_transition`"
+msgstr ""
+
+#: ../../configuration.md:120
+msgid "`words_per_minute`"
+msgstr ""
+
+#: ../../configuration.md:74
+msgid "Setting HTML Metadata"
+msgstr ""
+
+#: ../../configuration.md:76
+msgid ""
+"The front-matter can contain the special key `html_meta`; a dict with "
+"data to add to the generated HTML as [`<meta>` "
+"elements](https://developer.mozilla.org/en-"
+"US/docs/Web/HTML/Element/meta). This is equivalent to using the [meta "
+"directive](inv:sphinx#html-meta)."
+msgstr ""
+
+#: ../../configuration.md:79
+msgid ""
+"HTML metadata can also be added globally in the `conf.py` *via* the "
+"`myst_html_meta` variable, in which case it will be added to all MyST "
+"documents. For each document, the `myst_html_meta` dict will be updated "
+"by the document level front-matter `html_meta`, with the front-matter "
+"taking precedence."
+msgstr ""
+
+#: ../../configuration.md
+msgid "Sphinx Configuration"
+msgstr ""
+
+#: ../../configuration.md
+msgid "MyST Front-Matter"
+msgstr ""
+
+#: ../../configuration.md
+msgid "RestructuredText"
+msgstr ""
+
+#: ../../configuration.md
+msgid "HTML Output"
+msgstr ""
+
+#: ../../configuration.md:150
+msgid "`substitutions`"
+msgstr ""
+
+#: ../../configuration.md:153
+msgid "`sub_delimiters`"
+msgstr ""
+
+#: ../../configuration.md:156
+msgid "`linkify_fuzzy_links`"
+msgstr ""
+
+#: ../../configuration.md:159
+msgid "`dmath_allow_labels`"
+msgstr ""
+
+#: ../../configuration.md:162
+msgid "`dmath_allow_space`"
+msgstr ""
+
+#: ../../configuration.md:165
+msgid "`dmath_allow_digits`"
+msgstr ""
+
+#: ../../configuration.md:168
+msgid "`dmath_double_inline`"
+msgstr ""
+
+#: ../../configuration.md:171
+msgid "`enable_checkboxes`"
+msgstr ""
+
+#: ../../configuration.md:148
+msgid "List of syntax extensions"
+msgstr ""
+
+#: ../../configuration.md:150
+msgid "Full details in the [](syntax/extensions) section."
+msgstr ""
+
+#: ../../configuration.md:152
+msgid "amsmath"
+msgstr ""
+
+#: ../../configuration.md:153
+msgid ""
+"enable direct parsing of [amsmath](https://ctan.org/pkg/amsmath) LaTeX "
+"equations"
+msgstr ""
+
+#: ../../configuration.md:155
+msgid "attrs_inline"
+msgstr ""
+
+#: ../../configuration.md:156
+msgid "Enable inline attribute parsing, [see here](syntax/attributes) for details"
+msgstr ""
+
+#: ../../configuration.md:158
+msgid "colon_fence"
+msgstr ""
+
+#: ../../configuration.md:159
+msgid ""
+"Enable code fences using `:::` delimiters, [see here](syntax/colon_fence)"
+" for details"
+msgstr ""
+
+#: ../../configuration.md:161
+msgid "deflist"
+msgstr ""
+
+#: ../../configuration.md:162
+msgid "Enable definition lists, [see here](syntax/definition-lists) for details"
+msgstr ""
+
+#: ../../configuration.md:164
+msgid "dollarmath"
+msgstr ""
+
+#: ../../configuration.md:165
+msgid "Enable parsing of dollar `$` and `$$` encapsulated math"
+msgstr ""
+
+#: ../../configuration.md:167
+msgid "fieldlist"
+msgstr ""
+
+#: ../../configuration.md:168
+msgid "Enable field lists, [see here](syntax/fieldlists) for details"
+msgstr ""
+
+#: ../../configuration.md:170
+msgid "html_admonition"
+msgstr ""
+
+#: ../../configuration.md:171
+msgid ""
+"Convert `<div class=\"admonition\">` elements to sphinx admonition nodes,"
+" see the [HTML admonition syntax](syntax/html-admonition) for details"
+msgstr ""
+
+#: ../../configuration.md:173
+msgid "html_image"
+msgstr ""
+
+#: ../../configuration.md:174
+msgid ""
+"Convert HTML `<img>` elements to sphinx image nodes, [see "
+"here](syntax/images) for details"
+msgstr ""
+
+#: ../../configuration.md:176
+msgid "linkify"
+msgstr ""
+
+#: ../../configuration.md:177
+msgid "Automatically identify \"bare\" web URLs and add hyperlinks"
+msgstr ""
+
+#: ../../configuration.md:179
+msgid "replacements"
+msgstr ""
+
+#: ../../configuration.md:180
+msgid "Automatically convert some common typographic texts"
+msgstr ""
+
+#: ../../configuration.md:182
+msgid "smartquotes"
+msgstr ""
+
+#: ../../configuration.md:183
+msgid ""
+"Automatically convert standard quotations to their opening/closing "
+"variants"
+msgstr ""
+
+#: ../../configuration.md:185
+msgid "strikethrough"
+msgstr ""
+
+#: ../../configuration.md:186
+msgid "Enable strikethrough syntax, [see here](syntax/strikethrough) for details"
+msgstr ""
+
+#: ../../configuration.md:188
+msgid "substitution"
+msgstr ""
+
+#: ../../configuration.md:189
+msgid "Substitute keys, [see here](syntax/substitutions) for details"
+msgstr ""
+
+#: ../../configuration.md:191
+msgid "tasklist"
+msgstr ""
+
+#: ../../configuration.md:192
+msgid ""
+"Add check-boxes to the start of list items, [see here](syntax/tasklists) "
+"for details"
+msgstr ""
+
+#: ../../configuration.md:196
+msgid "Build Warnings"
+msgstr ""
+
+#: ../../configuration.md:198
+msgid ""
+"Below lists the MyST specific warnings that may be emitted during the "
+"build process. These will be prepended to the end of the warning message "
+"(see also <inv:sphinx#show_warning_types>), e.g."
+msgstr ""
+
+#: ../../configuration.md:204
+msgid ""
+"In general, if your build logs any warnings, you should either fix them "
+"or [raise an Issue](https://github.com/executablebooks/MyST-"
+"Parser/issues/new/choose) if you think the warning is erroneous."
+msgstr ""
+
+#: ../../configuration.md:206
+msgid ""
+"However, in some circumstances if you wish to suppress the warning you "
+"can use the <inv:sphinx#suppress_warnings> configuration option, e.g."
+msgstr ""
+
+#: ../../configuration.md:212
+msgid ""
+"Or use `--myst-suppress-warnings=\"myst.header\"` for the [docutils CLI"
+"](myst-docutils)."
+msgstr ""
+
+#: ../../configuration.md:215
+msgid "`myst.deprecated`: Deprecated usage."
+msgstr ""
+
+#: ../../configuration.md:216
+msgid "`myst.not_supported`: Functionality that is not yet supported in docutils."
+msgstr ""
+
+#: ../../configuration.md:217
+msgid "`myst.render`: The render method is not implemented."
+msgstr ""
+
+#: ../../configuration.md:218
+msgid "`myst.topmatter`: Issue reading front-matter."
+msgstr ""
+
+#: ../../configuration.md:219
+msgid "`myst.duplicate_def`: Duplicate Markdown reference definition."
+msgstr ""
+
+#: ../../configuration.md:220
+msgid "`myst.header`: Non-consecutive heading levels."
+msgstr ""
+
+#: ../../configuration.md:221
+msgid "`myst.directive_parse`: Issue parsing directive."
+msgstr ""
+
+#: ../../configuration.md:222
+msgid "`myst.directive_option`: Issue parsing directive options."
+msgstr ""
+
+#: ../../configuration.md:223
+msgid ""
+"`myst.directive_comments`: Directive options has # comments, which may "
+"not be supported in future versions."
+msgstr ""
+
+#: ../../configuration.md:224
+msgid "`myst.directive_body`: Issue parsing directive body."
+msgstr ""
+
+#: ../../configuration.md:225
+msgid "`myst.directive_unknown`: Unknown directive."
+msgstr ""
+
+#: ../../configuration.md:226
+msgid "`myst.role_unknown`: Unknown role."
+msgstr ""
+
+#: ../../configuration.md:227
+msgid "`myst.xref_ambiguous`: Multiple targets were found for a cross-reference."
+msgstr ""
+
+#: ../../configuration.md:228
+msgid "`myst.xref_missing`: A target was not found for a cross-reference."
+msgstr ""
+
+#: ../../configuration.md:229
+msgid "`myst.inv_retrieval`: Failure to retrieve or load an inventory."
+msgstr ""
+
+#: ../../configuration.md:230
+msgid "`myst.iref_missing`: A target was not found for an inventory reference."
+msgstr ""
+
+#: ../../configuration.md:231
+msgid ""
+"`myst.iref_ambiguous`: Multiple targets were found for an inventory "
+"reference."
+msgstr ""
+
+#: ../../configuration.md:232
+msgid ""
+"`myst.domains`: A legacy domain found, which does not support "
+"`resolve_any_xref`."
+msgstr ""
+
+#: ../../configuration.md:233
+msgid "`myst.heading_slug`: An error occurred computing a heading slug."
+msgstr ""
+
+#: ../../configuration.md:234
+msgid ""
+"`myst.strikethrough`: Strikethrough warning, since only implemented in "
+"HTML."
+msgstr ""
+
+#: ../../configuration.md:235
+msgid "`myst.html`: HTML could not be parsed."
+msgstr ""
+
+#: ../../configuration.md:236
+msgid "`myst.attribute`: Invalid attribute value."
+msgstr ""
+
+#: ../../configuration.md:237
+msgid "`myst.substitution`: Substitution could not be resolved."
+msgstr ""
+

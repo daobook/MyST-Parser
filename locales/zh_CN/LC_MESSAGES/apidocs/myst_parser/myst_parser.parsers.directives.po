@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.directives.rst:2
+msgid ":py:mod:`myst_parser.parsers.directives`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:2
+msgid ""
+"Fenced code blocks are parsed as directives, if the block starts with "
+"``{directive_name}``, followed by arguments on the same line."
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:6
+msgid ""
+"Directive options are read from a YAML block, if the first content line "
+"starts with ``---``, e.g."
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:20
+msgid ""
+"Or the option block will be parsed if the first content line starts with "
+"``:``, as a YAML block consisting of every line that starts with a ``:``,"
+" e.g."
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:32
+msgid ""
+"If the first line of a directive's content is blank, this will be "
+"stripped from the content. This is to allow for separation between the "
+"option block and content."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.directives.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.directives.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.directives.rst:19
+msgid ":py:obj:`ParseWarnings <myst_parser.parsers.directives.ParseWarnings>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.directives.rst:22
+msgid ""
+":py:obj:`DirectiveParsingResult "
+"<myst_parser.parsers.directives.DirectiveParsingResult>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.directives.rst:27
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.directives.rst:33
+msgid ""
+":py:obj:`parse_directive_text "
+"<myst_parser.parsers.directives.parse_directive_text>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:81
+msgid "Parse (and validate) the full directive text."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.directives.rst:36
+msgid ""
+":py:obj:`parse_directive_arguments "
+"<myst_parser.parsers.directives.parse_directive_arguments>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:311
+msgid "Parse (and validate) the directive argument section."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.directives.rst:41
+msgid "API"
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:67
+msgid "The arguments parsed from the first line."
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:69
+msgid "Options parsed from the YAML block."
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:71
+msgid "The lines of body content"
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:73
+msgid "The number of lines to the start of the body content."
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:75
+msgid ""
+"List of non-fatal errors encountered during parsing. (message, "
+"line_number)"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.directives.rst
+msgid "参数"
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:83
+msgid ""
+"The text on the same line as the directive name. May be an argument or "
+"body text, dependent on the directive"
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:85
+msgid "All text after the first line. Can include options."
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:86
+msgid ""
+"Whether to validate the values of options This is actually only here to "
+"be used by myst-nb cells, which converts options directly to JSON "
+"metadata, using the full YAML spec."
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:89
+msgid ""
+"Additional options to add to the directive, above those parsed from the "
+"content (content options take priority)."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.directives.rst
+msgid "抛出"
+msgstr ""
+
+#: ../../../myst_parser/parsers/directives.py:92
+msgid "if there is a fatal parsing/validation error"
+msgstr ""
+

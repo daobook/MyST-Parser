@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../syntax/math.md:1
+msgid "Math and equations"
+msgstr ""
+
+#: ../../syntax/math.md:3
+msgid ""
+"Math can be written in the common LaTeX markup. There are several "
+"syntaxes to define inline and block math, depending on your preference."
+msgstr ""
+
+#: ../../syntax/math.md:7
+msgid "Math role and directive"
+msgstr ""
+
+#: ../../syntax/math.md:9
+msgid ""
+"The `math` {{role}} and {{directive}} are used to define inline and block"
+" math respectively."
+msgstr ""
+
+#: ../../syntax/math.md:11
+msgid ""
+"The directive supports multiple equations, which should be separated by a"
+" blank line. Each single equation can have multiple aligned lines, which "
+"should be separated by `\\\\` characters, and each line can have multiple"
+" `&` characters to align the equations."
+msgstr ""
+
+#: ../../syntax/math.md:14
+msgid ""
+"The `label` option can also be used to reference the equation later on, "
+"with the `eq` role."
+msgstr ""
+
+#: ../../syntax/math.md:38
+msgid "Since Pythagoras, we know that {math}`a^2 + b^2 = c^2`."
+msgstr ""
+
+#: ../../syntax/math.md:40
+msgid ""
+"(a + b)^2 = a^2 + 2ab + b^2\n"
+"\n"
+"(a + b)^2  &=  (a + b)(a + b) \\\\\n"
+"           &=  a^2 + 2ab + b^2"
+msgstr ""
+
+#: ../../syntax/math.md:48
+msgid "The equation {eq}`mymath` is a quadratic equation."
+msgstr ""
+
+#: ../../syntax/math.md:33
+msgid ""
+"Sphinx documentation on the [role](inv:sphinx:rst:role#math) and "
+"[directive](inv:sphinx:rst:directive#math), and [math support for HTML "
+"outputs in Sphinx](inv:sphinx#math-support)."
+msgstr ""
+
+#: ../../syntax/math.md:37
+msgid "Dollar delimited math"
+msgstr ""
+
+#: ../../syntax/math.md:39
+msgid ""
+"Enabling the [dollarmath](#syntax/math/dollar) extension will allow "
+"parsing the following syntax:"
+msgstr ""
+
+#: ../../syntax/math.md:41
+msgid "Inline math: `$...$`"
+msgstr ""
+
+#: ../../syntax/math.md:42
+msgid "Display (block) math: `$$...$$`"
+msgstr ""
+
+#: ../../syntax/math.md:44
+msgid "Additionally if `myst_dmath_allow_labels=True` is set (the default):"
+msgstr ""
+
+#: ../../syntax/math.md:46
+msgid "Display (block) math with equation label: `$$...$$ (1)`"
+msgstr ""
+
+#: ../../syntax/math.md:67
+msgid ""
+"\n"
+"(a + b)^2  &=  (a + b)(a + b) \\\\\n"
+"           &=  a^2 + 2ab + b^2\n"
+msgstr ""
+
+#: ../../syntax/math.md:72
+msgid "The equation {eq}`mymath2` is also a quadratic equation."
+msgstr ""
+
+#: ../../syntax/math.md:61
+msgid "Escaping Dollars"
+msgstr ""
+
+#: ../../syntax/math.md:64
+msgid ""
+"Math can be escaped (negated) by adding a `\\` before the first symbol, "
+"e.g. `\\$a$` renders as \\$a\\$. Escaping can also be used inside math, "
+"e.g. `$a=\\$3$` renders as $a=\\$3$."
+msgstr ""
+
+#: ../../syntax/math.md:67
+msgid ""
+"Conversely `\\\\` will negate the escaping, so `\\\\$a$` renders as "
+"\\\\$a$."
+msgstr ""
+
+#: ../../syntax/math.md:70
+msgid "Direct LaTeX Math"
+msgstr ""
+
+#: ../../syntax/math.md:72
+msgid ""
+"Enabling the [amsmath](#syntax/amsmath) extension will directly parse the"
+" following top-level math environments:"
+msgstr ""
+
+#: ../../syntax/math.md:74
+msgid ""
+"equation, multiline, gather, align, alignat, flalign, matrix, pmatrix, "
+"bmatrix, Bmatrix, vmatrix, Vmatrix, eqnarray."
+msgstr ""
+
+#: ../../syntax/math.md:76
+msgid "As expected, environments ending in `*` will not be numbered, for example:"
+msgstr ""
+
+#: ../../syntax/math.md:102
+msgid ""
+"\\begin{gather*}\n"
+"a_1=b_1+c_1\\\\\n"
+"a_2=b_2+c_2-d_2+e_2\n"
+"\\end{gather*}"
+msgstr ""
+
+#: ../../syntax/math.md:107
+msgid ""
+"\\begin{align}\n"
+"a_{11}& =b_{11}&\n"
+"  a_{12}& =b_{12}\\\\\n"
+"a_{21}& =b_{21}&\n"
+"  a_{22}& =b_{22}+c_{22}\n"
+"\\end{align}"
+msgstr ""
+

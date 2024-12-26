@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:2
+msgid ":py:mod:`myst_parser.sphinx_ext.directives`"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/directives.py:2
+msgid "MyST specific directives"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:19
+msgid ""
+":py:obj:`SubstitutionReferenceRole "
+"<myst_parser.sphinx_ext.directives.SubstitutionReferenceRole>`"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/directives.py:29
+msgid "Implement substitution references as a role."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:22
+msgid ""
+":py:obj:`FigureMarkdown "
+"<myst_parser.sphinx_ext.directives.FigureMarkdown>`"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/directives.py:42
+msgid "Directive for creating a figure with Markdown compatible syntax."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:27
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:33
+msgid ":py:obj:`align <myst_parser.sphinx_ext.directives.align>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:36
+msgid ""
+":py:obj:`figwidth_value "
+"<myst_parser.sphinx_ext.directives.figwidth_value>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:41
+msgid "API"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:56
+msgid "Bases: :py:obj:`sphinx.util.docutils.SphinxRole`"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/directives.py:31
+msgid "Note, in ``docutils/parsers/rst/roles.py`` this is left unimplemented."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:68
+msgid "Bases: :py:obj:`sphinx.util.docutils.SphinxDirective`"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/directives.py:44
+msgid "Example::"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.directives.rst:73
+msgid "Initialization"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/directives.py:132
+msgid "A warning for reporting an invalid figure."
+msgstr ""
+

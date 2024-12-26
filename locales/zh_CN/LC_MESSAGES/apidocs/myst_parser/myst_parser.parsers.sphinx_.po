@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.sphinx_.rst:2
+msgid ":py:mod:`myst_parser.parsers.sphinx_`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/sphinx_.py:2
+msgid "MyST Markdown parser for sphinx."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.sphinx_.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.sphinx_.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.sphinx_.rst:19
+msgid ":py:obj:`MystParser <myst_parser.parsers.sphinx_.MystParser>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/sphinx_.py:30
+msgid "Sphinx parser for Markedly Structured Text (MyST)."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.sphinx_.rst:24
+msgid "Data"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.sphinx_.rst:30
+msgid ":py:obj:`SPHINX_LOGGER <myst_parser.parsers.sphinx_.SPHINX_LOGGER>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.sphinx_.rst:35
+msgid "API"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.sphinx_.rst:46
+msgid "Bases: :py:obj:`sphinx.parsers.Parser`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/sphinx_.py:33
+msgid "Aliases this parser supports."
+msgstr ""
+
+#: ../../../myst_parser/parsers/sphinx_.py:36
+msgid "Runtime settings specification."
+msgstr ""
+
+#: ../../../myst_parser/parsers/sphinx_.py:38
+msgid ""
+"Defines runtime settings and associated command-line options, as used by "
+"`docutils.frontend.OptionParser`.  This is a concatenation of tuples of:"
+msgstr ""
+
+#: ../../../myst_parser/parsers/sphinx_.py:41
+msgid ""
+"Option group title (string or `None` which implies no group, just a list "
+"of single options)."
+msgstr ""
+
+#: ../../../myst_parser/parsers/sphinx_.py:44
+msgid "Description (string or `None`)."
+msgstr ""
+
+#: ../../../myst_parser/parsers/sphinx_.py:46
+msgid "A sequence of option tuples"
+msgstr ""
+
+#: ../../../myst_parser/parsers/sphinx_.py:61
+msgid "Parse source text."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.sphinx_.rst
+msgid "参数"
+msgstr ""
+
+#: ../../../myst_parser/parsers/sphinx_.py:63
+msgid "The source string to parse"
+msgstr ""
+
+#: ../../../myst_parser/parsers/sphinx_.py:64
+msgid "The root docutils node to add AST elements to"
+msgstr ""
+

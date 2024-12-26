@@ -1,0 +1,392 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../syntax/code_and_apis.md:2
+msgid "Source code and APIs"
+msgstr "源代码与 API"
+
+#: ../../syntax/code_and_apis.md:4
+msgid "Basic block syntax highlighting"
+msgstr "基础块语法高亮"
+
+#: ../../syntax/code_and_apis.md:6
+msgid ""
+"Code blocks contain a language identifier, which is used to determine the"
+" language of the code. This language is used to determine the syntax "
+"highlighting, using an available [pygments "
+"lexer](https://pygments.org/docs/lexers/)."
+msgstr ""
+"代码块包含语言标识符，用于确定代码的语言。"
+"该语言用于通过可用的 [pygments 词法分析器](https://pygments.org/docs/lexers/) 进行语法高亮显示。"
+
+#: ../../syntax/code_and_apis.md:16
+msgid "Adding a language lexer"
+msgstr "添加语言词法分析器"
+
+#: ../../syntax/code_and_apis.md:18
+msgid ""
+"You can create and register your own lexer, using the [`pygments.lexers` "
+"entry point](https://pygments.org/docs/plugins/#register-plugins), or "
+"within a sphinx extension, with the [`app.add_lexer` "
+"method](inv:sphinx#*.Sphinx.add_lexer)."
+msgstr ""
+"您可以使用 [`pygments.lexers` 入口点](https://pygments.org/docs/plugins/#register-plugins) 创建并注册自己的词法分析器，"
+"或者在 Sphinx 插件中使用 [`app.add_lexer` 方法](inv:sphinx#*.Sphinx.add_lexer)。"
+
+#: ../../syntax/code_and_apis.md:22
+msgid "Show backticks inside raw markdown blocks"
+msgstr "在原始 Markdown 块中显示反引号"
+
+#: ../../syntax/code_and_apis.md:26
+msgid ""
+"If you'd like to show backticks inside of your markdown, you can do so by"
+" nesting them in backticks of a greater length. Markdown will treat the "
+"outer-most backticks as the edges of the \"raw\" block and everything "
+"inside will show up. For example:"
+msgstr ""
+"如果您想在 Markdown 中显示反引号，可以通过将它们嵌套在更长的反引号中来实现。"
+"Markdown 会将最外层的反引号视为“原始”块的边界，而内部的所有内容都会显示出来。例如："
+
+#: ../../syntax/code_and_apis.md:48
+msgid "`` `hi` ``"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:42
+msgid "Inline syntax highlighting"
+msgstr "行内语法高亮"
+
+#: ../../syntax/code_and_apis.md:44
+msgid ""
+"The [attrs_inline](#syntax/attributes/inline) extension can be used to "
+"apply syntax highlighting to inline code:"
+msgstr ""
+"可以使用 [attrs_inline](#syntax/attributes/inline) 插件为行内代码应用语法高亮："
+
+#: ../../syntax/code_and_apis.md:57
+msgid "Inline Python code `a = \"b\"`{l=python}"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:50
+msgid "Numbering and highlighting lines"
+msgstr "行号与高亮显示特定行"
+
+#: ../../syntax/code_and_apis.md:52
+msgid ""
+"To set a global default for line numbering, per lexer name, the "
+"`myst_number_code_blocks` [configuration option](#sphinx/config-options) "
+"can be used. For example, using:"
+msgstr ""
+"要为每个词法分析器名称设置行号显示的全局默认值，"
+"可以使用 `myst_number_code_blocks` [配置选项](#sphinx/config-options)。例如，使用："
+
+#: ../../syntax/code_and_apis.md:60
+msgid "Will number all code blocks with the `typescript` lexer by default."
+msgstr "将默认对所有使用 `typescript` 词法分析器的代码块显示行号。"
+
+#: ../../syntax/code_and_apis.md:73
+msgid ""
+"To apply numbering and highlighting to a specific code block, the "
+"[attrs_block](#syntax/attributes/block) extension can be used:"
+msgstr ""
+"要为特定代码块应用行号显示和高亮，可以使用 [attrs_block](#syntax/attributes/block) 插件："
+
+#: ../../syntax/code_and_apis.md:85
+msgid "Adding a caption"
+msgstr "添加标题"
+
+#: ../../syntax/code_and_apis.md:87
+msgid ""
+"With the `code-block` {{directive}}, a caption can be added to a code "
+"blocks, as well as other options:"
+msgstr ""
+"使用 `code-block` {{directive}}，可以为代码块添加标题以及其他选项："
+
+#: ../../syntax/code_and_apis.md:109
+msgid "This is a caption"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:102
+msgid "The following options are recognized:"
+msgstr "以下选项被识别："
+
+#: ../../syntax/code_and_apis.md:104
+msgid "Code block options"
+msgstr "代码块选项"
+
+#: ../../syntax/code_and_apis.md:108
+msgid "`linenos` : flag"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:109
+msgid "Enable to generate line numbers for the code block"
+msgstr "启用为代码块显示行号"
+
+#: ../../syntax/code_and_apis.md:111
+msgid "`lineno-start` : integer"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:112
+msgid ""
+"The starting line number for the code block (`linenos` is automatically "
+"enabled)"
+msgstr ""
+"代码块的起始行号（`linenos` 会自动启用）"
+
+#: ../../syntax/code_and_apis.md:114
+msgid "`emphasize-lines` : comma-separated list of integers"
+msgstr "`emphasize-lines`：以逗号分隔的整数列表"
+
+#: ../../syntax/code_and_apis.md:115
+msgid "Highlight the specified lines"
+msgstr "高亮显示指定行"
+
+#: ../../syntax/code_and_apis.md:117
+msgid "`caption` : string"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:118
+msgid "The caption for the code block"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:120
+msgid "`force` : flag"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:121
+msgid "Allow minor errors on highlighting to be ignored"
+msgstr "允许忽略高亮显示中的小错误"
+
+#: ../../syntax/code_and_apis.md:123
+msgid "`name` : string"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:124
+msgid ""
+"The name of the code block, which can be referenced elsewhere in the "
+"document"
+msgstr ""
+"代码块的名称，可以在文档的其他地方引用"
+
+#: ../../syntax/code_and_apis.md:126
+msgid "`class` : string"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:127
+msgid "The class to apply to the code block"
+msgstr "应用于代码块的类"
+
+#: ../../syntax/code_and_apis.md:130
+msgid "The [Sphinx documentation](inv:sphinx#code-block)"
+msgstr "[Sphinx 文档](inv:sphinx#code-block)"
+
+#: ../../syntax/code_and_apis.md:135
+msgid "Including code from files"
+msgstr "从文件包含代码"
+
+#: ../../syntax/code_and_apis.md:137
+msgid ""
+"Longer pieces of code can be included from files using the "
+"`literalinclude` {{directive}}:"
+msgstr ""
+"可以使用 `literalinclude` {{directive}} 从文件中包含较长的代码片段："
+
+#: ../../syntax/code_and_apis.md:144
+msgid ""
+"The file name is usually relative to the current file’s path. However, if"
+" it is absolute (starting with `/`), it is relative to the top source "
+"directory."
+msgstr ""
+"文件名通常相对于当前文件的路径。但是，如果它是绝对路径（以 `/` 开头），则相对于顶级源目录。"
+
+#: ../../syntax/code_and_apis.md:146
+msgid ""
+"To select only a sub-section of the file, the `lines`, `pyobject` or "
+"`start-after` and `end-before` options can be used:"
+msgstr ""
+"要仅选择文件的某一部分，可以使用 `lines`、`pyobject` 或 `start-after` 和 `end-before` 选项："
+
+#: ../../syntax/code_and_apis.md:156
+msgid "The [Sphinx documentation](inv:sphinx#literalinclude)"
+msgstr "[Sphinx 文档](inv:sphinx#literalinclude)"
+
+#: ../../syntax/code_and_apis.md:160
+msgid "Documenting whole APIs"
+msgstr "记录整个 API"
+
+#: ../../syntax/code_and_apis.md:162
+msgid ""
+"Sphinx and MyST provide means to analyse source code and automatically "
+"generate documentation and referenceable links for APIs."
+msgstr ""
+"Sphinx 和 MyST 提供了分析源代码并自动生成 API 文档和可引用链接的功能。"
+
+#: ../../syntax/code_and_apis.md:164
+msgid ""
+"`sphinx.ext.autodoc` can be used ([see below](#syntax/apis/sphinx-"
+"autodoc)), however, it is not inherently compatible with MyST Markdown, "
+"and so the `sphinx-autodoc2` extension is recommended."
+msgstr ""
+"可以使用 `sphinx.ext.autodoc`（[见下文](#syntax/apis/sphinx-autodoc)），"
+"但它本身并不与 MyST Markdown 兼容，因此推荐使用 `sphinx-autodoc2` 扩展。"
+
+#: ../../syntax/code_and_apis.md:167
+msgid "`sphinx-autodoc2`"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:169
+msgid ""
+"[`sphinx-autodoc2`](https://sphinx-autodoc2.readthedocs.io) is an "
+"extension for Sphinx that provides an integrated means to document Python"
+" APIs."
+msgstr ""
+"[`sphinx-autodoc2`](https://sphinx-autodoc2.readthedocs.io) 是 Sphinx 插件，提供了集成的方式来记录 Python API。"
+
+#: ../../syntax/code_and_apis.md:171
+msgid ""
+"As opposed to `sphinx.ext.autodoc`, `sphinx-autodoc2` performs static "
+"(rather than dynamic) analysis of the source code, integrates full "
+"package documenting, and also allows for docstrings to be written in both"
+" RestructureText and MyST."
+msgstr ""
+"与 `sphinx.ext.autodoc` 不同，`sphinx-autodoc2` 对源代码进行静态（而非动态）分析，"
+"集成了完整的包文档记录，并且允许在 RestructureText 和 MyST 中编写文档字符串。"
+
+#: ../../syntax/code_and_apis.md:173
+msgid ""
+"The `auto_mode` will automatically generate the full API documentation, "
+"as shown <project:/apidocs/index.rst>."
+msgstr ""
+"`auto_mode` 将自动生成完整的 API 文档，如 <project:/apidocs/index.rst> 所示。"
+
+#: ../../syntax/code_and_apis.md:175
+msgid ""
+"Alternatively, the `autodoc2-object` directive can be used to generate "
+"documentation for a single object. To embed in a MyST document the MyST "
+"`render_plugin` should be specified, for example:"
+msgstr ""
+"或者，可以使用 `autodoc2-object` 指令为单个对象生成文档。要在 MyST 文档中嵌入，应指定 MyST `render_plugin`，例如："
+
+#: ../../../myst_parser/sphinx_ext/main.py:198
+#: ../../../myst_parser/sphinx_ext/main.py:217
+#: ../../syntax/code_and_apis.md:265:<autosummary>:1
+#: myst_parser.sphinx_ext.main.setup_sphinx:1 of
+msgid "Initialize all settings and transforms in Sphinx."
+msgstr "初始化 Sphinx 中的所有设置和转换。"
+
+#: ../../syntax/code_and_apis.md
+msgid "参数"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/main.py:200
+#: myst_parser.sphinx_ext.main.setup_sphinx:3 of
+msgid "The Sphinx application object."
+msgstr "Sphinx 应用程序对象。"
+
+#: ../../../myst_parser/sphinx_ext/main.py:201
+#: myst_parser.sphinx_ext.main.setup_sphinx:4 of
+msgid "Whether to load the parser."
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:185
+msgid ""
+"This can be referenced elsewhere in the document using the `:py:obj:` "
+"role, or a `#` link (see [cross-referencing](#syntax/referencing))."
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:199
+msgid "{py:obj}`myst_parser.sphinx_ext.main.setup_sphinx`"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:200
+msgid "[](#myst_parser.sphinx_ext.main.setup_sphinx)"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:192
+msgid ""
+"Additionally, summaries of multiple objects can be generated using the "
+"`autodoc2-summary` directive:"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:215
+msgid "{py:obj}`setup_sphinx <myst_parser.sphinx_ext.main.setup_sphinx>`"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:219
+msgid ""
+"{py:obj}`create_myst_config "
+"<myst_parser.sphinx_ext.main.create_myst_config>`"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/main.py:221
+#: ../../syntax/code_and_apis.md:265:<autosummary>:1
+msgid "Create the myst config object and add it to the sphinx environment."
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:203
+msgid "Using MyST docstrings"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:205
+msgid ""
+"`sphinx-autodoc2` can be configured to use MyST docstrings (rather than "
+"RestructureText), for the entire project or select objects, by setting "
+"the `autodoc2_docstring_parser_regexes` configuration option:"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:216
+msgid "For example:"
+msgstr ""
+
+#: ../../../myst_parser/__init__.py:1
+msgid "Initialize the [Sphinx](https://github.com/sphinx-doc/sphinx) extension."
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:229
+msgid "`sphinx.ext.autodoc`"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:231
+msgid ""
+"[Sphinx extension `autodoc`](inv:sphinx#sphinx.ext.autodoc) also can "
+"generate documentation for Python objects. However, because it is hard-"
+"coded to generate RestructureText, the special [`eval-rst` "
+"directive](#syntax/directives/parsing) needs to be used:"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:241
+msgid ""
+"Summaries can also be generated with "
+"[`autosummary`](inv:sphinx#sphinx.ext.autosummary):"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:265:<autosummary>:1
+msgid ""
+":py:obj:`myst_parser.sphinx_ext.main.setup_sphinx "
+"<myst_parser.sphinx_ext.main.setup_sphinx>`"
+msgstr ""
+
+#: ../../syntax/code_and_apis.md:265:<autosummary>:1
+msgid ""
+":py:obj:`myst_parser.sphinx_ext.main.create_myst_config "
+"<myst_parser.sphinx_ext.main.create_myst_config>`"
+msgstr ""
+

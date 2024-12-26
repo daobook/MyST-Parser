@@ -79,6 +79,9 @@ msgid ""
 "that includes a rich [additional syntax](syntax/typography.md) for "
 "technical authoring, and can integrate with Docutils and Sphinx."
 msgstr ""
+"MyST 是 [CommonMark Markdown](https://commonmark.org/) 的扩展，"
+"它包含了一套丰富的 [附加语法](syntax/typography.md) 以适用于技术文档编写，"
+"并且能够与 Docutils 和 Sphinx 集成。"
 
 #: ../../../docs/intro.md:46
 msgid ""
@@ -87,58 +90,72 @@ msgid ""
 "[admonitions](syntax/admonitions.md) and "
 "[figures](syntax/images_and_figures.md)."
 msgstr ""
+"例如，MyST 包含了 {{role}} 和 {{directive}} 扩展点，"
+"以支持更丰富的功能，例如"
+"[警告框](syntax/admonitions.md) 和"
+"[图表](syntax/images_and_figures.md)。"
 
 #: ../../../docs/intro.md:48
 msgid ""
 "Lets add an `admonition` directive and `sup` role to your Markdown page, "
 "like so:"
 msgstr ""
+"在你的 Markdown 页面中添加 `admonition` 指令和 `sup` 角色，"
+"如下所示："
 
 #: ../../../docs/intro.md:67
 msgid "MyST works with just about all Docutils and Sphinx roles and directives."
-msgstr ""
+msgstr "MyST 几乎兼容所有 Docutils 和 Sphinx 的角色和指令。"
 
 #: ../../../docs/intro.md:69
 msgid ""
 "Note, Sphinx provides a superset of the Docutils roles and directives, so"
 " some may not work in the Docutils CLI."
 msgstr ""
+"请注意，Sphinx 提供了 Docutils 角色和指令的超集，因此"
+"某些功能可能在 Docutils 命令行工具中无法使用。"
 
 #: ../../../docs/intro.md:73
 msgid "Cross-referencing"
-msgstr ""
+msgstr "交叉引用"
 
 #: ../../../docs/intro.md:75
 msgid ""
 "MyST-Parser offers powerful [cross-referencing features](syntax/cross-"
 "referencing.md), to link to documents, headers, figures and more."
 msgstr ""
+"MyST-Parser 提供了强大的 [交叉引用功能](syntax/cross-referencing.md)，"
+"链接到文档、标题、图表等。"
 
 #: ../../../docs/intro.md:77
 msgid "For example, to add a section *reference target*, and reference it:"
-msgstr ""
+msgstr "例如，添加 *参考目标* 并引用它："
 
 #: ../../../docs/intro.md:87
 msgid "Enable MyST in Sphinx"
-msgstr ""
+msgstr " 在 Sphinx 中启用 MyST"
 
 #: ../../../docs/intro.md:89
 msgid ""
 "To get started with Sphinx, see their [quick-start "
 "guide](inv:sphinx#usage/quickstart)."
 msgstr ""
+"开始使用 Sphinx，请参阅他们的 [快速入门指南](inv:sphinx#usage/quickstart)。"
 
 #: ../../../docs/intro.md:91
 msgid ""
 "To use the MyST parser in Sphinx, simply add the following to your "
 "`conf.py` [configuration file](inv:sphinx#usage/configuration):"
 msgstr ""
+"要在 Sphinx 中使用 MyST 解析器，只需将以下内容添加到你的"
+"`conf.py` [配置文件](inv:sphinx#usage/configuration) 中："
 
 #: ../../../docs/intro.md:97
 msgid ""
 "This will activate the MyST Parser extension, causing all documents with "
 "the `.md` extension to be parsed as MyST."
 msgstr ""
+"这将激活 MyST 解析器插件，使所有扩展名为 `.md` 的文档都会被解析为 MyST 格式。"
 
 #: ../../../docs/intro.md:99
 msgid ""
@@ -147,6 +164,9 @@ msgid ""
 "section](#syntax/toctree) about creating `toctree` directives, to add "
 "`example.md` to."
 msgstr ""
+"现在，`example.md` 文件可以作为 [首页](inv:sphinx#usage/index) 添加，"
+"或者参考 [组织内容部分](#syntax/toctree) 关于创建 `toctree` 指令的内容，"
+"将 `example.md` 添加到其中。"
 
 #: ../../../docs/intro.md:103
 msgid ""
@@ -155,36 +175,43 @@ msgid ""
 " (used here), [pydata-sphinx-theme](https://github.com/pydata/pydata-"
 "sphinx-theme/) and [furo](https://github.com/pradyunsg/furo)"
 msgstr ""
+"有许多优秀的 HTML 主题与 MyST 兼容良好，例如"
+"[sphinx-book-theme](https://github.com/executablebooks/sphinx-book-theme)"
+"（本页面使用的主题）、[pydata-sphinx-theme](https://github.com/pydata/pydata-sphinx-theme/)"
+"以及 [furo](https://github.com/pradyunsg/furo)。"
 
 #: ../../../docs/intro.md:108
 msgid "Configuring MyST-Parser"
-msgstr ""
+msgstr "配置 MyST-Parser"
 
 #: ../../../docs/intro.md:110
 msgid ""
 "The <project:configuration.md> section contains a complete list of "
 "configuration options for the MyST-Parser."
 msgstr ""
+"<project:configuration.md> 部分包含了 MyST 解析器的完整配置选项列表。"
 
 #: ../../../docs/intro.md:112
 msgid "These can be applied globally, e.g. in the sphinx `conf.py`:"
-msgstr ""
+msgstr "这些配置可以全局应用，例如在 Sphinx 的 `conf.py` 文件中："
 
 #: ../../../docs/intro.md:118
 msgid ""
 "Or they can be applied to specific documents, at the top of the document,"
 " in frontmatter:"
 msgstr ""
+"或者它们可以应用于特定文档，位于文档顶部的 frontmatter 中："
 
 #: ../../../docs/intro.md:127
 msgid "Extending Sphinx"
-msgstr ""
+msgstr "拓展 Sphinx"
 
 #: ../../../docs/intro.md:129
 msgid ""
 "The other way to extend MyST in Sphinx is to install Sphinx extensions "
 "that define new roles, directives, etc."
 msgstr ""
+"另一种在 Sphinx 中扩展 MyST 的方法是安装 Sphinx 插件，以定义新的角色、指令等。"
 
 #: ../../../docs/intro.md:131
 msgid ""
@@ -193,20 +220,23 @@ msgid ""
 "which will allow us to create beautiful, screen-size responsive web-"
 "components."
 msgstr ""
+"例如，安装 [sphinx-design](https://github.com/executablebooks/sphinx-design) 插件，"
+"这将能够创建美观且适应屏幕尺寸的网页组件。"
 
 #: ../../../docs/intro.md:133
 msgid "First, install `sphinx-design`:"
-msgstr ""
+msgstr "首先，安装 `sphinx-design`:"
 
 #: ../../../docs/intro.md:139
 msgid "Next, add it to your list of extensions in `conf.py`:"
-msgstr ""
+msgstr "接着，将其添加到你的 `conf.py` 文件中的插件列表中："
 
 #: ../../../docs/intro.md:148
 msgid ""
 "Now, we can use the `design` directive to add a web-component to our "
 "Markdown file!"
 msgstr ""
+"现在，可以使用 `design` 指令将网页组件添加到我们的 Markdown 文件中！"
 
 #: ../../../docs/intro.md:169
 msgid "Header"
@@ -245,6 +275,8 @@ msgid ""
 "There are many other great Sphinx extensions that work with MyST, such as"
 " the ones used in this documentation:"
 msgstr ""
+"还有许多其他优秀的 Sphinx 插件与 MyST 兼容，例如"
+"本文档中使用的这些插件："
 
 #: ../../../docs/intro.md:220
 msgid "sphinx-design"
@@ -252,7 +284,7 @@ msgstr ""
 
 #: ../../../docs/intro.md:220
 msgid "Add beautiful, responsive web-components to your documentation"
-msgstr ""
+msgstr "为你的文档添加美观且响应式的网页组件"
 
 #: ../../../docs/intro.md:221
 msgid "sphinx-copybutton"
@@ -260,7 +292,7 @@ msgstr ""
 
 #: ../../../docs/intro.md:221
 msgid "Add a copy button to your code blocks"
-msgstr ""
+msgstr "为你的代码块添加复制按钮"
 
 #: ../../../docs/intro.md:222
 msgid "sphinxext-rediraffe"
@@ -268,7 +300,7 @@ msgstr ""
 
 #: ../../../docs/intro.md:222
 msgid "Add redirects to your documentation"
-msgstr ""
+msgstr "为你的文档添加重定向功能"
 
 #: ../../../docs/intro.md:223
 msgid "sphinxext-opengraph"
@@ -276,7 +308,7 @@ msgstr ""
 
 #: ../../../docs/intro.md:223
 msgid "Add OpenGraph metadata to your documentation"
-msgstr ""
+msgstr "为你的文档添加 OpenGraph 元数据"
 
 #: ../../../docs/intro.md:224
 msgid "sphinx-pyscript"
@@ -287,6 +319,7 @@ msgid ""
 "Execute Python code in your documentation, [see here](https://github.com"
 "/sphinx-extensions2/sphinx-pyscript)"
 msgstr ""
+"在你的文档中执行 Python 代码，[参见此处](https://github.com/sphinx-extensions2/sphinx-pyscript)"
 
 #: ../../../docs/intro.md:225
 msgid "sphinx-tippy"
@@ -297,6 +330,7 @@ msgid ""
 "Add tooltips to your documentation, [see here](https://github.com/sphinx-"
 "extensions2/sphinx-tippy)"
 msgstr ""
+"为你的文档添加工具提示，[参见此处](https://github.com/sphinx-extensions2/sphinx-tippy)"
 
 #: ../../../docs/intro.md:226
 msgid "sphinx-autodoc2"
@@ -307,6 +341,7 @@ msgid ""
 "Generate documentation from docstrings, [see here](https://github.com"
 "/sphinx-extensions2/sphinx-autodoc2)"
 msgstr ""
+"从文档字符串生成文档，[参见此处](https://github.com/sphinx-extensions2/sphinx-autodoc2)"
 
 #: ../../../docs/intro.md:227
 msgid "sphinx-togglebutton"
@@ -314,7 +349,7 @@ msgstr ""
 
 #: ../../../docs/intro.md:227
 msgid "Add collapsible content to your documentation"
-msgstr ""
+msgstr "为你的文档添加可折叠内容"
 
 #: ../../../docs/intro.md:228
 msgid "sphinxcontrib.mermaid"
@@ -322,11 +357,11 @@ msgstr ""
 
 #: ../../../docs/intro.md:228
 msgid "Generate [Mermaid diagrams](https://mermaid-js.github.io/mermaid/#/)"
-msgstr ""
+msgstr "生成 [Mermaid 图表](https://mermaid-js.github.io/mermaid/#/)"
 
 #: ../../../docs/intro.md:232
 msgid ""
 "[sphinx-extensions](https://sphinx-extensions.readthedocs.io/en/latest/),"
 " for a curated and opinionated list of Sphinx extensions."
 msgstr ""
-
+"[sphinx-extensions](https://sphinx-extensions.readthedocs.io/en/latest/) 是精选且具有明确导向的 Sphinx 插件列表。"

@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.rst:2
+msgid ":py:mod:`myst_parser.mdit_to_docutils`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/__init__.py:2
+msgid "Conversion of Markdown-it tokens to docutils AST."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/__init__.py:4
+msgid ""
+"These renderers take the markdown-it parsed token stream and convert it "
+"to the docutils AST. The sphinx renderer is a subclass of the docutils "
+"one, with some additional methods only available *via* sphinx e.g. multi-"
+"document cross-referencing."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.rst:10
+msgid "Submodules"
+msgstr ""
+

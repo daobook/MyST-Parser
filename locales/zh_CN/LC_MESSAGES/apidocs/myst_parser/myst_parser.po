@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.rst:2
+msgid ":py:mod:`myst_parser`"
+msgstr ""
+
+#: ../../../myst_parser/__init__.py:1
+msgid ""
+"An extended [CommonMark](https://spec.commonmark.org/) compliant parser, "
+"with bridges to [docutils](https://docutils.sourceforge.io/) and "
+"[Sphinx](https://github.com/sphinx-doc/sphinx)."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.rst:11
+msgid "Subpackages"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.rst:23
+msgid "Submodules"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.rst:37
+msgid "Package Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.rst:40
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.rst:46
+msgid ":py:obj:`setup <myst_parser.setup>`"
+msgstr ""
+
+#: ../../../myst_parser/__init__.py:1
+msgid "Initialize the [Sphinx](https://github.com/sphinx-doc/sphinx) extension."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.rst:52
+msgid "API"
+msgstr ""
+

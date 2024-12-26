@@ -1,0 +1,170 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.warnings_.rst:2
+msgid ":py:mod:`myst_parser.warnings_`"
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:2
+msgid "Central handling of warnings for the myst extension."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.warnings_.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.warnings_.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.warnings_.rst:19
+msgid ":py:obj:`MystWarnings <myst_parser.warnings_.MystWarnings>`"
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:13
+msgid "MyST warning types."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.warnings_.rst:24
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.warnings_.rst:30
+msgid ":py:obj:`create_warning <myst_parser.warnings_.create_warning>`"
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:96
+msgid "Generate a warning, logging if it is necessary."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.warnings_.rst:35
+msgid "API"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.warnings_.rst:40
+msgid "Bases: :py:obj:`enum.Enum`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.warnings_.rst:45
+msgid "Initialization"
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:16
+msgid "Deprecated usage."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:18
+msgid "Functionality that is not yet supported in docutils."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:21
+msgid "The render method is not implemented."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:24
+msgid "Issue reading front-matter."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:26
+msgid "Duplicate Markdown reference definition."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:28
+msgid "Non-consecutive heading levels."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:31
+msgid "Issue parsing directive."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:33
+msgid "Issue parsing directive options."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:35
+msgid ""
+"Directive options has # comments, which may not be supported in future "
+"versions."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:37
+msgid "Issue parsing directive body."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:39
+msgid "Unknown directive."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:41
+msgid "Unknown role."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:45
+msgid "Multiple targets were found for a cross-reference."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:47
+msgid "A target was not found for a cross-reference."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:49
+msgid "Failure to retrieve or load an inventory."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:51
+msgid "A target was not found for an inventory reference."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:53
+msgid "Multiple targets were found for an inventory reference."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:55
+msgid "A legacy domain found, which does not support `resolve_any_xref`."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:59
+msgid "An error occurred computing a heading slug."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:61
+msgid "Strikethrough warning, since only implemented in HTML."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:63
+msgid "HTML could not be parsed."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:65
+msgid "Invalid attribute value."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:67
+msgid "Substitution could not be resolved."
+msgstr ""
+
+#: ../../../myst_parser/warnings_.py:98
+msgid ""
+"If the warning type is listed in the ``suppress_warnings`` configuration,"
+" then ``None`` will be returned and no warning logged."
+msgstr ""
+

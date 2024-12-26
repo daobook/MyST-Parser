@@ -1,0 +1,1478 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../syntax/optional.md:21
+msgid "Syntax Extensions"
+msgstr "语法插件"
+
+#: ../../syntax/optional.md:23
+msgid ""
+"MyST-Parser is highly configurable, utilising the inherent "
+"\"plugability\" of the [markdown-it-py](inv:markdown_it#index) parser. "
+"The following syntaxes are optional (disabled by default) and can be "
+"enabled *via* the {{ confpy }} (see also [](sphinx/config-options)). "
+"Their goal is generally to add more *Markdown friendly* syntaxes; often "
+"enabling and rendering [markdown-it-py "
+"plugins](inv:markdown_it#md/plugins) that extend the [CommonMark "
+"specification](https://commonmark.org/)."
+msgstr ""
+"MyST-Parser 高度可配置，利用了 [markdown-it-py](inv:markdown_it#index) 解析器固有的 \"plugability\"。"
+"以下语法是可选的（默认禁用），可以通过 {{ confpy }} 启用（另请参见 [](sphinx/config-options)）。"
+"它们的目标通常是添加更多 *对 Markdown 友好* 的语法；通常启用并渲染扩展了 [CommonMark 规范](https://commonmark.org/) 的 [markdown-it-py 插件](inv:markdown_it#md/plugins)。"
+
+#: ../../syntax/optional.md:27
+msgid "To enable all the syntaxes explained below:"
+msgstr "要启用以下解释的所有语法："
+
+#: ../../syntax/optional.md:49
+msgid ""
+"`myst_enable_extensions` replaces previous configuration options: "
+"`admonition_enable`, `figure_enable`, `dmath_enable`, `amsmath_enable`, "
+"`deflist_enable`, `html_img_enable`"
+msgstr ""
+"`myst_enable_extensions` 替换了之前的配置选项：`admonition_enable`、`figure_enable`、`dmath_enable`、`amsmath_enable`、`deflist_enable`、`html_img_enable`"
+
+#: ../../syntax/optional.md:57
+msgid "Typography"
+msgstr "排版"
+
+#: ../../syntax/optional.md:59
+msgid ""
+"Adding `\"smartquotes\"` to `myst_enable_extensions` (in the {{ confpy "
+"}}) will automatically convert standard quotations to their "
+"opening/closing variants:"
+msgstr ""
+"将 `\"smartquotes\"` 添加到 `myst_enable_extensions` 中（在 {{ confpy }} 中），将自动将标准引号转换为其开/闭变体："
+
+#: ../../syntax/optional.md:61
+msgid "`'single quotes'`: 'single quotes'"
+msgstr "`'单引号'`: '单引号'"
+
+#: ../../syntax/optional.md:62
+msgid "`\"double quotes\"`: \"double quotes\""
+msgstr "`\"双引号\"`: \"双引号\""
+
+#: ../../syntax/optional.md:64
+msgid ""
+"Adding `\"replacements\"` to `myst_enable_extensions` (in the {{ confpy "
+"}}) will automatically convert some common typographic texts:"
+msgstr ""
+"将 `\"replacements\"` 添加到 `myst_enable_extensions` 中（在 {{ confpy }} 中），将自动转换一些常见的排版文本："
+
+#: ../../syntax/optional.md:48
+msgid "text"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "converted"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``(c)``, ``(C)``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "(c)"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``(tm)``, ``(TM)``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "(tm)"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``(r)``, ``(R)``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "(r)"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``(p)``, ``(P)``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "(p)"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``+-``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "+-"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``...``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "..."
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``?....``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "?...."
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``!....``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "!...."
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``????????``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "????????"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``!!!!!``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "!!!!!"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``,,,``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid ",,,"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``--``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "--"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "``---``"
+msgstr ""
+
+#: ../../syntax/optional.md:48
+msgid "---"
+msgstr ""
+
+#: ../../syntax/optional.md:84
+msgid "Strikethrough"
+msgstr "删除线"
+
+#: ../../syntax/optional.md:89
+msgid ""
+"The `strikethrough` extension allows text within `~~` delimiters to have "
+"a strikethrough (horizontal line) placed over it. For example, "
+"`~~strikethrough with *emphasis*~~` renders as: ~~strikethrough with "
+"*emphasis*~~."
+msgstr ""
+"`strikethrough` 扩展允许在 `~~` 分隔符内的文本上添加删除线（水平线）。例如，`~~删除线包含*强调*~~` 渲染为：~~删除线包含*强调*~~。"
+
+#: ../../syntax/optional.md:93
+msgid ""
+"This extension is currently only supported for HTML output, and you will "
+"need to suppress the `myst.strikethrough` warning (see [](myst-warnings))"
+msgstr ""
+"此插件目前仅支持 HTML 输出，您需要抑制 `myst.strikethrough` 警告（参见 [](myst-warnings)）。"
+
+#: ../../syntax/optional.md:99
+msgid "Math shortcuts"
+msgstr "数学快捷方式"
+
+#: ../../syntax/optional.md:101
+msgid ""
+"Math is parsed by adding to the `myst_enable_extensions` list option, in "
+"the {{ confpy }} one or both of:"
+msgstr ""
+"通过在 {{ confpy }} 中的 `myst_enable_extensions` 列表选项中添加以下一项或两项来解析数学公式："
+
+#: ../../syntax/optional.md:103
+msgid "`\"dollarmath\"` for parsing of dollar `$` and `$$` encapsulated math."
+msgstr "`\"dollarmath\"` 用于解析由美元符号 `$` 和 `$$` 包裹的数学公式。"
+
+#: ../../syntax/optional.md:104
+msgid ""
+"`\"amsmath\"` for direct parsing of [amsmath LaTeX "
+"environments](https://ctan.org/pkg/amsmath)."
+msgstr ""
+"`\"amsmath\"` 用于直接解析 [amsmath LaTeX 环境](https://ctan.org/pkg/amsmath)。"
+
+#: ../../syntax/optional.md:106
+msgid ""
+"These options enable their respective Markdown parser plugins, as "
+"detailed in the [markdown-it plugin guide](inv:markdown_it#md/plugins)."
+msgstr ""
+"这些选项启用了它们各自的 Markdown 解析器插件，详见 [markdown-it 插件指南](inv:markdown_it#md/plugins)。"
+
+#: ../../syntax/optional.md:109
+msgid ""
+"`myst_dmath_enable=True` and `myst_amsmath_enable=True` are deprecated, "
+"and replaced by `myst_enable_extensions = [\"dollarmath\", \"amsmath\"]`"
+msgstr ""
+"`myst_dmath_enable=True` 和 `myst_amsmath_enable=True` 已被弃用，并替换为 `myst_enable_extensions = [\"dollarmath\", \"amsmath\"]`"
+
+#: ../../syntax/optional.md:113
+msgid "Dollar delimited math"
+msgstr "美元符号分隔的数学公式"
+
+#: ../../syntax/optional.md:115
+msgid "Enabling `dollarmath` will parse the following syntax:"
+msgstr "启用 `dollarmath` 将解析以下语法："
+
+#: ../../syntax/optional.md:117
+msgid "Inline math: `$...$`"
+msgstr "行内数学公式：`$...$`"
+
+#: ../../syntax/optional.md:118
+msgid "Display (block) math: `$$...$$`"
+msgstr "显示（块级）数学公式：`$$...$$`"
+
+#: ../../syntax/optional.md:120
+msgid "Additionally if `myst_dmath_allow_labels=True` is set (the default):"
+msgstr "此外，如果设置了 `myst_dmath_allow_labels=True` （默认值）："
+
+#: ../../syntax/optional.md:122
+msgid "Display (block) math with equation label: `$$...$$ (1)`"
+msgstr "带方程标签的显示（块级）数学公式： `$$...$$ (1)`"
+
+#: ../../syntax/optional.md:124
+msgid ""
+"For example, `$x_{hey}=it+is^{math}$` renders as $x_{hey}=it+is^{math}$. "
+"This is equivalent to writing:"
+msgstr ""
+"例如，`$x_{hey}=it+is^{math}$` 渲染为 $x_{hey}=it+is^{math}$。这等同于书写："
+
+#: ../../syntax/optional.md:131
+msgid "Escaping Dollars"
+msgstr "转义美元符号"
+
+#: ../../syntax/optional.md:134
+msgid ""
+"Math can be escaped (negated) by adding a `\\` before the first symbol, "
+"e.g. `\\$a$` renders as \\$a\\$. Escaping can also be used inside math, "
+"e.g. `$a=\\$3$` renders as $a=\\$3$."
+msgstr ""
+"可以通过在第一个符号前添加 `\\` 来转义（取消）数学公式，例如 `\\$a$` 渲染为 \\$a\\$。"
+"转义也可以在数学公式内部使用，例如 `$a=\\$3$` 渲染为 $a=\\$3$。"
+
+#: ../../syntax/optional.md:137
+msgid ""
+"Conversely `\\\\` will negate the escaping, so `\\\\$a$` renders as "
+"\\\\$a$."
+msgstr ""
+"相反，`\\\\` 将取消转义，因此 `\\\\$a$` 渲染为 \\\\$a$。"
+
+#: ../../syntax/optional.md:140
+msgid ""
+"Block-level math can be specified with `$$` signs that wrap the math "
+"block you'd like to parse. For example:"
+msgstr ""
+"块级数学公式可以用 `$$` 符号包裹需要解析的数学块来指定。例如："
+
+#: ../../syntax/optional.md:159
+msgid ""
+"\n"
+"    y    & = ax^2 + bx + c \\\\\n"
+"    f(x) & = x^2 + 2xy + y^2\n"
+msgstr ""
+
+#: ../../syntax/optional.md:152
+msgid "This is equivalent to the following directive:"
+msgstr "这等同于以下指令："
+
+#: ../../syntax/optional.md:170
+msgid ""
+"    y    & = ax^2 + bx + c \\\\\n"
+"    f(x) & = x^2 + 2xy + y^2"
+msgstr ""
+
+#: ../../syntax/optional.md:163
+msgid "You can also add labels to block equations:"
+msgstr "您还可以为块级方程添加标签："
+
+#: ../../syntax/optional.md:182
+msgid ""
+"\n"
+"e = mc^2\n"
+msgstr ""
+
+#: ../../syntax/optional.md:186
+msgid "This is the best equation {eq}`eqn:best`"
+msgstr ""
+
+#: ../../syntax/optional.md:175
+msgid "There are a few other options available to control dollar math parsing:"
+msgstr ""
+
+#: ../../syntax/optional.md:177
+msgid ""
+"`myst_dmath_allow_space=False`, will cause inline math to only be parsed "
+"if there are no initial / final spaces, e.g. `$a$` but not `$ a$` or `$a "
+"$`."
+msgstr ""
+
+#: ../../syntax/optional.md:179
+msgid ""
+"`myst_dmath_allow_digits=False`, will cause inline math to only be parsed"
+" if there are no initial / final digits, e.g. `$a$` but not `1$a$` or "
+"`$a$2`."
+msgstr ""
+
+#: ../../syntax/optional.md:181
+msgid ""
+"These options can both be useful if you also wish to use `$` as a unit of"
+" currency."
+msgstr ""
+
+#: ../../syntax/optional.md:184
+msgid "`myst_dmath_double_inline` option"
+msgstr ""
+
+#: ../../syntax/optional.md:187
+msgid ""
+"To allow display math (i.e. `$$`) within an inline context, set "
+"`myst_dmath_double_inline = True` (`False` by default). This allows for "
+"example:"
+msgstr ""
+
+#: ../../syntax/optional.md:207
+msgid ""
+"Hence, for $\\alpha \\in (0, 1)$, $$   \\mathbb P (\\alpha \\bar{X} \\ge "
+"\\mu) \\le \\alpha; $$ i.e., $[\\alpha \\bar{X}, \\infty)$ is a lower "
+"1-sided $1-\\alpha$ confidence bound for $\\mu$."
+msgstr ""
+
+#: ../../syntax/optional.md:207
+msgid ""
+"\n"
+"  \\mathbb P (\\alpha \\bar{X} \\ge \\mu) \\le \\alpha;\n"
+msgstr ""
+
+#: ../../syntax/optional.md:200
+msgid "Math in other block elements"
+msgstr ""
+
+#: ../../syntax/optional.md:202
+msgid ""
+"Math will also work when nested in other block elements, like lists or "
+"quotes:"
+msgstr ""
+
+#: ../../syntax/optional.md:220 ../../syntax/optional.md:270
+msgid "A list"
+msgstr ""
+
+#: ../../syntax/optional.md:221 ../../syntax/optional.md:223
+msgid " a = 1 "
+msgstr ""
+
+#: ../../syntax/optional.md:223
+msgid "A block quote $$ a = 1 $$"
+msgstr ""
+
+#: ../../syntax/optional.md:215
+msgid "Direct LaTeX Math"
+msgstr ""
+
+#: ../../syntax/optional.md:217
+msgid ""
+"By adding `\"amsmath\"` to `myst_enable_extensions` (in the {{ confpy "
+"}}), you can enable direct parsing of "
+"[amsmath](https://ctan.org/pkg/amsmath) LaTeX equations. These top-level "
+"math environments will then be directly parsed:"
+msgstr ""
+
+#: ../../syntax/optional.md:221
+msgid ""
+"equation, multiline, gather, align, alignat, flalign, matrix, pmatrix, "
+"bmatrix, Bmatrix, vmatrix, Vmatrix, eqnarray."
+msgstr ""
+
+#: ../../syntax/optional.md:223
+msgid "As expected, environments ending in `*` will not be numbered, for example:"
+msgstr ""
+
+#: ../../syntax/optional.md:249
+msgid ""
+"\\begin{gather*}\n"
+"a_1=b_1+c_1\\\\\n"
+"a_2=b_2+c_2-d_2+e_2\n"
+"\\end{gather*}"
+msgstr ""
+
+#: ../../syntax/optional.md:254
+msgid ""
+"\\begin{align}\n"
+"a_{11}& =b_{11}&\n"
+"  a_{12}& =b_{12}\\\\\n"
+"a_{21}& =b_{21}&\n"
+"  a_{22}& =b_{22}+c_{22}\n"
+"\\end{align}"
+msgstr ""
+
+#: ../../syntax/optional.md:243
+msgid ""
+"`\\labels` inside the environment are not currently identified, and so "
+"cannot be referenced. We hope to implement this in a future update (see "
+"[executablebooks/MyST-Parser#202](https://github.com/executablebooks"
+"/MyST-Parser/issues/202))!"
+msgstr ""
+
+#: ../../syntax/optional.md:247
+msgid ""
+"This syntax will also work when nested in other block elements, like "
+"lists or quotes:"
+msgstr ""
+
+#: ../../syntax/optional.md:271
+msgid ""
+"\\begin{gather*}\n"
+"a_1=b_1+c_1\\\\a_2=b_2+c_2-d_2+e_2\n"
+"\\end{gather*}"
+msgstr ""
+
+#: ../../syntax/optional.md:275
+msgid "A block quote"
+msgstr ""
+
+#: ../../syntax/optional.md:276
+msgid ""
+"\\begin{gather*}\n"
+"  a_1=b_1+c_1\\\\a_2=b_2+c_2-d_2+e_2\n"
+"  \\end{gather*}"
+msgstr ""
+
+#: ../../syntax/optional.md:264
+msgid "Mathjax and math parsing"
+msgstr ""
+
+#: ../../syntax/optional.md:266
+msgid ""
+"When building HTML using the <inv:sphinx#sphinx.ext.mathjax> extension "
+"(enabled by default), If `dollarmath` is enabled, Myst-Parser injects the"
+" `tex2jax_ignore` (MathJax v2) and  `mathjax_ignore` (MathJax v3) classes"
+" in to the top-level section of each MyST document, and adds the "
+"following default MathJax configuration:"
+msgstr ""
+
+#: ../../syntax/optional.md:269
+msgid ""
+"MathJax version 2 (see [the tex2jax "
+"preprocessor](https://docs.mathjax.org/en/v2.7-latest/options/preprocessors/tex2jax.html"
+"#configure-tex2jax):"
+msgstr ""
+
+#: ../../syntax/optional.md:275
+msgid ""
+"MathJax version 3 (see [the document "
+"options](https://docs.mathjax.org/en/latest/options/document.html?highlight=ignoreHtmlClass"
+"#the-configuration-block)):"
+msgstr ""
+
+#: ../../syntax/optional.md:281
+msgid ""
+"This ensures that MathJax processes only math, identified by the "
+"`dollarmath` and `amsmath` extensions, or specified in `math` directives."
+msgstr ""
+
+#: ../../syntax/optional.md:283
+msgid ""
+"To change this behaviour, set a custom regex, for identifying HTML "
+"classes to process, like `myst_mathjax_classes=\"math|myclass\"`, or set "
+"`myst_update_mathjax=False` to inhibit this override and process all HTML"
+" elements."
+msgstr ""
+
+#: ../../syntax/optional.md:286
+msgid "Linkify"
+msgstr ""
+
+#: ../../syntax/optional.md:288
+msgid ""
+"Adding `\"linkify\"` to `myst_enable_extensions` (in the {{ confpy }}) "
+"will automatically identify \"bare\" web URLs and add hyperlinks:"
+msgstr ""
+
+#: ../../syntax/optional.md:290
+msgid "`www.example.com` -> www.example.com"
+msgstr ""
+
+#: ../../syntax/optional.md:292
+msgid ""
+"To only match URLs that start with schema, such as `http://example.com`, "
+"set `myst_linkify_fuzzy_links=False`."
+msgstr ""
+
+#: ../../syntax/optional.md:295
+msgid ""
+"This extension requires that [linkify-it-py](https://github.com/tsutsu3"
+"/linkify-it-py) is installed. Either directly; `pip install linkify-it-"
+"py` or *via* `pip install myst-parser[linkify]`."
+msgstr ""
+
+#: ../../syntax/optional.md:301
+msgid "Substitutions (with Jinja2)"
+msgstr ""
+
+#: ../../syntax/optional.md:303
+msgid ""
+"Adding `\"substitution\"` to `myst_enable_extensions` (in the {{ confpy "
+"}}) will allow you to add substitutions, added in either the `conf.py` "
+"using `myst_substitutions`:"
+msgstr ""
+
+#: ../../syntax/optional.md:311
+msgid ""
+"or at the top of the file, in the front-matter section (see [this "
+"section](syntax/frontmatter)):"
+msgstr ""
+
+#: ../../syntax/optional.md:332
+msgid "Keys in the front-matter will override ones in the `conf.py`."
+msgstr ""
+
+#: ../../syntax/optional.md:335
+msgid ""
+"You can use these substitutions inline or as blocks, and you can even "
+"nest substitutions in other substitutions (but circular references are "
+"prohibited):"
+msgstr ""
+
+#: ../../syntax/optional.md:359
+msgid "Inline: {{ key1 }}"
+msgstr ""
+
+#: ../../syntax/optional.md:361
+msgid "Block level:"
+msgstr ""
+
+#: ../../syntax/optional.md:366 ../../syntax/optional.md:370
+msgid "I'm a **substitution**"
+msgstr ""
+
+#: ../../syntax/optional.md:368 ../../syntax/optional.md:602
+#: ../../syntax/optional.md:826 ../../syntax/optional.md:840
+#: ../../syntax/optional.md:857 ../../syntax/optional.md:899
+#: ../../syntax/optional.md:907
+msgid "fishy"
+msgstr ""
+
+#: ../../syntax/optional.md:354
+msgid ""
+"Substitutions will only be assessed where you would normally use "
+"Markdown, e.g. not in code blocks:"
+msgstr ""
+
+#: ../../syntax/optional.md:363
+msgid ""
+"One should also be wary of using unsuitable directives for inline "
+"substitutions. This may lead to unexpected outcomes."
+msgstr ""
+
+#: ../../syntax/optional.md:368
+msgid ""
+"Substitution references are assessed as [Jinja2 "
+"expressions](http://jinja.palletsprojects.com) which can use "
+"[filters](https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-"
+"builtin-filters), and also contains the [Sphinx "
+"Environment](inv:sphinx#extdev/envapi) in the context (as `env`). "
+"Therefore you can do things like:"
+msgstr ""
+
+#: ../../syntax/optional.md:385
+msgid "version: {{ env.config.version }}"
+msgstr ""
+
+#: ../../syntax/optional.md:386
+msgid "docname: {{ env.docname | upper }}"
+msgstr ""
+
+#: ../../syntax/optional.md:388
+msgid "ab"
+msgstr ""
+
+#: ../../syntax/optional.md:377
+msgid ""
+"You can also change the delimiter if necessary, for example setting in "
+"the `conf.py`:"
+msgstr ""
+
+#: ../../syntax/optional.md:383
+msgid ""
+"Will parse: `|| \"a\" + \"b\" ||`. This should be changed with care "
+"though, so as not to affect other syntaxes."
+msgstr ""
+
+#: ../../syntax/optional.md:386
+msgid "The exact logic for handling substitutions is:"
+msgstr ""
+
+#: ../../syntax/optional.md:388
+msgid ""
+"Combine global substitutions (specified in `conf.py`) with front-matter "
+"substitutions, to create a variable context (front-matter takes priority)"
+msgstr ""
+
+#: ../../syntax/optional.md:389
+msgid "Add the sphinx `env` to the variable context"
+msgstr ""
+
+#: ../../syntax/optional.md:390
+msgid ""
+"Create the string content to render using Jinja2 (passing it the variable"
+" context)"
+msgstr ""
+
+#: ../../syntax/optional.md:391
+msgid ""
+"If the substitution is inline and not a directive, render ignoring block "
+"syntaxes (like lists or block-quotes), otherwise render with all syntax "
+"rules."
+msgstr ""
+
+#: ../../syntax/optional.md:393
+msgid "Substitutions and URLs"
+msgstr ""
+
+#: ../../syntax/optional.md:395
+msgid ""
+"Substitutions cannot be directly used in URLs, such as `[a "
+"link](https://{{key4}}.com)` or `<https://{{key4}}.com>`. However, since "
+"Jinja2 substitutions allow for Python methods to be used, you can use "
+"string formatting or replacements:"
+msgstr ""
+
+#: ../../syntax/optional.md:413
+msgid "[a link](https://example.com)"
+msgstr ""
+
+#: ../../syntax/optional.md:415
+msgid "<https://myst-parser.readthedocs.io/en/latest/syntax/optional.html>"
+msgstr ""
+
+#: ../../syntax/optional.md:407
+msgid "Code fences using colons"
+msgstr ""
+
+#: ../../syntax/optional.md:409
+msgid ""
+"By adding `\"colon_fence\"` to `myst_enable_extensions` (in the {{ confpy"
+" }}), you can also use `:::` delimiters to denote directives, instead of "
+"```` ``` ````."
+msgstr ""
+
+#: ../../syntax/optional.md:412
+msgid ""
+"Using colons instead of back-ticks has the benefit of allowing the "
+"content to be rendered correctly, when you are working in any standard "
+"Markdown editor. It is ideal for admonition type directives (as "
+"documented in [Directives](syntax/directives)) or tables with titles, for"
+" example:"
+msgstr ""
+
+#: ../../syntax/optional.md:440 ../../syntax/optional.md:454
+#: ../../syntax/optional.md:466
+msgid "This text is **standard** _Markdown_"
+msgstr ""
+
+#: ../../syntax/optional.md:443
+msgid "This is a **standard** _Markdown_ title"
+msgstr ""
+
+#: ../../syntax/optional.md:432
+msgid "Similar to normal directives, these directives can also be nested:"
+msgstr ""
+
+#: ../../syntax/optional.md:444
+msgid "and also parameter options can be used:"
+msgstr ""
+
+#: ../../syntax/optional.md:463
+msgid "This *is* also **Markdown**"
+msgstr ""
+
+#: ../../syntax/optional.md:458
+msgid "Admonition directives"
+msgstr ""
+
+#: ../../syntax/optional.md:461
+msgid ""
+"`myst_admonition_enable` is deprecated and replaced by "
+"`myst_enable_extensions = [\"colon_fence\"]` (see above). Also, classes "
+"should now be set with the `:class: myclass` option."
+msgstr ""
+
+#: ../../syntax/optional.md:464
+msgid "Also see [](syntax/html-admonition)."
+msgstr ""
+
+#: ../../syntax/optional.md:469
+msgid "Auto-generated header anchors"
+msgstr ""
+
+#: ../../syntax/optional.md:471
+msgid ""
+"The MyST Parser can automatically generate label \"slugs\" for header "
+"anchors so that you can reference them from markdown links. For example, "
+"you can use header bookmark links, locally; `[](#header-anchor)`, or "
+"cross-file `[](path/to/file.md#header-anchor)`. To achieve this, use the "
+"`myst_heading_anchors = DEPTH` configuration option, where `DEPTH` is the"
+" depth of header levels for which you wish to generate links."
+msgstr ""
+
+#: ../../syntax/optional.md:475
+msgid ""
+"For example, the following configuration in `conf.py` tells the "
+"`myst_parser` to generate labels for heading anchors for `h1`, `h2`, and "
+"`h3` level headings (corresponding to `#`, `##`, and `###` in markdown)."
+msgstr ""
+
+#: ../../syntax/optional.md:481
+msgid ""
+"You can then insert markdown links directly to anchors that are generated"
+" from your header titles in your documentation:"
+msgstr ""
+
+#: ../../syntax/optional.md:494
+msgid "[](#auto-generated-header-anchors)"
+msgstr ""
+
+#: ../../syntax/optional.md:487
+msgid "The paths to other files should be relative to the current file:"
+msgstr ""
+
+#: ../../syntax/optional.md:500
+msgid "[**link text**](./typography.md#headings)"
+msgstr ""
+
+#: ../../syntax/optional.md:493
+msgid "Anchor slug structure"
+msgstr ""
+
+#: ../../syntax/optional.md:495
+msgid ""
+"The anchor \"slugs\" created aim to follow the [GitHub "
+"implementation](https://github.com/Flet/github-slugger):"
+msgstr ""
+
+#: ../../syntax/optional.md:497
+msgid "lower-case text"
+msgstr ""
+
+#: ../../syntax/optional.md:498
+msgid "remove punctuation"
+msgstr ""
+
+#: ../../syntax/optional.md:499
+msgid "replace spaces with `-`"
+msgstr ""
+
+#: ../../syntax/optional.md:500
+msgid "enforce uniqueness *via* suffix enumeration `-1`"
+msgstr ""
+
+#: ../../syntax/optional.md:502
+msgid ""
+"To change the slug generation function, set `myst_heading_slug_func` in "
+"your `conf.py` to a function that accepts a string and returns a string."
+msgstr ""
+
+#: ../../syntax/optional.md:505
+msgid ""
+"`myst_heading_slug_func` can now also be set to a string, which will be "
+"interpreted as an import path to a function, e.g. `myst_heading_slug_func"
+" = \"mypackage.mymodule.slugify\"`."
+msgstr ""
+
+#: ../../syntax/optional.md:510
+msgid "Inspect the links that will be created"
+msgstr ""
+
+#: ../../syntax/optional.md:512
+msgid ""
+"You can inspect the links that will be created using the command-line "
+"tool:"
+msgstr ""
+
+#: ../../syntax/optional.md:527
+msgid "Definition Lists"
+msgstr ""
+
+#: ../../syntax/optional.md:529
+msgid ""
+"By adding `\"deflist\"` to `myst_enable_extensions` (in the {{ confpy "
+"}}), you will be able to utilise definition lists. Definition lists "
+"utilise the [markdown-it-py deflist plugin](inv:markdown_it#md/plugins), "
+"which itself is based on the [Pandoc definition list "
+"specification](http://johnmacfarlane.net/pandoc/README.html#definition-"
+"lists)."
+msgstr ""
+
+#: ../../syntax/optional.md:533
+msgid ""
+"This syntax can be useful, for example, as an alternative to nested "
+"bullet-lists:"
+msgstr ""
+
+#: ../../syntax/optional.md:549 ../../syntax/optional.md:559
+msgid "Term 1"
+msgstr ""
+
+#: ../../syntax/optional.md:550 ../../syntax/optional.md:552
+#: ../../syntax/optional.md:560 ../../syntax/optional.md:563
+msgid "Definition"
+msgstr ""
+
+#: ../../syntax/optional.md:551 ../../syntax/optional.md:562
+#: ../../syntax/optional.md:593
+msgid "Term 2"
+msgstr ""
+
+#: ../../syntax/optional.md:542
+msgid "Using instead:"
+msgstr ""
+
+#: ../../syntax/optional.md:552
+msgid "From the Pandoc documentation:"
+msgstr ""
+
+#: ../../syntax/optional.md:554
+msgid ""
+"Each term must fit on one line, which may optionally be followed by a "
+"blank line, and must be followed by one or more definitions. A definition"
+" begins with a colon or tilde, which may be indented one or two spaces."
+msgstr ""
+
+#: ../../syntax/optional.md:557
+msgid ""
+"A term may have multiple definitions, and each definition may consist of "
+"one or more block elements (paragraph, code block, list, etc.)"
+msgstr ""
+
+#: ../../syntax/optional.md:559
+msgid "Here is a more complex example, demonstrating some of these features:"
+msgstr ""
+
+#: ../../syntax/optional.md:587
+msgid "Term *with Markdown*"
+msgstr ""
+
+#: ../../syntax/optional.md:588
+msgid "Definition [with reference](syntax/definition-lists)"
+msgstr ""
+
+#: ../../syntax/optional.md:590
+msgid "A second paragraph"
+msgstr ""
+
+#: ../../syntax/optional.md:591
+msgid "A second definition"
+msgstr ""
+
+#: ../../syntax/optional.md:594
+msgid "Definition 2a"
+msgstr ""
+
+#: ../../syntax/optional.md:595
+msgid "Definition 2b"
+msgstr ""
+
+#: ../../syntax/optional.md:597
+msgid "Term 3"
+msgstr ""
+
+#: ../../syntax/optional.md:599
+msgid "A quote"
+msgstr ""
+
+#: ../../syntax/optional.md:600
+msgid "A final definition, that can even include images:"
+msgstr ""
+
+#: ../../syntax/optional.md:581
+msgid "Task Lists"
+msgstr ""
+
+#: ../../syntax/optional.md:583
+msgid ""
+"By adding `\"tasklist\"` to `myst_enable_extensions` (in the {{ confpy "
+"}}), you will be able to utilise task lists. Task lists utilise the "
+"[markdown-it-py tasklists plugin](inv:markdown_it#md/plugins), and are "
+"applied to markdown list items starting with `[ ]` or `[x]`:"
+msgstr ""
+
+#: ../../syntax/optional.md:600
+msgid "An item that needs doing"
+msgstr ""
+
+#: ../../syntax/optional.md:601
+msgid "An item that is complete"
+msgstr ""
+
+#: ../../syntax/optional.md:594
+msgid "Field Lists"
+msgstr ""
+
+#: ../../syntax/optional.md:599
+msgid ""
+"By adding `\"fieldlist\"` to `myst_enable_extensions` (in the {{ confpy "
+"}}), you will be able to utilise field lists. Field lists are mappings "
+"from field names to field bodies, based on the [reStructureText "
+"syntax](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html"
+"#field-lists)."
+msgstr ""
+
+#: ../../syntax/optional.md:632
+msgid "name only"
+msgstr ""
+
+#: ../../syntax/optional.md:633
+msgid "name"
+msgstr ""
+
+#: ../../syntax/optional.md:633
+msgid "body"
+msgstr ""
+
+#: ../../syntax/optional.md:634
+msgid "Nested syntax"
+msgstr ""
+
+#: ../../syntax/optional.md:634
+msgid "Both name and body may contain **nested syntax**."
+msgstr ""
+
+#: ../../syntax/optional.md:635
+msgid "Paragraphs"
+msgstr ""
+
+#: ../../syntax/optional.md:635
+msgid ""
+"Since the field marker may be quite long, the second and subsequent lines"
+" of a paragraph do not have to line up with the first line."
+msgstr ""
+
+#: ../../syntax/optional.md:638
+msgid "Blocks"
+msgstr ""
+
+#: ../../syntax/optional.md:640
+msgid "As well as paragraphs, any block syntaxes may be used in a field body:"
+msgstr ""
+
+#: ../../syntax/optional.md:642
+msgid "Me"
+msgstr ""
+
+#: ../../syntax/optional.md:643
+msgid "Myself"
+msgstr ""
+
+#: ../../syntax/optional.md:644
+msgid "I"
+msgstr ""
+
+#: ../../syntax/optional.md:625
+msgid ""
+"A prominent use case of field lists is for use in API docstrings, as used"
+" in [Sphinx's docstring renderers](inv:sphinx#usage/domains/python):"
+msgstr ""
+
+#: ../../syntax/optional.md:650
+msgid "Send a message to a recipient"
+msgstr ""
+
+#: ../../syntax/optional.md
+msgid "参数"
+msgstr ""
+
+#: ../../syntax/optional.md:652
+msgid "The person sending the message"
+msgstr ""
+
+#: ../../syntax/optional.md:653
+msgid "The priority of the message, can be a number 1-5"
+msgstr ""
+
+#: ../../syntax/optional.md
+msgid "返回"
+msgstr ""
+
+#: ../../syntax/optional.md:655
+msgid "the message id"
+msgstr ""
+
+#: ../../syntax/optional.md
+msgid "返回类型"
+msgstr ""
+
+#: ../../syntax/optional.md
+msgid "抛出"
+msgstr ""
+
+#: ../../syntax/optional.md:657
+msgid "if the message_body exceeds 160 characters"
+msgstr ""
+
+#: ../../syntax/optional.md:642
+msgid ""
+"Currently `sphinx.ext.autodoc` does not support MyST, see "
+"[](howto/autodoc)."
+msgstr ""
+
+#: ../../syntax/optional.md:646
+msgid "Attributes"
+msgstr ""
+
+#: ../../syntax/optional.md:649
+msgid "This feature is in *beta*, and feedback is welcome."
+msgstr ""
+
+#: ../../syntax/optional.md:651
+msgid ""
+"`attrs_inline` also replace the previous `attrs_image` extension, which "
+"is now deprecated."
+msgstr ""
+
+#: ../../syntax/optional.md:654
+msgid ""
+"Attributes are a way of enriching standard CommonMark syntax, by adding "
+"additional information to elements."
+msgstr ""
+
+#: ../../syntax/optional.md:656
+msgid ""
+"Attributes are specified inside curly braces `{}`, for example `{#my-id "
+".my-class key=\"value\"}`, and come before a block element or after an "
+"inline element."
+msgstr ""
+
+#: ../../syntax/optional.md:660
+msgid "Inside the curly braces, the following syntax is recognised:"
+msgstr ""
+
+#: ../../syntax/optional.md:662
+msgid ""
+"`.foo` specifies `foo` as a class. Multiple classes may be given in this "
+"way; they will be combined."
+msgstr ""
+
+#: ../../syntax/optional.md:664
+msgid ""
+"`#foo` specifies `foo` as an identifier. An element may have only one "
+"identifier; if multiple identifiers are given, the last one is used."
+msgstr ""
+
+#: ../../syntax/optional.md:667
+msgid ""
+"`key=\"value\"` or `key=value` specifies a key-value attribute.   Quotes "
+"are not needed when the value consists entirely of   ASCII alphanumeric "
+"characters or `_` or `:` or `-`.   Backslash escapes may be used inside "
+"quoted values.   **Note** only certain keys are supported, see below."
+msgstr ""
+
+#: ../../syntax/optional.md:672
+msgid ""
+"`%` begins a comment, which ends with the next `%` or the end of the "
+"attribute (`}`)."
+msgstr ""
+
+#: ../../syntax/optional.md:674
+msgid ""
+"Attributes are cumulative, so that if multiple attributes follow each "
+"other, the inner attributes override the outer ones. One exception is "
+"that if multiple classes are given, they are combined. For example:"
+msgstr ""
+
+#: ../../syntax/optional.md:685
+msgid "is equivalent to:"
+msgstr ""
+
+#: ../../syntax/optional.md:695
+msgid ""
+"This is adapted from [djot inline/block "
+"attributes](https://htmlpreview.github.io/?https://github.com/jgm/djot/blob/master/doc/syntax.html"
+"#inline-attributes), and also related to [pandoc bracketed "
+"spans](https://pandoc.org/MANUAL.html#extension-bracketed_spans)."
+msgstr ""
+
+#: ../../syntax/optional.md:700
+msgid "Block attributes"
+msgstr ""
+
+#: ../../syntax/optional.md:702
+msgid ""
+"By adding `\"attrs_block\"` to `myst_enable_extensions` (in the {{ confpy"
+" }}), you can enable parsing of block attributes before certain block "
+"syntaxes."
+msgstr ""
+
+#: ../../syntax/optional.md:705 ../../syntax/optional.md:772
+msgid "For example, the following Markdown:"
+msgstr ""
+
+#: ../../syntax/optional.md:722
+msgid "Here is a paragraph with attributes."
+msgstr ""
+
+#: ../../syntax/optional.md:724
+msgid "{ref}`A reference to my paragraph <mypara>`"
+msgstr ""
+
+#: ../../syntax/optional.md:714
+msgid ""
+"`id` and `class` are supported for most block syntaxes, but only certain "
+"key-value attributes are supported for each syntax."
+msgstr ""
+
+#: ../../syntax/optional.md:718
+msgid ""
+"For **ordered lists**, the `style` key is supported, and can be one of "
+"`decimal`, `lower-alpha`, `upper-alpha`, `lower-roman`, `upper-roman`:"
+msgstr ""
+
+#: ../../syntax/optional.md:746 ../../syntax/optional.md:750
+#: ../../syntax/optional.md:754 ../../syntax/optional.md:758
+msgid "a"
+msgstr ""
+
+#: ../../syntax/optional.md:747 ../../syntax/optional.md:751
+#: ../../syntax/optional.md:755 ../../syntax/optional.md:759
+msgid "b"
+msgstr ""
+
+#: ../../syntax/optional.md:738
+msgid ""
+"For **code fences**, the `lineno-start` and `emphasize-lines` keys are "
+"supported:"
+msgstr ""
+
+#: ../../syntax/optional.md:749
+msgid "For **block quotes**, the `attribution` key is supported:"
+msgstr ""
+
+#: ../../syntax/optional.md:764
+msgid "Hallo"
+msgstr ""
+
+#: ../../syntax/optional.md:764
+msgid "Chris Sewell, [link](https://example.com)"
+msgstr ""
+
+#: ../../syntax/optional.md:756
+msgid ""
+"For *definition lists*, the adding a glossary key turns the definition "
+"list into a glossary (similar to using the [`glossary` "
+"directive](inv:sphinx:rst:directive#glossary) in Sphinx):"
+msgstr ""
+
+#: ../../syntax/optional.md:774
+msgid "term name"
+msgstr ""
+
+#: ../../syntax/optional.md:775
+msgid "Definition of the term"
+msgstr ""
+
+#: ../../syntax/optional.md:777
+msgid "{term}`term name`"
+msgstr ""
+
+#: ../../syntax/optional.md:767
+msgid "Inline attributes"
+msgstr ""
+
+#: ../../syntax/optional.md:769
+msgid ""
+"By adding `\"attrs_inline\"` to `myst_enable_extensions` (in the {{ "
+"confpy }}), you can enable parsing of inline attributes after certain "
+"inline syntaxes."
+msgstr ""
+
+#: ../../syntax/optional.md:799
+msgid ""
+"[A span of text with attributes]{#spanid .bg-warning}, {ref}`a reference "
+"to the span <spanid>`"
+msgstr ""
+
+#: ../../syntax/optional.md:802
+msgid ""
+"`A literal with attributes`{#literalid .bg-warning}, {ref}`a reference to"
+" the literal <literalid>"
+msgstr ""
+
+#: ../../syntax/optional.md:805
+msgid ""
+"An autolink with attributes: <https://example.com>{.bg-warning title=\"a "
+"title\"}"
+msgstr ""
+
+#: ../../syntax/optional.md:807
+msgid ""
+"[A link with attributes](syntax/attributes){#linkid .bg-warning}, {ref}`a"
+" reference to the link <linkid>`"
+msgstr ""
+
+#: ../../syntax/optional.md:810
+msgid ""
+"![An image with attribute](img/fun-fish.png){#imgid .bg-warning w=100px "
+"align=center} {ref}`a reference to the image <imgid>`"
+msgstr ""
+
+#: ../../syntax/optional.md:810
+msgid "An image with attribute"
+msgstr ""
+
+#: ../../syntax/optional.md:792
+msgid ""
+"`id` and `class` are supported for most inline syntaxes, but only certain"
+" key-value attributes are supported for each syntax."
+msgstr ""
+
+#: ../../syntax/optional.md:795
+msgid "For **literals**, the following attributes are supported:"
+msgstr ""
+
+#: ../../syntax/optional.md:797
+msgid ""
+"`language`/`lexer`/`l` defines the syntax lexer, e.g. `` `a = "
+"\"b\"`{l=python} `` is displayed as `a = \"b\"`{l=python}. Note, this is "
+"only supported in `sphinx >= 5`."
+msgstr ""
+
+#: ../../syntax/optional.md:801
+msgid ""
+"For **images**, the following attributes are supported (equivalent to the"
+" `image` directive):"
+msgstr ""
+
+#: ../../syntax/optional.md:803
+msgid "`width`/`w` defines the width of the image (in `%`, `px`, `em`, `cm`, etc)"
+msgstr ""
+
+#: ../../syntax/optional.md:804
+msgid "`height`/`h` defines the height of the image (in `px`, `em`, `cm`, etc)"
+msgstr ""
+
+#: ../../syntax/optional.md:805
+msgid "`align`/`a` defines the scale of the image (`left`, `center`, or `right`)"
+msgstr ""
+
+#: ../../syntax/optional.md:809
+msgid "HTML Images"
+msgstr ""
+
+#: ../../syntax/optional.md:811
+msgid ""
+"MyST provides a few different syntaxes for including images in your "
+"documentation, as explained below."
+msgstr ""
+
+#: ../../syntax/optional.md:813
+msgid "The first is the standard Markdown syntax:"
+msgstr ""
+
+#: ../../syntax/optional.md:826
+msgid "![fishy](img/fun-fish.png)"
+msgstr ""
+
+#: ../../syntax/optional.md:819
+msgid ""
+"This will correctly copy the image to the build folder and will render it"
+" in all output formats (HTML, TeX, etc). However, it is limited in the "
+"configuration that can be applied, for example setting a width."
+msgstr ""
+
+#: ../../syntax/optional.md:822
+msgid ""
+"As discussed [above](syntax/directives), MyST allow for directives to be "
+"used such as `image` and `figure` (see {ref}`the sphinx documentation "
+"<sphinx:rst-primer>`):"
+msgstr ""
+
+#: ../../syntax/optional.md:833
+msgid ""
+"Additional options can now be set, however, in contrast to the Markdown "
+"syntax, this syntax will not show the image in common Markdown viewers "
+"(for example when the files are viewed on GitHub)."
+msgstr ""
+
+#: ../../syntax/optional.md:835
+msgid ""
+"The final option is directly using HTML, which is also parsed by MyST. "
+"This is usually a bad option, because the HTML is treated as raw text "
+"during the build process and so sphinx will not recognise that the image "
+"file is to be copied, and will not output the HTML into non-HTML output "
+"formats."
+msgstr ""
+
+#: ../../syntax/optional.md:838
+msgid "HTML parsing to the rescue!"
+msgstr ""
+
+#: ../../syntax/optional.md:840
+msgid ""
+"By adding `\"html_image\"` to `myst_enable_extensions` (in the {{ confpy "
+"}}), MySt-Parser will attempt to convert any isolated `img` tags (i.e. "
+"not wrapped in any other HTML) to the internal representation used in "
+"sphinx."
+msgstr ""
+
+#: ../../syntax/optional.md:850
+msgid ""
+"Allowed attributes are equivalent to the `image` directive: `src`, `alt`,"
+" `class`, `width`, `height` and `name`. Any other attributes will be "
+"dropped."
+msgstr ""
+
+#: ../../syntax/optional.md:853
+msgid "HTML image can also be used inline!"
+msgstr ""
+
+#: ../../syntax/optional.md:855
+msgid "I'm an inline image: <img src=\"img/fun-fish.png\" height=\"20px\">"
+msgstr ""
+
+#: ../../syntax/optional.md:859
+msgid "Markdown Figures"
+msgstr ""
+
+#: ../../syntax/optional.md:861
+msgid ""
+"By adding `\"colon_fence\"` to `myst_enable_extensions` (in the {{ confpy"
+" }}), we can combine the above two extended syntaxes, to create a fully "
+"Markdown compliant version of the `figure` directive named `figure-md`."
+msgstr ""
+
+#: ../../syntax/optional.md:866
+msgid ""
+"`myst_figure_enable` with the `figure` directive is deprecated and "
+"replaced by `myst_enable_extensions = [\"colon_fence\"]` and `figure-md`."
+msgstr ""
+
+#: ../../syntax/optional.md:869
+msgid ""
+"The figure block must contain **only** two components; an image, in "
+"either Markdown or HTML syntax, and a single paragraph for the caption."
+msgstr ""
+
+#: ../../syntax/optional.md:871
+msgid ""
+"The first line argument is optional and taken as the reference target of "
+"the figure:"
+msgstr ""
+
+#: ../../syntax/optional.md:901 ../../syntax/optional.md:909
+msgid "This is a caption in **Markdown**"
+msgstr ""
+
+#: ../../syntax/optional.md:891
+msgid "As we see here, the target we set can be referenced:"
+msgstr ""
+
+#: ../../syntax/optional.md:904
+msgid "[Go to the fish!](#fig-target)"
+msgstr ""
+
+#: ../../syntax/optional.md:899
+msgid "HTML Admonitions"
+msgstr ""
+
+#: ../../syntax/optional.md:901
+msgid ""
+"By adding `\"html_admonition\"` to `myst_enable_extensions` (in the {{ "
+"confpy }}), you can enable parsing of `<div class=\"admonition\">` HTML "
+"blocks. These blocks will be converted internally to Sphinx admonition "
+"directives, and so will work correctly for all output formats. This is "
+"helpful when you care about viewing the \"source\" Markdown, such as in "
+"Jupyter Notebooks."
+msgstr ""
+
+#: ../../syntax/optional.md:906
+msgid ""
+"If the first element within the `div` is `<div class=\"title\">` or `<p "
+"class=\"title\">`, then this will be set as the admonition title. All "
+"internal text (and the title) will be parsed as MyST-Markdown and all "
+"classes and an optional name will be passed to the admonition:"
+msgstr ""
+
+#: ../../syntax/optional.md:925
+msgid "This is the **title**"
+msgstr ""
+
+#: ../../syntax/optional.md:929
+msgid "This is the *content*"
+msgstr ""
+
+#: ../../syntax/optional.md:918
+msgid ""
+"During the Sphinx render, both the `class` and `name` attributes will be "
+"used by Sphinx, but any other attributes like `style` will be discarded."
+msgstr ""
+
+#: ../../syntax/optional.md:921
+msgid ""
+"There can be no empty lines in the block, otherwise they will be read as "
+"two separate blocks. If you want to use multiple paragraphs then they can"
+" be enclosed in `<p>`:"
+msgstr ""
+
+#: ../../syntax/optional.md:939 ../../syntax/optional.md:955
+msgid "Note"
+msgstr ""
+
+#: ../../syntax/optional.md:943 ../../syntax/optional.md:964
+msgid "Paragraph 1"
+msgstr ""
+
+#: ../../syntax/optional.md:945 ../../syntax/optional.md:966
+msgid "Paragraph 2"
+msgstr ""
+
+#: ../../syntax/optional.md:934
+msgid "You can also nest HTML admonitions:"
+msgstr ""
+
+#: ../../syntax/optional.md:958
+msgid "Some **content**"
+msgstr ""
+
+#: ../../syntax/optional.md:960
+msgid "A *title*"
+msgstr ""
+

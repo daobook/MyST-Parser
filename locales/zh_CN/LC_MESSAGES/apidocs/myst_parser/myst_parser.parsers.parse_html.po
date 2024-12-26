@@ -1,0 +1,358 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:2
+msgid ":py:mod:`myst_parser.parsers.parse_html`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:2
+msgid "A simple but complete HTML to Abstract Syntax Tree (AST) parser."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:4
+msgid "The AST can also reproduce the HTML text."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:6
+msgid "Example::"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:17
+msgid ""
+"Note: optional tags are not accounted for (see "
+"https://html.spec.whatwg.org/multipage/syntax.html#optional-tags)"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:19
+msgid ":py:obj:`Attribute <myst_parser.parsers.parse_html.Attribute>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:33
+msgid "This class holds the tags's attributes."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:22
+msgid ":py:obj:`Element <myst_parser.parsers.parse_html.Element>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:50
+msgid "An Element of the xml/html document."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:25
+msgid ":py:obj:`Root <myst_parser.parsers.parse_html.Root>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:202
+msgid "The root of the AST tree."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:28
+msgid ":py:obj:`Tag <myst_parser.parsers.parse_html.Tag>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:210
+msgid ""
+"Represent xml/html tags under the form: <name key=\"value\" ...> ... "
+"</name>."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:31
+msgid ":py:obj:`XTag <myst_parser.parsers.parse_html.XTag>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:229
+msgid "Represent XHTML style tags with no children, like `<img src=\"t.gif\" />`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:34
+msgid ":py:obj:`VoidTag <myst_parser.parsers.parse_html.VoidTag>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:242
+msgid ""
+"Represent tags with no children, only start tag, like `<img src=\"t.gif\""
+" >`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:37
+msgid ":py:obj:`TerminalElement <myst_parser.parsers.parse_html.TerminalElement>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:39
+msgid ":py:obj:`Data <myst_parser.parsers.parse_html.Data>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:266
+msgid "Represent data inside xml/html documents, like raw text."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:42
+msgid ":py:obj:`Declaration <myst_parser.parsers.parse_html.Declaration>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:273
+msgid "Represent declarations, like `<!DOCTYPE html>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:45
+msgid ":py:obj:`Comment <myst_parser.parsers.parse_html.Comment>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:280
+msgid "Represent HTML comments"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:48
+msgid ":py:obj:`Pi <myst_parser.parsers.parse_html.Pi>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:287
+msgid "Represent processing instructions like `<?xml-stylesheet ?>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:51
+msgid ":py:obj:`Char <myst_parser.parsers.parse_html.Char>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:294
+msgid "Represent character codes like: `&#0`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:54
+msgid ":py:obj:`Entity <myst_parser.parsers.parse_html.Entity>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:301
+msgid "Represent entities like `&amp`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:57
+msgid ":py:obj:`Tree <myst_parser.parsers.parse_html.Tree>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:308
+msgid "The engine class to generate the AST tree."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:60
+msgid ":py:obj:`HtmlToAst <myst_parser.parsers.parse_html.HtmlToAst>`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:373
+msgid "The tokenizer class."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:65
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:71
+msgid ":py:obj:`tokenize_html <myst_parser.parsers.parse_html.tokenize_html>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:76
+msgid "API"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:81
+msgid "Bases: :py:obj:`dict`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:86
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:103
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:160
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:176
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:190
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:204
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:228
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:242
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:256
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:270
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:284
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:298
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:310
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:356
+msgid "Initialization"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:2
+msgid "Initialize self.  See help(type(self)) for accurate signature."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:41
+msgid "Return 'class' attribute as list."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:98
+msgid "Bases: :py:obj:`collections.abc.MutableSequence`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:52
+msgid "All xml/html entities inherit from this class."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:56
+msgid "Initialise the element."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:64
+msgid "Return parent."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:69
+msgid "Return copy of children."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:112
+msgid "Recursively copy and remove parent."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:127
+msgid "Returns a HTML string representation of the element."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst
+msgid "参数"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:129
+msgid ""
+"Provide a dictionary of render function for specific tag names, to "
+"override the normal render format"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:146
+msgid "Walk through the xml/html AST."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:154
+msgid ""
+"Return copy with all `Data` tokens that only contain whitespace / "
+"newlines removed."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:173
+msgid "Find all elements that match name and specific attributes."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:155
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:171
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:185
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:199
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:213
+msgid "Bases: :py:obj:`myst_parser.parsers.parse_html.Element`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:205
+msgid "Returns a string HTML representation of the structure."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:260
+msgid "Copy and remove parent."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:223
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:237
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:251
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:265
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:279
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:293
+msgid "Bases: :py:obj:`myst_parser.parsers.parse_html.TerminalElement`"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:311
+msgid "Initialise Tree"
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:318
+msgid "Clear the outmost and stack for a new parsing."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:324
+msgid "Return the last pointer which point to the actual tag scope."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:328
+msgid "Nest a given tag at the bottom of the tree using the last stack's pointer."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:338
+msgid "Nest an XTag onto the tree."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:344
+msgid "Nest a VoidTag onto the tree."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:350
+msgid "Nest the data onto the tree."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:356
+msgid ""
+"When a closing tag is found, pop the pointer's scope from the stack, to "
+"then point to the earlier scope's tag."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:351
+msgid "Bases: :py:obj:`html.parser.HTMLParser`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:357
+msgid "Initialize and reset this instance."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.parsers.parse_html.rst:357
+msgid ""
+"If convert_charrefs is True (the default), all character references are "
+"automatically converted to the corresponding Unicode characters."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:398
+msgid "Parse the source string."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:404
+msgid "When found an opening tag then nest it onto the tree."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:411
+msgid "When found a XHTML tag style then nest it up to the tree."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:415
+msgid "When found a closing tag then makes it point to the right scope."
+msgstr ""
+
+#: ../../../myst_parser/parsers/parse_html.py:420
+msgid "Nest data onto the tree."
+msgstr ""
+

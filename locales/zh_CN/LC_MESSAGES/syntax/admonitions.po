@@ -1,0 +1,289 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../syntax/admonitions.md:1
+msgid "Admonitions"
+msgstr "提示框"
+
+#: ../../syntax/admonitions.md:3
+msgid ""
+"Admonitions (also known as callouts) highlight a particular block of "
+"text, that exists slightly apart from the narrative of your page, such as"
+" a note or a warning."
+msgstr ""
+"提示框（也称为标注框）用于突出显示与页面叙述略有不同的特定文本块，例如注释或警告。"
+
+#: ../../syntax/admonitions.md:6
+msgid ""
+"Admonitions are a special case of {{directive}} extensions. It is advised"
+" to use admonitions with the [colon_fence](#syntax/colon_fence) "
+"extension, which signify that the content of the block is also MyST "
+"Markdown."
+msgstr ""
+"提示框是 {{directive}} 插件的一种特殊情况。"
+"建议使用 [colon_fence](#syntax/colon_fence) 插件来创建提示框，这表示块内容也是 MyST Markdown 格式。"
+
+#: ../../syntax/admonitions.md:25 ../../syntax/admonitions.md:51
+msgid "Let's give readers a helpful hint!"
+msgstr ""
+
+#: ../../syntax/admonitions.md:17
+msgid "Admonition types"
+msgstr "提示类型"
+
+#: ../../syntax/admonitions.md:19
+msgid "The following core admonition types are available:"
+msgstr "以下是可用的核心提示框类型："
+
+#: ../../syntax/admonitions.md
+msgid "attention"
+msgstr ""
+
+#: ../../syntax/admonitions.md:26
+msgid "This is a attention"
+msgstr ""
+
+#: ../../syntax/admonitions.md
+msgid "caution"
+msgstr ""
+
+#: ../../syntax/admonitions.md:32
+msgid "This is a caution"
+msgstr ""
+
+#: ../../syntax/admonitions.md
+msgid "danger"
+msgstr ""
+
+#: ../../syntax/admonitions.md:38
+msgid "This is a danger"
+msgstr ""
+
+#: ../../syntax/admonitions.md
+msgid "error"
+msgstr ""
+
+#: ../../syntax/admonitions.md:44
+msgid "This is a error"
+msgstr ""
+
+#: ../../syntax/admonitions.md
+msgid "hint"
+msgstr ""
+
+#: ../../syntax/admonitions.md:50
+msgid "This is a hint"
+msgstr ""
+
+#: ../../syntax/admonitions.md
+msgid "important"
+msgstr ""
+
+#: ../../syntax/admonitions.md:56
+msgid "This is a important"
+msgstr ""
+
+#: ../../syntax/admonitions.md
+msgid "note"
+msgstr ""
+
+#: ../../syntax/admonitions.md:62
+msgid "This is a note"
+msgstr ""
+
+#: ../../syntax/admonitions.md
+msgid "seealso"
+msgstr ""
+
+#: ../../syntax/admonitions.md:68
+msgid "This is a seealso"
+msgstr ""
+
+#: ../../syntax/admonitions.md
+msgid "tip"
+msgstr ""
+
+#: ../../syntax/admonitions.md:74
+msgid "This is a tip"
+msgstr ""
+
+#: ../../syntax/admonitions.md
+msgid "warning"
+msgstr ""
+
+#: ../../syntax/admonitions.md:80
+msgid "This is a warning"
+msgstr ""
+
+#: ../../syntax/admonitions.md:24
+msgid "These admonitions take no argument, but may be specified with options:"
+msgstr "这些提示框不需要参数，但可以通过选项进行配置："
+
+#: ../../syntax/admonitions.md:26
+msgid "class"
+msgstr ""
+
+#: ../../syntax/admonitions.md:26
+msgid ""
+"A space-separated list of CSS classes to add to the admonition, "
+"conforming to the [identifier normalization "
+"rules](https://docutils.sourceforge.io/docs/ref/rst/directives.html"
+"#identifier-normalization)."
+msgstr ""
+"以空格分隔的 CSS 类列表，将添加到提示框中，"
+"符合 [标识符规范化规则](https://docutils.sourceforge.io/docs/ref/rst/directives.html#identifier-normalization)。"
+
+#: ../../syntax/admonitions.md:27
+msgid "name"
+msgstr ""
+
+#: ../../syntax/admonitions.md:27
+msgid ""
+"A reference target for the admonition (see [cross-"
+"referencing](#syntax/referencing))."
+msgstr ""
+"提示框的引用目标（参见 [交叉引用](#syntax/referencing)）。"
+
+#: ../../syntax/admonitions.md:54
+msgid "[Reference to my tip](#a-tip-reference)"
+msgstr ""
+
+#: ../../syntax/admonitions.md:41
+msgid ""
+"Sphinx also adds a number of additional admonition types, for denoting "
+"changes to the documentation, or to the codebase:"
+msgstr ""
+"Sphinx 还添加了许多额外的提示框类型，用于表示文档或代码库的更改："
+
+#: ../../syntax/admonitions.md:67
+msgid "Explanation of the new feature."
+msgstr "新功能的说明。"
+
+#: ../../syntax/admonitions.md:71
+msgid "Explanation of the change."
+msgstr "更改的说明。"
+
+#: ../../syntax/admonitions.md:75
+msgid "Explanation of the deprecation."
+msgstr "弃用的说明。"
+
+#: ../../syntax/admonitions.md:59
+msgid "Admonition titles"
+msgstr "提示框标题"
+
+#: ../../syntax/admonitions.md:61
+msgid ""
+"To provide a custom title for an admonition, use the `admonition` "
+"directive. If you also want to style the admonition as one of the core "
+"admonition types, you can use the `admonition` directive with the `class`"
+" option."
+msgstr ""
+"要为提示框提供自定义标题，请使用 `admonition` 指令。"
+"如果您还想将提示框样式设置为核心提示框类型之一，可以使用 `admonition` 指令并添加 `class` 选项。"
+
+#: ../../syntax/admonitions.md:82
+msgid "My custom title with *Markdown*!"
+msgstr ""
+
+#: ../../syntax/admonitions.md:85
+msgid "This is a custom title for a tip admonition."
+msgstr ""
+
+#: ../../syntax/admonitions.md:75
+msgid "Collapsible admonitions"
+msgstr "可折叠的提示框"
+
+#: ../../syntax/admonitions.md:77
+msgid ""
+"The [sphinx-togglebutton](https://sphinx-togglebutton.readthedocs.io) "
+"extension allows you to create collapsible admonitions, by adding a "
+"`dropdown` class to the admonition."
+msgstr ""
+"[sphinx-togglebutton](https://sphinx-togglebutton.readthedocs.io) 插件允许您通过向提示框添加"
+" `dropdown` 类来创建可折叠的提示框。"
+
+#: ../../syntax/admonitions.md:101
+msgid ""
+"This admonition has been collapsed, meaning you can add longer form "
+"content here, without it taking up too much space on the page."
+msgstr ""
+"此提示框已折叠，这意味着您可以在此处添加较长的内容，而不会占用页面太多空间。"
+
+#: ../../syntax/admonitions.md:91
+msgid "Other Containers (grids, tabs, cards, etc.)"
+msgstr "其他容器（网格、选项卡、卡片等）"
+
+#: ../../syntax/admonitions.md:93
+msgid ""
+"Using the [colon_fence](#syntax/colon_fence) extension, content block can"
+" be wrapped in containers with a custom CSS class."
+msgstr ""
+"使用 [colon_fence](#syntax/colon_fence) 插件，内容块可以包裹在具有自定义 CSS 类的容器中。"
+
+#: ../../syntax/admonitions.md:113
+msgid "This is a container with a custom CSS class."
+msgstr ""
+
+#: ../../syntax/admonitions.md:115
+msgid "It can contain multiple blocks"
+msgstr ""
+
+#: ../../syntax/admonitions.md:104
+msgid ""
+"Using the [sphinx-design](https://github.com/executablebooks/sphinx-"
+"design) extension, it is also possible to create beautiful, screen-size "
+"responsive web-components."
+msgstr ""
+"使用 [sphinx-design](https://github.com/executablebooks/sphinx-design) 插件，还可以创建美观且适应屏幕尺寸的网页组件。"
+
+#: ../../syntax/admonitions.md:126
+msgid "Header"
+msgstr ""
+
+#: ../../syntax/admonitions.md:125
+msgid "Card Title"
+msgstr ""
+
+#: ../../syntax/admonitions.md:128
+msgid "Card content"
+msgstr ""
+
+#: ../../syntax/admonitions.md:130
+msgid "Footer"
+msgstr ""
+
+#: ../../syntax/admonitions.md
+msgid "Label1"
+msgstr ""
+
+#: ../../syntax/admonitions.md:145
+msgid "Content 1"
+msgstr ""
+
+#: ../../syntax/admonitions.md
+msgid "Label2"
+msgstr ""
+
+#: ../../syntax/admonitions.md:149
+msgid "Content 2"
+msgstr ""
+

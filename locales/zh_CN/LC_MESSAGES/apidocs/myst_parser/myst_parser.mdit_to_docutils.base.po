@@ -1,0 +1,594 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:2
+msgid ":py:mod:`myst_parser.mdit_to_docutils.base`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:2
+msgid "Convert Markdown-it tokens to docutils nodes."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:19
+msgid ""
+":py:obj:`DocutilsRenderer "
+"<myst_parser.mdit_to_docutils.base.DocutilsRenderer>`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:90
+msgid ""
+"A markdown-it-py renderer to populate (in-place) a `docutils.document` "
+"AST."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:24
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:30
+msgid ":py:obj:`make_document <myst_parser.mdit_to_docutils.base.make_document>`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:62
+msgid "Create a new docutils document, with the parser classes' default settings."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:33
+msgid ":py:obj:`token_line <myst_parser.mdit_to_docutils.base.token_line>`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:81
+msgid "Retrieve the initial line of a token."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:36
+msgid ""
+":py:obj:`html_meta_to_nodes "
+"<myst_parser.mdit_to_docutils.base.html_meta_to_nodes>`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1886
+msgid ""
+"Replicate the `meta` directive, by converting a dictionary to a list of "
+"pending meta nodes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:39
+msgid ":py:obj:`clean_astext <myst_parser.mdit_to_docutils.base.clean_astext>`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1934
+msgid "Like node.astext(), but ignore images. Copied from sphinx."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:42
+msgid ""
+":py:obj:`default_slugify "
+"<myst_parser.mdit_to_docutils.base.default_slugify>`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1949
+msgid "Default slugify function."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:45
+msgid ""
+":py:obj:`compute_unique_slug "
+"<myst_parser.mdit_to_docutils.base.compute_unique_slug>`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1960
+msgid "Compute the slug for a token."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:50
+msgid "Data"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:56
+msgid ":py:obj:`REGEX_SCHEME <myst_parser.mdit_to_docutils.base.REGEX_SCHEME>`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:68
+msgid ""
+"RFC 7595: A non-empty scheme component followed by a colon (:), "
+"consisting of a sequence of characters beginning with a letter and "
+"followed by any combination of letters, digits, plus (+), period (.), or "
+"hyphen (-). Although schemes are case-insensitive, the canonical form is "
+"lowercase and documents that specify schemes must do so with lowercase "
+"letters."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:59
+msgid ""
+":py:obj:`REGEX_URI_TEMPLATE "
+"<myst_parser.mdit_to_docutils.base.REGEX_URI_TEMPLATE>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:62
+msgid ""
+":py:obj:`REGEX_DIRECTIVE_START "
+"<myst_parser.mdit_to_docutils.base.REGEX_DIRECTIVE_START>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:67
+msgid "API"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:100
+msgid "Bases: :py:obj:`markdown_it.renderer.RendererProtocol`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:92
+msgid "Note, this render is not dependent on Sphinx."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst:105
+msgid "Initialization"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:98
+msgid "Load the renderer (called by ``MarkdownIt``)"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:129
+msgid "Setup the renderer with per render variables."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:153
+msgid "Return the sphinx env, if using Sphinx."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:160
+msgid "Generate a warning, logging if it is necessary."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:162
+msgid ""
+"If the warning type is listed in the ``suppress_warnings`` configuration,"
+" then ``None`` will be returned and no warning logged."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:209
+msgid "Run the render on a token stream."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.base.rst
+msgid "参数"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:211
+msgid "list on block tokens to render"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:212
+msgid "params of parser instance"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:213
+msgid ""
+"the markdown-it environment sandbox associated with the tokens, "
+"containing additional metadata like reference info"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:285
+msgid "Render unparsed text (appending to the current node)."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:287
+msgid "the text to render"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:288
+msgid "the starting line number of the text, within the full source"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:289
+msgid "whether the text is inline or block"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:290
+msgid "If set, allow sections to be created as children of this node"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:291
+msgid "offset heading levels by this amount"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:336
+msgid "Context manager for temporarily setting the current node."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:347
+msgid "Render the children of a token."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:360
+msgid "Copy the line number and document source path to the docutils node."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:366
+msgid ""
+"Copy the line number and document source path to the docutils nodes, and "
+"recursively to all descendants."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:377
+msgid "Copy attributes on the token to the docutils node."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:379
+msgid "the token to copy attributes from"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:380
+msgid "the node to copy attributes to"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:381
+msgid "the keys to copy from the token (after aliasing)"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:382
+msgid "a dictionary of converters for the attributes"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:383
+msgid "a dictionary mapping the token key name to the node key name"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:422
+msgid "Update the section level state, with the new current section and level."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:457
+msgid "Special kludge for image `alt` attributes to conform CommonMark spec."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:459
+msgid ""
+"Don't try to use it! Spec requires to show `alt` content with stripped "
+"markup, instead of simple escaping."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:590
+msgid "Create a literal block with syntax highlighting."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:592
+msgid "This mimics the behaviour of the `code-block` directive."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:594
+msgid ""
+"In docutils, this directive directly parses the text with the pygments "
+"lexer, whereas in sphinx, the lexer name is only recorded as the "
+"`language` attribute, and the text is lexed later by pygments within the "
+"`visit_literal_block` method of the output format ``SphinxTranslator``."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:599
+msgid "Note, this function does not add the literal block to the document."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:698
+msgid "Render a fenced code block."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:750
+msgid ""
+"Only add mathjax ignore classes if using sphinx, and using the "
+"``dollarmath`` extension, and ``myst_update_mathjax=True``."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:760
+msgid "Generate a heading target, and add it to the document."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:806
+msgid "Render a heading, e.g. `# Heading`."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:858
+msgid ""
+"Parse `<http://link.com>` or `[text](link \"title\")` syntax to docutils "
+"AST:"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:860
+msgid "If `myst_all_links_external` is True, forward to `render_link_url`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:861
+msgid "If the link token has a class attribute containing `external`,"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:862
+msgid "forward to `render_link_url`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:863
+msgid "If the link is an id link (e.g. `#id`), forward to `render_link_anchor`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:864
+msgid ""
+"If the link has a schema, and the schema is in `url_schemes` (e.g. "
+"`http:`), forward to `render_link_url`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:866
+msgid "If the link has an `inv:` schema, forward to `render_link_inventory`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:867
+msgid "If the link is an autolink/linkify type link, forward to `render_link_url`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:868
+msgid "Otherwise, forward to `render_link_internal`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:903
+msgid ""
+"Render link token (including autolink and linkify), where the link has "
+"been identified as an external URL."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:967
+msgid "Render a link token like `<path:...>`."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:977
+msgid "Render a link token like `<project:...>`."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:992
+msgid "Render link token like `[text](#target)`, to a local target."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py
+msgid "target"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:994
+msgid "the target id, e.g. `#target`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1009
+msgid ""
+"Render link token `[text](link \"title\")`, where the link has not been "
+"identified as an external URL::"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1015
+msgid "`text` can contain nested syntax, e.g. `[**bold**](link \"title\")`."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1017
+msgid "Note, this is overridden by `SphinxRenderer`, to use `pending_xref` nodes."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1030
+msgid "Create a link to an inventory object."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1032
+msgid ""
+"This assumes the href is of the form `<scheme>:<path>#<target>`. The path"
+" is of the form `<invs>:<domains>:<otypes>`, where each of the parts is "
+"optional, hence `<scheme>:#<target>` is also valid. Each of the path "
+"parts can contain the `*` wildcard, for example: "
+"`<scheme>:key:*:obj#targe*`. `\\*` is treated as a plain `*`."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1116
+msgid "Return inventory matches."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1118
+msgid "This will be overridden for sphinx, to use intersphinx config."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1197
+msgid "Render an inline span token."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1205
+msgid "Pass document front matter data."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1246
+msgid "Render each key/val pair as a docutils ``field_node``."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1248
+msgid ""
+"Bibliographic keys below will be parsed as Markdown, all others will be "
+"left as literal text."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1251
+msgid ""
+"The field list should be at the start of the document, and will then be "
+"converted to a `docinfo` node during the "
+"`docutils.docutils.transforms.frontmatter.DocInfo` transform (priority "
+"340), and bibliographic keys (or their translation) will be converted to "
+"nodes::"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1269
+msgid ""
+"Also, the 'dedication' and 'abstract' will be placed outside the "
+"`docinfo`, and so will always be shown in the document."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1272
+msgid ""
+"If using sphinx, this `docinfo` node will later be extracted from the "
+"AST, by the `DoctreeReadEvent` transform (priority 880), calling "
+"`MetadataCollector.process_doc`. In this case keys and values will be "
+"converted to strings and stored in `app.env.metadata[app.env.docname]`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1278
+msgid ""
+"See https://www.sphinx-doc.org/en/master/usage/restructuredtext/field-"
+"lists.html for docinfo fields used by sphinx."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1372
+msgid "Render a strikethrough token."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1430
+msgid ""
+"Footnote references are added as auto-numbered, .i.e. `[^a]` is read as "
+"rST `[#a]_`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1451
+msgid "Despite the name, this is actually a footnote definition, e.g. `[^a]: ...`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1525
+msgid "Render a div block, with ``:`` colon delimiters."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1551
+msgid "Render a definition list."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1610
+msgid "Render a field list."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1647
+msgid "Render the content of the token as restructuredtext."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1663
+msgid "Render special fenced code blocks as directives."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1665
+msgid "the token to render"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1666
+#: ../../../myst_parser/mdit_to_docutils/base.py:1689
+msgid "the name of the directive"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1667
+msgid "The remaining text on the same line as the directive name."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1687
+msgid "Run a directive and return the generated nodes."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1690
+msgid ""
+"The text on the same line as the directive name. May be an argument or "
+"body text, dependent on the directive"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1692
+msgid "All text after the first line. Can include options."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1693
+msgid "The line number of the first line"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1694
+msgid ""
+"Additional options to add to the directive, above those parsed from the "
+"content."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1809
+msgid "Render inline substitution {{key}}."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1813
+msgid "Render block substitution {{key}}."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1817
+msgid "Substitutions are rendered by:"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1819
+msgid ""
+"Combining global substitutions with front-matter substitutions to create "
+"a variable context (front-matter takes priority)"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1821
+msgid "Add the sphinx `env` to the variable context (if available)"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1822
+msgid "Create the string content with Jinja2 (passing it the variable context)"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1823
+msgid ""
+"If the substitution is inline and not a directive, parse to nodes "
+"ignoring block syntaxes (like lists or block-quotes), otherwise parse to "
+"nodes with all syntax rules."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1889
+msgid ""
+"See: https://www.sphinx-"
+"doc.org/en/master/usage/restructuredtext/basics.html#html-metadata"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1951
+msgid "This aims to mimic the GitHub Markdown format, see:"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1953
+msgid ""
+"https://github.com/jch/html-"
+"pipeline/blob/master/lib/html/pipeline/toc_filter.rb"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1954
+msgid "https://gist.github.com/asabaylus/3071099"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/base.py:1962
+msgid "This directly mirrors the logic in `mdit_py_plugins.anchors_plugin`"
+msgstr ""
+

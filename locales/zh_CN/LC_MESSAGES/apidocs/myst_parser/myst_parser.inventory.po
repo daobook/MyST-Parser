@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:2
+msgid ":py:mod:`myst_parser.inventory`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:2
+msgid "Logic for dealing with sphinx style inventories (e.g. `objects.inv`)."
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:4
+msgid ""
+"These contain mappings of reference names to ids, scoped by domain and "
+"object type."
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:6
+msgid ""
+"This is adapted from the Sphinx inventory.py module. We replicate it "
+"here, so that it can be used without Sphinx."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:19
+msgid ":py:obj:`InventoryItemType <myst_parser.inventory.InventoryItemType>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:31
+msgid "A single inventory item."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:22
+msgid ":py:obj:`InventoryType <myst_parser.inventory.InventoryType>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:40
+msgid "Inventory data."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:25
+msgid ":py:obj:`InventoryFileReader <myst_parser.inventory.InventoryFileReader>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:181
+msgid "A file reader for an inventory file."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:28
+msgid ":py:obj:`InvMatch <myst_parser.inventory.InvMatch>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:278
+msgid "A match from an inventory."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:33
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:39
+msgid ":py:obj:`from_sphinx <myst_parser.inventory.from_sphinx>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:53
+msgid "Convert from a Sphinx compliant format."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:42
+msgid ":py:obj:`to_sphinx <myst_parser.inventory.to_sphinx>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:79
+msgid "Convert to a Sphinx compliant format."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:45
+msgid ":py:obj:`load <myst_parser.inventory.load>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:94
+msgid "Load inventory data from a stream."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:48
+msgid ":py:obj:`match_with_wildcard <myst_parser.inventory.match_with_wildcard>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:265
+msgid ""
+"Match a whole name with a pattern, that can include `*` wildcards, to "
+"match 0 or more characters."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:51
+msgid ":py:obj:`filter_inventories <myst_parser.inventory.filter_inventories>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:295
+msgid "Filter a set of inventories."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:54
+msgid ""
+":py:obj:`filter_sphinx_inventories "
+"<myst_parser.inventory.filter_sphinx_inventories>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:338
+msgid "Filter a set of sphinx style inventories."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:57
+msgid ":py:obj:`filter_string <myst_parser.inventory.filter_string>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:387
+msgid "Create a string representation of the filter, from the given arguments."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:60
+msgid ":py:obj:`fetch_inventory <myst_parser.inventory.fetch_inventory>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:407
+msgid "Fetch an inventory from a URL or local path."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:63
+msgid ":py:obj:`inventory_cli <myst_parser.inventory.inventory_cli>`"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:418
+msgid "Command line interface for fetching and parsing an inventory."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:68
+msgid "API"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:73
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:98
+msgid "Bases: :py:obj:`typing.TypedDict`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:78
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:103
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst:155
+msgid "Initialization"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:2
+msgid "Initialize self.  See help(type(self)) for accurate signature."
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:34
+msgid "The location of the item (relative if base_url not None)."
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:36
+msgid "Implicit text to show for the item."
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:43
+msgid "The name of the project."
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:45
+msgid "The version of the project."
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:47
+msgid "The base URL of the `loc`."
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:49
+msgid "Mapping of domain -> object type -> name -> item."
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:183
+msgid "This reader supports mixture of texts and compressed texts."
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:268 ../../../myst_parser/inventory.py:298
+#: ../../../myst_parser/inventory.py:341
+msgid "To include a literal `*` in the pattern, use `\\*`."
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:297 ../../../myst_parser/inventory.py:340
+msgid ""
+"Filters are strings that can include `*` wildcards, to match 0 or more "
+"characters."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.inventory.rst
+msgid "参数"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:300 ../../../myst_parser/inventory.py:343
+msgid "Mapping of inventory name to inventory data"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:301 ../../../myst_parser/inventory.py:344
+msgid "the inventory key filter"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:302 ../../../myst_parser/inventory.py:345
+msgid "the domain name filter"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:303 ../../../myst_parser/inventory.py:346
+msgid "the object type filter"
+msgstr ""
+
+#: ../../../myst_parser/inventory.py:304 ../../../myst_parser/inventory.py:347
+msgid "the target name filter"
+msgstr ""
+

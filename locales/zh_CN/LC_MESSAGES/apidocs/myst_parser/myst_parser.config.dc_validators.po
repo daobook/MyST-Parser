@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:2
+msgid ":py:mod:`myst_parser.config.dc_validators`"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:2
+msgid ""
+"Validators for dataclasses, mirroring those of https://github.com/python-"
+"attrs/attrs."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:19
+msgid ":py:obj:`ValidatorType <myst_parser.config.dc_validators.ValidatorType>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:23
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:29
+msgid ":py:obj:`validate_field <myst_parser.config.dc_validators.validate_field>`"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:12
+msgid ""
+"Validate the field of a dataclass, according to a `validator` function "
+"set in the field.metadata."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:32
+msgid ""
+":py:obj:`validate_fields "
+"<myst_parser.config.dc_validators.validate_fields>`"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:28
+msgid ""
+"Validate the fields of a dataclass, according to `validator` functions "
+"set in the field metadata."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:35
+msgid ":py:obj:`any_ <myst_parser.config.dc_validators.any_>`"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:47
+msgid "A validator that does not perform any validation."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:38
+msgid ":py:obj:`instance_of <myst_parser.config.dc_validators.instance_of>`"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:53
+msgid ""
+"A validator that raises a `TypeError` if the initializer is called with a"
+" wrong type for this particular attribute (checks are performed using "
+"`isinstance` therefore it's also valid to pass a tuple of types)."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:41
+msgid ":py:obj:`optional <myst_parser.config.dc_validators.optional>`"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:75
+msgid ""
+"A validator that makes an attribute optional.  An optional attribute is "
+"one which can be set to ``None`` in addition to satisfying the "
+"requirements of the sub-validator."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:44
+msgid ":py:obj:`is_callable <myst_parser.config.dc_validators.is_callable>`"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:91
+msgid ""
+"A validator that raises a `TypeError` if the initializer is called with a"
+" value for this particular attribute that is not callable."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:47
+msgid ":py:obj:`in_ <myst_parser.config.dc_validators.in_>`"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:104
+msgid ""
+"A validator that raises a `ValueError` if the initializer is called with "
+"a value that does not belong in the options provided.  The check is "
+"performed using ``value in options``."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:50
+msgid ":py:obj:`deep_iterable <myst_parser.config.dc_validators.deep_iterable>`"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:127
+msgid "A validator that performs deep validation of an iterable."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:53
+msgid ":py:obj:`deep_mapping <myst_parser.config.dc_validators.deep_mapping>`"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:147
+msgid "A validator that performs deep validation of a dictionary."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:58
+msgid "API"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:15
+#: ../../../myst_parser/config/dc_validators.py:33
+msgid ""
+"The validator function should take as input (inst, field, value) and "
+"raise an exception if the value is invalid."
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:31
+msgid "This function should be called in the `__post_init__` of the dataclass."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst:73
+msgid "Bases: :py:obj:`typing.Protocol`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.config.dc_validators.rst
+msgid "参数"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:57
+msgid "The type to check for."
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:108
+msgid "Allowed options."
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:129
+msgid "Validator to apply to iterable members"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:130
+msgid "Validator to apply to iterable itself"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:149
+msgid "Validator to apply to dictionary keys"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:150
+msgid "Validator to apply to dictionary values"
+msgstr ""
+
+#: ../../../myst_parser/config/dc_validators.py:151
+msgid "Validator to apply to top-level mapping attribute (optional)"
+msgstr ""
+

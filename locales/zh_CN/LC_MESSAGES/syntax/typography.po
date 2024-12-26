@@ -1,0 +1,547 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../syntax/typography.md:3
+msgid "Typography"
+msgstr "排版"
+
+#: ../../syntax/typography.md:5
+msgid ""
+"MyST is a strict superset of the [CommonMark syntax "
+"specification](https://spec.commonmark.org/). It adds features focussed "
+"on scientific and technical documentation authoring, as detailed below."
+msgstr ""
+"MyST 是 [CommonMark 语法规范](https://spec.commonmark.org/) 的严格超集。"
+"它增加了专注于科学和技术文档编写的功能，具体如下所述。"
+
+#: ../../syntax/typography.md:8
+msgid "Headings"
+msgstr ""
+
+#: ../../syntax/typography.md:10
+msgid "Markdown syntax denotes headers starting with between 1 to 6 #."
+msgstr "Markdown 语法使用 1 到 6 个 `#` 来表示标题。"
+
+#: ../../syntax/typography.md:23
+msgid "Heading Level 3"
+msgstr ""
+
+#: ../../syntax/typography.md:16
+msgid ""
+"Note, that headings that are not at the root level of the document will "
+"not be included in the table of contents. Using the "
+"[attrs_block](#syntax/attributes/block) extension, you can also add "
+"classes to headings"
+msgstr ""
+"请注意，不在文档根级别的标题将不会包含在目录中。使用 [attrs_block](#syntax/attributes/block) 插件，你还可以为标题添加类。"
+
+#: ../../syntax/typography.md:34
+msgid "Paragraph heading"
+msgstr ""
+
+#: ../../syntax/typography.md:27
+msgid ""
+"To structure single and multiple documents into table of contents, see "
+"the [organising content section](#organising-content)."
+msgstr ""
+"要将单个或多个文档组织成目录，请参阅 [组织内容部分](#organising-content)。"
+
+#: ../../syntax/typography.md:29
+msgid ""
+"To reference a heading in your text, see the [cross-referencing "
+"section](#syntax/referencing)."
+msgstr ""
+"要在文本中引用标题，请参阅 [交叉引用部分](#syntax/referencing)。"
+
+#: ../../syntax/typography.md:32
+msgid "Paragraphs"
+msgstr "段落"
+
+#: ../../syntax/typography.md:34
+msgid "Paragraphs are block of text separated by a blank line."
+msgstr "段落是由空白行分隔的文本块。"
+
+#: ../../syntax/typography.md:36
+msgid ""
+"Using the [attrs_block](#syntax/attributes/block) extension, you can also"
+" add classes to paragraphs:"
+msgstr ""
+"使用 [attrs_block](#syntax/attributes/block) 插件，你也可以为段落添加类。"
+
+#: ../../syntax/typography.md:52
+msgid "Here is a paragraph with a class to control its formatting."
+msgstr "这是带有类的段落，用于控制其格式。"
+
+#: ../../syntax/typography.md:46
+msgid "Thematic breaks"
+msgstr "主题分隔线"
+
+#: ../../syntax/typography.md:48
+msgid ""
+"You can create a thematic break, to break content between themes, using "
+"three or more `*`, `-`, or `_` characters on a line by themselves."
+msgstr ""
+"你可以使用三个或更多的 `*`、`-` 或 `_` 字符单独成行，来创建主题分隔线，以分隔不同主题的内容。"
+
+#: ../../syntax/typography.md:55
+msgid "Inline Text Formatting"
+msgstr "内联文本格式化"
+
+#: ../../syntax/typography.md:57
+msgid ""
+"Standard inline formatting including bold, italic, code, as well as "
+"escaped symbols and line breaks:"
+msgstr ""
+"标准的内联格式化包括加粗、斜体、代码，以及转义符号和换行符："
+
+#: ../../syntax/typography.md:70
+msgid "**strong**, _emphasis_, `literal text`, \\*escaped symbols\\*"
+msgstr "**加粗**、_斜体_、`代码文本`、\\*转义符号\\*"
+
+#: ../../syntax/typography.md:63
+msgid ""
+"The [strikethrough](syntax/strikethrough) extension allows you to add "
+"strike-through text:"
+msgstr ""
+"[删除线](syntax/strikethrough) 插件允许你添加删除线文本："
+
+#: ../../syntax/typography.md:76
+msgid "~~strikethrough with *emphasis*~~"
+msgstr "~~删除线带*斜体*~~"
+
+#: ../../syntax/typography.md:69
+msgid ""
+"The [smartquotes](syntax/smartquotes) and "
+"[replacements](syntax/replacements) extensions can improve the typography"
+" of common symbols:"
+msgstr ""
+"[智能引号](syntax/smartquotes) 和 [替换](syntax/replacements) 插件可以改善常见符号的排版："
+
+#: ../../syntax/typography.md:85
+msgid "Smart-quotes 'single quotes' and \"double quotes\"."
+msgstr "智能引号 '单引号' 和 \"双引号\"。"
+
+#: ../../syntax/typography.md:87
+msgid "+-, --, ---, ... and other replacements."
+msgstr "+-, --, ---, ... 以及其他替换。"
+
+#: ../../syntax/typography.md:78
+msgid ""
+"Using the [attrs_inline](syntax/attributes/inline) extension, you can "
+"also add classes to inline text spans:"
+msgstr ""
+"使用 [attrs_inline](syntax/attributes/inline) 插件，你还可以为内联文本添加类："
+
+#: ../../syntax/typography.md:92
+msgid "A paragraph with a span of [text with attributes]{.bg-warning}"
+msgstr "一段带有[具有属性的文本]{.bg-warning}的段落"
+
+#: ../../syntax/typography.md:85
+msgid "Line Breaks"
+msgstr "换行"
+
+#: ../../syntax/typography.md:87
+msgid ""
+"To put a line break, without a paragraph, use a `\\` followed by a new "
+"line. This corresponds to a `<br>` in HTML and `\\\\` in LaTeX."
+msgstr ""
+"若要插入换行而非新段落，请使用 `\\` 并紧跟新行。这相当于 HTML 中的 `<br>` 和 LaTeX 中的 `\\\\`。"
+
+#: ../../syntax/typography.md:102
+msgid "**Fleas** \\ Adam \\ Had 'em."
+msgstr ""
+
+#: ../../syntax/typography.md:98
+msgid ""
+"Alternatively, you can use the `line-block` directive, which constructs a"
+" block where all line breaks (and also initial indentations) are "
+"respected:"
+msgstr ""
+"或者，您可以使用 `line-block` 指令，它构建了一个块，其中所有的换行（以及初始缩进）都将被保留："
+
+#: ../../syntax/typography.md
+msgid "**Fleas**"
+msgstr ""
+
+#: ../../syntax/typography.md
+msgid "Adam"
+msgstr ""
+
+#: ../../syntax/typography.md
+msgid "Had 'em."
+msgstr ""
+
+#: ../../syntax/typography.md:108
+msgid "Bullet points and numbered lists"
+msgstr "项目符号和编号列表"
+
+#: ../../syntax/typography.md:110
+msgid ""
+"You can use bullet points and numbered lists as you would in standard "
+"Markdown. Starting a line with either a `-` or `*` for a bullet point, "
+"and `1.` for numbered lists. These lists can be nested using two spaces "
+"at the start of the line."
+msgstr ""
+"您可以像在标准 Markdown 中一样使用项目符号和编号列表。以 `-` 或 `*` 开头的行表示项目符号，以 `1.` 开头的行表示编号列表。”
+“通过在行首使用两个空格，可以嵌套这些列表。"
+
+#: ../../syntax/typography.md:130
+msgid "Lists can start with `-` or `*`"
+msgstr ""
+
+#: ../../syntax/typography.md:131
+msgid "My other, nested"
+msgstr ""
+
+#: ../../syntax/typography.md:132
+msgid "bullet point list!"
+msgstr ""
+
+#: ../../syntax/typography.md:134
+msgid "My numbered list"
+msgstr ""
+
+#: ../../syntax/typography.md:135
+msgid "has two points"
+msgstr ""
+
+#: ../../syntax/typography.md:123
+msgid ""
+"For numbered lists, you can start following lines with any number, "
+"meaning they don't have to be in numerical order, and this will not "
+"change the rendered output. The exception is the first number, which if "
+"it is not `1.` this will change the start number of the list."
+msgstr ""
+"对于编号列表，你可以从任何数字开始后续的行，这意味着它们不必按数字顺序排列，这不会影响渲染后的输出。"
+"唯一的例外是第一个数字，如果它不是`1.`，这将改变列表的起始编号。"
+
+#: ../../syntax/typography.md:126
+msgid "Alternate numbering styles"
+msgstr "交替编号样式"
+
+#: ../../syntax/typography.md:130
+msgid ""
+"Using the [attrs_block](#syntax/attributes/block) extension, you can also"
+" specify a alternative numbering styles:"
+msgstr ""
+"使用 [attrs_block](#syntax/attributes/block) 扩展，您还可以指定交替的编号样式："
+
+#: ../../syntax/typography.md:159 ../../syntax/typography.md:163
+#: ../../syntax/typography.md:167 ../../syntax/typography.md:171
+msgid "a"
+msgstr ""
+
+#: ../../syntax/typography.md:160 ../../syntax/typography.md:164
+#: ../../syntax/typography.md:168 ../../syntax/typography.md:172
+msgid "b"
+msgstr ""
+
+#: ../../syntax/typography.md:152
+msgid ""
+"Using the [tasklist](syntax/tasklists) extension, you can also create "
+"task lists:"
+msgstr ""
+"使用 [tasklist](syntax/tasklists) 插件，您还可以创建任务列表："
+
+#: ../../syntax/typography.md:167
+msgid "An item that needs doing"
+msgstr ""
+
+#: ../../syntax/typography.md:168
+msgid "An item that is complete"
+msgstr ""
+
+#: ../../syntax/typography.md:160
+msgid "Subscript & Superscript"
+msgstr "下标和上标"
+
+#: ../../syntax/typography.md:162
+msgid ""
+"For inline typography for subscript and superscript formatting, the `sub`"
+" and `sup` {{role}}, can be used respectively."
+msgstr ""
+"对于下标和上标的行内排版格式，可以分别使用 `sub` 和 `sup` {{role}}。"
+
+#: ../../syntax/typography.md:176
+msgid "H{sub}`2`O, and 4{sup}`th` of July"
+msgstr ""
+
+#: ../../syntax/typography.md:170
+msgid "Quotations"
+msgstr "引用"
+
+#: ../../syntax/typography.md:172
+msgid ""
+"Quotations are controlled with standard Markdown syntax, by inserting a "
+"caret (>) symbol in front of one or more lines of text."
+msgstr ""
+"引用通过标准的 Markdown 语法控制，只需在一行或多行文本前插入尖括号 (>) 符号即可。"
+
+#: ../../syntax/typography.md:185 ../../syntax/typography.md:194
+msgid "We know what we are, but know not what we may be."
+msgstr "知道自己是什么，却不知道自己可能成为什么。"
+
+#: ../../syntax/typography.md:178
+msgid ""
+"Using the [attrs_block](#syntax/attributes/block) extension, you can also"
+" add an `attribution` attribute to a block quote:"
+msgstr ""
+"使用 [attrs_block](#syntax/attributes/block) 插件，您还可以为引用块添加 `attribution` 属性："
+
+#: ../../syntax/typography.md:194
+msgid "Hamlet act 4, Scene 5"
+msgstr ""
+
+#: ../../syntax/typography.md:187
+msgid "Definition lists and glossaries"
+msgstr "定义列表与术语表"
+
+#: ../../syntax/typography.md:189
+msgid ""
+"Using the [definition lists](syntax/definition-lists) extension, you can "
+"define terms in your documentation, using the syntax:"
+msgstr ""
+"使用 [definition列表](syntax/definition-lists) 插件，您可以通过以下语法在文档中定义术语："
+
+#: ../../syntax/typography.md:212
+msgid "Term 1"
+msgstr ""
+
+#: ../../syntax/typography.md:213
+msgid "Definition"
+msgstr "定义"
+
+#: ../../syntax/typography.md:215
+msgid "Term 2"
+msgstr ""
+
+#: ../../syntax/typography.md:216
+msgid "Longer definition"
+msgstr ""
+
+#: ../../syntax/typography.md:218
+msgid "With multiple paragraphs"
+msgstr ""
+
+#: ../../syntax/typography.md:220 ../../syntax/typography.md:243
+msgid "And bullet points"
+msgstr ""
+
+#: ../../syntax/typography.md:205
+msgid ""
+"Using the [attrs_block](#syntax/attributes/block) extension, you can also"
+" add a `glossary` class to a definition list, that will allow you to "
+"reference terms in your text using the [`term` role](syntax/roles):"
+msgstr ""
+"使用 [attrs_block](#syntax/attributes/block) 插件，您还可以为定义列表添加 `glossary` 类，"
+"这将允许您使用 [`term` 角色](syntax/roles) 在文本中引用术语："
+
+#: ../../syntax/typography.md:224
+msgid "my term"
+msgstr ""
+
+#: ../../syntax/typography.md:225
+msgid "Definition of the term"
+msgstr ""
+
+#: ../../syntax/typography.md:227
+msgid "{term}`my term`"
+msgstr ""
+
+#: ../../syntax/typography.md:216
+msgid "Field lists"
+msgstr "字段列表"
+
+#: ../../syntax/typography.md:218
+msgid ""
+"Using the [field lists](syntax/fieldlists) extension, you can create "
+"field lists, which are useful in source code documentation (see [Sphinx "
+"docstrings](inv:sphinx#info-field-lists)):"
+msgstr ""
+"使用 [字段列表](syntax/fieldlists) 插件，"
+"您可以创建字段列表，这在源代码文档中非常有用（参见 [Sphinx 文档字符串](inv:sphinx#info-field-lists)）："
+
+#: ../../syntax/typography.md:239
+msgid "param arg1"
+msgstr ""
+
+#: ../../syntax/typography.md:239
+msgid "A description of arg1"
+msgstr ""
+
+#: ../../syntax/typography.md:240
+msgid "param arg2"
+msgstr ""
+
+#: ../../syntax/typography.md:240
+msgid "A longer description, with multiple lines."
+msgstr ""
+
+#: ../../syntax/typography.md:244
+msgid "return"
+msgstr ""
+
+#: ../../syntax/typography.md:244
+msgid "A description of the return value"
+msgstr ""
+
+#: ../../syntax/typography.md:234
+msgid "Comments"
+msgstr "注释"
+
+#: ../../syntax/typography.md:236
+msgid ""
+"You may add comments by putting the `%` character at the beginning of a "
+"line. This will prevent the line from being parsed into the output "
+"document."
+msgstr ""
+"您可以通过在行首添加 `%` 字符来添加注释。这将防止该行被解析到输出文档中。"
+
+#: ../../syntax/typography.md:239
+msgid "For example, this won't be parsed into the document:"
+msgstr "例如，以下内容不会被解析到文档中："
+
+#: ../../syntax/typography.md:245
+msgid "Comments split paragraphs"
+msgstr "注释会分隔段落"
+
+#: ../../syntax/typography.md:249
+msgid ""
+"Since comments are a block-level entity, they will terminate the previous"
+" block. In practical terms, this means that the following lines will be "
+"broken up into two paragraphs, resulting in a new line between them:"
+msgstr ""
+"由于注释是块级元素，它们会终止前一个块。实际上，这意味着以下行将被分成两个段落，从而在它们之间产生新行："
+
+#: ../../syntax/typography.md:266
+msgid "a line"
+msgstr ""
+
+#: ../../syntax/typography.md:268
+msgid "another line"
+msgstr ""
+
+#: ../../syntax/typography.md:261
+msgid "Footnotes"
+msgstr "脚注"
+
+#: ../../syntax/typography.md:263
+msgid ""
+"Footnotes use the [pandoc "
+"specification](https://pandoc.org/MANUAL.html#footnotes). Their labels "
+"**start with `^`** and can then be any alphanumeric string (no spaces), "
+"which is case-insensitive."
+msgstr ""
+"脚注遵循 [pandoc 规范](https://pandoc.org/MANUAL.html#footnotes)。"
+"它们的标签**以 `^` 开头**，随后可以是任何字母数字字符串（不能包含空格），且不区分大小写。"
+
+#: ../../syntax/typography.md:266
+msgid ""
+"If the label is an integer, then it will always use that integer for the "
+"rendered label (i.e. they are manually numbered)."
+msgstr ""
+"如果标签是整数，则渲染时将始终使用该整数作为标签（即手动编号）。"
+
+#: ../../syntax/typography.md:267
+msgid ""
+"For any other labels, they will be auto-numbered in the order which they "
+"are referenced, skipping any manually numbered labels."
+msgstr ""
+"对于其他任何标签，它们将按照被引用的顺序自动编号，并跳过任何手动编号的标签。"
+
+#: ../../syntax/typography.md:269
+msgid ""
+"All footnote definitions are collected, and displayed at the bottom of "
+"the page (in the order they are referenced). Note that un-referenced "
+"footnote definitions will not be displayed."
+msgstr ""
+"所有脚注定义会被收集起来，并按引用顺序显示在页面底部。请注意，未引用的脚注定义将不会显示。"
+
+#: ../../syntax/typography.md:287
+msgid "This is a manually-numbered footnote reference.[^3]"
+msgstr "这是手动编号的脚注引用。[^3]"
+
+#: ../../syntax/typography.md:288
+msgid "This is an auto-numbered footnote reference.[^myref]"
+msgstr "这是自动编号的脚注引用。[^myref]"
+
+#: ../../syntax/typography.md:280
+msgid ""
+"Any preceding text after a footnote definitions, which is indented by "
+"four or more spaces, will also be included in the footnote definition, "
+"and the text is rendered as MyST Markdown, e.g."
+msgstr ""
+"在脚注定义之后，任何缩进四个或更多空格的前置文本也将包含在脚注定义中，并且该文本会以 MyST Markdown 格式渲染，例如："
+
+#: ../../syntax/typography.md:305
+msgid "A longer footnote definition.[^mylongdef]"
+msgstr "较长的脚注定义。[^mylongdef]"
+
+#: ../../syntax/typography.md:316
+msgid "This is not part of the footnote."
+msgstr "这不是脚注的一部分。"
+
+#: ../../syntax/typography.md:298
+msgid ""
+"By default, the footnotes will be collected, sorted and moved to the end "
+"of the document, with a transition line placed before any footnotes (that"
+" has a `footnotes` class)."
+msgstr ""
+"默认情况下，脚注会被收集、排序并移动到文档末尾，并在任何具有 `footnotes` 类的脚注之前放置转换行。"
+
+#: ../../syntax/typography.md:301
+msgid ""
+"This behaviour can be modified using the [configuration options](#sphinx"
+"/config-options):"
+msgstr ""
+"此行为可以通过 [配置选项](#sphinx/config-options) 进行修改："
+
+#: ../../syntax/typography.md:309
+msgid "``myst_footnote_sort`` configuration option"
+msgstr "``myst_footnote_sort`` 配置选项"
+
+#: ../../syntax/typography.md:290
+msgid "This is an auto-numbered footnote definition."
+msgstr ""
+
+#: ../../syntax/typography.md:307
+msgid "This is the _**footnote definition**_."
+msgstr ""
+
+#: ../../syntax/typography.md:309
+msgid "That continues for all indented lines"
+msgstr ""
+
+#: ../../syntax/typography.md:311
+msgid "even other block elements"
+msgstr ""
+
+#: ../../syntax/typography.md:313
+msgid ""
+"Plus any preceding unindented lines, that are not separated by a blank "
+"line"
+msgstr ""
+
+#: ../../syntax/typography.md:291
+msgid "This is a manually-numbered footnote definition."
+msgstr ""
+

@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.sphinx_.rst:2
+msgid ":py:mod:`myst_parser.mdit_to_docutils.sphinx_`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/sphinx_.py:2
+msgid ""
+"Convert Markdown-it tokens to docutils nodes, including sphinx specific "
+"elements."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.sphinx_.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.sphinx_.rst:13
+msgid "Classes"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.sphinx_.rst:19
+msgid ""
+":py:obj:`SphinxRenderer "
+"<myst_parser.mdit_to_docutils.sphinx_.SphinxRenderer>`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/sphinx_.py:27
+msgid ""
+"A markdown-it-py renderer to populate (in-place) a `docutils.document` "
+"AST."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.sphinx_.rst:24
+msgid "Data"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.sphinx_.rst:30
+msgid ":py:obj:`LOGGER <myst_parser.mdit_to_docutils.sphinx_.LOGGER>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.sphinx_.rst:35
+msgid "API"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.sphinx_.rst:46
+msgid "Bases: :py:obj:`myst_parser.mdit_to_docutils.base.DocutilsRenderer`"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/sphinx_.py:29
+msgid ""
+"This is sub-class of `DocutilsRenderer` that handles sphinx specific "
+"aspects, such as cross-referencing."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.mdit_to_docutils.sphinx_.rst:51
+msgid "Initialization"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/sphinx_.py:98
+msgid "Load the renderer (called by ``MarkdownIt``)"
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/sphinx_.py:127
+msgid ""
+"Render link token `[text](link \"title\")`, where the link has not been "
+"identified as an external URL."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/sphinx_.py:186
+msgid "Render math with referenceable labels, e.g. ``$a=1$ (label)``."
+msgstr ""
+
+#: ../../../myst_parser/mdit_to_docutils/sphinx_.py:202
+msgid "Renderer for the amsmath extension."
+msgstr ""
+

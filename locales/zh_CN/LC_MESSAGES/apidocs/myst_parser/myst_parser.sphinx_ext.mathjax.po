@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.mathjax.rst:2
+msgid ":py:mod:`myst_parser.sphinx_ext.mathjax`"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/mathjax.py:2
+msgid "Overrides to ``sphinx.ext.mathjax``"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/mathjax.py:4
+msgid "This fixes two issues:"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/mathjax.py:6
+msgid ""
+"Mathjax should not search for ``$`` delimiters, nor LaTeX amsmath "
+"environments, since we already achieve this with the dollarmath and "
+"amsmath mrakdown-it-py plugins"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/mathjax.py:8
+msgid ""
+"amsmath math blocks should be wrapped in mathjax delimiters (default "
+"``\\[...\\]``), and assigned an equation number"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.mathjax.rst:10
+msgid "Module Contents"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.mathjax.rst:13
+msgid "Functions"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.mathjax.rst:19
+msgid ""
+":py:obj:`log_override_warning "
+"<myst_parser.sphinx_ext.mathjax.log_override_warning>`"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/mathjax.py:25
+msgid "Log a warning if MathJax configuration being overridden."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.mathjax.rst:22
+msgid ""
+":py:obj:`override_mathjax "
+"<myst_parser.sphinx_ext.mathjax.override_mathjax>`"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/mathjax.py:41
+msgid "Override aspects of the mathjax extension."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.mathjax.rst:25
+msgid ""
+":py:obj:`html_visit_displaymath "
+"<myst_parser.sphinx_ext.mathjax.html_visit_displaymath>`"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/mathjax.py:97
+msgid "Override for sphinx.ext.mathjax.html_visit_displaymath to handle amsmath."
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.mathjax.rst:30
+msgid "Data"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.mathjax.rst:36
+msgid ":py:obj:`logger <myst_parser.sphinx_ext.mathjax.logger>`"
+msgstr ""
+
+#: ../../apidocs/myst_parser/myst_parser.sphinx_ext.mathjax.rst:41
+msgid "API"
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/mathjax.py:43
+msgid ""
+"MyST-Parser parses dollar and latex math, via markdown-it plugins. "
+"Therefore, we tell Mathjax to only render these HTML elements. This is "
+"accompanied by setting the `ignoreClass` on the top-level section of each"
+" MyST document."
+msgstr ""
+
+#: ../../../myst_parser/sphinx_ext/mathjax.py:99
+msgid ""
+"By default displaymath, are normally wrapped in a prefix/suffix, defined "
+"by mathjax_display, and labelled nodes are numbered. However, this is not"
+" the case if the math_block is set as 'nowrap', as for amsmath. "
+"Therefore, we need to override this behaviour."
+msgstr ""
+

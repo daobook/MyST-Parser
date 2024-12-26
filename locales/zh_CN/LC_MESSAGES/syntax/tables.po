@@ -1,0 +1,345 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../syntax/tables.md:1
+msgid "Tables"
+msgstr ""
+
+#: ../../syntax/tables.md:3
+msgid "Markdown syntax"
+msgstr ""
+
+#: ../../syntax/tables.md:5
+msgid ""
+"Tables can be written using the standard [Github Flavoured Markdown "
+"syntax](https://github.github.com/gfm/#tables-extension-):"
+msgstr ""
+
+#: ../../syntax/tables.md:13
+msgid "Cells in a column can be aligned using the `:` character:"
+msgstr ""
+
+#: ../../syntax/tables.md:21
+msgid "Aligning cells in Sphinx HTML themes"
+msgstr ""
+
+#: ../../syntax/tables.md:25
+msgid ""
+"Text is aligned by assigning `text-left`, `text-center`, or `text-right` "
+"to the cell. It is then necessary for the theme you are using to include "
+"the appropriate css styling."
+msgstr ""
+
+#: ../../syntax/tables.md:40
+msgid "Table with captions"
+msgstr ""
+
+#: ../../syntax/tables.md:42
+msgid "The `table` directive can be used to create a table with a caption:"
+msgstr ""
+
+#: ../../syntax/tables.md:63
+msgid "Table caption"
+msgstr ""
+
+#: ../../syntax/tables.md:55 ../../syntax/tables.md:100
+#: ../../syntax/tables.md:147
+msgid "The following options are recognized:"
+msgstr ""
+
+#: ../../syntax/tables.md:57 ../../syntax/tables.md:103
+msgid "List table options"
+msgstr ""
+
+#: ../../syntax/tables.md:61 ../../syntax/tables.md:107
+#: ../../syntax/tables.md:153
+msgid "`align` : \"left\", \"center\", or \"right\""
+msgstr ""
+
+#: ../../syntax/tables.md:62 ../../syntax/tables.md:108
+#: ../../syntax/tables.md:154
+msgid "The horizontal alignment of the table."
+msgstr ""
+
+#: ../../syntax/tables.md:64 ../../syntax/tables.md:116
+#: ../../syntax/tables.md:192
+msgid "`width` : [length](units/length) or [percentage](units/percentage)"
+msgstr ""
+
+#: ../../syntax/tables.md:65 ../../syntax/tables.md:117
+msgid ""
+"Sets the width of the table to the specified length or percentage of the "
+"line width."
+msgstr ""
+
+#: ../../syntax/tables.md:66 ../../syntax/tables.md:118
+msgid ""
+"If omitted, the renderer determines the width of the table based on its "
+"contents or the column widths."
+msgstr ""
+
+#: ../../syntax/tables.md:68
+msgid "`widths` : \"auto\", \"grid\", or a list of integers"
+msgstr ""
+
+#: ../../syntax/tables.md:69
+msgid ""
+"Explicitly set column widths. Specifies relative widths if used with the "
+"width option."
+msgstr ""
+
+#: ../../syntax/tables.md:70 ../../syntax/tables.md:190
+msgid ""
+"\"auto\" delegates the determination of column widths to the backend "
+"renderer."
+msgstr ""
+
+#: ../../syntax/tables.md:71
+msgid ""
+"\"grid\" determines column widths from the widths of the input columns "
+"(in characters)."
+msgstr ""
+
+#: ../../syntax/tables.md:74
+msgid "List tables"
+msgstr ""
+
+#: ../../syntax/tables.md:76
+msgid ""
+"The `list-table` directive is used to create a table from data in a "
+"uniform two-level bullet list. \"Uniform\" means that each sublist "
+"(second-level list) must contain the same number of list items."
+msgstr ""
+
+#: ../../syntax/tables.md:108 ../../syntax/tables.md:154
+msgid "Frozen Delights!"
+msgstr ""
+
+#: ../../syntax/tables.md:112 ../../syntax/tables.md:159
+msgid "Treat"
+msgstr ""
+
+#: ../../syntax/tables.md:113 ../../syntax/tables.md:159
+msgid "Quantity"
+msgstr ""
+
+#: ../../syntax/tables.md:114 ../../syntax/tables.md:159
+msgid "Description"
+msgstr ""
+
+#: ../../syntax/tables.md:115 ../../syntax/tables.md:159
+msgid "Albatross"
+msgstr ""
+
+#: ../../syntax/tables.md:116 ../../syntax/tables.md:159
+msgid "2.99"
+msgstr ""
+
+#: ../../syntax/tables.md:117 ../../syntax/tables.md:124
+#: ../../syntax/tables.md:159
+msgid "On a stick!"
+msgstr ""
+
+#: ../../syntax/tables.md:118 ../../syntax/tables.md:159
+msgid "Crunchy Frog"
+msgstr ""
+
+#: ../../syntax/tables.md:119 ../../syntax/tables.md:159
+msgid "1.49"
+msgstr ""
+
+#: ../../syntax/tables.md:120 ../../syntax/tables.md:159
+msgid "If we took the bones out, it wouldn't be crunchy, now would it?"
+msgstr ""
+
+#: ../../syntax/tables.md:122 ../../syntax/tables.md:159
+msgid "Gannet Ripple"
+msgstr ""
+
+#: ../../syntax/tables.md:123 ../../syntax/tables.md:159
+msgid "1.99"
+msgstr ""
+
+#: ../../syntax/tables.md:110 ../../syntax/tables.md:173
+msgid "`header-rows` : integer"
+msgstr ""
+
+#: ../../syntax/tables.md:111
+msgid "The number of rows of list data to use in the table header. Defaults to 0."
+msgstr ""
+
+#: ../../syntax/tables.md:113 ../../syntax/tables.md:182
+msgid "`stub-columns` : integer"
+msgstr ""
+
+#: ../../syntax/tables.md:114 ../../syntax/tables.md:183
+msgid ""
+"The number of table columns to use as stubs (row titles, on the left). "
+"Defaults to 0."
+msgstr ""
+
+#: ../../syntax/tables.md:120
+msgid "`widths` : integer `[integer...]` or \"auto\""
+msgstr ""
+
+#: ../../syntax/tables.md:121 ../../syntax/tables.md:189
+msgid ""
+"A list of relative column widths. The default is equal-width columns "
+"(100%/#columns)."
+msgstr ""
+
+#: ../../syntax/tables.md:122
+msgid ""
+"\"auto\" delegates the determination of column widths to the output "
+"builder."
+msgstr ""
+
+#: ../../syntax/tables.md:124 ../../syntax/tables.md:195
+msgid "``class``"
+msgstr ""
+
+#: ../../syntax/tables.md:125 ../../syntax/tables.md:196
+msgid "A space-separated list of CSS classes to add to the table."
+msgstr ""
+
+#: ../../syntax/tables.md:127 ../../syntax/tables.md:198
+msgid "``name``"
+msgstr ""
+
+#: ../../syntax/tables.md:128 ../../syntax/tables.md:199
+msgid ""
+"A reference target for the admonition (see [cross-"
+"referencing](#syntax/referencing))."
+msgstr ""
+
+#: ../../syntax/tables.md:131
+msgid "CSV tables"
+msgstr ""
+
+#: ../../syntax/tables.md:133
+msgid ""
+"The `csv-table` directive is used to create a table from Comma-Separated-"
+"Values data."
+msgstr ""
+
+#: ../../syntax/tables.md:149
+msgid "CSV table options"
+msgstr ""
+
+#: ../../syntax/tables.md:156
+msgid "`delim` : char | \"tab\" | \"space\""
+msgstr ""
+
+#: ../../syntax/tables.md:157
+msgid ""
+"A one-character string used to separate fields. Defaults to , (comma). "
+"May be specified as a Unicode code point; see the unicode directive for "
+"syntax details."
+msgstr ""
+
+#: ../../syntax/tables.md:160
+msgid "`encoding` : string"
+msgstr ""
+
+#: ../../syntax/tables.md:161
+msgid ""
+"The text encoding of the external CSV data (file or URL). Defaults to the"
+" document's input_encoding."
+msgstr ""
+
+#: ../../syntax/tables.md:164
+msgid "`escape` : char"
+msgstr ""
+
+#: ../../syntax/tables.md:165
+msgid ""
+"A one-character string used to escape the delimiter or quote characters. "
+"May be specified as a Unicode code point; see the unicode directive for "
+"syntax details. Used when the delimiter is used in an unquoted field, or "
+"when quote characters are used within a field. The default is to double-"
+"up the character, e.g. \"He said, \"\"Hi!\"\"\""
+msgstr ""
+
+#: ../../syntax/tables.md:167
+msgid "`file` : string (newlines removed)"
+msgstr ""
+
+#: ../../syntax/tables.md:168
+msgid "The local filesystem path to a CSV data file."
+msgstr ""
+
+#: ../../syntax/tables.md:170
+msgid "`header` : CSV data"
+msgstr ""
+
+#: ../../syntax/tables.md:171
+msgid ""
+"Supplemental data for the table header, added independently of and before"
+" any header-rows from the main CSV data. Must use the same CSV format as "
+"the main CSV data."
+msgstr ""
+
+#: ../../syntax/tables.md:174
+msgid "The number of rows of CSV data to use in the table header. Defaults to 0."
+msgstr ""
+
+#: ../../syntax/tables.md:176
+msgid "`keepspace` : flag"
+msgstr ""
+
+#: ../../syntax/tables.md:177
+msgid ""
+"Treat whitespace immediately following the delimiter as significant. The "
+"default is to ignore such whitespace."
+msgstr ""
+
+#: ../../syntax/tables.md:179
+msgid "`quote` : char"
+msgstr ""
+
+#: ../../syntax/tables.md:180
+msgid ""
+"A one-character string used to quote elements containing the delimiter or"
+" which start with the quote character. Defaults to \" (quote). May be "
+"specified as a Unicode code point; see the unicode directive for syntax "
+"details."
+msgstr ""
+
+#: ../../syntax/tables.md:185
+msgid "`url` : string (whitespace removed)"
+msgstr ""
+
+#: ../../syntax/tables.md:186
+msgid "An Internet URL reference to a CSV data file."
+msgstr ""
+
+#: ../../syntax/tables.md:188
+msgid "`widths` : integer, `[integer...]` or \"auto\""
+msgstr ""
+
+#: ../../syntax/tables.md:193
+msgid ""
+"Sets the width of the table to the specified length or percentage of the "
+"line width. If omitted, the renderer determines the width of the table "
+"based on its contents or the column widths."
+msgstr ""
+

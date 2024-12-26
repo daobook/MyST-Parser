@@ -1,0 +1,868 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Executable Book Project
+# This file is distributed under the same license as the MyST Parser
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyST Parser 4.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-26 16:46+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: zh_CN\n"
+"Language-Team: zh_CN <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: ../../syntax/cross-referencing.md:2
+msgid "Cross-references"
+msgstr "交叉引用"
+
+#: ../../syntax/cross-referencing.md:4
+msgid ""
+"MyST-Parser offers powerful cross-referencing features, to link to URLs, "
+"documents, headers, figures and more, that are **portable** across output"
+" formats and generate **warnings** when broken."
+msgstr ""
+"MyST-Parser 提供了强大的交叉引用功能，"
+"可以链接到 URL、文档、标题、图表等，这些功能在输出格式之间是 **可移植的**，并在链接失效时生成 **警告**。"
+
+#: ../../syntax/cross-referencing.md:7
+msgid ""
+"This page covers the basics of setting up referenceable targets for "
+"content and how to reference them."
+msgstr ""
+"本页介绍了为内容设置可引用目标的基础知识以及如何引用它们。"
+
+#: ../../syntax/cross-referencing.md:10
+msgid "Creating explicit targets"
+msgstr "创建显式目标"
+
+#: ../../syntax/cross-referencing.md:12
+msgid ""
+"Targets are used to define custom anchors that you can refer to elsewhere"
+" in your documentation."
+msgstr ""
+"目标用于定义自定义锚点，您可以在文档的其他地方引用这些锚点。"
+
+#: ../../syntax/cross-referencing.md:14
+msgid "There are three primary ways to create targets:"
+msgstr "有三种主要方式可以创建目标："
+
+#: ../../syntax/cross-referencing.md:16
+msgid "Annotating a syntax block with `(target)=`"
+msgstr "使用 `(target)=` 为语法块添加注释"
+
+#: ../../syntax/cross-referencing.md:17
+msgid ""
+"Annotating a syntax block/inline/span with an `{#id}` attribute (using "
+"the [attrs_block](#syntax/attributes/block) and "
+"[attrs_inline](#syntax/attributes/inline) extensions)"
+msgstr ""
+"使用 `{#id}` 属性为语法块/行内/跨行内容添加注释"
+"（使用 [attrs_block](#syntax/attributes/block) 和 [attrs_inline](#syntax/attributes/inline) 插件）"
+
+#: ../../syntax/cross-referencing.md:18
+msgid "Adding a `name` option to a directive"
+msgstr "在指令中添加 `name` 选项"
+
+#: ../../syntax/cross-referencing.md:49
+msgid "Heading"
+msgstr "标题"
+
+#: ../../syntax/cross-referencing.md:52
+msgid "This is a paragraph, with an `id` attribute."
+msgstr "这是带有 `id` 属性的段落。"
+
+#: ../../syntax/cross-referencing.md:54
+msgid "This is a [span with an `id` attribute]{#span-target}."
+msgstr "这是[带有 `id` 属性的跨行内容]{#span-target}。"
+
+#: ../../syntax/cross-referencing.md:59
+msgid "This is a directive with a `name` option"
+msgstr "这是带有 `name` 选项的指令"
+
+#: ../../syntax/cross-referencing.md:62
+msgid ""
+"[reference1](#heading-target), [reference2](#paragraph-target), "
+"[reference3](#span-target), [reference4](#directive-target)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:41
+msgid ""
+"There are also other ways to create targets, specific to certain "
+"directives, such as [glossaries](#syntax/glossaries) create targets for "
+"terms, and [code APIs](#syntax/apis) create targets for objects:"
+msgstr ""
+"还有一些特定指令可以创建目标，例如 [术语表](#syntax/glossaries) 为术语创建目标，[代码 API](#syntax/apis) 为对象创建目标："
+
+#: ../../syntax/cross-referencing.md:67
+msgid "my other term"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:68
+msgid "Definition of the term"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:70
+msgid "[Link to a term](<#my other term>)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:74
+msgid "Docstring content"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:77
+msgid "[Link to a class](#mypackage.MyClass)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:60
+msgid ""
+"The [footnotes section](#syntax/footnotes), covers how to create and link"
+" to footnotes, and the [sphinxcontrib.bibtex](https://pypi.org/project"
+"/sphinxcontrib-bibtex/) extension provides a means to reference "
+"bibliographies."
+msgstr ""
+"[脚注部分](#syntax/footnotes) 介绍了如何创建和链接脚注，"
+"而 [sphinxcontrib.bibtex](https://pypi.org/project/sphinxcontrib-bibtex/) 插件提供了引用参考文献的功能。"
+
+#: ../../syntax/cross-referencing.md:65
+msgid "Implicit targets"
+msgstr "隐式目标"
+
+#: ../../syntax/cross-referencing.md:67
+msgid ""
+"Whole documents can be referenced by path. Headings within documents can "
+"also be assigned an implicit target, by setting the "
+"`myst_heading_anchors` configuration option. This is should be set to an "
+"integer, between 1 and 6, indicating the depth of headings to assign "
+"targets to."
+msgstr ""
+"可以通过路径引用整个文档。还可以通过设置 `myst_heading_anchors` 配置选项为文档中的标题分配隐式目标。"
+"该选项应设置为 1 到 6 之间的整数，表示分配目标的标题深度。"
+
+#: ../../syntax/cross-referencing.md:72
+msgid ""
+"The anchor \"slugs\" are created according to the [GitHub "
+"implementation](https://github.com/Flet/github-slugger): heading titles "
+"are lower cased, punctuation is removed, spaces are replaced with `-`, "
+"and uniqueness is enforced by suffix enumeration."
+msgstr ""
+"锚点“ slugs ”是根据 [GitHub 实现](https://github.com/Flet/github-slugger) 创建的：标题被转换为小写，标点符号被移除，空格替换为 `-`，并通过后缀枚举确保唯一性。"
+
+#: ../../syntax/cross-referencing.md:74
+msgid "For example, using `myst_heading_anchors = 2`:"
+msgstr "例如，使用 `myst_heading_anchors = 2`："
+
+#: ../../syntax/cross-referencing.md:93
+msgid "A heading with slug"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:95
+msgid ""
+"A heading with slug/media/pc/data/lxw/ai/pygallery/tests/.temp/MyST-"
+"Parser/docs/syntax/cross-referencing.md:95: (INFO/1) Duplicate implicit "
+"target name: \"a heading with slug\"."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:97
+msgid "<project:#a-heading-with-slug>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:99
+msgid "[Explicit title](#a-heading-with-slug-1)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:86
+msgid ""
+"For more information see the [auto-generated header anchors](#syntax"
+"/header-anchors) section."
+msgstr ""
+"更多信息请参见 [自动生成的标题锚点](#syntax/header-anchors) 部分。"
+
+#: ../../syntax/cross-referencing.md:89
+msgid ""
+"In general, it is discouraged to rely on implicit targets, since they are"
+" easy to break, if for example a document/heading is moved or renamed."
+msgstr ""
+"通常不建议依赖隐式目标，因为它们很容易被破坏，例如文档/标题被移动或重命名时。"
+
+#: ../../syntax/cross-referencing.md:93
+msgid "Markdown link syntax"
+msgstr "Markdown 链接语法"
+
+#: ../../syntax/cross-referencing.md:95
+msgid "Markdown links come in three forms:"
+msgstr "Markdown 链接有三种形式："
+
+#: ../../syntax/cross-referencing.md:97
+msgid ""
+"*Autolinks* are [URIs][uri] surrounded by `<` and `>`, which must always "
+"have a scheme:"
+msgstr ""
+"*自动链接* 是由 `<` 和 `>` 包围的 [URI][uri]，必须始终包含 scheme："
+
+#: ../../syntax/cross-referencing.md:103
+msgid ""
+"*Inline links* allow for optional explicit text and titles (in HTML "
+"titles are rendered as tooltips):"
+msgstr ""
+"*行内链接* 允许可选的显式文本和标题（在 HTML 中，标题会显示为工具提示）："
+
+#: ../../syntax/cross-referencing.md:109
+msgid "or, if the destination contains spaces,"
+msgstr "或者，如果目标包含空格，"
+
+#: ../../syntax/cross-referencing.md:115
+msgid ""
+"*Reference links* define the destination separately in the document, and "
+"can be used multiple times:"
+msgstr ""
+"*引用链接* 在文档中单独定义目标，并且可以多次使用："
+
+#: ../../syntax/cross-referencing.md:125
+msgid "The [CommonMark specification](https://spec.commonmark.org/0.30/#links)"
+msgstr "[CommonMark 规范](https://spec.commonmark.org/0.30/#links)"
+
+#: ../../syntax/cross-referencing.md:131
+msgid "Default destination resolution"
+msgstr "默认目标解析"
+
+#: ../../syntax/cross-referencing.md:133
+msgid ""
+"The destination of a link can resolve to either an **external** target, "
+"such as a [URL] to another website, or an **internal** target, such as a "
+"file, heading or figure within the same project."
+msgstr ""
+"链接的目标可以解析为 **外部** 目标，例如指向另一个网站的 [URL]，也可以是 **内部** 目标，例如同一项目中的文件、标题或图表。"
+
+#: ../../syntax/cross-referencing.md:137
+msgid ""
+"By default, MyST will resolve link destinations according to the "
+"following rules:"
+msgstr ""
+"默认情况下，MyST 将根据以下规则解析链接目标："
+
+#: ../../syntax/cross-referencing.md:139
+msgid ""
+"Destination beginning with a scheme (e.g. `xxx:`), will be handled "
+"according to that scheme:"
+msgstr ""
+"以方案开头的目标（例如 `xxx:`）将根据该方案处理："
+
+#: ../../syntax/cross-referencing.md:142
+msgid ""
+"Destinations beginning with `project:` will be treated as internal "
+"references"
+msgstr ""
+"以 `project:` 开头的目标将被视为内部引用"
+
+#: ../../syntax/cross-referencing.md:143
+msgid "Destinations beginning with `path:` will be treated as downloadable files"
+msgstr "以 `path:` 开头的目标将被视为可下载文件"
+
+#: ../../syntax/cross-referencing.md:144
+msgid ""
+"Destinations beginning with `inv:` will be treated as intersphinx "
+"references"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:145
+msgid ""
+"Autolinks or destinations beginning with  `http:`, `https:`, `ftp:`, or "
+"`mailto:` will be treated as external [URL] links."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:147
+msgid ""
+"Destinations which point to a local file path are treated as links to "
+"that file."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:150
+msgid ""
+"If the destination is a relative path, it is resolved relative to the "
+"current file."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:151
+msgid ""
+"If the destination is an absolute path (starts with `/`), it is resolved "
+"relative to the root of the project (i.e. the source directory)."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:152
+msgid ""
+"If that path relates to another document in the project (e.g. a `.md` or "
+"`.rst` file), then it will link to the first heading in that document."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:153
+msgid ""
+"Links to project documents can also include a `#` fragment identifier, to"
+" link to a specific heading in that document."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:154
+msgid ""
+"If the path is to a non-source file (e.g. a `.png` or `.pdf` file), then "
+"the link will be to the file itself, e.g. to download it."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:156
+msgid "Destinations beginning with `#` will be treated as internal references."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:159
+msgid "First, explicit targets in the same file are searched for, if not found"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:160
+msgid "Then, implicit targets in the same file are searched for, if not found"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:161
+msgid ""
+"Then, explicit targets across the whole project are searched for, if not "
+"found"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:162
+msgid "Then, intersphinx references are searched for, if not found"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:163
+msgid "A warning is emitted and the destination is left as an external link."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:166
+msgid ""
+"Local file path resolution and cross-project references are not available"
+" in [single page builds](#myst-docutils)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:169
+msgid "Explicit vs implicit link text"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:171
+msgid ""
+"If the link text is explicitly given, e.g. `[text](#dest)`, then the "
+"rendered text will be that. This text can contain nested inline markup, "
+"such as `[*emphasis*](#syntax/emphasis)`{l=md}."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:174
+msgid ""
+"If no text is given or it is an auto-link, e.g. `[](#dest)` or "
+"`<project:#dest>`, then MyST will attempt to resolve an implicit text. "
+"For example, if the destination is a heading, then the heading text will "
+"be used as the link text, or if the destination is a figure/table then "
+"the caption will be used as the link text. Otherwise, the link text will "
+"be the destination itself."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:179
+msgid "Examples"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:181
+msgid "Autolinks"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:201 ../../syntax/cross-referencing.md:214
+#: ../../syntax/cross-referencing.md:227
+msgid "External URL"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:201
+msgid "<https://example.com>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:202 ../../syntax/cross-referencing.md:215
+#: ../../syntax/cross-referencing.md:228
+msgid "Internal target reference"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:202
+msgid "<project:#cross-references>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:203 ../../syntax/cross-referencing.md:216
+#: ../../syntax/cross-referencing.md:229
+msgid "Internal file reference"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:203
+msgid "<project:../intro.md>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:204 ../../syntax/cross-referencing.md:217
+#: ../../syntax/cross-referencing.md:230
+msgid "Internal file -> heading reference"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:204
+msgid "<project:../intro.md#-get-started>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:205 ../../syntax/cross-referencing.md:218
+#: ../../syntax/cross-referencing.md:231
+msgid "Downloadable file"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:205
+msgid "<path:example.txt>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:206 ../../syntax/cross-referencing.md:219
+#: ../../syntax/cross-referencing.md:232
+msgid "Intersphinx reference"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:206 ../../syntax/cross-referencing.md:364
+msgid "<inv:sphinx:std#index>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:194
+msgid "Inline links with implicit text"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:214
+msgid "[](https://example.com)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:215
+msgid "[](#cross-references)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:216
+msgid "[](../intro.md)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:217
+msgid "[](../intro.md#-get-started)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:218
+msgid "[](example.txt)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:219
+msgid "[](inv:sphinx:std#index)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:207
+msgid "Inline links with explicit text"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:227
+msgid "[Explicit text](https://example.com)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:228
+msgid "[Explicit text](#cross-references)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:229
+msgid "[Explicit text](../intro.md)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:230
+msgid "[Explicit text](../intro.md#-get-started)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:231
+msgid "[Explicit text](example.txt)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:232
+msgid "[Explicit text](inv:sphinx:std#index)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:220
+msgid "Customising external URL resolution"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:223
+msgid ""
+"`myst_url_schemes` now allows for customising how the links are converted"
+" to URLs, and the `attrs_inline` extension can be used to specify certain"
+" links as external."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:227
+msgid ""
+"By default, all links which begin with `http:`, `https:`, `ftp:`, or "
+"`mailto:` will be treated as external [URL] links. You can customise this"
+" behaviour in a number of ways using [configuration "
+"options](../configuration.md)."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:230
+msgid ""
+"Most simply, by setting the `myst_all_links_external` configuration "
+"option to `True`, all links will be treated as external [URL] links."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:233
+msgid ""
+"To apply selectively to specific links, you can enable the "
+"[attrs_inline](syntax/attributes/inline) extension, then add an "
+"`external` class to the link.\\ For example, `[my-external-link](my-"
+"external-link){.external}` becomes [my-external-link](my-external-"
+"link){.external}."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:237
+msgid ""
+"To specify a custom list of URL schemes, you can set the "
+"`myst_url_schemes` configuration option. By default this is set to "
+"`[\"http\", \"https\", \"ftp\", \"mailto\"]`."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:240
+msgid ""
+"As well as being a list of strings, `myst_url_schemes` can also be a "
+"dictionary, where the keys are the URL schemes, and the values define how"
+" the links are converted to URLs. This allows you to customise the "
+"conversion of links to URLs for specific schemes, for example:"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:258
+msgid "Allows for links such as:"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:260
+msgid ""
+"`[URI](wiki:Uniform_Resource_Identifier#URI_references)` is converted to "
+"[URI](wiki:Uniform_Resource_Identifier#URI_references)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:261
+msgid "`<doi:10.1186/gm483>` is converted to <doi:10.1186/gm483>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:262
+msgid "`<gh-issue:639>` is converted to <gh-issue:639>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:265
+msgid ""
+"You can also use the [sphinx-tippy](https://sphinx-tippy.readthedocs.io) "
+"extension to add rich \"hover\" tooltips to links."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:267
+msgid ""
+"Adding the `github` class above integrates well the [pydata-sphinx-"
+"theme's GitHub link formatting](https://pydata-sphinx-"
+"theme.readthedocs.io/en/stable/user_guide/theme-elements.html#link-"
+"shortening-for-git-repository-services)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:270
+msgid "The value of each scheme can be:"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:272
+msgid "`None`: the link is converted directly to an external URL."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:273
+msgid ""
+"A string: the link is converted to an external URL using the string as a "
+"template."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:274
+msgid ""
+"A dictionary: the link is converted to an external URL using the "
+"dictionary’s `url` key as a template."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:275
+msgid ""
+"The (optional) `title` key is a template for the link’s implicit title, "
+"i.e. it is used if the link has no explicit title."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:276
+msgid "The (optional) `classes` key is a list of classes to add to the link."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:278
+msgid ""
+"The templates for `url` and `title` can use variables (enclosed by `{{ "
+"}}`), which are substituted for the corresponding parts of the link "
+"`<scheme>://<netloc>/<path>;<params>?<query>#<fragment>` (or the full "
+"link using `uri`). For example:"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:281
+msgid "`scheme`: the URL scheme, e.g. `wiki`."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:282
+msgid "`path`: the path part of the URL, e.g. `Uniform_Resource_Identifier`."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:283
+msgid "`fragment`: the fragment part of the URL, e.g. `URI_references`."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:286
+msgid "Cross-project (intersphinx) links"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:291
+msgid ""
+"Each Sphinx HTML build creates a file named `objects.inv` that contains a"
+" mapping from referenceable objects to [URIs][uri] relative to the HTML "
+"set’s root. Each object is uniquely identified by a `domain`, `type`, and"
+" `name`. As well as the relative location, the object can also include "
+"implicit `text` for the reference (like the text for a heading)."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:295
+msgid ""
+"You can use the `myst-inv` command line tool (installed with "
+"`myst_parser`) to visualise and filter any remote URL or local file path "
+"to this inventory file (or its parent):"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:315
+msgid ""
+"To load external inventories into your Sphinx project, you must load the "
+"[`sphinx.ext.intersphinx` extension](inv:sphinx#usage/*/intersphinx), and"
+" set the `intersphinx_mapping` configuration option."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:324
+msgid "Docutils configuration"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:328
+msgid ""
+"Use the `docutils.conf` configuration file, for more details see [](myst-"
+"docutils)."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:337
+msgid ""
+"you can then reference inventory objects by prefixing the `inv` schema to"
+" the destination [URI]: `inv:key:domain:type#name`."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:339
+msgid ""
+"`key`, `domain` and `type` are optional, e.g. for `inv:#name`, all "
+"inventories, domains and types will be searched, with a [warning emitted"
+"](myst-warnings) if multiple matches are found."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:341
+msgid ""
+"Additionally, `*` is a wildcard which matches zero or more characters, "
+"e.g. `inv:*:std:doc#a*` will match all `std:doc` objects in all "
+"inventories, with a `name` beginning with `a`. Note, to match to a "
+"literal `*` use `\\*`."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:344
+msgid "Here are some examples:"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:350
+msgid "Type"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:351
+msgid "Syntax"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:352
+msgid "Rendered"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:354
+msgid "Autolink, full"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:355
+msgid "`<inv:sphinx:std:doc#index>`{l=myst}"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:356
+msgid "<inv:sphinx:std:doc#index>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:358
+msgid "Link, full"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:359
+msgid "`[Sphinx](inv:sphinx:std:doc#index)`{l=myst}"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:360
+msgid "[Sphinx](inv:sphinx:std:doc#index)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:362
+msgid "Autolink, no type"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:363
+msgid "`<inv:sphinx:std#index>`{l=myst}"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:366
+msgid "Autolink, no domain"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:367
+msgid "`<inv:sphinx:*:doc#index>`{l=myst}"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:368
+msgid "<inv:sphinx:*:doc#index>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:370
+msgid "Autolink, only name"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:371
+msgid "`<inv:#*.Sphinx>`{l=myst}"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:372
+msgid "<inv:#*.Sphinx>"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:375
+msgid "Reference roles"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:377
+msgid ""
+"Sphinx offers numerous [roles for "
+"referencing](#usage/restructuredtext/roles) specific objects."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:379
+msgid ""
+"These can also within MyST documents, although it is recommended to use "
+"the Markdown syntax where possible, which is more portable and native to "
+"MyST."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:410
+msgid "{ref}`syntax/referencing`, {ref}`Explicit text <syntax/referencing>`"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:411
+msgid "{term}`my other term`"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:412
+msgid "{doc}`../intro`, {doc}`Explicit text <../intro>`"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:413
+msgid "{download}`example.txt`, {download}`Explicit text <example.txt>`"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:414
+msgid ""
+"{py:class}`mypackage.MyClass`, {py:class}`Explicit text "
+"<mypackage.MyClass>`"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:415
+msgid ""
+"{external:class}`sphinx.application.Sphinx`, {external:class}`Explicit "
+"text <sphinx.application.Sphinx>`"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:416
+msgid ""
+"{external+sphinx:ref}`code-examples`, {external+sphinx:ref}`Explicit text"
+" <code-examples>`"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:420
+msgid "<project:#syntax/referencing>, [][syntax], [Explicit text][syntax]"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:421
+msgid "[](<#my other term>)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:422
+msgid "<project:../intro.md>, [Explicit text](../intro.md)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:423
+msgid "<path:example.txt>, [Explicit text](example.txt)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:424
+msgid "<project:#mypackage.MyClass>, [Explicit text](#mypackage.MyClass)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:425
+msgid "<inv:#*Sphinx>, [Explicit text](#sphinx.application.Sphinx)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:426
+msgid "<inv:sphinx#code-examples>, [Explicit text](inv:sphinx#code-examples)"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:403
+msgid "Handling invalid references"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:405
+msgid ""
+"When building your documentation, it is recommended to run in [nitpicky "
+"mode](inv:sphinx:std:confval#nitpicky), which will emit warnings for any "
+"invalid references."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:407
+msgid "you may encounter warnings such as:"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:415
+msgid ""
+"To fully suppress a specific warning type, you can use the "
+"`suppress_warnings` configuration option, in Sphinx’s `conf.py` file:"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:421
+msgid "or in `docutils.conf` or [command-line tool](../docutils.md):"
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:428
+msgid ""
+"In Sphinx specific reference warnings can also be suppressed, using the "
+"<inv:sphinx#nitpick_ignore> and <inv:sphinx#nitpick_ignore_regex> "
+"configuration options."
+msgstr ""
+
+#: ../../syntax/cross-referencing.md:434
+msgid ""
+"To handle ambiguous references, for intersphinx references see the "
+"[](syntax/inv_links) section, or the domains searched for all Markdown "
+"references can be restricted globally or per-document using the "
+"[`myst_ref_domains` configuration](../configuration.md)."
+msgstr ""
+
