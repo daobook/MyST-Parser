@@ -337,7 +337,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:175
 msgid "There are a few other options available to control dollar math parsing:"
-msgstr ""
+msgstr "还有一些其他选项可用于控制美元符号数学解析："
 
 #: ../../syntax/optional.md:177
 msgid ""
@@ -345,6 +345,7 @@ msgid ""
 "if there are no initial / final spaces, e.g. `$a$` but not `$ a$` or `$a "
 "$`."
 msgstr ""
+"`myst_dmath_allow_space=False`，将导致仅在没有初始/最终空格时解析内联数学，例如 `$a$` 但不包括 `$ a$` 或 `$a $`。"
 
 #: ../../syntax/optional.md:179
 msgid ""
@@ -352,16 +353,18 @@ msgid ""
 " if there are no initial / final digits, e.g. `$a$` but not `1$a$` or "
 "`$a$2`."
 msgstr ""
+"`myst_dmath_allow_digits=False`，将导致仅在没有初始/最终数字时解析内联数学，例如 `$a$` 但不包括 `1$a$` 或 `$a$2`。"
 
 #: ../../syntax/optional.md:181
 msgid ""
 "These options can both be useful if you also wish to use `$` as a unit of"
 " currency."
 msgstr ""
+"如果您还希望将 `$` 用作货币单位，这些选项都很有用。"
 
 #: ../../syntax/optional.md:184
 msgid "`myst_dmath_double_inline` option"
-msgstr ""
+msgstr "`myst_dmath_double_inline` 选项"
 
 #: ../../syntax/optional.md:187
 msgid ""
@@ -369,6 +372,7 @@ msgid ""
 "`myst_dmath_double_inline = True` (`False` by default). This allows for "
 "example:"
 msgstr ""
+"要在内联上下文中允许显示数学（即 `$$`），请设置 `myst_dmath_double_inline = True` （默认为 `False`）。这允许例如："
 
 #: ../../syntax/optional.md:207
 msgid ""
@@ -385,13 +389,14 @@ msgstr ""
 
 #: ../../syntax/optional.md:200
 msgid "Math in other block elements"
-msgstr ""
+msgstr "其他块元素中的数学"
 
 #: ../../syntax/optional.md:202
 msgid ""
 "Math will also work when nested in other block elements, like lists or "
 "quotes:"
 msgstr ""
+"数学在其他块元素（如列表或引用）中嵌套时也能正常工作："
 
 #: ../../syntax/optional.md:220 ../../syntax/optional.md:270
 msgid "A list"
@@ -407,7 +412,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:215
 msgid "Direct LaTeX Math"
-msgstr ""
+msgstr "直接 LaTeX 数学"
 
 #: ../../syntax/optional.md:217
 msgid ""
@@ -416,6 +421,8 @@ msgid ""
 "[amsmath](https://ctan.org/pkg/amsmath) LaTeX equations. These top-level "
 "math environments will then be directly parsed:"
 msgstr ""
+"通过将 `\"amsmath\"` 添加到 `myst_enable_extensions` （在 {{ confpy }} 中），"
+"您可以启用对 [amsmath](https://ctan.org/pkg/amsmath) LaTeX 方程的直接解析。这些顶级数学环境将被直接解析："
 
 #: ../../syntax/optional.md:221
 msgid ""
@@ -425,7 +432,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:223
 msgid "As expected, environments ending in `*` will not be numbered, for example:"
-msgstr ""
+msgstr "正如预期的那样，以 `*` 结尾的环境不会被编号，例如："
 
 #: ../../syntax/optional.md:249
 msgid ""
@@ -452,12 +459,15 @@ msgid ""
 "[executablebooks/MyST-Parser#202](https://github.com/executablebooks"
 "/MyST-Parser/issues/202))!"
 msgstr ""
+"环境中的 `\\labels` 目前无法识别，因此无法引用。"
+"希望在未来更新中实现此功能（参见 [executablebooks/MyST-Parser#202](https://github.com/executablebooks/MyST-Parser/issues/202)）！"
 
 #: ../../syntax/optional.md:247
 msgid ""
 "This syntax will also work when nested in other block elements, like "
 "lists or quotes:"
 msgstr ""
+"此语法在其他块元素（如列表或引用）中嵌套时也能正常工作："
 
 #: ../../syntax/optional.md:271
 msgid ""
@@ -479,7 +489,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:264
 msgid "Mathjax and math parsing"
-msgstr ""
+msgstr "Mathjax 与数学解析"
 
 #: ../../syntax/optional.md:266
 msgid ""
@@ -489,6 +499,8 @@ msgid ""
 " in to the top-level section of each MyST document, and adds the "
 "following default MathJax configuration:"
 msgstr ""
+"“当使用 <inv:sphinx#sphinx.ext.mathjax> 扩展（默认启用）构建 HTML 时，如果启用了 `dollarmath`，Myst-Parser 会将 `tex2jax_ignore` （MathJax v2）和 "
+"`mathjax_ignore` （MathJax v3）类注入到每个 MyST 文档的顶层部分，并添加以下默认 MathJax 配置："
 
 #: ../../syntax/optional.md:269
 msgid ""
@@ -496,6 +508,7 @@ msgid ""
 "preprocessor](https://docs.mathjax.org/en/v2.7-latest/options/preprocessors/tex2jax.html"
 "#configure-tex2jax):"
 msgstr ""
+"MathJax 版本 2（参见 [tex2jax 预处理器](https://docs.mathjax.org/en/v2.7-latest/options/preprocessors/tex2jax.html#configure-tex2jax)）："
 
 #: ../../syntax/optional.md:275
 msgid ""
@@ -503,12 +516,14 @@ msgid ""
 "options](https://docs.mathjax.org/en/latest/options/document.html?highlight=ignoreHtmlClass"
 "#the-configuration-block)):"
 msgstr ""
+"MathJax 版本 3（参见 [文档选项](https://docs.mathjax.org/en/latest/options/document.html?highlight=ignoreHtmlClass#the-configuration-block)）："
 
 #: ../../syntax/optional.md:281
 msgid ""
 "This ensures that MathJax processes only math, identified by the "
 "`dollarmath` and `amsmath` extensions, or specified in `math` directives."
 msgstr ""
+"这确保 MathJax 仅处理由 `dollarmath` 和 `amsmath` 扩展标识的数学，或在 `math` 指令中指定的数学。"
 
 #: ../../syntax/optional.md:283
 msgid ""
@@ -517,6 +532,8 @@ msgid ""
 "`myst_update_mathjax=False` to inhibit this override and process all HTML"
 " elements."
 msgstr ""
+"要更改此行为，请设置自定义正则表达式以识别要处理的 HTML 类，"
+"例如 `myst_mathjax_classes=\"math|myclass\"`，或设置 `myst_update_mathjax=False` 以禁止此覆盖并处理所有 HTML 元素。"
 
 #: ../../syntax/optional.md:286
 msgid "Linkify"
@@ -527,6 +544,7 @@ msgid ""
 "Adding `\"linkify\"` to `myst_enable_extensions` (in the {{ confpy }}) "
 "will automatically identify \"bare\" web URLs and add hyperlinks:"
 msgstr ""
+"将 `\"linkify\"` 添加到 `myst_enable_extensions` （在 {{ confpy }} 中）将自动识别‘裸’网页 URL 并添加超链接："
 
 #: ../../syntax/optional.md:290
 msgid "`www.example.com` -> www.example.com"
@@ -537,6 +555,7 @@ msgid ""
 "To only match URLs that start with schema, such as `http://example.com`, "
 "set `myst_linkify_fuzzy_links=False`."
 msgstr ""
+"要仅匹配以模式开头的 URL，例如 `http://example.com`，请设置 `myst_linkify_fuzzy_links=False`。"
 
 #: ../../syntax/optional.md:295
 msgid ""
@@ -544,10 +563,12 @@ msgid ""
 "/linkify-it-py) is installed. Either directly; `pip install linkify-it-"
 "py` or *via* `pip install myst-parser[linkify]`."
 msgstr ""
+"此插件要求安装 [linkify-it-py](https://github.com/tsutsu3/linkify-it-py)。"
+"可以直接安装：`pip install linkify-it-py` 或通过 `pip install myst-parser[linkify]` 安装。"
 
 #: ../../syntax/optional.md:301
 msgid "Substitutions (with Jinja2)"
-msgstr ""
+msgstr "替换（使用 Jinja2）"
 
 #: ../../syntax/optional.md:303
 msgid ""
@@ -555,16 +576,18 @@ msgid ""
 "}}) will allow you to add substitutions, added in either the `conf.py` "
 "using `myst_substitutions`:"
 msgstr ""
+"将 `\"substitution\"` 添加到 `myst_enable_extensions` （在 {{ confpy }} 中）将允许您添加替换，可以在 `conf.py` 中使用 `myst_substitutions` 添加："
 
 #: ../../syntax/optional.md:311
 msgid ""
 "or at the top of the file, in the front-matter section (see [this "
 "section](syntax/frontmatter)):"
 msgstr ""
+"或在文件顶部的 front-matter 部分添加（参见 [本节](syntax/frontmatter)）："
 
 #: ../../syntax/optional.md:332
 msgid "Keys in the front-matter will override ones in the `conf.py`."
-msgstr ""
+msgstr "front-matter 中的键将覆盖 `conf.py` 中的键。"
 
 #: ../../syntax/optional.md:335
 msgid ""
@@ -572,6 +595,7 @@ msgid ""
 "nest substitutions in other substitutions (but circular references are "
 "prohibited):"
 msgstr ""
+"您可以内联或作为块使用这些替换，甚至可以在其他替换中嵌套替换（但禁止循环引用）："
 
 #: ../../syntax/optional.md:359
 msgid "Inline: {{ key1 }}"
@@ -597,12 +621,14 @@ msgid ""
 "Substitutions will only be assessed where you would normally use "
 "Markdown, e.g. not in code blocks:"
 msgstr ""
+"替换仅在通常使用 Markdown 的地方进行评估，例如不在代码块中："
 
 #: ../../syntax/optional.md:363
 msgid ""
 "One should also be wary of using unsuitable directives for inline "
 "substitutions. This may lead to unexpected outcomes."
 msgstr ""
+"还应注意不要将不合适的指令用于内联替换。这可能导致意外结果。"
 
 #: ../../syntax/optional.md:368
 msgid ""
@@ -613,6 +639,8 @@ msgid ""
 "Environment](inv:sphinx#extdev/envapi) in the context (as `env`). "
 "Therefore you can do things like:"
 msgstr ""
+"替换引用作为 [Jinja2 表达式](http://jinja.palletsprojects.com) 进行评估，可以使用 [过滤器](https://jinja.palletsprojects.com/en/2.11.x/templates/#list-of-builtin-filters)，"
+"并且在上下文中包含 [Sphinx 环境](inv:sphinx#extdev/envapi)（作为 `env`）。因此，您可以执行以下操作："
 
 #: ../../syntax/optional.md:385
 msgid "version: {{ env.config.version }}"
@@ -631,32 +659,36 @@ msgid ""
 "You can also change the delimiter if necessary, for example setting in "
 "the `conf.py`:"
 msgstr ""
+"如果需要，您还可以更改分隔符，例如在 `conf.py` 中设置："
 
 #: ../../syntax/optional.md:383
 msgid ""
 "Will parse: `|| \"a\" + \"b\" ||`. This should be changed with care "
 "though, so as not to affect other syntaxes."
 msgstr ""
+"将解析：`|| \"a\" + \"b\" ||`。不过应谨慎更改，以免影响其他语法。"
 
 #: ../../syntax/optional.md:386
 msgid "The exact logic for handling substitutions is:"
-msgstr ""
+msgstr "处理替换的确切逻辑是："
 
 #: ../../syntax/optional.md:388
 msgid ""
 "Combine global substitutions (specified in `conf.py`) with front-matter "
 "substitutions, to create a variable context (front-matter takes priority)"
 msgstr ""
+"将全局替换（在 `conf.py` 中指定）与 front-matter 替换结合，创建变量上下文（front-matter 优先）。"
 
 #: ../../syntax/optional.md:389
 msgid "Add the sphinx `env` to the variable context"
-msgstr ""
+msgstr "将 sphinx `env` 添加到变量上下文中。"
 
 #: ../../syntax/optional.md:390
 msgid ""
 "Create the string content to render using Jinja2 (passing it the variable"
 " context)"
 msgstr ""
+"使用 Jinja2 创建要渲染的字符串内容（传递变量上下文）。"
 
 #: ../../syntax/optional.md:391
 msgid ""
@@ -664,10 +696,11 @@ msgid ""
 "syntaxes (like lists or block-quotes), otherwise render with all syntax "
 "rules."
 msgstr ""
+"如果替换是内联的且不是指令，则渲染时忽略块语法（如列表或块引用），否则使用所有语法规则渲染。"
 
 #: ../../syntax/optional.md:393
 msgid "Substitutions and URLs"
-msgstr ""
+msgstr "替换与 URL"
 
 #: ../../syntax/optional.md:395
 msgid ""
@@ -676,6 +709,7 @@ msgid ""
 "Jinja2 substitutions allow for Python methods to be used, you can use "
 "string formatting or replacements:"
 msgstr ""
+"替换不能直接在 URL 中使用，例如 `[a link](https://{{key4}}.com)` 或 `<https://{{key4}}.com>`。然而，由于 Jinja2 替换允许使用 Python 方法，您可以使用字符串格式化或替换："
 
 #: ../../syntax/optional.md:413
 msgid "[a link](https://example.com)"
@@ -687,7 +721,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:407
 msgid "Code fences using colons"
-msgstr ""
+msgstr "使用冒号的代码栏"
 
 #: ../../syntax/optional.md:409
 msgid ""
@@ -695,6 +729,7 @@ msgid ""
 " }}), you can also use `:::` delimiters to denote directives, instead of "
 "```` ``` ````."
 msgstr ""
+"通过将 `\"colon_fence\"` 添加到 `myst_enable_extensions` （在 {{ confpy }} 中），您还可以使用 `:::` 分隔符来表示指令，而不是 ```` ``` ````。"
 
 #: ../../syntax/optional.md:412
 msgid ""
@@ -704,6 +739,7 @@ msgid ""
 "documented in [Directives](syntax/directives)) or tables with titles, for"
 " example:"
 msgstr ""
+"使用冒号而不是反引号的好处是，当您在任何标准 Markdown 编辑器中工作时，内容可以正确渲染。它非常适合警告类型的指令（如 [指令](syntax/directives) 中所述）或带标题的表格，例如："
 
 #: ../../syntax/optional.md:440 ../../syntax/optional.md:454
 #: ../../syntax/optional.md:466
@@ -716,11 +752,11 @@ msgstr ""
 
 #: ../../syntax/optional.md:432
 msgid "Similar to normal directives, these directives can also be nested:"
-msgstr ""
+msgstr "与普通指令类似，这些指令也可以嵌套："
 
 #: ../../syntax/optional.md:444
 msgid "and also parameter options can be used:"
-msgstr ""
+msgstr "并且可以使用参数选项："
 
 #: ../../syntax/optional.md:463
 msgid "This *is* also **Markdown**"
@@ -728,7 +764,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:458
 msgid "Admonition directives"
-msgstr ""
+msgstr "Admonition 指令"
 
 #: ../../syntax/optional.md:461
 msgid ""
@@ -736,14 +772,15 @@ msgid ""
 "`myst_enable_extensions = [\"colon_fence\"]` (see above). Also, classes "
 "should now be set with the `:class: myclass` option."
 msgstr ""
+"`myst_admonition_enable` 已弃用，替换为 `myst_enable_extensions = [\"colon_fence\"]` （见上文）。此外，现在应使用 `:class: myclass` 选项设置类。"
 
 #: ../../syntax/optional.md:464
 msgid "Also see [](syntax/html-admonition)."
-msgstr ""
+msgstr "另请参阅 [](syntax/html-admonition)。"
 
 #: ../../syntax/optional.md:469
 msgid "Auto-generated header anchors"
-msgstr ""
+msgstr "自动生成的标题锚点"
 
 #: ../../syntax/optional.md:471
 msgid ""
@@ -754,6 +791,9 @@ msgid ""
 "`myst_heading_anchors = DEPTH` configuration option, where `DEPTH` is the"
 " depth of header levels for which you wish to generate links."
 msgstr ""
+"MyST 解析器可以自动为标题锚点生成标签 \"slugs\"，以便您可以从 Markdown 链接中引用它们。"
+"例如，您可以在本地使用标题书签链接：`[](#header-anchor)`，或跨文件使用 `[](path/to/file.md#header-anchor)`。"
+"要实现这一点，请使用 `myst_heading_anchors = DEPTH` 配置选项，其中 `DEPTH` 是您希望生成链接的标题级别深度。"
 
 #: ../../syntax/optional.md:475
 msgid ""
@@ -761,12 +801,14 @@ msgid ""
 "`myst_parser` to generate labels for heading anchors for `h1`, `h2`, and "
 "`h3` level headings (corresponding to `#`, `##`, and `###` in markdown)."
 msgstr ""
+"例如，`conf.py` 中的以下配置告诉 `myst_parser` 为 `h1`、`h2` 和 `h3` 级别的标题（对应于 Markdown 中的 `#`、`##` 和 `###` ）生成标题锚点标签。"
 
 #: ../../syntax/optional.md:481
 msgid ""
 "You can then insert markdown links directly to anchors that are generated"
 " from your header titles in your documentation:"
 msgstr ""
+"然后，您可以直接插入指向文档中标题生成的锚点的 Markdown 链接："
 
 #: ../../syntax/optional.md:494
 msgid "[](#auto-generated-header-anchors)"
@@ -774,7 +816,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:487
 msgid "The paths to other files should be relative to the current file:"
-msgstr ""
+msgstr "其他文件的路径应相对于当前文件："
 
 #: ../../syntax/optional.md:500
 msgid "[**link text**](./typography.md#headings)"
@@ -782,35 +824,37 @@ msgstr ""
 
 #: ../../syntax/optional.md:493
 msgid "Anchor slug structure"
-msgstr ""
+msgstr "锚点 slug 结构"
 
 #: ../../syntax/optional.md:495
 msgid ""
 "The anchor \"slugs\" created aim to follow the [GitHub "
 "implementation](https://github.com/Flet/github-slugger):"
 msgstr ""
+"创建的锚点‘slug’旨在遵循 [GitHub 实现](https://github.com/Flet/github-slugger)："
 
 #: ../../syntax/optional.md:497
 msgid "lower-case text"
-msgstr ""
+msgstr "小写文本"
 
 #: ../../syntax/optional.md:498
 msgid "remove punctuation"
-msgstr ""
+msgstr "删除标点符号"
 
 #: ../../syntax/optional.md:499
 msgid "replace spaces with `-`"
-msgstr ""
+msgstr "用 `-` 替换空格"
 
 #: ../../syntax/optional.md:500
 msgid "enforce uniqueness *via* suffix enumeration `-1`"
-msgstr ""
+msgstr "通过后缀枚举 `-1` 强制唯一性"
 
 #: ../../syntax/optional.md:502
 msgid ""
 "To change the slug generation function, set `myst_heading_slug_func` in "
 "your `conf.py` to a function that accepts a string and returns a string."
 msgstr ""
+"要更改 slug 生成函数，请在 `conf.py` 中设置 `myst_heading_slug_func` 为接受字符串并返回字符串的函数。"
 
 #: ../../syntax/optional.md:505
 msgid ""
@@ -818,20 +862,22 @@ msgid ""
 "interpreted as an import path to a function, e.g. `myst_heading_slug_func"
 " = \"mypackage.mymodule.slugify\"`."
 msgstr ""
+"`myst_heading_slug_func` 现在也可以设置为字符串，该字符串将被解释为函数的导入路径，例如 `myst_heading_slug_func = \"mypackage.mymodule.slugify\"`。"
 
 #: ../../syntax/optional.md:510
 msgid "Inspect the links that will be created"
-msgstr ""
+msgstr "检查将创建的链接"
 
 #: ../../syntax/optional.md:512
 msgid ""
 "You can inspect the links that will be created using the command-line "
 "tool:"
 msgstr ""
+"可以使用命令行工具检查将创建的链接："
 
 #: ../../syntax/optional.md:527
 msgid "Definition Lists"
-msgstr ""
+msgstr "定义列表"
 
 #: ../../syntax/optional.md:529
 msgid ""
@@ -842,12 +888,15 @@ msgid ""
 "specification](http://johnmacfarlane.net/pandoc/README.html#definition-"
 "lists)."
 msgstr ""
+"通过将 `\"deflist\"` 添加到 `myst_enable_extensions`（在 {{ confpy }} 中），您将能够使用定义列表。"
+"定义列表使用 [markdown-it-py deflist 插件](inv:markdown_it#md/plugins)，该插件本身基于 [Pandoc 定义列表规范](http://johnmacfarlane.net/pandoc/README.html#definition-lists)。"
 
 #: ../../syntax/optional.md:533
 msgid ""
 "This syntax can be useful, for example, as an alternative to nested "
 "bullet-lists:"
 msgstr ""
+"例如，此语法可以作为嵌套项目列表的替代方案："
 
 #: ../../syntax/optional.md:549 ../../syntax/optional.md:559
 msgid "Term 1"
@@ -865,11 +914,11 @@ msgstr ""
 
 #: ../../syntax/optional.md:542
 msgid "Using instead:"
-msgstr ""
+msgstr "改为使用："
 
 #: ../../syntax/optional.md:552
 msgid "From the Pandoc documentation:"
-msgstr ""
+msgstr "来自 Pandoc 文档："
 
 #: ../../syntax/optional.md:554
 msgid ""
@@ -877,16 +926,18 @@ msgid ""
 "blank line, and must be followed by one or more definitions. A definition"
 " begins with a colon or tilde, which may be indented one or two spaces."
 msgstr ""
+"每个术语必须在一行内，可以选择后跟一个空行，并且必须后跟一个或多个定义。定义以冒号或波浪号开头，可以缩进一个或两个空格。"
 
 #: ../../syntax/optional.md:557
 msgid ""
 "A term may have multiple definitions, and each definition may consist of "
 "one or more block elements (paragraph, code block, list, etc.)"
 msgstr ""
+"一个术语可以有多个定义，每个定义可以包含一个或多个块元素（段落、代码块、列表等）。"
 
 #: ../../syntax/optional.md:559
 msgid "Here is a more complex example, demonstrating some of these features:"
-msgstr ""
+msgstr "这里有更复杂的示例，展示了其中一些功能："
 
 #: ../../syntax/optional.md:587
 msgid "Term *with Markdown*"
@@ -926,7 +977,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:581
 msgid "Task Lists"
-msgstr ""
+msgstr "任务列表"
 
 #: ../../syntax/optional.md:583
 msgid ""
@@ -935,6 +986,8 @@ msgid ""
 "[markdown-it-py tasklists plugin](inv:markdown_it#md/plugins), and are "
 "applied to markdown list items starting with `[ ]` or `[x]`:"
 msgstr ""
+"通过将 `\"tasklist\"` 添加到 `myst_enable_extensions` （在 {{ confpy }} 中），您将能够使用任务列表。"
+"任务列表使用 [markdown-it-py tasklists 插件](inv:markdown_it#md/plugins)，并应用于以 `[ ]` 或 `[x]` 开头的 Markdown 列表项："
 
 #: ../../syntax/optional.md:600
 msgid "An item that needs doing"
@@ -946,7 +999,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:594
 msgid "Field Lists"
-msgstr ""
+msgstr "字段列表"
 
 #: ../../syntax/optional.md:599
 msgid ""
@@ -956,6 +1009,8 @@ msgid ""
 "syntax](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html"
 "#field-lists)."
 msgstr ""
+"通过将 `\"fieldlist\"` 添加到 `myst_enable_extensions`（在 {{ confpy }} 中），您将能够使用字段列表。"
+"字段列表是基于 [reStructureText 语法](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html#field-lists) 的字段名称到字段体的映射。"
 
 #: ../../syntax/optional.md:632
 msgid "name only"
@@ -1012,6 +1067,7 @@ msgid ""
 "A prominent use case of field lists is for use in API docstrings, as used"
 " in [Sphinx's docstring renderers](inv:sphinx#usage/domains/python):"
 msgstr ""
+"字段列表的突出用例是在 API 文档字符串中使用，如 [Sphinx 的文档字符串渲染器](inv:sphinx#usage/domains/python) 中所示："
 
 #: ../../syntax/optional.md:650
 msgid "Send a message to a recipient"
@@ -1054,26 +1110,29 @@ msgid ""
 "Currently `sphinx.ext.autodoc` does not support MyST, see "
 "[](howto/autodoc)."
 msgstr ""
+"目前 `sphinx.ext.autodoc` 不支持 MyST，请参阅 [](howto/autodoc)。"
 
 #: ../../syntax/optional.md:646
 msgid "Attributes"
-msgstr ""
+msgstr "属性"
 
 #: ../../syntax/optional.md:649
 msgid "This feature is in *beta*, and feedback is welcome."
-msgstr ""
+msgstr "此功能处于 *beta* 阶段，欢迎反馈。"
 
 #: ../../syntax/optional.md:651
 msgid ""
 "`attrs_inline` also replace the previous `attrs_image` extension, which "
 "is now deprecated."
 msgstr ""
+"`attrs_inline` 还取代了之前的 `attrs_image` 插件，该插件现已弃用。"
 
 #: ../../syntax/optional.md:654
 msgid ""
 "Attributes are a way of enriching standard CommonMark syntax, by adding "
 "additional information to elements."
 msgstr ""
+"属性是一种通过向元素添加额外信息来丰富标准 CommonMark 语法的方式。"
 
 #: ../../syntax/optional.md:656
 msgid ""
@@ -1081,22 +1140,25 @@ msgid ""
 ".my-class key=\"value\"}`, and come before a block element or after an "
 "inline element."
 msgstr ""
+"属性在大括号 `{}` 内指定，例如 `{#my-id .my-class key=\"value\"}`，并在块元素之前或内联元素之后。"
 
 #: ../../syntax/optional.md:660
 msgid "Inside the curly braces, the following syntax is recognised:"
-msgstr ""
+msgstr "在大括号内，识别以下语法："
 
 #: ../../syntax/optional.md:662
 msgid ""
 "`.foo` specifies `foo` as a class. Multiple classes may be given in this "
 "way; they will be combined."
 msgstr ""
+"`.foo` 将 `foo` 指定为类。可以以这种方式指定多个类；它们将被合并。"
 
 #: ../../syntax/optional.md:664
 msgid ""
 "`#foo` specifies `foo` as an identifier. An element may have only one "
 "identifier; if multiple identifiers are given, the last one is used."
 msgstr ""
+"`#foo` 将 `foo` 指定为标识符。一个元素只能有一个标识符；如果指定了多个标识符，则使用最后一个。"
 
 #: ../../syntax/optional.md:667
 msgid ""
@@ -1105,12 +1167,15 @@ msgid ""
 "characters or `_` or `:` or `-`.   Backslash escapes may be used inside "
 "quoted values.   **Note** only certain keys are supported, see below."
 msgstr ""
+"`key=\"value\"` 或 `key=value` 指定键值属性。当值完全由 ASCII 字母数字字符或 `_` 或 `:` 或 `-` 组成时，不需要引号。"
+"引号内的值可以使用反斜杠转义。**注意** 仅支持某些键，见下文。"
 
 #: ../../syntax/optional.md:672
 msgid ""
 "`%` begins a comment, which ends with the next `%` or the end of the "
 "attribute (`}`)."
 msgstr ""
+"`%` 开始注释，注释以下一个 `%` 或属性结束（`}`）。"
 
 #: ../../syntax/optional.md:674
 msgid ""
@@ -1118,10 +1183,11 @@ msgid ""
 "other, the inner attributes override the outer ones. One exception is "
 "that if multiple classes are given, they are combined. For example:"
 msgstr ""
+"属性是累积的，因此如果多个属性彼此跟随，内部属性会覆盖外部属性。例外是，如果指定了多个类，它们将被合并。例如："
 
 #: ../../syntax/optional.md:685
 msgid "is equivalent to:"
-msgstr ""
+msgstr "等价于："
 
 #: ../../syntax/optional.md:695
 msgid ""
@@ -1130,10 +1196,12 @@ msgid ""
 "#inline-attributes), and also related to [pandoc bracketed "
 "spans](https://pandoc.org/MANUAL.html#extension-bracketed_spans)."
 msgstr ""
+"这是改编自 [djot 内联/块属性](https://htmlpreview.github.io/?https://github.com/jgm/djot/blob/master/doc/syntax.html#inline-attributes)，"
+"并且与 [pandoc 括号跨度](https://pandoc.org/MANUAL.html#extension-bracketed_spans) 相关。"
 
 #: ../../syntax/optional.md:700
 msgid "Block attributes"
-msgstr ""
+msgstr "块属性"
 
 #: ../../syntax/optional.md:702
 msgid ""
@@ -1141,10 +1209,11 @@ msgid ""
 " }}), you can enable parsing of block attributes before certain block "
 "syntaxes."
 msgstr ""
+"通过将 `\"attrs_block\"` 添加到 `myst_enable_extensions`（在 {{ confpy }} 中），您可以在某些块语法之前启用块属性的解析。"
 
 #: ../../syntax/optional.md:705 ../../syntax/optional.md:772
 msgid "For example, the following Markdown:"
-msgstr ""
+msgstr "例如，以下 Markdown："
 
 #: ../../syntax/optional.md:722
 msgid "Here is a paragraph with attributes."
@@ -1159,12 +1228,14 @@ msgid ""
 "`id` and `class` are supported for most block syntaxes, but only certain "
 "key-value attributes are supported for each syntax."
 msgstr ""
+"大多数块语法支持 `id` 和 `class`，但每种语法仅支持某些键值属性。"
 
 #: ../../syntax/optional.md:718
 msgid ""
 "For **ordered lists**, the `style` key is supported, and can be one of "
 "`decimal`, `lower-alpha`, `upper-alpha`, `lower-roman`, `upper-roman`:"
 msgstr ""
+"对于 **有序列表**，支持 `style` 键，可以是 `decimal`、`lower-alpha`、`upper-alpha`、`lower-roman`、`upper-roman` 之一："
 
 #: ../../syntax/optional.md:746 ../../syntax/optional.md:750
 #: ../../syntax/optional.md:754 ../../syntax/optional.md:758
@@ -1181,10 +1252,11 @@ msgid ""
 "For **code fences**, the `lineno-start` and `emphasize-lines` keys are "
 "supported:"
 msgstr ""
+"对于 **代码栏**，支持 `lineno-start` 和 `emphasize-lines` 键："
 
 #: ../../syntax/optional.md:749
 msgid "For **block quotes**, the `attribution` key is supported:"
-msgstr ""
+msgstr "对于 **块引用**，支持 `attribution` 键："
 
 #: ../../syntax/optional.md:764
 msgid "Hallo"
@@ -1200,6 +1272,7 @@ msgid ""
 "list into a glossary (similar to using the [`glossary` "
 "directive](inv:sphinx:rst:directive#glossary) in Sphinx):"
 msgstr ""
+"对于 *定义列表*，添加 `glossary` 键将定义列表转换为术语表（类似于在 Sphinx 中使用 [`glossary` 指令](inv:sphinx:rst:directive#glossary)）："
 
 #: ../../syntax/optional.md:774
 msgid "term name"
@@ -1215,7 +1288,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:767
 msgid "Inline attributes"
-msgstr ""
+msgstr "内联属性"
 
 #: ../../syntax/optional.md:769
 msgid ""
@@ -1223,6 +1296,7 @@ msgid ""
 "confpy }}), you can enable parsing of inline attributes after certain "
 "inline syntaxes."
 msgstr ""
+"通过将 `\"attrs_inline\"` 添加到 `myst_enable_extensions` （在 {{ confpy }} 中），您可以在某些内联语法之后启用内联属性的解析。"
 
 #: ../../syntax/optional.md:799
 msgid ""
@@ -1263,10 +1337,11 @@ msgid ""
 "`id` and `class` are supported for most inline syntaxes, but only certain"
 " key-value attributes are supported for each syntax."
 msgstr ""
+"大多数内联语法支持 `id` 和 `class`，但每种语法仅支持某些键值属性。"
 
 #: ../../syntax/optional.md:795
 msgid "For **literals**, the following attributes are supported:"
-msgstr ""
+msgstr "对于 **字面量**，支持以下属性："
 
 #: ../../syntax/optional.md:797
 msgid ""
@@ -1274,38 +1349,41 @@ msgid ""
 "\"b\"`{l=python} `` is displayed as `a = \"b\"`{l=python}. Note, this is "
 "only supported in `sphinx >= 5`."
 msgstr ""
+"`language`/`lexer`/`l` 定义语法词法分析器，例如 `` `a = \"b\"`{l=python} `` 显示为 `a = \"b\"`{l=python}。注意，这仅在 `sphinx >= 5` 中支持。"
 
 #: ../../syntax/optional.md:801
 msgid ""
 "For **images**, the following attributes are supported (equivalent to the"
 " `image` directive):"
 msgstr ""
+"对于 **图像**，支持以下属性（等同于 `image` 指令）："
 
 #: ../../syntax/optional.md:803
 msgid "`width`/`w` defines the width of the image (in `%`, `px`, `em`, `cm`, etc)"
-msgstr ""
+msgstr "`width`/`w` 定义图像的宽度（以 `%`、`px`、`em`、`cm` 等为单位）"
 
 #: ../../syntax/optional.md:804
 msgid "`height`/`h` defines the height of the image (in `px`, `em`, `cm`, etc)"
-msgstr ""
+msgstr "`height`/`h` 定义图像的高度（以 `px`、`em`、`cm` 等为单位）"
 
 #: ../../syntax/optional.md:805
 msgid "`align`/`a` defines the scale of the image (`left`, `center`, or `right`)"
-msgstr ""
+msgstr "`align`/`a` 定义图像的对齐方式（`left`、`center` 或 `right`）"
 
 #: ../../syntax/optional.md:809
 msgid "HTML Images"
-msgstr ""
+msgstr "HTML 图片"
 
 #: ../../syntax/optional.md:811
 msgid ""
 "MyST provides a few different syntaxes for including images in your "
 "documentation, as explained below."
 msgstr ""
+"MyST 提供了几种不同的语法来在文档中包含图像，如下所述。"
 
 #: ../../syntax/optional.md:813
 msgid "The first is the standard Markdown syntax:"
-msgstr ""
+msgstr "首先是标准的 Markdown 语法："
 
 #: ../../syntax/optional.md:826
 msgid "![fishy](img/fun-fish.png)"
@@ -1317,6 +1395,8 @@ msgid ""
 " in all output formats (HTML, TeX, etc). However, it is limited in the "
 "configuration that can be applied, for example setting a width."
 msgstr ""
+"此语法将正确地将图像复制到构建文件夹，并将其在所有输出格式（HTML、TeX 等）中呈现。"
+"但它在可应用的配置方面受到限制，例如设置宽度。"
 
 #: ../../syntax/optional.md:822
 msgid ""
@@ -1324,6 +1404,7 @@ msgid ""
 "used such as `image` and `figure` (see {ref}`the sphinx documentation "
 "<sphinx:rst-primer>`):"
 msgstr ""
+"如 [上文](syntax/directives) 所述，MyST 允许使用 `image` 和 `figure` 等指令（参见 {ref}`Sphinx 文档 <sphinx:rst-primer>`）："
 
 #: ../../syntax/optional.md:833
 msgid ""
@@ -1331,6 +1412,7 @@ msgid ""
 "syntax, this syntax will not show the image in common Markdown viewers "
 "(for example when the files are viewed on GitHub)."
 msgstr ""
+"然而，现在可以设置其他选项，但与 Markdown 语法相比，此语法不会在常见的 Markdown 查看器中显示图像（例如在 GitHub 上查看文件时）。"
 
 #: ../../syntax/optional.md:835
 msgid ""
@@ -1340,10 +1422,12 @@ msgid ""
 "file is to be copied, and will not output the HTML into non-HTML output "
 "formats."
 msgstr ""
+"最后一种选择是直接使用 HTML，MyST 也会解析它。"
+"这通常是不好的选择，因为在构建过程中 HTML 被视为原始文本，因此 sphinx 不会识别要复制的图像文件，并且不会将 HTML 输出到非 HTML 输出格式中。"
 
 #: ../../syntax/optional.md:838
 msgid "HTML parsing to the rescue!"
-msgstr ""
+msgstr "HTML 解析来拯救！"
 
 #: ../../syntax/optional.md:840
 msgid ""
@@ -1352,6 +1436,8 @@ msgid ""
 "not wrapped in any other HTML) to the internal representation used in "
 "sphinx."
 msgstr ""
+"通过将 `\"html_image\"` 添加到 `myst_enable_extensions` （在 {{ confpy }} 中），MySt-Parser "
+"将尝试将任何孤立的 `img` 标签（即未包裹在任何其他 HTML 中）转换为 sphinx 中使用的内部表示。"
 
 #: ../../syntax/optional.md:850
 msgid ""
@@ -1359,10 +1445,11 @@ msgid ""
 " `class`, `width`, `height` and `name`. Any other attributes will be "
 "dropped."
 msgstr ""
+"允许的属性等同于 `image` 指令：`src`、`alt`、`class`、`width`、`height` 和 `name`。任何其他属性将被丢弃。"
 
 #: ../../syntax/optional.md:853
 msgid "HTML image can also be used inline!"
-msgstr ""
+msgstr "HTML 图像也可以内联使用！"
 
 #: ../../syntax/optional.md:855
 msgid "I'm an inline image: <img src=\"img/fun-fish.png\" height=\"20px\">"
@@ -1370,7 +1457,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:859
 msgid "Markdown Figures"
-msgstr ""
+msgstr "Markdown 图表"
 
 #: ../../syntax/optional.md:861
 msgid ""
@@ -1378,24 +1465,29 @@ msgid ""
 " }}), we can combine the above two extended syntaxes, to create a fully "
 "Markdown compliant version of the `figure` directive named `figure-md`."
 msgstr ""
+"通过将 `\"colon_fence\"` 添加到 `myst_enable_extensions`（在 {{ confpy }} 中），"
+"可以结合上述两种扩展语法，创建一个完全符合 Markdown 的 `figure` 指令版本，名为 `figure-md`。"
 
 #: ../../syntax/optional.md:866
 msgid ""
 "`myst_figure_enable` with the `figure` directive is deprecated and "
 "replaced by `myst_enable_extensions = [\"colon_fence\"]` and `figure-md`."
 msgstr ""
+"`myst_figure_enable` 与 `figure` 指令已弃用，替换为 `myst_enable_extensions = [\"colon_fence\"]` 和 `figure-md`。"
 
 #: ../../syntax/optional.md:869
 msgid ""
 "The figure block must contain **only** two components; an image, in "
 "either Markdown or HTML syntax, and a single paragraph for the caption."
 msgstr ""
+"图表块必须**仅**包含两个部分；一个图像，可以是 Markdown 或 HTML 语法，以及一个用于标题的段落。"
 
 #: ../../syntax/optional.md:871
 msgid ""
 "The first line argument is optional and taken as the reference target of "
 "the figure:"
 msgstr ""
+"第一行参数是可选的，并作为图表的引用目标："
 
 #: ../../syntax/optional.md:901 ../../syntax/optional.md:909
 msgid "This is a caption in **Markdown**"
@@ -1403,7 +1495,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:891
 msgid "As we see here, the target we set can be referenced:"
-msgstr ""
+msgstr "正如在这里看到的，设置的目标可以被引用："
 
 #: ../../syntax/optional.md:904
 msgid "[Go to the fish!](#fig-target)"
@@ -1411,7 +1503,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:899
 msgid "HTML Admonitions"
-msgstr ""
+msgstr "HTML 警告"
 
 #: ../../syntax/optional.md:901
 msgid ""
@@ -1422,6 +1514,8 @@ msgid ""
 "helpful when you care about viewing the \"source\" Markdown, such as in "
 "Jupyter Notebooks."
 msgstr ""
+"通过将 `\"html_admonition\"` 添加到 `myst_enable_extensions`（在 {{ confpy }} 中），您可以启用 `<div class=\"admonition\">` HTML 块的解析。"
+"这些块将在内部转换为 Sphinx 警告指令，因此适用于所有输出格式。当您关心查看‘源’Markdown 时，这很有帮助，例如在 Jupyter Notebooks 中。"
 
 #: ../../syntax/optional.md:906
 msgid ""
@@ -1430,6 +1524,8 @@ msgid ""
 "internal text (and the title) will be parsed as MyST-Markdown and all "
 "classes and an optional name will be passed to the admonition:"
 msgstr ""
+"如果 `div` 内的第一个元素是 `<div class=\"title\">` 或 `<p class=\"title\">`，则将其设置为警告标题。"
+"所有内部文本（和标题）将作为 MyST-Markdown 解析，所有类和可选名称将传递给警告："
 
 #: ../../syntax/optional.md:925
 msgid "This is the **title**"
@@ -1444,6 +1540,7 @@ msgid ""
 "During the Sphinx render, both the `class` and `name` attributes will be "
 "used by Sphinx, but any other attributes like `style` will be discarded."
 msgstr ""
+"在 Sphinx 渲染期间，`class` 和 `name` 属性将被 Sphinx 使用，但任何其他属性（如 `style`）将被丢弃。"
 
 #: ../../syntax/optional.md:921
 msgid ""
@@ -1451,6 +1548,7 @@ msgid ""
 "two separate blocks. If you want to use multiple paragraphs then they can"
 " be enclosed in `<p>`:"
 msgstr ""
+"块中不能有空行，否则它们将被读取为两个单独的块。如果要使用多个段落，可以将它们包裹在 `<p>` 中："
 
 #: ../../syntax/optional.md:939 ../../syntax/optional.md:955
 msgid "Note"
@@ -1466,7 +1564,7 @@ msgstr ""
 
 #: ../../syntax/optional.md:934
 msgid "You can also nest HTML admonitions:"
-msgstr ""
+msgstr "您还可以嵌套 HTML 警告："
 
 #: ../../syntax/optional.md:958
 msgid "Some **content**"
