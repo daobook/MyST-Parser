@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../syntax/roles-and-directives.md:3
 msgid "Roles and Directives"
-msgstr ""
+msgstr "角色与指令"
 
 #: ../../syntax/roles-and-directives.md:5
 msgid ""
@@ -30,6 +30,7 @@ msgid ""
 "unbound manner, by interpreting a chuck of text as a specific type of "
 "markup, according to its name."
 msgstr ""
+"角色和指令通过根据名称将一段文本解释为特定类型的标记，提供了一种无限制地扩展 MyST 语法的方式。"
 
 #: ../../syntax/roles-and-directives.md:8
 msgid ""
@@ -40,14 +41,17 @@ msgid ""
 " [Sphinx roles](inv:sphinx#usage/*/roles), or [Sphinx "
 "directives](inv:sphinx#usage/*/directives) can be used in MyST."
 msgstr ""
+"大多数 [docutils 角色](https://docutils.sourceforge.io/docs/ref/rst/roles.html)、"
+"[docutils 指令](https://docutils.sourceforge.io/docs/ref/rst/directives.html)、"
+"[Sphinx 角色](inv:sphinx#usage/*/roles) 或 [Sphinx 指令](inv:sphinx#usage/*/directives) 都可以在 MyST 中使用。"
 
 #: ../../syntax/roles-and-directives.md:15
 msgid "Syntax"
-msgstr ""
+msgstr "语法"
 
 #: ../../syntax/roles-and-directives.md:19
 msgid "Directives - a block-level extension point"
-msgstr ""
+msgstr "指令 - 块级扩展点"
 
 #: ../../syntax/roles-and-directives.md:21
 msgid ""
@@ -56,6 +60,7 @@ msgid ""
 "language, and a directive name in place of a language name. Here is the "
 "basic structure:"
 msgstr ""
+"指令语法由三重反引号和花括号定义。它实际上是带有花括号的 Markdown 代码围栏，其中包含指令名称而不是语言名称。以下是基本结构："
 
 #: ../../syntax/roles-and-directives.md:28
 #: ../../syntax/roles-and-directives.md:228
@@ -71,7 +76,7 @@ msgstr ""
 #: ../../syntax/roles-and-directives.md:238
 #: ../../syntax/roles-and-directives.md:284
 msgid "For example:"
-msgstr ""
+msgstr "例子："
 
 #: ../../syntax/roles-and-directives.md:64
 msgid "This is my admonition"
@@ -83,25 +88,28 @@ msgstr ""
 
 #: ../../syntax/roles-and-directives.md:57
 msgid "Parameterizing directives (options)"
-msgstr ""
+msgstr "参数化指令（选项）"
 
 #: ../../syntax/roles-and-directives.md:59
 msgid ""
 "Many directives can take key/value pairs, in an optional *option block* "
 "at the start of the directive."
 msgstr ""
+"许多指令可以在指令开头的可选 *选项块* 中接受键/值对。"
 
 #: ../../syntax/roles-and-directives.md:61
 msgid ""
 "The option block starts on the first line of the directive body and is "
 "defined by a set of lines prefixed with `:`."
 msgstr ""
+"选项块从指令主体的第一行开始，由一组以 `:` 为前缀的行定义。"
 
 #: ../../syntax/roles-and-directives.md:63
 msgid ""
 "The block then follows a YAML-like mapping syntax, where the key (string)"
 " and value (string) are separated by a colon (`:`):"
 msgstr ""
+"该块遵循类似 YAML 的映射语法，其中键（字符串）和值（字符串）由冒号（`:`）分隔："
 
 #: ../../syntax/roles-and-directives.md:76
 msgid ""
@@ -109,6 +117,7 @@ msgid ""
 "lines. Newline behaviour can be controlled by starting the value with `|`"
 " (preserve newlines) or `>` (collapse newlines):"
 msgstr ""
+"值可以用引号（`\"` 或 `'`）括起来，并跨越多行。换行行为可以通过以  `|` （保留换行符）或  `>` （折叠换行符）开始值来控制："
 
 #: ../../syntax/roles-and-directives.md:100
 #: ../../syntax/roles-and-directives.md:119
@@ -117,29 +126,32 @@ msgstr ""
 
 #: ../../syntax/roles-and-directives.md
 msgid "Old-style options block"
-msgstr ""
+msgstr "旧式选项块"
 
 #: ../../syntax/roles-and-directives.md:95
 msgid ""
 "Option blocks can also be enclosed by `---`, with no `:` prefix, for "
 "example:"
 msgstr ""
+"选项块也可以用 `---` 括起来，无需 `:` 前缀，例如："
 
 #: ../../syntax/roles-and-directives.md:116
 msgid "How directives parse content"
-msgstr ""
+msgstr "指令如何解析内容"
 
 #: ../../syntax/roles-and-directives.md:118
 msgid ""
 "Some directives parse the content that is in their content block. MyST "
 "parses this content **as Markdown**."
 msgstr ""
+"一些指令会解析其内容块中的内容。MyST 将这些内容 **作为Markdown** 进行解析。"
 
 #: ../../syntax/roles-and-directives.md:121
 msgid ""
 "This means that MyST markdown can be written in the content areas of any "
 "directives written in MyST markdown. For example:"
 msgstr ""
+"这意味着可以在任何以 MyST markdown 编写的指令的内容区域中编写 MyST markdown。例如："
 
 #: ../../syntax/roles-and-directives.md:136
 msgid "My markdown link"
@@ -155,6 +167,7 @@ msgid ""
 "parameter options are used (see below), you may start the content "
 "directly after the directive name."
 msgstr ""
+"对于不需要参数的指令，并且当没有使用参数选项时（见下文），您可以直接在指令名称后开始内容。"
 
 #: ../../syntax/roles-and-directives.md:145
 msgid "Notes require **no** arguments, so content can start here."
@@ -165,6 +178,7 @@ msgid ""
 "For special cases, MySt also offers the `eval-rst` directive. This will "
 "parse the content **as ReStructuredText**:"
 msgstr ""
+"对于特殊情况，MySt 还提供了 `eval-rst` 指令。这将把内容 **作为 ReStructuredText** 进行解析："
 
 #: ../../syntax/roles-and-directives.md:166
 msgid "Party time!"
@@ -184,10 +198,12 @@ msgid ""
 "also reference [party fish](rst-fun-fish) anywhere else in the "
 "documentation."
 msgstr ""
+"请注意文本是如何与文档的其余部分整合的，"
+"因此也可以在文档的其他地方引用 [派对鱼](rst-fun-fish)。"
 
 #: ../../syntax/roles-and-directives.md:156
 msgid "Nesting directives"
-msgstr ""
+msgstr "嵌套指令"
 
 #: ../../syntax/roles-and-directives.md:158
 msgid ""
@@ -195,6 +211,8 @@ msgid ""
 "the outermost directive are longer than the tick-lines for the inner "
 "directives. For example, nest a warning inside a note block like so:"
 msgstr ""
+"您可以通过确保外层指令的标记线比内层指令的标记线更长来实现指令的嵌套。"
+"例如，将警告嵌套在注释块中，如下所示："
 
 #: ../../syntax/roles-and-directives.md:179
 #: ../../syntax/roles-and-directives.md:215
@@ -212,6 +230,7 @@ msgid ""
 "You can indent inner-code fences, so long as they aren't indented by more"
 " than 3 spaces. Otherwise, they will be rendered as \"raw code\" blocks:"
 msgstr ""
+"您可以缩进内部代码栏，只要缩进不超过 3 个空格。否则，它们将被渲染为‘原始代码’块："
 
 #: ../../syntax/roles-and-directives.md:198
 msgid "The warning block will be properly-parsed"
@@ -223,7 +242,7 @@ msgstr ""
 
 #: ../../syntax/roles-and-directives.md:190
 msgid "This can really be abused if you'd like ;-)"
-msgstr ""
+msgstr "如果您愿意，这真的可以被玩坏 ;-)"
 
 #: ../../syntax/roles-and-directives.md:218
 msgid "Yep another admonition"
@@ -231,13 +250,15 @@ msgstr ""
 
 #: ../../syntax/roles-and-directives.md:207
 msgid "Markdown-friendly directives"
-msgstr ""
+msgstr "Markdown 友好型指令"
 
 #: ../../syntax/roles-and-directives.md:209
 msgid ""
 "Want to use syntax that renders correctly in standard Markdown editors? "
 "See [the extended syntax option](syntax/colon_fence)."
 msgstr ""
+"想要使用在标准 Markdown 编辑器中也能正确渲染的语法吗？"
+"请参阅 [扩展语法选项](syntax/colon_fence)。"
 
 #: ../../syntax/roles-and-directives.md:227
 msgid "This text is **standard** *Markdown*"
@@ -253,6 +274,9 @@ msgid ""
 "functionality, but they are used *in-line*. To define an in-line role, "
 "use the following form:"
 msgstr ""
+"角色（Roles）与指令（directives）类似——它们允许您定义任意新功能，"
+"但它们是 *内联* 使用的。"
+"要定义内联角色，请使用以下形式："
 
 #: ../../syntax/roles-and-directives.md:251
 msgid "Since Pythagoras, we know that {math}`a^2 + b^2 = c^2`"
@@ -263,6 +287,7 @@ msgid ""
 "You can use roles to do things like reference equations and other items "
 "in your book. For example:"
 msgstr ""
+"您可以使用角色来引用书中的公式和其他内容。例如："
 
 #: ../../syntax/roles-and-directives.md:263
 msgid ""
@@ -278,7 +303,7 @@ msgstr ""
 
 #: ../../syntax/roles-and-directives.md:256
 msgid "How roles parse content"
-msgstr ""
+msgstr "角色如何解析内容"
 
 #: ../../syntax/roles-and-directives.md:258
 msgid ""
@@ -288,6 +313,10 @@ msgid ""
 " is a reference to some other part of the site. However, other roles may "
 "use the MyST parser to parse the input as content."
 msgstr ""
+"角色的内容解析方式取决于您所使用的角色。"
+"某些角色期望输入内容以改变功能。"
+"例如，`ref` 角色会假定输入内容是对网站其他部分的引用。"
+"然而，其他角色可能会使用 MyST 解析器将输入内容解析为普通内容。"
 
 #: ../../syntax/roles-and-directives.md:263
 msgid ""
@@ -297,28 +326,31 @@ msgid ""
 "will display `Content to display` and use `myref` as the reference to "
 "look up."
 msgstr ""
+"某些角色还会根据您传递的内容 **扩展其功能**。"
+"例如，以上述 `ref` 角色为例，如果您传递这样的字符串：`要显示的内容 <myref>`，那么 `ref` 将显示 `要显示的内容`，并使用 `myref` 作为查找的引用。"
 
 #: ../../syntax/roles-and-directives.md:268
 msgid "How roles parse this content depends on the author that created the role."
-msgstr ""
+msgstr "角色如何解析这些内容取决于创建该角色的作者。"
 
 #: ../../syntax/roles-and-directives.md:272
 msgid "MyST only roles"
-msgstr ""
+msgstr "仅限 MyST 的角色"
 
 #: ../../syntax/roles-and-directives.md:274
 msgid ""
 "This section contains information about special roles and directives that"
 " come bundled with the MyST Parser Sphinx extension."
 msgstr ""
+"本节包含有关与 MyST 解析器 Sphinx 扩展捆绑在一起的特殊角色和指令的信息。"
 
 #: ../../syntax/roles-and-directives.md:276
 msgid "Insert the date and reading time"
-msgstr ""
+msgstr "插入日期和阅读时间"
 
 #: ../../syntax/roles-and-directives.md:279
 msgid "The `sub-ref` role and word counting."
-msgstr ""
+msgstr "`sub-ref` 角色与字数统计。"
 
 #: ../../syntax/roles-and-directives.md:282
 msgid ""
@@ -326,6 +358,7 @@ msgid ""
 "your document via substitution definitions, which can be accessed *via* "
 "the `sub-ref` role."
 msgstr ""
+"您可以通过替换定义将 \"last updated\" 日期和预计阅读时间插入到文档中，这些定义可以通过 `sub-ref` 角色访问。"
 
 #: ../../syntax/roles-and-directives.md:297
 msgid ""
@@ -339,6 +372,7 @@ msgid ""
 "with the format set by <inv:sphinx#today_fmt>, or the `today` variable if"
 " set in the configuration file."
 msgstr ""
+"`today` 会被替换为文档解析时的日期，其格式由 <inv:sphinx#today_fmt> 设置，或者如果在配置文件中设置了 `today` 变量，则使用该变量。"
 
 #: ../../syntax/roles-and-directives.md:292
 msgid ""
@@ -346,4 +380,4 @@ msgid ""
 "configuration (see the [Sphinx configuration options](sphinx/config-"
 "options))."
 msgstr ""
-
+"阅读速度是通过 `myst_words_per_minute` 配置计算的（请参阅 [Sphinx 配置选项](sphinx/config-options)）。"

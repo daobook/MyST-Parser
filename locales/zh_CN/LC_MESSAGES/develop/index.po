@@ -22,21 +22,23 @@ msgstr ""
 
 #: ../../develop/index.md:1
 msgid "Contribute"
-msgstr ""
+msgstr "贡献"
 
 #: ../../develop/index.md:3
 msgid ""
 "This section covers documentation relevant to developing and maintaining "
 "the MyST codebase, and some guidelines for how you can contribute."
 msgstr ""
+"本节涵盖了与开发和维护 MyST 代码库相关的文档，以及一些关于如何贡献的指南。"
 
 #: ../../develop/index.md:12
 msgid "Code of Conduct"
-msgstr ""
+msgstr "行为准则"
 
 #: ../../develop/index.md:14
 msgid ""
 "The MyST-parser project follows the [Executable Book Project code of "
 "conduct](https://github.com/executablebooks/.github/blob/master/CODE_OF_CONDUCT.md)."
 msgstr ""
-
+"MyST-parser 项目遵循 "
+"[Executable Book Project 行为准则](https://github.com/executablebooks/.github/blob/master/CODE_OF_CONDUCT.md)。"

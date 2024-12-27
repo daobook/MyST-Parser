@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../docutils.md:3
 msgid "Single Page Builds"
-msgstr ""
+msgstr "单页构建"
 
 #: ../../docutils.md:8
 msgid ""
@@ -31,42 +31,46 @@ msgid ""
 "offers a renderer, parser and CLI-interface for working directly with "
 "Docutils, independent of Sphinx, as described below."
 msgstr ""
+"Sphinx 以及 MyST-Parser 构建在 [Docutils](https://docutils.sourceforge.io/docs/) 包之上。"
+"MyST-Parser 提供了渲染器、解析器和 CLI 接口，用于直接与 Docutils 协作，独立于 Sphinx，如下所述。"
 
 #: ../../docutils.md:12
 msgid ""
 "Since these tools are independent of Sphinx, this means they cannot parse"
 " any Sphinx or Sphinx extensions specific roles or directives."
 msgstr ""
+"由于这些工具独立于 Sphinx，这意味着它们无法解析任何 Sphinx 或 Sphinx 扩展特定的角色或指令。"
 
 #: ../../docutils.md:15
 msgid "On installing MyST-Parser, the following CLI-commands are made available:"
-msgstr ""
+msgstr "安装 MyST-Parser 后，以下 CLI 命令将可用："
 
 #: ../../docutils.md:17
 msgid "`myst-docutils-html`: converts MyST to HTML"
-msgstr ""
+msgstr "`myst-docutils-html`：将 MyST 转换为 HTML"
 
 #: ../../docutils.md:18
 msgid "`myst-docutils-html5`: converts MyST to HTML5"
-msgstr ""
+msgstr "`myst-docutils-html5`：将 MyST 转换为 HTML5"
 
 #: ../../docutils.md:19
 msgid "`myst-docutils-latex`: converts MyST to LaTeX"
-msgstr ""
+msgstr "`myst-docutils-latex`：将 MyST 转换为 LaTeX"
 
 #: ../../docutils.md:20
 msgid "`myst-docutils-xml`: converts MyST to docutils-native XML"
-msgstr ""
+msgstr "`myst-docutils-xml`：将 MyST 转换为 docutils 原生的 XML"
 
 #: ../../docutils.md:21
 msgid ""
 "`myst-docutils-pseudoxml`: converts MyST to pseudo-XML (to visualise the "
 "AST structure)"
 msgstr ""
+"`myst-docutils-pseudoxml`：将 MyST 转换为伪 XML（用于可视化 AST 结构）"
 
 #: ../../docutils.md:23
 msgid "Each command can be piped stdin or take a file path as an argument:"
-msgstr ""
+msgstr "每个命令可以通过管道传递 stdin 或将文件路径作为参数："
 
 #: ../../docutils.md:31
 msgid ""
@@ -75,10 +79,12 @@ msgid ""
 "follow the same argument and options structure, included many of the MyST"
 " specific options detailed in [](sphinx/config-options)."
 msgstr ""
+"这些命令基于 [Docutils 前端工具](https://docutils.sourceforge.io/docs/user/tools.html)，因此遵循相同的参数和选项结构，"
+"包括 [](sphinx/config-options) 中详述的许多 MyST 特定选项。"
 
 #: ../../docutils.md
 msgid "Shared Docutils CLI Options"
-msgstr ""
+msgstr "共享的 Docutils CLI 选项"
 
 #: ../../docutils.md:39
 msgid ""
@@ -86,6 +92,7 @@ msgid ""
 "<inv:sphinx#suppress_warnings> for `myst.` warnings in the `docutils` "
 "CLI."
 msgstr ""
+"`myst-suppress-warnings` 在 `docutils` CLI 中复制了 sphinx 的 <inv:sphinx#suppress_warnings> 功能，用于抑制 `myst.` 警告。"
 
 #: ../../docutils.md:42
 msgid ""
@@ -93,6 +100,7 @@ msgid ""
 "file](https://docutils.sourceforge.io/docs/user/config.html) to configure"
 " the behaviour of the CLI commands. For example:"
 msgstr ""
+"CLI 命令还可以利用 [`docutils.conf` 配置文件](https://docutils.sourceforge.io/docs/user/config.html) 来配置 CLI 命令的行为。例如："
 
 #: ../../docutils.md:62
 msgid ""
@@ -100,6 +108,8 @@ msgid ""
 "class programmatically with the [Docutils publisher "
 "API](https://docutils.sourceforge.io/docs/api/publisher.html):"
 msgstr ""
+"你还可以通过编程方式使用 {py:class}`myst_parser.parsers.docutils_.Parser` 类与 "
+"[Docutils 发布者 API](https://docutils.sourceforge.io/docs/api/publisher.html) 结合："
 
 #: ../../docutils.md:80
 msgid ""
@@ -107,8 +117,10 @@ msgid ""
 "file, using the [`include` "
 "directive](https://docutils.sourceforge.io/docs/ref/rst/directives.html#include):"
 msgstr ""
+"最后，你可以使用 [`include` 指令](https://docutils.sourceforge.io/docs/ref/rst/directives.html#include) "
+"在 RestructuredText 文件中包含 MyST Markdown 文件："
 
 #: ../../docutils.md:88
 msgid "The `parser` option requires `docutils>=0.17`"
-msgstr ""
+msgstr "`parser` 选项需要 `docutils>=0.17`"
 

@@ -22,17 +22,18 @@ msgstr ""
 
 #: ../../develop/background.md:1
 msgid "Background"
-msgstr ""
+msgstr "背景"
 
 #: ../../develop/background.md:3
 msgid ""
 "These sections discuss high-level questions about the MyST ecosystem, and"
 " explain a few decisions made in the project."
 msgstr ""
+"这些部分讨论了有关 MyST 生态系统的高层次问题，并解释了项目中的一些决策。"
 
 #: ../../develop/background.md:5
 msgid "Why did we create MyST markdown?"
-msgstr ""
+msgstr "为什么创建 MyST Markdown？"
 
 #: ../../develop/background.md:7
 msgid ""
@@ -41,6 +42,8 @@ msgid ""
 "features needed for this, but there is no community standard around "
 "various syntactic choices for these features."
 msgstr ""
+"虽然 Markdown 无处不在，但它不足以用于编写现代、功能齐全的文档。"
+"某些 Markdown 变体支持这些功能，但围绕这些功能的各种语法选择没有社区标准。"
 
 #: ../../develop/background.md:11
 msgid ""
@@ -51,6 +54,8 @@ msgid ""
 ":rst-roles>`** and **{ref}`block-level directives <sphinx:rst-"
 "directives>`**."
 msgstr ""
+"Sphinx 是用 Python 编写的文档生成框架。它大量使用 reStructuredText 语法，这是另一种用于编写文档的标记语言。特别是，"
+"Sphinx 定义了两个非常有用的扩展点：**{ref}`内联角色<sphinx:rst-roles>`** 和 **{ref}`块级指令 <sphinx:rst-directives>`**。"
 
 #: ../../develop/background.md:16
 msgid ""
@@ -60,6 +65,9 @@ msgid ""
 "specification][commonmark], and selectively adds a few extra syntax "
 "pieces to utilize the most powerful parts of reStructuredText."
 msgstr ""
+"**该项目旨在将 Markdown 的简洁性和可读性与 reStructuredText 和 Sphinx 平台的功能和灵活性结合起来。"
+"** 它从 [CommonMark Markdown 规范][commonmark] 开始，"
+"并选择性地添加了一些额外的语法片段，以利用 reStructuredText 最强大的部分。"
 
 #: ../../develop/background.md:22
 msgid ""
@@ -72,6 +80,10 @@ msgid ""
 "topic](https://talk.commonmark.org/t/extension-terminology-and-"
 "rules/1233))."
 msgstr ""
+"CommonMark 社区多年来一直在讨论“官方”扩展语法"
+"（例如，参见[这个关于指令的七年老帖](https://talk.commonmark.org/t/generic-directives-plugins-syntax/444)以及"
+"[这个最近的对话](https://talk.commonmark.org/t/support-for-extension-token/2771)，"
+"以及[这个评论列出了更多关于此主题的帖子](https://talk.commonmark.org/t/extension-terminology-and-rules/1233)）。"
 
 #: ../../develop/background.md:28
 msgid ""
@@ -80,10 +92,12 @@ msgid ""
 " CommonMark community ever decides on an \"official\" extension syntax, "
 "we will likely utilize this syntax for MyST."
 msgstr ""
+"选择了一种“角色和指令”语法，这似乎是合理的，并且遵循了其他 Markdown 变体中的常见约定。"
+"然而，如果 CommonMark 社区决定采用“官方”扩展语法，可能会在 MyST 中使用此语法。"
 
 #: ../../develop/background.md:34
 msgid "The relationship between MyST, reStructuredText, and Sphinx"
-msgstr ""
+msgstr "MyST、reStructuredText 和 Sphinx 之间的关系"
 
 #: ../../develop/background.md:36
 msgid ""
@@ -91,6 +105,8 @@ msgid ""
 "syntax, meaning that you can do anything in MyST that you can do with "
 "reStructuredText."
 msgstr ""
+"MyST Markdown 提供了与 reStructuredText 语法等效的 Markdown 语法，"
+"这意味着你可以使用 MyST 完成 reStructuredText 所能完成的所有操作。"
 
 #: ../../develop/background.md:39
 msgid ""
@@ -100,6 +116,10 @@ msgid ""
 "document model (which is provided by a core Python project, "
 "[docutils](https://docutils.sourceforge.io/))."
 msgstr ""
+"Sphinx 文档引擎支持多种不同的输入类型。"
+"默认情况下，Sphinx 读取 **reStructuredText**  (`.rst`) 文件。"
+"Sphinx 使用 **解析器** 将输入文件解析为其自己的内部文档模型"
+"（由核心 Python 项目 [docutils](https://docutils.sourceforge.io/) 提供）。"
 
 #: ../../develop/background.md:44
 msgid ""
@@ -109,6 +129,8 @@ msgid ""
 "been parsed into Sphinx, it behaves nearly the same way as any other "
 "content file, regardless of the language in which it was written."
 msgstr ""
+"开发人员可以*扩展 Sphinx* 以支持其他类型的输入文件。只要有人为该文件编写 **解析器**，任何内容文件都可以读入 Sphinx 文档结构。"
+"一旦内容文件被解析到 Sphinx 中，它的行为几乎与任何其他内容文件相同，无论它是用什么语言编写的。"
 
 #: ../../develop/background.md:50
 msgid ""
@@ -119,18 +141,23 @@ msgid ""
 "it behaves the same way regardless of whether it has been written in rST "
 "or MyST markdown."
 msgstr ""
+"MyST-parser 是用于 MyST Markdown 语言的 Sphinx 解析器。"
+"当你使用它时，Sphinx 将知道如何解析包含 MyST Markdown 的内容文件（默认情况下，"
+"Sphinx 会假设任何以 `.md` 结尾的文件都是用 MyST Markdown 编写的）。"
+"一旦文档被解析到 Sphinx 中，无论它是用 rST 还是 MyST Markdown 编写的，它的行为都是相同的。"
 
 #: ../../develop/background.md:61
 msgid ""
 "For example, here's how you'd write a `toctree` directive in MyST "
 "markdown:"
 msgstr ""
+"例如，以下是如何在 MyST Markdown 中编写 `toctree` 指令："
 
 #: ../../develop/background.md:70
 msgid "and here's the same in rST:"
-msgstr ""
+msgstr "以下是 rST 中的相同内容："
 
 #: ../../develop/background.md:79
 msgid "They will both behave the same in Sphinx."
-msgstr ""
+msgstr "它们在 Sphinx 中的行为是相同的。"
 

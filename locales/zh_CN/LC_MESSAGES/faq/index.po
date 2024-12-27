@@ -26,17 +26,18 @@ msgstr ""
 
 #: ../../faq/index.md:5
 msgid "How-tos"
-msgstr ""
+msgstr "操作指南"
 
 #: ../../faq/index.md:7
 msgid ""
 "These sections describe some common scenarios and use-cases for writing "
 "MyST with Sphinx."
 msgstr ""
+"这些部分描述了使用 Sphinx 编写 MyST 的一些常见场景和用例。"
 
 #: ../../faq/index.md:10
 msgid "Include rST files into a Markdown file"
-msgstr ""
+msgstr "将 rST 文件包含到 Markdown 文件中"
 
 #: ../../faq/index.md:12
 msgid ""
@@ -45,6 +46,8 @@ msgid ""
 "conventional `include` directive, will parse the file contents as "
 "Markdown:"
 msgstr ""
+"如[本节](#syntax/directives/parsing)所述，所有 MyST 指令都会将其内容解析为 Markdown。"
+"因此，使用传统的 `include` 指令会将文件内容解析为 Markdown："
 
 #: ../../faq/snippets/include-md.md:2
 msgid "Hallo I'm from a Markdown file, [with a reference](#howto/autodoc)."
@@ -55,6 +58,7 @@ msgid ""
 "To include rST, we must first \"wrap\" the directive in the [eval-rst "
 "directive](#syntax/directives/parsing):"
 msgstr ""
+"要包含 rST，必须首先将指令“包装”在 [eval-rst 指令](#syntax/directives/parsing) 中："
 
 #: ../../faq/snippets/include-rst.rst:1
 msgid "Hallo I'm from an rST file, :ref:`with a reference <howto/autodoc>`."
@@ -62,21 +66,22 @@ msgstr ""
 
 #: ../../faq/index.md:36
 msgid "Include Markdown files into an rST file"
-msgstr ""
+msgstr "将 Markdown 文件包含到 rST 文件中"
 
 #: ../../faq/index.md:38
 msgid ""
 "To include a MyST file within a ReStructuredText file, we can use the "
 "`parser` option of the `include` directive:"
 msgstr ""
+"要将 MyST 文件包含在 ReStructuredText 文件中，可以使用 `include` 指令的 `parser` 选项："
 
 #: ../../faq/index.md:46
 msgid "The `parser` option requires `docutils>=0.17`"
-msgstr ""
+msgstr "`parser` 选项需要 `docutils>=0.17`"
 
 #: ../../faq/index.md:49
 msgid "Use MyST in Jupyter Notebooks"
-msgstr ""
+msgstr "在 Jupyter Notebooks 中使用 MyST"
 
 #: ../../faq/index.md:51
 msgid ""
@@ -87,10 +92,14 @@ msgid ""
 "them elsewhere in your documentation, and more. See the [MyST-NB "
 "documentation](https://myst-nb.readthedocs.io) for more information."
 msgstr ""
+"[MyST-NB](https://myst-nb.readthedocs.io) 工具提供了 Sphinx 插件，"
+"用于解析 **使用 MyST Markdown 编写的 Jupyter Notebooks**。"
+"它包括在文档构建期间自动执行 Notebook、存储 Notebook 单元格输出以便在文档的其他位置插入它们等功能。"
+"更多信息请参见 [MyST-NB 文档](https://myst-nb.readthedocs.io)。"
 
 #: ../../faq/index.md:54
 msgid "Include a file from outside the docs folder (like README.md)"
-msgstr ""
+msgstr "从文档文件夹外部包含文件（如 README.md）"
 
 #: ../../faq/index.md:57
 msgid "<project:#organising-content/include>"
@@ -98,7 +107,7 @@ msgstr ""
 
 #: ../../faq/index.md:60
 msgid "You can include a file, including one from outside the project using e.g.:"
-msgstr ""
+msgstr "你可以包含文件，包括来自项目外部的文件，例如："
 
 #: ../../faq/index.md:67
 msgid ""
@@ -106,12 +115,14 @@ msgid ""
 "correctly, like `![](my-image.png)`, since it treats the text as if it "
 "originated from the \"including file\"."
 msgstr ""
+"**然而**，包含文件通常不会正确解析本地链接，例如 `![](my-image.png)`，因为它将文本视为源自“包含文件”。"
 
 #: ../../faq/index.md:69
 msgid ""
 "As of myst-parser version 0.12.7, a new, experimental feature has been "
 "added to resolve such links. You can now use for example:"
 msgstr ""
+"从 myst-parser 0.12.7 版本开始，添加了新的实验性功能来解决此类链接。你现在可以使用例如："
 
 #: ../../faq/index.md:84
 msgid "Source:"
@@ -135,44 +146,47 @@ msgid ""
 " the correct location! The `relative-docs` must be given the prefix of "
 "any links to re-write, to distinguish them from sphinx cross-references."
 msgstr ""
+"这里的包含尝试重写本地链接，以便从正确的位置引用它们！ "
+"`relative-docs` 必须给出要重写的任何链接的前缀，以将它们与 sphinx 交叉引用区分开来。"
 
 #: ../../faq/index.md:101
 msgid "The current functionality only works for Markdown style images and links."
-msgstr ""
+msgstr "当前功能仅适用于 Markdown 风格的图片和链接。"
 
 #: ../../faq/index.md:103
 msgid ""
 "If you encounter any issues with this feature, please don't hesitate to "
 "report it."
 msgstr ""
+"如果你在使用此功能时遇到任何问题，请随时报告。"
 
 #: ../../faq/index.md:107
 msgid "Use `sphinx.ext.autodoc` in Markdown files"
-msgstr ""
+msgstr "在 Markdown 文件中使用 `sphinx.ext.autodoc`"
 
 #: ../../faq/index.md:109
 msgid "See [](#syntax/apis) for this information."
-msgstr ""
+msgstr "有关此信息，请参见 [](#syntax/apis)。"
 
 #: ../../faq/index.md:112
 msgid "Automatically create targets for section headers"
-msgstr ""
+msgstr "自动为章节标题创建目标"
 
 #: ../../faq/index.md:115
 msgid "See [](#syntax/implicit-targets) for this information."
-msgstr ""
+msgstr "有关此信息，请参见 [](#syntax/implicit-targets)。"
 
 #: ../../faq/index.md:119
 msgid "Suppress warnings"
-msgstr ""
+msgstr "抑制警告"
 
 #: ../../faq/index.md:121
 msgid "See <project:#myst-warnings> for this information."
-msgstr ""
+msgstr "有关此信息，请参见 <project:#myst-warnings>。"
 
 #: ../../faq/index.md:123
 msgid "Sphinx-specific page front matter"
-msgstr ""
+msgstr "Sphinx 特定的页面前置内容(front matte)"
 
 #: ../../faq/index.md:125
 msgid ""
@@ -182,6 +196,8 @@ msgid ""
 "translations) that are also recognised specifically by docutils and "
 "parsed to inline Markdown:"
 msgstr ""
+"Sphinx 拦截前置内容并将其存储在全局环境中（如 [sphinx 文档](inv:sphinx#usage/*/field-lists) 中所述）。"
+"某些前置内容键（或其翻译）也被 docutils 特别识别并解析为内联 Markdown："
 
 #: ../../faq/index.md:129
 msgid "`author`"
@@ -237,10 +253,11 @@ msgid ""
 "specified in any toctrees. For example, inserting the following syntax at"
 " the top of a page will cause Sphinx to treat it as an orphan page:"
 msgstr ""
+"经典的用例是指定不在任何 toctree 中的“孤立”文档。例如，在页面顶部插入以下语法将使 Sphinx 将其视为孤立页面："
 
 #: ../../faq/index.md:153
 msgid "Migrate pre-existing rST into MyST"
-msgstr ""
+msgstr "将现有的 rST 迁移到 MyST"
 
 #: ../../faq/index.md:155
 msgid ""
@@ -249,10 +266,13 @@ msgid ""
 "myst`](https://github.com/executablebooks/rst-to-myst) tool, which allows"
 " you to convert single rST files to MyST markdown documents."
 msgstr ""
+"如果你已经有一些 reStructuredText 文件并希望将其转换为 MyST Markdown，"
+"可以尝试使用 [`rst-to-myst`](https://github.com/executablebooks/rst-to-myst) 工具，"
+"它允许你将单个 rST 文件转换为 MyST Markdown 文档。"
 
 #: ../../faq/index.md:157
 msgid "Disable Markdown syntax for the parser"
-msgstr ""
+msgstr "禁用解析器的 Markdown 语法"
 
 #: ../../faq/index.md:159
 msgid ""
@@ -260,38 +280,43 @@ msgid ""
 "`myst_disable_syntax`. Anything in this list will no longer be parsed by "
 "the MyST parser."
 msgstr ""
+"如果你想启用或禁用自定义 Markdown 语法，请使用 `myst_disable_syntax`。此列表中的任何内容将不再由 MyST 解析器解析。"
 
 #: ../../faq/index.md:162
 msgid ""
 "For example, to disable the `emphasis` in-line syntax, use this "
 "configuration:"
 msgstr ""
+"例如，要禁用 `emphasis` 内联语法，请使用以下配置："
 
 #: ../../faq/index.md:168
 msgid ""
 "emphasis syntax will now be disabled. For example, the following will be "
 "rendered *without* any italics:"
 msgstr ""
+"现在将禁用强调语法。例如，以下内容将 *不会* 渲染为斜体："
 
 #: ../../faq/index.md:175
 msgid ""
 "For a list of all the syntax elements you can disable, see the [markdown-"
 "it parser guide](inv:markdown_it#using)."
 msgstr ""
+"有关可以禁用的所有语法元素的列表，请参见 [markdown-it 解析器指南](inv:markdown_it#using)。"
 
 #: ../../faq/index.md:177
 msgid "Common errors and questions"
-msgstr ""
+msgstr "常见错误和问题"
 
 #: ../../faq/index.md:179
 msgid ""
 "These are common issues and gotchas that people may experience when using"
 " the MyST Sphinx extension."
 msgstr ""
+"这些是使用 MyST Sphinx 扩展时人们可能遇到的常见问题和陷阱。"
 
 #: ../../faq/index.md:181
 msgid "What markup language should I use inside directives?"
-msgstr ""
+msgstr "在指令中应该使用哪种标记语言？"
 
 #: ../../faq/index.md:183
 msgid ""
@@ -299,10 +324,11 @@ msgid ""
 "example, the content inside a **note directive**), note that the MyST "
 "parser will be used for this nested parsing as well."
 msgstr ""
+"如果你需要在另一个内容块 *内部* 解析内容（例如，**note 指令** 内部的内容），请注意 MyST 解析器也将用于此嵌套解析。"
 
 #: ../../faq/index.md:187
 msgid "Why doesn't my role/directive recognize markdown link syntax?"
-msgstr ""
+msgstr "为什么我的角色/指令无法识别 Markdown 链接语法？"
 
 #: ../../faq/index.md:189
 msgid ""
@@ -312,4 +338,5 @@ msgid ""
 "reStructuredText, the role may be explicitly expecting the `My title "
 "<myref>` structure, and so MyST will behave the same way."
 msgstr ""
-
+"有些角色/指令将语法 _hard-code_ 到其行为中。例如，许多角色允许你为链接提供标题，如下所示： `` {role}`My title <myref>` ``。"
+"虽然这看起来像 reStructuredText，但角色可能明确期望 `My title <myref>` 结构，因此 MyST 也会以相同的方式行为。"

@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../syntax/typography.md:8
 msgid "Headings"
-msgstr ""
+msgstr "标题"
 
 #: ../../syntax/typography.md:10
 msgid "Markdown syntax denotes headers starting with between 1 to 6 #."

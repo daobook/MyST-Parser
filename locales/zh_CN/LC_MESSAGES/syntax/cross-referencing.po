@@ -74,19 +74,19 @@ msgstr "在指令中添加 `name` 选项"
 
 #: ../../syntax/cross-referencing.md:49
 msgid "Heading"
-msgstr "标题"
+msgstr ""
 
 #: ../../syntax/cross-referencing.md:52
 msgid "This is a paragraph, with an `id` attribute."
-msgstr "这是带有 `id` 属性的段落。"
+msgstr ""
 
 #: ../../syntax/cross-referencing.md:54
 msgid "This is a [span with an `id` attribute]{#span-target}."
-msgstr "这是[带有 `id` 属性的跨行内容]{#span-target}。"
+msgstr ""
 
 #: ../../syntax/cross-referencing.md:59
 msgid "This is a directive with a `name` option"
-msgstr "这是带有 `name` 选项的指令"
+msgstr ""
 
 #: ../../syntax/cross-referencing.md:62
 msgid ""
@@ -272,84 +272,94 @@ msgid ""
 "Destinations beginning with `inv:` will be treated as intersphinx "
 "references"
 msgstr ""
+"以 `inv:` 开头的目的地将被视为 intersphinx 引用"
 
 #: ../../syntax/cross-referencing.md:145
 msgid ""
 "Autolinks or destinations beginning with  `http:`, `https:`, `ftp:`, or "
 "`mailto:` will be treated as external [URL] links."
 msgstr ""
+"以 `http:`、`https:`、`ftp:` 或 `mailto:` 开头的自动链接或目的地将被视为外部 [URL] 链接。"
 
 #: ../../syntax/cross-referencing.md:147
 msgid ""
 "Destinations which point to a local file path are treated as links to "
 "that file."
 msgstr ""
+"指向本地文件路径的目的地将被视为该文件的链接。"
 
 #: ../../syntax/cross-referencing.md:150
 msgid ""
 "If the destination is a relative path, it is resolved relative to the "
 "current file."
 msgstr ""
+"如果目的地是相对路径，它将相对于当前文件进行解析。"
 
 #: ../../syntax/cross-referencing.md:151
 msgid ""
 "If the destination is an absolute path (starts with `/`), it is resolved "
 "relative to the root of the project (i.e. the source directory)."
 msgstr ""
+"如果目的地是绝对路径（以 `/` 开头），它将相对于项目的根目录（即源目录）进行解析。"
 
 #: ../../syntax/cross-referencing.md:152
 msgid ""
 "If that path relates to another document in the project (e.g. a `.md` or "
 "`.rst` file), then it will link to the first heading in that document."
 msgstr ""
+"如果该路径与项目中的另一个文档相关（例如 `.md` 或 `.rst` 文件），则它将链接到该文档的第一个标题。"
 
 #: ../../syntax/cross-referencing.md:153
 msgid ""
 "Links to project documents can also include a `#` fragment identifier, to"
 " link to a specific heading in that document."
 msgstr ""
+"链接到项目文档时，也可以包含 `#` 片段标识符，以链接到该文档中的特定标题。"
 
 #: ../../syntax/cross-referencing.md:154
 msgid ""
 "If the path is to a non-source file (e.g. a `.png` or `.pdf` file), then "
 "the link will be to the file itself, e.g. to download it."
 msgstr ""
+"如果路径指向非源文件（例如 `.png` 或 `.pdf` 文件），则链接将指向文件本身，例如以下载该文件。"
 
 #: ../../syntax/cross-referencing.md:156
 msgid "Destinations beginning with `#` will be treated as internal references."
-msgstr ""
+msgstr "以 `#` 开头的目的地将被视为内部引用。"
 
 #: ../../syntax/cross-referencing.md:159
 msgid "First, explicit targets in the same file are searched for, if not found"
-msgstr ""
+msgstr "首先，在同一文件中搜索显式目标，如果未找到"
 
 #: ../../syntax/cross-referencing.md:160
 msgid "Then, implicit targets in the same file are searched for, if not found"
-msgstr ""
+msgstr "然后，在同一文件中搜索隐式目标，如果未找到"
 
 #: ../../syntax/cross-referencing.md:161
 msgid ""
 "Then, explicit targets across the whole project are searched for, if not "
 "found"
 msgstr ""
+"接着，在整个项目中搜索显式目标，如果未找到"
 
 #: ../../syntax/cross-referencing.md:162
 msgid "Then, intersphinx references are searched for, if not found"
-msgstr ""
+msgstr "然后，搜索 intersphinx 引用，如果未找到"
 
 #: ../../syntax/cross-referencing.md:163
 msgid "A warning is emitted and the destination is left as an external link."
-msgstr ""
+msgstr "然后，搜索 intersphinx 引用，如果未找到"
 
 #: ../../syntax/cross-referencing.md:166
 msgid ""
 "Local file path resolution and cross-project references are not available"
 " in [single page builds](#myst-docutils)"
 msgstr ""
+"本地文件路径解析和跨项目引用在[单页构建](#myst-docutils)中不可用"
 
 #: ../../syntax/cross-referencing.md:169
 msgid "Explicit vs implicit link text"
-msgstr ""
+msgstr "显式与隐式链接文本"
 
 #: ../../syntax/cross-referencing.md:171
 msgid ""
@@ -357,6 +367,8 @@ msgid ""
 "rendered text will be that. This text can contain nested inline markup, "
 "such as `[*emphasis*](#syntax/emphasis)`{l=md}."
 msgstr ""
+"如果链接文本是显式给出的，例如 `[text](#dest)`，则渲染的文本将是该内容。"
+"此文本可以包含嵌套的内联标记，例如 `[*emphasis*](#syntax/emphasis)`{l=md}。"
 
 #: ../../syntax/cross-referencing.md:174
 msgid ""
@@ -367,19 +379,21 @@ msgid ""
 "the caption will be used as the link text. Otherwise, the link text will "
 "be the destination itself."
 msgstr ""
+"如果未提供文本或为自动链接，例如 `[](#dest)` 或 `<project:#dest>`，则 MyST 将尝试解析隐式文本。"
+"例如，如果目的地是标题，则标题文本将用作链接文本；如果目的地是图/表，则标题将用作链接文本。否则，链接文本将是目的地本身。"
 
 #: ../../syntax/cross-referencing.md:179
 msgid "Examples"
-msgstr ""
+msgstr "示例"
 
 #: ../../syntax/cross-referencing.md:181
 msgid "Autolinks"
-msgstr ""
+msgstr "自动链接"
 
 #: ../../syntax/cross-referencing.md:201 ../../syntax/cross-referencing.md:214
 #: ../../syntax/cross-referencing.md:227
 msgid "External URL"
-msgstr ""
+msgstr "外部链接"
 
 #: ../../syntax/cross-referencing.md:201
 msgid "<https://example.com>"
@@ -388,7 +402,7 @@ msgstr ""
 #: ../../syntax/cross-referencing.md:202 ../../syntax/cross-referencing.md:215
 #: ../../syntax/cross-referencing.md:228
 msgid "Internal target reference"
-msgstr ""
+msgstr "内部目标引用"
 
 #: ../../syntax/cross-referencing.md:202
 msgid "<project:#cross-references>"
@@ -397,7 +411,7 @@ msgstr ""
 #: ../../syntax/cross-referencing.md:203 ../../syntax/cross-referencing.md:216
 #: ../../syntax/cross-referencing.md:229
 msgid "Internal file reference"
-msgstr ""
+msgstr "内部文件引用"
 
 #: ../../syntax/cross-referencing.md:203
 msgid "<project:../intro.md>"
@@ -406,7 +420,7 @@ msgstr ""
 #: ../../syntax/cross-referencing.md:204 ../../syntax/cross-referencing.md:217
 #: ../../syntax/cross-referencing.md:230
 msgid "Internal file -> heading reference"
-msgstr ""
+msgstr "内部文件 -> 标题引用"
 
 #: ../../syntax/cross-referencing.md:204
 msgid "<project:../intro.md#-get-started>"
@@ -415,7 +429,7 @@ msgstr ""
 #: ../../syntax/cross-referencing.md:205 ../../syntax/cross-referencing.md:218
 #: ../../syntax/cross-referencing.md:231
 msgid "Downloadable file"
-msgstr ""
+msgstr "下载文件"
 
 #: ../../syntax/cross-referencing.md:205
 msgid "<path:example.txt>"
@@ -424,7 +438,7 @@ msgstr ""
 #: ../../syntax/cross-referencing.md:206 ../../syntax/cross-referencing.md:219
 #: ../../syntax/cross-referencing.md:232
 msgid "Intersphinx reference"
-msgstr ""
+msgstr "Intersphinx 引用"
 
 #: ../../syntax/cross-referencing.md:206 ../../syntax/cross-referencing.md:364
 msgid "<inv:sphinx:std#index>"
@@ -432,7 +446,7 @@ msgstr ""
 
 #: ../../syntax/cross-referencing.md:194
 msgid "Inline links with implicit text"
-msgstr ""
+msgstr "带有隐式文本的内联链接"
 
 #: ../../syntax/cross-referencing.md:214
 msgid "[](https://example.com)"
@@ -460,7 +474,7 @@ msgstr ""
 
 #: ../../syntax/cross-referencing.md:207
 msgid "Inline links with explicit text"
-msgstr ""
+msgstr "带有显式文本的内联链接"
 
 #: ../../syntax/cross-referencing.md:227
 msgid "[Explicit text](https://example.com)"
@@ -488,7 +502,7 @@ msgstr ""
 
 #: ../../syntax/cross-referencing.md:220
 msgid "Customising external URL resolution"
-msgstr ""
+msgstr "自定义外部 URL 解析"
 
 #: ../../syntax/cross-referencing.md:223
 msgid ""
@@ -496,6 +510,7 @@ msgid ""
 " to URLs, and the `attrs_inline` extension can be used to specify certain"
 " links as external."
 msgstr ""
+"`myst_url_schemes` 现在允许自定义链接如何转换为 URL，并且可以使用 `attrs_inline` 扩展将某些链接指定为外部链接。"
 
 #: ../../syntax/cross-referencing.md:227
 msgid ""
@@ -504,12 +519,15 @@ msgid ""
 " behaviour in a number of ways using [configuration "
 "options](../configuration.md)."
 msgstr ""
+"默认情况下，所有以 `http:`、`https:`、`ftp:` 或 `mailto:` 开头的链接将被视为外部 [URL] 链接。"
+"你可以通过多种方式使用[配置选项](../configuration.md)来自定义此行为。"
 
 #: ../../syntax/cross-referencing.md:230
 msgid ""
 "Most simply, by setting the `myst_all_links_external` configuration "
 "option to `True`, all links will be treated as external [URL] links."
 msgstr ""
+"最简单的方式是将 `myst_all_links_external` 配置选项设置为 `True`，这样所有链接都将被视为外部 [URL] 链接。"
 
 #: ../../syntax/cross-referencing.md:233
 msgid ""
@@ -519,6 +537,9 @@ msgid ""
 "external-link){.external}` becomes [my-external-link](my-external-"
 "link){.external}."
 msgstr ""
+"要选择性地应用于特定链接，你可以启用 [attrs_inline](syntax/attributes/inline) 插件，"
+"然后为链接添加 `external` 类。\\ 例如，`[my-external-link](my-external-link){.external}` 变为 "
+"[my-external-link](my-external-link){.external}。"
 
 #: ../../syntax/cross-referencing.md:237
 msgid ""
@@ -526,6 +547,8 @@ msgid ""
 "`myst_url_schemes` configuration option. By default this is set to "
 "`[\"http\", \"https\", \"ftp\", \"mailto\"]`."
 msgstr ""
+"要指定自定义的 URL 方案列表，你可以设置 `myst_url_schemes` 配置选项。"
+"默认情况下，它设置为 `[\"http\", \"https\", \"ftp\", \"mailto\"]`。"
 
 #: ../../syntax/cross-referencing.md:240
 msgid ""
@@ -534,30 +557,34 @@ msgid ""
 " the links are converted to URLs. This allows you to customise the "
 "conversion of links to URLs for specific schemes, for example:"
 msgstr ""
+"除了可以是字符串列表外，`myst_url_schemes` 还可以是字典，其中键是 URL 方案，值定义链接如何转换为 URL。"
+"这允许你自定义特定方案的链接到 URL 的转换，例如："
 
 #: ../../syntax/cross-referencing.md:258
 msgid "Allows for links such as:"
-msgstr ""
+msgstr "允许使用如下链接："
 
 #: ../../syntax/cross-referencing.md:260
 msgid ""
 "`[URI](wiki:Uniform_Resource_Identifier#URI_references)` is converted to "
 "[URI](wiki:Uniform_Resource_Identifier#URI_references)"
 msgstr ""
+"`[URI](wiki:Uniform_Resource_Identifier#URI_references)` 被转换为 [URI](wiki:Uniform_Resource_Identifier#URI_references)"
 
 #: ../../syntax/cross-referencing.md:261
 msgid "`<doi:10.1186/gm483>` is converted to <doi:10.1186/gm483>"
-msgstr ""
+msgstr "`<doi:10.1186/gm483>` 被转换为 <doi:10.1186/gm483>"
 
 #: ../../syntax/cross-referencing.md:262
 msgid "`<gh-issue:639>` is converted to <gh-issue:639>"
-msgstr ""
+msgstr "`<gh-issue:639>` 被转换为 <gh-issue:639>"
 
 #: ../../syntax/cross-referencing.md:265
 msgid ""
 "You can also use the [sphinx-tippy](https://sphinx-tippy.readthedocs.io) "
 "extension to add rich \"hover\" tooltips to links."
 msgstr ""
+"你还可以使用 [sphinx-tippy](https://sphinx-tippy.readthedocs.io) 插件为链接添加丰富的“悬停”工具提示。"
 
 #: ../../syntax/cross-referencing.md:267
 msgid ""
@@ -566,36 +593,40 @@ msgid ""
 "theme.readthedocs.io/en/stable/user_guide/theme-elements.html#link-"
 "shortening-for-git-repository-services)"
 msgstr ""
+"添加 `github` 类可以很好地与 [pydata-sphinx-theme 的 GitHub 链接格式化](https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/theme-elements.html#link-shortening-for-git-repository-services) 集成"
 
 #: ../../syntax/cross-referencing.md:270
 msgid "The value of each scheme can be:"
-msgstr ""
+msgstr "每个 scheme 的值可以是："
 
 #: ../../syntax/cross-referencing.md:272
 msgid "`None`: the link is converted directly to an external URL."
-msgstr ""
+msgstr "`None`：链接直接转换为外部 URL。"
 
 #: ../../syntax/cross-referencing.md:273
 msgid ""
 "A string: the link is converted to an external URL using the string as a "
 "template."
 msgstr ""
+"字符串：链接使用该字符串作为模板转换为外部 URL。"
 
 #: ../../syntax/cross-referencing.md:274
 msgid ""
 "A dictionary: the link is converted to an external URL using the "
 "dictionary’s `url` key as a template."
 msgstr ""
+"字典：链接使用字典的 `url` 键作为模板转换为外部 URL。"
 
 #: ../../syntax/cross-referencing.md:275
 msgid ""
 "The (optional) `title` key is a template for the link’s implicit title, "
 "i.e. it is used if the link has no explicit title."
 msgstr ""
+"（可选的） `title` 键是链接隐式标题的模板，即如果链接没有显式标题时使用它。"
 
 #: ../../syntax/cross-referencing.md:276
 msgid "The (optional) `classes` key is a list of classes to add to the link."
-msgstr ""
+msgstr "（可选的） `classes` 键是要添加到链接的类列表。"
 
 #: ../../syntax/cross-referencing.md:278
 msgid ""
@@ -604,22 +635,24 @@ msgid ""
 "`<scheme>://<netloc>/<path>;<params>?<query>#<fragment>` (or the full "
 "link using `uri`). For example:"
 msgstr ""
+"`url` 和 `title` 的模板可以使用变量（用 `{{ }}` 包裹），"
+"这些变量将替换为链接 `<scheme>://<netloc>/<path>;<params>?<query>#<fragment>` 的相应部分（或使用 `uri` 表示完整链接）。例如："
 
 #: ../../syntax/cross-referencing.md:281
 msgid "`scheme`: the URL scheme, e.g. `wiki`."
-msgstr ""
+msgstr "`scheme`：URL 方案，例如 `wiki`。"
 
 #: ../../syntax/cross-referencing.md:282
 msgid "`path`: the path part of the URL, e.g. `Uniform_Resource_Identifier`."
-msgstr ""
+msgstr "`path`：URL 的路径部分，例如 `Uniform_Resource_Identifier`。"
 
 #: ../../syntax/cross-referencing.md:283
 msgid "`fragment`: the fragment part of the URL, e.g. `URI_references`."
-msgstr ""
+msgstr "`fragment`：URL 的片段部分，例如 `URI_references`。"
 
 #: ../../syntax/cross-referencing.md:286
 msgid "Cross-project (intersphinx) links"
-msgstr ""
+msgstr "跨项目（intersphinx）链接"
 
 #: ../../syntax/cross-referencing.md:291
 msgid ""
@@ -629,6 +662,8 @@ msgid ""
 " `name`. As well as the relative location, the object can also include "
 "implicit `text` for the reference (like the text for a heading)."
 msgstr ""
+"每个 Sphinx HTML 构建都会生成名为 `objects.inv` 的文件，其中包含从可引用对象到相对于 HTML 集合根目录的 [URI][uri] 的映射。"
+"每个对象由 `domain`、`type` 和 `name` 唯一标识。除了相对位置外，对象还可以包含引用的隐式 `text` （例如标题的文本）。"
 
 #: ../../syntax/cross-referencing.md:295
 msgid ""
@@ -636,6 +671,7 @@ msgid ""
 "`myst_parser`) to visualise and filter any remote URL or local file path "
 "to this inventory file (or its parent):"
 msgstr ""
+"你可以使用 `myst-inv` 命令行工具（随 `myst_parser` 安装）来可视化和筛选任何远程 URL 或本地文件路径指向的此清单文件（或其父目录）："
 
 #: ../../syntax/cross-referencing.md:315
 msgid ""
@@ -643,22 +679,26 @@ msgid ""
 "[`sphinx.ext.intersphinx` extension](inv:sphinx#usage/*/intersphinx), and"
 " set the `intersphinx_mapping` configuration option."
 msgstr ""
+"要将外部清单加载到你的 Sphinx 项目中，你必须加载 [`sphinx.ext.intersphinx` 插件](inv:sphinx#usage/*/intersphinx)，"
+"并设置 `intersphinx_mapping` 配置选项。"
 
 #: ../../syntax/cross-referencing.md:324
 msgid "Docutils configuration"
-msgstr ""
+msgstr "Docutils 配置"
 
 #: ../../syntax/cross-referencing.md:328
 msgid ""
 "Use the `docutils.conf` configuration file, for more details see [](myst-"
 "docutils)."
 msgstr ""
+"使用 `docutils.conf` 配置文件，更多详情请参见 [](myst-docutils)。"
 
 #: ../../syntax/cross-referencing.md:337
 msgid ""
 "you can then reference inventory objects by prefixing the `inv` schema to"
 " the destination [URI]: `inv:key:domain:type#name`."
 msgstr ""
+"然后，你可以通过在目标 [URI] 前添加 `inv` 方案来引用清单对象：`inv:key:domain:type#name`。"
 
 #: ../../syntax/cross-referencing.md:339
 msgid ""
@@ -666,6 +706,8 @@ msgid ""
 "inventories, domains and types will be searched, with a [warning emitted"
 "](myst-warnings) if multiple matches are found."
 msgstr ""
+"`key`、`domain` 和 `type` 是可选的，例如对于 `inv:#name`，将搜索所有清单、域和类型，"
+"如果找到多个匹配项，则会[发出警告](myst-warnings)。"
 
 #: ../../syntax/cross-referencing.md:341
 msgid ""
@@ -674,26 +716,28 @@ msgid ""
 "inventories, with a `name` beginning with `a`. Note, to match to a "
 "literal `*` use `\\*`."
 msgstr ""
+"此外，`*` 是通配符，匹配零个或多个字符，例如 `inv:*:std:doc#a*` 将匹配所有清单中 `name` 以 `a` 开头的 `std:doc` 对象。"
+"注意，要匹配字面 `*`，请使用 `\\*`。"
 
 #: ../../syntax/cross-referencing.md:344
 msgid "Here are some examples:"
-msgstr ""
+msgstr "以下是一些示例："
 
 #: ../../syntax/cross-referencing.md:350
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #: ../../syntax/cross-referencing.md:351
 msgid "Syntax"
-msgstr ""
+msgstr "语法"
 
 #: ../../syntax/cross-referencing.md:352
 msgid "Rendered"
-msgstr ""
+msgstr "渲染后"
 
 #: ../../syntax/cross-referencing.md:354
 msgid "Autolink, full"
-msgstr ""
+msgstr "自动链接，完整形式"
 
 #: ../../syntax/cross-referencing.md:355
 msgid "`<inv:sphinx:std:doc#index>`{l=myst}"
@@ -705,7 +749,7 @@ msgstr ""
 
 #: ../../syntax/cross-referencing.md:358
 msgid "Link, full"
-msgstr ""
+msgstr "链接，完整形式"
 
 #: ../../syntax/cross-referencing.md:359
 msgid "`[Sphinx](inv:sphinx:std:doc#index)`{l=myst}"
@@ -717,7 +761,7 @@ msgstr ""
 
 #: ../../syntax/cross-referencing.md:362
 msgid "Autolink, no type"
-msgstr ""
+msgstr "自动链接，无类型"
 
 #: ../../syntax/cross-referencing.md:363
 msgid "`<inv:sphinx:std#index>`{l=myst}"
@@ -725,7 +769,7 @@ msgstr ""
 
 #: ../../syntax/cross-referencing.md:366
 msgid "Autolink, no domain"
-msgstr ""
+msgstr "自动链接，无域"
 
 #: ../../syntax/cross-referencing.md:367
 msgid "`<inv:sphinx:*:doc#index>`{l=myst}"
@@ -737,7 +781,7 @@ msgstr ""
 
 #: ../../syntax/cross-referencing.md:370
 msgid "Autolink, only name"
-msgstr ""
+msgstr "自动链接，仅名称"
 
 #: ../../syntax/cross-referencing.md:371
 msgid "`<inv:#*.Sphinx>`{l=myst}"
@@ -749,13 +793,14 @@ msgstr ""
 
 #: ../../syntax/cross-referencing.md:375
 msgid "Reference roles"
-msgstr ""
+msgstr "引用角色"
 
 #: ../../syntax/cross-referencing.md:377
 msgid ""
 "Sphinx offers numerous [roles for "
 "referencing](#usage/restructuredtext/roles) specific objects."
 msgstr ""
+"Sphinx 提供了许多[用于引用特定对象的角色](#usage/restructuredtext/roles)。"
 
 #: ../../syntax/cross-referencing.md:379
 msgid ""
@@ -763,10 +808,11 @@ msgid ""
 "the Markdown syntax where possible, which is more portable and native to "
 "MyST."
 msgstr ""
+"这些也可以在 MyST 文档中使用，但建议尽可能使用 Markdown 语法，因为它更具可移植性且更符合 MyST 的原生特性。"
 
 #: ../../syntax/cross-referencing.md:410
 msgid "{ref}`syntax/referencing`, {ref}`Explicit text <syntax/referencing>`"
-msgstr ""
+msgstr "{ref}`syntax/referencing`, {ref}`显式文本 <syntax/referencing>`"
 
 #: ../../syntax/cross-referencing.md:411
 msgid "{term}`my other term`"
@@ -828,7 +874,7 @@ msgstr ""
 
 #: ../../syntax/cross-referencing.md:403
 msgid "Handling invalid references"
-msgstr ""
+msgstr "处理无效引用"
 
 #: ../../syntax/cross-referencing.md:405
 msgid ""
@@ -836,20 +882,22 @@ msgid ""
 "mode](inv:sphinx:std:confval#nitpicky), which will emit warnings for any "
 "invalid references."
 msgstr ""
+"在构建文档时，建议在[挑剔模式](inv:sphinx:std:confval#nitpicky)下运行，该模式会对任何无效引用发出警告。"
 
 #: ../../syntax/cross-referencing.md:407
 msgid "you may encounter warnings such as:"
-msgstr ""
+msgstr "你可能会遇到如下警告："
 
 #: ../../syntax/cross-referencing.md:415
 msgid ""
 "To fully suppress a specific warning type, you can use the "
 "`suppress_warnings` configuration option, in Sphinx’s `conf.py` file:"
 msgstr ""
+"要完全抑制特定类型的警告，你可以在 Sphinx 的 `conf.py` 文件中使用 `suppress_warnings` 配置选项："
 
 #: ../../syntax/cross-referencing.md:421
 msgid "or in `docutils.conf` or [command-line tool](../docutils.md):"
-msgstr ""
+msgstr "或者在 `docutils.conf` 或[命令行工具](../docutils.md)中："
 
 #: ../../syntax/cross-referencing.md:428
 msgid ""
@@ -857,6 +905,7 @@ msgid ""
 "<inv:sphinx#nitpick_ignore> and <inv:sphinx#nitpick_ignore_regex> "
 "configuration options."
 msgstr ""
+"在 Sphinx 中，还可以使用 <inv:sphinx#nitpick_ignore> 和 <inv:sphinx#nitpick_ignore_regex> 配置选项来抑制特定引用警告。"
 
 #: ../../syntax/cross-referencing.md:434
 msgid ""
@@ -865,4 +914,5 @@ msgid ""
 "references can be restricted globally or per-document using the "
 "[`myst_ref_domains` configuration](../configuration.md)."
 msgstr ""
-
+"要处理模糊引用，对于 intersphinx 引用，请参见 [](syntax/inv_links) 部分，"
+"或者可以使用 [`myst_ref_domains` 配置](../configuration.md)全局或按文档限制所有 Markdown 引用搜索的域。"

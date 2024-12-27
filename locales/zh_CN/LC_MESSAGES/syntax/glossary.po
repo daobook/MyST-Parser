@@ -22,19 +22,19 @@ msgstr ""
 
 #: ../../syntax/glossary.md:5
 msgid "Glossary"
-msgstr ""
+msgstr "术语表"
 
 #: ../../syntax/glossary.md:8
 msgid "Length Units"
-msgstr ""
+msgstr "长度单位"
 
 #: ../../syntax/glossary.md:10
 msgid "The following length units are supported by the reStructuredText parser:"
-msgstr ""
+msgstr "reStructuredText 解析器支持以下长度单位："
 
 #: ../../syntax/glossary.md:13
 msgid "em (em unit, the element's font size)"
-msgstr ""
+msgstr "em（em 单位，元素的字体大小）"
 
 #: ../../syntax/glossary.md:14
 msgid "ex (ex unit, x-height of the element’s font)"
@@ -69,20 +69,22 @@ msgid ""
 "This set corresponds to the length units in [CSS2] (a subset of length "
 "units in [CSS3])."
 msgstr ""
+"该集合对应于 [CSS2] 中的长度单位（[CSS3] 中长度单位的子集）。"
 
 #: ../../syntax/glossary.md:25
 msgid "The following are all valid length values: \"1.5em\", \"20 mm\", \".5in\"."
-msgstr ""
+msgstr "以下都是有效的长度值：\"1.5em\"、\"20 mm\"、\".5in\"。"
 
 #: ../../syntax/glossary.md:27
 msgid ""
 "Length values without unit are completed with a writer-dependent default "
 "(e.g. \"px\" with HTML, \"pt\" with `latex2e`)."
 msgstr ""
+"没有单位的长度值会使用与编写器相关的默认单位进行补全（例如，HTML使用 \"px\"， `latex2e` 使用\"pt\"）。"
 
 #: ../../syntax/glossary.md:34
 msgid "Percentage Units"
-msgstr ""
+msgstr "百分比单位"
 
 #: ../../syntax/glossary.md:36
 msgid ""
@@ -90,4 +92,4 @@ msgid ""
 " are relative to other values, depending on the context in which they "
 "occur."
 msgstr ""
-
+"百分比值以百分号（\"%\"）为单位。百分比值是相对于其他值的，具体取决于它们出现的上下文。"

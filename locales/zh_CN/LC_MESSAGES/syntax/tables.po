@@ -22,25 +22,26 @@ msgstr ""
 
 #: ../../syntax/tables.md:1
 msgid "Tables"
-msgstr ""
+msgstr "表格"
 
 #: ../../syntax/tables.md:3
 msgid "Markdown syntax"
-msgstr ""
+msgstr "Markdown 语法"
 
 #: ../../syntax/tables.md:5
 msgid ""
 "Tables can be written using the standard [Github Flavoured Markdown "
 "syntax](https://github.github.com/gfm/#tables-extension-):"
 msgstr ""
+"表格可以使用标准的 [Github Flavoured Markdown 语法](https://github.github.com/gfm/#tables-extension-) 编写："
 
 #: ../../syntax/tables.md:13
 msgid "Cells in a column can be aligned using the `:` character:"
-msgstr ""
+msgstr "列中的单元格可以使用 `:` 字符对齐："
 
 #: ../../syntax/tables.md:21
 msgid "Aligning cells in Sphinx HTML themes"
-msgstr ""
+msgstr "在 Sphinx HTML 主题中对齐单元格"
 
 #: ../../syntax/tables.md:25
 msgid ""
@@ -48,80 +49,86 @@ msgid ""
 "to the cell. It is then necessary for the theme you are using to include "
 "the appropriate css styling."
 msgstr ""
+"通过将 `text-left`、`text-center` 或 `text-right` 分配给单元格来对齐文本。然后，你使用的主题需要包含适当的 CSS 样式。"
 
 #: ../../syntax/tables.md:40
 msgid "Table with captions"
-msgstr ""
+msgstr "带标题的表格"
 
 #: ../../syntax/tables.md:42
 msgid "The `table` directive can be used to create a table with a caption:"
-msgstr ""
+msgstr "可以使用 `table` 指令创建带标题的表格："
 
 #: ../../syntax/tables.md:63
 msgid "Table caption"
-msgstr ""
+msgstr "表格标题"
 
 #: ../../syntax/tables.md:55 ../../syntax/tables.md:100
 #: ../../syntax/tables.md:147
 msgid "The following options are recognized:"
-msgstr ""
+msgstr "以下选项被识别："
 
 #: ../../syntax/tables.md:57 ../../syntax/tables.md:103
 msgid "List table options"
-msgstr ""
+msgstr "列表表格选项"
 
 #: ../../syntax/tables.md:61 ../../syntax/tables.md:107
 #: ../../syntax/tables.md:153
 msgid "`align` : \"left\", \"center\", or \"right\""
-msgstr ""
+msgstr "`align` : \"left\", \"center\", 或者 \"right\""
 
 #: ../../syntax/tables.md:62 ../../syntax/tables.md:108
 #: ../../syntax/tables.md:154
 msgid "The horizontal alignment of the table."
-msgstr ""
+msgstr "表格的水平对齐方式。"
 
 #: ../../syntax/tables.md:64 ../../syntax/tables.md:116
 #: ../../syntax/tables.md:192
 msgid "`width` : [length](units/length) or [percentage](units/percentage)"
-msgstr ""
+msgstr "`width` : [length](units/length) 或者 [percentage](units/percentage)"
 
 #: ../../syntax/tables.md:65 ../../syntax/tables.md:117
 msgid ""
 "Sets the width of the table to the specified length or percentage of the "
 "line width."
 msgstr ""
+"将表格的宽度设置为指定的长度或行宽的百分比。"
 
 #: ../../syntax/tables.md:66 ../../syntax/tables.md:118
 msgid ""
 "If omitted, the renderer determines the width of the table based on its "
 "contents or the column widths."
 msgstr ""
+"如果省略，渲染器将根据表格内容或列宽确定表格宽度。"
 
 #: ../../syntax/tables.md:68
 msgid "`widths` : \"auto\", \"grid\", or a list of integers"
-msgstr ""
+msgstr "`widths`：\"auto\"、\"grid\" 或整数列表"
 
 #: ../../syntax/tables.md:69
 msgid ""
 "Explicitly set column widths. Specifies relative widths if used with the "
 "width option."
 msgstr ""
+"显式设置列宽。如果与宽度选项一起使用，则指定相对宽度。"
 
 #: ../../syntax/tables.md:70 ../../syntax/tables.md:190
 msgid ""
 "\"auto\" delegates the determination of column widths to the backend "
 "renderer."
 msgstr ""
+"\"auto\" 将列宽的确定委托给后端渲染器处理。"
 
 #: ../../syntax/tables.md:71
 msgid ""
 "\"grid\" determines column widths from the widths of the input columns "
 "(in characters)."
 msgstr ""
+"\"grid\" 根据输入列的宽度（以字符为单位）来确定列宽。"
 
 #: ../../syntax/tables.md:74
 msgid "List tables"
-msgstr ""
+msgstr "列表表格"
 
 #: ../../syntax/tables.md:76
 msgid ""
@@ -129,6 +136,7 @@ msgid ""
 "uniform two-level bullet list. \"Uniform\" means that each sublist "
 "(second-level list) must contain the same number of list items."
 msgstr ""
+"`list-table` 指令用于从统一的两级项目列表中创建表格。\"统一\" 意味着每个子列表（第二级列表）必须包含相同数量的列表项。"
 
 #: ../../syntax/tables.md:108 ../../syntax/tables.md:154
 msgid "Frozen Delights!"
@@ -185,33 +193,36 @@ msgstr ""
 
 #: ../../syntax/tables.md:111
 msgid "The number of rows of list data to use in the table header. Defaults to 0."
-msgstr ""
+msgstr "用于表格标题中的列表数据的行数。默认为0。"
 
 #: ../../syntax/tables.md:113 ../../syntax/tables.md:182
 msgid "`stub-columns` : integer"
-msgstr ""
+msgstr "`stub-columns` : 整数"
 
 #: ../../syntax/tables.md:114 ../../syntax/tables.md:183
 msgid ""
 "The number of table columns to use as stubs (row titles, on the left). "
 "Defaults to 0."
 msgstr ""
+"用作 stubs（左侧的行标题）的表格列数。默认为0。"
 
 #: ../../syntax/tables.md:120
 msgid "`widths` : integer `[integer...]` or \"auto\""
-msgstr ""
+msgstr "`widths`：整数 `[整数...]` 或 \"auto\""
 
 #: ../../syntax/tables.md:121 ../../syntax/tables.md:189
 msgid ""
 "A list of relative column widths. The default is equal-width columns "
 "(100%/#columns)."
 msgstr ""
+"一组相对列宽的列表。默认情况下，各列宽度相等 (100%/#columns)。"
 
 #: ../../syntax/tables.md:122
 msgid ""
 "\"auto\" delegates the determination of column widths to the output "
 "builder."
 msgstr ""
+"\"auto\" 将列宽的确定委托给输出构建器处理。"
 
 #: ../../syntax/tables.md:124 ../../syntax/tables.md:195
 msgid "``class``"
@@ -219,7 +230,7 @@ msgstr ""
 
 #: ../../syntax/tables.md:125 ../../syntax/tables.md:196
 msgid "A space-separated list of CSS classes to add to the table."
-msgstr ""
+msgstr "一组以空格分隔的 CSS 类，用于添加到表格中。"
 
 #: ../../syntax/tables.md:127 ../../syntax/tables.md:198
 msgid "``name``"
@@ -230,20 +241,22 @@ msgid ""
 "A reference target for the admonition (see [cross-"
 "referencing](#syntax/referencing))."
 msgstr ""
+"用于警告的引用目标（参见[交叉引用](#syntax/referencing)）。"
 
 #: ../../syntax/tables.md:131
 msgid "CSV tables"
-msgstr ""
+msgstr "CSV 表格"
 
 #: ../../syntax/tables.md:133
 msgid ""
 "The `csv-table` directive is used to create a table from Comma-Separated-"
 "Values data."
 msgstr ""
+"`csv-table` 指令用于从逗号分隔值（CSV）数据中创建表格。"
 
 #: ../../syntax/tables.md:149
 msgid "CSV table options"
-msgstr ""
+msgstr "CSV 表格选项"
 
 #: ../../syntax/tables.md:156
 msgid "`delim` : char | \"tab\" | \"space\""
@@ -255,16 +268,18 @@ msgid ""
 "May be specified as a Unicode code point; see the unicode directive for "
 "syntax details."
 msgstr ""
+"用于分隔字段的单字符字符串。默认为 , （逗号）。可以指定为 Unicode 码点；有关语法详情，请参见 unicode 指令。"
 
 #: ../../syntax/tables.md:160
 msgid "`encoding` : string"
-msgstr ""
+msgstr "`encoding` : 字符串"
 
 #: ../../syntax/tables.md:161
 msgid ""
 "The text encoding of the external CSV data (file or URL). Defaults to the"
 " document's input_encoding."
 msgstr ""
+"外部 CSV 数据（文件或 URL）的文本编码。默认为文档的输入编码。"
 
 #: ../../syntax/tables.md:164
 msgid "`escape` : char"
@@ -278,18 +293,20 @@ msgid ""
 "when quote characters are used within a field. The default is to double-"
 "up the character, e.g. \"He said, \"\"Hi!\"\"\""
 msgstr ""
+"用于转义分隔符或引号字符的单字符字符串。可以指定为 Unicode 码点；有关语法详情，请参见 unicode 指令。"
+"当分隔符用于未加引号的字段中，或当引号字符用于字段内时使用。默认情况下是重复该字符，例如：\"He said, \"\"Hi!\"\"\""
 
 #: ../../syntax/tables.md:167
 msgid "`file` : string (newlines removed)"
-msgstr ""
+msgstr "`file`：字符串（换行符已移除）"
 
 #: ../../syntax/tables.md:168
 msgid "The local filesystem path to a CSV data file."
-msgstr ""
+msgstr "CSV 数据文件在本地文件系统中的路径。"
 
 #: ../../syntax/tables.md:170
 msgid "`header` : CSV data"
-msgstr ""
+msgstr "`header` : CSV 数据"
 
 #: ../../syntax/tables.md:171
 msgid ""
@@ -297,10 +314,11 @@ msgid ""
 " any header-rows from the main CSV data. Must use the same CSV format as "
 "the main CSV data."
 msgstr ""
+"表格标题的补充数据，独立于主 CSV 数据中的任何标题行之前添加。必须使用与主 CSV 数据相同的 CSV 格式。"
 
 #: ../../syntax/tables.md:174
 msgid "The number of rows of CSV data to use in the table header. Defaults to 0."
-msgstr ""
+msgstr "用于表格标题的 CSV 数据的行数。默认为0。"
 
 #: ../../syntax/tables.md:176
 msgid "`keepspace` : flag"
@@ -311,6 +329,7 @@ msgid ""
 "Treat whitespace immediately following the delimiter as significant. The "
 "default is to ignore such whitespace."
 msgstr ""
+"将紧跟在分隔符后的空白视为有效。默认情况下会忽略此类空白。"
 
 #: ../../syntax/tables.md:179
 msgid "`quote` : char"
@@ -323,18 +342,20 @@ msgid ""
 "specified as a Unicode code point; see the unicode directive for syntax "
 "details."
 msgstr ""
+"用于引用包含分隔符或以引号字符开头的元素的单字符字符串。"
+"默认为 \" （引号）。可以指定为 Unicode 码点；有关语法详情，请参见 unicode 指令。"
 
 #: ../../syntax/tables.md:185
 msgid "`url` : string (whitespace removed)"
-msgstr ""
+msgstr "`url`：字符串（空白已移除）"
 
 #: ../../syntax/tables.md:186
 msgid "An Internet URL reference to a CSV data file."
-msgstr ""
+msgstr "指向 CSV 数据文件的互联网 URL 引用。"
 
 #: ../../syntax/tables.md:188
 msgid "`widths` : integer, `[integer...]` or \"auto\""
-msgstr ""
+msgstr "`widths`：整数、`[整数...]` 或 \"auto\""
 
 #: ../../syntax/tables.md:193
 msgid ""
@@ -342,4 +363,4 @@ msgid ""
 "line width. If omitted, the renderer determines the width of the table "
 "based on its contents or the column widths."
 msgstr ""
-
+"将表格的宽度设置为指定的长度或行宽的百分比。如果省略，渲染器将根据表格内容或列宽来确定表格宽度。"

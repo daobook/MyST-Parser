@@ -22,23 +22,25 @@ msgstr ""
 
 #: ../../syntax/math.md:1
 msgid "Math and equations"
-msgstr ""
+msgstr "数学与方程式"
 
 #: ../../syntax/math.md:3
 msgid ""
 "Math can be written in the common LaTeX markup. There are several "
 "syntaxes to define inline and block math, depending on your preference."
 msgstr ""
+"数学公式可以用常见的 LaTeX 标记来书写。根据个人偏好，有几种语法可以定义行内公式和块级公式。"
 
 #: ../../syntax/math.md:7
 msgid "Math role and directive"
-msgstr ""
+msgstr "数学角色与指令"
 
 #: ../../syntax/math.md:9
 msgid ""
 "The `math` {{role}} and {{directive}} are used to define inline and block"
 " math respectively."
 msgstr ""
+"`math` {{role}} 和 {{directive}} 分别用于定义行内公式和块级公式。"
 
 #: ../../syntax/math.md:11
 msgid ""
@@ -47,16 +49,18 @@ msgid ""
 "should be separated by `\\\\` characters, and each line can have multiple"
 " `&` characters to align the equations."
 msgstr ""
+"该指令支持多个方程式，各方程式之间应以空行分隔。每个单独的方程式可以包含多行对齐，各行之间应以 `\\\\` 字符分隔，每行可以有多个 `&` 字符用于对齐方程式。"
 
 #: ../../syntax/math.md:14
 msgid ""
 "The `label` option can also be used to reference the equation later on, "
 "with the `eq` role."
 msgstr ""
+"`label` 选项也可用于稍后通过 `eq` 角色引用该方程式。"
 
 #: ../../syntax/math.md:38
 msgid "Since Pythagoras, we know that {math}`a^2 + b^2 = c^2`."
-msgstr ""
+msgstr "自毕达哥拉斯以来，便知 {math}`a^2 + b^2 = c^2`。"
 
 #: ../../syntax/math.md:40
 msgid ""
@@ -68,7 +72,7 @@ msgstr ""
 
 #: ../../syntax/math.md:48
 msgid "The equation {eq}`mymath` is a quadratic equation."
-msgstr ""
+msgstr "方程式 {eq}`mymath` 是二次方程。"
 
 #: ../../syntax/math.md:33
 msgid ""
@@ -76,32 +80,34 @@ msgid ""
 "[directive](inv:sphinx:rst:directive#math), and [math support for HTML "
 "outputs in Sphinx](inv:sphinx#math-support)."
 msgstr ""
+"Sphinx 文档关于 [角色](inv:sphinx:rst:role#math) 和 [指令](inv:sphinx:rst:directive#math)，以及 [Sphinx 中 HTML 输出的数学支持](inv:sphinx#math-support)。"
 
 #: ../../syntax/math.md:37
 msgid "Dollar delimited math"
-msgstr ""
+msgstr "美元符号分隔的数学公式"
 
 #: ../../syntax/math.md:39
 msgid ""
 "Enabling the [dollarmath](#syntax/math/dollar) extension will allow "
 "parsing the following syntax:"
 msgstr ""
+"启用 [dollarmath](#syntax/math/dollar) 插件将允许解析以下语法："
 
 #: ../../syntax/math.md:41
 msgid "Inline math: `$...$`"
-msgstr ""
+msgstr "行内公式： `$...$`"
 
 #: ../../syntax/math.md:42
 msgid "Display (block) math: `$$...$$`"
-msgstr ""
+msgstr "显示（块级）公式： `$$...$$`"
 
 #: ../../syntax/math.md:44
 msgid "Additionally if `myst_dmath_allow_labels=True` is set (the default):"
-msgstr ""
+msgstr "此外，如果设置了 `myst_dmath_allow_labels=True` （默认设置）："
 
 #: ../../syntax/math.md:46
 msgid "Display (block) math with equation label: `$$...$$ (1)`"
-msgstr ""
+msgstr "带有方程式标签的显示（块级）公式： `$$...$$ (1)`"
 
 #: ../../syntax/math.md:67
 msgid ""
@@ -116,7 +122,7 @@ msgstr ""
 
 #: ../../syntax/math.md:61
 msgid "Escaping Dollars"
-msgstr ""
+msgstr "转义美元符号"
 
 #: ../../syntax/math.md:64
 msgid ""
@@ -124,22 +130,25 @@ msgid ""
 "e.g. `\\$a$` renders as \\$a\\$. Escaping can also be used inside math, "
 "e.g. `$a=\\$3$` renders as $a=\\$3$."
 msgstr ""
+"可以通过在第一个符号前添加 `\\` 来转义（取消）数学公式，例如 `\\$a$` 渲染为 \\$a\\$。转义也可以在数学公式内部使用，例如 `$a=\\$3$` 渲染为 $a=\\$3$。"
 
 #: ../../syntax/math.md:67
 msgid ""
 "Conversely `\\\\` will negate the escaping, so `\\\\$a$` renders as "
 "\\\\$a$."
 msgstr ""
+"相反，`\\\\` 将取消转义，因此 `\\\\$a$` 渲染为 \\\\$a$。"
 
 #: ../../syntax/math.md:70
 msgid "Direct LaTeX Math"
-msgstr ""
+msgstr "直接使用 LaTeX 数学公式"
 
 #: ../../syntax/math.md:72
 msgid ""
 "Enabling the [amsmath](#syntax/amsmath) extension will directly parse the"
 " following top-level math environments:"
 msgstr ""
+"启用 [amsmath](#syntax/amsmath) 插件将直接解析以下顶级数学环境："
 
 #: ../../syntax/math.md:74
 msgid ""
@@ -149,7 +158,7 @@ msgstr ""
 
 #: ../../syntax/math.md:76
 msgid "As expected, environments ending in `*` will not be numbered, for example:"
-msgstr ""
+msgstr "正如预期的那样，以 `*` 结尾的环境将不会被编号，例如："
 
 #: ../../syntax/math.md:102
 msgid ""

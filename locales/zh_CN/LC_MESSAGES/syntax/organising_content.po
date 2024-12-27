@@ -22,33 +22,36 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:3
 msgid "Organising content"
-msgstr ""
+msgstr "内容组织"
 
 #: ../../syntax/organising_content.md:5
 msgid ""
 "Sphinx allows you to organise your content into multiple documents, and "
 "to include content from other documents."
 msgstr ""
+"Sphinx 允许您将内容组织到多个文档中，并包含来自其他文档的内容。"
 
 #: ../../syntax/organising_content.md:7
 msgid "This section describes how to do this with MyST Markdown."
-msgstr ""
+msgstr "本节介绍如何使用 MyST Markdown 实现这一点。"
 
 #: ../../syntax/organising_content.md:10
 msgid "Document structure"
-msgstr ""
+msgstr "文档结构"
 
 #: ../../syntax/organising_content.md:12
 msgid ""
 "Single MyST Markdown documents are structured using "
 "[headings](typography.md#headings)."
 msgstr ""
+"单个 MyST Markdown 文档使用 [标题](./typography.md#headings) 进行结构化。"
 
 #: ../../syntax/organising_content.md:14
 msgid ""
 "All headings at the root level of the document are included in the Table "
 "of Contents (ToC) for that page."
 msgstr ""
+"文档根级别的所有标题都会包含在该页面的目录 (ToC) 中。"
 
 #: ../../syntax/organising_content.md:16
 msgid ""
@@ -56,14 +59,15 @@ msgid ""
 "also include it in the main content of the page using the contents "
 "{{directive}}:"
 msgstr ""
+"许多 HTML 主题已经将目录包含在侧边栏中，但您也可以使用 contents {{directive}} 将其包含在页面的主要内容中："
 
 #: ../../syntax/organising_content.md:30
 msgid "Table of Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../syntax/organising_content.md:24
 msgid "Options:"
-msgstr ""
+msgstr "选项："
 
 #: ../../syntax/organising_content.md:26
 msgid "depth"
@@ -71,7 +75,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:26
 msgid "Can be used to specify the depth of the ToC."
-msgstr ""
+msgstr "可用于指定目录的深度。"
 
 #: ../../syntax/organising_content.md:27
 msgid "local"
@@ -82,6 +86,7 @@ msgid ""
 "Can be used to only include headings in the current section of the "
 "document."
 msgstr ""
+"可用于仅包含文档当前部分的标题。"
 
 #: ../../syntax/organising_content.md:28
 msgid "backlinks"
@@ -89,7 +94,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:28
 msgid "Can be used to include a link to the ToC at the end of each section."
-msgstr ""
+msgstr "可用于在每个部分的末尾包含指向目录的链接。"
 
 #: ../../syntax/organising_content.md:29
 msgid "class"
@@ -97,7 +102,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:29
 msgid "Is available to add a custom CSS class to the ToC."
-msgstr ""
+msgstr "可用于向目录添加自定义 CSS 类。"
 
 #: ../../syntax/organising_content.md:33
 msgid ""
@@ -105,6 +110,7 @@ msgid ""
 "is problematic to have \"non-consecutive\" headings in a document, such "
 "as:"
 msgstr ""
+"由于文档的结构由标题决定，因此在文档中出现‘非连续’标题是有问题的，例如："
 
 #: ../../syntax/organising_content.md:40
 msgid ""
@@ -112,10 +118,11 @@ msgid ""
 "[attrs_block](#syntax/attributes/block) extension to wrap the heading in "
 "a `div`, so that it is not included in the ToC:"
 msgstr ""
+"如果您希望包含此类标题，可以使用 [attrs_block](#syntax/attributes/block) 扩展将标题包裹在 `div` 中，这样它就不会包含在目录中："
 
 #: ../../syntax/organising_content.md:52
 msgid "Setting a title in front-matter"
-msgstr ""
+msgstr "在 front-matter 中设置标题"
 
 #: ../../syntax/organising_content.md:59
 msgid ""
@@ -123,32 +130,36 @@ msgid ""
 "/config-options) allows for a `title` key to be present in the [document "
 "front matter](#syntax/frontmatter)."
 msgstr ""
+"`myst_title_to_header = True`{l=python} [配置](#sphinx/config-options) 允许在 [文档 front matter](#syntax/frontmatter) 中存在 `title` 键。"
 
 #: ../../syntax/organising_content.md:62
 msgid ""
 "This will then be used as the document's header (parsed as Markdown). For"
 " example:"
 msgstr ""
+"这将用作文档的标题（解析为 Markdown）。例如："
 
 #: ../../syntax/organising_content.md:71
 msgid "would be equivalent to:"
-msgstr ""
+msgstr "将等同于："
 
 #: ../../syntax/organising_content.md:79
 msgid "Inserting other documents directly into the current document"
-msgstr ""
+msgstr "将其他文档直接插入当前文档"
 
 #: ../../syntax/organising_content.md:81
 msgid ""
 "The `include` directive allows you to insert the contents of another "
 "document directly into the flow of the current document."
 msgstr ""
+"`include` 指令允许您将另一个文档的内容直接插入到当前文档的流程中。"
 
 #: ../../syntax/organising_content.md:84
 msgid ""
 "The [`literalinclude` directive](#syntax/literalinclude), for including "
 "source code from files."
 msgstr ""
+"用于包含文件源代码的 [`literalinclude` 指令](#syntax/literalinclude)。"
 
 #: ../../syntax/example.txt:2
 msgid "Hallo there you!"
@@ -156,7 +167,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:95
 msgid "The following options allow you to include only part of a document:"
-msgstr ""
+msgstr "以下选项允许您仅包含文档的一部分："
 
 #: ../../syntax/organising_content.md:97
 msgid "start-line"
@@ -167,6 +178,7 @@ msgid ""
 "Only the content starting from this line number will be included "
 "(numbering starts at 1, and negative count from the end)"
 msgstr ""
+"仅包含从此行号开始的内容（行号从 1 开始，负数表示从末尾倒数）。"
 
 #: ../../syntax/organising_content.md:98
 msgid "end-line"
@@ -174,7 +186,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:98
 msgid "Only the content up to (but excluding) this line will be included."
-msgstr ""
+msgstr "仅包含到此行（但不包括该行）为止的内容。"
 
 #: ../../syntax/organising_content.md:99
 msgid "start-after"
@@ -185,6 +197,7 @@ msgid ""
 "Only the content after the first occurrence of the specified text will be"
 " included."
 msgstr ""
+"仅包含在首次出现指定文本之后的内容。"
 
 #: ../../syntax/organising_content.md:100
 msgid "end-before"
@@ -195,6 +208,7 @@ msgid ""
 "Only the content before the first occurrence of the specified text (but "
 "after any after text) will be included."
 msgstr ""
+"仅包含在首次出现指定文本之前（但在任何 after 文本之后）的内容。"
 
 #: ../../syntax/example.txt:3 ../../syntax/example.txt:8
 msgid "there"
@@ -205,6 +219,7 @@ msgid ""
 "The following options allow you to modify the content of the included "
 "document, to make it relative to the location that it is being inserted:"
 msgstr ""
+"以下选项允许您修改包含文档的内容，使其相对于插入位置进行调整："
 
 #: ../../syntax/organising_content.md:120
 msgid "heading-offset"
@@ -215,6 +230,7 @@ msgid ""
 "Offset all the heading levels by this positive integer, e.g. changing `#`"
 " to `####`"
 msgstr ""
+"将所有标题级别偏移此正整数，例如将 `#` 更改为 `####`。"
 
 #: ../../syntax/organising_content.md:121
 msgid "relative-docs"
@@ -225,6 +241,7 @@ msgid ""
 "Make Markdown file references, relative to the current document, if they "
 "start with a certain prefix"
 msgstr ""
+"如果 Markdown 文件引用以特定前缀开头，则使其相对于当前文档。"
 
 #: ../../syntax/organising_content.md:122
 msgid "relative-images"
@@ -232,7 +249,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:122
 msgid "Make Markdown image references, relative to the current document"
-msgstr ""
+msgstr "使 Markdown 图像引用相对于当前文档。"
 
 #: ../../syntax/examples/example_relative_include.txt:2
 msgid "My heading"
@@ -249,7 +266,7 @@ msgstr ""
 #: ../../syntax/organising_content.md:135
 #: ../../syntax/organising_content.md:192
 msgid "Additional options:"
-msgstr ""
+msgstr "其他选项："
 
 #: ../../syntax/organising_content.md:136
 msgid "encoding"
@@ -257,11 +274,11 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:136
 msgid "The text encoding of the external file"
-msgstr ""
+msgstr "外部文件的文本编码。"
 
 #: ../../syntax/organising_content.md:138
 msgid "Including to/from reStructuredText files"
-msgstr ""
+msgstr "包含到/从 reStructuredText 文件"
 
 #: ../../syntax/organising_content.md:142
 msgid ""
@@ -270,6 +287,8 @@ msgid ""
 "must first \"wrap\" the directive in the [eval-rst "
 "directive](#syntax/directives/parsing):"
 msgstr ""
+"如 [本节](#syntax/directives/parsing) 所述，所有 MyST 指令都会将其内容解析为 Markdown。"
+"因此，要包含 rST，我们必须首先将指令‘包裹’在 [eval-rst 指令](#syntax/directives/parsing) 中："
 
 #: ../../faq/snippets/include-rst.rst:1
 msgid "Hallo I'm from an rST file, :ref:`with a reference <howto/autodoc>`."
@@ -280,20 +299,22 @@ msgid ""
 "To include a MyST file within a ReStructuredText file, we can use the "
 "`parser` option of the `include` directive:"
 msgstr ""
+"要在 ReStructuredText 文件中包含 MyST 文件，可以使用 `include` 指令的 `parser` 选项："
 
 #: ../../syntax/organising_content.md:159
 msgid "The `parser` option requires `docutils>=0.17`"
-msgstr ""
+msgstr "`parser` 选项需要 `docutils>=0.17`。"
 
 #: ../../syntax/organising_content.md:164
 msgid "Using `toctree` to include other documents as children"
-msgstr ""
+msgstr "使用 `toctree` 将其他文档作为子文档包含"
 
 #: ../../syntax/organising_content.md:166
 msgid ""
 "To structure a project, with multiple documents, the [toctree "
 "directive](inv:sphinx:*:directive#toctree) is utilised."
 msgstr ""
+"为了构建包含多个文档的项目，使用了 [toctree 指令](inv:sphinx:*:directive#toctree)。"
 
 #: ../../syntax/organising_content.md:168
 msgid ""
@@ -301,10 +322,11 @@ msgid ""
 "a nested hierarchy of documents starting from a "
 "[`root_doc`](inv:sphinx:*:confval#root_doc)."
 msgstr ""
+"将指定文档作为当前文档的子文档，从 [`root_doc`](inv:sphinx:*:confval#root_doc) 开始构建嵌套的文档层次结构。"
 
 #: ../../syntax/organising_content.md:178
 msgid "The `toctree` has options:"
-msgstr ""
+msgstr "`toctree` 选项："
 
 #: ../../syntax/organising_content.md:180
 msgid "glob"
@@ -315,10 +337,11 @@ msgid ""
 "Indicates that all entries are then matched against the list of available"
 " documents, and matches are inserted into the list alphabetically"
 msgstr ""
+"表示所有条目将与可用文档列表匹配，并按字母顺序将匹配项插入列表中。"
 
 #: ../../syntax/organising_content.md:183
 msgid "The following options to control how it is displayed within the document:"
-msgstr ""
+msgstr "以下选项控制其在文档中的显示方式："
 
 #: ../../syntax/organising_content.md:185
 msgid "caption"
@@ -326,7 +349,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:185
 msgid "A title for this toctree"
-msgstr ""
+msgstr "此 toctree 的标题。"
 
 #: ../../syntax/organising_content.md:186
 msgid "hidden"
@@ -334,7 +357,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:186
 msgid "Do not show within the document"
-msgstr ""
+msgstr "不在文档中显示。"
 
 #: ../../syntax/organising_content.md:187
 msgid "includehidden"
@@ -342,7 +365,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:187
 msgid "Included child hidden `toctree` entries"
-msgstr ""
+msgstr "包含隐藏的 `toctree` 子条目。"
 
 #: ../../syntax/organising_content.md:188
 msgid "maxdepth"
@@ -350,7 +373,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:188
 msgid "The depth of document sub-headings shown"
-msgstr ""
+msgstr "显示的文档子标题的深度。"
 
 #: ../../syntax/organising_content.md:189
 msgid "titlesonly"
@@ -358,7 +381,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:189
 msgid "Only show the first top-level heading"
-msgstr ""
+msgstr "仅显示第一个顶级标题。"
 
 #: ../../syntax/organising_content.md:190
 msgid "reversed"
@@ -366,7 +389,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:190
 msgid "Reverse the order of the entries in the list"
-msgstr ""
+msgstr "反转列表中条目的顺序。"
 
 #: ../../syntax/organising_content.md:194
 msgid "name"
@@ -374,7 +397,7 @@ msgstr ""
 
 #: ../../syntax/organising_content.md:194
 msgid "Allow the `toctree` to be referenced"
-msgstr ""
+msgstr "允许引用 `toctree`。"
 
 #: ../../syntax/organising_content.md:195
 msgid "numbered"
@@ -385,10 +408,11 @@ msgid ""
 "Number all headings in children. If an integer is specified, then this is"
 " the depth to number down to"
 msgstr ""
+"为子文档中的所有标题编号。如果指定了整数，则这是编号的深度。"
 
 #: ../../syntax/organising_content.md:198
 msgid ""
 "Sub-toctrees are automatically numbered, so don’t give the `:numbered:` "
 "flag to those"
 msgstr ""
-
+"子 toctree 会自动编号，因此不要给它们 `:numbered:` 标志。"

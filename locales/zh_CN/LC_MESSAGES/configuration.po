@@ -22,17 +22,18 @@ msgstr ""
 
 #: ../../configuration.md:2
 msgid "Configuration"
-msgstr ""
+msgstr "配置"
 
 #: ../../configuration.md:4
 msgid ""
 "MyST parsing can be configured at both the global and individual document"
 " level, with the most specific configuration taking precedence."
 msgstr ""
+"MyST 解析可以在全局和单个文档级别进行配置，最具体的配置优先。"
 
 #: ../../configuration.md:7
 msgid "Global configuration"
-msgstr ""
+msgstr "全局配置"
 
 #: ../../configuration.md:9
 msgid ""
@@ -40,25 +41,26 @@ msgid ""
 "specifying variables in the Sphinx `conf.py` file. All `myst_parser` "
 "global configuration variables are prefixed with `myst_`, e.g."
 msgstr ""
+"通过在 Sphinx `conf.py` 文件中指定变量，可以在全局级别覆盖默认配置。所有 `myst_parser` 全局配置变量都以 `myst_` 为前缀，例如："
 
 #: ../../configuration.md:17
 msgid "Configuration in Docutils, in the [](docutils.md) section."
-msgstr ""
+msgstr "Docutils 中的配置，请参阅 [](docutils.md) 部分。"
 
 #: ../../configuration.md:25 ../../configuration.md:34
 #: ../../configuration.md:72 ../../configuration.md:147
 msgid "Name"
-msgstr ""
+msgstr "名称"
 
 #: ../../configuration.md:26 ../../configuration.md:35
 #: ../../configuration.md:73 ../../configuration.md:148
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #: ../../configuration.md:27 ../../configuration.md:36
 #: ../../configuration.md:74 ../../configuration.md:149
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../configuration.md:28
 msgid "`myst_commonmark_only`"
@@ -82,7 +84,7 @@ msgstr ""
 
 #: ../../configuration.md:30 ../../configuration.md:77
 msgid "Use strict CommonMark parser (default: `False`)"
-msgstr ""
+msgstr "使用严格的 CommonMark 解析器（默认：`False`）。"
 
 #: ../../configuration.md:31
 msgid "`myst_gfm_only`"
@@ -90,7 +92,7 @@ msgstr ""
 
 #: ../../configuration.md:33 ../../configuration.md:80
 msgid "Use strict Github Flavoured Markdown parser (default: `False`)"
-msgstr ""
+msgstr "使用严格的 Github Flavoured Markdown 解析器（默认：`False`）。"
 
 #: ../../configuration.md:34
 msgid "`myst_enable_extensions`"
@@ -103,7 +105,7 @@ msgstr ""
 
 #: ../../configuration.md:36 ../../configuration.md:83
 msgid "Enable syntax extensions (default: `set()`)"
-msgstr ""
+msgstr "启用语法扩展（默认：`set()`）。"
 
 #: ../../configuration.md:37
 msgid "`myst_disable_syntax`"
@@ -115,7 +117,7 @@ msgstr ""
 
 #: ../../configuration.md:39 ../../configuration.md:86
 msgid "Disable Commonmark syntax elements (default: `[]`)"
-msgstr ""
+msgstr "禁用 Commonmark 语法元素（默认：`[]`）。"
 
 #: ../../configuration.md:40
 msgid "`myst_all_links_external`"
@@ -123,7 +125,7 @@ msgstr ""
 
 #: ../../configuration.md:42 ../../configuration.md:89
 msgid "Parse all links as simple hyperlinks (default: `False`)"
-msgstr ""
+msgstr "将所有链接解析为简单超链接（默认：`False`）。"
 
 #: ../../configuration.md:43
 msgid "`myst_links_external_new_tab`"
@@ -131,7 +133,7 @@ msgstr ""
 
 #: ../../configuration.md:45 ../../configuration.md:92
 msgid "Open all external links in a new tab (default: `False`)"
-msgstr ""
+msgstr "在新标签页中打开所有外部链接（默认：`False`）。"
 
 #: ../../configuration.md:46
 msgid "`myst_url_schemes`"
@@ -146,6 +148,7 @@ msgid ""
 "URI schemes that are converted to external links (default: `{'http': "
 "None, 'https': None, 'mailto': None, 'ftp': None}`)"
 msgstr ""
+"转换为外部链接的 URI 方案（默认：`{'http': None, 'https': None, 'mailto': None, 'ftp': None}`）。"
 
 #: ../../configuration.md:49
 msgid "`myst_ref_domains`"
@@ -157,7 +160,7 @@ msgstr ""
 
 #: ../../configuration.md:51 ../../configuration.md:98
 msgid "Sphinx domain names to search in for link references (default: `None`)"
-msgstr ""
+msgstr "用于搜索链接引用的 Sphinx 域名（默认：`None`）。"
 
 #: ../../configuration.md:52
 msgid "`myst_fence_as_directive`"
@@ -169,6 +172,7 @@ msgid ""
 "can be useful for fences like dot and mermaid, and interoperability with "
 "other Markdown renderers. (default: `set()`)"
 msgstr ""
+"将特定语言名称的代码栏解释为指令。这对于像 dot 和 mermaid 这样的代码栏以及与其他 Markdown 渲染器的互操作性非常有用。（默认：`set()`）"
 
 #: ../../configuration.md:55
 msgid "`myst_number_code_blocks`"
@@ -180,7 +184,7 @@ msgstr ""
 
 #: ../../configuration.md:57 ../../configuration.md:104
 msgid "Add line numbers to code blocks with these languages (default: `[]`)"
-msgstr ""
+msgstr "为这些语言的代码块添加行号（默认：`[]`）。"
 
 #: ../../configuration.md:58
 msgid "`myst_title_to_header`"
@@ -191,6 +195,7 @@ msgid ""
 "Convert a `title` field in the front-matter to a H1 header (default: "
 "`False`)"
 msgstr ""
+"将 front-matter 中的 `title` 字段转换为 H1 标题（默认：`False`）。"
 
 #: ../../configuration.md:61
 msgid "`myst_heading_anchors`"
@@ -203,7 +208,7 @@ msgstr ""
 
 #: ../../configuration.md:63 ../../configuration.md:110
 msgid "Heading level depth to assign HTML anchors (default: `0`)"
-msgstr ""
+msgstr "为 HTML 锚点分配的标题级别深度（默认：`0`）。"
 
 #: ../../configuration.md:64
 msgid "`myst_heading_slug_func`"
@@ -218,6 +223,7 @@ msgid ""
 "Function for creating heading anchors, or a python import path e.g. "
 "`my_package.my_module.my_function` (default: `None`)"
 msgstr ""
+"用于创建标题锚点的函数，或 Python 导入路径，例如 `my_package.my_module.my_function` （默认：`None`）。"
 
 #: ../../configuration.md:67
 msgid "`myst_html_meta`"
@@ -240,6 +246,7 @@ msgid ""
 "Move all footnotes to the end of the document, and sort by reference "
 "order (default: `True`)"
 msgstr ""
+"将所有脚注移动到文档末尾，并按引用顺序排序（默认：`True`）。"
 
 #: ../../configuration.md:73
 msgid "`myst_footnote_transition`"
@@ -247,7 +254,7 @@ msgstr ""
 
 #: ../../configuration.md:75 ../../configuration.md:119
 msgid "Place a transition before sorted footnotes (default: `True`)"
-msgstr ""
+msgstr "在排序后的脚注前放置 transition（默认：`True`）。"
 
 #: ../../configuration.md:76
 msgid "`myst_words_per_minute`"
@@ -255,15 +262,15 @@ msgstr ""
 
 #: ../../configuration.md:78 ../../configuration.md:122
 msgid "For reading speed calculations (default: `200`)"
-msgstr ""
+msgstr "用于阅读速度计算（默认：`200`）。"
 
 #: ../../configuration.md:25 ../../configuration.md:138
 msgid "Extensions"
-msgstr ""
+msgstr "插件"
 
 #: ../../configuration.md:27 ../../configuration.md:140
 msgid "Configuration specific to syntax extensions:"
-msgstr ""
+msgstr "特定于语法插件的配置："
 
 #: ../../configuration.md:37
 msgid "`myst_substitutions`"
@@ -275,7 +282,7 @@ msgstr ""
 
 #: ../../configuration.md:39 ../../configuration.md:152
 msgid "substitutions: Substitutions mapping (default: `{}`)"
-msgstr ""
+msgstr "替换：替换映射（默认：`{}`）。"
 
 #: ../../configuration.md:40
 msgid "`myst_sub_delimiters`"
@@ -287,7 +294,7 @@ msgstr ""
 
 #: ../../configuration.md:42 ../../configuration.md:155
 msgid "substitutions: Substitution delimiters (default: `('{', '}')`)"
-msgstr ""
+msgstr "替换：替换分隔符（默认：`('{', '}')`）。"
 
 #: ../../configuration.md:43
 msgid "`myst_linkify_fuzzy_links`"
@@ -295,7 +302,7 @@ msgstr ""
 
 #: ../../configuration.md:45 ../../configuration.md:158
 msgid "linkify: Recognise URLs without schema prefixes (default: `True`)"
-msgstr ""
+msgstr "linkify：识别没有模式前缀的 URL（默认：`True`）。”"
 
 #: ../../configuration.md:46
 msgid "`myst_dmath_allow_labels`"
@@ -303,7 +310,7 @@ msgstr ""
 
 #: ../../configuration.md:48 ../../configuration.md:161
 msgid "dollarmath: Parse `$$...$$ (label)` (default: `True`)"
-msgstr ""
+msgstr "dollarmath：解析 `$$...$$ (label)` （默认：`True`）。"
 
 #: ../../configuration.md:49
 msgid "`myst_dmath_allow_space`"
@@ -311,7 +318,7 @@ msgstr ""
 
 #: ../../configuration.md:51 ../../configuration.md:164
 msgid "dollarmath: Allow initial/final spaces in `$ ... $` (default: `True`)"
-msgstr ""
+msgstr "dollarmath：允许在 `$ ... $` 中使用初始/最终空格（默认：`True`）。"
 
 #: ../../configuration.md:52
 msgid "`myst_dmath_allow_digits`"
@@ -319,7 +326,7 @@ msgstr ""
 
 #: ../../configuration.md:54 ../../configuration.md:167
 msgid "dollarmath: Allow initial/final digits `1$ ...$2` (default: `True`)"
-msgstr ""
+msgstr "dollarmath：允许初始/最终数字 `1$ ...$2` （默认：`True`）。"
 
 #: ../../configuration.md:55
 msgid "`myst_dmath_double_inline`"
@@ -327,7 +334,7 @@ msgstr ""
 
 #: ../../configuration.md:57 ../../configuration.md:170
 msgid "dollarmath: Parse inline `$$ ... $$` (default: `False`)"
-msgstr ""
+msgstr "dollarmath：解析内联 `$$ ... $$` （默认：`False`）。"
 
 #: ../../configuration.md:58
 msgid "`myst_update_mathjax`"
@@ -338,6 +345,7 @@ msgid ""
 "dollarmath: Update sphinx.ext.mathjax configuration to ignore `$` "
 "delimiters (default: `True`)"
 msgstr ""
+"dollarmath：更新 sphinx.ext.mathjax 配置以忽略 `$` 分隔符（默认：`True`）。"
 
 #: ../../configuration.md:61
 msgid "`myst_mathjax_classes`"
@@ -352,6 +360,7 @@ msgid ""
 "dollarmath: MathJax classes to add to math HTML (default: "
 "`'tex2jax_process|mathjax_process|math|output_area'`)"
 msgstr ""
+"dollarmath：添加到数学 HTML 的 MathJax 类（默认：`'tex2jax_process|mathjax_process|math|output_area'`）。"
 
 #: ../../configuration.md:64
 msgid "`myst_enable_checkboxes`"
@@ -359,11 +368,11 @@ msgstr ""
 
 #: ../../configuration.md:66 ../../configuration.md:173
 msgid "tasklist: Enable checkboxes (default: `False`)"
-msgstr ""
+msgstr "tasklist：启用复选框（默认：`False`）。"
 
 #: ../../configuration.md:37
 msgid "Frontmatter (local) configuration"
-msgstr ""
+msgstr "Frontmatter（局部）配置"
 
 #: ../../configuration.md:39
 msgid ""
@@ -374,6 +383,9 @@ msgid ""
 "/front-matter/). The document should start with three or more `---` "
 "markers, and YAML is parsed until a closing `---` marker is found:"
 msgstr ""
+"Frontmatter 允许您指定关于单个文档应如何行为或渲染的元数据和选项。"
+"它是文档开头的 [YAML](https://en.wikipedia.org/wiki/YAML) 块，例如在 [jekyll](https://jekyllrb.com/docs/front-matter/) 中使用。"
+"文档应以三个或更多 `---` 标记开头，YAML 解析直到找到结束的 `---` 标记："
 
 #: ../../configuration.md:53
 msgid ""
@@ -382,6 +394,8 @@ msgid ""
 "for blog posting (see [ablog's myst-parser "
 "support](https://ablog.readthedocs.io/en/latest/manual/markdown.html))."
 msgstr ""
+"前言还用于 [替换语法扩展](syntax/substitutions)，并且可以用于存储博客发布的信息"
+"（参见 [ablog 的 myst-parser 支持](https://ablog.readthedocs.io/en/latest/manual/markdown.html)）。"
 
 #: ../../configuration.md:57
 msgid ""
@@ -389,6 +403,7 @@ msgid ""
 "document frontmatter. These can be set in the document [front "
 "matter](syntax/frontmatter), under the `myst` key, e.g."
 msgstr ""
+"以下配置变量可以在文档前言中设置。这些可以在文档 [前言](syntax/frontmatter) 中的 `myst` 键下设置，例如："
 
 #: ../../configuration.md:75
 msgid "`commonmark_only`"
@@ -466,6 +481,8 @@ msgid ""
 "US/docs/Web/HTML/Element/meta). This is equivalent to using the [meta "
 "directive](inv:sphinx#html-meta)."
 msgstr ""
+"front-matter 可以包含特殊键 `html_meta`；字典，包含要添加到生成的 HTML 中的 [`<meta>` 元素](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta) 数据。"
+"这等同于使用 [meta 指令](inv:sphinx#html-meta)。"
 
 #: ../../configuration.md:79
 msgid ""
@@ -475,10 +492,12 @@ msgid ""
 "by the document level front-matter `html_meta`, with the front-matter "
 "taking precedence."
 msgstr ""
+"HTML 元数据也可以通过 `myst_html_meta` 变量在 `conf.py` 中全局添加，在这种情况下，它将添加到所有 MyST 文档中。"
+"对于每个文档，`myst_html_meta` 字典将由文档级别的前言 `html_meta` 更新，且前言优先。"
 
 #: ../../configuration.md
 msgid "Sphinx Configuration"
-msgstr ""
+msgstr "Sphinx 配置"
 
 #: ../../configuration.md
 msgid "MyST Front-Matter"
@@ -490,7 +509,7 @@ msgstr ""
 
 #: ../../configuration.md
 msgid "HTML Output"
-msgstr ""
+msgstr "HTML 输出"
 
 #: ../../configuration.md:150
 msgid "`substitutions`"
@@ -530,7 +549,7 @@ msgstr ""
 
 #: ../../configuration.md:150
 msgid "Full details in the [](syntax/extensions) section."
-msgstr ""
+msgstr "全部细节见 [](syntax/extensions) 部分。"
 
 #: ../../configuration.md:152
 msgid "amsmath"
@@ -541,6 +560,7 @@ msgid ""
 "enable direct parsing of [amsmath](https://ctan.org/pkg/amsmath) LaTeX "
 "equations"
 msgstr ""
+"启用对 [amsmath](https://ctan.org/pkg/amsmath) LaTeX 方程的直接解析。"
 
 #: ../../configuration.md:155
 msgid "attrs_inline"
@@ -548,7 +568,7 @@ msgstr ""
 
 #: ../../configuration.md:156
 msgid "Enable inline attribute parsing, [see here](syntax/attributes) for details"
-msgstr ""
+msgstr "启用内联属性解析，[详见此处](syntax/attributes)。"
 
 #: ../../configuration.md:158
 msgid "colon_fence"
@@ -559,6 +579,7 @@ msgid ""
 "Enable code fences using `:::` delimiters, [see here](syntax/colon_fence)"
 " for details"
 msgstr ""
+"启用使用 `:::` 分隔符的代码栏，[详见此处](syntax/colon_fence)。"
 
 #: ../../configuration.md:161
 msgid "deflist"
@@ -566,7 +587,7 @@ msgstr ""
 
 #: ../../configuration.md:162
 msgid "Enable definition lists, [see here](syntax/definition-lists) for details"
-msgstr ""
+msgstr "启用定义列表，[详见此处](syntax/definition-lists)。"
 
 #: ../../configuration.md:164
 msgid "dollarmath"
@@ -574,7 +595,7 @@ msgstr ""
 
 #: ../../configuration.md:165
 msgid "Enable parsing of dollar `$` and `$$` encapsulated math"
-msgstr ""
+msgstr "启用对 `$` 和 `$$` 封装数学的解析。"
 
 #: ../../configuration.md:167
 msgid "fieldlist"
@@ -582,7 +603,7 @@ msgstr ""
 
 #: ../../configuration.md:168
 msgid "Enable field lists, [see here](syntax/fieldlists) for details"
-msgstr ""
+msgstr "启用字段列表，[详见此处](syntax/fieldlists)。"
 
 #: ../../configuration.md:170
 msgid "html_admonition"
@@ -593,6 +614,7 @@ msgid ""
 "Convert `<div class=\"admonition\">` elements to sphinx admonition nodes,"
 " see the [HTML admonition syntax](syntax/html-admonition) for details"
 msgstr ""
+"将 `<div class=\"admonition\">` 元素转换为 sphinx 警告节点，详见 [HTML 警告语法](syntax/html-admonition)。"
 
 #: ../../configuration.md:173
 msgid "html_image"
@@ -603,6 +625,7 @@ msgid ""
 "Convert HTML `<img>` elements to sphinx image nodes, [see "
 "here](syntax/images) for details"
 msgstr ""
+"将 HTML `<img>` 元素转换为 sphinx 图像节点，[详见此处](syntax/images)。"
 
 #: ../../configuration.md:176
 msgid "linkify"
@@ -610,7 +633,7 @@ msgstr ""
 
 #: ../../configuration.md:177
 msgid "Automatically identify \"bare\" web URLs and add hyperlinks"
-msgstr ""
+msgstr "自动识别‘裸’网页 URL 并添加超链接。"
 
 #: ../../configuration.md:179
 msgid "replacements"
@@ -618,7 +641,7 @@ msgstr ""
 
 #: ../../configuration.md:180
 msgid "Automatically convert some common typographic texts"
-msgstr ""
+msgstr "自动转换一些常见的排版文本。"
 
 #: ../../configuration.md:182
 msgid "smartquotes"
@@ -629,6 +652,7 @@ msgid ""
 "Automatically convert standard quotations to their opening/closing "
 "variants"
 msgstr ""
+"自动将标准引号转换为其开/关变体。"
 
 #: ../../configuration.md:185
 msgid "strikethrough"
@@ -636,7 +660,7 @@ msgstr ""
 
 #: ../../configuration.md:186
 msgid "Enable strikethrough syntax, [see here](syntax/strikethrough) for details"
-msgstr ""
+msgstr "启用删除线语法，[详见此处](syntax/strikethrough)。"
 
 #: ../../configuration.md:188
 msgid "substitution"
@@ -644,7 +668,7 @@ msgstr ""
 
 #: ../../configuration.md:189
 msgid "Substitute keys, [see here](syntax/substitutions) for details"
-msgstr ""
+msgstr "替换键，[详见此处](syntax/subifications)。"
 
 #: ../../configuration.md:191
 msgid "tasklist"
@@ -655,10 +679,11 @@ msgid ""
 "Add check-boxes to the start of list items, [see here](syntax/tasklists) "
 "for details"
 msgstr ""
+"在列表项的开头添加复选框，[详见此处](syntax/tasklists)。"
 
 #: ../../configuration.md:196
 msgid "Build Warnings"
-msgstr ""
+msgstr "构建警告"
 
 #: ../../configuration.md:198
 msgid ""
@@ -666,6 +691,7 @@ msgid ""
 "build process. These will be prepended to the end of the warning message "
 "(see also <inv:sphinx#show_warning_types>), e.g."
 msgstr ""
+"以下列出了在构建过程中可能发出的 MyST 特定警告。这些将附加到警告消息的末尾（另请参阅 <inv:sphinx#show_warning_types>），例如："
 
 #: ../../configuration.md:204
 msgid ""
@@ -673,34 +699,37 @@ msgid ""
 "or [raise an Issue](https://github.com/executablebooks/MyST-"
 "Parser/issues/new/choose) if you think the warning is erroneous."
 msgstr ""
+"一般来说，如果您的构建日志中有任何警告，您应该修复它们，或者如果您认为警告是错误的，请 [提出问题](https://github.com/executablebooks/MyST-Parser/issues/new/choose)。"
 
 #: ../../configuration.md:206
 msgid ""
 "However, in some circumstances if you wish to suppress the warning you "
 "can use the <inv:sphinx#suppress_warnings> configuration option, e.g."
 msgstr ""
+"然而，在某些情况下，如果您希望抑制警告，可以使用 <inv:sphinx#suppress_warnings> 配置选项，例如："
 
 #: ../../configuration.md:212
 msgid ""
 "Or use `--myst-suppress-warnings=\"myst.header\"` for the [docutils CLI"
 "](myst-docutils)."
 msgstr ""
+"或者对于 [docutils CLI](myst-docutils) 使用 `--myst-suppress-warnings=\"myst.header\"`。"
 
 #: ../../configuration.md:215
 msgid "`myst.deprecated`: Deprecated usage."
-msgstr ""
+msgstr "`myst.deprecated`：已弃用的用法。"
 
 #: ../../configuration.md:216
 msgid "`myst.not_supported`: Functionality that is not yet supported in docutils."
-msgstr ""
+msgstr "`myst.not_supported`：docutils 中尚未支持的功能。"
 
 #: ../../configuration.md:217
 msgid "`myst.render`: The render method is not implemented."
-msgstr ""
+msgstr "`myst.render`：渲染方法未实现。"
 
 #: ../../configuration.md:218
 msgid "`myst.topmatter`: Issue reading front-matter."
-msgstr ""
+msgstr "`myst.topmatter`：读取前言时出现问题。"
 
 #: ../../configuration.md:219
 msgid "`myst.duplicate_def`: Duplicate Markdown reference definition."
@@ -708,81 +737,85 @@ msgstr ""
 
 #: ../../configuration.md:220
 msgid "`myst.header`: Non-consecutive heading levels."
-msgstr ""
+msgstr "`myst.duplicate_def`：重复的 Markdown 引用定义。"
 
 #: ../../configuration.md:221
 msgid "`myst.directive_parse`: Issue parsing directive."
-msgstr ""
+msgstr "`myst.directive_parse`：解析指令时出现问题。"
 
 #: ../../configuration.md:222
 msgid "`myst.directive_option`: Issue parsing directive options."
-msgstr ""
+msgstr "`myst.directive_option`：解析指令选项时出现问题。"
 
 #: ../../configuration.md:223
 msgid ""
 "`myst.directive_comments`: Directive options has # comments, which may "
 "not be supported in future versions."
 msgstr ""
+"`myst.directive_comments`：指令选项包含 # 注释，未来版本可能不支持。"
 
 #: ../../configuration.md:224
 msgid "`myst.directive_body`: Issue parsing directive body."
-msgstr ""
+msgstr "`myst.directive_body`：解析指令主体时出现问题。"
 
 #: ../../configuration.md:225
 msgid "`myst.directive_unknown`: Unknown directive."
-msgstr ""
+msgstr "`myst.directive_unknown`：未知指令。"
 
 #: ../../configuration.md:226
 msgid "`myst.role_unknown`: Unknown role."
-msgstr ""
+msgstr "`myst.role_unknown`: 未知角色。"
 
 #: ../../configuration.md:227
 msgid "`myst.xref_ambiguous`: Multiple targets were found for a cross-reference."
-msgstr ""
+msgstr "`myst.xref_ambiguous`: 交叉引用找到多个目标。"
 
 #: ../../configuration.md:228
 msgid "`myst.xref_missing`: A target was not found for a cross-reference."
-msgstr ""
+msgstr "`myst.xref_missing`: 交叉引用未找到目标。"
 
 #: ../../configuration.md:229
 msgid "`myst.inv_retrieval`: Failure to retrieve or load an inventory."
-msgstr ""
+msgstr "`myst.inv_retrieval`: 检索或加载库存失败。"
 
 #: ../../configuration.md:230
 msgid "`myst.iref_missing`: A target was not found for an inventory reference."
-msgstr ""
+msgstr "`myst.iref_missing`: 库存引用未找到目标。"
 
 #: ../../configuration.md:231
 msgid ""
 "`myst.iref_ambiguous`: Multiple targets were found for an inventory "
 "reference."
 msgstr ""
+"`myst.iref_ambiguous`: 库存引用找到多个目标。"
 
 #: ../../configuration.md:232
 msgid ""
 "`myst.domains`: A legacy domain found, which does not support "
 "`resolve_any_xref`."
 msgstr ""
+"`myst.domains`: 找到一个旧域，该域不支持 `resolve_any_xref`。"
 
 #: ../../configuration.md:233
 msgid "`myst.heading_slug`: An error occurred computing a heading slug."
-msgstr ""
+msgstr "`myst.heading_slug`: 计算标题 slug 时出错。"
 
 #: ../../configuration.md:234
 msgid ""
 "`myst.strikethrough`: Strikethrough warning, since only implemented in "
 "HTML."
 msgstr ""
+"`myst.strikethrough`: 删除线警告，因为仅在 HTML 中实现。"
 
 #: ../../configuration.md:235
 msgid "`myst.html`: HTML could not be parsed."
-msgstr ""
+msgstr "`myst.html`: HTML 无法解析。"
 
 #: ../../configuration.md:236
 msgid "`myst.attribute`: Invalid attribute value."
-msgstr ""
+msgstr "`myst.attribute`: 无效的属性值。"
 
 #: ../../configuration.md:237
 msgid "`myst.substitution`: Substitution could not be resolved."
-msgstr ""
+msgstr "`myst.substitution`: 替换无法解析。"
 

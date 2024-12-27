@@ -22,17 +22,18 @@ msgstr ""
 
 #: ../../develop/architecture.md:1
 msgid "The MyST implementation architecture"
-msgstr ""
+msgstr "MyST 实现架构"
 
 #: ../../develop/architecture.md:3
 msgid ""
 "This page describes implementation details to help you understand the "
 "structure of the project."
 msgstr ""
+"本页描述了实现细节，以帮助你理解项目的结构。"
 
 #: ../../develop/architecture.md:6
 msgid "A Renderer for markdown-it tokens"
-msgstr ""
+msgstr "markdown-it 令牌(tokens)的渲染器"
 
 #: ../../develop/architecture.md:8
 msgid ""
@@ -42,14 +43,17 @@ msgid ""
 "parsed files. The MyST parser uses this extension point to define its own"
 " syntax options (e.g., for Sphinx roles and directives)."
 msgstr ""
+"从高层次来看，MyST 解析器是 Markdown-It-Py 项目的扩展。"
+"Markdown-It-Py 是结构良好的 Python 解析器，用于解析 CommonMark 文本。它还定义了扩展点，以便在解析的文件中包含更多语法。"
+"MyST 解析器使用此扩展点来定义其自己的语法选项（例如，用于 Sphinx 角色和指令）。"
 
 #: ../../develop/architecture.md:13
 msgid "The result of this parser is a markdown-it token stream."
-msgstr ""
+msgstr "此解析器的结果是 markdown-it token 流。"
 
 #: ../../develop/architecture.md:15
 msgid "A docutils renderer"
-msgstr ""
+msgstr "docutils 渲染器"
 
 #: ../../develop/architecture.md:17
 msgid ""
@@ -57,16 +61,18 @@ msgid ""
 "token stream. This allows us to convert parsed elements of a MyST "
 "markdown file into docutils."
 msgstr ""
+"MyST 解析器还为 markdown-it 令牌流定义了 docutils 渲染器。能够将 MyST Markdown 文件的解析元素转换为 docutils。"
 
 #: ../../develop/architecture.md:20
 msgid "A Sphinx parser"
-msgstr ""
+msgstr "Sphinx 解析器"
 
 #: ../../develop/architecture.md:22
 msgid ""
 "Finally, the MyST parser provides a parser for Sphinx, the documentation "
 "generation system. This parser does the following:"
 msgstr ""
+"最后，MyST 解析器为文档生成系统 Sphinx 提供了解析器。此解析器执行以下操作："
 
 #: ../../develop/architecture.md:25
 msgid ""
@@ -76,9 +82,9 @@ msgstr ""
 
 #: ../../develop/architecture.md:26
 msgid "Convert these files into docutils objects using the MyST docutils renderer"
-msgstr ""
+msgstr "使用 MyST docutils 渲染器将这些文件转换为 docutils 对象"
 
 #: ../../develop/architecture.md:27
 msgid "Provide these to Sphinx in order to use in building your site."
-msgstr ""
+msgstr "将这些提供给 Sphinx，以便用于构建你的网站。"
 

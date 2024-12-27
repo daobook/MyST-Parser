@@ -29,34 +29,39 @@ msgid ""
 "This page serves as a reference for the syntax that makes of MyST "
 "Markdown."
 msgstr ""
+"本页作为MyST Markdown语法参考。"
 
 #: ../../syntax/reference.md:7
 msgid ""
 "For more description and explanation of MyST syntax, see the [syntax "
 "guide](typography.md)."
 msgstr ""
+"有关MyST语法的更多描述和解释，请参阅[语法指南](typography.md)。"
 
 #: ../../syntax/reference.md:10
 msgid "Block (Multi-line) Tokens"
-msgstr ""
+msgstr "块（多行）标记"
 
 #: ../../syntax/reference.md:12
 msgid ""
 "Block tokens span multiple lines of content. They are broken down into "
 "two sections:"
 msgstr ""
+"块标记跨越多行内容。它们被分为两个部分："
 
 #: ../../syntax/reference.md:14
 msgid ""
 "{ref}`extended-block-tokens` contains *extra* tokens that are not in "
 "CommonMark."
 msgstr ""
+"{ref}`extended-block-tokens` 包含了 *额外* 的标记，这些标记并不属于 CommonMark 标准。"
 
 #: ../../syntax/reference.md:15
 msgid ""
 "{ref}`commonmark-block-tokens` contains CommonMark tokens that also work,"
 " for reference."
 msgstr ""
+"{ref}`commonmark-block-tokens` 包含了同样适用的 CommonMark 标记，以供参考。"
 
 #: ../../syntax/reference.md:18
 msgid ""
@@ -64,10 +69,11 @@ msgid ""
 "reStructuredText, we have shown equivalent rST syntax for many MyST "
 "markdown features below."
 msgstr ""
+"由于 MyST Markdown 的灵感来源于 reStructuredText 中存在的功能，在下面展示了许多 MyST Markdown 特性对应的 rST 语法。"
 
 #: ../../syntax/reference.md:23
 msgid "Extended block tokens"
-msgstr ""
+msgstr "扩展块标记"
 
 #: ../../syntax/reference.md:29 ../../syntax/reference.md:97
 #: ../../syntax/reference.md:173 ../../syntax/reference.md:207
@@ -77,12 +83,12 @@ msgstr ""
 #: ../../syntax/reference.md:30 ../../syntax/reference.md:98
 #: ../../syntax/reference.md:174 ../../syntax/reference.md:208
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../syntax/reference.md:31 ../../syntax/reference.md:99
 #: ../../syntax/reference.md:175 ../../syntax/reference.md:209
 msgid "Example"
-msgstr ""
+msgstr "示例"
 
 #: ../../syntax/reference.md:32
 msgid "FrontMatter"
@@ -90,21 +96,22 @@ msgstr ""
 
 #: ../../syntax/reference.md:33
 msgid "A YAML block at the start of the document enclosed by `---`"
-msgstr ""
+msgstr "文档开头由 `---` 包围的 YAML 块"
 
 #: ../../syntax/reference.md:39
 msgid "Directives"
-msgstr ""
+msgstr "指令"
 
 #: ../../syntax/reference.md:40
 msgid ""
 "enclosed in 3 or more backticks followed by the directive name wrapped in"
 " curly brackets `{}`. See {ref}`syntax/directives` for more details."
 msgstr ""
+"用 3 个或更多反引号包围，并在其后跟随用花括号 `{}` 包裹的指令名称。更多详情请参阅 {ref}`syntax/directives`。"
 
 #: ../../syntax/reference.md:49 ../../syntax/reference.md:187
 msgid "Math"
-msgstr ""
+msgstr "数学"
 
 #: ../../syntax/reference.md:50
 msgid ""
@@ -112,44 +119,47 @@ msgid ""
 "even direct [amsmath](https://ctan.org/pkg/amsmath) LaTeX equations "
 "(optional). See {ref}`syntax/math` for more information."
 msgstr ""
+"使用 `$$` （默认）或 `\\[`...`\\]` 字符包裹的多行数学公式，"
+"甚至可以直接使用[amsmath](https://ctan.org/pkg/amsmath) LaTeX 方程（可选）。更多信息请参阅 {ref}`syntax/math`。"
 
 #: ../../syntax/reference.md:57
 msgid "Table"
-msgstr ""
+msgstr "表格"
 
 #: ../../syntax/reference.md:58
 msgid "Standard markdown table style, with pipe separation."
-msgstr ""
+msgstr "标准 Markdown 表格样式，使用竖线分隔。"
 
 #: ../../syntax/reference.md:64
 msgid "LineComment"
-msgstr ""
+msgstr "行注释"
 
 #: ../../syntax/reference.md:65
 msgid "A commented line. See {ref}`syntax/comments` for more information."
-msgstr ""
+msgstr "注释行。更多信息请参阅 {ref}`syntax/comments`。"
 
 #: ../../syntax/reference.md:69
 msgid "BlockBreak"
-msgstr ""
+msgstr "块分隔符"
 
 #: ../../syntax/reference.md:70
 msgid "Define blocks of text. See {ref}`syntax/blockbreaks` for more information."
-msgstr ""
+msgstr "定义文本块。更多信息请参阅 {ref}`syntax/blockbreaks` 。"
 
 #: ../../syntax/reference.md:74
 msgid "Footnote"
-msgstr ""
+msgstr "脚注"
 
 #: ../../syntax/reference.md:75
 msgid ""
 "A definition for a referencing footnote, that is placed at the bottom of "
 "the document. See {ref}`syntax/footnotes` for more details."
 msgstr ""
+"用于引用脚注的定义，放置在文档底部。更多详情请参阅 {ref}`syntax/footnotes`。"
 
 #: ../../syntax/reference.md:80
 msgid "Admonitions (optional)"
-msgstr ""
+msgstr "提示框（可选）"
 
 #: ../../syntax/reference.md:81
 msgid ""
@@ -158,234 +168,245 @@ msgid ""
 "editors. See [admonition directives](syntax/admonitions) for more "
 "details."
 msgstr ""
+"仅用于admonition样式指令的替代方法，其优点是允许内容在标准Markdown编辑器中渲染。"
+"更多详情请参阅 [admonition指令](syntax/admonitions)。"
 
 #: ../../syntax/reference.md:91
 msgid "CommonMark tokens"
-msgstr ""
+msgstr "CommonMark 标记"
 
 #: ../../syntax/reference.md:100
 msgid "HTMLBlock"
-msgstr ""
+msgstr "HTML 块"
 
 #: ../../syntax/reference.md:101 ../../syntax/reference.md:211
 msgid "Any valid HTML (rendered in HTML output only)"
-msgstr ""
+msgstr "任何有效的 HTML（仅在 HTML 输出中渲染）"
 
 #: ../../syntax/reference.md:105
 msgid "BlockCode"
-msgstr ""
+msgstr "代码块"
 
 #: ../../syntax/reference.md:106
 msgid "indented text (4 spaces or a tab)"
-msgstr ""
+msgstr "缩进文本（4 个空格或一个制表符）"
 
 #: ../../syntax/reference.md:110
 msgid "Heading"
-msgstr ""
+msgstr "标题"
 
 #: ../../syntax/reference.md:111
 msgid "Level 1-6 headings, denoted by number of `#`"
-msgstr ""
+msgstr "1-6级标题，由 `#` 的数量表示"
 
 #: ../../syntax/reference.md:115
 msgid "SetextHeading"
-msgstr ""
+msgstr "Setext 标题"
 
 #: ../../syntax/reference.md:116
 msgid "Underlined header (using multiple `=` or `-`)"
-msgstr ""
+msgstr "带下划线的标题（使用多个 `=` 或 `-`）"
 
 #: ../../syntax/reference.md:121
 msgid "Quote"
-msgstr ""
+msgstr "引用"
 
 #: ../../syntax/reference.md:122
 msgid "Quoted text"
-msgstr ""
+msgstr "引用文本"
 
 #: ../../syntax/reference.md:126
 msgid "CodeFence"
-msgstr ""
+msgstr "代码围栏"
 
 #: ../../syntax/reference.md:127
 msgid ""
 "Enclosed in 3 or more `` ` `` or `~` with an optional language name. See "
 "{ref}`syntax/code-blocks` for more information."
 msgstr ""
+"用 3 个或更多 `` ` `` 或 `~` 包围，并可选择语言名称。更多信息请参阅 {ref}`syntax/code-blocks`。"
 
 #: ../../syntax/reference.md:134
 msgid "ThematicBreak"
-msgstr ""
+msgstr "主题分隔线"
 
 #: ../../syntax/reference.md:135
 msgid "Creates a horizontal line in the output"
-msgstr ""
+msgstr "在输出中创建水平线"
 
 #: ../../syntax/reference.md:139
 msgid "List"
-msgstr ""
+msgstr "列表"
 
 #: ../../syntax/reference.md:140
 msgid "bullet points or enumerated."
-msgstr ""
+msgstr "项目符号或编号列表。"
 
 #: ../../syntax/reference.md:146
 msgid "LinkDefinition"
-msgstr ""
+msgstr "链接定义"
 
 #: ../../syntax/reference.md:147
 msgid ""
 "A substitution for an inline link, which can have a reference target (no "
 "spaces), and an optional title (in `\"`)"
 msgstr ""
+"用于替换内联链接，可以包含引用目标（无空格）和可选的标题（在 `\"` 中）"
 
 #: ../../syntax/reference.md:151
 msgid "Paragraph"
-msgstr ""
+msgstr "段落"
 
 #: ../../syntax/reference.md:152
 msgid "General inline text"
-msgstr ""
+msgstr "通用内联文本"
 
 #: ../../syntax/reference.md:158
 msgid "Span (Inline) Tokens"
-msgstr ""
+msgstr "区间（内联）标记"
 
 #: ../../syntax/reference.md:160
 msgid ""
 "Span (or inline) tokens are defined on a single line of content. They are"
 " broken down into two sections below:"
 msgstr ""
+"区间（或内联）标记在内容的单行上定义。它们在下面被分为两个部分："
 
 #: ../../syntax/reference.md:163
 msgid ""
 "{ref}`extended-span-tokens` contains *extra* tokens that are not in "
 "CommonMark."
 msgstr ""
+"{ref}`extended-span-tokens` 包含了 *额外* 的标记，这些标记不在 CommonMark 标准中。"
 
 #: ../../syntax/reference.md:164
 msgid ""
 "{ref}`commonmark-span-tokens` contains CommonMark tokens that also work, "
 "for reference."
 msgstr ""
+"{ref}`commonmark-span-tokens` 包含了同样适用的 CommonMark 标记，以供参考。"
 
 #: ../../syntax/reference.md:167
 msgid "Extended inline tokens"
-msgstr ""
+msgstr "扩展内联标记"
 
 #: ../../syntax/reference.md:176
 msgid "Role"
-msgstr ""
+msgstr "角色"
 
 #: ../../syntax/reference.md:177
 msgid "See {ref}`syntax/roles` for more information."
-msgstr ""
+msgstr "更多信息请参见 {ref}`syntax/roles`。"
 
 #: ../../syntax/reference.md:181
 msgid "Target"
-msgstr ""
+msgstr "目标"
 
 #: ../../syntax/reference.md:182
 msgid ""
 "Precedes element to target, e.g. header. See {ref}`syntax/targets` for "
 "more information."
 msgstr ""
+"位于目标元素（例如标题）之前。更多信息请参见 {ref}`syntax/targets`。"
 
 #: ../../syntax/reference.md:188
 msgid ""
 "`$` (default) or `\\(`...`\\)` enclosed math. See {ref}`syntax/math` for "
 "more information."
 msgstr ""
+"默认使用 `$` 或 `\\(`...`\\)` 包裹的数学公式。更多信息请参见 {ref}`syntax/math`。"
 
 #: ../../syntax/reference.md:193
 msgid "FootReference"
-msgstr ""
+msgstr "脚注引用"
 
 #: ../../syntax/reference.md:194
 msgid "Reference a footnote. See {ref}`syntax/footnotes` for more details."
-msgstr ""
+msgstr "引用脚注。更多详情请参见 {ref}`syntax/footnotes`。"
 
 #: ../../syntax/reference.md:201
 msgid "CommonMark inline tokens"
-msgstr ""
+msgstr "CommonMark 内联标记"
 
 #: ../../syntax/reference.md:210
 msgid "HTMLSpan"
-msgstr ""
+msgstr "HTML 内联"
 
 #: ../../syntax/reference.md:215
 msgid "EscapeSequence"
-msgstr ""
+msgstr "转义序列"
 
 #: ../../syntax/reference.md:216
 msgid "Escaped symbols (to avoid them being interpreted as other syntax elements)"
-msgstr ""
+msgstr "转义的符号（以避免它们被解释为其他语法元素）"
 
 #: ../../syntax/reference.md:220
 msgid "AutoLink"
-msgstr ""
+msgstr "自动链接"
 
 #: ../../syntax/reference.md:221
 msgid "Link that is shown in final output"
-msgstr ""
+msgstr "在最终输出中显示的链接"
 
 #: ../../syntax/reference.md:225
 msgid "InlineCode"
-msgstr ""
+msgstr "内联代码"
 
 #: ../../syntax/reference.md:226
 msgid "Literal text"
-msgstr ""
+msgstr "字面文本"
 
 #: ../../syntax/reference.md:230
 msgid "LineBreak"
-msgstr ""
+msgstr "换行符"
 
 #: ../../syntax/reference.md:231
 msgid "Soft or hard (ends with spaces or backslash)"
-msgstr ""
+msgstr "软换行或硬换行（以空格或反斜杠结尾）"
 
 #: ../../syntax/reference.md:235
 msgid "Image"
-msgstr ""
+msgstr "图片"
 
 #: ../../syntax/reference.md:236
 msgid ""
 "Link to an image. You can also use HTML syntax, to include image size "
 "etc, [see here](syntax/images) for details"
 msgstr ""
+"链接到图片。你也可以使用 HTML 语法来包含图片尺寸等信息，详情请参见[此处](syntax/images)。"
 
 #: ../../syntax/reference.md:241
 msgid "Link"
-msgstr ""
+msgstr "链接"
 
 #: ../../syntax/reference.md:242
 msgid ""
 "Reference `LinkDefinitions`. See {ref}`syntax/referencing` for more "
 "details."
 msgstr ""
+"参考 `链接定义`。更多详情请参见 {ref}`syntax/referencing`。"
 
 #: ../../syntax/reference.md:246
 msgid "Strong"
-msgstr ""
+msgstr "加粗"
 
 #: ../../syntax/reference.md:247
 msgid "Bold text"
-msgstr ""
+msgstr "加粗文本"
 
 #: ../../syntax/reference.md:251
 msgid "Emphasis"
-msgstr ""
+msgstr "强调"
 
 #: ../../syntax/reference.md:252
 msgid "Italic text"
-msgstr ""
+msgstr "斜体文本"
 
 #: ../../syntax/reference.md:256
 msgid "RawText"
-msgstr ""
+msgstr "纯文本"
 
 #: ../../syntax/reference.md:257
 msgid "Any text"
-msgstr ""
+msgstr "任何文本"
 

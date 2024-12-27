@@ -5,6 +5,7 @@
 MyST is a strict superset of the [CommonMark syntax specification](https://spec.commonmark.org/).
 It adds features focussed on scientific and technical documentation authoring, as detailed below.
 
+(headings)=
 ## Headings
 
 Markdown syntax denotes headers starting with between 1 to 6 #.
